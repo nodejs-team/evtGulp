@@ -1,128 +1,48 @@
 {
 	"groups":[
 	{
-		"keys":"side_bear_png,text1_png,text2_png,ticket1_png,ticket2_png,top_bg_jpg,tv_png,arrow1_png,arrow2_png,arrow3_png,bear_png,bear_ugly_png,buy_btn_png,buy_btn_disabled_png,buy_btn2_png,buy_btn2_disabled_png,cake_card1_png,cateau_png,chocolate-box_png,main_bg_jpg,price1_png,price2_png,qie_png,qie_dance_png",
+		"keys":"sq_png,q_png,q1_png,q2_png,q3_png,q4_png,q5_png,q6_png",
 		"name":"preload"
 	}],
 	"resources":[
 	{
-		"name":"side_bear_png",
+		"name":"sq_png",
 		"type":"image",
-		"url":"side_bear.png"
+		"url":"banner/sq.png"
 	},
 	{
-		"name":"text1_png",
+		"name":"q_png",
 		"type":"image",
-		"url":"text1.png"
+		"url":"banner/q.png"
 	},
 	{
-		"name":"text2_png",
+		"name":"q1_png",
 		"type":"image",
-		"url":"text2.png"
+		"url":"banner/q1.png"
 	},
 	{
-		"name":"ticket1_png",
+		"name":"q2_png",
 		"type":"image",
-		"url":"ticket1.png"
+		"url":"banner/q2.png"
 	},
 	{
-		"name":"ticket2_png",
+		"name":"q3_png",
 		"type":"image",
-		"url":"ticket2.png"
+		"url":"banner/q3.png"
 	},
 	{
-		"name":"top_bg_jpg",
+		"name":"q4_png",
 		"type":"image",
-		"url":"top_bg.jpg"
+		"url":"banner/q4.png"
 	},
 	{
-		"name":"tv_png",
+		"name":"q5_png",
 		"type":"image",
-		"url":"tv.png"
+		"url":"banner/q5.png"
 	},
 	{
-		"name":"arrow1_png",
+		"name":"q6_png",
 		"type":"image",
-		"url":"arrow1.png"
-	},
-	{
-		"name":"arrow2_png",
-		"type":"image",
-		"url":"arrow2.png"
-	},
-	{
-		"name":"arrow3_png",
-		"type":"image",
-		"url":"arrow3.png"
-	},
-	{
-		"name":"bear_png",
-		"type":"image",
-		"url":"bear.png"
-	},
-	{
-		"name":"bear_ugly_png",
-		"type":"image",
-		"url":"bear_ugly.png"
-	},
-	{
-		"name":"buy_btn_png",
-		"type":"image",
-		"url":"buy_btn.png"
-	},
-	{
-		"name":"buy_btn_disabled_png",
-		"type":"image",
-		"url":"buy_btn_disabled.png"
-	},
-	{
-		"name":"buy_btn2_png",
-		"type":"image",
-		"url":"buy_btn2.png"
-	},
-	{
-		"name":"buy_btn2_disabled_png",
-		"type":"image",
-		"url":"buy_btn2_disabled.png"
-	},
-	{
-		"name":"cake_card1_png",
-		"type":"image",
-		"url":"cake_card1.png"
-	},
-	{
-		"name":"cateau_png",
-		"type":"image",
-		"url":"cateau.png"
-	},
-	{
-		"name":"chocolate-box_png",
-		"type":"image",
-		"url":"chocolate-box.png"
-	},
-	{
-		"name":"main_bg_jpg",
-		"type":"image",
-		"url":"main_bg.jpg"
-	},
-	{
-		"name":"price1_png",
-		"type":"image",
-		"url":"price1.png"
-	},
-	{
-		"name":"price2_png",
-		"type":"image",
-		"url":"price2.png"
-	},
-	{
-		"name":"qie_png",
-		"type":"image",
-		"url":"qie.png"
-	},
-	{
-		"name":"qie_dance_png",
-		"type":"image",
-		"url":"qie_dance.png"
+		"url":"banner/q6.png"
 	}]
 }

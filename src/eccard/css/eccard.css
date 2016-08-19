@@ -233,3 +233,62 @@ img{border:0;}
     padding-left: 1.5em;
     text-indent: -1.5em;
 }
+
+/*===========banner===========*/
+.evt-banner{
+    background-color: #f2f6f7;
+}
+
+.evt-banner .evt-content{
+    width:1200px;
+    height:700px;
+}
+
+.secItem.qb1{
+    left:336px;
+    top:0;
+    z-index: 5;
+}
+
+.secItem.qb2{
+    left:160px;
+    top:134px;
+}
+
+.secItem.qb3{
+    left:717px;
+    top:212px;
+}
+
+.secItem.qb4{
+    left:570px;
+    top:287px;
+}
+
+.secItem.qb5{
+    left:874px;
+    top:455px;
+}
+
+.secItem.qb6{
+    left:166px;
+    top:297px;
+}
+
+.secItem.qb7{
+    left:196px;
+    top:488px;
+}
+
+.secItem.qb7 .dance{
+    display: inline-block;
+}
+
+.secItem.qb7 .qie{
+    position: relative;
+    top:-6px;
+}
+
+.secItem.qb7 .xiong{
+    margin-left:-55px;
+}
