@@ -1,0 +1,419 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+img{border:0;}
+
+#evt_loading{
+    position:relative;
+    height:600px;
+}
+
+#evt_spin{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-10px;
+    margin-left:-100px;
+    width:200px;
+    text-align:center;
+    font-size:18px;
+    font-family:"Microsoft YaHei",Tahoma,Arial;
+}
+
+.evt-container{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    background-color: #d4e7f0;
+    overflow: hidden;
+    display: none;
+}
+
+.evt-content{
+    position: relative;
+    width:1000px;
+    height:2182px;
+    margin:0 auto;
+}
+
+.evt-content .secItem{
+    position: absolute;
+}
+
+.evt-content .price-wrap img,
+.evt-content .price-wrap span{
+    display: block !important;
+}
+
+.evt-content .price-wrap img.hover,
+.evt-content .price-wrap span.hover{
+    display: none !important;
+}
+
+.evt-content .price-wrap:hover img,
+.evt-content .price-wrap:hover span{
+    display: none !important;
+}
+
+.evt-content .price-wrap:hover img.hover,
+.evt-content .price-wrap:hover img.arrow,
+.evt-content .price-wrap:hover img.fish,
+.evt-content .price-wrap:hover span.hover{
+    display: block !important;
+}
+
+.evt-content .price-wrap .buy-btn{
+    display: block;
+    margin-top:7px;
+    width:108px;
+    height:23px;
+    line-height: 100;
+    overflow: hidden;
+    background: url(../images/buy-btn.png) no-repeat;
+}
+
+.evt-content .price-wrap .buy-btn.disabled{
+    background: url(../images/buy-btn-disabled.png) no-repeat;
+}
+.evt-content .price-wrap.left .buy-btn{
+    float:left;
+}
+
+.secItem .arrow{
+    position: absolute;
+}
+
+.secItem.q1{
+    left:0;
+    top:115px;
+    z-index: 6;
+}
+
+.bubble-sm1{
+    position: absolute;
+    left:230px;
+    top:-20px;
+}
+
+.bubble-sm2{
+    position: absolute;
+    left:45px;
+    top:-25px;
+}
+
+.bubble-sm3{
+    position: absolute;
+    right:20px;
+    top:132px;
+}
+
+.bubble-sm4{
+    position: absolute;
+    left:36px;
+    top:-45px;
+}
+
+.bubble-sm5{
+    position: absolute;
+    left:30px;
+    top:60px;
+}
+
+
+.secItem.q2{
+    left:0;
+    top:612px;
+}
+
+.secItem.q3{
+    width:800px;
+    height:504px;
+    left:290px;
+    top:168px;
+    z-index: 5;
+}
+
+.secItem.secItem-tk{
+    top:190px;
+}
+
+.secItem.q4{
+    left:587px;
+    top:10px;
+}
+
+.secItem.q5{
+    left: 606px;
+    top: 285px;
+}
+
+.secItem.q5 .gas{
+    position: absolute;
+    left: 460px;
+    top: 125px;
+}
+
+.secItem.sm-fish{
+    right:-160px;
+    top:565px;
+}
+
+.secItem.sm-fish .sm-fisher{
+    opacity:1 !important;
+    filter:alpha(opacity=100) !important;
+}
+
+.ua-ie .sm-fish, .fish{
+    filter:alpha(opacity=100) !important;
+}
+
+.secItem.q6{
+    left: 63px;
+    top: 780px;
+}
+
+.secItem.q6 .arrow{
+    left:48px;
+    top:-102px;
+}
+
+.secItem.q7{
+    left: 540px;
+    top: 686px;
+}
+
+.secItem.q7 .rabbit-wrap{
+    position: absolute;
+    left: -120px;
+    top: 100px;
+}
+
+.secItem.q8{
+    left: 404px;
+    top: 965px;
+}
+
+.secItem.q9{
+    right: -10px;
+    top: 1045px;
+}
+
+.secItem.q10{
+    left:106px;
+    top:953px;
+}
+
+.secItem.q10 .arrow{
+    left:222px;
+    top:105px;
+}
+
+.secItem.q10 .fish{
+    position: absolute;
+    left:-200px;
+    top:0px;
+}
+
+.secItem.q11{
+    left:60px;
+    top:1165px;
+}
+
+.secItem.q11 .q11-main{
+    position: relative;
+    z-index: 5;
+}
+
+.secItem.q11 .fish-woman{
+    position: absolute;
+    left:353px;
+    top:10px;
+}
+
+.secItem.q12{
+    left:586px;
+    top:1348px;
+}
+
+.secItem.q12 .arrow{
+    top:126px;
+    left:-56px;
+}
+
+.secItem.q13{
+    left:-17px;
+    top:1525px;
+}
+
+.secItem.q13 .fish{
+    position: absolute;
+    top:123px;
+    left:-54px;
+}
+
+.secItem.q13 .beike{
+    position: absolute;
+    top:143px;
+    left:133px;
+}
+
+.secItem.q14{
+    left:407px;
+    top:1663px;
+}
+
+.secItem.q15{
+    left:528px;
+    top:1497px;
+}
+
+.secItem.q16{
+    left:0px;
+    top:1856px;
+}
+
+.secItem.q16 .arrow{
+    left:250px;
+    top:96px;
+}
+
+.evt-footer{
+    height:266px;
+    background: url(../images/sea-bench.png) no-repeat 50% 0;
+}
+
+.evt-footer .footer-bd{
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+}
+
+.evt-footer .footer-bd .sea-leaf{
+    position: absolute;
+    left: 215px;
+    top: -148px;
+}
+
+.evt-rules{
+    padding-top:65px;
+}
+
+.evt-rules h2{
+    font-size:16px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.evt-rules p{
+    font-size:14px;
+    margin-bottom: 3px;
+    margin-left: 212px;
+}
+
+.tk-rules p{
+    margin-left: 150px;
+}
+
+.bubble-sm b{
+    position: absolute;
+}
+
+.bubble-sm .b1{
+    left:8px;
+    width:5px;
+    height:5px;
+    background: url(../images/bubble-sm1.png) no-repeat;
+    -webkit-animation: bubble-up 1s ease both infinite;
+    animation: bubble-up 1s ease both infinite;
+}
+
+.bubble-sm .b2{
+    width:9px;
+    height:9px;
+    background: url(../images/bubble-sm2.png) no-repeat;
+    -webkit-animation: bubble-up 1s -0.3s ease both infinite;
+    animation: bubble-up 1s -0.3s ease both infinite;
+}
+
+.bubble b{
+    position: absolute;
+}
+
+.bubble .b1{
+    left:-3px;
+    width:5px;
+    height:5px;
+    background: url(../images/bubble1.png) no-repeat;
+    -webkit-animation: bubble-up 1s ease both infinite;
+    animation: bubble-up 1s ease both infinite;
+}
+
+.bubble .b2{
+    left:-12px;
+    width:7px;
+    height:7px;
+    background: url(../images/bubble2.png) no-repeat;
+    -webkit-animation: bubble-up 1s -0.3s ease both infinite;
+    animation: bubble-up 1s -0.3s ease both infinite;
+}
+
+.bubble .b3{
+    width:7px;
+    height:7px;
+    background: url(../images/bubble3.png) no-repeat;
+    -webkit-animation: bubble-up 1s -0.6s ease both infinite;
+    animation: bubble-up 1s -0.6s ease both infinite;
+}
+
+.bubble1{
+    position: absolute;
+    right:168px;
+    top:60px;
+}
+
+.bubble2{
+    position: absolute;
+    left:30px;
+    top:30px;
+    z-index: 8;
+}
+
+.bubble3{
+    position: absolute;
+    left:120px;
+    top:-50px;
+    z-index: 8;
+}
+
+.bubble4{
+    position: absolute;
+    right:20px;
+    top:455px;
+    z-index: 8;
+}
+
+.ua-ie .bubble{
+    width:24px;
+    height:48px;
+    background: url(../images/bubble.gif) no-repeat;
+}
+
+.ua-ie .bubble b{
+    display: none;
+}
+
+.ua-ie .bubble-sm{
+    width:21px;
+    height:37px;
+    background: url(../images/bubble-sm.gif) no-repeat;
+}
+
+.ua-ie .bubble-sm b{
+    display: none;
+}
+
+.ua-ie .rabbit-element,
+.ua-ie .beike{
+    filter:alpha(opacity=100);
+}

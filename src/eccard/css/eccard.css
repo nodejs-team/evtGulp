@@ -1,0 +1,235 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+img{border:0;}
+
+#evt_loading{
+    position:relative;
+    height:600px;
+}
+
+#evt_spin{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-10px;
+    margin-left:-100px;
+    width:200px;
+    text-align:center;
+    font-size:18px;
+    font-family:"Microsoft YaHei",Tahoma,Arial;
+}
+
+.evt-container{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    overflow: hidden;
+    display: none;
+}
+
+.evt-content{
+    position: relative;
+    width:1000px;
+    height:2182px;
+    margin:0 auto;
+}
+
+.evt-content .secItem{
+    position: absolute;
+}
+
+.evt-content .price-wrap img,
+.evt-content .price-wrap span{
+    display: block !important;
+}
+
+.evt-content .price-wrap img.hover,
+.evt-content .price-wrap span.hover{
+    display: none !important;
+}
+
+.evt-content .price-wrap:hover img,
+.evt-content .price-wrap:hover span{
+    display: none !important;
+}
+
+.evt-content .price-wrap:hover img.hover,
+.evt-content .price-wrap:hover img.arrow,
+.evt-content .price-wrap:hover img.fish,
+.evt-content .price-wrap:hover span.hover{
+    display: block !important;
+}
+
+.secItem .arrow{
+    position: absolute;
+}
+
+.evt_top{
+    height:900px;
+    background: url(../images/top_bg.jpg);
+}
+
+.evt_main{
+    height:1540px;
+    background: url(../images/main_bg.jpg);
+}
+
+.secItem.q1{
+    left:272px;
+    top:3px;
+    z-index: 15;
+}
+
+.secItem.q2{
+    left:115px;
+    top:25px;
+    z-index: 10;
+}
+
+.secItem.q2 .tv{
+    position: relative;
+    z-index: 2;
+}
+
+
+.secItem.q2 .ticket{
+    position: absolute;
+    right: -165px;
+    top:238px;
+}
+
+.secItem.q2 .follow-bear{
+    position: absolute;
+    left:5px;
+    top:553px;
+}
+
+.secItem.q3{
+    left:275px;
+    top:624px;
+}
+
+.secItem.q3 .buy-btn{
+    position: absolute;
+    left:212px;
+    top:80px;
+    width: 186px;
+    height:47px;
+    line-height: 100;
+    overflow: hidden;
+    background: url(../images/buy_btn.png) no-repeat;
+}
+
+.secItem.q3 .buy-btn.disabled{
+    background: url(../images/buy_btn_disabled.png);
+}
+
+.secItem.q4{
+    left:22px;
+    top:130px;
+}
+
+.secItem.q4 .card{
+    position: relative;
+    z-index: 3;
+}
+
+.secItem.q4 .arrow{
+    right:-110px;
+    top:260px;
+}
+
+.secItem.q5{
+    left:497px;
+    top:240px;
+}
+
+.secItem.q6{
+    left:435px;
+    top:456px;
+}
+
+.secItem.q6 .card{
+    position: relative;
+    z-index: 5;
+}
+
+.secItem.q6 .arrow{
+    left:128px;
+    top:182px;
+}
+
+.secItem.q7{
+    left:87px;
+    top:862px;
+}
+
+.secItem.q7 .arrow{
+    left:476px;
+    top:318px;
+}
+
+.secItem.q7 .ticket{
+    position: absolute;
+    left:537px;
+    top:106px;
+}
+
+.secItem.q8{
+    left:228px;
+    top:1360px;
+}
+
+.secItem.q8 .buy-btn{
+    position: absolute;
+    left:182px;
+    top:152px;
+    width:178px;
+    height:48px;
+    line-height: 100;
+    overflow: hidden;
+    background: url(../images/buy_btn2.png) no-repeat;
+}
+
+.secItem.q8 .buy-btn.disabled{
+    background: url(../images/buy_btn2_disabled.png);
+}
+
+.secItem.q9{
+    left:425px;
+    top:-43px;
+}
+
+.secItem.q10{
+    left:186px;
+    top:610px;
+}
+
+.evt-footer{
+    background-color: #fff;
+}
+
+.evt-footer .footer-bd{
+    width:1000px;
+    margin:0 auto;
+    padding:80px 0 70px;
+}
+
+.evt-footer .evt-rules{
+    margin-left:218px;
+}
+
+.evt-footer .evt-rules h2{
+    font-size:18px;
+    margin-bottom: 5px;
+    color:#333;
+}
+
+.evt-footer .evt-rules p{
+    font-size:16px;
+    line-height: 1.5;
+    color:#333;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
