@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>蓝莓轻乳</title>
+</head>
+<body>
+<style>
+    html,body{
+        height: 100%;
+    }
+    #luc-share-dg{
+        position: fixed;
+        _position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        z-index: 1000;
+    }
+    .dg-backdrop{
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background-color: #000;
+        opacity: .5;
+        filter:alpha(opacity=50);
+    }
+    .dg-content{
+        position: absolute;
+        width:800px;
+        height:600px;
+        left:50%;
+        top:50%;
+        margin-left:-400px;
+        margin-top:-300px;
+        background: url(images/luc-share-bg.jpg) no-repeat;
+    }
+    .dg-content .close{
+        position: absolute;
+        top:15px;
+        right:20px;
+        width:30px;
+        height:30px;
+        line-height: 100;
+        overflow: hidden;
+    }
+    .dg-content .invite-count{
+        position: absolute;
+        left:102px;
+        top:265px;
+        width:138px;
+        height:45px;
+        font-size:30px;
+        color:#115f86;
+        text-align: center;
+        line-height: 45px;
+        letter-spacing: 12px;
+        font-family: Arial,Tahoma,sans-serif;
+    }
+    .dg-content .qrcode{
+        position: absolute;
+        left:60px;
+        top:375px;
+        width:100px;
+        height:100px;
+    }
+
+    .dg-content .qrcode img{
+        display: block;
+        max-width:100%;
+        height:auto;
+    }
+</style>
+
+<div id="luc-share-dg">
+    <div class="dg-backdrop"></div>
+    <div class="dg-content">
+        <a href="javascript:;" class="close" onclick="this.parentNode.parentNode.style.display='none';">关闭</a>
+        <div class="invite-count">129</div>
+        <div class="qrcode">
+            <img src="images/qrcode.jpg" />
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

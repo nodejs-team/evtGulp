@@ -1,0 +1,8 @@
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@import "normalize";
+
+/*自动检测icon的宽高*/
+$icons-sprite-dimensions: true;
+
+@include all-icons-sprites;

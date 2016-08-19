@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EC</title>
+    <link type="text/css" rel="stylesheet" href="css/ec_main.css"/>
+    <style>
+        .rabbit {
+            position: absolute;
+            left: 100px;
+            width: 102px;
+            height: 80px;
+            background-repeat: no-repeat;
+        }
+
+        #rabbit1 {
+            top: 50px
+        }
+
+        #rabbit2 {
+            top: 200px
+        }
+
+        #rabbit3 {
+            top: 350px
+        }
+
+        #rabbit4 {
+            top: 500px
+        }
+    </style>
+</head>
+<body>
+    <div id="ec_loading">
+        <div id="ec_load_inner">
+            <div id="ec_load"></div>
+            <span id="ec_spin"></span>
+        </div>
+    </div>
+
+    <div id="ec_container" style="display: none;background: none;">
+        <div id="rabbit1" class="rabbit"></div>
+        <div id="rabbit2" class="rabbit"></div>
+        <div id="rabbit3" class="rabbit"></div>
+        <div id="rabbit4" class="rabbit"></div>
+    </div>
+
+    <script type="text/javascript" src="js/ec_main.min.js"></script>
+
+<script>
+    var resData = {
+        "groups":[
+            {
+                "keys":"rabbit_big_png,rabbit_lose_png,rabbit_win_png",
+                "name":"preload"
+            },
+            {
+                "keys":"l1_png,l2_png,loading_json",
+                "name":"loading"
+            }],
+        "resources":[
+            {
+                "name":"rabbit_big_png",
+                "type":"image",
+                "url":"sprites/rabbit_big.png"
+            },
+            {
+                "name":"rabbit_lose_png",
+                "type":"image",
+                "url":"sprites/rabbit_lose.png"
+            },
+            {
+                "name":"rabbit_win_png",
+                "type":"image",
+                "url":"sprites/rabbit_win.png"
+            }]
+    };
+
+    var rightRunningMap = ["0 -854", "-174 -852", "-349 -852", "-524 -852", "-698 -851", "-873 -848"];
+    var leftRunningMap = ["0 -373", "-175 -376", "-350 -377", "-524 -377", "-699 -377", "-873 -379"];
+    var rabbitWinMap = ["0 0", "-198 0", "-401 0", "-609 0", "-816 0", "0 -96", "-208 -97", "-415 -97", "-623 -97", "-831 -97", "0 -203", "-207 -203", "-415 -203", "-623 -203", "-831 -203", "0 -307", "-206 -307", "-414 -307", "-623 -307"];
+    var rabbitLoseMap = ["0 0", "-163 0", "-327 0", "-491 0", "-655 0", "-819 0", "0 -135", "-166 -135", "-333 -135", "-500 -135", "-668 -135", "-835 -135", "0 -262"];
+
+
+    var loader = new Resource.loadGroup("preload", resData);
+    var ecSpin = Resource.el('#ec_spin');
+
+    loader.on("progress", function (loaded, total) {
+        ecSpin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
+    });
+
+    loader.on("complete", function () {
+        Resource.el('#ec_loading').style.display = 'none';
+        Resource.el('#ec_container').style.display = 'block';
+
+        setRabbitMC1();
+        setRabbitMC2();
+        setRabbitMC3();
+        setRabbitMC4();
+
+    });
+    //end loader
+
+    function setRabbitMC1(){
+        var mcRabbit1 = new MovieClip('rabbit_big_png', rightRunningMap, 'bigRunning', 'rabbit1');
+        mcRabbit1.gotoAndPlay(1, -1, 20);
+        mcRabbit1.el.onclick = function () {
+            if( mcRabbit1.isPlaying ){
+                mcRabbit1.pause();
+            } else {
+                mcRabbit1.play();
+            }
+        };
+    }
+
+    function setRabbitMC2(){
+        var duration = 2000;
+        var el = Resource.el('#rabbit2');
+        var startLeft = parseFloat(Resource.getStyle(el, 'left')) || 0;
+        var distance = 300;
+        var isPaused = false;
+        var mcRabbit2 = new MovieClip('rabbit_big_png', rightRunningMap, 'rightRunning', 'rabbit2');
+        mcRabbit2.gotoAndPlay(1, -1, 24);
+        mcRabbit2.on('enterframe', function(currentFrame, time){
+            var ratio = time/duration;
+            if( ratio > 1 ){
+                if( !isPaused ){
+                    mcRabbit2.pause(200).setRES('rabbit_big_png', leftRunningMap);
+                    isPaused = true;
+                    ratio = 1;
+                }
+                ratio = 2 - ratio;
+                if( ratio < 0 ){
+                    ratio = 0;
+                    mcRabbit2.wait(1000).stop();
+                }
+            }
+            mcRabbit2.el.style.left = startLeft + distance*ratio + 'px';
+        });
+
+        mcRabbit2.once('complete', function(){
+            mcRabbit2 = new MovieClip('rabbit_win_png', rabbitWinMap, 'winRunning', 'rabbit2');
+            mcRabbit2.gotoAndPlay(1, 1);
+        });
+    }
+
+    function setRabbitMC3(){
+        var mcRabbit3 = new MovieClip('rabbit_win_png', rabbitWinMap, 'winRunning', 'rabbit3');
+        mcRabbit3.gotoAndPlay(1, 3, 5);
+    }
+
+    function setRabbitMC4(){
+        var mcRabbit4 = new MovieClip('rabbit_lose_png', rabbitLoseMap, 'loseRunning', 'rabbit4');
+        mcRabbit4.gotoAndPlay(1, 1, 5);
+    }
+
+</script>
+
+</body>
+</html>

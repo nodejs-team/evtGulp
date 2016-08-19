@@ -1,0 +1,31 @@
+{"mc":{
+	"mc_play":{
+		"frameRate":200,
+		"frames":[
+			{
+				"x":0,
+				"y":0,
+				"duration":500
+			},
+			{
+				"x":0,
+				"y":0,
+				"duration":60
+			},
+			{
+				"x":0,
+				"y":0,
+				"duration":60
+			},
+			{
+				"x":0,
+				"y":0,
+				"duration":60
+			},
+			{
+				"x":0,
+				"y":0,
+				"duration":60
+			}
+		]
+}}}

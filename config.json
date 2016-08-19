@@ -1,0 +1,17 @@
+{
+    "project" : "Gulp",     
+    "localserver" : {
+        "host" : "192.168.47.168",
+        "port" : "8081"
+    },
+    "tinypngapi": "2u4HCdRMrLoU4UTy6yb2ssKkGeEpNPrN",
+    "sftp" : {
+        "host" : "",
+        "user" : "",
+        "port" : "22",
+        "key" : "",
+        "remotePath" :"/2016/snowMan/"
+    },
+    "projectName": "eccard",
+    "revPrefix": "http://edm.mcake.com/shuxy/2016/"
+}   

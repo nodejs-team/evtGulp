@@ -1,0 +1,7 @@
+@charset "utf-8";
+body{width:480px;margin:40px auto;font-family:sans-serif;background:#f6f6f0;color:#330;line-height:1.5;}
+header{display:block;background:url('./divider.png') bottom center no-repeat;padding:10px 0px;margin:0px 0px 20px;text-align:center;}
+h1{display:inline;position:relative;margin:0ex 0ex 1ex 1.2ex;font-family:'bpreplay', sans-serif;font-weight:normal;font-size:42px;letter-spacing:1px;}
+h1:before{content:'♬ ';position:absolute;top:16px;left:-3.1ex;color:#da1c5c;font-size:0.4em;}
+
+.audiojs{margin:15px 0px 20px;}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="worktile"></div>
+<script type="text/javascript" src='js/ec_main.js'></script>
+<script type="text/javascript">
+	var resData = {
+		"groups":[
+			{
+				"keys":"worktile_json,worktile_png",
+				"name":"preload"
+			}],
+		"resources":[
+			{
+				"name":"worktile_json",
+				"type":"json",
+				"url":"worktile.json"
+			},
+			{
+				"name":"worktile_png",
+				"type":"image",
+				"url":"worktile.png"
+			}]
+	};
+
+	var resLoader = new Resource.loadGroup('preload', resData);
+
+	resLoader.on('complete', loadComplete);
+
+	function loadComplete(){
+		var workTile = new MovieClip('worktile_png','worktile_json', 'mc_worktile', 'worktile');
+		workTile.gotoAndPlay(1, -1);
+	}
+</script>
+</body>
+</html>

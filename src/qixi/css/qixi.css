@@ -1,0 +1,247 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+img{border:0;}
+
+#evt_loading{
+    position:relative;
+    height:600px;
+}
+
+#evt_spin{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-10px;
+    margin-left:-100px;
+    width:200px;
+    text-align:center;
+    font-size:18px;
+    font-family:"Microsoft YaHei",Tahoma,Arial;
+}
+
+.evt-container{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    background-color: #ecf3f7;
+    overflow: hidden;
+    display: none;
+}
+
+.evt-content{
+    position: relative;
+    width:1000px;
+    height:2073px;
+    margin:0 auto;
+}
+
+.evt-content .secItem{
+    position: absolute;
+}
+
+.evt-footer{
+    position: relative;
+    padding:40px 60px;
+    background-color: #e9f2ff;
+}
+
+.evt-footer .evt-footer-bd{
+    width:1000px;
+    margin:0 auto;
+}
+
+.evt-footer .evt-rules{
+    margin-left:140px;
+}
+
+.evt-footer .evt-rules > h3{
+    margin-bottom: 10px;
+    font-size:18px;
+    color:#495461;
+}
+
+.evt-footer .evt-rules > p{
+    margin-bottom: 5px;
+    font-size:15px;
+    color:#363e46;
+    text-indent: -1.5em;
+    padding-left:1.5em;
+}
+
+/*.evt-content .price-wrap img,
+.evt-content .price-wrap span{
+    display: block !important;
+}
+
+.evt-content .price-wrap img.hover,
+.evt-content .price-wrap span.hover{
+    display: none !important;
+}
+
+.evt-content .price-wrap:hover img,
+.evt-content .price-wrap:hover span{
+    display: none !important;
+}
+
+.evt-content .price-wrap:hover img.hover,
+.evt-content .price-wrap:hover span.hover{
+    display: block !important;
+}*/
+body{
+    overflow-x: hidden;
+}
+.header,
+.evt-content .price-wrap{
+    cursor: default !important;
+}
+
+a{
+    cursor: pointer !important;
+}
+
+.evt-content .price-wrap .buy-btn{
+    position: absolute;
+    left:88px;
+    bottom: 0px;
+    width:150px;
+    height:35px;
+    line-height: 100;
+    overflow: hidden;
+    background: url(../images/buy-btn.png) no-repeat;
+}
+
+.evt-content .price-wrap .buy-btn.disabled{
+    background: url(../images/buy-btn-disabled.png) no-repeat;
+}
+
+.evt-content .price-wrap.left .buy-btn{
+    float:left;
+}
+
+.evt-content .price-wrap .arrow{
+    position: absolute;
+}
+
+
+body{
+    cursor: url(http://edm.mcake.com/shuxy/2016/qixi/images/cur.ico), auto;
+}
+
+:root body{
+    cursor: none;
+}
+
+.evt-bg{
+    position: absolute;
+    left:0;
+    width:100%;
+    top:0;
+}
+
+.evt-bg .bg1{
+    height:900px;
+    background: url(../images/bg1.jpg) no-repeat 50% 0;
+}
+
+.evt-bg .bg2{
+    height:629px;
+    background: url(../images/bg2.jpg) no-repeat 50% 0;
+}
+
+.evt-bg .bg3{
+    height:544px;
+    background: url(../images/bg3.jpg) no-repeat 50% 0;
+}
+
+.secItem.cloth{
+    left:290px;
+    top:0;
+}
+
+.secItem.q1{
+    top:-25px;
+    left:305px;
+}
+
+.secItem.q2{
+    top:255px;
+    right:-130px;
+}
+
+.secItem.q3{
+    left:60px;
+    top:166px;
+}
+
+.secItem.q4{
+    left:12px;
+    top:329px;
+}
+
+.secItem.q4 .cake-text{
+    margin-left:65px;
+    display: none;
+}
+
+.secItem.q5{
+    left:160px;
+    top:420px;
+}
+
+.secItem.q6{
+    right:60px;
+    top:514px;
+}
+
+.secItem.q7{
+    left:303px;
+    top:792px;
+}
+
+.secItem.q8{
+    right:-130px;
+    top:1014px;
+}
+
+.secItem.q9{
+    left:58px;
+    top:838px;
+}
+
+.secItem.q10{
+    left:0px;
+    top:992px;
+}
+
+.secItem.q11{
+    left:453px;
+    top:1294px;
+}
+
+.secItem.q12{
+    left:64px;
+    top:1529px;
+    z-index: 10;
+}
+
+.secItem.q12 .arrow{
+    left:38px;
+    top:100%;
+    margin-top: 10px;
+}
+
+.secItem.q13{
+    right:30px;
+    top:1668px;
+}
+
+.secItem.q14{
+    left:195px;
+    top:1673px;
+}
+
+#footer{
+    position: relative;
+    z-index: 50;
+}

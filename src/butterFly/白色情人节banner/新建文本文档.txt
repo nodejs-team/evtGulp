@@ -1,0 +1,43 @@
+<!--banner-->
+   <style>
+   	/*ÁñÁ« banner*/
+	.banner_halloween{ height:600px;margin-bottom:20px; position:relative;overflow: hidden;}
+	#banner_top{  margin:auto;  min-width:1000px;height:600px;}
+	.bg1{background:url(http://www.mcake.com/postsystem/docroot/images/kindeditor/20160129/2016012917162536743.jpg) no-repeat center 0;height:213px; min-width:1000px;}
+	.bg2{background:url(http://www.mcake.com/postsystem/docroot/images/kindeditor/20160129/2016012917163251098.jpg) no-repeat center 0;height:287px;min-width:1000px; position: relative;}
+	.bg3{background:url(http://www.mcake.com/postsystem/docroot/images/kindeditor/20160129/2016012917163316308.jpg) no-repeat center 0;height:100px; min-width:1000px;}
+
+
+	.href_1{position:absolute;top:0;left:0;width:100%;height:600px;background:#fff;opacity:0;filter:alpha(opacity=0);z-index:5}
+	.href_2{position:absolute;left:50%;z-index:15;width:140px;height:35px;
+		background:url(http://www.mcake.com/postsystem/docroot/images/kindeditor/20160129/2016012917175245325.png) no-repeat center 0;
+		margin-left:-350px;top:410px;
+	}
+	.href_2:hover{width:140px;height:35px;background:url(http://www.mcake.com/postsystem/docroot/images/kindeditor/20160129/2016012917175295386.png) no-repeat center 0;}
+	.href_2:active{width:140px;height:35px;background:url(http://www.mcake.com/postsystem/docroot/images/kindeditor/20160129/2016012917175141710.png) no-repeat center 0;}
+
+	section{width:100%;height:530px;overflow:hidden}
+   </style>
+   
+   
+    <div class="banner_halloween" style="margin-top:0px;">
+		<a href="#" target="_blank" class="href_1"></a>
+		<a href="#" target="_blank" class="href_2"></a>
+        <div id="banner_top">
+            <div class="bg1">
+            </div>
+            <div class="bg2">
+            	
+            </div>
+            <div class="bg3"></div>
+            
+       </div>
+    	
+    </div>
+<script>
+$(function(){
+	$(".href_2").hover(function(){});
+})
+
+</script>
+    <!--banner end-->

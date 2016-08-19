@@ -1,0 +1,366 @@
+body{
+    margin:0;
+}
+
+img{
+    border:0;
+}
+
+#ec_loading{
+    position: relative;
+    height:752px;
+    background-color: #fff;
+}
+
+#ec_loading #ec_load_inner{
+    width:300px;
+    margin:0 auto;
+    padding-top:150px;
+    text-align: center;
+}
+
+#ec_loading span{
+    color:#333;
+    font-size:20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+#ec_container{
+    height:752px;
+    background: url(http://edm.mcake.com/shuxy/2016/EC/images/main_bg.png) no-repeat 50% 0;
+    overflow: hidden;
+}
+.ec-main{
+    width:1200px;
+    height:752px;
+    margin:0 auto;
+    position: relative;
+}
+
+.ec-main .ec-anim{
+    position: absolute;
+}
+
+.ec-main .ec-count{
+    left:378px;
+    top:153px;
+    width:200px;
+    height:200px;
+}
+
+.ec-main .ec-walk{
+    top:80px;
+    left:50%;
+    margin-left:-589px;
+    width:1178px;
+    height:483px;
+}
+
+.ec-main .ec-walk img{
+    width:1178px;
+    height:483px;
+}
+
+.ec-main .ec-dance{
+    left: 253px;
+    top: 58px;
+    width:660px;
+    height:377px;
+    display: none;
+}
+
+.ec-main .ec-dance img{
+    width:660px;
+    height:377px;
+}
+
+.ec-main .ec-dance .code_drk{
+    position: absolute;
+    right: -227px;
+    bottom: -115px;
+    width:89px;
+    height: 55px;
+    background: url(http://edm.mcake.com/shuxy/2016/EC/images/sprites/cold_drink.png) no-repeat;
+}
+
+.ec-main .ec-masker{
+    position: absolute;
+    left:195px;
+    top:40px;
+    width:788px;
+    height:678px;
+}
+
+.ec-main .ec-heart{
+    width:788px;
+    height:678px;
+    display: none;
+    background: url(http://edm.mcake.com/shuxy/2016/EC/images/sprites/heart.png) no-repeat 45px 10px;
+    -webkit-animation: zoom-out 1.5s linear backwards;
+    animation: zoom-out 1.5s linear backwards;
+}
+
+@-webkit-keyframes zoom-out {
+    0%,100%{
+        -webkit-transform-origin: 50% 30%;
+    }
+    0%{
+        -webkit-transform: scale(.05);
+    }
+    20%{
+        -webkit-transform: scale(.8);
+    }
+    30%{
+        -webkit-transform: scale(1);
+    }
+    50%{
+        -webkit-transform: scale(1.2);
+    }
+    70%{
+        -webkit-transform: scale(.35);
+    }
+    100%{
+        -webkit-transform: scale(2);
+    }
+}
+
+@keyframes zoom-out {
+    0%,100%{
+        transform-origin: 50% 30%;
+    }
+    0%{
+        transform: scale(.05);
+    }
+    20%{
+        transform: scale(.8);
+    }
+    30%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    70%{
+        transform: scale(.35);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+
+#ec_container,
+#wb_container{
+    display: none;
+}
+
+#wb_container{
+    background:#fff url(http://edm.mcake.com/shuxy/2016/EC/images/sel_bg.jpg) no-repeat 50% 0%;
+    -webkit-animation: fadeIn .8s backwards;
+    animation: fadeIn .8s backwards;
+}
+
+#wb_container .wb-layout{
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+}
+
+#wb_container .wb-main{
+    height:720px;
+}
+
+.wb-main .detail-link{
+    position: absolute;
+    width: 725px;
+    height: 430px;
+    top: 255px;
+    left: 325px;
+    outline: 0;
+}
+
+.wb-main .detail-link img{
+    position: absolute;
+    left: 550px;
+    bottom: 80px;
+}
+
+.wb-main .wb-title{
+    position: absolute;
+    top:74px;
+    left:50px;
+}
+
+.wb-main .wb-logo{
+    position: absolute;
+    left:10px;
+    top:122px;
+}
+
+.wb-main .sel-area{
+    position: absolute;
+    left:48px;
+    top:373px;
+}
+
+.wb-main .sel-area .sel-item b{
+    display: inline-block;
+    width:18px;
+    height:18px;
+    cursor: pointer;
+    background: url(http://edm.mcake.com/shuxy/2016/EC/images/sel_icon.png) no-repeat;
+}
+
+.wb-main .sel-area .sel-item.selected b{
+    width:32px;
+    height:29px;
+    background-image: url(http://edm.mcake.com/shuxy/2016/EC/images/sel_icon_ok.png);
+}
+
+
+.wb-main .sel-area .line{
+    height:1px;
+    font-size: 0;
+    overflow: hidden;
+    margin:12px 0;
+}
+.wb-main .sel-area .buy-btn{
+    margin-top:25px;
+    margin-right:10px;
+    cursor: pointer;
+}
+.wb-main .sel-area .line img,
+.wb-main .sel-area .buy-btn img{
+    margin-left:17px;
+}
+
+
+#wb_container .wb-footer{
+    background-color: #383333;
+    padding:30px 0;
+}
+
+#wb_container .wb-footer .wb-layout {
+    width:680px;
+}
+
+.wb-footer h3{
+    margin:0;
+    font-size:15px;
+    color:#c6c6c6;
+    font-weight: normal;
+    font-family: "Microsoft YaHei";
+}
+
+.wb-footer p{
+    font-size:14px;
+    color:#c6c6c6;
+    margin:0;
+    line-height: 1.5;
+    font-family: "Microsoft YaHei";
+}
+
+.slide-down{
+    -webkit-animation: slide-down .8s ease backwards;
+    animation: slide-down .8s ease backwards;
+}
+
+.zoom2normal{
+    -webkit-animation: zoom2normal .8s ease backwards .8s;
+    animation: zoom2normal .8s ease backwards .8s;
+}
+
+.slide-up{
+    -webkit-animation: slide-up .8s ease backwards 1.6s;
+    animation: slide-up .8s ease backwards 1.6s;
+}
+
+@-webkit-keyframes fadeIn {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes slide-down {
+    from{
+        -webkit-transform: translateY(-50%);
+        opacity: 0;
+    }
+    to{
+        -webkit-transform: translateY(0%);
+        opacity:1;
+    }
+}
+
+@keyframes slide-down {
+    from{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes slide-up {
+    from{
+        -webkit-transform: translateY(50%);
+        opacity: 0;
+    }
+    to{
+        -webkit-transform: translateY(0%);
+        opacity:1;
+    }
+}
+
+@keyframes slide-up {
+    from{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes zoom2normal {
+    0%, 100%{
+        -webkit-transform-origin: 50% 30%;
+    }
+    0%{
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes zoom2normal {
+    0%, 100%{
+        transform-origin: 50% 30%;
+    }
+    0%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity:1;
+    }
+}

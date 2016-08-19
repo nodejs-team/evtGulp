@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EC</title>
+</head>
+<body>
+
+<link type="text/css" rel="stylesheet" href="http://edm.mcake.com/shuxy/2016/EC/css/ec_main.css"/>
+<style>
+    #wb_container{position:relative; padding-bottom:25px;}
+    #wb_container .mask-link{position:absolute; left:0; top:0; width:100%; height:100%; background-color:#fff; opacity:0; filter:alpha(opacity=0); z-index:0;}
+</style>
+<div id="ec_loading">
+    <div id="ec_load_inner">
+        <div id="ec_load"></div>
+        <span id="ec_spin"></span>
+    </div>
+</div>
+<div id="ec_container">
+    <div class="ec-main">
+        <div class="ec-anim ec-count">
+            <div id="ec_counter"></div>
+        </div>
+        <div class="ec-anim ec-walk">
+            <div id="ec_walk"></div>
+        </div>
+        <div class="ec-anim ec-dance">
+            <div id="ec_dance"></div>
+            <div class="code_drk"></div>
+        </div>
+        <div class="ec-masker">
+            <div id="ec_heart" class="ec-heart"></div>
+        </div>
+    </div>
+</div>
+
+<div id="wb_container">
+    <div class="wb-main wb-layout">
+        <div class="wb-title slide-down">
+            <a href="/activity/2016/ruiketahouai.html"><img src="http://edm.mcake.com/shuxy/2016/EC/images/ec_title.png"/></a>
+        </div>
+        <div class="wb-logo zoom2normal">
+            <a href="/activity/2016/ruiketahouai.html"><img src="http://edm.mcake.com/shuxy/2016/EC/images/ec_logo.png"/></a>
+        </div>
+
+        <div id="select_region" class="sel-area slide-up">
+            <div class="sel-item selected">
+                <img src="http://edm.mcake.com/shuxy/2016/EC/images/buy_sel_1.png"/>
+                <b></b>
+            </div>
+            <div class="line">
+                <img src="http://edm.mcake.com/shuxy/2016/EC/images/sel_line.png"/>
+            </div>
+            <div class="sel-item">
+                <img src="http://edm.mcake.com/shuxy/2016/EC/images/buy_sel_2.png"/>
+                <b></b>
+            </div>
+            <div class="buy-btn">
+                <img src="http://edm.mcake.com/shuxy/2016/EC/images/buy_btn.png"/>
+            </div>
+        </div>
+
+        <a href="/activity/2016/ruiketahouai.html" class="detail-link" hide-focus="true">
+            <img src="http://edm.mcake.com/shuxy/2016/EC/images/link_hint.png"/>
+        </a>
+
+    </div>
+    <a href="/activity/2016/ruiketahouai.html" class="mask-link" style="display: none;"></a>
+</div>
+
+<script type="text/javascript" src="/shop/theme/xth1/js/activity/2016/ruiketahouai/ec_main.js"></script>
+<script>
+$(function(){
+    $("#select_region").on("click", ".sel-item", function(){
+        $(this).addClass('selected').siblings('.sel-item').removeClass('selected');
+    });
+});
+</script>
+
+</body>
+</html>

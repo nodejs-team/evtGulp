@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EC</title>
+    <link type="text/css" rel="stylesheet" href="css/ec_main.css"/>
+</head>
+<body>
+    <div id="ec_loading">
+        <div id="ec_load_inner">
+            <div id="ec_load"></div>
+            <span id="ec_spin"></span>
+        </div>
+    </div>
+    <div id="ec_container">
+        <div class="ec-main">
+            <div class="ec-anim ec-count">
+                <div id="ec_counter"></div>
+            </div>
+            <div class="ec-anim ec-walk">
+                <div id="ec_walk"></div>
+            </div>
+            <div class="ec-anim ec-dance">
+                <div id="ec_dance"></div>
+                <div class="code_drk"></div>
+            </div>
+            <div class="ec-masker">
+                <div id="ec_heart" class="ec-heart"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wb_container">
+        <div class="wb-main wb-layout">
+            <div class="wb-title slide-down">
+                <img src="http://edm.mcake.com/shuxy/2016/EC/images/ec_title.png"/>
+            </div>
+            <div class="wb-logo zoom2normal">
+                <img src="http://edm.mcake.com/shuxy/2016/EC/images/ec_logo.png"/>
+            </div>
+
+            <div class="sel-area slide-up">
+                <div class="sel-item selected">
+                    <img src="http://edm.mcake.com/shuxy/2016/EC/images/buy_sel_1.png"/>
+                    <b></b>
+                </div>
+                <div class="line">
+                    <img src="http://edm.mcake.com/shuxy/2016/EC/images/sel_line.png"/>
+                </div>
+                <div class="sel-item">
+                    <img src="http://edm.mcake.com/shuxy/2016/EC/images/buy_sel_2.png"/>
+                    <b></b>
+                </div>
+                <div class="buy-btn">
+                    <img src="http://edm.mcake.com/shuxy/2016/EC/images/buy_btn.png"/>
+                </div>
+            </div>
+
+            <a href="#" class="detail-link" hide-focus="true">
+                <img src="http://edm.mcake.com/shuxy/2016/EC/images/link_hint.png"/>
+            </a>
+
+        </div>
+
+        <div class="wb-footer">
+            <div class="wb-layout">
+                <h3>活动规则</h3>
+                <p>1、活动时间：2016年4月12日-4月28日</p>
+                <p>2、活动期间购买瑞可塔厚爱加50元即可升级磅数，1磅升2磅，2磅升3磅。其他品类及规格不参与升磅活动。</p>
+                <p>3、本活动与会员等级制度、积分同享，但不与现金卡、专享卡、优惠券、红包、银行所有优惠同享。</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/ec_main.js"></script>
+
+<script>
+    window.onload = function() {
+        Resource.baseUrl = 'images/';
+
+        var resLoader = new Resource.JSONloader('default.res.json');
+        resLoader.on('success', function (data) {
+
+            var preLoader = new Resource.loadGroup("loading", data);
+            preLoader.on('complete', function () {
+                var mc_loading = new MovieClip(Resource.getRes('l[1-2]_png'), Resource.getRes('loading_json'), 'mc_loading', 'ec_load');
+                mc_loading.gotoAndPlay(1, -1);
+
+                var loader = new Resource.loadGroup("preload", data);
+                var ecSpin = Resource.el('#ec_spin');
+
+                loader.on("progress", function (loaded, total) {
+                    ecSpin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
+                });
+
+                loader.on("complete", function () {
+                    mc_loading.stop();
+                    document.body.removeChild(Resource.el('#ec_loading'));
+                    Resource.el('#ec_container').style.display = 'block';
+
+                    var mc_count = new MovieClip('ani_png','ani_json', 'mc_ani', 'ec_counter');
+                    var mc_walk = new MovieClip('w[1-19]_png', 'walk_json', 'mc_walk', 'ec_walk');
+                    var mc_dance = new MovieClip('d[2-18]_png', 'dance_json', 'mc_dance', 'ec_dance');
+
+                    mc_count.gotoAndPlay(1, 1);
+                    mc_walk.gotoAndStop(0);
+
+                    mc_count.on("complete", function () {
+                        this.el.style.display = "none";
+                        mc_walk.gotoAndPlay(1, 1);
+                    });
+
+                    mc_walk.on("complete", function () {
+                        this.el.style.display = "none";
+                        mc_dance.el.parentNode.style.display = 'block';
+                        mc_dance.gotoAndPlay(1, 1);
+                    });
+
+                    mc_dance.on("complete", function () {
+                        var heart = document.getElementById('ec_heart');
+                        var ret = /MSIE (\d+\.\d+)/.exec(navigator.userAgent);
+                        var endHandle = function () {
+                            this.style.display = 'none';
+                            Resource.el('#ec_container').style.display = 'none';
+                            Resource.el('#wb_container').style.display = 'block';
+                        };
+
+                        if (!ret || ret[1] > 9) {
+                            heart.style.display = 'block';
+                            heart.addEventListener('webkitAnimationEnd', endHandle);
+                            heart.addEventListener('animationend', endHandle);
+                        }
+                        else {
+                            var zoom = 0.1;
+                            heart.style.zoom = zoom;
+                            heart.style.marginLeft = (707 - 707 * zoom) / 2 + 'px';
+                            heart.style.marginTop = (644 - 644 * zoom) / 2 + 'px';
+                            heart.style.display = 'block';
+
+                            var inter = setInterval(function () {
+                                if (zoom > 1.5) {
+                                    clearInterval(inter);
+                                    endHandle.call(heart);
+                                    return;
+                                }
+                                zoom += 0.2;
+                                heart.style.zoom = zoom;
+                                heart.style.marginLeft = (707 - 707 * zoom) / 2 + 'px';
+                                heart.style.marginTop = (644 - 644 * zoom) / 2 + 'px';
+                            }, 150);
+                        }
+                    });
+
+                });
+                //end loader
+
+            });
+            //end preloader
+        });
+        //end resLoader
+    };
+</script>
+
+</body>
+</html>

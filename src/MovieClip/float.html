@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript" src="http://edm.mcake.com/shuxy/2016/EC/js/ec_main.min.js"></script>
+<script>
+    (function(d,w){
+
+        var flg = d.createElement('div');
+        flg.style.cssText = 'position:fixed;right:70px;top:120px;z-index:2000;';
+        if( !w.XMLHttpRequest ){
+            flg.style.position = 'absolute';
+            w.onscroll = function(){
+                flg.style.top = d.documentElement.scrollTop + 120 + "px";
+            }
+        }
+        flg.innerHTML = '<a href="http://www.mcake.com/activity/2016/napoleon_package.html"><div id="float_banner"></div></a>';
+        d.body.appendChild(flg);
+
+        var float_data =  {
+            "groups":[
+                {
+                    "keys":"bd1_png,bd2_png,bd3_png,bd4_png",
+                    "name":"float"
+                }],
+            "resources":[
+                {
+                    "name":"bd1_png",
+                    "type":"image",
+                    "url":"http://edm.mcake.com/shuxy/2016/EC/images/float/bd1.png"
+                },
+                {
+                    "name":"bd2_png",
+                    "type":"image",
+                    "url":"http://edm.mcake.com/shuxy/2016/EC/images/float/bd2.png"
+                },
+                {
+                    "name":"bd3_png",
+                    "type":"image",
+                    "url":"http://edm.mcake.com/shuxy/2016/EC/images/float/bd3.png"
+                },
+                {
+                    "name":"bd4_png",
+                    "type":"image",
+                    "url":"http://edm.mcake.com/shuxy/2016/EC/images/float/bd4.png"
+                }
+            ]
+        };
+
+        var mc_config = {
+            "mc":{
+                "mc_float":{
+                    "frameRate":200,
+                    "frames":[]
+                }}
+        };
+
+        var loader = new Resource.loadGroup("float", float_data);
+        loader.addEvent("complete", function () {
+            var mc_dance = new MovieClip(Resource.getRes('bd[1-4]_png'), mc_config, 'mc_float', 'float_banner');
+                mc_dance.gotoAndPlay(1,-1);
+        });
+
+    })(document,window);
+
+</script>
+</body>
+</html>

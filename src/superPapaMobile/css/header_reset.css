@@ -1,0 +1,78 @@
+body header{
+    height:100px;
+    z-index: 50;
+}
+body header a.icon {
+    width: 60px;
+    height: 60px;
+    background-size: 640px;
+}
+body header a.icon.back{
+    left:10px;
+    top:16px;
+    background-position: -178px -10px;
+}
+body header a.icon.home{
+    right:10px;
+    top:16px;
+    background-position: -250px -10px;
+}
+body header .title{
+    padding-top:15px;
+    font-size:30px;
+    line-height: 30px;
+}
+body header .title span{
+    font-size:22px;
+}
+body ul.list_c{
+    width:460px;
+}
+body .Eject_title p{
+    font-size:30px;
+    line-height: 60px;
+    padding-bottom:10px;
+}
+body .Ejectbox_hy{
+    font-size:28px;
+    line-height: 36px;
+    padding-top:50px;
+}
+body .Ejectbox_hy P{
+    padding-top:20px;
+}
+body .input_style{
+    font-size:26px;
+}
+body ul.list_c li a.to_city{
+    height:70px;
+    font-size:30px;
+}
+body ul.list_c li a.to_city select{
+    padding-top:80px;
+}
+body ul.list_c li a.to_city:before{
+    line-height: 50px;
+}
+body ul.list_c li.Ex_btn_box input{
+    height:70px;
+    line-height: 50px;
+}
+body .Eject_title:before{
+    width:50px;
+    height:55px;
+    left:115px;
+    top:-16px;
+    background-size: 640px auto;
+    background-position: -255px -290px;
+}
+
+body .close_2{
+    width:60px;
+    height:60px;
+    background-size: 100% 100%;
+}
+
+body .tc-con-1 {
+    margin: 40px 40px 0 40px;
+}

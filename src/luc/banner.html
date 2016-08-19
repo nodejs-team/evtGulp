@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>蓝莓轻乳</title>
+</head>
+<body>
+<style>
+    body{
+        margin:0;
+        min-width:inherit;
+    }
+    .luc-banner{
+        position: relative;
+       /* height:743px;*/
+        background: url(images/banner/bg.jpg) no-repeat 50% 0;
+        background-size: cover;
+        overflow: hidden;
+    }
+    #luc-mainWrap{
+        position: absolute;
+        left:0;
+        width:100%;
+        top:0;
+        height:100%;
+    }
+    .luc-bn-main{
+        position: relative;
+        width:1000px;
+        margin:0 auto;
+        z-index: 20;
+    }
+    .luc-banner .wwf-logo{
+        position: absolute;
+        left:50%;
+        top:0;
+        width:93px;
+        margin-left:-46.5px;
+    }
+    #luc-elMain{
+        margin-top:160px;
+    }
+    .luc-bn-el{
+        position: absolute;
+        left:50%;
+        top:0;
+        width:394px;
+        margin-left:-197px;
+    }
+    .luc-bn-el .action-btn{
+        position: absolute;
+        left:50%;
+        top:280px;
+        margin-left:-80px;
+        width:172px;
+        height:44px;
+        line-height: 100;
+        background-color: #fff;
+        opacity: 0;
+        filter:alpha(opacity=0);
+        overflow: hidden;
+    }
+    .luc-banner .video-player{
+        position: absolute;
+        width:100%;
+        top:0;
+        left:0;
+    }
+    .luc-banner .video-player .luc-video,
+    .luc-banner .video-player video{
+        display: block;
+        width:100% !important;
+        height:auto !important;
+    }
+    .lte-banner .video-player{
+        left:50%;
+        margin-left:-960px;
+    }
+    .lte-banner .video-player,
+    .lte-banner .video-player .luc-video,
+    .lte-banner .video-player video{
+        width:1920px !important;
+        height:750px !important;
+    }
+    .mask-link{
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background-color: #fff;
+        opacity:0;
+        filter:alpha(opacity=0);
+        z-index: 50;
+    }
+    .vjs-control-bar{
+        display:none;
+    }
+</style>
+
+<div id="luc-banner" class="luc-banner" style="margin-bottom: 15px;height:743px;">
+    <div id="luc-mainWrap" style="position: static;">
+        <img src="images/banner/wwf-logo.png" class="wwf-logo" />
+        <div id="luc-bnMain" class="luc-bn-main">
+           <div class="luc-bn-el">
+               <div id="luc-elMain">
+                <img src="images/banner/el.png" />
+                <a href="/activity/2016/luke_et_dondon.html" id="video-start" class="action-btn">立即拯救</a>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div id="video-player" class="video-player">
+        <video id="topic_player" width="1920" height="750" class="luc-video" autoplay></video>
+    </div>
+    <a href="/activity/2016/luke_et_dondon.html" class="mask-link"></a>
+</div>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<!-- build:js js/banner/luc.js -->
+<script src="vjs/video.js"></script>
+<script type="text/javascript" src="js/banner/luc.js"></script>
+<!-- endbuild -->
+</body>
+</html>

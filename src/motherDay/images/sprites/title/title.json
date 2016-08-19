@@ -1,0 +1,16 @@
+{"mc":{
+	"mc_title":{
+		"frameRate":200,
+		"frames":[
+			{
+				"x":0,
+				"y":0,
+				"duration":200
+			},
+			{
+				"x":0,
+				"y":0,
+				"duration":200
+			}
+		]
+}}}

@@ -1,0 +1,299 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+img{border:0;}
+
+
+.page-container{
+    position: absolute;
+    left:0;
+    top:100px;
+    right:0;
+    bottom: 0;
+}
+
+.page-content{
+    position: fixed;
+    left:0;
+    top:100px;
+    width:100%;
+    height:100%;
+}
+
+.page-scroller{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+/*.page-scrollview{
+    height:3240px;
+}*/
+
+.section-points{
+    position: absolute;
+    right:30px;
+    top:40%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.section-points li{
+    width:12px;
+    height:12px;
+    background-color: #fff;
+    -webkit-border-radius:12px;
+    border-radius:12px;
+    margin-bottom:12px;
+    cursor: pointer;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+
+.section-points li.active{
+    background-color: #ce5049;
+}
+
+.section{
+    position: relative;
+    width:100%;
+    /*height:1080px;*/
+    height:100%;
+    overflow: hidden;
+}
+
+.section .sec-half{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width:50%;
+}
+
+.section .sec-left{
+    left:0;
+}
+
+.section .sec-right{
+    right:0;
+}
+
+.section .sec-layout{
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left:-500px;
+    width:1000px;
+    height:100%;
+}
+
+.section img{
+    display: block;
+    width:auto;
+}
+
+.section .title{
+    position: absolute;
+    left:50%;
+    top:6.48%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height:11.3%;
+}
+
+.section .cake-main{
+    position: absolute;
+    left:50%;
+    top:22.37%;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    margin-left:2px;
+    height:56.44%;
+}
+
+.section .cake-side{
+    position: absolute;
+    left:50%;
+    top:31.94%;
+    height:48.59%;
+}
+
+.section .buy-info{
+    position: absolute;
+    top:84.43%;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.section .buy-info .price{
+    display: inline-block;
+    width:150px;
+    height:20px;
+    background: url(../images/buy_spr.png) no-repeat 50% 0;
+}
+
+.section .buy-info .buy-btn{
+    display: block;
+    width:150px;
+    height:39px;
+    margin-top:20px;
+    line-height: 100;
+    overflow: hidden;
+    background: url(../images/buy_spr.png) no-repeat 0 -61px;
+}
+
+.section .buy-info .buy-btn.disabled{
+    background-position: 0 -101px;
+}
+
+.section .img-wrap{
+    position: relative;
+}
+
+.section .img-wrap .response{
+    width:auto;
+    max-height: 100%;
+}
+
+.section .img-wrap .img-text{
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+/*第一屏*/
+.section-first .sec-left{
+    background-color: #383838;
+}
+
+.section-first .sec-right{
+    background-color: #e3eef5;
+}
+
+.section-first .spoon1{
+    position: absolute;
+    right:170px;
+    top:53.89%;
+    height:23.7%;
+}
+
+.section-first .spoon2{
+    position: absolute;
+    left:95px;
+    top:22%;
+    height:18.24%;
+}
+
+.section-first .text1{
+    position: absolute;
+    right:78px;
+    top:32.83%;
+    /*height:6.3%;*/
+}
+
+.section-first .text2{
+    position: absolute;
+    left:97px;
+    top:48.15%;
+    /*height:9.26%;*/
+}
+
+/*第二屏*/
+.section-second .sec-left{
+    background-color: #383838;
+}
+
+.section-second .spoon2{
+    position: absolute;
+    left:95px;
+    top:22%;
+    height:18.24%;
+}
+
+.section-second .sec-right{
+    background-color: #f4dfe6;
+}
+
+.section-second .text2{
+    position: absolute;
+    left:97px;
+    top:48.15%;
+   /* height:9.3%;*/
+}
+
+.section-second .rose{
+    position: absolute;
+    right:165px;
+    top:26.85%;
+    height:23.61%;
+}
+
+.section-second .text3{
+    position: absolute;
+    right:200px;
+    top:39.17%;
+    /*height:7.78%;*/
+}
+
+.section-second .cake{
+    position: absolute;
+    right:88px;
+    top:50%;
+    height:25.19%;
+}
+
+.section-second .buy-info .price{
+    background-position: 0 -22px;
+}
+
+/*第三屏*/
+.section-third .sec-left{
+    background-color: #f4dfe6;
+}
+
+.section-third .sec-right{
+    background-color: #383838;
+}
+
+.section-third .spoon1{
+    position: absolute;
+    right:170px;
+    top:582px;
+    height:23.7%;
+}
+
+.section-third .litchi{
+    position: absolute;
+    left:235px;
+    top:357px;
+    height:18.61%;
+}
+
+.section-third .text1{
+    position: absolute;
+    left:144px;
+    top:522px;
+    /*height:7.87%;*/
+}
+.section-third .cake2{
+    position: absolute;
+    left:217px;
+    top:505px;
+    /*height:4.35%;*/
+}
+
+.section-third .text3{
+    position: absolute;
+    right:78px;
+    top:387px;
+   /* height:6.3%;*/
+}
+
+.section-third .cake{
+    position: absolute;
+    /*left:377px;*/
+    left:50%;
+    top:224px;
+    height:54.81%;
+    -webkit-transform: translateX(-35.66%);
+    transform: translateX(-35.66%);
+}

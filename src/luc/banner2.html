@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>蓝莓轻乳</title>
+</head>
+<body>
+<style>
+    body{
+        margin:0;
+    }
+    .luc-banner{
+        position: relative;
+        height:743px;
+        background: url(images/banner/bg.jpg) no-repeat 50% 0;
+        overflow: hidden;
+    }
+    .luc-bn-main{
+        position: relative;
+        width:1000px;
+        height:743px;
+        margin:0 auto;
+    }
+    .luc-bn-el{
+        position: absolute;
+        left:50%;
+        top:0;
+        margin-left:-264px;
+    }
+    .luc-bn-el .action-btn{
+        position: absolute;
+        left:50%;
+        top:404px;
+        margin-left:-88px;
+        width:172px;
+        height:44px;
+        line-height: 100;
+        background-color: #fff;
+        opacity: 0;
+        filter:alpha(opacity=0);
+        overflow: hidden;
+    }
+    .luc-banner .luc-sd{
+        display: none;
+        position: absolute;
+        left:0;
+        bottom:0;
+        width:100%;
+        height:7px;
+        background: url(images/banner/lin-sd.png) repeat-x;
+    }
+    .luc-banner .video-player{
+        position: absolute;
+        left:50%;
+        width:1920px;
+        top:-165px;
+        margin-left:-960px;
+        height:100%;
+        visibility: hidden;
+    }
+    .luc-banner .video-player.show{
+        visibility: visible;
+    }
+    .luc-banner .video-player .luc-video,
+    .luc-banner .video-player video{
+        display: block;
+        width:1920px;
+        height:1080px;
+    }
+    .vjs-control-bar{
+        display:none;
+    }
+    .luc-banner .video-play{
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin:-61px 0 0 -61px;
+        width:122px;
+        height:122px;
+        background: url(images/vjs-ctrls.png) no-repeat 0 -150px;
+        cursor: pointer;
+    }
+
+    .luc-banner .video-play.pause{
+        background-position: 0 0;
+    }
+
+    .luc-banner .video-play.hidden{
+        visibility: hidden;
+    }
+</style>
+
+<div class="luc-banner" style="margin-bottom: 15px;">
+    <div class="luc-bn-main">
+       <div class="luc-bn-el">
+           <img src="images/banner/el.png" />
+           <a href="javascript:;" id="video-start" class="action-btn">立即拯救</a>
+       </div>
+    </div>
+    <div id="video-player" class="video-player">
+        <video id="topic_player" width="1920" height="1080" class="luc-video"></video>
+    </div>
+    <div id="video-play" class="video-play hidden pause"></div>
+    <div class="luc-sd"></div>
+</div>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<!-- build:js js/banner/luc.js -->
+<script src="vjs/video.js"></script>
+<script type="text/javascript" src="js/banner/luc.js"></script>
+<!-- endbuild -->
+</body>
+</html>

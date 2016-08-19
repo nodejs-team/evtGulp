@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>super papa</title>
+    <link rel="stylesheet" type="text/css" href="http://www.mcake.com/wap/theme/xth1/css/comm_header.css?v=1438917841" />
+
+    <!-- build:css css/super_papa.css -->
+    <link type="text/css" rel="stylesheet" href="css/super_papa.css" />
+    <link type="text/css" rel="stylesheet" href="css/header_reset.css" />
+    <!-- endbuild -->
+
+    <script type="text/javascript">
+        (function(){
+            var phoneWidth = parseInt(window.screen.width);
+            var phoneScale = phoneWidth/750;
+
+            var ua = navigator.userAgent;
+            if (/Android (\d+\.\d+)/.test(ua)) {
+                var version = parseFloat(RegExp.$1);
+                // andriod 2.3
+                if (version > 2.3) {
+                    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+                    // andriod 2.3以上
+                } else {
+                    document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+                }
+                // 其他系统
+            } else {
+                if(navigator.userAgent.indexOf("iPhone") != -1) {
+                    document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+                }else if(navigator.userAgent.indexOf("iPad") != -1) {
+                    document.write('<meta name="viewport" content="width=1024, user-scalable=no, target-densitydpi=device-dpi">');
+                }
+            }
+        })();
+    </script>
+</head>
+
+<body>
+<header>
+    <a href="/wap" class="icon back"></a>
+    <div class="title">
+        Nouveauté<br><span>最新活动</span>
+    </div>
+    <a href="/wap" class="icon home"></a>
+</header>
+
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container">
+    <div class="evt-content">
+        <div class="secItem vendors" data-anim="fade-in" data-delay="0.6">
+            <img src="images/logo_in.png" />
+            <img src="images/logo_dp.png" />
+        </div>
+        <div class="secItem vendors2" data-anim="fade-in" data-delay="1">
+            <img src="images/logo_mcake.png" />
+        </div>
+        <div class="secItem papa-title" data-anim="slide-down-l" data-delay="0">
+            <div id="super_papa"></div>
+        </div>
+        <div class="secItem bulaji" data-anim="slide-down-l" data-delay="0.8">
+            <img src="images/bulaji.png" />
+        </div>
+        <div class="secItem price-wrap bulaji-text" data-anim="slide-down-r" data-delay="1.6">
+            <img src="images/bulaji_text.png" />
+            <a href="#" class="buy-btn">立即订购</a>
+        </div>
+        <div class="secItem bulaji-arrow" data-anim="fade-in" data-delay="2">
+            <img src="images/bulaji_arrow.png" />
+        </div>
+        <div class="secItem fly-papa" data-anim="slide-down-r" data-delay="2.4" data-chain=".fly-papa-arrow">
+            <img src="images/fly_papa.png" />
+        </div>
+        <div class="secItem fly-papa-arrow" data-anim="fade-in" data-ignore="true">
+            <img src="images/fly_papa-arrow.png" />
+        </div>
+        <div id="cake_info" class="secItem cake2-info" data-anim="slide-up-l" data-delay="3.2">
+            <img src="images/cake2_info.png" />
+        </div>
+        <div id="cake_layer" class="cake-layer">
+            <img src="images/cake-hint.png" />
+        </div>
+        <div class="secItem mango" data-anim="slide-up-r" data-delay="4">
+            <img src="images/mango.png" />
+        </div>
+        <div class="secItem price-wrap left mango-text" data-anim="slide-up-l" data-delay="4.8" data-delay-adjust="0.2">
+            <img src="images/mango_text.png" />
+            <a href="#" class="buy-btn">立即订购</a>
+        </div>
+        <div class="secItem picture" data-anim="slide-up-l" data-delay="5" data-chain=".chocolate">
+            <img src="images/picture.png" />
+        </div>
+        <div class="secItem chocolate" data-anim="slide-down-r" data-delay="5.8" data-ignore="true">
+            <img src="images/chocolate.png" />
+        </div>
+        <div class="secItem price-wrap chocolate-text" data-anim="slide-up-r" data-delay="6.6" data-delay-adjust="0.4">
+            <img src="images/chocolate_text.png" />
+            <a href="#" class="buy-btn">立即订购</a>
+        </div>
+        <div class="secItem chocolate-arrow" data-anim="fade-in" data-delay="7" data-delay-adjust="1.6">
+            <img src="images/chocolate_arrow.png" />
+        </div>
+        <div class="secItem nuts-cake" data-anim="slide-down-r" data-delay="7.4">
+            <img src="images/nuts_cake.png" />
+        </div>
+        <div class="secItem price-wrap left nuts-text" data-anim="slide-up-l" data-delay="8.2" data-delay-adjust="0.4">
+            <img src="images/nuts_text.png" />
+            <a href="#" class="buy-btn">立即订购</a>
+        </div>
+        <div class="secItem nuts-arrow" data-anim="fade-in" data-delay="9" data-delay-adjust="0.8">
+            <img src="images/nuts_arrow.png" />
+        </div>
+        <div class="secItem nuts" data-anim="fade-in" data-delay="8.6" data-delay-adjust="1.1">
+            <a href="http://www.mcake.com/shop/goods-11491.html" target="_blank">
+                <img src="images/nuts.png" />
+            </a>
+        </div>
+
+        <div class="secItem footer">
+            <div class="footer-content">
+                <p>活动详情请访问Mcake官网：http://www.mcake.com</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/shuxy/2016/children/js/ec_main.js"></script>
+<!-- build:js js/super_papa.js -->
+<script type="text/javascript" src="js/super_papa.js"></script>
+<!-- endbuild -->
+</body>
+</html>
