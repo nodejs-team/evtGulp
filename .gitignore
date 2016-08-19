@@ -1,9 +1,8 @@
 .sass-cache
 .DS_Store
 .idea
+.gitignore
 
-license
-ignore
 dist
 node_modules/*
 bower_components/
