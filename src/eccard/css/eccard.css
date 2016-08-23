@@ -121,7 +121,7 @@ img{border:0;}
     background: url(../images/buy_btn.png) no-repeat;
 }
 
-.secItem.q3 .buy-btn.disabled{
+.secItem.q3 .buy-btn.disable{
     background: url(../images/buy_btn_disabled.png);
 }
 
@@ -165,12 +165,13 @@ img{border:0;}
     top:862px;
 }
 
-.secItem.q7 .arrow{
+.secItem.q7 .q7-arrow{
+    position:absolute;
     left:476px;
     top:318px;
 }
 
-.secItem.q7 .ticket{
+.secItem.q7 .q7-text{
     position: absolute;
     left:537px;
     top:106px;
@@ -192,7 +193,7 @@ img{border:0;}
     background: url(../images/buy_btn2.png) no-repeat;
 }
 
-.secItem.q8 .buy-btn.disabled{
+.secItem.q8 .buy-btn.disable{
     background: url(../images/buy_btn2_disabled.png);
 }
 

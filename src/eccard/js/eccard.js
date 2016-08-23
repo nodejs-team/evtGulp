@@ -5,7 +5,7 @@
     var resData = {
         "groups":[
             {
-                "keys":"side_bear_png,text1_png,text2_png,ticket1_png,ticket2_png,top_bg_jpg,tv_png,arrow1_png,arrow2_png,arrow3_png,bear_png,bear_ugly_png,buy_btn_png,buy_btn_disabled_png,buy_btn2_png,buy_btn2_disabled_png,cake_card1_png,cateau_png,chocolate-box_png,main_bg_jpg,price1_png,price2_png,qie_png,qie_dance_png",
+                "keys":"qie_png,qie_dance_png,side_bear_png,text1_png,text2_png,ticket1_png,ticket2_png,top_bg_jpg,tv_png,arrow1_png,arrow2_png,arrow3_png,bear_png,bear_ugly_png,buy_btn_png,buy_btn_disabled_png,buy_btn2_png,buy_btn2_disabled_png,cake_card1_png,cateau_png,chocolate-box_png,main_bg_jpg,price1_png,price2_png",
                 "name":"preload"
             }],
         "resources":[
@@ -143,73 +143,73 @@
                     "res":"3F15C2F5",
                     "x":3,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"4CB2A03",
                     "x":9,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"E789DB42",
                     "x":18,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"59B27F27",
                     "x":33,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"53D58AF",
                     "x":47,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"71F859F6",
                     "x":47,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"BC6666C7",
                     "x":47,
                     "y":3,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"4BD749E",
                     "x":47,
                     "y":25,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"E25C6AEA",
                     "x":40,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"6D6719E3",
                     "x":32,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"C2AFE1FB",
                     "x":24,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 },
                 {
                     "res":"2F0177F3",
                     "x":18,
                     "y":28,
-                    "duration":2
+                    "duration":4
                 }
             ]
         }},
@@ -827,6 +827,9 @@
     var setQieMC = function(){
         var mc = new MovieClip(Resource.getRes('qie_dance_png'), qieMcData, 'qie', 'qie_dance');
         mc.gotoAndPlay(1, 1);
+        mc.on('complete', function(){
+            mc.gotoAndStop(1);
+        })
         return mc;
     };
 
@@ -898,11 +901,12 @@
             Resource.el('#evt_loading').style.display = "none";
             Resource.el('#evt_container').style.display = 'block';
             correctPNG($('#evt_container .evt_main').get(0));
-            setQieMC();
+
             setTvMC();
             setBearMC();
             setSideBearMC();
             setBearUglyMC();
+            setQieMC();
             bindScroll('#evt_container');
         };
         var loader = new Resource.loadGroup("preload", resData);
