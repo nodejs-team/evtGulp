@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Egret</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+	<style>
+		html, body {
+			-ms-touch-action: none;
+			background-color: #fff;
+			margin: 0;
+			min-width:inherit !important;
+			height: 100%;
+		}
+		.evt-contaner{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			bottom: 0;
+		}
+		.evt-content{
+			height:100%;
+		}
+		.egret-view{
+			position: fixed;
+			width:100%;
+			height:100%;
+		}
+	</style>
+
+	<script>
+		var supportCanvas = (function(){
+			var context = document.createElement('canvas').getContext;
+			if( !context ) return false;
+			return true;
+		})();
+
+		if( !supportCanvas ){
+			location.href = 'children_old.html';
+		}
+
+		var is_disabled = 1;
+		var _SOURCE_BASE_ = '';
+	</script>
+
+    <!--这个标签为通过egret提供的第三方库的方式生成的 javascript 文件。删除 modules_files 标签后，库文件加载列表将不会变化，请谨慎操作！-->
+    <!--modules_files_start-->
+	<script egret="lib" src="libs/modules/egret/egret.js" src-release="libs/modules/egret/egret.min.js"></script>
+	<script egret="lib" src="libs/modules/egret/egret.web.js" src-release="libs/modules/egret/egret.web.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.js" src-release="libs/modules/game/game.min.js"></script>
+	<script egret="lib" src="libs/modules/game/game.web.js" src-release="libs/modules/game/game.web.min.js"></script>
+	<script egret="lib" src="libs/modules/tween/tween.js" src-release="libs/modules/tween/tween.min.js"></script>
+	<script egret="lib" src="libs/modules/res/res.js" src-release="libs/modules/res/res.min.js"></script>
+	<!--modules_files_end-->
+
+    <!--这个标签为不通过egret提供的第三方库的方式使用的 javascript 文件，请将这些文件放在libs下，但不要放在modules下面。-->
+    <!--other_libs_files_start-->
+    <!--other_libs_files_end-->
+
+    <!--这个标签会被替换为项目中所有的 javascript 文件。删除 game_files 标签后，项目文件加载列表将不会变化，请谨慎操作！-->
+    <!--game_files_start-->
+	<script egret="game" src="bin-debug/bird.js"></script>
+	<script egret="game" src="bin-debug/birdC.js"></script>
+	<script egret="game" src="bin-debug/book.js"></script>
+	<script egret="game" src="bin-debug/fish.js"></script>
+	<script egret="game" src="bin-debug/house.js"></script>
+	<script egret="game" src="bin-debug/LoadingUI.js"></script>
+	<script egret="game" src="bin-debug/Main.js"></script>
+	<script egret="game" src="bin-debug/man.js"></script>
+	<script egret="game" src="bin-debug/mouse.js"></script>
+	<script egret="game" src="bin-debug/mouseC.js"></script>
+	<script egret="game" src="bin-debug/scene1.js"></script>
+	<script egret="game" src="bin-debug/scene2.js"></script>
+	<script egret="game" src="bin-debug/scene3.js"></script>
+	<script egret="game" src="bin-debug/scene4.js"></script>
+	<script egret="game" src="bin-debug/Settings.js"></script>
+	<script egret="game" src="bin-debug/Skating.js"></script>
+	<script egret="game" src="bin-debug/snow.js"></script>
+	<script egret="game" src="bin-debug/snowScene.js"></script>
+	<script egret="game" src="bin-debug/Utils.js"></script>
+	<!--game_files_end-->
+</head>
+
+<body>
+<link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
+<div class="header">
+
+	<div class="header_top_box">
+		<div class="header_top">
+			<div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+				<div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+					<div class="wallbox wall_top">
+						<div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+						<div class="logoer">
+							<a href="http://ebsig.mcake.com">
+								<img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+							</a>
+						</div>
+						<ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+						<ul class="navbar">
+							<!--网站录音功能 add by zan.yu 2015-12-11 ---start----->
+							<li class="record" style="display: none;">
+								<a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+							</li>
+							<!--网站录音功能 add by zan.yu 2015-12-11 ---end----->
+							<li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+							<li class="m_cart">
+								<a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="wallbox">
+					<div class="header_right">
+						<ul class="phone_delivery">
+							<li class="phone"><span>4006-678-678</span><i></i></li>
+							<li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+						</ul>
+						<div class="city" id="city">
+							<ul>
+								<li id="city-641" data-id="641"><a href="javascript: void(0);">杭州市</a></li>
+								<li id="city-110" data-id="110" class="cur"><a href="javascript: void(0);">上海市</a></li>
+								<li id="city-665" data-id="665"><a href="javascript: void(0);">苏州市</a></li>
+								<li id="city-675" data-id="675"><a href="javascript: void(0);">北京市</a></li>
+							</ul>
+							<samp></samp>
+						</div>
+					</div>
+					<ul class="menu">
+						<li>
+							<a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+						</li>
+						<li>
+							<a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+						</li>
+						<li>
+							<a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+						</li>
+						<li>
+							<a href="/shop/member_center.html" target="_blank">
+								<samp>Mon M'CAKE</samp>
+								<span>会员中心</span>
+							</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="evt-contaner">
+	<div class="evt-content">
+		<div class="egret-view">
+			<div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+				 data-entry-class="Main"
+				 data-orientation="auto"
+				 data-scale-mode="noBorder"
+				 data-frame-rate="30"
+				 data-content-width="1920"
+				 data-content-height="960"
+				 data-show-paint-rect="false"
+				 data-multi-fingered="2"
+				 data-show-fps="false" data-show-log="false"
+				 data-log-filter="" data-show-fps-style="x:0,y:0,size:30,textColor:0x00c200,bgAlpha:0.9">
+			</div>
+		</div>
+		<div class="evt-scroll-view"></div>
+	</div>
+</div>
+
+<script>
+	//默认使用 WebGL 渲染模式
+	//egret.runEgret({renderMode: "webgl"});
+	egret.runEgret();
+</script>
+
+</body>
+</html>

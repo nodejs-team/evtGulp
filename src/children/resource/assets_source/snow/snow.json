@@ -1,0 +1,13 @@
+{"file":"snow.png","frames":{
+"snow1":{"x":388,"y":153,"w":121,"h":116,"offX":0,"offY":0,"sourceW":121,"sourceH":116},
+"snow2":{"x":297,"y":410,"w":45,"h":45,"offX":0,"offY":0,"sourceW":45,"sourceH":45},
+"snow3":{"x":388,"y":271,"w":105,"h":112,"offX":0,"offY":0,"sourceW":105,"sourceH":112},
+"snow4":{"x":0,"y":0,"w":277,"h":233,"offX":0,"offY":0,"sourceW":277,"sourceH":233},
+"snow5":{"x":279,"y":0,"w":147,"h":151,"offX":0,"offY":0,"sourceW":147,"sourceH":151},
+"snow6":{"x":213,"y":410,"w":82,"h":82,"offX":0,"offY":0,"sourceW":82,"sourceH":82},
+"snow7":{"x":428,"y":0,"w":114,"h":114,"offX":0,"offY":0,"sourceW":114,"sourceH":114},
+"snow8":{"x":0,"y":235,"w":211,"h":206,"offX":0,"offY":0,"sourceW":211,"sourceH":206},
+"snow9":{"x":388,"y":385,"w":102,"h":99,"offX":0,"offY":0,"sourceW":102,"sourceH":99},
+"snow10":{"x":0,"y":235,"w":211,"h":206,"offX":0,"offY":0,"sourceW":211,"sourceH":206},
+"snow11":{"x":279,"y":153,"w":71,"h":71,"offX":0,"offY":0,"sourceW":71,"sourceH":71},
+"snow12":{"x":213,"y":235,"w":173,"h":173,"offX":0,"offY":0,"sourceW":173,"sourceH":173}}}
