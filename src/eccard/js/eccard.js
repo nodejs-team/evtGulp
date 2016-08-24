@@ -827,9 +827,9 @@
     var setQieMC = function(){
         var mc = new MovieClip(Resource.getRes('qie_dance_png'), qieMcData, 'qie', 'qie_dance');
         mc.gotoAndPlay(1, 1);
-        mc.on('complete', function(){
+        mc.addEvent('complete', function(){
             mc.gotoAndStop(1);
-        })
+        });
         return mc;
     };
 
