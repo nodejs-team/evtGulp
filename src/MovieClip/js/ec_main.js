@@ -200,6 +200,10 @@
             return this;
         },
 
+        addEvent: function(){
+            return this.on.apply(this, arguments);
+        },
+
         off: function(eventName, handle, scope){
             if( handle === undefined ){
                 delete this._eventPool[eventName];
@@ -832,19 +836,29 @@
 
             var self = this,
                 index = 0,
-                length = sources.length,
-                obj = sources[index];
+                length = sources.length;
+                //obj = sources[index];
 
             this.superClass.constructor.call(this);
 
-            loadAsset(obj, function handle() {
+            /*loadAsset(obj, function handle() {
                 self.dispatch('progress', ++index, length, obj);
                 if (index > length - 1) {
                     self.dispatch('complete');
                     return;
                 }
                 loadAsset((obj = sources[index]), handle);
+            });*/
+
+            sources.forEach(function(source){
+                loadAsset(source, function(){
+                    self.dispatch('progress', ++index, length, source);
+                    if (index > length - 1) {
+                        self.dispatch('complete');
+                    }
+                });
             });
+
         };
 
         classExtend(loadGroup, Event);

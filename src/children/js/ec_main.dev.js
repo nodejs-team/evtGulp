@@ -663,19 +663,29 @@
 
             var self = this,
                 index = 0,
-                length = sources.length,
-                obj = sources[index];
+                length = sources.length;
+                //obj = sources[index];
 
             this.superClass.constructor.call(this);
 
-            loadAsset(obj, function handle() {
+            /*loadAsset(obj, function handle() {
                 self.dispatchEvent('progress', ++index, length, obj);
                 if (index > length - 1) {
                     self.dispatchEvent('complete');
                     return;
                 }
                 loadAsset((obj = sources[index]), handle);
+            });*/
+
+            sources.forEach(function(source){
+                loadAsset(source, function(){
+                    self.dispatchEvent('progress', ++index, length, source);
+                    if (index > length - 1) {
+                        self.dispatchEvent('complete');
+                    }
+                });
             });
+
         };
 
         classExtend(loadGroup, Event);
