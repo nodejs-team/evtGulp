@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="css/eccard.css" />
     <!-- endbuild -->
 </head>
-<body>
+<body style="height: 8000px;">
 
 <link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
 <div class="header">
@@ -86,11 +86,14 @@
 </div>
 
 <div id="evt_container" class="evt-container evt-banner" style="position:relative;margin-top:-100px;margin-bottom:15px;">
+    <div id="evt_floater" class="secItem float" style="position:fixed;left:50%;top:95px;margin-left:400px;z-index:90;">
+        <a href="http://www.mcake.com/shop/goods-11400.html" target="_blank">
+            <div id="float"></div>
+            <img src="images/banner/cake-text.png" style="margin-left:32px;margin-top:-5px;" />
+        </a>
+    </div>
 
     <div class="evt-content">
-        <div class="secItem float" style="left:1000px;top:95px;">
-            <div id="float"></div>
-        </div>
         <div class="secItem qb1" data-anim="slide-down-r">
             <img src="images/banner/q1.png" width="356" height="316" />
         </div>
@@ -129,5 +132,20 @@
 <!-- build:js js/eccard_banner.js -->
 <script type="text/javascript" src="js/eccard_banner.js"></script>
 <!-- endbuild -->
+
+<script>
+    $(function(){
+        var height = $("#evt_container").outerHeight();
+        var floater = $("#evt_floater");
+        var fHeight = 200;
+        $(window).on("scroll", function(){
+            if(  $(this).scrollTop() > height - fHeight ){
+                floater.css({position: "absolute", top: height - 144});
+            } else {
+                floater.css({position: "fixed", top: "95px"});
+            }
+        });
+    });
+</script>
 </body>
 </html>
