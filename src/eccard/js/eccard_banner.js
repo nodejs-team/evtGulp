@@ -606,7 +606,7 @@
 
     var bindScroll = function( container ){
 
-        var checkOffset = 200;
+        var checkOffset = 0;
         var $win = $(window);
         var winHeight = $win.height();
         var initScrollTop = $win.scrollTop();

@@ -86,7 +86,7 @@
 </div>
 
 <div id="evt_container" class="evt-container evt-banner" style="position:relative;margin-top:-100px;margin-bottom:15px;">
-    <div id="evt_floater" class="secItem float" style="position:fixed;left:50%;top:95px;margin-left:400px;z-index:90;">
+    <div id="evt_floater" class="secItem float" style="position:fixed;top:95px;z-index:90;">
         <a href="http://www.mcake.com/shop/goods-11400.html" target="_blank">
             <div id="float"></div>
             <img src="images/banner/cake-text.png" style="margin-left:32px;margin-top:-5px;" />
@@ -138,6 +138,9 @@
         var height = $("#evt_container").outerHeight();
         var floater = $("#evt_floater");
         var fHeight = 200;
+        floater.css({
+            left: $(window).width() - 160
+        });
         $(window).on("scroll", function(){
             if(  $(this).scrollTop() > height - fHeight ){
                 floater.css({position: "absolute", top: height - 144});

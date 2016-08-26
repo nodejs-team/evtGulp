@@ -1,7 +1,7 @@
 {
     "project" : "Gulp",     
     "localserver" : {
-        "host" : "192.168.47.168",
+        "host" : "192.168.46.86",
         "port" : "8081"
     },
     "tinypngapi": "2u4HCdRMrLoU4UTy6yb2ssKkGeEpNPrN",
