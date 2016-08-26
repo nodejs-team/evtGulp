@@ -152,7 +152,7 @@ gulp.task('minify-inline', function() {
     var options = {
         js: {
             output: {
-                comments: true
+                comments: false
             }
         },
         jsSelector: 'script[type!="text/template"]',
