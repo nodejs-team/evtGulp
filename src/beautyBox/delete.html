@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0" />
+		<title>删除数据</title>
+	</head>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/server.js"></script>
+	<body>
+	<button>删除</button>
+	<script>
+		document.querySelector('button').onclick = function(){
+			$.post(getServerUrl() + "/beautyBox/deleteById", {
+				userId: "9bde8df4-15f1-4ce3-88a2-9d9bce20b66b",
+				password: "99bbad18-fa4b-4b50-9065-ee132875c65a"
+			}, function(res){
+				res = eval(res);
+				if( res.success ){
+					alert("删除成功");
+				} else {
+					alert(res.message);
+				}
+			})
+		}
+	</script>
+	</body>
+</html>

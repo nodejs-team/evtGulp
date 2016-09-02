@@ -1,7 +1,7 @@
 {
     "project" : "Gulp",     
     "localserver" : {
-        "host" : "192.168.46.86",
+        "host" : "192.168.47.107",
         "port" : "8081"
     },
     "tinypngapi": "2u4HCdRMrLoU4UTy6yb2ssKkGeEpNPrN",
@@ -12,6 +12,6 @@
         "key" : "",
         "remotePath" :"/2016/snowMan/"
     },
-    "projectName": "eccard",
+    "projectName": "beautyBox",
     "revPrefix": "http://edm.mcake.com/shuxy/2016/"
 }   
