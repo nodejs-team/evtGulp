@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>EC MovieClip</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .movieclip{
+            position: absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<canvas id="canvas-movieclip" class="movieclip"></canvas>
+
+<script src="scripts/jquery.min.js"></script>
+
+<script src="scripts/base.js"></script>
+<script src="scripts/utils.js"></script>
+<script src="scripts/Event.js"></script>
+<script src="scripts/TouchEvent.js"></script>
+<script src="scripts/Loader.js"></script>
+<script src="scripts/requestAnimationFrame.js"></script>
+<script src="scripts/Ticker.js"></script>
+<script src="scripts/Timer.js"></script>
+<script src="scripts/Easing.js"></script>
+<script src="scripts/Tween.js"></script>
+<script src="scripts/renderer.js"></script>
+<script src="scripts/MovieClip.js"></script>
+<!--<script src="all.min.js"></script>-->
+
+<script>
+    var imgLoader = RES.loadImage("qie_dance.png");
+
+    imgLoader.on("success", function(qieBitMapData){
+        var resLoader = RES.loadJson("mc_qie.json");
+        resLoader.on("success", function(resData){
+            var canvas = document.getElementById('canvas-movieclip');
+            var stage = new EC.Stage(canvas, {
+                width: 750,
+                height: 1334
+            });
+
+            var mc = new EC.MovieClip(qieBitMapData, resData, 'qie');
+            mc.x = 50;
+            mc.y = 50;
+            mc.gotoAndPlay(1, -1);
+            stage.addChild(mc);
+            mc.touchEnabled = true;
+
+            var shape = new EC.Shape();
+            shape.fill("#000", 0.5);
+            shape.rect(50, 250, 200, 200);
+            stage.addChild(shape);
+            shape.touchEnabled = true;
+
+            shape.on("touch", function(e){
+                //shape.visible = false;
+                console.log(shape);
+            });
+
+        });
+    });
+</script>
+</body>
+</html>

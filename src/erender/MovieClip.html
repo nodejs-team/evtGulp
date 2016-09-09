@@ -1,0 +1,187 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>EC MovieClip</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .movieclip{
+            position: absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="ec_loading">
+    <div id="ec_load_inner">
+        <div id="ec_load"></div>
+        <span id="ec_spin"></span>
+    </div>
+</div>
+
+<canvas id="canvas-movieclip" class="movieclip" width="375" height="667"></canvas>
+
+<script src="scripts/jquery.min.js"></script>
+
+<script src="scripts/base.js"></script>
+<script src="scripts/utils.js"></script>
+<script src="scripts/Event.js"></script>
+<script src="scripts/Loader.js"></script>
+<script src="scripts/requestAnimationFrame.js"></script>
+<script src="scripts/Ticker.js"></script>
+<script src="scripts/Timer.js"></script>
+<script src="scripts/Easing.js"></script>
+<script src="scripts/Tween.js"></script>
+<script src="scripts/renderer.js"></script>
+<script src="scripts/MovieClip.js"></script>
+
+<script>
+    var resData = {
+        "groups":[
+            {
+                "keys":"rabbit_big_png,rabbit_lose_png,rabbit_win_png",
+                "name":"preload"
+            },
+            {
+                "keys":"l1_png,l2_png,loading_json",
+                "name":"loading"
+            }],
+        "resources":[
+            {
+                "name":"rabbit_big_png",
+                "type":"image",
+                "url":"sprites/rabbit_big.png"
+            },
+            {
+                "name":"rabbit_lose_png",
+                "type":"image",
+                "url":"sprites/rabbit_lose.png"
+            },
+            {
+                "name":"rabbit_win_png",
+                "type":"image",
+                "url":"sprites/rabbit_win.png"
+            }]
+    };
+
+    var rightRunningMap = ["0 -854", "-174 -852", "-349 -852", "-524 -852", "-698 -851", "-873 -848"];
+    var leftRunningMap = ["0 -373", "-175 -376", "-350 -377", "-524 -377", "-699 -377", "-873 -379"];
+    var rabbitWinMap = ["0 0", "-198 0", "-401 0", "-609 0", "-816 0", "0 -96", "-208 -97", "-415 -97", "-623 -97", "-831 -97", "0 -203", "-207 -203", "-415 -203", "-623 -203", "-831 -203", "0 -307", "-206 -307", "-414 -307", "-623 -307"];
+    var rabbitLoseMap = ["0 0", "-163 0", "-327 0", "-491 0", "-655 0", "-819 0", "0 -135", "-166 -135", "-333 -135", "-500 -135", "-668 -135", "-835 -135", "0 -262"];
+
+    var loader = RES.loadGroup("preload", resData);
+    var ecSpin = RES.el('#ec_spin');
+    var stage;
+
+    loader.on("progress", function (loaded, total) {
+        ecSpin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
+    });
+
+    loader.on("complete", function () {
+        RES.el('#ec_loading').style.display = 'none';
+
+        startGame();
+
+    });
+    //end loader
+
+    function startGame(){
+        var canvas = document.getElementById('canvas-movieclip');
+        stage = new EC.Stage(canvas);
+
+        setRabbitMC1();
+        setRabbitMC2();
+        setRabbitMC3();
+        setRabbitMC4();
+    }
+
+    function setRabbitMC1(){
+        var mcRabbit1 = new EC.MovieClip('rabbit_big_png', rightRunningMap, 'bigRunning');
+        mcRabbit1.width = 102;
+        mcRabbit1.height = 80;
+        mcRabbit1.gotoAndPlay(1, -1, 20);
+       /* mcRabbit1.el.onclick = function () {
+            if( mcRabbit1.isPlaying ){
+                mcRabbit1.pause();
+            } else {
+                mcRabbit1.play();
+            }
+        };*/
+
+        stage.addChild(mcRabbit1);
+
+        return mcRabbit1;
+    }
+
+    function setRabbitMC2(){
+        var startTime = Date.now();
+        var duration = 2000;
+        var startLeft = 0;
+        var distance = 200;
+        var isPaused = false;
+        var mcRabbit2 = new EC.MovieClip('rabbit_big_png', rightRunningMap, 'rightRunning');
+        mcRabbit2.y = 150;
+        mcRabbit2.width = 102;
+        mcRabbit2.height = 80;
+        mcRabbit2.gotoAndPlay(1, -1);
+        mcRabbit2.on('enterframe', function(){
+            var ratio = (Date.now()-startTime)/duration;
+            if( ratio > 1 ){
+                if( !isPaused ){
+                    mcRabbit2.setRES('rabbit_big_png', leftRunningMap);
+                    isPaused = true;
+                    ratio = 1;
+                }
+                ratio = 2 - ratio;
+                if( ratio < 0 ){
+                    ratio = 0;
+                    mcRabbit2.wait(1000).stop();
+                }
+            }
+            mcRabbit2.x = startLeft + distance*ratio;
+        });
+
+        mcRabbit2.once('complete', function(){
+            stage.removeChild(mcRabbit2);
+            mcRabbit2 = new EC.MovieClip('rabbit_win_png', rabbitWinMap, 'winRunning');
+            mcRabbit2.y = 150;
+            mcRabbit2.width = 102;
+            mcRabbit2.height = 80;
+            mcRabbit2.gotoAndPlay(1, 1);
+            stage.addChild(mcRabbit2);
+        });
+
+        stage.addChild(mcRabbit2);
+
+        return mcRabbit2;
+    }
+
+    function setRabbitMC3(){
+        var mcRabbit3 = new EC.MovieClip('rabbit_win_png', rabbitWinMap, 'winRunning');
+        mcRabbit3.y = 300;
+        mcRabbit3.width = 102;
+        mcRabbit3.height = 80;
+        mcRabbit3.gotoAndPlay(1, 3, 5);
+        stage.addChild(mcRabbit3);
+    }
+
+    function setRabbitMC4(){
+        var mcRabbit4 = new EC.MovieClip('rabbit_lose_png', rabbitLoseMap, 'loseRunning');
+        mcRabbit4.y = 450;
+        mcRabbit4.width = 102;
+        mcRabbit4.height = 80;
+        mcRabbit4.gotoAndPlay(1, 1, 5);
+        stage.addChild(mcRabbit4);
+    }
+
+</script>
+</body>
+</html>

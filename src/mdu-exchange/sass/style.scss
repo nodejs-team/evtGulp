@@ -1,0 +1,296 @@
+$red-color: #a5002f;
+$gray-color: #767676;
+$brown-color: #b0916a;
+$btn-normal-bgcolor: #b0916a;
+$bg-color: #f2f6f7;
+$btn-hover-bgcolor: darken($btn-normal-bgcolor, 10%);
+
+$btn-classname: c-btn;
+$btn-large-classname: c-btn-large;
+
+@mixin border-radius($radius: 3px){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.#{$btn-classname}{
+	display:inline-block;
+	padding:4px 8px;
+	color: #fff;
+	font-size:12px;
+	text-align:center;
+	text-decoration: none !important;
+	background-color: $btn-normal-bgcolor;
+	vertical-align:middle;
+	@include border-radius();
+	cursor: pointer;
+
+	&:hover{
+		background-color: $btn-hover-bgcolor;
+	}
+}
+
+.#{$btn-large-classname}{
+	padding:10px 20px;
+}
+
+.#{$btn-classname}.block{
+	display:block;
+}
+
+.evt-content{
+	width:1000px;
+	margin:0 auto;
+}
+
+.carsel-wrap{
+	position:relative;
+	overflow: hidden;
+	*zoom:1;
+
+	.c-arrow-left,
+	.c-arrow-right{
+		position:absolute;
+		top:50%;
+		margin-top:-30px;
+		width:28px;
+		height:59px;
+	}
+	.c-arrow-left{
+		left:25px;
+		background: url(../images/carsel-left.png) no-repeat;
+	}
+	.c-arrow-right{
+		right:25px;
+		background: url(../images/carsel-right.png) no-repeat;
+	}
+
+}
+
+.carsel-header{
+	margin-bottom: 12px;
+	height:56px;
+	background: url(../images/carsel-tit.png) no-repeat 50% 0;
+
+	h2{
+		visibility: hidden;
+	}
+}
+
+.carsel-layout{
+	position: relative;
+	float:left;
+	padding-left:68px;
+	padding-right:68px;
+}
+
+.carsel-container{
+	position:relative;
+	width:646px;
+	margin:0 auto;
+	padding:22px 0;
+	overflow: hidden;
+
+	.carsel-scroller{
+		position: relative;
+		width:5000px;
+	}
+
+	.carsel-item{
+		position: relative;
+		float: left;
+		text-align: center;
+		margin-right:25px;
+		padding-bottom: 45px;
+		width:199px;
+		height:263px;
+		background: url(../images/product-bg.png) no-repeat;
+
+		.product-img{
+			width:152px;
+			height:152px;
+			margin:18px auto;
+			overflow: hidden;
+			background-color: #b4b4b4;
+
+			img{
+				display: block;
+				width:100%;
+				height:100%;
+			}
+		}
+
+		&.on{
+			background: url(../images/product-bg-on.png) no-repeat;
+		}
+
+		p{
+			color:#666;
+			font-weight: bold;
+		}
+
+		h3{
+			margin:5px 0 0;
+			color:#7fc7f0;
+			font-weight: normal;
+			font-size:16px;
+		}
+
+		@at-root .weight-selection{
+			position: absolute;
+			left:0;
+			width:100%;
+			bottom:0;
+			text-align: center;
+
+			.weight-item{
+				position: relative;
+				display: inline-block;
+				width:46px;
+				height:30px;
+				text-align: center;
+				line-height:30px;
+				color:#fff;
+				font-size:16px;
+				vertical-align: middle;
+				background: url(../images/weight-bg.png) no-repeat;
+
+				&.on b{
+					position: absolute;
+					right:0;
+					bottom: -5px;
+					width:28px;
+					height:28px;
+					margin-right:-5px;
+					background: url(../images/ok.png) no-repeat;
+				}
+			}
+
+			.w-split{
+				display: inline-block;
+				width:2px;
+				height:30px;
+				overflow: hidden;
+				font-size:0;
+				background-color: #84c1d7;
+				margin:0 10px;
+				vertical-align: middle;
+			}
+		}
+
+	}
+}
+
+.carsel-side{
+	float:left;
+
+	.carsel-combine{
+		float:left;
+		width:18px;
+		height:20px;
+		margin-top: 165px;
+		background: url(../images/pod-combine.png) no-repeat;
+	}
+
+	.carsel-selected{
+		float:left;
+		width:198px;
+		height:291px;
+		text-align: center;
+		background: url(../images/product-bg2.png) no-repeat;
+
+		.product-img{
+			width:120px;
+			height:120px;
+			margin:88px auto 8px;
+			overflow: hidden;
+			background-color: #b4b4b4;
+
+			img{
+				display: block;
+				width:100%;
+				height:100%;
+			}
+		}
+
+		p{
+			color:#666;
+			font-weight: bold;
+		}
+
+		h3{
+			margin: 5px 0 0;
+			color:#7fc7f0;
+			font-weight: normal;
+			font-size:16px;
+		}
+	}
+}
+
+.exchange-price{
+	width:360px;
+	margin:0 auto;
+	padding:50px 0 100px;
+	overflow: hidden;
+	*zoom:1;
+
+	.exp-left{
+		float:left;
+		margin-right:25px;
+	}
+
+	.exp1{
+		font-size:18px;
+		text-decoration: line-through;
+		color:#666;
+	}
+
+	.exp2{
+		font-size:22px;
+		color:#c6985e;
+		font-weight: bold;
+	}
+
+	.exchange-btn{
+		display: inline-block;
+		width:193px;
+		height:52px;
+		background: url(../images/exchange-btn.png) no-repeat;
+		text-indent: -9999px;
+	}
+}
+
+.evt-container{
+	position: relative;
+	margin-top: -100px;
+	padding-top:1192px;
+	background:#ecf3f7 url(../images/tp_magbg.jpg) no-repeat 50% 22px;
+}
+
+.evt-footer{
+	background-color: #f5f5f5;
+	padding:45px 0 80px;
+
+	@at-root .evt-footer-bd{
+		width:1000px;
+		margin:0 auto;
+	}
+
+	.evt-rules{
+		margin-left:132px;
+
+		h2{
+			margin:0 0 10px;
+			font-size:18px;
+		}
+
+		p{
+			font-size:16px;
+			color:#333;
+			text-indent: -1.5em;
+			padding-left: 1.5em;
+			margin-bottom: 10px;
+		}
+	}
+}

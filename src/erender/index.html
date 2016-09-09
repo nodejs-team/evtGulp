@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>弹幕</title>
+    <link type="text/css" rel="stylesheet" href="styles/chat-bullet.css">
+</head>
+
+<body style="background-color: #000;">
+
+<div class="chat-container">
+
+    <div class="message-container">
+        <canvas id="canvas-bullets" class="bullets" width="100%" height="100%"></canvas>
+    </div>
+
+    <div class="actions-layer">
+        <div id="act_layer_top" class="flex act-layer-top">
+        </div>
+        <div class="act-layer-bottom">
+            <div class="acts-list">
+                <span class="act-icon act-sendMsg" data-action="sendMsg"></span>
+            </div>
+            <div class="panel-input">
+                <form id="bullet-form" class="panel-body flex">
+                    <div class="video-bullet-switcher">
+                        <span class="switcher on" data-action="bullet-switcher">
+                            <span class="switch-handle">弹</span>
+                        </span>
+                    </div>
+                    <input type="text" id="input_content" class="flex-item input-content" placeholder="和大家说点什么" />
+                    <button type="submit" id="send-button" class="send-button">发送</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="scripts/jquery.min.js"></script>
+
+<script src="scripts/base.js"></script>
+<script src="scripts/utils.js"></script>
+<script src="scripts/Event.js"></script>
+<script src="scripts/Loader.js"></script>
+<script src="scripts/requestAnimationFrame.js"></script>
+<script src="scripts/Ticker.js"></script>
+<script src="scripts/Timer.js"></script>
+<script src="scripts/Easing.js"></script>
+<script src="scripts/Tween.js"></script>
+<script src="scripts/renderer.js"></script>
+<script src="scripts/MovieClip.js"></script>
+
+<script src="scripts/bulletManager.js"></script>
+<script src="scripts/chat-bullet.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>EC MovieClip</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .movieclip{
+            position: absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="ec_loading">
+    <div id="ec_load_inner">
+        <div id="ec_load"></div>
+        <span id="ec_spin"></span>
+    </div>
+</div>
+
+<canvas id="canvas-movieclip" class="movieclip"></canvas>
+
+<script src="scripts/jquery.min.js"></script>
+
+<script src="scripts/base.js"></script>
+<script src="scripts/utils.js"></script>
+<script src="scripts/Event.js"></script>
+<script src="scripts/Loader.js"></script>
+<script src="scripts/requestAnimationFrame.js"></script>
+<script src="scripts/Ticker.js"></script>
+<script src="scripts/Timer.js"></script>
+<script src="scripts/Easing.js"></script>
+<script src="scripts/Tween.js"></script>
+<script src="scripts/renderer.js"></script>
+<script src="scripts/MovieClip.js"></script>
+
+<script>
+    var resConfig = RES.loadJson("res.json");
+    resConfig.on("success", function(resData){
+
+        var loader = RES.loadGroup("preload", resData);
+        var ecSpin = RES.el('#ec_spin');
+        var stage;
+
+        loader.on("progress", function (loaded, total) {
+            ecSpin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
+        });
+
+        loader.on("complete", function () {
+            RES.el('#ec_loading').style.display = 'none';
+
+            startGame();
+
+        });
+
+        function startGame(){
+            var canvas = document.getElementById('canvas-movieclip');
+            stage = new EC.Stage(canvas);
+
+            setMC();
+        }
+
+        function setMC(){
+            var mc = new EC.MovieClip(RES.getRes('a[1-12]_png'), RES.getRes('mc_json'), 'bear_ugly');
+            mc.y = 100;
+            mc.anchorX = 0.5;
+            mc.anchorY = 0.5;
+            mc.gotoAndPlay(1, -1);
+            EC.Tween.get(mc).to({scaleX: 0.5, scaleY: 0.5}, 600, EC.Easing.easeIn)
+                    .wait(600)
+                    .to({scaleX: 1, scaleY: 1}, 600, EC.Easing.easeIn)
+                    .call(function(){
+                        console.log("complete");
+                    });
+
+            stage.addChild(mc);
+
+            return mc;
+        }
+
+    });
+</script>
+</body>
+</html>

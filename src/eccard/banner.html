@@ -89,7 +89,13 @@
     <div id="evt_floater" class="secItem float" style="position:fixed;top:95px;z-index:90;">
         <a href="http://www.mcake.com/shop/goods-11400.html" target="_blank">
             <div id="float"></div>
-            <img src="images/banner/cake-text.png" style="margin-left:32px;margin-top:-5px;" />
+            <img src="images/banner/cake-text.png" style="margin-left:48px;margin-top:-5px;" />
+        </a>
+    </div>
+
+    <div id="evt_floater2" class="secItem float" style="position:fixed;top:309px;z-index:90;">
+        <a href="#" target="_blank">
+            <img src="images/banner/moon_cake.png" />
         </a>
     </div>
 
@@ -137,15 +143,25 @@
     $(function(){
         var height = $("#evt_container").outerHeight();
         var floater = $("#evt_floater");
-        var fHeight = 200;
-        floater.css({
+        var floater2 = $("#evt_floater2");
+        var fHeight = 500;
+        var fHeight2 = 400;
+        floater.add(floater2).css({
             left: $(window).width() - 160
         });
         $(window).on("scroll", function(){
             if(  $(this).scrollTop() > height - fHeight ){
-                floater.css({position: "absolute", top: height - 144});
+                floater.css({position: "absolute", top: height - 400});
             } else {
                 floater.css({position: "fixed", top: "95px"});
+            }
+        });
+
+        $(window).on("scroll", function(){
+            if(  $(this).scrollTop() > height - fHeight2 ){
+                floater2.css({position: "absolute", top: height - 119});
+            } else {
+                floater2.css({position: "fixed", top: "309px"});
             }
         });
     });
