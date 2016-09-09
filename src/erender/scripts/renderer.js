@@ -143,7 +143,7 @@
             }
 
             if( object.$type == 'TextField' ){
-                mixTextSize(object.MainContext, object);
+                mixTextSize(object.renderContext, object);
             }
 
             this.numChildren = this._children.length;
@@ -391,7 +391,8 @@
 
         },
         addChild: function( childObj ){
-            childObj.MainContext = this.MainContext;
+            childObj.renderContext = this.renderContext;
+            childObj.stage = this.stage;
             Sprite.superclass.addChild.apply(this, arguments);
 
             if( this.getChilds().length == 1 ) {
@@ -418,6 +419,7 @@
             this.width = parseFloat(this.canvas.getAttribute("width")) || this.options.width;
             this.height = parseFloat(this.canvas.getAttribute("height")) || this.options.height;
             this.scaleRatio = 1;
+            this._isRendering = false;
             this._ticker = new EC.Ticker();
 
             this.canvas.width = this.width;
@@ -490,7 +492,8 @@
             this.removeAllChildren();
         },
         start: function(){
-            if( EC.isDefined(self.renderTimer) ) return this;
+            if( this._isRendering ) return;
+            this._isRendering = true;
             this._ticker.start();
 
             return this;
@@ -498,6 +501,7 @@
         stop: function(){
             this._ticker.stop();
             this.dispatch("stop");
+            this._isRendering = false;
             return this;
         },
         _triggerAddToStage: function( childObj ){
@@ -539,9 +543,9 @@
         _initEvents: function(){
 
             this._ticker.on("ticker", function(){
-               this.clear();
-               this.render();
-               this.dispatch("enterframe");
+                this.clear();
+                this.render();
+                this.dispatch("enterframe");
             }, this);
 
             this.on("enterframe", this._triggerEnterFrame, this);

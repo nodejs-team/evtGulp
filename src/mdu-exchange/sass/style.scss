@@ -60,10 +60,22 @@ $btn-large-classname: c-btn-large;
 	.c-arrow-left{
 		left:25px;
 		background: url(../images/carsel-left.png) no-repeat;
+
+		&.disabled{
+			background-image: url(../images/carsel-left-disabled.png);
+			cursor: default;
+			pointer-events: none;
+		}
 	}
 	.c-arrow-right{
 		right:25px;
 		background: url(../images/carsel-right.png) no-repeat;
+
+		&.disabled{
+			background-image: url(../images/carsel-right-disabled.png);
+			cursor: default;
+			pointer-events: none;
+		}
 	}
 
 }

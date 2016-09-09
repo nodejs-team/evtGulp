@@ -224,22 +224,37 @@
 		var rightArrow = carselLayout.find(".c-arrow-right");
 		var slideIndex = 0;
 
+		leftArrow.addClass("disabled");
+
 		function slide(index){
 			scoller.css({
 				position: "relative"
 			}).animate({
 				left: -itemW * index + "px"
-			}, 600);
+			}, 600, function(){
+				if( index == 0 ){
+					leftArrow.addClass("disabled");
+				}
+				else if( index == itemLength - visible ){
+					rightArrow.addClass("disabled");
+				}
+			});
 		}
 
 		leftArrow.on("click", function(e){
 			e.preventDefault();
+			if( rightArrow.hasClass("disabled") ){
+				rightArrow.removeClass("disabled");
+			}
 			if( --slideIndex < 0 ) slideIndex = 0;
 			slide(slideIndex);
 		});
 
 		rightArrow.on("click", function(e){
 			e.preventDefault();
+			if( leftArrow.hasClass("disabled") ){
+				leftArrow.removeClass("disabled");
+			}
 			if( ++slideIndex > itemLength - visible ) slideIndex = itemLength - visible;
 			slide(slideIndex);
 		});

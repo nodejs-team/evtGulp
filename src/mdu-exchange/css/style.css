@@ -55,23 +55,35 @@
   background: url(../images/carsel-left.png) no-repeat;
 }
 /* line 64, ../sass/style.scss */
+.carsel-wrap .c-arrow-left.disabled {
+  background-image: url(../images/carsel-left-disabled.png);
+  cursor: default;
+  pointer-events: none;
+}
+/* line 70, ../sass/style.scss */
 .carsel-wrap .c-arrow-right {
   right: 25px;
   background: url(../images/carsel-right.png) no-repeat;
 }
+/* line 74, ../sass/style.scss */
+.carsel-wrap .c-arrow-right.disabled {
+  background-image: url(../images/carsel-right-disabled.png);
+  cursor: default;
+  pointer-events: none;
+}
 
-/* line 71, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .carsel-header {
   margin-bottom: 12px;
   height: 56px;
   background: url(../images/carsel-tit.png) no-repeat 50% 0;
 }
-/* line 76, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .carsel-header h2 {
   visibility: hidden;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .carsel-layout {
   position: relative;
   float: left;
@@ -79,7 +91,7 @@
   padding-right: 68px;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .carsel-container {
   position: relative;
   width: 646px;
@@ -87,12 +99,12 @@
   padding: 22px 0;
   overflow: hidden;
 }
-/* line 95, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .carsel-container .carsel-scroller {
   position: relative;
   width: 5000px;
 }
-/* line 100, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .carsel-container .carsel-item {
   position: relative;
   float: left;
@@ -103,7 +115,7 @@
   height: 263px;
   background: url(../images/product-bg.png) no-repeat;
 }
-/* line 110, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .carsel-container .carsel-item .product-img {
   width: 152px;
   height: 152px;
@@ -111,29 +123,29 @@
   overflow: hidden;
   background-color: #b4b4b4;
 }
-/* line 117, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .carsel-container .carsel-item .product-img img {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 124, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .carsel-container .carsel-item.on {
   background: url(../images/product-bg-on.png) no-repeat;
 }
-/* line 128, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .carsel-container .carsel-item p {
   color: #666;
   font-weight: bold;
 }
-/* line 133, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .carsel-container .carsel-item h3 {
   margin: 5px 0 0;
   color: #7fc7f0;
   font-weight: normal;
   font-size: 16px;
 }
-/* line 140, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .weight-selection {
   position: absolute;
   left: 0;
@@ -141,7 +153,7 @@
   bottom: 0;
   text-align: center;
 }
-/* line 147, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .weight-selection .weight-item {
   position: relative;
   display: inline-block;
@@ -154,7 +166,7 @@
   vertical-align: middle;
   background: url(../images/weight-bg.png) no-repeat;
 }
-/* line 159, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .weight-selection .weight-item.on b {
   position: absolute;
   right: 0;
@@ -164,7 +176,7 @@
   margin-right: -5px;
   background: url(../images/ok.png) no-repeat;
 }
-/* line 170, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .weight-selection .w-split {
   display: inline-block;
   width: 2px;
@@ -176,11 +188,11 @@
   vertical-align: middle;
 }
 
-/* line 185, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .carsel-side {
   float: left;
 }
-/* line 188, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .carsel-side .carsel-combine {
   float: left;
   width: 18px;
@@ -188,7 +200,7 @@
   margin-top: 165px;
   background: url(../images/pod-combine.png) no-repeat;
 }
-/* line 196, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .carsel-side .carsel-selected {
   float: left;
   width: 198px;
@@ -196,7 +208,7 @@
   text-align: center;
   background: url(../images/product-bg2.png) no-repeat;
 }
-/* line 203, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .carsel-side .carsel-selected .product-img {
   width: 120px;
   height: 120px;
@@ -204,18 +216,18 @@
   overflow: hidden;
   background-color: #b4b4b4;
 }
-/* line 210, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .carsel-side .carsel-selected .product-img img {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 217, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .carsel-side .carsel-selected p {
   color: #666;
   font-weight: bold;
 }
-/* line 222, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .carsel-side .carsel-selected h3 {
   margin: 5px 0 0;
   color: #7fc7f0;
@@ -223,7 +235,7 @@
   font-size: 16px;
 }
 
-/* line 231, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .exchange-price {
   width: 360px;
   margin: 0 auto;
@@ -231,24 +243,24 @@
   overflow: hidden;
   *zoom: 1;
 }
-/* line 238, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .exchange-price .exp-left {
   float: left;
   margin-right: 25px;
 }
-/* line 243, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .exchange-price .exp1 {
   font-size: 18px;
   text-decoration: line-through;
   color: #666;
 }
-/* line 249, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .exchange-price .exp2 {
   font-size: 22px;
   color: #c6985e;
   font-weight: bold;
 }
-/* line 255, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .exchange-price .exchange-btn {
   display: inline-block;
   width: 193px;
@@ -257,7 +269,7 @@
   text-indent: -9999px;
 }
 
-/* line 264, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 .evt-container {
   position: relative;
   margin-top: -100px;
@@ -265,26 +277,26 @@
   background: #ecf3f7 url(../images/tp_magbg.jpg) no-repeat 50% 22px;
 }
 
-/* line 271, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 .evt-footer {
   background-color: #f5f5f5;
   padding: 45px 0 80px;
 }
-/* line 275, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 .evt-footer-bd {
   width: 1000px;
   margin: 0 auto;
 }
-/* line 280, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .evt-footer .evt-rules {
   margin-left: 132px;
 }
-/* line 283, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .evt-footer .evt-rules h2 {
   margin: 0 0 10px;
   font-size: 18px;
 }
-/* line 288, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .evt-footer .evt-rules p {
   font-size: 16px;
   color: #333;
