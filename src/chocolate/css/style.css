@@ -41,6 +41,7 @@ img{border:0;}
 
 .evt_area1{
     background:black;
+    position:relative;
 }
 
 .evt_area1 .head-player{
@@ -54,6 +55,16 @@ img{border:0;}
 }
 
 .evt_area1 video{
+    width:100%;
+}
+
+.evt_area1 .top_img{
+    width:15%;
+    top:31%;
+    left:51.5%;
+    position:absolute;
+}
+.evt_area1 .top_img img{
     width:100%;
 }
 
@@ -200,7 +211,7 @@ img{border:0;}
 }
 
 .evt_area5 .bottom-player{
-    width:100%;
+    width:320px;
     margin:0 auto;
 }
 
@@ -214,13 +225,12 @@ img{border:0;}
 }
 
 .evt_area5 .vControl{
-    width:100%;
+    width:320px;
     height:100%;
     position:absolute;
     top:0;
-    left:0;
-
-
+    left:50%;
+    margin-left:-160px;
 }
 
 .evt_area5 .vPoster{

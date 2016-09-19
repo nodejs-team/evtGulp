@@ -100,6 +100,11 @@
                 "name":"videocover_jpg",
                 "type":"image",
                 "url":"videocover.jpg"
+            },
+            {
+                "name":"top_img_png",
+                "type":"image",
+                "url":"top_img.png"
             }]
     }
 
@@ -112,7 +117,10 @@
             function() {
 
             });
-        player.on('loadedmetadata', callback);
+        player.on('loadedmetadata', function(){
+            $('.evt_area1').append('<div class="top_img"><img src="http://edm.mcake.com/weifengwang/chocolate/images/top_img.png" /></div>')
+            callback();
+        });
         return player;
     };
 
@@ -120,7 +128,7 @@
         var player = videojs('chocolate_player',
             {
                 flash: {swf: "http://edm.mcake.com/weifengwang/chocolate/vjs/video-js.swf"},
-                sources: [{src: "http://edm.mcake.com/weifengwang/chocolate/images/ll.mp4", type: "video/mp4"}]
+                sources: [{src: "http://edm.mcake.com/weifengwang/chocolate/images/video.mp4", type: "video/mp4"}]
             },
             function() {
             });
@@ -349,17 +357,24 @@
         var checkOffset = 100;
         var $win = $(window);
         var winHeight = $win.height();
+        var winWidth = $(document).width(); //$(window).width() 小于 $(document).width(),暂时没查出原因
         var initScrollTop = $win.scrollTop();
         var elems = $(container).find('[data-anim]');
         var elemObj = [];
+        var area1Height = $('.evt_area1').height();
+        var videoHeight = parseInt(winWidth / 1920*510);
         elems.each(function(){
             elemObj.push({
                 $elem: $(this),
                 anim: this.getAttribute('data-anim'),
-                scrollTop: $(this).offset().top,
+                scrollTop: $(this).offset().top - area1Height + videoHeight,
                 isAnimated: false
             });
         });
+        //说明,关于scrollTop的计算
+        //因为evt_area1是一个video,在chrome里边loadedmetadata之后获取到的video高度是正确的,
+        //但是在firefox里还是不对,导致offset.top偏大,
+        //所以这边是根据视频的长宽比例进行计算
 
         $win.on('scroll', function(){
             var scrollTop = $win.scrollTop();
@@ -371,6 +386,7 @@
                         obj.isAnimated = true;
                         return;
                     }
+
                     if (scrollTop + docHeight - checkOffset > obj.scrollTop) {
 
                         setAnimate(obj.$elem[0], obj.scrollTop < winHeight);
