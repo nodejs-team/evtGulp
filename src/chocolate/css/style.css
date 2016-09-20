@@ -70,8 +70,11 @@ img{border:0;}
 
 .evt_area2{
     height:622px;
+    background-image:url(../images/chocolate.png);
+    background-repeat: no-repeat;
+    background-position:center top;
+    overflow:hidden;
     position:relative;
-    background:url(../images/chocolate.png) top center no-repeat;
 }
 
 .evt_area2 .text{
@@ -100,6 +103,23 @@ img{border:0;}
     top:175px;
     left:50%;
     margin-left:27px;
+}
+
+.evt_area2 .ext_left,
+.evt_area2 .ext_right{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 68px;
+    background:#270d0e;
+}
+
+.evt_area2 .ext_right{
+    left:50%;
+    height:86px;
+    margin-left:600px
 }
 
 .evt_area3{
@@ -165,7 +185,7 @@ img{border:0;}
 }
 .evt_area4 .pro1{
     position:relative;
-    height:444px;
+    height:465px;
 }
 .evt_area4 .pro2{
     height:413px;
@@ -174,12 +194,12 @@ img{border:0;}
 .evt_area4 .pro1 .img{
     display:block;
     position:absolute;
-    left:85px;
+    left:33px;
     top:50px;
 }
 .evt_area4 .pro1 .text{
     position:absolute;
-    left:430px;
+    left:449px;
     top: 200px;
 }
 .evt_area4 .pro1 .btn2{
@@ -195,7 +215,7 @@ img{border:0;}
 }
 .evt_area4 .pro2 .text{
     position:absolute;
-    left:170px;
+    left:125px;
     top: 77px;
 }
 .evt_area4 .pro2 .btn2{
@@ -211,8 +231,9 @@ img{border:0;}
 }
 
 .evt_area5 .bottom-player{
-    width:320px;
+    width:100%;
     margin:0 auto;
+    overflow:hidden;
 }
 
 .evt_area5 .bottom-video{
@@ -225,21 +246,20 @@ img{border:0;}
 }
 
 .evt_area5 .vControl{
-    width:320px;
+    width:100%;
     height:100%;
     position:absolute;
     top:0;
-    left:50%;
-    margin-left:-160px;
+    left:0;
+    overflow:hidden;
 }
 
 .evt_area5 .vPoster{
     width:100%;
-    height:100%;
-    text-align:center;
     background:#000000;
     overflow:hidden;
 }
+
 
 .evt_area5 .vIcon{
     width:94px;
@@ -253,4 +273,7 @@ img{border:0;}
 }
 .evt_area5 .vIcon.pause{
     background:url(../images/pauseicon.png);
+}
+.evt_area5 .vIcon.pause:hover{
+    background:url(../images/playicon.png);
 }

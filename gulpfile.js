@@ -92,10 +92,7 @@ gulp.task('imagemin', ["copy-gif"], function () {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(rev())
         .pipe(gulp.dest(path.distImgFolder))
-        .pipe(rev.manifest())
-        .pipe(gulp.dest(path.revImg));
 });
 
 //压缩图片 - tinypng
@@ -141,10 +138,7 @@ gulp.task('useref', function () {
 //给合并的文件加版本号
 gulp.task('rev-useref', function () {
     return gulp.src([path.tmpJs, path.tmpCss])
-        .pipe(rev())
         .pipe(gulp.dest(path.dist))
-        .pipe(rev.manifest())
-        .pipe(gulp.dest(path.rev));
 });
 
 //压缩html中的css和js代码
