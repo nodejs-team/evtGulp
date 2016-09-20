@@ -23,6 +23,8 @@ var lr           = require('tiny-lr'),
     sftp         = require('gulp-sftp'),
     runSequence  = require('gulp-run-sequence'),
     handleErrors = require('./util/handleErrors'),
+    os=require('os'),
+    ifaces=os.networkInterfaces(),
     config       = require('./config.json');
 
 var SRC = 'src/' + config.projectName;
@@ -338,7 +340,7 @@ gulp.task('openbrowser', function() {
 gulp.task('webserver', function() {
     return gulp.src(path.src)
         .pipe(webserver({
-            host             : config.localserver.host,
+            host             : getIP(),
             port             : config.localserver.port,
             livereload       : true,
             directoryListing : false
@@ -371,3 +373,18 @@ gulp.task('default', ['watch','webserver','openbrowser']);
 gulp.task('build', function(done) {
     runSequence('clean','useref','rev-useref','minify-inline','imagemin', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', 'replace-sourceMap', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
 });
+
+
+function getIP(){
+    var ip = 'localhost';
+    for (var dev in ifaces) {
+        ifaces[dev].every(function(details){
+            if (details.family=='IPv4' && details.address!='127.0.0.1' && !details.internal) {
+                ip = details.address;
+                return false;
+            }
+            return true;
+        });
+    }
+    return ip;
+}
