@@ -1,0 +1,57 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+img{border:0;}
+
+.clearfix { *zoom:1;}
+.clearfix:after{
+    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+
+body{background:#000000;}
+
+.evt_container{position:relative;}
+.evt_container div>img{width:100%;}
+.evt_loading{position:absolute; height:667px; width:100%; display:none; top:0; left:0;}
+.evt_loading .loading-bg{width:1920px; height:667px; position:absolute; top:0; left:50%; margin:0 0 0 -960px}
+.evt_loading .loading-slide{position:absolute; top:52px; left:50%; margin:0 0 0 -248px;}
+.evt_loading .loading-title{position:absolute; width:302px; height:79px; top:297px; left:50%; margin:0 0 0 -151px;}
+.evt_loading .loading-load{position:absolute; width:110px; top:585px; left:50%; margin:0 0 0 -55px; text-align:center;}
+.evt_loading .loading-load .text{color:#5b5b5b; font-size:20px;}
+.evt_loading .loading-load .progress{width:110px; height:2px; background:#49494a; margin:10px 0 0 0; position:relative;}
+.evt_loading .loading-load .progress span{display:block; position:relative; top:0; left:0; background:#ff1523; height:2px; width:0%;}
+
+
+.evt_care{background:black; position:absolute; height:667px; top:0; left:0; width:100%; -webkit-perspective: 600px; overflow:hidden; display:none;}
+.evt_care .care-contain{width:1200px; height:667px; top:0; left:50%; margin:0 0 0 -600px; position:absolute; -webkit-transform:translateZ(-600px); transform:translateZ(-600px); -webkit-transition:-webkit-transform 2.5s cubic-bezier(.57,.32,.5,1.85); transition:-webkit-transform 2.5s cubic-bezier(.57,.32,.5,1.85); transition:transform 2.5s cubic-bezier(.57,.32,.5,1.85); transition:transform 2.5s cubic-bezier(.57,.32,.5,1.85), -webkit-transform 2.5s cubic-bezier(.57,.32,.5,1.85);}
+.evt_care .care-contain.restore{-webkit-transform:translateZ(0);transform:translateZ(0);}
+.evt_care .care-bg,
+.evt_care .care-glitch{width:1200px; height:667px; position:absolute; top:0; left:0;}
+.evt_care .care-glitch{opacity:0;}
+.evt_care .care-pump{width:210px; height:135px; position:absolute; background:url(../images/care-pump.png) 0 0; left:522px; top:222px;}
+.evt_care .care-pump.light{background-position:0 -135px;}
+.evt_care .lighting{width:1920px; height:667px; position:absolute; top:0; left:50%; margin:0 0 0 -960px; display:none;}
+.evt_care .glitch{position:absolute; top:0; left:0; width:100%; height:100%; background:url(../images/glitch.png) repeat; opacity:0; filter:alpha(opacity=0);}
+.evt_care .btn-text{position:absolute; top:500px; width:83px; left:50%; margin:0 0 0 -42px;}
+.evt_care .btn-contain{position:absolute; width:142px; top:555px; left:50%; margin:0 0 0 -71px; display:block;}
+.evt_care .care-btn{width:142px; display:block;}
+.evt_care .glitch-btn{position:absolute; top:0; left:0; opacity:0;}
+.evt_care .btn-glitch{position:absolute; left:50%; background:url(../images/btn-glitch.png) repeat; width:200px; height:76px; top:536px; margin:0 0 0 -100px; opacity:0; cursor:pointer; filter:alpha(opacity=0);}
+
+
+.evt_cake{position:absolute; top:0; left:0; width:100%; display:none;}
+.evt_cake .cake-contain{width:1920px; position:absolute; top:0; left:50%; margin:0 0 0 -960px;}
+.evt_cake .cake-bg{width:1920px;}
+.evt_cake .cake-cake{position:absolute; width:563px; top:197px; left:691px;}
+.evt_cake .cake-text{position:absolute; width:342px; left:50%; margin:0 0 0 -171px; top:584px;}
+.evt_cake .cake-btn{position:absolute; width:142px; height:38px; left:50%; margin:0 0 0 -71px; top:756px; background:url(../images/cake-btn.png);}
+.evt_cake .cake-btn.disable{background:url(../images/cake-btn-disable.png); cursor:default;}
+.evt_cake .rules{position:absolute; top:935px; left:728px; color:#ffffff; line-height:1.3;}
+.evt_cake .rules h2{font-size:16px;}
+.evt_cake .rules li{font-size:14px;}
+.evt_cake .cakemc{position:absolute; top:0px; left:691px; width:563px;}

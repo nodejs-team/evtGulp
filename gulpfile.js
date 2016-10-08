@@ -19,8 +19,9 @@ var lr           = require('tiny-lr'),
     revCollector = require('gulp-rev-collector'),
     useref       = require('gulp-useref'),
     gulpif       = require('gulp-if'),
-    tinypng      = require('gulp-tinypng'),
+    tinypng = require('gulp-tinypng-compress'),
     sftp         = require('gulp-sftp'),
+    ftp = require('gulp-ftp'),
     runSequence  = require('gulp-run-sequence'),
     handleErrors = require('./util/handleErrors'),
     os=require('os'),
@@ -97,14 +98,19 @@ gulp.task('imagemin', ["copy-gif"], function () {
         .pipe(gulp.dest(path.distImgFolder))
 });
 
+gulp.task('copy-image', function(){
+    return gulp.src(path.srcImg)
+        .pipe(gulp.dest(path.distImgFolder))
+})
+
 //压缩图片 - tinypng
 gulp.task('tinypng', ["copy-gif"], function () {
     return gulp.src(path.srcImg)
-        .pipe(tinypng(config.tinypngapi))
-        .pipe(rev())
-        .pipe(gulp.dest(path.distImgFolder))
-        .pipe(rev.manifest())
-        .pipe(gulp.dest(path.revImg));
+        .pipe(tinypng({
+            key:config.tinypngapi,
+            log:true
+        }))
+        .pipe(gulp.dest(SRC+'/images'))
 });
 
 //copy gif
@@ -322,12 +328,11 @@ gulp.task('clean-tmp', function () {
 //上传到远程服务器任务
 gulp.task('upload', function () {
     return gulp.src(path.dist +'/**')
-        .pipe(sftp({
+        .pipe(ftp({
             host: config.sftp.host,
             user: config.sftp.user,
-            port: config.sftp.port,
-            key: config.sftp.key,
-            remotePath: config.sftp.remotePath
+            pass: config.sftp.key,
+            remotePath: config.sftp.remotePath+'/'+ config.projectName
         }));
 });
 
@@ -371,7 +376,7 @@ gulp.task('default', ['watch','webserver','openbrowser']);
 
 //项目完成提交任务
 gulp.task('build', function(done) {
-    runSequence('clean','useref','rev-useref','minify-inline','imagemin', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', 'replace-sourceMap', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
+    runSequence('clean','useref','rev-useref','minify-inline', 'copy-image', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', 'replace-sourceMap', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
 });
 
 
