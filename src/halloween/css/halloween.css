@@ -28,14 +28,17 @@ body{background:#000000;}
 
 
 .evt_care{background:black; position:absolute; height:667px; top:0; left:0; width:100%; -webkit-perspective: 600px; overflow:hidden; display:none;}
-.evt_care .care-contain{width:1200px; height:667px; top:0; left:50%; margin:0 0 0 -600px; position:absolute; -webkit-transform:translateZ(-600px); transform:translateZ(-600px); -webkit-transition:-webkit-transform 2.5s cubic-bezier(.57,.32,.5,1.85); transition:-webkit-transform 2.5s cubic-bezier(.57,.32,.5,1.85); transition:transform 2.5s cubic-bezier(.57,.32,.5,1.85); transition:transform 2.5s cubic-bezier(.57,.32,.5,1.85), -webkit-transform 2.5s cubic-bezier(.57,.32,.5,1.85);}
-.evt_care .care-contain.restore{-webkit-transform:translateZ(0);transform:translateZ(0);}
+.evt_care .care-contain{width:1200px; height:667px; top:0; left:50%; margin:0 0 0 -600px; position:absolute; opacity: 0.5}
 .evt_care .care-bg,
 .evt_care .care-glitch{width:1200px; height:667px; position:absolute; top:0; left:0;}
 .evt_care .care-glitch{opacity:0;}
 .evt_care .care-pump{width:210px; height:135px; position:absolute; background:url(../images/care-pump.png) 0 0; left:522px; top:222px;}
 .evt_care .care-pump.light{background-position:0 -135px;}
-.evt_care .lighting{width:1920px; height:667px; position:absolute; top:0; left:50%; margin:0 0 0 -960px; display:none;}
+.evt_care .lighting{width:1920px; height:667px; position:absolute; top:0; left:50%; margin:0 0 0 -960px;}
+.evt_care .lighting-left{width:1640px; position:absolute; top:-100px; left:350px; -webkit-transform-origin:0 0; transform-origin:0 0; -webkit-transform:rotate(10deg); transform:rotate(10deg); -webkit-transition:-webkit-transform 1s; transition:-webkit-transform 1s; transition:transform 1s; transition:transform 1s, -webkit-transform 1s; opacity:0; filter:alpha(opacity=0);}
+.evt_care .lighting-left.restore{-webkit-transform:rotate(-20deg);transform:rotate(-20deg); opacity:1; filter:alpha(opacity=1);}
+.evt_care .lighting-right{width:1575px; position:absolute; top:-100px; left: 0px; -webkit-transform-origin:1575px 0; transform-origin:1575px 0; -webkit-transform:rotate(-10deg); transform:rotate(-10deg); -webkit-transition:-webkit-transform 1s; transition:-webkit-transform 1s; transition:transform 1s; transition:transform 1s, -webkit-transform 1s; opacity:0; filter:alpha(opacity=0);}
+.evt_care .lighting-right.restore{-webkit-transform:rotate(20deg);transform:rotate(20deg); opacity:1; filter:alpha(opacity=1);}
 .evt_care .glitch{position:absolute; top:0; left:0; width:100%; height:100%; background:url(../images/glitch.png) repeat; opacity:0; filter:alpha(opacity=0);}
 .evt_care .btn-text{position:absolute; top:500px; width:83px; left:50%; margin:0 0 0 -42px;}
 .evt_care .btn-contain{position:absolute; width:142px; top:555px; left:50%; margin:0 0 0 -71px; display:block;}
