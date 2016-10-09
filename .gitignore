@@ -1,0 +1,14 @@
+.sass-cache
+.DS_Store
+.idea
+.gitignore
+.tmp
+
+dist
+node_modules/*
+bower_components/
+src/lamont_olympic
+src/live-chat
+src/snake-game-master
+src/vivo
+src/beautyBox

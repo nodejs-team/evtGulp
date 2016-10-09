@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    body,html{margin:0; padding:0;}
+    .vjs-control-bar{display:none;}
+    .banner_contain{width:100%; height:510px; position:relative;}
+    .banner_chocolate{position:absolute; width:1920px; left:50%; top:50%; margin:-255px 0 0 -960px;}
+    .topic_player{width:100% !important; height:auto !important;}
+    .banner_chocolate video{width:100%;}
+    .banner_chocolate .cover{width:15%; top:31%;  left:51.5%; position:absolute; text-align:center;}
+    .banner_chocolate .cover img{width:100%;}
+    .banner_chocolate .cover .btn{width:60%; margin-top:20px;}
+    .banner_chocolate .button{width:100%; height:100%; display:block; position:absolute; top:0; left:0;}
+</style>
+<div class="banner_contain">
+    <div class="banner_chocolate">
+        <div class="videoWrap">
+            <video id="topic_player" class="topic_player" autoplay loop></video>
+        </div>
+        <div class="cover">
+            <img src="http://edm.mcake.com/weifengwang/chocolate/images/bannerbtn.png" alt="">
+        </div>
+        <a href="" class="button"></a>
+    </div>
+</div>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/weifengwang/chocolate/vjs/video.js"></script>
+<script>
+    function createPlayer(){
+        var player = videojs('topic_player',
+                {
+                    flash: {swf: "http://edm.mcake.com/weifengwang/chocolate/vjs/video-js.swf"},
+                    sources: [{src: "http://edm.mcake.com/weifengwang/chocolate/images/ll.mp4", type: "video/mp4"}]
+                },
+                function() {
+
+                });
+    }
+    createPlayer();
+</script>
+</body>
+</html>

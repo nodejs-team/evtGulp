@@ -1,0 +1,279 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+img{border:0;}
+
+.clearfix { *zoom:1;}
+.clearfix:after{
+    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+
+.evt-container{
+    background:#f4f5f6;
+    display:none;
+}
+
+#evt_loading{
+    position:relative;
+    height:600px;
+}
+
+#evt_spin{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-10px;
+    margin-left:-100px;
+    width:200px;
+    text-align:center;
+    font-size:18px;
+    font-family:"Microsoft YaHei",Tahoma,Arial;
+}
+
+.vjs-control-bar{
+    display:none;
+}
+
+.evt_area1{
+    background:black;
+    position:relative;
+}
+
+.evt_area1 .head-player{
+    width:100%;
+    margin:0 auto;
+}
+
+.evt_area1 .head-video{
+    width:100% !important;
+    height:auto !important;
+}
+
+.evt_area1 video{
+    width:100%;
+}
+
+.evt_area1 .top_img{
+    width:15%;
+    top:31%;
+    left:51.5%;
+    position:absolute;
+}
+.evt_area1 .top_img img{
+    width:100%;
+}
+
+.evt_area2{
+    height:622px;
+    background-image:url(../images/chocolate.png);
+    background-repeat: no-repeat;
+    background-position:center top;
+    overflow:hidden;
+    position:relative;
+}
+
+.evt_area2 .text{
+    position:absolute;
+    top:235px;
+    left:50%;
+    margin-left:-345px;
+}
+
+.evt_area2 .btn1{
+    width: 170px;
+    height: 35px;
+    display:block;
+    background:url(../images/btn1.png);
+    margin-top:15px;
+}
+.evt_area2 .btn1.disable{
+    background:url(../images/btn1_disable.png);
+}
+
+.evt_area2 .link{
+    display:block;
+    position:absolute;
+    width:420px;
+    height:350px;
+    top:175px;
+    left:50%;
+    margin-left:27px;
+}
+
+.evt_area2 .ext_left,
+.evt_area2 .ext_right{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 68px;
+    background:#270d0e;
+}
+
+.evt_area2 .ext_right{
+    left:50%;
+    height:86px;
+    margin-left:600px
+}
+
+.evt_area3{
+    background:#000000;
+}
+
+.evt_area3 ul{
+    width:1000px;
+    margin:0 auto;
+}
+
+.evt_area3 li{
+    width:320px;
+    height:320px;
+    float:left;
+    margin-right:20px;
+}
+.evt_area3 .pics{
+    position:relative;
+}
+.evt_area3 li.no-mg{
+    margin-right:0;
+}
+
+.evt_area3 .text{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.evt_area3 .pics:hover .text{
+    display:none;
+}
+.evt_area3 .arrow{
+    display:block;
+    width:0;
+    height:0;
+    border: 20px solid transparent;
+    border-top: 20px solid #f4f5f6;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-10px;
+    opacity:0;
+    -webkit-transition:opacity 0.3s;
+    transition: opacity 0.3s;
+}
+.evt_area3 .pics:hover .arrow{
+    opacity:1;
+}
+
+.evt_area4{
+    width:1000px;
+    margin:0 auto;
+}
+.evt_area4 .btn2{
+    width:140px;
+    height:35px;
+    display:block;
+    background:url(../images/btn2.png);
+}
+.evt_area4 .btn2.disable{
+    background:url(../images/btn2_disable.png);
+}
+.evt_area4 .pro1{
+    position:relative;
+    height:465px;
+}
+.evt_area4 .pro2{
+    height:413px;
+    position:relative;
+}
+.evt_area4 .pro1 .img{
+    display:block;
+    position:absolute;
+    left:33px;
+    top:50px;
+}
+.evt_area4 .pro1 .text{
+    position:absolute;
+    left:449px;
+    top: 200px;
+}
+.evt_area4 .pro1 .btn2{
+    position:absolute;
+    left:133px;
+    top:123px;
+}
+.evt_area4 .pro2 .img{
+    display:block;
+    position:absolute;
+    left:531px;
+    top:12px;
+}
+.evt_area4 .pro2 .text{
+    position:absolute;
+    left:125px;
+    top: 77px;
+}
+.evt_area4 .pro2 .btn2{
+    position:absolute;
+    left:0px;
+    top:135px;
+}
+
+.evt_area5{
+    background:#000000;
+    margin-bottom:160px;
+    position:relative;
+}
+
+.evt_area5 .bottom-player{
+    width:100%;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.evt_area5 .bottom-video{
+    width:100% !important;
+    height:auto !important;
+}
+
+.evt_area5 video{
+    width:100%;
+}
+
+.evt_area5 .vControl{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    overflow:hidden;
+}
+
+.evt_area5 .vPoster{
+    width:100%;
+    background:#000000;
+    overflow:hidden;
+}
+
+
+.evt_area5 .vIcon{
+    width:94px;
+    height:94px;
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-47px 0 0 -47px;
+    background:url(../images/playicon.png);
+}
+.evt_area5 .vIcon.pause{
+    background:url(../images/pauseicon.png);
+}
+.evt_area5 .vIcon.pause:hover{
+    background:url(../images/playicon.png);
+}
