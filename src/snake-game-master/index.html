@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="snake.css">
+  <style>
+    #container,
+    #panel {
+      float: left;
+    }
+    
+    #panel {
+      padding-left: 20px;
+    }
+    
+    #score {
+      color: red
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <div id="panel">
+    <button type="button" id="start">Start</button>
+    <p>Score: <span id="score">0</span></p>
+  </div>
+  <script src="build/snake.js"></script>
+  <script src="build/game.js"></script>
+</body>
+</html>

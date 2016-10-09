@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>跳转中</title>
+	</head>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/callBack.js"></script>
+	<script>
+		var openid = getParameter("openid");
+		var nickname = getParameter("nickname");
+		var headimgurl = getParameter("headimgurl");
+		var parentId = getParameter("parentId");
+		if (nickname != null) {
+			nickname = decodeURIComponent(nickname);
+		}
+		if (headimgurl != null) {
+			headimgurl = decodeURIComponent(headimgurl);
+		}
+		setOpenid(openid);
+		setNickname(nickname);
+		setHeadImgUrl(headimgurl);
+		setParentId(parentId);
+		insertUser(openid, nickname, headimgurl, parentId);
+	</script>
+	<body>
+	</body>
+</html>

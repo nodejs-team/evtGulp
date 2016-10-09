@@ -1,0 +1,72 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>聊天室</title>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+    <script src="scripts/socket.io/socket.io.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/chat.js"></script>
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="styles/chat.css">
+</head>
+<body>
+<div class="video-container">
+    <video controls autoplay webkit-playsinline playsinline>
+        <source src="http://live.mcake.com/withwheat/live.m3u8" type="application/x-mpegURL" />
+        <p class="warning">Your browser does not support HTML5 video.</p>
+    </video>
+</div>
+
+<div class="row chat-container">
+<div class="col-md-9 chat-main">
+    <div class="message-container">
+      <div id="contents" class="message-content"></div>
+    </div>
+    <div class="panel panel-default panel-input">
+        <div id="toolbar" class="panel-heading clearfix">&nbsp;
+            <span id="J-user-group" class="chat-users"><svg style="enable-background:new 0 0 100 88;" version="1.1" viewBox="0 0 100 88" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M100,88c0,0-0.197-18.934-1.354-20.896c-1.721-2.923-5.729-4.932-13.17-8.041c-7.416-3.101-9.787-5.716-9.787-11.316   c0-3.364,2.264-2.264,3.26-8.419c0.412-2.555,2.412-0.043,2.795-5.872c0-2.324-1.092-2.903-1.092-2.903s0.555-3.437,0.771-6.084   c0.27-3.298-1.662-11.815-11.955-11.815c-10.295,0-12.225,8.518-11.955,11.815c0.217,2.647,0.77,6.084,0.77,6.084   s-1.09,0.579-1.09,2.903c0.383,5.829,2.381,3.317,2.795,5.872c0.994,6.155,3.26,5.056,3.26,8.419c0,3.807-1.102,6.235-4.137,8.375   c16.203,8.111,18.375,9.764,18.375,17.015V88H100z M51.117,61.877c-9.891-4.134-13.051-7.621-13.051-15.086   c0-4.483,3.02-3.019,4.346-11.228c0.549-3.404,3.217-0.056,3.727-7.829c0-3.098-1.455-3.868-1.455-3.868s0.74-4.583,1.029-8.112   C46.072,11.357,43.498,0,29.771,0C16.047,0,13.471,11.357,13.832,15.754c0.289,3.529,1.027,8.112,1.027,8.112   s-1.455,0.77-1.455,3.868c0.512,7.773,3.178,4.425,3.729,7.829c1.326,8.208,4.346,6.744,4.346,11.228   c0,7.465-3.162,10.952-13.051,15.086C5.414,63.137,0,65.088,0,69.783V88h69.469c0,0,0-10.776,0-13.659   C69.469,70.059,61.037,66.025,51.117,61.877z"/></g></svg></span>
+        </div>
+        <div class="panel-body flex">
+            <div id="input_content" class="form-control flex-item input-content" contenteditable="true"></div>
+            <div id="send-button" class="btn btn-primary btn-lg send-button">发送</div>
+        </div>
+        <div class="panel-footer">
+            <div class="chat-indicator">你好 <strong id="chat-from"></strong> ，你正在对 <strong id="chat-to"></strong> 说</div>
+        </div>
+    </div>
+</div>
+<div id="J-sidebar" class="col-md-3 chat-sidebar">
+  <div class="panel panel-default">
+    <div class="panel-heading">在线用户 <span data-action="dismiss" class="arrow-right"></span></div>
+    <div class="panel-body">
+      <div id="list" class="list-group"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="sidebar-backdrop" class="backdrop"></div>
+
+<div id="loginModal" class="modal fade">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <form id="loginForm">
+              <div class="modal-header">
+                  <h4 class="modal-title">登录</h4>
+              </div>
+              <div class="modal-body">
+                  <input type="text" class="form-control" id="login-name" placeholder="请输入一个昵称" />
+              </div>
+              <div class="modal-footer">
+                  <button class="btn btn-primary btn-login">开始聊天</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

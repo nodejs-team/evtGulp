@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/common.js"></script>
+		<script>
+			var forward = "http://cdn.geemedia.com.cn/lamont_olympic/forward.html";
+			var firendId = getParameter("fId");
+			if (firendId != null) {
+				setFirendId(firendId);
+				forward += "?fid=" + firendId;
+			} else {
+				setFirendId(null);
+			}
+			window.location.href = "http://socialapi.geemedia.com.cn:80/OAuth2/OAuth2?OAuthScope=snsapi_userinfo&urls= " + encodeURIComponent(forward);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

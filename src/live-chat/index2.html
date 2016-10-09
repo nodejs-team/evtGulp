@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>聊天室</title>
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="styles/chat-bullet.css">
+
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+    <script src="scripts/socket.io/socket.io.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/template.js"></script>
+    <script src="scripts/renderer.js"></script>
+    <script type="text/javascript" src="scripts/bulletManager.js"></script>
+    <script type="text/javascript" src="scripts/chat-bullet.js"></script>
+</head>
+
+<body>
+<div class="video-container">
+    <video id="live_video" autoplay webkit-playsinline playsinline>
+        <source src="http://live.mcake.com/withwheat/live.m3u8" type="application/x-mpegURL" />
+        <p class="warning">Your browser does not support HTML5 video.</p>
+    </video>
+</div>
+
+<!--<div class="video-container">
+    <iframe id="live-frame" frameborder="0" width="100%" height="100%" src="live-video.html"></iframe>
+</div>-->
+
+<div class="chat-container">
+
+    <div class="message-container">
+        <canvas id="canvas-bullets" class="bullets" width="100%" height="100%"></canvas>
+    </div>
+
+    <div class="actions-layer">
+        <div id="act_layer_top" class="flex act-layer-top">
+        </div>
+        <div class="act-layer-bottom">
+            <div class="acts-list">
+                <span class="act-icon act-sendMsg" data-action="sendMsg"></span>
+            </div>
+            <div class="panel-input">
+                <form id="bullet-form" class="panel-body flex">
+                    <div class="video-bullet-switcher">
+                        <span class="switcher on" data-action="bullet-switcher">
+                            <span class="switch-handle">弹</span>
+                        </span>
+                    </div>
+                    <input type="text" id="input_content" class="flex-item input-content" placeholder="和大家说点什么" />
+                    <button type="submit" id="send-button" class="send-button">发送</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="sidebar-backdrop" class="backdrop"></div>
+
+<div id="loginModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="loginForm">
+                <div class="modal-header">
+                    <h4 class="modal-title">登录</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="login-name" placeholder="请输入一个昵称" />
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-login">开始聊天</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/template" id="tpl-user-list">
+    <div class="live-video-info">
+        <span class="avatar my-avatar">
+            <img src="{{user.avatar}}" />
+        </span>
+        <div class="live-count">
+            <span class="vide-type">直播</span>
+            <span class="user-number">{{userCount}}</span>
+        </div>
+    </div>
+    <div class="flex-item user-list-wrapper">
+        <div class="user-list">
+            <div class="user-scroller">
+                {{each users as user index}}
+                <span class="avatar user-item">
+                    <img src="{{user.avatar}}" />
+                </span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script>_time = Date.now();</script>
+    <title>夺金牌 抢vivo X7星空灰</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="shortcut icon" href="images/icon.ico" />
+    <script type="text/javascript">
+        (function(){
+            var phoneWidth = parseInt(window.screen.width);
+            var phoneScale = phoneWidth/640;
+
+            var ua = navigator.userAgent;
+            if (/Android (\d+\.\d+)/.test(ua)) {
+                var version = parseFloat(RegExp.$1);
+                // andriod 2.3
+                if (version > 2.3) {
+                    document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+                    // andriod 2.3以上
+                } else {
+                    document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+                }
+                // 其他系统
+            } else {
+                if(navigator.userAgent.indexOf("iPhone") != -1) {
+                    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+                }else if(navigator.userAgent.indexOf("iPad") != -1) {
+                    document.write('<meta name="viewport" content="width=1024, user-scalable=no, target-densitydpi=device-dpi">');
+                }
+            }
+        })();
+    </script>
+    <!-- build:css css/style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+    <script>
+        window.__globalCfg = {
+            hideWXmenu: true,
+            projectName: "vivo",
+            projectId: "533e1dfb-ef36-47b7-9bed-6fd0a0cb6826",
+            serverUrl: "http://vivoh5.geemedia.com.cn/controller/",
+            title:"夺金有礼！vivo X7星空灰带回家！",
+            desc:"818 X7星空灰强势开售！京东优惠券送不停!",
+            link: "http://vivoh5.geemedia.com.cn/wechat/controller/project/index?projectId=533e1dfb-ef36-47b7-9bed-6fd0a0cb6826",
+            imgUrl: "http://cdn.geemedia.com.cn/vivo/images/share-icon.jpg"
+        };
+    </script>
+</head>
+
+<body>
+
+<div class="page-container page-index">
+    <a href="game.html" class="button btn-start tada">开始游戏</a>
+    <a href="javascript:;" class="button btn-rule">游戏规则</a>
+    <a href="javascript:;" class="button btn-rank">查看排行榜</a>
+</div>
+
+<div id="dialog-rule" class="dialog dialog-rule">
+    <div class="mask"></div>
+    <div class="dialog-content">
+        <a href="javascript:;" class="dialog-close" data-dismiss="true"></a>
+        <div class="rule-content">
+            <div class="rule-body">
+                <img data-src="images/rule_text1.png"/>
+                <img data-src="images/rule_text2.png"/>
+                <img data-src="images/rule_text3.png"/>
+                <img data-src="images/rule_text4.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="dialog-rank" class="dialog dialog-rank">
+    <div class="mask"></div>
+    <div class="dialog-content">
+        <a href="javascript:;" class="dialog-close" data-dismiss="true"></a>
+        <div class="rank-content">
+            <span id="myScore" class="result-nums my-score"></span>
+            <span id="myRank" class="result-nums my-rank"></span>
+            <div id="rank_list" class="rank-list">
+                <span class="spinner"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="dialog-howtoplay" class="dialog dialog-howtoplay">
+    <div class="mask"></div>
+    <div class="dialog-content">
+        <a href="game.html" class="button get-btn">我已了解</a>
+    </div>
+</div>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- build:js js/app.js -->
+<script src="js/zepto.min.js"></script>
+<script src="js/app.js"></script>
+<!-- endbuild -->
+
+<script>
+    $(function(){
+
+        function setNumber(el, number ){
+            var numhtml = "";
+            number.toString().split("").forEach(function(num){
+                numhtml += '<b class="n'+ num +'"></b>';
+            });
+
+            $(el).html(numhtml);
+        }
+
+        function showRanking(){
+            $("#dialog-rank").show();
+            app.http.post("vivo/top20", {
+                userId: app.getUserId()
+            }).then(function(res){
+                if( !res.isHave ){
+                    $("#dialog-rank").hide();
+                    return alert("您还未参与游戏，无法查看排行榜哦！");
+                }
+                var rankList = '';
+                (res.top20||[]).forEach(function(item){
+                    rankList += '<div class="rank-item">' +
+                            '<span class="rank-name">'+ item.nickname +'</span>' +
+                            '<span class="rank-dot"></span>' +
+                            '<span class="rank-num">'+ item.bestScore +'分</span>' +
+                            '</div>';
+                });
+
+                setNumber("#myScore", res.lastScore);
+                setNumber("#myRank", res.currentRank);
+                $("#rank_list").html(rankList);
+
+            }, function(err){
+                $("#dialog-rank").hide();
+                alert("topTen error:" + err);
+            });
+        }
+
+        function showHowToPlay(){
+            $("#dialog-howtoplay").show();
+        }
+
+        $(".btn-start").on("click", function(e){
+            e.preventDefault();
+            showHowToPlay();
+        });
+
+        $(".btn-rule").on("click", function(e){
+            e.preventDefault();
+            $("#dialog-rule").show().trigger("shown");
+        });
+
+        $(".btn-rank").on("click", function(e){
+            e.preventDefault();
+            showRanking(325);
+        });
+
+        $("#dialog-rule").one("shown", function(){
+            $(this).find("img").each(function(){
+                this.src = this.getAttribute("data-src");
+                this.removeAttribute("data-src");
+            });
+        });
+    });
+</script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?11252ecdcb9efd033c996805f11f7063";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    _hmt.push(['_trackEvent', 'index', 'userInfo', '', JSON.stringify({device: navigator.userAgent, deviceW: window.innerWidth, deviceH: window.innerHeight, duration: Date.now() - _time})]);
+</script>
+</body>
+</html>

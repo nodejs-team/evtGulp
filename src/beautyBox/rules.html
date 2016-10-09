@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/icon.ico" />
+<title>欧莱雅集团小美盒</title>
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/game.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/wxapi.js"></script>
+<script type="text/javascript" src="js/server.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+	<style>
+		.music-btn{
+			top:0;
+		}
+	</style>
+</head>
+
+<body>
+	<section id="rulesPage">
+		<div class="section-inner">
+			<div class="rules-bg"></div>
+			<div class="rules-t" id="rulesT"><img src="images/rules_t.png" /></div>
+			<div class="rules-b" id="rulesB"><img src="images/rules_b.png" /></div>
+			<a class="pre-btn pre-btn1 rules-btn" id="rulesBtn"><img src="images/pre_btn11.png" /></a>
+		</div>
+	</section>
+
+	<audio src="audio/music.mp3" id="music" autoplay loop></audio>
+	<div class="music-btn on" id="musicOff"><img src="images/music_off.png" /></div>
+	<div class="music-btn" id="musicOn"><img src="images/music_on.png" /></div>
+	
+<script type="text/javascript">
+
+//变量初始化
+var $rulesPage=$("#rulesPage"), $rulesBtn=$("#rulesBtn"), $rulesT=$("#rulesT"), $rulesB=$("#rulesB");
+$musicOn=$("#musicOn"),
+$musicOff=$("#musicOff"),
+music=document.getElementById("music");
+
+$(function(){
+	$rulesBtn.on("touchend", function(){
+		if( getParentId() && getParentId() != getUserId() ) {
+			location.href = "index.html?parentId=" + getParentId();
+		} else {
+			getById(getUserId()).then(function(data){
+				if(data.beautyBoxItem){
+					location.href = "box_bibi.html";
+				} else {
+					location.href = "game.html";
+				}
+			});
+		}
+	});
+
+	$musicOn.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOff.addClass("on");
+		music.play();
+	});
+	$musicOff.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOn.addClass("on");
+		music.pause();
+	});
+
+	setInterval(rulesAni,200);
+
+	var k=1;
+	function rulesAni(){
+		if(k%2==1){
+			$rulesBtn.find("img").attr("src","images/pre_btn12.png");
+			$rulesT.find("img").attr("src","images/rules_t2.png");
+			$rulesB.find("img").attr("src","images/rules_b2.png");
+		} else {
+			$rulesBtn.find("img").attr("src","images/pre_btn11.png");
+			$rulesT.find("img").attr("src","images/rules_t.png");
+			$rulesB.find("img").attr("src","images/rules_b.png");
+		}
+		k++;
+	}
+
+});
+
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d115d3468977549484a708c7fb6b6491";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

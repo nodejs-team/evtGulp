@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/icon.ico" />
+<title>欧莱雅集团小美盒</title>
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/game.css?238898755" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/server.js"></script>
+<script type="text/javascript" src="js/wxapi.js?6763734"></script>
+<script type="text/javascript" src="js/view.js"></script>
+</head>
+
+<body>
+	<section id="boxResult">
+		<div class="section-inner">
+			<h5 id="usernameTit"><span></span><em></em></h5>
+			<div class="box-tit"><img src="images/box_tit.png" /></div>
+			<div class="box-result box-result-friend">
+				<div class="box-result-inner">
+					<img id="box_img" src="" />
+					<span id="username"></span>
+				</div>
+			</div>
+			<div class="box-dia-friend dada"><img src="images/bibi_dia.png" /></div>
+			<div class="box-dia-friend box-dia-friend2" style="display: none;"><img src="images/friend_dia2.png" /></div>
+			<div class="box-dia-friend" id="boxFriend3" style="display: none;"><img src="images/friend_dia3.png" /></div>
+			<div class="box-comment" id="boxComment">
+				<div class="box-bibi-tit"><img src="images/bibi_box_t.png" /></div>
+				<i><img src="images/bibi_box_img.png" /></i>
+				<div class="box-comment-list">
+					<ul id="commentList">
+					</ul>
+				</div>
+			</div>
+			<a class="pre-btn pre-btn2 box-btn-play on" id="preBtn2" href="rules.html"><img src="images/pre_btn21.png" /></a>
+			<a class="box-btn complete-btn" id="completeBtn"><img src="images/btn_comp1.png" /></a>
+			<a class="box-btn complete-btn call-btn" id="callBtn" style="display: none;"><img src="images/share_btn01.png" /></a>
+		</div>
+	</section>
+	<div class="win" id="shareWin">
+		<div class="win-shadow win-shadow-share" id="shareShadow"></div>
+		<div class="win-share-point"><img src="images/share_point.png" /></div>
+		<div class="win-share-mouth"><img src="images/share_mouth.png" /></div>
+		<div id="shareImg"><img src="images/share_img.png" /></div>
+	</div>
+
+	<div class="win" id="confirmWin">
+		<div class="win-shadow"></div>
+		<div class="win-box">
+			<em class="btn-confirm" id="toNext"><img src="images/game_confirm.png" /></em>
+			<em class="btn-cancel" id="closeWin"><img src="images/game_cancel.png" /></em>
+		</div>
+	</div>
+
+	<audio src="audio/music.mp3" id="music" autoplay loop></audio>
+	<div class="music-btn on" id="musicOff"><img src="images/music_off.png" /></div>
+	<div class="music-btn" id="musicOn"><img src="images/music_on.png" /></div>
+
+	<input type="hidden" id="userId" />
+<script type="text/javascript">
+isShare = 1;
+var userId = getUserId();
+var parendId = getParentId();
+
+$(function(){
+	pageControl();
+	getImpresses(userId, true);
+	initCommentSelection();
+});
+
+//变量初始化
+var $userId=$("#userId"),
+	$usernameTit=$("#usernameTit"),
+	$username=$("#username"),
+	$boxComment=$("#boxComment"),
+	$completeBtn=$("#completeBtn"),
+	$boxFriend3=$("#boxFriend3"),
+	$preBtn2 = $("#preBtn2");
+	$commentList = $("#commentList");
+	$confirmWin = $("#confirmWin");
+	$toNext = $("#toNext");
+	$closeWin = $("#closeWin");
+	$boxImg = $("#box_img");
+	$callBtn = $("#callBtn");
+	$shareImg=$("#shareImg");
+	$shareWin=$("#shareWin");
+	$shareShadow=$("#shareShadow");
+	$musicOn=$("#musicOn"),
+	$musicOff=$("#musicOff"),
+	music=document.getElementById("music");
+
+//页面控制
+var t;
+var cmts;
+function pageControl(){
+	$userId.val(userId);
+
+	$completeBtn.bind("touchend",function(e){ //发表评论
+		e.stopPropagation();
+		e.preventDefault();
+		cmts = $commentList.find("li.selected");
+		if(cmts.length == 0){
+			alert("请至少选择一条bibi");
+		} else if( cmts.length > 2 ) {
+			alert("最多只能选择两条bibi");
+		} else {
+			$confirmWin.show();
+		}
+	});
+
+	$callBtn.bind("touchend",function(){
+		$shareWin.show();
+		t=setInterval(shareImg,300);
+	});
+	$shareShadow.bind("touchend",function(e){
+		e.stopPropagation();
+		$shareWin.hide();
+		clearInterval(t);
+	});
+
+	$musicOn.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOff.addClass("on");
+		music.play();
+	});
+	$musicOff.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOn.addClass("on");
+		music.pause();
+	});
+
+	var i=1;
+	function shareImg(){
+		if(i>10){
+			i=1;
+		}
+		if(i<=10 && i>=6){
+			$shareImg.attr("class","step6");
+		} else {
+			$shareImg.attr("class","step"+i);
+		}
+		i++;
+	}
+
+	setInterval(boxAni,200);
+	var k=1;
+	function boxAni(){
+		if(k%2==1){
+			$completeBtn.find("img").attr("src","images/btn_comp1.png");
+			$callBtn.find("img").attr("src","images/share_btn01.png");
+		} else {
+			$completeBtn.find("img").attr("src","images/btn_comp2.png");
+			$callBtn.find("img").attr("src","images/share_btn02.png");
+		}
+		k++;
+	}
+
+	var j=1;
+	function boxSlight(){
+		$(".game-box"+j).addClass("on").siblings(".game-box").removeClass("on");
+		j++
+		if(j==4){
+			j=1;
+		}
+	}
+
+	var p=1;
+	function preEndAni(){
+		if(p%2==1){
+			$preBtn2.find("img").attr("src","images/pre_btn22.png");
+		} else {
+			$preBtn2.find("img").attr("src","images/pre_btn21.png");
+		}
+		p++;
+	}
+
+	setInterval(preEndAni,200);
+
+}
+
+function initCommentSelection(){
+	$commentList.on("click", "li", function(e){
+		var $this = $(this);
+		if( $commentList.find("li.selected").length < 3 ) {
+			$this.toggleClass("selected");
+		} else {
+			alert("最多只能选择两条bibi");
+		}
+	});
+
+	$toNext.on("touchend", function(){
+		var cmtIds = cmts.get().map(function(cmtEl){
+			return cmtEl.getAttribute("data-impressId");
+		});
+		chooseImpress(userId, cmtIds).then(function(){
+			location.href = "box_bibiResult.html";
+		});
+	});
+
+	$closeWin.on("touchend", function(){
+		$confirmWin.hide();
+	});
+}
+
+getById(userId).then(function(data){
+	$boxImg.attr("src", "images/box"+ data.beautyBoxItem.box +".png").parent().addClass("box"+data.beautyBoxItem.box);
+	$usernameTit.find("span, em").text(data.beautyBoxItem.word+"的");
+	$username.text(data.beautyBoxItem.word + "的BIBI盒");
+	username = data.beautyBoxItem.word;
+});
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d115d3468977549484a708c7fb6b6491";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

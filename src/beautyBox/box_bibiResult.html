@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/icon.ico" />
+<title>欧莱雅集团小美盒</title>
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/game.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/wxapi.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+<script type="text/javascript" src="js/server.js"></script>
+</head>
+
+<body>
+	<section id="boxResult">
+		<div class="section-inner">
+			<h5 id="usernameTit"><span></span><em></em></h5>
+			<div class="box-tit" id="boxTit"><img src="images/box_tit.png" /></div>
+			<div class="box-result">
+				<div class="box-result-inner">
+					<img id="box_img" src="" />
+					<div id="impress1" class="impress1"></div>
+					<div id="impress2" class="impress2"></div>
+					<span id="username"></span>
+				</div>
+			</div>
+			<div class="box-dia"><img src="images/bibi_result.png" /></div>
+			<a class="box-btn box-btn-bibi" id="shareBtn"><img src="images/btn_share.png" /></a>
+			<a class="box-btn box-btn-get" id="getBtn" href="http://t.cn/Rc7LOnw"><img src="images/btn_get1.png" /></a>
+		</div>
+	</section>
+	<div class="win" id="shareWin">
+		<div class="win-shadow win-shadow-share" id="shareShadow"></div>
+		<div class="win-share-point"><img src="images/share_point.png" /></div>
+		<div class="win-share-mouth"><img src="images/share_mouth.png" /></div>
+		<div id="shareImg"><img src="images/share_img.png" /></div>
+	</div>
+
+	<audio src="audio/music.mp3" id="music" autoplay loop></audio>
+	<div class="music-btn on" id="musicOff"><img src="images/music_off.png" /></div>
+	<div class="music-btn" id="musicOn"><img src="images/music_on.png" /></div>
+	
+<input type="hidden" id="userId" />
+<input type="hidden" id="isShare" />
+<script type="text/javascript">
+var userId = getUserId();
+var parendId = getParentId();
+isShare = 1;
+
+$(function(){
+	pageControl();
+});
+
+//变量初始化
+var $userId=$("#userId"),
+	$isShare=$("#isShare"),
+	$boxTit=$("#boxTit"),
+	$usernameTit=$("#usernameTit"),
+	$username=$("#username"),
+	$shareBtn=$("#shareBtn"),
+	$shareWin=$("#shareWin"),
+	$shareShadow=$("#shareShadow"),
+	$shareImg=$("#shareImg");
+	$getBtn = $("#getBtn");
+	$boxImg = $("#box_img");
+	$musicOn=$("#musicOn"),
+	$musicOff=$("#musicOff"),
+	music=document.getElementById("music");
+
+//页面控制
+var t;
+function pageControl(){
+	$userId.val(userId);
+	$shareBtn.bind("touchend",function(){
+		$shareWin.show();
+		$isShare.val(1);
+		t=setInterval(shareImg,300);
+	});
+	$shareShadow.bind("touchend",function(e){
+		e.stopPropagation();
+		$shareWin.hide();
+		clearInterval(t);
+	});
+	$musicOn.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOff.addClass("on");
+		music.play();
+	});
+	$musicOff.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOn.addClass("on");
+		music.pause();
+	});
+
+	var i=1;
+	function shareImg(){
+		if(i>10){
+			i=1;
+		}
+		if(i<=10 && i>=6){
+			$shareImg.attr("class","step6");
+		} else {
+			$shareImg.attr("class","step"+i);
+		}
+		i++;
+	}
+
+	setInterval(boxAni,200);
+	var k=1;
+	function boxAni(){
+		if(k%2==1){
+			$boxTit.find("img").attr("src","images/box_tit2.png");
+			$getBtn.find("img").attr("src","images/btn_get.png");
+			$shareBtn.find("img").attr("src","images/btn_share.png");
+		} else {
+			$boxTit.find("img").attr("src","images/box_tit.png");
+			$getBtn.find("img").attr("src","images/btn_get1.png");
+			$shareBtn.find("img").attr("src","images/btn_share1.png");
+		}
+		k++;
+	}
+
+	var j=1;
+	function boxSlight(){
+		$(".game-box"+j).addClass("on").siblings(".game-box").removeClass("on");
+		j++
+		if(j==4){
+			j=1;
+		}
+	}
+}
+
+getById(userId).then(function(data){
+	$boxImg.attr("src", "images/box"+ data.beautyBoxItem.box +".png").parent().addClass("box"+data.beautyBoxItem.box);
+	$usernameTit.find("span, em").text(data.beautyBoxItem.word+"的");
+	$username.text(data.beautyBoxItem.word + "的BIBI盒");
+	username = data.beautyBoxItem.word;
+	var impress = data.impress;
+	impress && impress.forEach(function(item, i){
+		$("#impress" + (i+1)).text(item.impress);
+	});
+});
+
+function shareCallback(success, shareType){
+	if( !success ) return;
+	$.ajax({
+		url: "http://mbbsocialapi.geemedia.com.cn/api/Home/GetUserInfoSate",
+		data: {
+			openid: getOpenid()
+		},
+		success: function(res){
+			res = eval("("+res+")");
+			if( res.error == "OK" ){
+				if( res.result[0].isFollow == "1" ){
+					location.href = "box_fans.html";
+				} else {
+					location.href = "box_qrcode.html";
+				}
+			} else {
+				location.href = "box_qrcode.html";
+			}
+		},
+		error: function(){
+			location.href = "box_qrcode.html";
+		}
+	});
+}
+
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d115d3468977549484a708c7fb6b6491";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

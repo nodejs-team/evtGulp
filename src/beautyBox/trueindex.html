@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/icon.ico" />
+<title>欧莱雅集团小美盒</title>
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/game.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/wxapi.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+<script type="text/javascript" src="js/server.js"></script>
+</head>
+
+<body>
+	<!--loading S-->
+	<section id="loadingPage">
+		<div class="section-inner">
+			<div class="loading"><img src="images/loading_img1.png" id="loadingImg" /></div>
+			<div class="loading-bar-s"></div>
+			<div class="loading-bar"><em id="loadingBar"></em></div>
+			<div class="loading-per-s"></div>
+			<div class="loading-per"><span><em id="loadingPer">100</em>%</span></div>
+			<div class="loading-slight"><img src="images/loading_slight.png" /></div>
+			<div class="loading-tit"><img src="images/loading_tit.png" /></div>
+		</div>
+	</section>
+	<!--loading E-->
+	<section id="prePage">
+		<div class="section-inner">
+			<div class="pre-bg" id="preBg"></div>
+			<div class="pre-tit" id="preTit"><img src="images/pre_tit.png" /></div>
+			<div class="pre-mouth on" id="premouth1"><img src="images/pre_mouth11.png" /></div>
+			<div class="pre-mouth" id="premouth2"><img src="images/pre_mouth21.png" /></div>
+			<div class="pre-mouth" id="premouth3"><img src="images/pre_mouth31.png" /></div>
+			<div class="pre-boom pre-boom1" id="preBoom1"><img src="images/pre_boom1.png" /></div>
+			<div class="pre-boom pre-boom2" id="preBoom2"><img src="images/pre_boom2.png" /></div>
+			<div class="pre-boom pre-boom3" id="preBoom3"><img src="images/pre_boom3.png" /></div>
+			<div class="pre-boom pre-boom4" id="preBoom4"><img src="images/pre_boom4.png" /></div>
+			<div class="pre-boom pre-boom5" id="preBoom5"><img src="images/pre_boom5.png" /></div>
+			<div class="pre-dia pre-mua" id="preMua"><img src="images/pre_mua.png" /></div>
+			<div class="pre-dia pre-love" id="preLove"><img src="images/pre_love.png" /></div>
+			<div class="pre-dia pre-meng" id="preMeng"><img src="images/pre_meng.png" /></div>
+			<div class="pre-dia pre-my" id="preMy"><img src="images/pre_my.png" /></div>
+			<div class="pre-dia pre-power" id="prePower"><img src="images/pre_power.png" /></div>
+			<a class="pre-btn pre-btn1" id="preBtn1"><img src="images/pre_btn11.png" /></a>
+			<a class="pre-btn pre-btn2" id="preBtn2" href="rules.html"><img src="images/pre_btn21.png" /></a>
+		</div>
+	</section>
+	
+	<audio src="audio/music.mp3" id="music" autoplay loop></audio>
+	<div class="music-btn" id="musicOff"><img src="images/music_off.png" /></div>
+	<div class="music-btn" id="musicOn"><img src="images/music_on.png" /></div>
+	
+<script type="text/javascript">
+
+$(function(){
+	pageControl();
+});
+
+//变量初始化
+var $loadingPage=$("#loadingPage"), $loadingBar=$("#loadingBar"), $loadingPer=$("#loadingPer"), $musicOn=$("#musicOn"), $musicOff=$("#musicOff"), music=document.getElementById("music"),
+	$prePage=$("#prePage"), $preTit=$("#preTit"), $premouth1=$("#premouth1"), $premouth2=$("#premouth2"), $premouth3=$("#premouth3"), $preMua=$("#preMua"), $preLove=$("#preLove"), $preMeng=$("#preMeng"), $preMy=$("#preMy"), $prePower=$("#prePower"), $preBoom1=$("#preBoom1"), $preBoom2=$("#preBoom2"), $preBoom3=$("#preBoom3"), $preBoom4=$("#preBoom4"), $preBoom5=$("#preBoom5"), $preBtn1=$("#preBtn1"), $preBtn2=$("#preBtn2");
+
+var timer1;
+//页面控制
+function pageControl(){
+	$musicOn.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOff.addClass("on");
+		music.play();
+	});
+	$musicOff.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOn.addClass("on");
+		music.pause();
+	});
+	$preBtn1.bind("touchend",function(){
+		window.location="game.html";
+	});
+
+	timer1 = setInterval(pageLoading,200);
+}
+
+var played=0;
+
+
+//loading
+function pageLoaded(){
+	clearInterval(timer1);
+	$loadingPage.fadeOut(500);
+	$prePage.addClass("ani");
+	var timer2 = setInterval(preAnimation,200);
+}
+
+loadImgQueue([
+	"images/loading_img1.png","images/loading_img2.png","images/loading_img3.png","images/loading_slight.png","images/loading_tit.png","images/loading_bg.png","images/pre_bgs.jpg","images/pre_bg_m1.jpg","images/pre_bg_m2.jpg",
+	"images/pre_tit.png","images/pre_mouth11.png","images/pre_mouth12.png","images/pre_mouth13.png","images/pre_mouth21.png","images/pre_mouth22.png","images/pre_mouth23.png","images/pre_mouth31.png","images/pre_mouth32.png","images/pre_mouth33.png","images/pre_mouth34.png","images/pre_mouth35.png","images/pre_mouth36.png","images/pre_boom1.png","images/pre_boom2.png","images/pre_boom3.png","images/pre_boom4.png","images/pre_boom5.png","images/pre_mua.png","images/pre_love.png","images/pre_meng.png","images/pre_my.png","images/pre_power.png","images/music_off.png","images/music_on.png",
+], function(loaded, total){
+	var per=Math.floor((loaded/total)*10)*10;
+	$loadingPer.text(per);
+	$loadingBar.innerWidth(per+"%");
+	if(loaded == total) {
+		setTimeout("pageLoaded()",500);
+	}
+});
+
+var i = 1;
+function pageLoading(){
+	if(i==1){
+		$("#loadingImg").attr("src","images/loading_img2.png");
+		i+=1;
+	} else if(i==2){
+		$("#loadingImg").attr("src","images/loading_img3.png");
+		i+=1;
+	} else if(i==3){
+		$("#loadingImg").attr("src","images/loading_img1.png");
+		i=1;
+	}
+}
+
+var j=1;
+function preAnimation(){
+	if(j==1){
+		$premouth1.find("img").attr("src","images/pre_mouth12.png");
+	} else if(j==2){
+		$premouth1.find("img").attr("src","images/pre_mouth12.png");
+	} else if(j==3){
+		$premouth1.find("img").attr("src","images/pre_mouth11.png");
+	} else if(j==4){
+		$premouth1.find("img").attr("src","images/pre_mouth13.png");
+		$premouth2.addClass("on");
+	} else if(j==5){
+		$premouth2.find("img").attr("src","images/pre_mouth22.png");
+	} else if(j==6){
+		$premouth2.find("img").attr("src","images/pre_mouth23.png");
+	} else if(j==7){
+		$premouth1.removeClass("on");
+		$premouth2.find("img").attr("src","images/pre_mouth24.png");
+		$premouth3.addClass("on");
+	} else if(j==8){
+		$premouth3.find("img").attr("src","images/pre_mouth32.png");
+	} else if(j==9){
+		$premouth3.find("img").attr("src","images/pre_mouth33.png");
+	} else if(j==10){
+		$premouth2.removeClass("on");
+		$premouth3.find("img").attr("src","images/pre_mouth34.png");
+	} else if(j==11){
+		$premouth3.find("img").attr("src","images/pre_mouth35.png");
+	} else if(j==12){
+		$premouth3.find("img").attr("src","images/pre_mouth36.png");
+	} else if(j==13){ //吐字mua
+		$premouth3.find("img").attr("src","images/pre_mouth35.png");
+		$preMua.addClass("on");
+	} else if(j==14){
+		$premouth3.find("img").attr("src","images/pre_mouth34.png");
+		$preMua.addClass("step1");
+	} else if(j==15){ //吐字love
+		$premouth3.find("img").attr("src","images/pre_mouth35.png");
+		$preMua.addClass("step2");
+		$preLove.addClass("on");
+	} else if(j==16){
+		$premouth3.find("img").attr("src","images/pre_mouth36.png");
+		$preLove.addClass("step1");
+	} else if(j==17){ //吐字meng
+		$premouth3.find("img").attr("src","images/pre_mouth35.png");
+		$preLove.addClass("step2");
+		$preMeng.addClass("on");
+	} else if(j==18){
+		$premouth3.find("img").attr("src","images/pre_mouth34.png");
+		$preMeng.addClass("step1");
+	} else if(j==19){ //吐字my
+		$premouth3.find("img").attr("src","images/pre_mouth35.png");
+		$preMeng.addClass("step2");
+		$preMy.addClass("on");
+	} else if(j==20){
+		$premouth3.find("img").attr("src","images/pre_mouth36.png");
+		$preMy.addClass("step1");
+	} else if(j==21){ //吐字power
+		$premouth3.find("img").attr("src","images/pre_mouth35.png");
+		$preMy.addClass("step2");
+		$prePower.addClass("on");
+	} else if(j==22){
+		$premouth3.find("img").attr("src","images/pre_mouth34.png");
+		$prePower.addClass("step1");
+	} else if(j==23){
+		$premouth3.find("img").attr("src","images/pre_mouth36.png");
+		$prePower.addClass("step2");
+	} else if(j==24){ //爆炸
+		$premouth3.find("img").attr("src","images/pre_mouth35.png");
+		$preBoom1.addClass("on");
+	} else if(j==25){
+		$premouth3.find("img").attr("src","images/pre_mouth34.png");
+		$preBoom1.removeClass("on");
+		$preBoom2.addClass("on");
+	} else if(j==26){
+		$premouth3.find("img").attr("src","images/pre_mouth35.png");
+		$preBoom2.removeClass("on");
+		$preBoom3.addClass("on");
+	} else if(j==27){
+		$preBoom3.removeClass("on");
+		$preBoom4.addClass("on");
+	} else if(j==28){
+		$preBoom4.removeClass("on");
+		$preBoom5.addClass("on");
+	} else if(j==29){ //收回
+		$(".pre-mouth").removeClass("on");
+		clearInterval("timer2");
+		$prePage.removeClass("ani").addClass("main");
+		$(".pre-dia").removeClass("step2").addClass("step1");
+		$preBoom5.removeClass("on");
+		$preBoom4.addClass("on");
+	} else if(j==30){
+		$(".pre-dia").removeClass("step1");
+		$preBoom4.removeClass("on");
+		$preBoom3.addClass("on");
+	} else if(j==31){
+		$preBoom3.removeClass("on");
+		$preBoom2.addClass("on");
+	} else if(j==32){
+		$(".pre-dia").removeClass("on");
+		$preTit.hide();
+		$preBoom2.removeClass("on");
+		$preBoom1.addClass("on");
+	} else if(j==33){
+		$preBoom1.removeClass("on");
+		$(".pre-btn").addClass("on");
+		$musicOff.addClass("on");
+		preEndAni();
+	} else if(j==34){
+		setInterval(preEndAni,200);
+	}
+	j++;
+}
+
+var k=1;
+function preEndAni(){
+	if(k%2==1){
+		$prePage.removeClass("main2").addClass("main1");
+		$preBtn1.find("img").attr("src","images/pre_btn12.png");
+		$preBtn2.find("img").attr("src","images/pre_btn22.png");
+	} else {
+		$prePage.removeClass("main1").addClass("main2");
+		$preBtn1.find("img").attr("src","images/pre_btn11.png");
+		$preBtn2.find("img").attr("src","images/pre_btn21.png");
+	}
+	k++;
+}
+
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d115d3468977549484a708c7fb6b6491";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

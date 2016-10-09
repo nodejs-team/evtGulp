@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>拉蒙点瓶成金</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="shortcut icon" href="images/icon.ico" />
+    <script type="text/javascript">
+        (function(){
+            var phoneWidth = parseInt(window.screen.width);
+            var phoneScale = phoneWidth/640;
+
+            var ua = navigator.userAgent;
+            if (/Android (\d+\.\d+)/.test(ua)) {
+                var version = parseFloat(RegExp.$1);
+                // andriod 2.3
+                if (version > 2.3) {
+                    document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+                    // andriod 2.3以上
+                } else {
+                    document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+                }
+                // 其他系统
+            } else {
+                if(navigator.userAgent.indexOf("iPhone") != -1) {
+                    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+                }else if(navigator.userAgent.indexOf("iPad") != -1) {
+                    document.write('<meta name="viewport" content="width=1024, user-scalable=no, target-densitydpi=device-dpi">');
+                }
+            }
+        })();
+    </script>
+    <!-- build:css css/style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+    <script>
+        window.__globalCfg = {
+            projectId: "c3c61adc-ae8b-43af-85af-5163d312ae12",
+            awardScore: 2,
+            timer: 10
+        };
+    </script>
+</head>
+
+<body>
+
+<div class="page-container page-index">
+    <a href="javascript:;" class="button btn-ranking" data-type="0" data-action="rank">查看排名</a>
+    <a href="javascript:;" class="button btn-callfd" data-type="0" data-action="share">呼唤好友协助</a>
+    <a href="javascript:;" class="button btn-helping" data-type="1" data-action="play">为好友助力</a>
+    <a href="javascript:;" class="button btn-rule" data-action="rule">游戏规则</a>
+    <a href="javascript:;" class="button btn-start" data-type="0" data-action="play">开始游戏</a>
+</div>
+
+<div id="dialog-rule" class="dialog dialog-rule">
+    <div class="mask"></div>
+    <div class="dialog-content">
+        <div class="rule-content">
+            <div class="rule-body">
+                <div class="rule-header">
+                    <p>活动时间：08/06 - 08/22</p>
+                </div>
+                <div class="rule-text">
+                    <h5>活动详情：</h5>
+                    <p><em>•</em>用户通过微信或扫描二维码等方式进入活动首页，即可参与［点瓶成金］活动。</p>
+                    <p><em>•</em>每个用户可获得一次游戏机会，想获得更高分数和排名，则需要邀请好友进行助力。</p>
+                    <p><em>•</em>每个好友为一个用户仅能进行一次助力。</p>
+                    <p><em>•</em>每周挑选排行榜前十名用户， 赠送额外奖励。</p>
+                    <p><em>•</em>活动分数累计时间从8月6日－8月22日23:59:59</p>
+                    <p><em>•</em>如遇非正常分数，或有作弊行为，拉蒙将取消其获奖资格，并追求法律责任。</p>
+
+                    <h5>活动奖项：</h5>
+                    <p><em>•</em>第一名可获得大疆精灵3高级版 无人机一台。</p>
+                    <p><em>•</em>第二名至第三名可获得“拉蒙微信商城” 500元充值卡一张。</p>
+                    <p><em>•</em>第四名至第十名可获得爱奇艺网站一年期会员。</p>
+
+                    <h5>温馨提示：</h5>
+                    <p><em>•</em>若活动过程有任何困难或疑问，请及时联系客服人员协助解决 客服电话：4008198080</p>
+                    <p><em>•</em>中奖产生的所得税由中奖人员进行支付</p>
+                    <p><em>•</em>最终解释权归拉蒙酒业［拉蒙酒业Lamont］</p>
+                </div>
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:;" class="button game-rule-btn" data-dismiss="true">我已了解</a>
+        </div>
+    </div>
+</div>
+
+<div id="dialog-howtoplay" class="dialog dialog-howtoplay">
+    <div class="mask" data-dismiss="true"></div>
+    <div class="dialog-content">
+        <div class="howtoplay-content">
+           <img src="images/game-help-img.png" />
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:;" class="button game-rule-btn" data-action="play">我已了解</a>
+        </div>
+    </div>
+</div>
+
+<div id="dialog-rank" class="dialog dialog-rank">
+    <div class="mask" data-dismiss="true"></div>
+    <div class="dialog-content">
+        <div class="rank-content">
+            <div class="rank-top">
+                <img src="images/rank-top.png"/>
+                <span class="my-rank-num">个人排名：<em id="p-num"></em></span>
+            </div>
+            <div id="rank_list" class="rank-list">
+                <span class="spinner"></span>
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <a href="javascript:;" class="button call-btn" data-action="share">召唤好友</a>
+        </div>
+    </div>
+</div>
+
+<div id="dialog-share" class="dialog dialog-share">
+    <div class="mask"></div>
+    <img src="images/share.png" class="share-img" />
+</div>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!-- build:js js/app.js -->
+<script src="js/zepto.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/public.js"></script>
+<!-- endbuild -->
+
+<script>
+
+    var http = {};
+    http.request = function(url, type, data, context){
+        var defer = $.Deferred();
+        url = /^https?/.test(url) ? url : "http://lamonth5.geemedia.com.cn/wechat/controller/" + url;
+        $.ajax({
+            url: url,
+            data: data,
+            type: type,
+            success: function (res, status, xhr) {
+                if (res.success) {
+                    defer.resolveWith(context, [res.data, status, xhr]);
+                }
+                else {
+                    defer.rejectWith(context, [res.message, res.errorCode, xhr]);
+                }
+            },
+            error:function(xhr, status, errThrow){
+                defer.rejectWith(context, [(errThrow||(xhr.status==0?"与服务器连接失败！":"请求发生错误")) + " code: " + xhr.status, xhr.status, xhr]);
+            }
+        });
+
+        return defer.promise();
+    };
+
+    http.get = function(url, data, context){
+        return http.request(url, 'GET', data, context);
+    };
+
+    http.post = function(url, data, context){
+        return http.request(url, 'POST', data, context);
+    };
+
+    var _hasFriendId = getFirendId() !== "null" && getFirendId() !== undefined && getFirendId() !== null;
+
+    function isUserPlayed(){
+        return http.get("olympic/isPlayed", {
+            userId: getMyId()
+        });
+    }
+
+    function isHelped(){
+        return http.get("olympic/isHelped", {
+            myId: getMyId(),
+            firendId: getFirendId()
+        });
+    }
+
+    function showRanking(){
+        $("#dialog-rank").show();
+        http.get("olympic/topTen", {
+            userId: getMyId()
+        }).then(function(res){
+            if( res.isHave ) {
+                var rankList = '<div class="rank-item">' +
+                            '<span class="rank-name">个人总分</span>' +
+                            '<span class="rank-num">' + data.score + '</span>' +
+                        '</div>';
+                (res.topTen || []).forEach(function (item, index) {
+                    rankList += '<div class="rank-item">' +
+                            '<span class="rank-order">' + (index + 1) + '</span>' +
+                            '<span class="rank-name">' + item.nickname + '</span>' +
+                            '<span class="rank-num">' + item.score + '</span>' +
+                            '</div>';
+                });
+
+                $("#p-num").text(res.index);
+                $("#rank_list").html(rankList);
+            } else {
+                $("#dialog-rank").hide();
+                alert("您还未参与游戏，无法查看排行榜哦！");
+            }
+
+        }, function(err){
+            $("#dialog-rank").hide();
+            alert("topTen error:" + err);
+        });
+    }
+
+    function showShare(){
+        $("#dialog-share").show().one("click", function(e){
+            e.preventDefault();
+            $(this).hide();
+        });
+    }
+
+    function hideShare(){
+        $("#dialog-share").hide();
+    }
+
+    function WXShareCallback(type){
+        http.post("project/share", {
+            userId: getMyId(),
+            type: type,
+            projectId: __globalCfg.projectId
+        });
+    }
+
+    $(function(){
+        var $doc = $(document);
+        var $page = $(".page-container");
+
+        function showHowtoplay(){
+            $("#dialog-howtoplay").show().on("click", '[data-action="play"]', function(e){
+                e.preventDefault();
+                location.href = "game.html";
+            });
+        }
+
+        if( _hasFriendId ){
+            $page.removeClass("page-game").addClass("page-helping");
+            isHelped().then(function(isHelped){
+                $doc.on("click", "[data-action=play]", function(e){
+                    e.preventDefault();
+                    if( isHelped ){
+                        alert("每个玩家为单个好友只能助力一次哦！你已经为该好友助力过，现在发起自己的抢金牌游戏吧");
+                        location.href = "http://lamonth5.geemedia.com.cn/wechat/pages/lamont_olympic/index.html";
+                    } else {
+                        showHowtoplay();
+                    }
+                });
+            }, function(err){
+                alert(err);
+            });
+        } else {
+            $page.removeClass("page-helping").addClass("page-game");
+            isUserPlayed().then(function(isPlayed){
+                $doc.on("click", "[data-action=play]", function(e){
+                    e.preventDefault();
+                    if( isPlayed ){
+                        alert("Oops！每人只有一次抢金牌机会哦！想要更多金牌，快邀请好友为你助力吧");
+                    } else {
+                        showHowtoplay();
+                    }
+                });
+            }, function(err){
+                alert(err);
+            });
+        }
+
+        $doc.on("click", "[data-action=rank]", function(e){
+            e.preventDefault();
+            showRanking();
+        });
+
+        $doc.on("click", "[data-action=share]", function(e){
+            e.preventDefault();
+            showShare();
+        });
+
+        $doc.on("click", "[data-action=rule]", function(e){
+            e.preventDefault();
+            $("#dialog-rule").show();
+        });
+
+        $doc.on("click", "[data-dismiss]", function(e){
+            e.preventDefault();
+            $(this).closest(".dialog").hide();
+        });
+    });
+</script>
+</body>
+</html>

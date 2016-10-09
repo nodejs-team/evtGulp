@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="images/icon.ico" />
+<title>欧莱雅集团小美盒</title>
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/game.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/wxapi.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+</head>
+
+<body>
+	<section id="codePage">
+		<div class="section-inner">
+			<div class="code-tit" id="codeTit"><img src="images/code_tit.png" /></div>
+			<div class="fans-box"><img src="images/fans_box.png" /></div>
+			<div class="fans-tip"><img src="images/fans_tip.png" /></div>
+			<a class="btn-get" id="getBtn" href="http://t.cn/Rc7LOnw"><img src="images/btn_get.png" /></a>
+		</div>
+	</section>
+
+	<audio src="audio/music.mp3" id="music" autoplay loop></audio>
+	<div class="music-btn on" id="musicOff"><img src="images/music_off.png" /></div>
+	<div class="music-btn" id="musicOn"><img src="images/music_on.png" /></div>
+
+<input type="hidden" id="userId" />
+<script type="text/javascript">
+
+$(function(){
+	pageControl();
+});
+
+//变量初始化
+var $userId=$("#userId"),$codeTit=$("#codeTit"), $getBtn=$("#getBtn");
+$musicOn=$("#musicOn"),
+$musicOff=$("#musicOff"),
+music=document.getElementById("music");
+
+//页面控制
+var t, userId;
+function pageControl(){
+	$musicOn.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOff.addClass("on");
+		music.play();
+	});
+	$musicOff.bind("touchend",function(){
+		$(this).removeClass("on");
+		$musicOn.addClass("on");
+		music.pause();
+	});
+
+	setInterval(codeAni,200);
+	var k=1;
+	function codeAni(){
+		if(k%2==1){
+			$codeTit.find("img").attr("src","images/code_tit2.png");
+			$getBtn.find("img").attr("src","images/btn_get1.png");
+		} else {
+			$codeTit.find("img").attr("src","images/code_tit.png");
+			$getBtn.find("img").attr("src","images/btn_get.png");
+		}
+		k++;
+	}
+
+	var j=1;
+	function boxSlight(){
+		$(".game-box"+j).addClass("on").siblings(".game-box").removeClass("on");
+		j++
+		if(j==4){
+			j=1;
+		}
+	}
+
+}
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d115d3468977549484a708c7fb6b6491";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

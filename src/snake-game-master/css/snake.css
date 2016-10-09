@@ -1,0 +1,23 @@
+table {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+td {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  width: 20px;
+  height: 20px;
+}
+
+.space {
+  background-color: white;
+}
+
+.body {
+  background-color: black;
+}
+
+.food {
+  background-color: red;
+}
