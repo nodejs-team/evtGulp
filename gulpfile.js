@@ -19,10 +19,13 @@ var lr           = require('tiny-lr'),
     revCollector = require('gulp-rev-collector'),
     useref       = require('gulp-useref'),
     gulpif       = require('gulp-if'),
-    tinypng      = require('gulp-tinypng'),
+    tinypng      = require('gulp-tinypng-compress'),
     sftp         = require('gulp-sftp'),
+    ftp          = require('gulp-ftp'),
     runSequence  = require('gulp-run-sequence'),
     handleErrors = require('./util/handleErrors'),
+    os           = require('os'),
+    ifaces       = os.networkInterfaces(),
     config       = require('./config.json');
 
 var SRC = 'src/' + config.projectName;
@@ -92,20 +95,22 @@ gulp.task('imagemin', ["copy-gif"], function () {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(rev())
         .pipe(gulp.dest(path.distImgFolder))
-        .pipe(rev.manifest())
-        .pipe(gulp.dest(path.revImg));
 });
+
+gulp.task('copy-image', function(){
+    return gulp.src(path.srcImg)
+        .pipe(gulp.dest(path.distImgFolder))
+})
 
 //压缩图片 - tinypng
 gulp.task('tinypng', ["copy-gif"], function () {
     return gulp.src(path.srcImg)
-        .pipe(tinypng(config.tinypngapi))
-        .pipe(rev())
+        .pipe(tinypng({
+            key:config.tinypngapi,
+            log:true
+        }))
         .pipe(gulp.dest(path.distImgFolder))
-        .pipe(rev.manifest())
-        .pipe(gulp.dest(path.revImg));
 });
 
 //copy gif
@@ -141,10 +146,7 @@ gulp.task('useref', function () {
 //给合并的文件加版本号
 gulp.task('rev-useref', function () {
     return gulp.src([path.tmpJs, path.tmpCss])
-        .pipe(rev())
         .pipe(gulp.dest(path.dist))
-        .pipe(rev.manifest())
-        .pipe(gulp.dest(path.rev));
 });
 
 //压缩html中的css和js代码
@@ -326,12 +328,11 @@ gulp.task('clean-tmp', function () {
 //上传到远程服务器任务
 gulp.task('upload', function () {
     return gulp.src(path.dist +'/**')
-        .pipe(sftp({
+        .pipe(ftp({
             host: config.sftp.host,
             user: config.sftp.user,
-            port: config.sftp.port,
-            key: config.sftp.key,
-            remotePath: config.sftp.remotePath
+            pass: config.sftp.key,
+            remotePath: config.sftp.remotePath+'/'+ config.projectName
         }));
 });
 
@@ -344,7 +345,7 @@ gulp.task('openbrowser', function() {
 gulp.task('webserver', function() {
     return gulp.src(path.src)
         .pipe(webserver({
-            host             : config.localserver.host,
+            host             : getIP(),
             port             : config.localserver.port,
             livereload       : true,
             directoryListing : false
@@ -375,5 +376,20 @@ gulp.task('default', ['watch','webserver','openbrowser']);
 
 //项目完成提交任务
 gulp.task('build', function(done) {
-    runSequence('clean','useref','rev-useref','minify-inline','imagemin', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', 'replace-sourceMap', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
+    runSequence('clean','useref','rev-useref','minify-inline', 'tinypng', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', 'replace-sourceMap', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
 });
+
+
+function getIP(){
+    var ip = 'localhost';
+    for (var dev in ifaces) {
+        ifaces[dev].every(function(details){
+            if (details.family=='IPv4' && details.address!='127.0.0.1' && !details.internal) {
+                ip = details.address;
+                return false;
+            }
+            return true;
+        });
+    }
+    return ip;
+}

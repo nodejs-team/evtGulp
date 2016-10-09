@@ -1,7 +1,7 @@
 {
     "project" : "Gulp",     
     "localserver" : {
-        "host" : "192.168.47.107",
+        "host" : "192.168.46.51",
         "port" : "8081"
     },
     "tinypngapi": "2u4HCdRMrLoU4UTy6yb2ssKkGeEpNPrN",
@@ -12,6 +12,6 @@
         "key" : "",
         "remotePath" :"/2016/snowMan/"
     },
-    "projectName": "eccard",
-    "revPrefix": "http://edm.mcake.com/shuxy/2016/"
+    "projectName": "quqi",
+    "revPrefix": "http://edm.mcake.com/weifengwang/"
 }   
