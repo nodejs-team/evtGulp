@@ -19,13 +19,13 @@ var lr           = require('tiny-lr'),
     revCollector = require('gulp-rev-collector'),
     useref       = require('gulp-useref'),
     gulpif       = require('gulp-if'),
-    tinypng = require('gulp-tinypng-compress'),
+    tinypng      = require('gulp-tinypng-compress'),
     sftp         = require('gulp-sftp'),
-    ftp = require('gulp-ftp'),
+    ftp          = require('gulp-ftp'),
     runSequence  = require('gulp-run-sequence'),
     handleErrors = require('./util/handleErrors'),
-    os=require('os'),
-    ifaces=os.networkInterfaces(),
+    os           = require('os'),
+    ifaces       = os.networkInterfaces(),
     config       = require('./config.json');
 
 var SRC = 'src/' + config.projectName;
@@ -110,7 +110,7 @@ gulp.task('tinypng', ["copy-gif"], function () {
             key:config.tinypngapi,
             log:true
         }))
-        .pipe(gulp.dest(SRC+'/images'))
+        .pipe(gulp.dest(path.distImgFolder))
 });
 
 //copy gif
@@ -376,7 +376,7 @@ gulp.task('default', ['watch','webserver','openbrowser']);
 
 //项目完成提交任务
 gulp.task('build', function(done) {
-    runSequence('clean','useref','rev-useref','minify-inline', 'copy-image', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', 'replace-sourceMap', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
+    runSequence('clean','useref','rev-useref','minify-inline', 'tinypng', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', 'replace-sourceMap', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
 });
 
 
