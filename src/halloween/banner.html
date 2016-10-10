@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>EC礼品卡</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
-    <!-- build:css css/halloween.css -->
-    <link type="text/css" rel="stylesheet" href="css/halloween.css" />
-    <!-- endbuild -->
+
 </head>
-<body>
+<body style="height: 8000px;">
 
-
+<link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
 <div class="header">
 
     <div class="header_top_box">
@@ -82,82 +78,73 @@
 
 </div>
 
-
-
-
-
-
-
-
-<div class="evt_container" id="evt_container">
+<style>
+    .evt-container{background:black; height:667px; position:relative;}
+    .banner-bg{width:1420px; height:667px; position:absolute; top:0; left:50%; margin:0 0 0 -710px;}
+    .banner-link{display:block; width:100%; height:100%; position:absolute; top:0; left:0;}
+    .floatContainer{position:fixed; top:110px; right:0; z-index:100;}
+</style>
+<div id="evt_container" class="evt-container evt-banner" style="position:relative;margin-bottom:15px;">
+    <div class="banner-bg">
+        <img src="http://edm.mcake.com/weifengwang/halloween/images/banner.png" alt="">
+    </div>
+    <a href="http://mcake.com" class="banner-link"></a>
     <div class="floatContainer">
-        <div id="floater" class="floater"></div>
-    </div>
-    <div class="evt_loading" id="evt_loading">
-        <div class="loading-bg"><img src="images/loading-bg.jpg" alt=""></div>
-        <div class="loading-slide">
-            <div id="loading-slide"></div>
-        </div>
-        <div class="loading-title"><img src="images/loading-title.png" alt=""></div>
-        <div class="loading-load">
-            <span class="text">0%</span>
-            <div class="progress"><span></span></div>
-        </div>
-    </div>
-    <div class="evt_care">
-        <div class="care-contain">
-            <div class="care-bg"><img src="images/care-bg.jpg" alt=""></div>
-            <div class="care-glitch">
-                <img src="images/glitch-care.png" alt="">
-                <div class="care-pump"></div>
-            </div>
-
-        </div>
-        <div class="glitch"></div>
-        <div class="btn-text"><img src="images/btn-text.png" alt=""></div>
-        <a class="btn-contain" href="javascript:;">
-            <div class="care-btn"><img src="images/care-btn.png" alt=""></div>
-            <div class="glitch-btn"><img src="images/care-btn-glitch.png" alt=""></div>
-        </a>
-        <div class="lighting">
-            <div class="lighting-left"><img src="images/care-lighting-left.png" alt=""></div>
-            <div class="lighting-right"><img src="images/care-lighting-right.png" alt=""></div>
-        </div>
-
-        <div class="btn-glitch"></div>
-    </div>
-    <div class="evt_cake">
-        <div class="cake-contain">
-            <div class="cake-bg"><img src="images/cake-bg2.jpg" alt=""></div>
-            <div class="cakemc" id="cakemc"></div>
-            <div class="cake-text"><img src="images/cake-text.png" alt=""></div>
-            <a href="http://mcake.com" class="cake-btn"></a>
-            <div class="rules">
-                <h2>活动规则:</h2>
-                <ul>
-                    <li>1、活动时间：2016 年10月14日 — 10月31日</li>
-                    <li>2、活动城市：上海、苏州、杭州、北京</li>
-                    <li>3、活动期间，购买任意款蛋糕加38元升级为万圣节礼包(含脑洞棒棒糖*5)</li>
-                    <li>4、 一笔订单中优惠券不可叠加使用。</li>
-                </ul>
-            </div>
-        </div>
+        <div class="floater" id="floater"></div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/weifengwang/halloween/js/ec_main.js"></script>
+<script>
+    ;(function(){
+        var floaterData = {
+            mc:{
+                floater: {
+                    frameRate:10,
+                            events:[],
+                            frames: [
+                        {res: 'floater1', duration:10},
+                        {res: 'floater2', duration:1},
+                        {res: 'floater3', duration:1},
+                        {res: 'floater4', duration:1},
+                        {res: 'floater5', duration:1},
+                        {res: 'floater6'}
+                    ]
+                }
+            },
+            res:{
+                "floater1":{"x":0,"y":0,"w":169,"h":151},
+                "floater2":{"x":169,"y":0,"w":169,"h":151},
+                "floater3":{"x":0,"y":151,"w":169,"h":151},
+                "floater4":{"x":169,"y":151,"w":169,"h":151},
+                "floater5":{"x":338,"y":0,"w":169,"h":151},
+                "floater6":{"x":338,"y":151,"w":169,"h":151}
+            }
+        };
+        var img = new Image();
+        img.onload = function(){
+            var floater = new MovieClip(img.src, floaterData, 'floater', 'floater');
+            floater.gotoAndPlay(1);
+        }
+        img.src = 'http://edm.mcake.com/weifengwang/halloween/images/floater.png';
+        var height = $("#evt_container").outerHeight();
+        var fHeight = 151;
+        var fTop = 110;
+        var floater = $('.floatContainer');
+        var floaterPosition = 'fixed';
+        $(window).on("scroll", function(){
+            var sTop = $(this).scrollTop();
+            if(floaterPosition === 'fixed' &&  sTop > height - fHeight ){
+                floater.css({position: "absolute", top: height - fHeight});
+                floaterPosition = 'absolute';
+            }
+            if(floaterPosition === 'absolute' && sTop<height-fHeight){
+                floater.css({position: "fixed", top: fTop});
+                floaterPosition = 'fixed';
+            }
+        });
+    })();
+</script>
 
-<!-- build:js js/chocolate.js -->
-<script src="js/ec_main.js"></script>
-<script type="text/javascript" src="js/halloween.js"></script>
-<!-- endbuild -->
 </body>
 </html>

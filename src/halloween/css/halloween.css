@@ -31,7 +31,6 @@ body{background:#000000;}
 .evt_care .care-contain{width:1200px; height:667px; top:0; left:50%; margin:0 0 0 -600px; position:absolute; opacity: 0.5}
 .evt_care .care-bg,
 .evt_care .care-glitch{width:1200px; height:667px; position:absolute; top:0; left:0;}
-.evt_care .care-glitch{opacity:0;}
 .evt_care .care-pump{width:210px; height:135px; position:absolute; background:url(../images/care-pump.png) 0 0; left:522px; top:222px;}
 .evt_care .care-pump.light{background-position:0 -135px;}
 .evt_care .lighting{width:1920px; height:667px; position:absolute; top:0; left:50%; margin:0 0 0 -960px;}
@@ -58,3 +57,6 @@ body{background:#000000;}
 .evt_cake .rules h2{font-size:16px;}
 .evt_cake .rules li{font-size:14px;}
 .evt_cake .cakemc{position:absolute; top:0px; left:691px; width:563px;}
+
+.floatContainer{position:fixed; top:120px; right:0px; z-index:100;}
+.floater{}
