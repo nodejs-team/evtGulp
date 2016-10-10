@@ -262,6 +262,7 @@
         return '';
     })();
     function sliding(callback, duration){
+        //替换setTimeout功能
         var starttime;
         function animate(timestamp){
             var runtime = timestamp - starttime;
@@ -295,6 +296,7 @@
         }
 
         $lightingLeft.addClass('restore');
+
         // sliding(function(){
         //     $lighting.hide();
         //     sliding(function(){
@@ -386,7 +388,7 @@
             glitchStep(100);
             sliding(glitch, getRandom(3000,3500))
         }
-        sliding(glitch, 5000);
+        sliding(glitch, 4000);
     }
     function animateBtn(){
         var $glitch = $('.evt_care .btn-glitch');
@@ -477,14 +479,23 @@
         });
         loadAnimation();
     }
+    function initFloater(){
+        var floater = new MovieClip(Resource.getRes('floater_png'), McData.floater, 'floater', 'floater');
+        floater.gotoAndPlay(1);
+        var $hover = $('.floaterHover');
+        $('#floater').hover(function(){
+            $hover.fadeIn();
+        }, function(){
+            $hover.hide();
+        })
+    }
     function loadLoading(){
         var loader = new Resource.loadGroup("loading", resData);
         loader.addEvent('complete', function(){
             Resource.el('#evt_loading').style.display = 'block';
             var mc = new MovieClip(Resource.getRes('loading-slide_png'), McData.loadingSlide, 'loadingSlide', 'loading-slide');
             mc.gotoAndPlay(1);
-            var floater = new MovieClip(Resource.getRes('floater_png'), McData.floater, 'floater', 'floater');
-            floater.gotoAndPlay(1);
+            initFloater();
             loadResource();
         })
     }

@@ -376,7 +376,7 @@ gulp.task('default', ['watch','webserver','openbrowser']);
 
 //项目完成提交任务
 gulp.task('build', function(done) {
-    runSequence('clean','useref','rev-useref','minify-inline', 'tinypng', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', 'replace-sourceMap', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
+    runSequence('clean','useref','rev-useref','minify-inline', 'copy-image', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', 'replace-sourceMap', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
 });
 
 

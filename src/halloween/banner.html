@@ -80,17 +80,23 @@
 
 <style>
     .evt-container{background:black; height:667px; position:relative;}
+    .bgContainer{width:100%; height:100%; overflow:hidden; position:relative;}
     .banner-bg{width:1420px; height:667px; position:absolute; top:0; left:50%; margin:0 0 0 -710px;}
     .banner-link{display:block; width:100%; height:100%; position:absolute; top:0; left:0;}
     .floatContainer{position:fixed; top:110px; right:0; z-index:100;}
+    .floaterHover{width:220px; height:171px; position:absolute; top:0; left:-220px; background:url(http://edm.mcake.com/weifengwang/halloween/images/floaterHover.png); display:none;}
 </style>
 <div id="evt_container" class="evt-container evt-banner" style="position:relative;margin-bottom:15px;">
-    <div class="banner-bg">
-        <img src="http://edm.mcake.com/weifengwang/halloween/images/banner.png" alt="">
+    <div class="bgContainer">
+        <div class="banner-bg">
+            <img src="http://edm.mcake.com/weifengwang/halloween/images/banner.png" alt="">
+        </div>
     </div>
+
     <a href="http://mcake.com" class="banner-link"></a>
     <div class="floatContainer">
         <div class="floater" id="floater"></div>
+        <div class="floaterHover"></div>
     </div>
 </div>
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
@@ -143,6 +149,12 @@
                 floaterPosition = 'fixed';
             }
         });
+        var $hover = $('.floaterHover');
+        $('#floater').hover(function(){
+            $hover.fadeIn();
+        }, function(){
+            $hover.hide();
+        })
     })();
 </script>
 
