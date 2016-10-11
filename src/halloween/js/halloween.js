@@ -450,6 +450,11 @@
         $('.btn-glitch').on('click', function(){
             $('.evt_cake').fadeIn(function(){
                 $('.evt_care').hide();
+                //有横向滚动条
+                $(this).css({
+                    overflow: 'hidden',
+                    height: $('.cake-contain').height()
+                })
             })
             sliding(startMovieClip, 500)
         })
