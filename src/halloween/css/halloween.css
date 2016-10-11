@@ -58,5 +58,5 @@ body{background:#000000;}
 .evt_cake .rules li{font-size:14px;}
 .evt_cake .cakemc{position:absolute; top:0px; left:691px; width:563px;}
 
-.floatContainer{position:fixed; top:120px; right:0px; z-index:100;}
+.floatContainer{display:block; position:fixed; top:120px; right:0px; z-index:100;}
 .floaterHover{width:220px; height:171px; position:absolute; top:0; left:-220px; background:url(../images/floaterHover.png); display:none;}

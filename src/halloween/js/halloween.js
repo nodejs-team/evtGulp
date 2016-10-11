@@ -216,9 +216,9 @@
                     ,{res: 'pumpkin1', y:-34, duration:1}
                     ,{res: 'pumpkin3', y:-20, duration:1}
                     ,{res: 'pumpkin4', y:185, duration:1}
-                    ,{res: 'pumpkin5', y:185, duration:1}
-                    ,{res: 'pumpkin6', y:185, duration:1}
-                    ,{res: 'pumpkin7', y:185, duration:10}
+                    // ,{res: 'pumpkin5', y:185, duration:1}
+                    // ,{res: 'pumpkin6', y:185, duration:1}
+                    // ,{res: 'pumpkin7', y:185, duration:10}
                 ]
             }},
             res: {
@@ -388,7 +388,7 @@
             glitchStep(100);
             sliding(glitch, getRandom(3000,3500))
         }
-        sliding(glitch, 4000);
+        sliding(glitch, 2000);
     }
     function animateBtn(){
         var $glitch = $('.evt_care .btn-glitch');
@@ -430,6 +430,16 @@
     }
 
     function start(){
+        //小屏幕首屏露出按钮
+        var winHeight = $(window).height() || 0;
+        if(winHeight && winHeight<700){
+            $('.evt_care').css({
+                top: winHeight - 700
+            });
+            $('.evt_cake').css({
+                top: winHeight - 700
+            })
+        }
         $('.evt_care').fadeIn(function(){
             $('.evt_loading').hide();
             animateCake();
