@@ -14,15 +14,14 @@ img{border:0;}
 }
 
 body{background:#000000;}
-html,body{height:100%;}
-.evt_container{position:absolute; left:0; width:100%; _height:100%; min-height: 500px; top:100px; bottom: 0;}
+
+.evt_container{position:relative;}
 .evt_container div>img{width:100%;}
-.evt_loading{position:absolute; width:100%; _height:667px; display:none; top:0; left:0; bottom:0; overflow: hidden;}
-.evt_loading .loading-bg{width:100%; height:100%; position:absolute; top:0; left:0;}
-.evt_loading .loading-bg > img{ display: block; height:auto;}
+.evt_loading{position:absolute; height:667px; width:100%; display:none; top:0; left:0;}
+.evt_loading .loading-bg{width:1920px; height:667px; position:absolute; top:0; left:50%; margin:0 0 0 -960px}
 .evt_loading .loading-slide{position:absolute; top:52px; left:50%; margin:0 0 0 -248px;}
 .evt_loading .loading-title{position:absolute; width:302px; height:79px; top:297px; left:50%; margin:0 0 0 -151px;}
-.evt_loading .loading-load{position:absolute; width:110px; bottom:70px; left:50%; margin:0 0 0 -55px; text-align:center;}
+.evt_loading .loading-load{position:absolute; width:110px; top:585px; left:50%; margin:0 0 0 -55px; text-align:center;}
 .evt_loading .loading-load .text{color:#5b5b5b; font-size:20px;}
 .evt_loading .loading-load .progress{width:110px; height:2px; background:#49494a; margin:10px 0 0 0; position:relative;}
 .evt_loading .loading-load .progress span{display:block; position:absolute; top:0; left:0; background:#ff1523; height:2px; width:0%;}
