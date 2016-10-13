@@ -1,17 +1,17 @@
 {
-    "project" : "Gulp",     
+    "project" : "Gulp",
     "localserver" : {
         "host" : "192.168.46.51",
         "port" : "8081"
     },
-    "tinypngapi": "2u4HCdRMrLoU4UTy6yb2ssKkGeEpNPrN",
+    "tinypngapi": "******",
     "sftp" : {
-        "host" : "",
-        "user" : "",
-        "port" : "22",
-        "key" : "",
-        "remotePath" :"/2016/snowMan/"
+        "host" : "******",
+        "user" : "******",
+        "port" : "******",
+        "key" : "******",
+        "remotePath" :"******"
     },
-    "projectName": "quqi",
+    "projectName": "halloween",
     "revPrefix": "http://edm.mcake.com/weifengwang/"
 }   
