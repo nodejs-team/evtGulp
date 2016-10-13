@@ -13,6 +13,8 @@ var lr           = require('tiny-lr'),
     imagemin     = require('gulp-imagemin'),
     pngquant     = require('imagemin-pngquant'),
     replace      = require('gulp-replace'),
+    rev          = require('gulp-rev'),
+    revCollector = require('gulp-rev-collector'),
     useref       = require('gulp-useref'),
     gulpif       = require('gulp-if'),
     tinypng      = require('gulp-tinypng-compress'),
@@ -70,7 +72,10 @@ gulp.task('imagemin', ["copy-gif"], function () {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
+        .pipe(rev())
         .pipe(gulp.dest(path.distImgFolder))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest(path.revImg));
 });
 
 //压缩图片 - tinypng
@@ -80,13 +85,19 @@ gulp.task('tinypng', ["copy-gif"], function () {
             key:config.tinypngapi,
             log:true
         }))
+        .pipe(rev())
         .pipe(gulp.dest(path.distImgFolder))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest(path.revImg));
 });
 
 //copy gif
 gulp.task('copy-gif', function () {
     return gulp.src(path.srcImgGif)
-        .pipe(gulp.dest(path.distImgFolder));
+        .pipe(rev())
+        .pipe(gulp.dest(path.distImgFolder))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest(path.revImgGif));
 });
 
 //JS检测
@@ -110,6 +121,15 @@ gulp.task('useref', function () {
         .pipe(gulp.dest(path.tmp));
 });
 
+//给合并的文件加版本号
+gulp.task('rev-useref', function () {
+    return gulp.src([path.tmpJs, path.tmpCss])
+        .pipe(rev())
+        .pipe(gulp.dest(path.dist))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest(path.rev));
+});
+
 //压缩html中的css和js代码
 gulp.task('minify-inline', function() {
     var options = {
@@ -130,6 +150,33 @@ gulp.task('minify-inline', function() {
         .pipe(gulp.dest(path.tmp));
 });
 
+//替换模板路径
+gulp.task('rev', function () {
+    return gulp.src([path.revJson, path.tmpHtml])
+        .pipe(revCollector({
+            replaceReved: true
+        }))
+        .pipe(gulp.dest(path.tmp));
+});
+
+//替换css资源路径
+gulp.task('rev-css', function () { //['imagemin']
+    return gulp.src([path.revImgJson, path.distCss])
+        .pipe(revCollector({
+            replaceReved: true
+        }))
+        .pipe(gulp.dest(path.distCssFolder));
+});
+
+//替换js资源路径
+gulp.task('rev-js', function () {
+    return gulp.src([path.revImgJson, path.distJs])
+        .pipe(revCollector({
+            replaceReved: true
+        }))
+        .pipe(gulp.dest(path.distJsFolder));
+});
+
 //替换模板相对路径到http
 gulp.task('replace-htmlpath', function(){
     return gulp.src([path.tmpHtml])
@@ -140,22 +187,25 @@ gulp.task('replace-htmlpath', function(){
 
 //替换js相对路径到http
 gulp.task('replace-jspath', function(){
-    return gulp.src([path.tmpJs])
+    return gulp.src([path.distJs])
         .pipe(replace(/"(css|images|js)\/([^"]+?)"/gm, '"' + config.revPrefix + config.projectName + "/" + '$1/$2' + '"'))
-        .pipe(replace(/(url:")([^"]+?)"/gm, '$1' + config.revPrefix + config.projectName + "/images/" + '$2' + '"'))
+        .pipe(replace(/(url:")([^"]+?)"/gm, '$1' + config.revPrefix + config.projectName + "/images/" + '$2' + '"')) //替换js中sourceMap相对路径到http
         .pipe(gulp.dest(path.distJsFolder));
 });
 
 //替换css相对路径到http
 gulp.task('replace-csspath', function(){
-    return gulp.src([path.tmpCss])
+    return gulp.src([path.distCss])
         .pipe(replace(/(:\s*url\()(\.\.)?([^)]+?)/gm, '$1' + config.revPrefix + config.projectName + '/$3'))
         .pipe(gulp.dest(path.distCssFolder));
 });
 
 /*====task for egret ======*/
 gulp.task("copy-config", function(){
-    return gulp.src(SRC + "/resource/*.json")
+    return gulp.src([SRC + "/rev/egret/*.json", SRC + "/resource/*.json"])
+        .pipe(revCollector({
+            replaceReved: true
+        }))
         .pipe(gulp.dest(DIST + "/resource"));
 });
 
@@ -208,18 +258,21 @@ gulp.task('html-base64', function () {
         .pipe(gulp.dest(DIST + "/"));
 });
 
-gulp.task('imagemin-egret', ["copy-config", "copy-js", "copy-media"], function(){
+gulp.task('imagemin-egret', ["copy-js", "copy-media"], function(){
     return gulp.src(SRC + "/resource/assets/**/*.{png,jpg,jpeg}")
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
+        .pipe(rev())
         .pipe(gulp.dest(DIST + "/resource/assets"))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest(SRC + "/rev/egret"))
 });
 
 gulp.task('build-egret', function(done) {
-    runSequence('imagemin-egret', 'replace2cdn', 'replace-launcher-path', 'clear-html-cdn', ['css-base64', 'html-base64'], done);
+    runSequence('imagemin-egret', 'copy-config', 'replace2cdn', 'replace-launcher-path', 'clear-html-cdn', ['css-base64', 'html-base64'], done);
 });
 
 /*====end task for egret ======*/
@@ -287,7 +340,7 @@ gulp.task('default', ['watch','webserver','openbrowser']);
 
 //项目完成提交任务
 gulp.task('build', function(done) {
-    runSequence('clean','useref','minify-inline', 'imagemin', 'replace-htmlpath', 'replace-jspath', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
+    runSequence('clean','useref','rev-useref','minify-inline','imagemin', ['rev','rev-js','rev-css'], 'replace-htmlpath', 'replace-jspath', /*'replace-csspath',*/ 'clean-tmp', done); //圆括号内任务串行执行，方括号内并行执行
 });
 
 
