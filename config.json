@@ -1,17 +1,16 @@
 {
     "project" : "Gulp",
     "localserver" : {
-        "host" : "192.168.46.51",
+        "host" : "localhost",
         "port" : "8081"
     },
     "tinypngapi": "2u4HCdRMrLoU4UTy6yb2ssKkGeEpNPrN",
     "ftp" : {
-        "host" : "******",
-        "user" : "******",
-        "port" : "******",
-        "key" : "******",
-        "remotePath" :"******"
+        "host" : "",
+        "user" : "",
+        "pass" : "",
+        "remotePath": ""
     },
-    "projectName": "halloween",
-    "revPrefix": "http://edm.mcake.com/weifengwang/"
+    "projectName": "cheese",
+    "revPrefix": "http://edm.mcake.com/shuxy/2016/"
 }   
