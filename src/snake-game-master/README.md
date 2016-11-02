@@ -1,4 +1,0 @@
-Snake Game
-===
-
-placeholder
