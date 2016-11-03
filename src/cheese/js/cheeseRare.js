@@ -227,12 +227,12 @@
         "a2":{"x":0,"y":0,"w":180,"h":193,"offX":1,"offY":2,"sourceW":181,"sourceH":197,"duration":40}};
 
     var sloganMcData = {
-        "s6":{"x":0,"y":0,"w":591,"h":347,"offX":27,"offY":0,"sourceW":628,"sourceH":352,"duration":30},
-        "s1":{"x":593,"y":0,"w":615,"h":333,"offX":3,"offY":0,"sourceW":628,"sourceH":352,"duration":10},
-        "s2":{"x":1210,"y":0,"w":613,"h":333,"offX":5,"offY":0,"sourceW":628,"sourceH":352,"duration":10},
-        "s3":{"x":593,"y":666,"w":556,"h":326,"offX":66,"offY":3,"sourceW":628,"sourceH":352,"duration":3},
-        "s4":{"x":593,"y":335,"w":551,"h":329,"offX":67,"offY":0,"sourceW":628,"sourceH":352,"duration":3},
-        "s5":{"x":0,"y":349,"w":591,"h":347,"offX":27,"offY":0,"sourceW":628,"sourceH":352,"duration":6}};
+        "s6":{"x":0,"y":0,"w":591,"h":341,"offX":2,"offY":0,"sourceW":593,"sourceH":349,"duration":30},
+        "s1":{"x":595,"y":686,"w":593,"h":327,"offX":0,"offY":0,"sourceW":593,"sourceH":349,"duration":10},
+        "s2":{"x":0,"y":686,"w":593,"h":327,"offX":0,"offY":0,"sourceW":593,"sourceH":349,"duration":10},
+        "s3":{"x":1190,"y":0,"w":552,"h":323,"offX":41,"offY":0,"sourceW":593,"sourceH":349,"duration":3},
+        "s4":{"x":593,"y":0,"w":551,"h":323,"offX":42,"offY":0,"sourceW":593,"sourceH":349,"duration":3},
+        "s5":{"x":0,"y":343,"w":591,"h":341,"offX":2,"offY":0,"sourceW":593,"sourceH":349,"duration":6}};
 
     var footerCatMcData = {
         "f4":{"x":0,"y":0,"w":117,"h":236,"offX":3,"offY":2,"sourceW":122,"sourceH":240,"duration":6},

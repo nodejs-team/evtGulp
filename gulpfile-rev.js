@@ -10,6 +10,7 @@ var gulp         = require('gulp'),
     clean        = require('gulp-clean'),
     imagemin     = require('gulp-imagemin'),
     pngquant     = require('imagemin-pngquant'),
+    cache        = require('gulp-cache'),
     replace      = require('gulp-replace'),
     rev          = require('gulp-rev'),
     revCollector = require('gulp-rev-collector'),
@@ -56,11 +57,11 @@ var path = {
 //压缩图片 - imagemin
 gulp.task('imagemin', ["copy-files"], function () {
     return gulp.src(path.srcImg)
-        .pipe(imagemin({
+        .pipe(cache(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
-        }))
+        })))
         .pipe(rev())
         .pipe(gulp.dest(path.distImgFolder))
         .pipe(rev.manifest())
@@ -70,10 +71,10 @@ gulp.task('imagemin', ["copy-files"], function () {
 //压缩图片 - tinypng
 gulp.task('tinypng', ["copy-files"], function () {
     return gulp.src(path.srcImg)
-        .pipe(tinypng({
+        .pipe(cache(tinypng({
             key:config.tinypngapi,
             log:true
-        }))
+        })))
         .pipe(rev())
         .pipe(gulp.dest(path.distImgFolder))
         .pipe(rev.manifest())
@@ -280,6 +281,11 @@ gulp.task('clean', function () {
 gulp.task('clean-tmp', function () {
     return gulp.src(path.tmp, {read: false})
         .pipe(clean({force: true}));
+});
+
+//清理cache
+gulp.task('clean-cache', function (done) {
+    return cache.clearAll(done);
 });
 
 //开启本地 Web 服务器功能

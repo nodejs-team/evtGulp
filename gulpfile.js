@@ -10,6 +10,7 @@ var gulp         = require('gulp'),
     clean        = require('gulp-clean'),
     imagemin     = require('gulp-imagemin'),
     pngquant     = require('imagemin-pngquant'),
+    cache        = require('gulp-cache'),
     replace      = require('gulp-replace'),
     useref       = require('gulp-useref'),
     gulpif       = require('gulp-if'),
@@ -43,21 +44,21 @@ var path = {
 //压缩图片 - imagemin
 gulp.task('imagemin', ["copy-files"], function () {
     return gulp.src(path.srcImg)
-        .pipe(imagemin({
+        .pipe(cache(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
-        }))
+        })))
         .pipe(gulp.dest(path.distImgFolder))
 });
 
 //压缩图片 - tinypng
 gulp.task('tinypng', ["copy-files"], function () {
     return gulp.src(path.srcImg)
-        .pipe(tinypng({
+        .pipe(cache(tinypng({
             key:config.tinypngapi,
             log:true
-        }))
+        })))
         .pipe(gulp.dest(path.distImgFolder))
 });
 
@@ -202,6 +203,11 @@ gulp.task('build-egret', function(done) {
 gulp.task('clean', function () {
     return gulp.src(path.dist, {read: false})
         .pipe(clean({force: true}));
+});
+
+//清理cache
+gulp.task('clean-cache', function (done) {
+    return cache.clearAll(done);
 });
 
 //开启本地 Web 服务器功能
