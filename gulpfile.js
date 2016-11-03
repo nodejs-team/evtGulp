@@ -2,6 +2,7 @@ var gulp         = require('gulp'),
     eventstream  = require('event-stream'),
     cssmin       = require('gulp-minify-css'),
     uglify       = require('gulp-uglify'),
+    sass         = require('gulp-sass'),
     minifyInline = require('gulp-minify-inline'),
     jshint       = require('gulp-jshint'),
     stylish      = require('jshint-stylish'),
@@ -29,6 +30,8 @@ var path = {
     dist: DIST,
     distImgFolder: DIST + '/images',
     srcJs: SRC + '/js/**/*.js',
+    srcSass: SRC + '/sass/**/*.scss',
+    srcCssFolder: SRC + '/css',
     srcImg: SRC + '/images/**/*.{png,jpg,jpeg}',
     srcImgGif: SRC + '/images/**/*.gif',
     srcFont: SRC + '/fonts/**/*',
@@ -74,6 +77,12 @@ gulp.task('copy-files', function (done) {
 
     eventstream.merge(tasks).on('end', done);
 
+});
+
+gulp.task('compile-sass', function(){
+    return gulp.src(path.srcSass)
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(gulp.dest(path.srcCssFolder));
 });
 
 //JS检测
@@ -219,8 +228,12 @@ gulp.task('upload', function(){
 
 });
 
+gulp.task('watch', function(){
+    gulp.watch(path.srcSass, ['compile-sass']);
+});
+
 //默认任务
-gulp.task('default', ['webserver']);
+gulp.task('default', ['watch', 'webserver']);
 
 //项目完成提交任务
 gulp.task('build', function(done) {

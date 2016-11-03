@@ -24,7 +24,7 @@
     window.JSON || (function(){
         window.JSON = {
             parse: function(data){
-               return ( Function( "return " + data ) )()
+                return ( Function( "return " + data ) )()
             }
         }
     })();
@@ -87,8 +87,8 @@
     });
 
     arrayProto.contains = arrayProto.includes || function( prop ){
-        return this.indexOf(prop) > -1;
-    };
+            return this.indexOf(prop) > -1;
+        };
 
     strProto.trim || (strProto.trim = function(){
         return this.replace(/(^\s+)|(\s+$)/g, "");
@@ -588,6 +588,42 @@
             resCfg.res = resObj;
 
             return resCfg;
+        } else if( typeof res === 'object' && !res.mc ) {
+            var resFrames = [];
+            var resObj = {};
+            var resCfg = {mc:{}, res:{}};
+
+            for(var i in res) {
+                var pos = res[i];
+                var uid = _genUID();
+                resFrames.push({
+                    res: uid,
+                    key: i,
+                    x: pos.offX,
+                    y: pos.offY,
+                    duration: pos.duration === undefined ? 1 : pos.duration
+                });
+
+                resObj[uid] = {
+                    x: pos.x,
+                    y: pos.y,
+                    w: pos.w,
+                    h: pos.h
+                }
+            }
+
+            resFrames = resFrames.sort(function (a, b) {
+                return parseInt(a.key.replace(/^[^\d]+/, "")) - parseInt(b.key.replace(/^[^\d]+/, ""));
+            });
+
+            resCfg.mc[resKey] = {
+                frames: resFrames,
+                frameRate: 24
+            };
+
+            resCfg.res = resObj;
+
+            return resCfg;
         }
 
         return res;
@@ -837,18 +873,18 @@
             var self = this,
                 index = 0,
                 length = sources.length;
-                //obj = sources[index];
+            //obj = sources[index];
 
             this.superClass.constructor.call(this);
 
             /*loadAsset(obj, function handle() {
-                self.dispatch('progress', ++index, length, obj);
-                if (index > length - 1) {
-                    self.dispatch('complete');
-                    return;
-                }
-                loadAsset((obj = sources[index]), handle);
-            });*/
+             self.dispatch('progress', ++index, length, obj);
+             if (index > length - 1) {
+             self.dispatch('complete');
+             return;
+             }
+             loadAsset((obj = sources[index]), handle);
+             });*/
 
             sources.forEach(function(source){
                 loadAsset(source, function(){

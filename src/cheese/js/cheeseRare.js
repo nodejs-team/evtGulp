@@ -5,45 +5,10 @@
     var resData = {
         "groups":[
             {
-                "keys":"cheese1_png,cheese2_png,cheese3_png,combine_plus_png,dec_btn_png,exchange_btn_png,footer_bg_jpg,footer_cat_png,fun_qrcode_png,g_bg_jpg,grid_bg_png,hand_png,inc_btn_png,num_text_png,pd_item_border_png,pd_item_border_h_png,pd_window_title_png,pd-img_jpg,price_bg_png,price_bg_h_png,price_text_png,reserve_btn_png,show_anibanner_png,slogan_png,sub_text_png,arrow1_png,arrow2_png,base_bg2_png,bash_bg_png,center_bg_jpg,cheese_cat_png,cheese_mc_png,cheese_pic1_png,cheese_pic2_png,cheese_pic5_png,cheese_pic6_png,cheese_title_png",
+                "keys":"footer_cat_png,fun_qrcode_png,g_bg_jpg,grid_bg_png,hand_png,inc_btn_png,num_text_png,pd_item_border_png,pd_item_border_h_png,pd_window_title_png,price_bg_png,price_bg_h_png,price_text_png,puren_png,qrcat_png,reserve_btn_png,slogan_png,slogan_banner_png,sub_text_png,arrow1_png,arrow2_png,base_bg2_png,bash_bg_png,center_bg_jpg,cheese_cat_png,cheese_mc_png,cheese_pic1_png,cheese_pic2_png,cheese_pic5_png,cheese_pic6_png,cheese_sugar_png,cheese_title_png,cheese1_png,cheese2_png,cheese3_png,combine_plus_png,dec_btn_png,exchange_btn_png,footer_bg_jpg",
                 "name":"preload"
             }],
         "resources":[
-            {
-                "name":"cheese1_png",
-                "type":"image",
-                "url":"cheese1.png"
-            },
-            {
-                "name":"cheese2_png",
-                "type":"image",
-                "url":"cheese2.png"
-            },
-            {
-                "name":"cheese3_png",
-                "type":"image",
-                "url":"cheese3.png"
-            },
-            {
-                "name":"combine_plus_png",
-                "type":"image",
-                "url":"combine_plus.png"
-            },
-            {
-                "name":"dec_btn_png",
-                "type":"image",
-                "url":"dec_btn.png"
-            },
-            {
-                "name":"exchange_btn_png",
-                "type":"image",
-                "url":"exchange_btn.png"
-            },
-            {
-                "name":"footer_bg_jpg",
-                "type":"image",
-                "url":"footer_bg.jpg"
-            },
             {
                 "name":"footer_cat_png",
                 "type":"image",
@@ -95,11 +60,6 @@
                 "url":"pd_window_title.png"
             },
             {
-                "name":"pd-img_jpg",
-                "type":"image",
-                "url":"pd-img.jpg"
-            },
-            {
                 "name":"price_bg_png",
                 "type":"image",
                 "url":"price_bg.png"
@@ -115,19 +75,29 @@
                 "url":"price_text.png"
             },
             {
+                "name":"puren_png",
+                "type":"image",
+                "url":"puren.png"
+            },
+            {
+                "name":"qrcat_png",
+                "type":"image",
+                "url":"qrcat.png"
+            },
+            {
                 "name":"reserve_btn_png",
                 "type":"image",
                 "url":"reserve_btn.png"
             },
             {
-                "name":"show_anibanner_png",
-                "type":"image",
-                "url":"show_anibanner.png"
-            },
-            {
                 "name":"slogan_png",
                 "type":"image",
                 "url":"slogan.png"
+            },
+            {
+                "name":"slogan_banner_png",
+                "type":"image",
+                "url":"slogan_banner.png"
             },
             {
                 "name":"sub_text_png",
@@ -190,11 +160,87 @@
                 "url":"cheese_pic6.png"
             },
             {
+                "name":"cheese_sugar_png",
+                "type":"image",
+                "url":"cheese_sugar.png"
+            },
+            {
                 "name":"cheese_title_png",
                 "type":"image",
                 "url":"cheese_title.png"
+            },
+            {
+                "name":"cheese1_png",
+                "type":"image",
+                "url":"cheese1.png"
+            },
+            {
+                "name":"cheese2_png",
+                "type":"image",
+                "url":"cheese2.png"
+            },
+            {
+                "name":"cheese3_png",
+                "type":"image",
+                "url":"cheese3.png"
+            },
+            {
+                "name":"combine_plus_png",
+                "type":"image",
+                "url":"combine_plus.png"
+            },
+            {
+                "name":"dec_btn_png",
+                "type":"image",
+                "url":"dec_btn.png"
+            },
+            {
+                "name":"exchange_btn_png",
+                "type":"image",
+                "url":"exchange_btn.png"
+            },
+            {
+                "name":"footer_bg_jpg",
+                "type":"image",
+                "url":"footer_bg.jpg"
             }]
     };
+
+    var cheeseMcData = {
+        "c6":{"x":557,"y":400,"w":267,"h":276,"offX":53,"offY":115,"sourceW":334,"sourceH":406,"duration":3},
+        "c7":{"x":269,"y":663,"w":286,"h":254,"offX":39,"offY":149,"sourceW":334,"sourceH":406,"duration":3},
+        "c8":{"x":269,"y":400,"w":286,"h":261,"offX":39,"offY":142,"sourceW":334,"sourceH":406,"duration":1},
+        "c1":{"x":557,"y":678,"w":279,"h":235,"offX":39,"offY":163,"sourceW":334,"sourceH":406,"duration":10},
+        "c2":{"x":0,"y":0,"w":315,"h":398,"offX":3,"offY":0,"sourceW":334,"sourceH":406,"duration":3},
+        "c3":{"x":604,"y":0,"w":279,"h":398,"offX":39,"offY":0,"sourceW":334,"sourceH":406,"duration":3},
+        "c4":{"x":317,"y":0,"w":285,"h":398,"offX":33,"offY":0,"sourceW":334,"sourceH":406,"duration":3},
+        "c5":{"x":0,"y":400,"w":267,"h":335,"offX":51,"offY":54,"sourceW":334,"sourceH":406,"duration":3}};
+
+    var qrCatMcData = {
+        "b4":{"x":0,"y":0,"w":261,"h":201,"offX":2,"offY":1,"sourceW":266,"sourceH":202,"duration":40},
+        "b1":{"x":0,"y":203,"w":261,"h":201,"offX":2,"offY":1,"sourceW":266,"sourceH":202,"duration":20},
+        "b2":{"x":263,"y":0,"w":259,"h":201,"offX":2,"offY":1,"sourceW":266,"sourceH":202,"duration":1},
+        "b3":{"x":0,"y":203,"w":261,"h":201,"offX":2,"offY":1,"sourceW":266,"sourceH":202,"duration":20}};
+
+    var bcatMcData = {
+        "a2":{"x":0,"y":0,"w":180,"h":193,"offX":0,"offY":0,"sourceW":181,"sourceH":193,"duration":40},
+        "a1":{"x":0,"y":195,"w":178,"h":191,"offX":0,"offY":2,"sourceW":181,"sourceH":193,"duration":20}};
+
+    var sloganMcData = {
+        "s2":{"x":0,"y":326,"w":613,"h":324,"offX":4,"offY":0,"sourceW":617,"sourceH":326,"duration":10},
+        "s3":{"x":1186,"y":652,"w":552,"h":320,"offX":65,"offY":0,"sourceW":617,"sourceH":326,"duration":1},
+        "s4":{"x":615,"y":326,"w":551,"h":320,"offX":66,"offY":0,"sourceW":617,"sourceH":326,"duration":1},
+        "s5":{"x":0,"y":652,"w":591,"h":326,"offX":26,"offY":0,"sourceW":617,"sourceH":326,"duration":6},
+        "s6":{"x":593,"y":652,"w":591,"h":326,"offX":26,"offY":0,"sourceW":617,"sourceH":326,"duration":30},
+        "s1":{"x":0,"y":0,"w":615,"h":324,"offX":2,"offY":0,"sourceW":617,"sourceH":326,"duration":10}};
+
+    var footerCatMcData = {
+        "f6":{"x":129,"y":0,"w":127,"h":232,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":30},
+        "f1":{"x":129,"y":0,"w":127,"h":232,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":10},
+        "f2":{"x":0,"y":238,"w":127,"h":232,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":1},
+        "f3":{"x":258,"y":0,"w":127,"h":229,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":1},
+        "f4":{"x":0,"y":0,"w":127,"h":236,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":6},
+        "f5":{"x":129,"y":234,"w":127,"h":229,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":4}};
 
     $.extend($.easing, {
         easeInCubic:function(e,f,a,h,g){
@@ -399,12 +445,51 @@
         });
     };
 
-    var setQieMC = function(){
-        var mc = new MovieClip(Resource.getRes('qie_dance_png'), qieMcData, 'qie', 'qie_dance');
-        mc.gotoAndPlay(1, 1);
-        mc.addEvent('complete', function(){
-            mc.gotoAndStop(1);
+    var setCheeseMC = function(){
+        var mcEl = document.createElement("div");
+        var $target = $("#cheese_aniwp");
+        var offset = $target.offset();
+        $(mcEl).css({
+            position: "absolute",
+            left: offset.left,
+            top: offset.top,
+            zIndex: 1000
         });
+        $(document.body).append(mcEl);
+        var mc = new MovieClip('cheese_mc_png', cheeseMcData, 'cheese_mc', mcEl);
+        mc.gotoAndPlay(1, 1);
+        mc.on("complete", function () {
+            $(mcEl).css({
+                position: "",
+                left: "",
+                top: "",
+                zIndex: ""
+            }).appendTo($target);
+        });
+        return mc;
+    };
+
+    var setQrCatMC = function(){
+        var mc = new MovieClip('qrcat_png', qrCatMcData, 'qr_mc', 'qr_cat');
+        mc.gotoAndPlay(1, -1);
+        return mc;
+    };
+
+    var setBcatMC = function(){
+        var mc = new MovieClip('cheese_cat_png', bcatMcData, 'bcat_mc', 'b_cat');
+        mc.gotoAndPlay(1, -1);
+        return mc;
+    };
+
+    var setSloganMC = function(){
+        var mc = new MovieClip('slogan_banner_png', sloganMcData, 'slogan_mc', 'slogan_banner');
+        mc.gotoAndPlay(1, -1);
+        return mc;
+    };
+
+    var setFooterCatMC = function(){
+        var mc = new MovieClip('footer_cat_png', footerCatMcData, 'fcat_mc', 'footer_cat');
+        mc.gotoAndPlay(1, -1);
         return mc;
     };
 
@@ -450,8 +535,12 @@
         var loadComplete = function () {
             Resource.el('#evt_loading').style.display = "none";
             Resource.el('#evt_container').style.display = 'block';
-            correctPNG($('#evt_container .evt_main').get(0));
-
+            setCheeseMC();
+            setQrCatMC();
+            setBcatMC();
+            setSloganMC();
+            setFooterCatMC();
+            correctPNG($('#evt_container').get(0));
             bindScroll('#scene_third');
             $("#plax_scene").parallax();
         };

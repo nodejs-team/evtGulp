@@ -49,6 +49,7 @@ body{
 
 
 .evt-container{
+  position: relative;
   width:100%;
   background: #f0f0f0 url(../images/g_bg.jpg);
 }
@@ -98,8 +99,15 @@ body{
     top:162px;
   }
   .cheese_ani{
-    left:260px;
-    top:55px;
+    width:334px;
+    height:406px;
+    left:180px;
+    top:-80px;
+    .sugar{
+      position: absolute;
+      left:50px;
+      bottom: -10px;
+    }
   }
   .hand{
     right:-60px;
@@ -122,7 +130,17 @@ body{
   height:410px;
   .fun-qrcode{
     left:150px;
-    top:0;
+    top:90px;
+    .qr-cat{
+      position: absolute;
+      top:-78px;
+      left:-55px;
+    }
+    .puren{
+      position: absolute;
+      right:-110px;
+      top:-90px;
+    }
   }
   .sub-text{
     left:462px;
@@ -238,8 +256,11 @@ body{
 
 .section-fourth{
   .pd-banner {
+    width:617px;
     height:331px;
     margin-top: -30px;
+    margin-left:auto;
+    margin-right:auto;
     text-align: center;
   }
   .pd-window-title{
@@ -357,9 +378,6 @@ body{
         position: absolute;
         right:183px;
         top:-5px;
-        width:127px;
-        height:232px;
-        background: url(../images/footer_cat.png) no-repeat;
       }
     }
 

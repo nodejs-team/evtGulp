@@ -1,45 +1,10 @@
 {
 	"groups":[
 	{
-		"keys":"cheese1_png,cheese2_png,cheese3_png,combine_plus_png,dec_btn_png,exchange_btn_png,footer_bg_jpg,footer_cat_png,fun_qrcode_png,g_bg_jpg,grid_bg_png,hand_png,inc_btn_png,num_text_png,pd_item_border_png,pd_item_border_h_png,pd_window_title_png,pd-img_jpg,price_bg_png,price_bg_h_png,price_text_png,reserve_btn_png,show_anibanner_png,slogan_png,sub_text_png,arrow1_png,arrow2_png,base_bg2_png,bash_bg_png,center_bg_jpg,cheese_cat_png,cheese_mc_png,cheese_pic1_png,cheese_pic2_png,cheese_pic5_png,cheese_pic6_png,cheese_title_png",
+		"keys":"footer_cat_png,fun_qrcode_png,g_bg_jpg,grid_bg_png,hand_png,inc_btn_png,num_text_png,pd_item_border_png,pd_item_border_h_png,pd_window_title_png,price_bg_png,price_bg_h_png,price_text_png,puren_png,qrcat_png,reserve_btn_png,show_anibanner_png,slogan_png,slogan_banner_png,sub_text_png,arrow1_png,arrow2_png,base_bg2_png,bash_bg_png,center_bg_jpg,cheese_cat_png,cheese_mc_png,cheese_pic1_png,cheese_pic2_png,cheese_pic5_png,cheese_pic6_png,cheese_sugar_png,cheese_title_png,cheese1_png,cheese2_png,cheese3_png,combine_plus_png,dec_btn_png,exchange_btn_png,footer_bg_jpg",
 		"name":"preload"
 	}],
 	"resources":[
-	{
-		"name":"cheese1_png",
-		"type":"image",
-		"url":"cheese1.png"
-	},
-	{
-		"name":"cheese2_png",
-		"type":"image",
-		"url":"cheese2.png"
-	},
-	{
-		"name":"cheese3_png",
-		"type":"image",
-		"url":"cheese3.png"
-	},
-	{
-		"name":"combine_plus_png",
-		"type":"image",
-		"url":"combine_plus.png"
-	},
-	{
-		"name":"dec_btn_png",
-		"type":"image",
-		"url":"dec_btn.png"
-	},
-	{
-		"name":"exchange_btn_png",
-		"type":"image",
-		"url":"exchange_btn.png"
-	},
-	{
-		"name":"footer_bg_jpg",
-		"type":"image",
-		"url":"footer_bg.jpg"
-	},
 	{
 		"name":"footer_cat_png",
 		"type":"image",
@@ -91,11 +56,6 @@
 		"url":"pd_window_title.png"
 	},
 	{
-		"name":"pd-img_jpg",
-		"type":"image",
-		"url":"pd-img.jpg"
-	},
-	{
 		"name":"price_bg_png",
 		"type":"image",
 		"url":"price_bg.png"
@@ -111,6 +71,16 @@
 		"url":"price_text.png"
 	},
 	{
+		"name":"puren_png",
+		"type":"image",
+		"url":"puren.png"
+	},
+	{
+		"name":"qrcat_png",
+		"type":"image",
+		"url":"qrcat.png"
+	},
+	{
 		"name":"reserve_btn_png",
 		"type":"image",
 		"url":"reserve_btn.png"
@@ -124,6 +94,11 @@
 		"name":"slogan_png",
 		"type":"image",
 		"url":"slogan.png"
+	},
+	{
+		"name":"slogan_banner_png",
+		"type":"image",
+		"url":"slogan_banner.png"
 	},
 	{
 		"name":"sub_text_png",
@@ -186,8 +161,48 @@
 		"url":"cheese_pic6.png"
 	},
 	{
+		"name":"cheese_sugar_png",
+		"type":"image",
+		"url":"cheese_sugar.png"
+	},
+	{
 		"name":"cheese_title_png",
 		"type":"image",
 		"url":"cheese_title.png"
+	},
+	{
+		"name":"cheese1_png",
+		"type":"image",
+		"url":"cheese1.png"
+	},
+	{
+		"name":"cheese2_png",
+		"type":"image",
+		"url":"cheese2.png"
+	},
+	{
+		"name":"cheese3_png",
+		"type":"image",
+		"url":"cheese3.png"
+	},
+	{
+		"name":"combine_plus_png",
+		"type":"image",
+		"url":"combine_plus.png"
+	},
+	{
+		"name":"dec_btn_png",
+		"type":"image",
+		"url":"dec_btn.png"
+	},
+	{
+		"name":"exchange_btn_png",
+		"type":"image",
+		"url":"exchange_btn.png"
+	},
+	{
+		"name":"footer_bg_jpg",
+		"type":"image",
+		"url":"footer_bg.jpg"
 	}]
 }
