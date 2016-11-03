@@ -223,24 +223,24 @@
         "b3":{"x":0,"y":203,"w":261,"h":201,"offX":2,"offY":1,"sourceW":266,"sourceH":202,"duration":20}};
 
     var bcatMcData = {
-        "a2":{"x":0,"y":0,"w":180,"h":193,"offX":0,"offY":0,"sourceW":181,"sourceH":193,"duration":40},
-        "a1":{"x":0,"y":195,"w":178,"h":191,"offX":0,"offY":2,"sourceW":181,"sourceH":193,"duration":20}};
+        "a1":{"x":0,"y":195,"w":179,"h":191,"offX":0,"offY":4,"sourceW":181,"sourceH":197,"duration":20},
+        "a2":{"x":0,"y":0,"w":180,"h":193,"offX":1,"offY":2,"sourceW":181,"sourceH":197,"duration":40}};
 
     var sloganMcData = {
-        "s2":{"x":0,"y":326,"w":613,"h":324,"offX":4,"offY":0,"sourceW":617,"sourceH":326,"duration":10},
-        "s3":{"x":1186,"y":652,"w":552,"h":320,"offX":65,"offY":0,"sourceW":617,"sourceH":326,"duration":1},
-        "s4":{"x":615,"y":326,"w":551,"h":320,"offX":66,"offY":0,"sourceW":617,"sourceH":326,"duration":1},
-        "s5":{"x":0,"y":652,"w":591,"h":326,"offX":26,"offY":0,"sourceW":617,"sourceH":326,"duration":6},
-        "s6":{"x":593,"y":652,"w":591,"h":326,"offX":26,"offY":0,"sourceW":617,"sourceH":326,"duration":30},
-        "s1":{"x":0,"y":0,"w":615,"h":324,"offX":2,"offY":0,"sourceW":617,"sourceH":326,"duration":10}};
+        "s6":{"x":0,"y":0,"w":591,"h":347,"offX":27,"offY":0,"sourceW":628,"sourceH":352,"duration":30},
+        "s1":{"x":593,"y":0,"w":615,"h":333,"offX":3,"offY":0,"sourceW":628,"sourceH":352,"duration":10},
+        "s2":{"x":1210,"y":0,"w":613,"h":333,"offX":5,"offY":0,"sourceW":628,"sourceH":352,"duration":10},
+        "s3":{"x":593,"y":666,"w":556,"h":326,"offX":66,"offY":3,"sourceW":628,"sourceH":352,"duration":3},
+        "s4":{"x":593,"y":335,"w":551,"h":329,"offX":67,"offY":0,"sourceW":628,"sourceH":352,"duration":3},
+        "s5":{"x":0,"y":349,"w":591,"h":347,"offX":27,"offY":0,"sourceW":628,"sourceH":352,"duration":6}};
 
     var footerCatMcData = {
-        "f6":{"x":129,"y":0,"w":127,"h":232,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":30},
-        "f1":{"x":129,"y":0,"w":127,"h":232,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":10},
-        "f2":{"x":0,"y":238,"w":127,"h":232,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":1},
-        "f3":{"x":258,"y":0,"w":127,"h":229,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":1},
-        "f4":{"x":0,"y":0,"w":127,"h":236,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":6},
-        "f5":{"x":129,"y":234,"w":127,"h":229,"offX":2,"offY":1,"sourceW":130,"sourceH":238,"duration":4}};
+        "f4":{"x":0,"y":0,"w":117,"h":236,"offX":3,"offY":2,"sourceW":122,"sourceH":240,"duration":6},
+        "f5":{"x":238,"y":0,"w":117,"h":229,"offX":3,"offY":2,"sourceW":122,"sourceH":240,"duration":4},
+        "f6":{"x":119,"y":0,"w":117,"h":232,"offX":3,"offY":2,"sourceW":122,"sourceH":240,"duration":30},
+        "f1":{"x":119,"y":0,"w":117,"h":232,"offX":3,"offY":2,"sourceW":122,"sourceH":240,"duration":10},
+        "f2":{"x":0,"y":238,"w":117,"h":232,"offX":3,"offY":2,"sourceW":122,"sourceH":240,"duration":1},
+        "f3":{"x":119,"y":234,"w":117,"h":229,"offX":3,"offY":2,"sourceW":122,"sourceH":240,"duration":1}};
 
     $.extend($.easing, {
         easeInCubic:function(e,f,a,h,g){

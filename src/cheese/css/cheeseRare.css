@@ -144,8 +144,8 @@ body {
 }
 
 .section-secondary .fun-qrcode {
-  left: 150px;
-  top: 90px;
+  left: 208px;
+  top: 80px;
 }
 
 .section-secondary .fun-qrcode .qr-cat {
@@ -186,8 +186,8 @@ body {
 }
 
 .section-third .q4 {
-  left: 518px;
-  top: 0;
+  left: 50px;
+  top: -120px;
 }
 
 .section-third .q5 {
@@ -288,12 +288,13 @@ body {
 }
 
 .section-fourth .pd-banner {
-  width: 617px;
-  height: 331px;
+  width: 628px;
+  height: 352px;
   margin-top: -30px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  overflow: hidden;
 }
 
 .section-fourth .pd-window-title {

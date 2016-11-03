@@ -1,7 +1,7 @@
-{"file":"slogan.png","frames":{
-"s2":{"x":0,"y":326,"w":613,"h":324,"offX":4,"offY":0,"sourceW":617,"sourceH":326},
-"s3":{"x":1186,"y":652,"w":552,"h":320,"offX":65,"offY":0,"sourceW":617,"sourceH":326},
-"s4":{"x":615,"y":326,"w":551,"h":320,"offX":66,"offY":0,"sourceW":617,"sourceH":326},
-"s5":{"x":0,"y":652,"w":591,"h":326,"offX":26,"offY":0,"sourceW":617,"sourceH":326},
-"s6":{"x":593,"y":652,"w":591,"h":326,"offX":26,"offY":0,"sourceW":617,"sourceH":326},
-"s1":{"x":0,"y":0,"w":615,"h":324,"offX":2,"offY":0,"sourceW":617,"sourceH":326}}}
+{"file":"slogan_banner.png","frames":{
+"s6":{"x":0,"y":0,"w":591,"h":347,"offX":27,"offY":0,"sourceW":628,"sourceH":352},
+"s1":{"x":593,"y":0,"w":615,"h":333,"offX":3,"offY":0,"sourceW":628,"sourceH":352},
+"s2":{"x":1210,"y":0,"w":613,"h":333,"offX":5,"offY":0,"sourceW":628,"sourceH":352},
+"s3":{"x":593,"y":666,"w":556,"h":326,"offX":66,"offY":3,"sourceW":628,"sourceH":352},
+"s4":{"x":593,"y":335,"w":551,"h":329,"offX":67,"offY":0,"sourceW":628,"sourceH":352},
+"s5":{"x":0,"y":349,"w":591,"h":347,"offX":27,"offY":0,"sourceW":628,"sourceH":352}}}

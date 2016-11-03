@@ -129,8 +129,8 @@ body{
   position: relative;
   height:410px;
   .fun-qrcode{
-    left:150px;
-    top:90px;
+    left:208px;
+    top:80px;
     .qr-cat{
       position: absolute;
       top:-78px;
@@ -164,8 +164,8 @@ body{
     top:119px;
   }
   .q4{
-    left:518px;
-    top:0;
+    left:50px;
+    top:-120px;
   }
   .q5{
     left:566px;
@@ -256,12 +256,13 @@ body{
 
 .section-fourth{
   .pd-banner {
-    width:617px;
-    height:331px;
+    width:628px;
+    height:352px;
     margin-top: -30px;
     margin-left:auto;
     margin-right:auto;
     text-align: center;
+    overflow: hidden;
   }
   .pd-window-title{
     height:70px;
