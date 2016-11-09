@@ -6,7 +6,7 @@
     },
     "tinypngapi": "2u4HCdRMrLoU4UTy6yb2ssKkGeEpNPrN",
     "ftp" : {
-        "host" : "",
+        "host" : "...",
         "user" : "",
         "pass" : "",
         "remotePath": ""
