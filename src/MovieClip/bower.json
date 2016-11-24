@@ -1,0 +1,23 @@
+{
+  "name": "MovieClip",
+  "authors": [
+    "semdy <501859275@qq.com>"
+  ],
+  "description": "a component for animation use css",
+  "main": "index.js",
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "animation"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

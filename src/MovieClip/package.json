@@ -1,0 +1,24 @@
+{
+  "name": "movieclip",
+  "version": "1.0.0",
+  "description": "a component for animation use css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/semdy/MovieClip.git"
+  },
+  "keywords": [
+    "js",
+    "css",
+    "animation"
+  ],
+  "author": "semdy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/semdy/MovieClip/issues"
+  },
+  "homepage": "https://github.com/semdy/MovieClip#readme"
+}

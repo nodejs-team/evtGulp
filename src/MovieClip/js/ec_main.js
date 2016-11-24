@@ -164,88 +164,67 @@
     /*=========== Event ==========*/
     var Event = function() {
         this._eventPool = {};
-        this._guid = 0;
     };
 
     Event.prototype = {
 
-        on: function(eventName, handle, scope){
+        on: function(name, callback, ctx){
+            var e = this._eventPool;
+
+            (e[name] || (e[name] = [])).push({
+                fn: callback,
+                ctx: ctx || this
+            });
+
+            return this;
+        },
+
+        once: function(name, callback, ctx){
             var self = this;
 
-            if( !(eventName in this._eventPool) ){
-                this._eventPool[eventName] = [];
+            function listener () {
+                self.off(name, listener);
+                callback.apply(this, arguments);
             }
 
-            handle._guid = this._guid++;
+            listener._ = callback;
 
-            var scopeHandle = function(){
-                return handle.apply(scope || self, arguments);
-            };
+            return this.on(name, listener, ctx);
+        },
 
-            scopeHandle._guid = handle._guid;
+        off: function(name, callback){
+            var e = this._eventPool;
+            var evts = e[name];
+            var liveEvents = [];
 
-            this._eventPool[eventName].push(scopeHandle);
+            if (evts && callback) {
+                liveEvents = evts.filter(function(evt){
+                    return evt.fn !== callback && evt.fn._ !== callback;
+                });
+            }
+
+            (liveEvents.length)
+                ? e[name] = liveEvents
+                : delete e[name];
 
             return this;
         },
 
-        once: function(eventName, handle, scope){
-            var handler = function(){
-                handle.apply(scope||this, arguments);
-                this.off(eventName, handler);
-            };
-
-            this.on(eventName, handler, this);
-
-            return this;
-        },
-
-        addEvent: function(){
-            return this.on.apply(this, arguments);
-        },
-
-        off: function(eventName, handle, scope){
-            if( handle === undefined ){
-                delete this._eventPool[eventName];
-                return this;
-            }
-
-            var events = this._eventPool[eventName];
-
-            if( !events ) return this;
-
-            for(var i=0; i<events.length; i++){
-                if( events[i]._guid === handle._guid ){
-                    events.splice(i, 1);
-                }
-            }
-
-            return this;
-        },
-
-        dispatch: function( eventName ){
-            var events = this._eventPool[eventName];
-
-            if( !events ) return this;
-
+        dispatch: function( name ){
             var args = slice.call(arguments, 1);
+            var evts = this._eventPool[name] || [];
 
-            for(var i = 0; i<events.length; i++){
-                typeof events[i] == 'function' && events[i].apply(this, args);
+            if( evts.length ) {
+                evts.forEach(function (evt) {
+                    evt.fn.apply(evt.ctx, args);
+                });
             }
 
             return this;
         },
 
-        dispatchAll: function(){
-            var args = slice.call(arguments);
-
-            for(var i in this._eventPool){
-                args.unshift(i);
-                this.dispatch.apply(this, args);
-            }
-
-            return this;
+        emit: function () {
+            return this.dispatch.apply(this, arguments);
         },
 
         success: function(cb){

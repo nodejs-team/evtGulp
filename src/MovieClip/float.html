@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-<script type="text/javascript" src="js/ec_main.min.js"></script>
+<script type="text/javascript" src="js/ec_main.js"></script>
 <script>
     (function(d,w){
 
@@ -63,7 +63,7 @@
         };
 
         var loader = new Resource.loadGroup("float", float_data);
-        loader.addEvent("complete", function () {
+        loader.on("complete", function () {
             var mc_dance = new MovieClip(Resource.getRes('bd[1-4]_png'), mc_config, 'mc_float', 'float_banner');
                 mc_dance.gotoAndPlay(1,-1);
         });

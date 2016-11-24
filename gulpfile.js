@@ -243,7 +243,7 @@ gulp.task('default', ['watch', 'webserver']);
 
 //项目完成提交任务
 gulp.task('build', function(done) {
-    runSequence('clean','useref', 'tinypng', done);
+    runSequence('clean','useref', 'imagemin', done);
 });
 
 
