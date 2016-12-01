@@ -443,6 +443,12 @@
         create: function () {
             this.el = document.createElement("div");
             this.el.className = 'snow';
+            this.el.style["width"] = this.opts.snowWidth + "px";
+            this.el.style["height"] = this.opts.snowHeight + "px";
+            this.el.style["top"] = -this.opts.snowHeight + "px";
+            this.el.style["-webkit-transition"] = "all " + this.opts.speed + "ms linear";
+            this.el.style["transition"] = "all " + this.opts.speed + "ms linear";
+
             this.container.appendChild(this.el);
             this.fall();
         },
@@ -452,18 +458,14 @@
             var destLeft = getRandom(-300, 300);
             var scale = getRandom(0.6, 1);
 
-            this.el.style["width"] = this.opts.snowWidth + "px";
-            this.el.style["height"] = this.opts.snowHeight + "px";
+
             this.el.style["left"] = left + "px";
-            this.el.style["top"] = -this.opts.snowHeight + "px";
             this.el.style["-ms-transform"] = "scale("+ scale +")";
             this.el.style["-webkit-transform"] = "scale("+ scale +")";
             this.el.style["transform"] = "scale("+ scale +")";
-            this.el.style["-webkit-transition"] = "all " + this.opts.speed + "ms linear";
-            this.el.style["transition"] = "all " + this.opts.speed + "ms linear";
 
             body.offsetWidth;
-            var transformStyle = "scale("+ scale +") translate3d("+ destLeft +"px,"+ (clientSize.clientH + this.opts.snowHeight)*(1/scale) +"px,0px)";
+            var transformStyle = "scale("+ scale +") translate3d("+ destLeft +"px,"+ (clientSize.clientH + this.opts.snowHeight)*2 +"px,0px)";
             this.el.style["-webkit-transform"] = transformStyle;
             this.el.style["transform"] = transformStyle;
 
