@@ -458,7 +458,6 @@
             var destLeft = getRandom(-300, 300);
             var scale = getRandom(0.6, 1);
 
-
             this.el.style["left"] = left + "px";
             this.el.style["-ms-transform"] = "scale("+ scale +")";
             this.el.style["-webkit-transform"] = "scale("+ scale +")";
