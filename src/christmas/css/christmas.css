@@ -1,0 +1,292 @@
+/* line 1, ../sass/christmas.scss */
+body, ul, li, ol, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* line 2, ../sass/christmas.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 3, ../sass/christmas.scss */
+img {
+  border: 0;
+}
+
+/* line 5, ../sass/christmas.scss */
+#evt_loading {
+  position: relative;
+  height: 600px;
+}
+
+/* line 10, ../sass/christmas.scss */
+#evt_spin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -100px;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Microsoft YaHei",Tahoma,Arial;
+}
+
+/* line 22, ../sass/christmas.scss */
+.evt-container {
+  position: relative;
+  display: none;
+}
+
+/* line 27, ../sass/christmas.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 31, ../sass/christmas.scss */
+.evt-content {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 38, ../sass/christmas.scss */
+.evt-container {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+/* line 44, ../sass/christmas.scss */
+.evt-content .secItem {
+  position: absolute;
+}
+/* line 46, ../sass/christmas.scss */
+.evt-content .secItem .arrow {
+  position: absolute;
+}
+
+/* line 52, ../sass/christmas.scss */
+.section-banner {
+  height: 975px;
+  background: url(../images/banner_bg.jpg) no-repeat 50% 0;
+}
+/* line 56, ../sass/christmas.scss */
+.section-banner .lg-title {
+  position: absolute;
+  left: 86px;
+  top: 72px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/* line 64, ../sass/christmas.scss */
+.section-banner .lg-price {
+  position: absolute;
+  left: 153px;
+  top: 514px;
+}
+/* line 69, ../sass/christmas.scss */
+.section-banner .lg-price .buy-link {
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  width: 88px;
+  height: 27px;
+}
+/* line 78, ../sass/christmas.scss */
+.section-banner .lighter {
+  position: absolute;
+  left: 442px;
+  top: 430px;
+}
+
+/* line 85, ../sass/christmas.scss */
+.section-main {
+  background: url(../images/main_bg.jpg);
+}
+/* line 87, ../sass/christmas.scss */
+.section-main .evt-content {
+  height: 2640px;
+}
+/* line 91, ../sass/christmas.scss */
+.section-main .buy-btn .buy-link {
+  position: absolute;
+  width: 130px;
+  height: 40px;
+}
+/* line 97, ../sass/christmas.scss */
+.section-main .q1 {
+  left: 70px;
+  top: -23px;
+}
+/* line 101, ../sass/christmas.scss */
+.section-main .q2 {
+  left: 488px;
+  top: 134px;
+}
+/* line 105, ../sass/christmas.scss */
+.section-main .q3 {
+  left: 213px;
+  top: 537px;
+}
+/* line 109, ../sass/christmas.scss */
+.section-main .q3 .buy-link {
+  left: 20px;
+  top: 5px;
+}
+/* line 114, ../sass/christmas.scss */
+.section-main .q4 {
+  left: 460px;
+  top: 410px;
+}
+/* line 118, ../sass/christmas.scss */
+.section-main .q5 {
+  left: 260px;
+  top: 694px;
+}
+/* line 122, ../sass/christmas.scss */
+.section-main .q6 {
+  left: 555px;
+  top: 992px;
+}
+/* line 126, ../sass/christmas.scss */
+.section-main .q6 .buy-link {
+  left: 38px;
+  top: 5px;
+}
+/* line 131, ../sass/christmas.scss */
+.section-main .q7 {
+  left: 52px;
+  top: 1022px;
+}
+/* line 135, ../sass/christmas.scss */
+.section-main .q8 {
+  left: 323px;
+  top: 1255px;
+}
+/* line 139, ../sass/christmas.scss */
+.section-main .q9 {
+  left: 178px;
+  top: 1576px;
+}
+/* line 143, ../sass/christmas.scss */
+.section-main .q9 .buy-link {
+  left: 20px;
+  top: 0;
+  height: 50px;
+}
+/* line 149, ../sass/christmas.scss */
+.section-main .q10 {
+  left: 367px;
+  top: 1624px;
+}
+/* line 153, ../sass/christmas.scss */
+.section-main .q11 {
+  left: 706px;
+  top: 1530px;
+}
+/* line 157, ../sass/christmas.scss */
+.section-main .q12 {
+  left: 730px;
+  top: 2022px;
+}
+/* line 161, ../sass/christmas.scss */
+.section-main .q12 .buy-link {
+  left: 20px;
+  top: 2px;
+  height: 50px;
+}
+/* line 167, ../sass/christmas.scss */
+.section-main .q13 {
+  left: 237px;
+  top: 2160px;
+}
+/* line 171, ../sass/christmas.scss */
+.section-main .q14 {
+  left: 205px;
+  top: 2050px;
+}
+/* line 175, ../sass/christmas.scss */
+.section-main .q15 {
+  left: 66px;
+  top: 2315px;
+}
+/* line 179, ../sass/christmas.scss */
+.section-main .q15 .buy-link {
+  left: 20px;
+  bottom: 3px;
+  height: 50px;
+}
+/* line 185, ../sass/christmas.scss */
+.section-main .q16 {
+  left: 599px;
+  top: 2562px;
+}
+/* line 189, ../sass/christmas.scss */
+.section-main .footer-bg {
+  bottom: 0px;
+  left: 348px;
+}
+
+/* line 195, ../sass/christmas.scss */
+.mc-logo {
+  position: absolute;
+  right: 0;
+  top: 52px;
+  width: 61px;
+  height: 88px;
+  background: url(../images/christ_logo.png) no-repeat;
+}
+
+/* line 205, ../sass/christmas.scss */
+.evt-footer {
+  height: 300px;
+  background-color: #e9eaee;
+}
+/* line 209, ../sass/christmas.scss */
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+/* line 215, ../sass/christmas.scss */
+.evt-footer .evt-rules {
+  padding-left: 138px;
+  padding-top: 62px;
+}
+/* line 218, ../sass/christmas.scss */
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+/* line 223, ../sass/christmas.scss */
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/* line 234, ../sass/christmas.scss */
+.snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+}
+/* line 241, ../sass/christmas.scss */
+.snow-container .snow {
+  position: absolute;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  background: url(../images/snow.png) no-repeat\9;
+}
+/* line 251, ../sass/christmas.scss */
+.snow-container :root .snow {
+  background: none;
+}

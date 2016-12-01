@@ -4,13 +4,13 @@
         "host" : "localhost",
         "port" : "8081"
     },
-    "tinypngapi": "2u4HCdRMrLoU4UTy6yb2ssKkGeEpNPrN",
+    "tinypngapi": "UlHtl4xh4OPWCVBj67bQWE78Gi9mis3P",
     "ftp" : {
         "host" : "",
         "user" : "",
         "pass" : "",
         "remotePath": ""
     },
-    "projectName": "gcat",
-    "revPrefix": ""
+    "projectName": "christmas",
+    "revPrefix": "http://edm.mcake.com/shuxy/2016/"
 }   

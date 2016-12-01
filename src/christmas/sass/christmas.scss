@@ -1,0 +1,254 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+img{border:0;}
+
+#evt_loading{
+    position:relative;
+    height:600px;
+}
+
+#evt_spin{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-10px;
+    margin-left:-100px;
+    width:200px;
+    text-align:center;
+    font-size:18px;
+    font-family:"Microsoft YaHei",Tahoma,Arial;
+}
+
+.evt-container{
+    position: relative;
+    display: none;
+}
+
+body{
+  overflow-x:hidden;
+}
+
+.evt-content{
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+}
+
+
+.evt-container{
+  width:100%;
+  background-color: #f4f4f4;
+}
+
+.evt-content{
+    .secItem {
+      position: absolute;
+      .arrow {
+        position: absolute;
+      }
+    }
+}
+
+.section-banner{
+  height:975px;
+  background: url(../images/banner_bg.jpg) no-repeat 50% 0;
+
+  .lg-title{
+    position: absolute;
+    left:86px;
+    top:72px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+
+  .lg-price{
+    position: absolute;
+    left:153px;
+    top:514px;
+
+    .buy-link{
+      position: absolute;
+      left:0;
+      bottom:6px;
+      width:88px;
+      height:27px;
+    }
+  }
+
+  .lighter{
+    position: absolute;
+    left: 442px;
+    top: 430px;
+  }
+}
+
+.section-main{
+  background: url(../images/main_bg.jpg);
+  .evt-content{
+    height:2640px;
+  }
+  .buy-btn{
+    .buy-link{
+      position: absolute;
+      width:130px;
+      height:40px;
+    }
+  }
+  .q1{
+    left:70px;
+    top:-23px;
+  }
+  .q2{
+    left:488px;
+    top:134px;
+  }
+  .q3{
+    left:213px;
+    top:537px;
+
+    .buy-link{
+      left: 20px;
+      top: 5px;
+    }
+  }
+  .q4{
+    left:460px;
+    top:410px;
+  }
+  .q5{
+    left:260px;
+    top:694px;
+  }
+  .q6{
+    left:555px;
+    top:992px;
+
+    .buy-link{
+      left: 38px;
+      top: 5px;
+    }
+  }
+  .q7{
+    left:52px;
+    top:1022px;
+  }
+  .q8{
+    left:323px;
+    top:1255px;
+  }
+  .q9{
+    left:178px;
+    top:1576px;
+
+    .buy-link{
+      left: 20px;
+      top: 0;
+      height: 50px;
+    }
+  }
+  .q10{
+    left:367px;
+    top:1624px;
+  }
+  .q11{
+    left:706px;
+    top:1530px;
+  }
+  .q12{
+    left:730px;
+    top:2022px;
+
+    .buy-link{
+      left: 20px;
+      top: 2px;
+      height: 50px;
+    }
+  }
+  .q13{
+    left:237px;
+    top:2160px;
+  }
+  .q14{
+    left:205px;
+    top:2050px;
+  }
+  .q15{
+    left:66px;
+    top:2315px;
+
+    .buy-link{
+      left: 20px;
+      bottom: 3px;
+      height: 50px;
+    }
+  }
+  .q16{
+    left:599px;
+    top:2562px;
+  }
+  .footer-bg{
+    bottom:0px;
+    left:348px;
+  }
+}
+
+.mc-logo{
+  position: absolute;
+  right:0;
+  top:52px;
+  width:61px;
+  height:88px;
+  background: url(../images/christ_logo.png) no-repeat;
+}
+
+
+.evt-footer{
+  height:300px;
+  background-color: #e9eaee;
+
+  .footer-bd{
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+  }
+
+  .evt-rules{
+    padding-left:138px;
+    padding-top:62px;
+    h2{
+      font-size:18px;
+      margin-bottom: 5px;
+      color:#333;
+    }
+    p{
+      font-size:16px;
+      line-height: 1.5;
+      color:#333;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+  }
+}
+
+
+.snow-container{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 2000;
+
+  .snow{
+    position: absolute;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 15px rgba(255,255,255, 0.8);
+    box-shadow: 0 0 15px rgba(255,255,255, 0.8);
+    background: url(../images/snow.png) no-repeat\9;
+  }
+
+  :root .snow{
+    background: none;
+  }
+}

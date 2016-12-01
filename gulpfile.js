@@ -15,7 +15,8 @@ var gulp         = require('gulp'),
     useref       = require('gulp-useref'),
     gulpif       = require('gulp-if'),
     lazypipe     = require('lazypipe'),
-    tinypng      = require('gulp-tinypng-compress'),
+    tinyCompress = require('gulp-tinypng-compress'),
+    tinypng     = require('gulp-tinypng'),
     ftp          = require('gulp-ftp'),
     gutil        = require('gulp-util'),
     runSequence  = require('gulp-run-sequence'),
@@ -52,13 +53,20 @@ gulp.task('imagemin', ["copy-files"], function () {
         .pipe(gulp.dest(path.distImgFolder))
 });
 
-//压缩图片 - tinypng
-gulp.task('tinypng', ["copy-files"], function () {
+//压缩图片 - tinypng-compress
+gulp.task('tinypng-compress', ["copy-files"], function () {
     return gulp.src(path.srcImg)
-        .pipe(cache(tinypng({
+        .pipe(cache(tinyCompress({
             key:config.tinypngapi,
             log:true
         })))
+        .pipe(gulp.dest(path.distImgFolder))
+});
+
+//压缩图片 - tinypng
+gulp.task('tinypng', ["copy-files"], function () {
+    return gulp.src(path.srcImg)
+        .pipe(cache(tinypng(config.tinypngapi)))
         .pipe(gulp.dest(path.distImgFolder))
 });
 
@@ -243,7 +251,7 @@ gulp.task('default', ['watch', 'webserver']);
 
 //项目完成提交任务
 gulp.task('build', function(done) {
-    runSequence('clean','useref', 'imagemin', done);
+    runSequence('clean','useref', 'tinypng', done);
 });
 
 
