@@ -55,8 +55,8 @@ body{
 
   .lg-title{
     position: absolute;
-    left:86px;
-    top:72px;
+    left:-50px;
+    top:-10px;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
   }
@@ -79,6 +79,18 @@ body{
     position: absolute;
     left: 442px;
     top: 430px;
+  }
+
+  .banner-link{
+    position: absolute;
+    left:300px;
+    top:400px;
+    width:500px;
+    height:370px;
+    outline: none;
+    background: #fff;
+    opacity:0;
+    filter:alpha(opacity=0);
   }
 }
 
@@ -194,8 +206,8 @@ body{
 
 .mc-logo{
   position: absolute;
-  right:0;
-  top:52px;
+  right:10px;
+  top:54px;
   width:61px;
   height:88px;
   background: url(../images/christ_logo.png) no-repeat;

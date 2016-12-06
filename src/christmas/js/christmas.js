@@ -132,8 +132,8 @@
     };
 
     var christmasMcData = {
-        "c2":{"x":0,"y":233,"w":215,"h":224,"offX":9,"offY":0,"sourceW":226,"sourceH":234,duration:18},
-        "c1":{"x":0,"y":0,"w":211,"h":231,"offX":9,"offY":0,"sourceW":226,"sourceH":234,duration:30}
+        "c1":{"x":0,"y":0,"w":224,"h":230,"offX":2,"offY":2,"sourceW":232,"sourceH":235,duration:18},
+        "c2":{"x":0,"y":232,"w":224,"h":223,"offX":6,"offY":2,"sourceW":232,"sourceH":235,duration:30}
     };
 
     var lighterMcData = {
@@ -355,10 +355,10 @@
         $(mcElwp).css({
             position: "fixed",
             left: "50%",
-            marginLeft: "255px",
+            marginLeft: "260px",
             width: "230px",
             height: "220px",
-            top: "47px",
+            top: "45px",
             zIndex: 1000
         }).append(mcEl).append(mcLogo);
         $(document.body).append(mcElwp);
