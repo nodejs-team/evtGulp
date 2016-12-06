@@ -248,6 +248,7 @@ body{
   top:0;
   left:0;
   width:100%;
+  pointer-events: none;
   z-index: 2000;
 
   .snow{
@@ -260,7 +261,7 @@ body{
     background: url(../images/snow.png) no-repeat\9;
   }
 
-  :root .snow{
-    background: none;
+   @at-root :root .snow-container .snow{
+    background: none\9;
   }
 }
