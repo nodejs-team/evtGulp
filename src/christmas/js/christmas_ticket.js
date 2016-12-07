@@ -350,7 +350,7 @@
     var setCheeseMC = function(){
         var mcElwp = document.createElement("div");
         var mcEl = document.createElement("div");
-        $(mcElwp).css({
+        $(mcElwp).addClass("mc-nav").css({
             position: "fixed",
             left: "50%",
             marginLeft: "290px",
