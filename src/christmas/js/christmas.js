@@ -352,7 +352,7 @@
         var mcEl = document.createElement("div");
         var mcLogo = document.createElement('div');
         mcLogo.className = "mc-logo";
-        $(mcElwp).css({
+        $(mcElwp).addClass("mc-nav").css({
             position: "fixed",
             left: "50%",
             marginLeft: "260px",
