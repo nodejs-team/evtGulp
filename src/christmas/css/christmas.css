@@ -227,6 +227,16 @@ body {
   left: 348px;
 }
 
+.evt-beijing .section-main .q9 {
+  left: 425px;
+  top: 1445px;
+  z-index: 10;
+}
+
+.evt-beijing .section-main .evt-content {
+  height: 1627px;
+}
+
 .mc-logo {
   position: absolute;
   right: 10px;
