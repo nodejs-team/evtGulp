@@ -55,6 +55,10 @@ body {
   position: absolute;
 }
 
+.evt-content a {
+  outline: none;
+}
+
 .section-banner {
   height: 975px;
   background: url(../images/banner_bg.jpg) no-repeat 50% 0;
@@ -106,6 +110,10 @@ body {
 
 .section-main .evt-content {
   height: 2640px;
+}
+
+.section-main .buy-btn {
+  z-index: 20;
 }
 
 .section-main .buy-btn .buy-link {

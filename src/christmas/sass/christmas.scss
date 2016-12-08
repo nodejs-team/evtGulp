@@ -47,6 +47,10 @@ body{
         position: absolute;
       }
     }
+
+    a{
+      outline: none;
+    }
 }
 
 .section-banner{
@@ -98,6 +102,9 @@ body{
   background: url(../images/main_bg.jpg);
   .evt-content{
     height:2640px;
+  }
+  .buy-btn{
+    z-index: 20;
   }
   .buy-btn{
     .buy-link{
