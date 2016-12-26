@@ -546,7 +546,7 @@
         var loadComplete = function () {
             Resource.el('#evt_loading').style.display = "none";
             Resource.el('#evt_container').style.display = 'block';
-            setCheeseMC();
+            // setCheeseMC();
             setLighterMc();
             correctPNG($('#evt_container').get(0));
             bindScroll('#evt_container');
