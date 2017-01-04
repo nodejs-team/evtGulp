@@ -147,6 +147,14 @@
         display: none;
     }
 </style>
+<style>
+    #floater{position:fixed; top:110px; right:10px; z-index:11;}
+    #floater .rules{width:128px; padding:10px; border:1px solid #ff6699; color:#ff6699; font-size:12px; line-height:16px; border-radius:3px; margin-top:-1px;}
+    #floater .floatImg{width:156px; position:relative; font-size:0;}
+    #floater .floatImg img{width:100%;}
+    #floater .floatImg a{width:100%; display:block; height:144px; position:absolute; top:0; left:0;}
+    #floater .ruleHover{position:absolute; cursor:pointer; width:76px; height:26px; top:145px; left:34px;}
+</style>
 
 <div id="evt_loading">
     <span id="evt_spin">loading: 0%</span>
@@ -188,6 +196,19 @@
         </div>
         <span class="down-hint"></span>
     </div>
+    <div id="floater">
+        <div class="floatImg">
+            <img src="http://edm.mcake.com/shuxy/2016/strawberry/images/strawberry_floater.png" alt="">
+            <!--跳转链接-->
+            <a href="http://www.mcake.com"></a>
+        </div>
+        <div class="ruleHover"></div>
+        <div class="rules" style="display:none;">
+            <p>1. 活动时间：2017年1月12日——2月4日</p>
+            <p>2. 活动渠道：PC端、WAP端</p>
+            <p>3. 单笔订单购买任意款蛋糕即可参加新年换购优惠。加10元换购价值156元伊蒂之屋新年礼包（染眉膏*1、腮红*1）数量有限，卖完即止，产品请以实物为准！</p>
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
@@ -195,5 +216,50 @@
 <!-- build:js js/banner.js -->
 <script type="text/javascript" src="js/banner.js"></script>
 <!-- endbuild -->
+<script>
+    ;(function(){
+        var height = $("#evt_container").outerHeight();
+        var fHeight = 167;
+        var fTop = 110;
+        var floater = $('#floater');
+        var floaterPosition = 'fixed';
+        $(window).on("scroll", function(){
+            var sTop = $(this).scrollTop();
+            if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
+                floater.css({position: "absolute", top: height - fHeight});
+                floaterPosition = 'absolute';
+            }
+            if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
+                floater.css({position: "fixed", top: fTop});
+                floaterPosition = 'fixed';
+            }
+        });
+        var floatHover = $('.ruleHover');
+        var rules = $('#floater .rules');
+        var hideTimer,showTimer;
+        floatHover.on('mouseenter', function(){
+            clearTimeout(hideTimer);
+            showTimer = setTimeout(function(){
+                rules.fadeIn();
+            }, 300)
+        }).on('mouseleave', function(){
+            clearTimeout(showTimer);
+            hideTimer = setTimeout(function(){
+                rules.fadeOut();
+            }, 300)
+        })
+        rules.on('mouseenter', function(){
+            clearTimeout(hideTimer);
+            showTimer = setTimeout(function(){
+                rules.fadeIn();
+            }, 300)
+        }).on('mouseleave', function(){
+            clearTimeout(showTimer);
+            hideTimer = setTimeout(function(){
+                rules.fadeOut();
+            }, 300)
+        })
+    })()
+</script>
 </body>
 </html>
