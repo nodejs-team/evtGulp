@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <!-- endbuild -->
 </head>
-<body>
+<body style="height:2000px;">
 
 <link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
 <div class="header">
@@ -110,8 +110,8 @@
         z-index: 5;
     }
     .section-banner .q2{
-        left:810px;
-        top:32px;
+        left:760px;
+        top:82px;
     }
     .section-banner .q4{
         left:68px;
@@ -148,9 +148,9 @@
     }
 </style>
 <style>
-    #floater{position:fixed; top:110px; right:10px; z-index:11;}
-    #floater .rules{width:128px; padding:10px; border:1px solid #ff6699; color:#ff6699; font-size:12px; line-height:16px; border-radius:3px; margin-top:-1px;}
-    #floater .floatImg{width:156px; position:relative; font-size:0;}
+    #floater{position:fixed; top:110px; right:10px; z-index:11; width:178px;}
+    #floater .rules{width:156px; padding:10px; border:1px solid #ff6699; color:#ff6699; font-size:12px; line-height:16px; border-radius:3px; margin-top:-1px; background:#f9f3f6;}
+    #floater .floatImg{width:156px; position:relative; font-size:0; margin:0 0 0 17px;}
     #floater .floatImg img{width:100%;}
     #floater .floatImg a{width:100%; display:block; height:144px; position:absolute; top:0; left:0;}
     #floater .ruleHover{position:absolute; cursor:pointer; width:76px; height:26px; top:145px; left:34px;}
@@ -172,7 +172,7 @@
                 <div class="q-price"></div>
             </div>
             <div class="secItem q2" data-anim="slide-down-r" data-delay="1.6">
-                <img src="images/banner/q2.png" width="332" height="372" />
+                <img src="images/banner/q2.png" width="265" height="295" />
             </div>
             <div class="secItem q-spoon" data-anim="slide-down-r">
                 <img src="images/banner/q3.png" width="133" height="165" />
@@ -221,16 +221,18 @@
         var height = $("#evt_container").outerHeight();
         var fHeight = 167;
         var fTop = 110;
+        var fRight = 10;
         var floater = $('#floater');
         var floaterPosition = 'fixed';
+        var winWidth = $(window).width();
         $(window).on("scroll", function(){
             var sTop = $(this).scrollTop();
             if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
-                floater.css({position: "absolute", top: height - fHeight});
+                floater.css({position: "absolute", top: height - fHeight, right: 1280-winWidth+fRight});
                 floaterPosition = 'absolute';
             }
             if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
-                floater.css({position: "fixed", top: fTop});
+                floater.css({position: "fixed", top: fTop, right:fRight});
                 floaterPosition = 'fixed';
             }
         });
