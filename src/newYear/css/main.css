@@ -1,0 +1,384 @@
+@-webkit-keyframes alternate-fade {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+@keyframes alternate-fade {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+@-webkit-keyframes mask-motion {
+  0% {
+    background-position: -100px 0;
+  }
+  40% {
+    background-position: 185px 0;
+  }
+  100% {
+    background-position: 185px 0;
+  }
+}
+/* line 40, ../sass/main.scss */
+body, ul, li, ol, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* line 41, ../sass/main.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 42, ../sass/main.scss */
+img {
+  border: 0;
+}
+
+/* line 44, ../sass/main.scss */
+#evt_loading {
+  position: relative;
+  height: 600px;
+}
+
+/* line 49, ../sass/main.scss */
+#evt_spin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -100px;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Microsoft YaHei",Tahoma,Arial;
+}
+
+/* line 61, ../sass/main.scss */
+.evt-container {
+  position: relative;
+  display: none;
+}
+
+/* line 67, ../sass/main.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 71, ../sass/main.scss */
+.evt-content {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 78, ../sass/main.scss */
+.evt-container {
+  width: 100%;
+  background-color: #f5f5f3;
+}
+
+/* line 84, ../sass/main.scss */
+.evt-content .secItem {
+  position: absolute;
+}
+/* line 86, ../sass/main.scss */
+.evt-content .secItem .arrow {
+  position: absolute;
+}
+/* line 91, ../sass/main.scss */
+.evt-content a {
+  outline: none;
+}
+/* line 95, ../sass/main.scss */
+.evt-content .recond {
+  text-align: center;
+}
+/* line 97, ../sass/main.scss */
+.evt-content .recond img {
+  display: block;
+}
+/* line 100, ../sass/main.scss */
+.evt-content .recond .buy-btn {
+  display: inline-block;
+  width: 94px;
+  height: 29px;
+  line-height: 100;
+  overflow: hidden;
+  margin-top: 10px;
+  background: url(../images/buy-btn.png) no-repeat;
+}
+
+/* line 112, ../sass/main.scss */
+.section-banner {
+  position: relative;
+  height: 690px;
+  z-index: 10;
+  background: url(../images/top_bg.jpg) repeat-x 50% 0;
+  -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.12);
+}
+/* line 119, ../sass/main.scss */
+.section-banner .q1 {
+  left: 270px;
+  top: 340px;
+}
+/* line 123, ../sass/main.scss */
+.section-banner .q-title {
+  left: 293px;
+  top: 0;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+/* line 128, ../sass/main.scss */
+.section-banner .q-title .q-price {
+  position: absolute;
+  left: 137px;
+  bottom: 25px;
+  width: 150px;
+  height: 24px;
+  background: url(../images/color_text.png) no-repeat center;
+  background: -webkit-image-set(url(../images/mask_bg.jpg) 1x) repeat;
+  /*-webkit-mask-image: -webkit-linear-gradient(-45deg, #000 30%, rgba(0,0,0,0.3) 50%, #000 70%);*/
+  -webkit-animation: mask-motion 4s linear both infinite;
+  -webkit-mask-image: url(../images/mask_text.png);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+}
+/* line 142, ../sass/main.scss */
+.section-banner .q-title .q-title-dc {
+  position: absolute;
+  left: 146px;
+  bottom: 25px;
+}
+/* line 148, ../sass/main.scss */
+.section-banner .q-spoon {
+  left: 160px;
+  top: 508px;
+}
+/* line 152, ../sass/main.scss */
+.section-banner .rec1 {
+  left: 732px;
+  top: 375px;
+}
+/* line 156, ../sass/main.scss */
+.section-banner .down-hint {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -35.5px;
+  width: 71px;
+  height: 33px;
+  background: url(../images/arrow_down.png) no-repeat;
+}
+/* line 165, ../sass/main.scss */
+.section-banner .lighter {
+  filter: alpha(opacity=20);
+  -webkit-animation: alternate-fade ease 3s both infinite;
+  animation: alternate-fade ease 3s both infinite;
+}
+/* line 169, ../sass/main.scss */
+.section-banner .l1 {
+  left: 652px;
+  top: 182px;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+/* line 175, ../sass/main.scss */
+.section-banner .l2 {
+  left: 852px;
+  top: 25px;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+/* line 181, ../sass/main.scss */
+.section-banner .l3 {
+  left: 932px;
+  top: 60px;
+}
+
+/* line 188, ../sass/main.scss */
+.section-main .evt-content {
+  height: 1782px;
+}
+/* line 191, ../sass/main.scss */
+.section-main .q4 {
+  left: 56px;
+  top: -115px;
+}
+/* line 195, ../sass/main.scss */
+.section-main .q3 {
+  left: 351px;
+  top: 220px;
+}
+/* line 199, ../sass/main.scss */
+.section-main .rec2 {
+  left: 561px;
+  top: 58px;
+}
+/* line 202, ../sass/main.scss */
+.section-main .rec2 .arrow {
+  left: -58px;
+  top: 117px;
+}
+/* line 207, ../sass/main.scss */
+.section-main .spoon2 {
+  left: 720px;
+  top: 153px;
+}
+/* line 211, ../sass/main.scss */
+.section-main .dc1 {
+  right: 134px;
+  top: 32px;
+}
+/* line 215, ../sass/main.scss */
+.section-main .box1 {
+  left: 140px;
+  top: 486px;
+}
+/* line 219, ../sass/main.scss */
+.section-main .dc2 {
+  left: 282px;
+  top: 573px;
+}
+/* line 223, ../sass/main.scss */
+.section-main .dc3 {
+  left: 846px;
+  top: 500px;
+}
+/* line 227, ../sass/main.scss */
+.section-main .mongo {
+  left: 110px;
+  top: 716px;
+}
+/* line 231, ../sass/main.scss */
+.section-main .q5 {
+  left: 383px;
+  top: 628px;
+}
+/* line 235, ../sass/main.scss */
+.section-main .rec3 {
+  left: 384px;
+  top: 676px;
+}
+/* line 238, ../sass/main.scss */
+.section-main .rec3 .arrow {
+  left: 70px;
+  top: 33px;
+}
+/* line 243, ../sass/main.scss */
+.section-main .dc4 {
+  left: 228px;
+  top: 930px;
+}
+/* line 247, ../sass/main.scss */
+.section-main .q6 {
+  left: 265px;
+  top: 966px;
+}
+/* line 251, ../sass/main.scss */
+.section-main .box2 {
+  left: 808px;
+  top: 1005px;
+}
+/* line 255, ../sass/main.scss */
+.section-main .spoon3 {
+  left: 77px;
+  top: 1155px;
+}
+/* line 259, ../sass/main.scss */
+.section-main .dc5 {
+  left: 190px;
+  top: 1336px;
+}
+/* line 263, ../sass/main.scss */
+.section-main .dc6 {
+  right: 76px;
+  top: 1226px;
+}
+/* line 267, ../sass/main.scss */
+.section-main .q7 {
+  left: 201px;
+  top: 1135px;
+}
+/* line 271, ../sass/main.scss */
+.section-main .q8 {
+  left: 282px;
+  top: 1340px;
+}
+/* line 275, ../sass/main.scss */
+.section-main .q9 {
+  left: 532px;
+  top: 1445px;
+}
+/* line 279, ../sass/main.scss */
+.section-main .rec4 {
+  left: 633px;
+  top: 1150px;
+}
+/* line 282, ../sass/main.scss */
+.section-main .rec4 .arrow {
+  left: -93px;
+  top: 25px;
+}
+/* line 287, ../sass/main.scss */
+.section-main .rec5 {
+  left: 163px;
+  top: 1563px;
+}
+/* line 290, ../sass/main.scss */
+.section-main .rec5 .arrow {
+  left: 87px;
+  top: 60px;
+}
+/* line 295, ../sass/main.scss */
+.section-main .dc7 {
+  right: -10px;
+  top: 1543px;
+}
+
+/* line 301, ../sass/main.scss */
+.evt-footer {
+  position: relative;
+  z-index: 10;
+}
+
+/* line 306, ../sass/main.scss */
+.browser-edge .q-price {
+  -webkit-animation: none !important;
+}
+
+/* line 311, ../sass/main.scss */
+.evt-footer {
+  height: 260px;
+  background-color: #fff;
+}
+/* line 315, ../sass/main.scss */
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+/* line 321, ../sass/main.scss */
+.evt-footer .evt-rules {
+  padding-left: 138px;
+  padding-top: 30px;
+  color: #907e59;
+}
+/* line 325, ../sass/main.scss */
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+/* line 329, ../sass/main.scss */
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
