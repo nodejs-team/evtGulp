@@ -97,6 +97,13 @@ body {
   left: -192px;
 }
 
+.section2 .img1 a {
+  width: 320px;
+  height: 300px;
+  top: -28px;
+  left: 400px;
+}
+
 .section2 .text1 {
   width: 243px;
   top: 159px;
@@ -128,6 +135,13 @@ body {
   left: 594px;
 }
 
+.section2 .img2 a {
+  width: 500px;
+  height: 500px;
+  top: -30px;
+  left: 65px;
+}
+
 .section2 .text2 {
   width: 284px;
   top: 946px;
@@ -138,6 +152,13 @@ body {
   width: 307px;
   top: 1520px;
   left: 189px;
+}
+
+.section2 .img3 a {
+  width: 315px;
+  height: 330px;
+  top: 0px;
+  left: 0px;
 }
 
 .section2 .text3 {

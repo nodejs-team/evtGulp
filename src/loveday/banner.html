@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>EC礼品卡</title>
-    <!-- build:css css/main.css -->
-    <link type="text/css" rel="stylesheet" href="css/animate.css" />
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <!-- endbuild -->
 </head>
-<body>
+<body style="height:2000px;">
 
 <link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
 <div class="header">
@@ -81,59 +77,85 @@
 
 </div>
 
+
+<style>
+    #evt_loading{position:relative; height:550px; margin-bottom:10px;}
+    #evt_spin{position:absolute; left:50%; top:50%; margin-top:-10px; margin-left:-100px; width:200px; text-align:center; font-size:18px; font-family:"Microsoft YaHei",Tahoma,Arial;}
+    #evt_container{position: relative; width:100%; background:#f0f0f1; margin-bottom:10px;}
+    .section-banner{background:url(images/banner-bg.png) no-repeat 50% 0; overflow:hidden; position:relative; height:550px;}
+    .evt-content{position: relative; width:1000px; margin:0 auto; height:550px;}
+    .evt-content div{position:absolute;}
+    .evt-content img{width:100%;}
+    #evt_container .model{width:358px; top:2px; left:4px;}
+    #evt_container .title{width:363px; top:103px; left:280px;}
+    #evt_container .flower{width:761px; top:41px; left:431px;}
+    #evt_container .link{width:100%; height:100%; position:absolute; top:0; left:0;}
+</style>
 <div id="evt_loading">
     <span id="evt_spin">loading: 0%</span>
 </div>
 
-<div id="evt_container" class="evt-container">
-    <div class="section1">
+<div id="evt_container" class="evt-container" style="display:none;">
+    <div class="section-banner">
         <div class="evt-content">
-            <div class="model"><img src="images/model.png" alt=""></div>
-            <div class="flower"><img src="images/flower.png" alt=""></div>
-            <div class="title"><img src="images/title.png" alt=""></div>
+            <div class="model"><img src="images/banner-model.png" alt=""></div>
+            <div class="flower"><img src="images/banner-flower.png" alt=""></div>
+            <div class="title"><img src="images/banner-title.png" alt=""></div>
         </div>
-    </div>
-    <div class="section2">
-        <div class="evt-content">
-            <div class="bg"><img src="images/bg.png" alt=""></div>
-            <div class="img1" data-anim="slide-right">
-                <img src="images/img1.png" alt="">
-                <a href=""></a>
-            </div>
-            <div class="text1" data-anim="slide-down-r"><img src="images/text1.png" alt=""></div>
-            <div class="area1" data-anim="slide-up-r">
-                <div class="price"><img src="images/price.png" alt=""></div>
-                <a href="javascript:;" class="buybtn"><img src="images/btn.png" alt=""></a>
-            </div>
-            <div class="img2" data-anim="slide-left">
-                <img src="images/img2.png" alt="">
-                <a href=""></a>
-            </div>
-            <div class="text2" data-anim="slide-up-l"><img src="images/text2.png" alt=""></div>
-            <div class="img3" data-anim="slide-right">
-                <img src="images/img3.png" alt="">
-                <a href=""></a>
-            </div>
-            <div class="text3" data-anim="slide-up-r"><img src="images/text3.png" alt=""></div>
-        </div>
-    </div>
-    <div class="section3">
-        <div class="evt-content">
-            <h2>活动规则</h2>
-            <p>1、活动时间：2017年 2月4日——2月17日</p>
-            <p>2、活动城市：北京</p>
-            <p>3、凡订购约瑟芬玫瑰即可在提交订单后扫描二维码，使用手机进行录音或利用文字对收货人进行传情，录音内容限60s以内，文字内容限140字。录音跟文字均可以在蛋糕生产前进行修改。</p>
-            <p>4、凡通过客服订购约瑟芬玫瑰即为货到付款用户，用户可登陆官网订单列表页或详情页登陆后进行录，如果蛋糕已生产则不可以录音及修改。</p>
-            <p>5、收货人听取表白信息时需要录入手机号选择订单，如果有问题需要回答问题，答对即可收听录音，如果连续三次答错，则可以选择发送正确答案至收货人手机。</p>
-        </div>
+        <a href="" class="link"></a>
     </div>
 
 </div>
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
 <script src="http://edm.mcake.com/shuxy/2016/MovieClip/ec_main.js"></script>
-<!-- build:js js/main.js -->
-<script type="text/javascript" src="js/main.js"></script>
-<!-- endbuild -->
+<script>
+    $(function(){
+        var resData = {
+            "groups":[
+                {
+                    "keys":"banner-bg_png,banner-flower_png,banner-model_png,banner-title_png",
+                    "name":"preload"
+                }],
+            "resources":[
+                {
+                    "name":"banner-bg_png",
+                    "type":"image",
+                    "url":"http://edm.mcake.com/shuxy/2016/loveday/images/banner-bg.png"
+                },
+                {
+                    "name":"banner-flower_png",
+                    "type":"image",
+                    "url":"http://edm.mcake.com/shuxy/2016/loveday/images/banner-flower.png"
+                },
+                {
+                    "name":"banner-model_png",
+                    "type":"image",
+                    "url":"http://edm.mcake.com/shuxy/2016/loveday/images/banner-model.png"
+                },
+                {
+                    "name":"banner-title_png",
+                    "type":"image",
+                    "url":"http://edm.mcake.com/shuxy/2016/loveday/images/banner-title.png"
+                }]
+        }
+        var loadResource = function(){
+
+            var loadComplete = function () {
+                Resource.el('#evt_loading').style.display = "none";
+                Resource.el('#evt_container').style.display = 'block';
+            };
+            var loader = new Resource.loadGroup("preload", resData);
+            var spin = Resource.el('#evt_spin');
+
+            loader.on("progress", function (loaded, total) {
+                spin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
+            });
+
+            loader.on("complete", loadComplete);
+        };
+        loadResource();
+    })
+</script>
 </body>
 </html>
