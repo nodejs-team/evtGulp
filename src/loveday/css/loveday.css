@@ -1,11 +1,17 @@
-html {
-  height: 100%;
-  overflow: hidden;
+#blankdiv {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1680px;
+  top: 100px;
+  left: 0;
 }
 
 #evt_container {
   width: 100%;
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 100px;
   background: #e2c2ca;
   font-size: 0;
   overflow: hidden;
@@ -193,7 +199,7 @@ html {
   bottom: 0;
   width: 100%;
   left: 0;
-  height: 300px;
+  height: 280px;
 }
 
 #evt_content .fixed-bottom div, #evt_content .fixed-bottom a {

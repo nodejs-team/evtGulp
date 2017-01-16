@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>EC礼品卡</title>
-    <!-- build:css css/main.css -->
-    <link type="text/css" rel="stylesheet" href="css/main2.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <!-- build:css css/loveday.css -->
+    <link type="text/css" rel="stylesheet" href="css/loveday.css" />
     <!-- endbuild -->
 </head>
 <body>
@@ -82,15 +83,15 @@
 
 
 
-
+<div id="blankdiv" style="display:none;"></div>
 <div id="evt_container">
-    <div id="evt_loading" style="display:none;">
+    <div id="evt_loading">
         <div class="bg-left"><img src="images/lv2/loading-bg-left.jpg" alt=""></div>
         <div class="bg-right"><img src="images/lv2/loading-bg-right.jpg" alt=""></div>
         <div class="title"><img src="images/lv2/title.png" alt=""></div>
-        <span class="percent">50%</span>
+        <span id="evt_spin" class="percent">0%</span>
     </div>
-    <div id="evt_content">
+    <div id="evt_content" style="display:none;">
         <div class="section sec1">
             <div class="text1"><img src="images/lv2/text1.png" alt=""></div>
             <div class="img1"><img src="images/lv2/img1.png" alt=""></div>
@@ -137,11 +138,10 @@
 
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
-<script src="http://edm.mcake.com/shuxy/2016/MovieClip/ec_main.js"></script>
-<!-- build:js js/main.js -->
+<!-- build:js js/loveday.js -->
+<script src="js/ec_main.js"></script>
 <script src="js/jquery.parallax.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="js/main2.js"></script>
+<script type="text/javascript" src="js/loveday.js"></script>
 <!-- endbuild -->
 </body>
-</html>
+</html>qingrenj
