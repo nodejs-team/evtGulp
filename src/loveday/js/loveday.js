@@ -136,6 +136,251 @@
                 "url":"lv2/title.png"
             }]
     }
+    $.extend($.easing, {
+        easeInCubic:function(e,f,a,h,g){
+            return h*(f/=g)*f*f+a;
+        },
+        easeOutCubic: function(e,f,a,h,g){
+            return h*((f=f/g-1)*f*f+1)+a;
+        }
+    });
+    var aniMap = {
+        "slide-left": function(el, delay, cb){
+            var $el = $(el);
+            $el.css({
+                opacity: 0,
+                marginLeft: el.offsetWidth*0.5
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1,
+                    marginLeft: 0
+                }, 1000, 'easeOutCubic', function(){
+                    cb && cb();
+                });
+            }, delay);
+
+        },
+        "slide-right": function(el, delay, cb){
+            var $el = $(el);
+            $el.css({
+                opacity: 0,
+                marginLeft: -el.offsetWidth*0.5
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1,
+                    marginLeft: 0
+                }, 1000, 'easeOutCubic', function(){
+                    cb && cb();
+                });
+            }, delay);
+
+        },
+        "slide-down-l": function(el, delay, cb){
+            var $el = $(el);
+            $el.css({
+                opacity: 0,
+                marginLeft: -el.offsetWidth*0.3,
+                marginTop: -el.offsetHeight*0.8
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1,
+                    marginLeft: 0,
+                    marginTop: 0
+                }, 1000, 'easeOutCubic', function(){
+                    cb && cb();
+                });
+            }, delay);
+
+        },
+        "slide-down-r": function(el, delay, cb){
+            var $el = $(el);
+            $el.css({
+                opacity: 0,
+                marginLeft: el.offsetWidth*0.15,
+                marginTop: -el.offsetHeight*0.8
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1,
+                    marginLeft: 0,
+                    marginTop: 0
+                }, 1000, 'easeOutCubic', function(){
+                    cb && cb();
+                });
+            }, delay);
+
+        },
+        "slide-up-l": function(el, delay, cb){
+            var $el = $(el);
+            $el.css({
+                opacity: 0,
+                marginLeft: -el.offsetWidth*0.5,
+                marginTop: el.offsetHeight*0.5
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1,
+                    marginLeft: 0,
+                    marginTop: 0
+                }, 1000, 'easeOutCubic', function(){
+                    cb && cb();
+                });
+            }, delay);
+
+        },
+        "slide-up-r": function(el, delay, cb){
+            var $el = $(el);
+            $el.css({
+                opacity: 0,
+                marginLeft: el.offsetWidth*0.5,
+                marginTop: el.offsetHeight*0.5
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1,
+                    marginLeft: 0,
+                    marginTop: 0
+                }, 1000, 'easeOutCubic', function(){
+                    cb && cb();
+                });
+            }, delay);
+
+        },
+        "slide-up": function(el, delay, cb){
+            var $el = $(el);
+            $el.css({
+                opacity: 0,
+                //marginRight: -el.offsetWidth*0.5,
+                marginTop: el.offsetHeight*0.5
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1,
+                    // marginRight: 0,
+                    marginTop: 0
+                }, 1000, 'easeOutCubic', cb);
+            }, delay);
+
+        },
+        "fade-in": function(el, delay, cb){
+            var $el = $(el);
+            $el.css({
+                opacity: 0
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1
+                }, 800, cb);
+            }, delay);
+        }
+    };
+
+    var isSupportCss3 = (function(){
+        var ret = /MSIE (\d+\.\d+)/.exec(navigator.userAgent);
+        if( !ret || ret[1] > 9 ){
+            return true;
+        }
+        return false;
+    })();
+    var setAnimate = function(el, hasDelay){
+        var anim = el.getAttribute('data-anim');
+        var delay = Number(el.getAttribute('data-delay')||0)*1000;
+        var delayAdjust = Number(el.getAttribute('data-delay-adjust')||0)*1000;
+        var chain = el.getAttribute('data-chain');
+
+        delay = hasDelay ? delay : 0;
+        delay += delayAdjust;
+
+        if( isSupportCss3 ){
+            var chainHandle = function(){
+                $(chain).each(function(){
+                    setAnimate(this, true);
+                });
+                el.removeEventListener('webkitAnimationEnd', chainHandle, false);
+                el.removeEventListener('animationend', chainHandle, false);
+            };
+
+            el.className = [el.className, anim].join(" ");
+            el.style['-webkit-animation-delay'] = delay + "ms";
+            el.style['animationDelay'] = delay + "ms";
+            if( chain ) {
+                el.addEventListener('webkitAnimationEnd', chainHandle, false);
+                el.addEventListener('animationend', chainHandle, false);
+            }
+        } else {
+            if( aniMap[anim] ) {
+                aniMap[anim].call(el, el, delay, function(){
+                    if( chain ) {
+                        $(chain).each(function(){
+                            setAnimate(this, true);
+                        });
+                    }
+                });
+            }
+        }
+    };
+    var bindScroll = function( container ){
+
+        var checkOffset = 0;
+        var $win = $(window);
+        var winHeight = $win.height();
+        var elems = $(container).find('[data-anim]');
+        var elemObj = [];
+
+        elems.each(function(){
+            elemObj.push({
+                $elem: $(this),
+                anim: this.getAttribute('data-anim'),
+                scrollTop: $(this).offset().top,
+                checkOffset: Number(this.getAttribute('data-offset')),
+                isAnimated: false
+            });
+        });
+
+        $win.on('scroll', function(){
+            var scrollTop = $win.scrollTop();
+            var docHeight = document.documentElement.clientHeight;
+
+            $.each(elemObj, function(i, obj){
+                if( !obj.isAnimated ) {
+                    if( obj.$elem[0].getAttribute('data-ignore') ){
+                        obj.isAnimated = true;
+                        return;
+                    }
+                    if (scrollTop + docHeight - checkOffset - obj.checkOffset > obj.scrollTop) {
+                        setAnimate(obj.$elem[0], obj.scrollTop < winHeight);
+                        obj.isAnimated = true;
+                    }
+                }
+            });
+        })
+            .trigger('scroll');
+    };
+
+    Function.prototype.bind = Function.prototype.bind || function(){
+            var self = this,
+                context = [].shift.call(arguments),
+                args = [].slice.call(arguments);
+            return function(){
+                return self.apply(context, [].concat.call(args, [].slice.call(arguments)));
+            }
+        };
+
+
+
+
+
     var $win = $(window)
         ,$header = $('.header')
         ,$container = $('#evt_container')
@@ -145,11 +390,15 @@
         ,containerWidth
         ,containerHeight
         ,scale
+        ,headerHeight
+        ,winWidth
+        ,winHeight
+        ,viewHeight
     function initDomByScreenHeight(){
-        var headerHeight = $header.height(),
-            winWidth = $win.width(),
-            winHeight = $win.height(),
-            viewHeight = winHeight - headerHeight;
+        headerHeight = $header.height();
+        winWidth = $win.width();
+        winHeight = $win.height();
+        viewHeight = winHeight - headerHeight;
         containerWidth = winWidth>1920 ? 1920 : (winWidth>1280 ? winWidth : 1280);
         containerHeight = viewHeight>840 ? 840 : (viewHeight>500 ? viewHeight : 500);
         scale = containerHeight / 840;
@@ -160,29 +409,28 @@
         $sec2.css({
             top:sec2Top
         });
-        $('#blankdiv').css({
-            height: viewHeight>840 ? (840*2+viewHeight-840) : (840*2)
-        })
+
     }
     function initScroll(){
+        var btnOffTop = 678; //$('.sec1 .buybtn').offset().top-100+40; 按钮到顶部的距离
+        var percent = 0.3;
+        var ofTop = containerHeight < btnOffTop ? (btnOffTop-containerHeight)/percent : 0 ;    //露出按钮所需要滚动的距离
+        var blankHeight = viewHeight>840 ? (840*2+viewHeight-840) : (840*2);
+        blankHeight += (1-percent)*ofTop;
+        $('#blankdiv').css({
+            height: blankHeight
+        })
         $win.on('scroll', function(ev){
             var sTop = $win.scrollTop();
-            sec1Top = -sTop * 0.3;
-            sec2Top = 840-sTop;
+            sec1Top = -sTop*0.3;
+            if(sTop<ofTop){
+                sec2Top = 840-sTop*0.3;
+            } else {
+                sec2Top = 840-(ofTop*0.3+sTop-ofTop);
+            }
             $sec1.css('top', sec1Top);
             $sec2.css('top', sec2Top)
         })
-        // $(window).on('mousewheel', function(ev){
-        //     sec1Top += ev.deltaY*0.3;
-        //     sec2Top += ev.deltaY;
-        //     if(sec1Top<0 && sec2Top>containerHeight-840){
-        //         $sec1.css('top', sec1Top);
-        //         $sec2.css('top', sec2Top)
-        //     }else {
-        //         sec1Top -= ev.deltaY*0.3;
-        //         sec2Top -= ev.deltaY;
-        //     }
-        // })
     }
 
     function initRule(){
@@ -191,9 +439,10 @@
         })
     }
 
-    function animateLoading(){
+    function animateLoading(callback){
         $('#evt_loading .title').fadeOut();
         $('#evt_spin').fadeOut(function(){
+            $win.scrollTop(0)
             $('#evt_loading .bg-left').animate({
                 right: '100%'
             }, 500)
@@ -201,6 +450,7 @@
                 left: '100%'
             }, 500, function(){
                 $('#evt_loading').hide();
+                callback();
             })
         })
     }
@@ -214,10 +464,15 @@
         loader.on("complete", function(){
             $('#blankdiv').show();
             $('#evt_content').show();
-            $('.flower').parallax();
+            $('.flower').parallax({
+                elementWidth : 1000,
+                elementHeight : 1000
+            });
             initRule();
             initScroll();
-            animateLoading()
+            animateLoading(function(){
+                bindScroll('#evt_container')
+            });
         });
     }
 

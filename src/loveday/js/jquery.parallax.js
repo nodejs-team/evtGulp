@@ -280,8 +280,8 @@ if( typeof Function.prototype.bind !== 'function' ){
     this.bounds = this.element.getBoundingClientRect();
     this.ex = this.bounds.left;
     this.ey = this.bounds.top;
-    this.ew = this.bounds.width||this.element.offsetWidth;
-    this.eh = this.bounds.height||this.element.offsetHeight;
+    this.ew = this.elementWidth||this.bounds.width||this.element.offsetWidth;
+    this.eh = this.elementHeight||this.bounds.height||this.element.offsetHeight;
     this.ecx = this.ew * this.originX;
     this.ecy = this.eh * this.originY;
     this.erx = Math.max(this.ecx, this.ew - this.ecx);

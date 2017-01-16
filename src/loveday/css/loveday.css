@@ -84,6 +84,11 @@
   background: url(../images/lv2/content-bg.jpg) 50% 0;
 }
 
+#evt_content .section p {
+  color: #ffffff;
+  font-size: 12px;
+}
+
 #evt_content .section div, #evt_content .section a {
   display: block;
   margin: 0 auto;
@@ -109,13 +114,79 @@
   margin-top: 36px;
 }
 
-#evt_content .flower {
+#evt_content .section .area {
   width: 1000px;
-  height: 100%;
+  margin: 0 auto;
+}
+
+#evt_content .section .product {
+  width: 162px;
+}
+
+#evt_content .section .price {
+  width: 92px;
+  margin-top: 8px;
+}
+
+#evt_content .section .buybtn {
+  width: 160px;
+  height: 40px;
+  background: url(../images/lv2/buybtn.png);
+  margin-top: 14px;
+}
+
+#evt_content .section .buybtn.disable {
+  background: url(../images/lv2/buybtn-disable.png);
+  cursor: default;
+}
+
+#evt_content .section .rtitle {
+  width: 70px;
+  text-align: center;
+  margin: 5px auto 0 auto;
+  cursor: pointer;
+}
+
+#evt_content .section .rtitle i {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: url(../images/lv2/icon.png);
+  margin: 5px auto 0 auto;
+}
+
+#evt_content .section .rule {
+  width: 730px;
+  margin: 0 auto 10px auto;
+}
+
+#evt_content .section .rule p {
+  line-height: 16px;
+}
+
+#evt_content .section .ico {
+  display: block;
+  width: 29px;
+  height: 27px;
+  background: url(../images/lv2/ico.png);
+  margin: 0 auto;
+}
+
+#evt_content .section .an {
+  -webkit-animation: an 1s infinite;
+  animation: an 1s infinite;
+}
+
+#evt_content .sec1 .area {
+  margin-top: -150px;
+}
+
+#evt_content .flower {
   position: absolute;
   top: 0;
   left: 50%;
   margin-left: -500px;
+  width: 1090px;
 }
 
 #evt_content .flower img {
@@ -194,65 +265,24 @@
   left: 572px;
 }
 
-#evt_content .fixed-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  height: 280px;
+@-webkit-keyframes an {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 30px);
+    transform: translate(0, 30px);
+  }
 }
 
-#evt_content .fixed-bottom div, #evt_content .fixed-bottom a {
-  display: block;
-  margin: 0 auto;
-}
-
-#evt_content .fixed-bottom p {
-  color: #ffffff;
-  font-size: 12px;
-}
-
-#evt_content .fixed-bottom .product {
-  width: 162px;
-}
-
-#evt_content .fixed-bottom .price {
-  width: 92px;
-  margin-top: 8px;
-}
-
-#evt_content .fixed-bottom .buybtn {
-  width: 160px;
-  height: 40px;
-  background: url(../images/lv2/buybtn.png);
-  margin-top: 14px;
-}
-
-#evt_content .fixed-bottom .buybtn.disable {
-  background: url(../images/lv2/buybtn-disable.png);
-  cursor: default;
-}
-
-#evt_content .fixed-bottom .rtitle {
-  width: 70px;
-  text-align: center;
-  margin: 5px auto 0 auto;
-  cursor: pointer;
-}
-
-#evt_content .fixed-bottom .rtitle i {
-  display: block;
-  width: 5px;
-  height: 5px;
-  background: url(../images/lv2/icon.png);
-  margin: 5px auto 0 auto;
-}
-
-#evt_content .fixed-bottom .rule {
-  width: 730px;
-  margin: 0 auto 10px auto;
-}
-
-#evt_content .fixed-bottom .rule p {
-  line-height: 16px;
+@keyframes an {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 30px);
+    transform: translate(0, 30px);
+  }
 }

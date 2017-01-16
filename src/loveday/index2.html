@@ -5,6 +5,7 @@
     <title>EC礼品卡</title>
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <!-- build:css css/loveday.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
     <link type="text/css" rel="stylesheet" href="css/loveday.css" />
     <!-- endbuild -->
 </head>
@@ -93,12 +94,34 @@
     </div>
     <div id="evt_content" style="display:none;">
         <div class="section sec1">
-            <div class="text1"><img src="images/lv2/text1.png" alt=""></div>
-            <div class="img1"><img src="images/lv2/img1.png" alt=""></div>
+            <div class="text1" data-anim="slide-down"><img src="images/lv2/text1.png" alt=""></div>
+            <div class="img1"  data-anim="slide-down" data-delay="0.5"><img src="images/lv2/img1.png" alt=""></div>
+            <div class="area" data-anim="slide-down" data-delay="1">
+                <div class="product"><img src="images/lv2/product.png" alt=""></div>
+                <div class="price"><img src="images/lv2/price.png" alt=""></div>
+                <a href="" class="buybtn"></a>
+                <i class="ico an"></i>
+            </div>
         </div>
         <div class="section sec2">
-            <div class="text2"><img src="images/lv2/text2.png" alt=""></div>
-            <div class="img2"><img src="images/lv2/img2.png" alt=""></div>
+            <div class="text2" data-anim="slide-down" data-delay-adjust="0.5"><img src="images/lv2/text2.png" alt=""></div>
+            <div class="img2" data-anim="slide-down" data-delay-adjust="0.8"><img src="images/lv2/img2.png" alt=""></div>
+            <div class="area" data-anim="slide-down" data-delay-adjust="1">
+                <div class="product"><img src="images/lv2/product.png" alt=""></div>
+                <div class="price"><img src="images/lv2/price.png" alt=""></div>
+                <a href="" class="buybtn"></a>
+                <div class="rtitle">
+                    <p>活动规则</p>
+                    <i></i>
+                </div>
+                <div class="rule" style="display:none;">
+                    <p>1、活动时间：2017年 2月4日——2月17日</p>
+                    <p>2、活动城市：上海、苏州、杭州</p>
+                    <p>3、凡订购唯爱-约瑟芬玫瑰即可在提交订单后扫描二维码，使用手机进行录音或利用文字对收货人进行传情，录音内容限60s以内，文字内容限140字。录音跟文字均可以在蛋糕生产前进行修改。</p>
+                    <p>4、凡通过客服订购唯爱-约瑟芬玫瑰即为货到付款用户，用户可登陆官网订单列表页或详情页登陆后进行录音，如果蛋糕已生产则不可以录音及修改。</p>
+                    <p>5、收货人听取表白信息时需要录入手机号选择订单，如果有问题需要回答问题，答对即可收听录音，如果连续三次答错，则可以选择发送正确答案至收货人手机。</p>
+                </div>
+            </div>
         </div>
         <div class="flower">
             <div class="f1 layer" data-depth="0.3"><img src="images/lv2/f1.png" alt=""></div>
@@ -113,22 +136,6 @@
             <div class="f10 layer" data-depth="0.2"><img src="images/lv2/f10.png" alt=""></div>
             <div class="f11 layer" data-depth="0.2"><img src="images/lv2/f11.png" alt=""></div>
             <div class="f12 layer" data-depth="0.25"><img src="images/lv2/f12.png" alt=""></div>
-        </div>
-        <div class="fixed-bottom">
-            <div class="product"><img src="images/lv2/product.png" alt=""></div>
-            <div class="price"><img src="images/lv2/price.png" alt=""></div>
-            <a href="" class="buybtn"></a>
-            <div class="rtitle">
-                <p>活动规则</p>
-                <i></i>
-            </div>
-            <div class="rule" style="display:none;">
-                <p>1、活动时间：2017年 2月4日——2月17日</p>
-                <p>2、活动城市：上海、苏州、杭州</p>
-                <p>3、凡订购唯爱-约瑟芬玫瑰即可在提交订单后扫描二维码，使用手机进行录音或利用文字对收货人进行传情，录音内容限60s以内，文字内容限140字。录音跟文字均可以在蛋糕生产前进行修改。</p>
-                <p>4、凡通过客服订购唯爱-约瑟芬玫瑰即为货到付款用户，用户可登陆官网订单列表页或详情页登陆后进行录音，如果蛋糕已生产则不可以录音及修改。</p>
-                <p>5、收货人听取表白信息时需要录入手机号选择订单，如果有问题需要回答问题，答对即可收听录音，如果连续三次答错，则可以选择发送正确答案至收货人手机。</p>
-            </div>
         </div>
     </div>
 </div>

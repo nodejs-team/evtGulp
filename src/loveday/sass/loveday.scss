@@ -14,13 +14,28 @@
 
 #evt_content{z-index:10;
   .section{position:absolute; top:0; left:0; width:100%; height:840px; background:url(../images/lv2/content-bg.jpg) 50% 0;
+    p{color:#ffffff; font-size:12px;}
     div,a{display:block; margin:0 auto;}
     .text1{width:334px; margin-top:66px;}
     .img1{width:774px; margin-top:14px;}
     .text2{width:334px; margin-top:66px;}
     .img2{width:780px; margin-top:36px;}
+    .area{width:1000px; margin:0 auto;}
+    .product{width:162px;}
+    .price{width:92px; margin-top:8px;}
+    .buybtn{width:160px; height:40px; background:url(../images/lv2/buybtn.png); margin-top:14px;}
+    .buybtn.disable{background:url(../images/lv2/buybtn-disable.png); cursor:default;}
+    .rtitle{width:70px; text-align:center; margin:5px auto 0 auto; cursor:pointer;
+      i{display:block; width:5px; height:5px; background:url(../images/lv2/icon.png); margin:5px auto 0 auto;}
+    }
+    .rule{width:730px; margin:0 auto 10px auto;
+      p{line-height:16px;}
+    }
+    .ico{display:block; width:29px; height:27px; background:url(../images/lv2/ico.png); margin:0 auto;}
+    .an{-webkit-animation: an 1s infinite;animation: an 1s infinite;}
   }
-  .flower{width:1000px; height:100%; position:absolute; top:0; left:50%; margin-left:-500px;
+  .sec1 .area{margin-top:-150px;}
+  .flower{position:absolute; top:0; left:50%; margin-left:-500px; width:1090px;
     img{position:absolute;}
     .f1 img{width:125px; top:103px; left:994px;}
     .f2 img{width:130px; top:-21px; left:708px;}
@@ -35,18 +50,14 @@
     .f11 img{width:22px; top:164px; left:394px;}
     .f12 img{width:14px; top:82px; left:572px;}
   }
-  .fixed-bottom{position:absolute; bottom:0; width:100%; left:0; height:280px;
-    div,a{display:block; margin:0 auto;}
-    p{color:#ffffff; font-size:12px;}
-    .product{width:162px;}
-    .price{width:92px; margin-top:8px;}
-    .buybtn{width:160px; height:40px; background:url(../images/lv2/buybtn.png); margin-top:14px;}
-    .buybtn.disable{background:url(../images/lv2/buybtn-disable.png); cursor:default;}
-    .rtitle{width:70px; text-align:center; margin:5px auto 0 auto; cursor:pointer;
-      i{display:block; width:5px; height:5px; background:url(../images/lv2/icon.png); margin:5px auto 0 auto;}
-    }
-    .rule{width:730px; margin:0 auto 10px auto;
-      p{line-height:16px;}
-    }
-  }
+}
+
+@-webkit-keyframes an{
+  0% {-webkit-transform: translate(0,0);transform: translate(0,0);}
+  100% {-webkit-transform: translate(0,30px);transform: translate(0,30px)}
+}
+
+@keyframes an{
+  0% {-webkit-transform: translate(0,0);transform: translate(0,0);}
+  100% {-webkit-transform: translate(0,30px);transform: translate(0,30px)}
 }
