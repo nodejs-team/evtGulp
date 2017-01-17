@@ -2,7 +2,7 @@
     var resData = {
         "groups":[
             {
-                "keys":"loading-bg-left_jpg,loading-bg-right_jpg,title_png",
+                "keys":"loading-bg-left_jpg,loading-bg-right_jpg,title_png,sidai_png",
                 "name":"pre"
             },
             {
@@ -10,6 +10,11 @@
                 "name":"res"
             }],
         "resources":[
+            {
+                "name":"sidai_png",
+                "type":"image",
+                "url":"lv2/sidai.png"
+            },
             {
                 "name":"buybtn-disable_png",
                 "type":"image",
@@ -394,6 +399,8 @@
         ,winWidth
         ,winHeight
         ,viewHeight
+        ,resLoaded = false
+        ,moveClipEnd = false
     function initDomByScreenHeight(){
         headerHeight = $header.height();
         winWidth = $win.width();
@@ -440,8 +447,7 @@
     }
 
     function animateLoading(callback){
-        $('#evt_loading .title').fadeOut();
-        $('#evt_spin').fadeOut(function(){
+        $('#evt_spin,#evt_loading .title,#sidaiLeft,#sidaiRight').fadeOut(function(){
             $win.scrollTop(0)
             $('#evt_loading .bg-left').animate({
                 right: '100%'
@@ -455,6 +461,38 @@
         })
     }
 
+    function resourceComplete(){
+        if(moveClipEnd && resLoaded){
+            $('#blankdiv').show();
+            $('#evt_content').show();
+            $('.flower').parallax({
+                elementWidth : 1000,
+                elementHeight : 1000
+            });
+            // initRule();
+            initScroll();
+            animateLoading(function(){
+                bindScroll('#evt_container')
+            });
+        }
+    }
+
+    function startMovieClip(){
+        var data = {
+            c1: {"x":130,"y":64,"w":124,"h":55,"offX":4,"offY":9,"sourceW":130,"sourceH":185, duration:5},
+            c2: {"x":130,"y":0,"w":124,"h":62,"offX":4,"offY":13,"sourceW":130,"sourceH":185,duration:1},
+            c3: {"x":127,"y":280,"w":125,"h":95,"offX":4,"offY":14,"sourceW":130,"sourceH":185,duration:2},
+            c4: {"x":127,"y":163,"w":124,"h":115,"offX":4,"offY":15,"sourceW":130,"sourceH":185},
+            c5: {"x":0,"y":163,"w":125,"h":131,"offX":4,"offY":15,"sourceW":130,"sourceH":185},
+            c6: {"x":0,"y":0,"w":128,"h":161,"offX":1,"offY":13,"sourceW":130,"sourceH":185,duration:10}
+        }
+        new MovieClip('sidai_png', data, 'c', $('#sidaiLeft div').get(0)).gotoAndPlay(1, 1, 10);
+        new MovieClip('sidai_png', data, 'c', $('#sidaiRight div').get(0)).gotoAndPlay(1, 1, 10).on('complete', function(){
+            moveClipEnd = true;
+            resourceComplete();
+        });
+    }
+
     function loadRes(){
         var loader = new Resource.loadGroup("res", resData);
         var spin = Resource.el('#evt_spin');
@@ -462,17 +500,8 @@
             spin.innerHTML = Math.floor(loaded / total * 100) + "%";
         });
         loader.on("complete", function(){
-            $('#blankdiv').show();
-            $('#evt_content').show();
-            $('.flower').parallax({
-                elementWidth : 1000,
-                elementHeight : 1000
-            });
-            initRule();
-            initScroll();
-            animateLoading(function(){
-                bindScroll('#evt_container')
-            });
+            resLoaded = true;
+            resourceComplete();
         });
     }
 
@@ -481,6 +510,7 @@
 
         loader.on("complete", function(){
             loadRes();
+            startMovieClip();
         });
     }
     initDomByScreenHeight();

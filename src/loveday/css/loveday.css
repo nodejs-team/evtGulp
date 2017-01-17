@@ -71,6 +71,32 @@
   color: #bd7384;
 }
 
+#sidaiLeft, #sidaiRight {
+  width: 65px;
+  height: 185px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+#sidaiLeft {
+  margin-left: -65px;
+}
+
+#sidaiLeft div, #sidaiRight div {
+  width: 130px;
+  height: 185px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#sidaiRight div {
+  left: -65px;
+}
+
 #evt_content {
   z-index: 10;
 }
