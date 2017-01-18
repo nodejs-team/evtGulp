@@ -19,7 +19,7 @@
 
 #evt_content{z-index:10;
   .section{position:absolute; top:0; left:0; width:100%; height:840px; background:url(../images/lv2/content-bg.jpg) 50% 0;
-    p{color:#ffffff; font-size:12px;}
+    p{color:#ffffff; font-size:14px;}
     div,a{display:block; margin:0 auto;}
     .text1{width:334px; margin-top:66px;}
     .img1{width:774px; margin-top:14px;}
@@ -34,7 +34,7 @@
       i{display:block; width:5px; height:5px; background:url(../images/lv2/icon.png); margin:5px auto 0 auto;}
     }
     .rule{width:730px; margin:0 auto 10px auto;
-      p{line-height:16px;}
+      p{line-height:18px; text-indent:-21px; margin-left:21px;}
     }
     .ico{display:block; width:29px; height:27px; background:url(../images/lv2/ico.png); margin:0 auto;}
     .an{-webkit-animation: an 1s infinite;animation: an 1s infinite;}
@@ -45,10 +45,10 @@
     .f1 img{width:125px; top:103px; left:994px;}
     .f2 img{width:130px; top:-21px; left:708px;}
     .f3 img{width:79px; top:361px; left:866px;}
-    .f4 img{width:166px; top:321px; left:42px;}
+    .f4 img{width:166px; top:321px; left:-20px;}
     .f5 img{width:92px; top:97px; left:44px;}
     .f6 img{width:28px; top:292px; left:149px;}
-    .f7 img{width:27px; top:447px; left:500px;}
+    .f7 img{width:27px; top:514px; left:225px;}
     .f8 img{width:20px; top:195px; left:846px;}
     .f9 img{width:24px; top:436px; left:773px;}
     .f10 img{width:22px; top:72px; left:280px;}

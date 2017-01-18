@@ -112,7 +112,7 @@
 
 #evt_content .section p {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #evt_content .section div, #evt_content .section a {
@@ -187,7 +187,9 @@
 }
 
 #evt_content .section .rule p {
-  line-height: 16px;
+  line-height: 18px;
+  text-indent: -21px;
+  margin-left: 21px;
 }
 
 #evt_content .section .ico {
@@ -240,7 +242,7 @@
 #evt_content .flower .f4 img {
   width: 166px;
   top: 321px;
-  left: 42px;
+  left: -20px;
 }
 
 #evt_content .flower .f5 img {
@@ -257,8 +259,8 @@
 
 #evt_content .flower .f7 img {
   width: 27px;
-  top: 447px;
-  left: 500px;
+  top: 514px;
+  left: 225px;
 }
 
 #evt_content .flower .f8 img {

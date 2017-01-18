@@ -469,7 +469,7 @@
                 elementWidth : 1000,
                 elementHeight : 1000
             });
-            // initRule();
+            initRule();
             initScroll();
             animateLoading(function(){
                 bindScroll('#evt_container')
