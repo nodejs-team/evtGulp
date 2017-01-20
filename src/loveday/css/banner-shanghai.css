@@ -1,0 +1,64 @@
+#evt_loading {
+  position: relative;
+  height: 543px;
+  margin-bottom: 10px;
+}
+
+#evt_spin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -100px;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Microsoft YaHei",Tahoma,Arial;
+}
+
+#evt_container {
+  width: 100%;
+  height: 543px;
+  margin-bottom: 10px;
+  background: url(../images/shanghaibanner/bg.jpg) center;
+}
+
+#evt_container .link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+#evt_container img {
+  width: 100%;
+}
+
+#evt_container .evt_content {
+  width: 404px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#evt_container .title {
+  width: 293px;
+  position: absolute;
+  top: 28px;
+  left: 56px;
+}
+
+#evt_container .img {
+  width: 466px;
+  position: absolute;
+  top: 139px;
+  left: -7px;
+}
+
+#evt_container .product {
+  width: 173px;
+  position: absolute;
+  top: 421px;
+  left: 115px;
+}
