@@ -406,18 +406,18 @@
             $flowers.css('position', 'absolute');
         }
         var items = [
-            {width:69, height:55, top:-7, leftToCenter:157}
-            ,{width:112, height:128, top:70, leftToCenter:242}
-            ,{width:79, height:69, top:309, leftToCenter:231}
-            ,{width:92, height:63, top:99, leftToCenter:-310}
-            ,{width:14, height:15, top:84, leftToCenter:45}
-            ,{width:20, height:26, top:135, leftToCenter:202}
-            ,{width:20, height:26, top:135, leftToCenter:202}
-            ,{width:22, height:26, top:82, leftToCenter:-216}
-            ,{width:22, height:14, top:164, leftToCenter:-131}
-            ,{width:166, height:119, top:345, leftToCenter:-416}
-            ,{width:27, height:46, top:438, leftToCenter:-130}
-            ,{width:28, height:28, top:296, leftToCenter:-259}
+            {width:24, height:29, top:398, leftToCenter:66, src:'f1_png'}
+            ,{width:22, height:26, top:73, leftToCenter:-235, src:'f2_png'}
+            ,{width:28, height:28, top:263, leftToCenter:-219, src:'f3_png'}
+            ,{width:20, height:26, top:164, leftToCenter:101, src:'f4_png'}
+            ,{width:60, height:69, top:241, leftToCenter:307, src:'f5_png'}
+            ,{width:92, height:63, top:21, leftToCenter:-336, src:'f6_png'}
+            ,{width:82, height:75, top:22, leftToCenter:145, src:'f7_png'}
+            ,{width:22, height:14, top:181, leftToCenter:-144, src:'f8_png'}
+            ,{width:27, height:46, top:126, leftToCenter:-150, src:'f9_png'}
+            ,{width:70, height:50, top:205, leftToCenter:-397, src:'f10_png'}
+            ,{width:50, height:44, top:400, leftToCenter:-267, src:'f11_png'}
+            ,{width:14, height:15, top:63, leftToCenter:-52, src:'f12_png'}
         ]
         for(var i=0; i<items.length; i++){
             var item = items[i];
@@ -425,7 +425,7 @@
             if(requestAnimationFrame){
                 item.top -= (650 + Math.random()*200);
             }
-            var url = res['f'+(i+1)+'_png'].url;
+            var url = res[item.src].url;
             item.left = winWidth/2+item.leftToCenter;
             item.dom = $(document.createElement('img')).attr({
                 width: item.width,
