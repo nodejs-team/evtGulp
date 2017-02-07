@@ -1,0 +1,112 @@
+/* line 40, ../sass/main.scss */
+body, ul, li, ol, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* line 41, ../sass/main.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 42, ../sass/main.scss */
+img {
+  border: 0;
+}
+
+/* line 44, ../sass/main.scss */
+#evt_loading {
+  position: relative;
+  height: 600px;
+}
+
+/* line 49, ../sass/main.scss */
+#evt_spin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -100px;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Microsoft YaHei",Tahoma,Arial;
+}
+
+/* line 61, ../sass/main.scss */
+.evt-container {
+  position: relative;
+  display: none;
+}
+
+/* line 67, ../sass/main.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 71, ../sass/main.scss */
+.evt-content {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+/* line 78, ../sass/main.scss */
+.evt-container {
+  width: 100%;
+  background: #fce1e8 url("../images/bg.jpg") repeat;
+}
+
+.evt-banner{
+  width:1099px;
+  margin: 0 auto;
+}
+
+.evt-banner-inner{
+  margin-left: -95px;
+  padding-top: 15px;
+  margin-bottom: -75px;
+}
+
+.evt-banner img{
+  display: block;
+}
+
+/* line 311, ../sass/main.scss */
+.evt-footer {
+
+}
+/* line 315, ../sass/main.scss */
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1094px;
+  margin: 20px auto 0;
+  background-color: #fff;
+}
+/* line 321, ../sass/main.scss */
+.evt-footer .evt-rules {
+  padding-left: 90px;
+  padding-right: 120px;
+  padding-top: 100px;
+  padding-bottom: 113px;
+  color: #000;
+}
+/* line 325, ../sass/main.scss */
+.evt-footer .evt-rules h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #ab3333;
+  margin-bottom: 15px;
+}
+/* line 329, ../sass/main.scss */
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.evt-footer .evt-rules .ft-logo{
+  float: right;
+  margin-top: 20px;
+}
