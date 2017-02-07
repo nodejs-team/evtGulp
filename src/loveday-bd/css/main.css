@@ -100,10 +100,11 @@ body {
 }
 /* line 329, ../sass/main.scss */
 .evt-footer .evt-rules p {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.42;
   padding-left: 1.5em;
   text-indent: -1.5em;
+  margin-bottom: 8px;
 }
 
 .evt-footer .evt-rules .ft-logo{
