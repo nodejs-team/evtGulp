@@ -1,0 +1,197 @@
+body, ul, li, ol, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  border: 0;
+}
+
+#evt_loading {
+  position: relative;
+  height: 600px;
+}
+
+#evt_spin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -100px;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Microsoft YaHei",Tahoma,Arial;
+}
+
+.evt-container {
+  position: relative;
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.evt-container {
+  width: 100%;
+  background: #f0f0f1;
+}
+
+.evt-content {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.evt-content div {
+  position: absolute;
+}
+
+.evt-content img {
+  width: 100%;
+}
+
+.evt-content a {
+  display: block;
+  position: absolute;
+}
+
+.section1 {
+  background: url(../images/bannerbg.png) no-repeat 50% 0;
+  overflow: hidden;
+}
+
+.section1 .evt-content {
+  height: 648px;
+}
+
+.section1 .model {
+  width: 420px;
+  top: -11px;
+  left: 9px;
+}
+
+.section1 .flower {
+  width: 955px;
+  top: 0;
+  left: 516px;
+}
+
+.section1 .title {
+  width: 456px;
+  top: 98px;
+  left: 332px;
+}
+
+.section2 .evt-content {
+  height: 1978px;
+}
+
+.section2 .img1 {
+  width: 956px;
+  top: 337px;
+  left: -192px;
+}
+
+.section2 .img1 a {
+  width: 320px;
+  height: 300px;
+  top: -28px;
+  left: 400px;
+}
+
+.section2 .text1 {
+  width: 243px;
+  top: 159px;
+  left: 676px;
+}
+
+.section2 .area1 {
+  top: 445px;
+  left: 705px;
+  width: 100px;
+  height: 100px;
+}
+
+.section2 .price {
+  width: 166px;
+  top: 12px;
+  left: 10px;
+}
+
+.section2 .buybtn {
+  width: 123px;
+  top: 70px;
+  left: 30px;
+}
+
+.section2 .img2 {
+  width: 523px;
+  top: 963px;
+  left: 594px;
+}
+
+.section2 .img2 a {
+  width: 500px;
+  height: 500px;
+  top: -30px;
+  left: 65px;
+}
+
+.section2 .text2 {
+  width: 284px;
+  top: 946px;
+  left: 358px;
+}
+
+.section2 .img3 {
+  width: 307px;
+  top: 1520px;
+  left: 189px;
+}
+
+.section2 .img3 a {
+  width: 315px;
+  height: 330px;
+  top: 0px;
+  left: 0px;
+}
+
+.section2 .text3 {
+  width: 182px;
+  top: 1526px;
+  left: 547px;
+}
+
+.section2 .bg {
+  width: 1172px;
+  top: 37px;
+  left: 33px;
+}
+
+.section3 {
+  background: #ffffff;
+  color: #555555;
+}
+
+.section3 .evt-content {
+  padding: 45px 0 96px 0;
+  width: 814px;
+}
+
+.section3 h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.section3 p {
+  font-size: 18px;
+  line-height: 26px;
+  text-indent: -27px;
+  margin-left: 27px;
+}
