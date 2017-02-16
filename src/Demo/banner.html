@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EC礼品卡</title>
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body style="height:2000px;">
+
+<link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
+<!--头部-->
+<div class="header">
+    <div class="header_top_box">
+        <div class="header_top">
+            <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+                <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+                    <div class="wallbox wall_top">
+                        <div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+                        <div class="logoer">
+                            <a href="http://ebsig.mcake.com">
+                                <img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+                            </a>
+                        </div>
+                        <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+                        <ul class="navbar">
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start----->
+                            <li class="record" style="display: none;">
+                                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+                            </li>
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end----->
+                            <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+                            <li class="m_cart">
+                                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="wallbox">
+                    <div class="header_right">
+                        <ul class="phone_delivery">
+                            <li class="phone"><span>4006-678-678</span><i></i></li>
+                            <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+                        </ul>
+                        <div class="city" id="city">
+                            <ul>
+                                <li id="city-641" data-id="641"><a href="javascript: void(0);">杭州市</a></li>
+                                <li id="city-110" data-id="110" class="cur"><a href="javascript: void(0);">上海市</a></li>
+                                <li id="city-665" data-id="665"><a href="javascript: void(0);">苏州市</a></li>
+                                <li id="city-675" data-id="675"><a href="javascript: void(0);">北京市</a></li>
+                            </ul>
+                            <samp></samp>
+                        </div>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+                        </li>
+                        <li>
+                            <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/member_center.html" target="_blank">
+                                <samp>Mon M'CAKE</samp>
+                                <span>会员中心</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .section-banner{
+        height:750px;
+        background: #f5f5f5;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .section-banner .evt-content{
+        height:750px;
+        background: url(images/banner/bg.png) no-repeat -48px 0;
+    }
+    .section-banner .q-title{
+        left:96px;
+        top:100px;
+    }
+    .section-banner .q-title .q-price{
+        bottom: -25px;
+        left:131px;
+    }
+    .section-banner .q-title .q-title-dc{
+        bottom: -25px;
+        left:140px;
+    }
+    .section-banner .q1{
+        left:423px;
+        top:0;
+        z-index: 5;
+    }
+    .section-banner .q2{
+        left:760px;
+        top:82px;
+    }
+    .section-banner .q4{
+        left:68px;
+        bottom:0;
+    }
+    .section-banner .q5{
+        left:750px;
+        bottom:0;
+    }
+    .section-banner .q-spoon{
+        left:77px;
+        top:0;
+    }
+    .section-banner .rec1{
+        left:650px;
+        top:284px;
+    }
+    .section-banner .rec1 .arrow{
+        position: absolute;
+        left:-77px;
+        top:20px;
+    }
+    .section-banner .rec2{
+        left:618px;
+        top:473px;
+    }
+    .section-banner .rec2 .arrow{
+        position: absolute;
+        left:-44px;
+        top:150px;
+    }
+    .section-banner .down-hint{
+        display: none;
+    }
+</style>
+<style>
+    #floater{position:fixed; top:110px; right:10px; z-index:11; width:178px;}
+    #floater .rules{width:156px; padding:10px; border:1px solid #ff6699; color:#ff6699; font-size:12px; line-height:16px; border-radius:3px; margin-top:-1px; background:#f9f3f6;}
+    #floater .floatImg{width:156px; position:relative; font-size:0; margin:0 0 0 17px;}
+    #floater .floatImg img{width:100%;}
+    #floater .floatImg a{width:100%; display:block; height:144px; position:absolute; top:0; left:0;}
+    #floater .ruleHover{position:absolute; cursor:pointer; width:76px; height:26px; top:145px; left:34px;}
+</style>
+<!--loading预加载-->
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+<!--container部分-->
+<div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
+    <div class="section-banner">
+        <div class="evt-content">
+            <div class="secItem q1" data-anim="slide-down-l" data-delay="0.8">
+                <img src="images/banner/q1.png" width="433" height="346" />
+            </div>
+            <div class="secItem q-title" data-anim="fade-in">
+                <img src="images/banner/title.png" width="406" height="229" />
+                <img src="images/title_dc.png" class="q-title-dc" width="134" height="24">
+                <div class="q-price"></div>
+            </div>
+            <div class="secItem q2" data-anim="slide-down-r" data-delay="1.6">
+                <img src="images/banner/q2.png" width="265" height="295" />
+            </div>
+            <div class="secItem q-spoon" data-anim="slide-down-r">
+                <img src="images/banner/q3.png" width="133" height="165" />
+            </div>
+            <div class="secItem q4" data-anim="slide-up" data-delay="3.2">
+                <img src="images/banner/q4.png" width="520" height="339" />
+            </div>
+            <div class="secItem q5" data-anim="slide-up-r" data-delay="4.8">
+                <img src="images/banner/q5.png" width="170" height="140" />
+            </div>
+            <div class="secItem recond rec1" data-anim="slide-up-r" data-delay="2.4">
+                <img src="images/banner/text1.png" width="142" height="96" />
+                <a href="#" class="buy-btn">立即购买</a>
+                <img src="images/banner/arrow1.png" class="arrow" width="80" height="86" />
+            </div>
+            <div class="secItem recond rec2" data-anim="slide-left" data-delay="4">
+                <img src="images/banner/text2.png" width="113" height="97" />
+                <a href="#" class="buy-btn">立即购买</a>
+                <img src="images/banner/arrow2.png" class="arrow" width="104" height="54" />
+            </div>
+        </div>
+        <span class="down-hint"></span>
+        <a href="#" style="width:100%; height:750px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
+    </div>
+
+
+
+    <div id="floater">
+        <div class="floatImg">
+            <img src="http://edm.mcake.com/shuxy/2016/strawberry/images/strawberry_floater.png" alt="">
+            <a href="http://www.mcake.com"></a>
+        </div>
+        <div class="ruleHover"></div>
+        <div class="rules" style="display:none;">
+            <p>1. 活动时间：2017年1月12日——2月4日</p>
+            <p>2. 活动渠道：PC端、WAP端</p>
+            <p>3. 单笔订单购买任意款蛋糕即可参加新年换购优惠。加10元换购价值156元伊蒂之屋新年礼包（染眉膏*1、腮红*1）数量有限，卖完即止，产品请以实物为准！</p>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/shuxy/2016/MovieClip/ec_main.js"></script>
+<!-- build:js js/banner.js -->
+<script type="text/javascript" src="js/banner.js"></script>
+<!-- endbuild -->
+<script>
+    ;(function(){
+        var height = $("#evt_container").outerHeight();
+        var fHeight = 167;
+        var fTop = 110;
+        var fRight = 10;
+        var floater = $('#floater');
+        var floaterPosition = 'fixed';
+        var winWidth = $(window).width();
+        var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+        $(window).on("scroll", function(){
+            var sTop = $(this).scrollTop();
+            if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
+                floater.css({position: "absolute", top: height - fHeight, right: absRight});
+                floaterPosition = 'absolute';
+            }
+            if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
+                floater.css({position: "fixed", top: fTop, right:fRight});
+                floaterPosition = 'fixed';
+            }
+        });
+        var floatHover = $('.ruleHover');
+        var rules = $('#floater .rules');
+        var hideTimer,showTimer;
+        floatHover.on('mouseenter', function(){
+            clearTimeout(hideTimer);
+            showTimer = setTimeout(function(){
+                rules.fadeIn();
+            }, 300)
+        }).on('mouseleave', function(){
+            clearTimeout(showTimer);
+            hideTimer = setTimeout(function(){
+                rules.fadeOut();
+            }, 300)
+        })
+        rules.on('mouseenter', function(){
+            clearTimeout(hideTimer);
+            showTimer = setTimeout(function(){
+                rules.fadeIn();
+            }, 300)
+        }).on('mouseleave', function(){
+            clearTimeout(showTimer);
+            hideTimer = setTimeout(function(){
+                rules.fadeOut();
+            }, 300)
+        })
+    })()
+</script>
+</body>
+</html>
