@@ -254,7 +254,6 @@ gulp.task('build', function(done) {
     runSequence('clean','useref', 'tinypng', done);
 });
 
-
 function getIP(){
     var ip = 'localhost';
     for (var dev in ifaces) {
