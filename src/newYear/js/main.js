@@ -260,7 +260,7 @@
             }, delay);
 
         },
-        "slide-down-l": function(el, delay, cb){
+        "slide-down-l": function(el, delay){
             var $el = $(el);
             $el.css({
                 opacity: 0,
@@ -474,6 +474,7 @@
             correctPNG($('#evt_container').get(0));
             bindScroll('#evt_container');
         };
+
         var loader = new Resource.loadGroup("preload", resData);
         var spin = Resource.el('#evt_spin');
 
