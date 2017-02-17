@@ -4,13 +4,13 @@
         "host" : "localhost",
         "port" : "8081"
     },
-    "tinypngapi": "UlHtl4xh4OPWCVBj67bQWE78Gi9mis3P",
+    "tinypngapi": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
     "ftp" : {
         "host" : "",
         "user" : "",
         "pass" : "",
         "remotePath": ""
     },
-    "projectName": "loveday-bd",
-    "revPrefix": "http://edm.mcake.com/shuxy/2016/"
+    "projectName": "women",
+    "revPrefix": "http://edm.mcake.com/fangli/2017/"
 }
