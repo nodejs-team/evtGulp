@@ -147,7 +147,6 @@ body{
     right: 268px;
 
     .buy-content{
-      position: relative;
       width: 100%;
       height: 100%;
       .select-item{
@@ -209,13 +208,12 @@ body{
         font-weight: bold;
         i{
           font-size: 16px;
-          vertical-align: super;
+          vertical-align: top;
           font-style:normal;
         }
       }
       .old-price{
         width: 100%;
-        position: relative;
         font-style: normal;
         display: block;
         font-size: 21px;
@@ -233,11 +231,18 @@ body{
       .line-through{
         position: absolute;
         z-index: 1;
-        top:16px;
+        top:80px;
         left: -3px;
         width: 100%;
         height: 0;
         border-bottom:#be9992 1px solid;
+      }
+
+      @at-root .old-price.old-ie {
+        text-decoration: line-through !important;
+        .line-through{
+          display:none !important;
+        }
       }
 
       .gobuy-btn{

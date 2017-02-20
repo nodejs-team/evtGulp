@@ -153,6 +153,21 @@
             }, delay);
 
         },
+      "slide-down": function(el, delay, cb){
+        var $el = $(el);
+        $el.css({
+          opacity: 0,
+          marginTop: -el.offsetHeight*0.5
+        });
+
+        setTimeout(function(){
+          $el.animate({
+            opacity: 1,
+            marginTop: 0
+          }, 1000, 'easeOutCubic', cb);
+        }, delay);
+
+      },
         "slide-up-l": function(el, delay, cb){
             var $el = $(el);
             $el.css({
@@ -418,10 +433,9 @@
 
     $(function(){
         loadResource();
+      if( !isSupportCss3 ){
+        $("#old_price").addClass("old-ie");
+      }
     });
-
-    if( navigator.userAgent.indexOf("Edge") != -1 ){
-        document.body.className += "browser-edge";
-    }
 
 })(jQuery);
