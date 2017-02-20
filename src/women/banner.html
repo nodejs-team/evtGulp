@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>EC礼品卡</title>
+    <title>女人节</title>
     <!-- build:css css/main.css -->
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
@@ -82,69 +82,59 @@
 
 <style>
     .section-banner{
-        height:750px;
+        height:550px;
         background: #f5f5f5;
         -webkit-box-shadow: none;
         box-shadow: none;
+        background: url(images/banner/banner-bg.jpg) no-repeat;
     }
     .section-banner .evt-content{
-        height:750px;
-        background: url(images/banner/bg.png) no-repeat -48px 0;
+        height:550px;
+
     }
-    .section-banner .q-title{
-        left:96px;
-        top:100px;
-    }
-    .section-banner .q-title .q-price{
-        bottom: -25px;
-        left:131px;
-    }
-    .section-banner .q-title .q-title-dc{
-        bottom: -25px;
-        left:140px;
-    }
+
     .section-banner .q1{
-        left:423px;
-        top:0;
-        z-index: 5;
+        left:199px;
+        top:134px;
+        z-index: 2;
     }
     .section-banner .q2{
-        left:760px;
-        top:82px;
+        left:290px;
+        top:54px;
+        z-index: 1;
+    }
+    .section-banner .q3{
+        left:167px;
+        top:95px;
     }
     .section-banner .q4{
-        left:68px;
-        bottom:0;
+        left:366px;
+        top:123px;
     }
     .section-banner .q5{
-        left:750px;
-        bottom:0;
+        left:271px;
+        top:220px;
+        z-index: 2;
     }
-    .section-banner .q-spoon{
-        left:77px;
-        top:0;
+    .section-banner .q6{
+        left:610px;
+        top:128px;
     }
-    .section-banner .rec1{
-        left:650px;
-        top:284px;
+    .section-banner .q7{
+        left:372px;
+        top:299px;
     }
-    .section-banner .rec1 .arrow{
-        position: absolute;
-        left:-77px;
-        top:20px;
+    .section-banner .q8{
+        left:600px;
+        top:233px;
+        z-index: 1;
     }
-    .section-banner .rec2{
-        left:618px;
-        top:473px;
+    .section-banner .q9{
+        left:345px;
+        top:296px;
     }
-    .section-banner .rec2 .arrow{
-        position: absolute;
-        left:-44px;
-        top:150px;
-    }
-    .section-banner .down-hint{
-        display: none;
-    }
+
+
 </style>
 <style>
     #floater{position:fixed; top:110px; right:10px; z-index:11; width:178px;}
@@ -162,39 +152,36 @@
 <div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
     <div class="section-banner">
         <div class="evt-content">
-            <div class="secItem q1" data-anim="slide-down-l" data-delay="0.8">
-                <img src="images/banner/q1.png" width="433" height="346" />
+            <div class="secItem q1" data-anim="fade-in" data-delay="0.8" data-duration="900">
+                <img src="images/banner/cake.png" height="117" width="146"/>
             </div>
-            <div class="secItem q-title" data-anim="fade-in">
-                <img src="images/banner/title.png" width="406" height="229" />
-                <img src="images/title_dc.png" class="q-title-dc" width="134" height="24">
-                <div class="q-price"></div>
+            <div class="secItem q2" data-anim="fade-in" data-delay="1.6" data-duration="1000">
+                <img src="images/banner/ribbon-1.png" height="110" width="117"/>
             </div>
-            <div class="secItem q2" data-anim="slide-down-r" data-delay="1.6">
-                <img src="images/banner/q2.png" width="265" height="295" />
+            <div class="secItem q3" data-anim="fade-in" data-delay="2.4" data-duration="2000">
+                <img src="images/banner/leaf.png" height="398" width="630"/>
             </div>
-            <div class="secItem q-spoon" data-anim="slide-down-r">
-                <img src="images/banner/q3.png" width="133" height="165" />
+            <div class="secItem q4" data-anim="fade-in" data-delay="0.8" data-duration="2000">
+                <img src="images/banner/buling.png" height="94" width="233"/>
             </div>
-            <div class="secItem q4" data-anim="slide-up" data-delay="3.2">
-                <img src="images/banner/q4.png" width="520" height="339" />
+            <div class="secItem q5" data-anim="fade-in" data-delay="4.8" data-duration="2000">
+                <img src="images/banner/silk.png" height="124" width="366"/>
             </div>
-            <div class="secItem q5" data-anim="slide-up-r" data-delay="4.8">
-                <img src="images/banner/q5.png" width="170" height="140" />
+            <div class="secItem q6" data-anim="fade-in" data-delay="4.8" data-duration="2000">
+                <img src="images/banner/ball.png" height="129" width="93"/>
             </div>
-            <div class="secItem recond rec1" data-anim="slide-up-r" data-delay="2.4">
-                <img src="images/banner/text1.png" width="142" height="96" />
-                <a href="#" class="buy-btn">立即购买</a>
-                <img src="images/banner/arrow1.png" class="arrow" width="80" height="86" />
+            <div class="secItem q7" data-anim="fade-in" data-delay="3.2" data-duration="2000">
+                <img src="images/banner/eye.png" height="56" width="93"/>
             </div>
-            <div class="secItem recond rec2" data-anim="slide-left" data-delay="4">
-                <img src="images/banner/text2.png" width="113" height="97" />
-                <a href="#" class="buy-btn">立即购买</a>
-                <img src="images/banner/arrow2.png" class="arrow" width="104" height="54" />
+            <div class="secItem q8" data-anim="fade-in" data-delay="0.8" data-duration="2000">
+                <img src="images/banner/shose.png" height="200" width="81"/>
+            </div>
+            <div class="secItem q9" data-anim="fade-in" data-delay="3.2" data-duration="2000">
+                <img src="images/banner/ribbon-2.png" height="197" width="518"/>
             </div>
         </div>
-        <span class="down-hint"></span>
-        <a href="#" style="width:100%; height:750px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
+
+        <a href="#" style="width:100%; height:550px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
     </div>
 
 

@@ -76,7 +76,7 @@
     });
 
     var aniMap = {
-        "slide-left": function(el, delay, cb){
+        "slide-left": function(el, delay, cb, duration){
             var $el = $(el);
             $el.css({
                 opacity: 0,
@@ -87,13 +87,13 @@
                 $el.animate({
                     opacity: 1,
                     marginLeft: 0
-                }, 1000, 'easeOutCubic', function(){
+                }, duration || 1000, 'easeOutCubic', function(){
                     cb && cb();
                 });
             }, delay);
 
         },
-        "slide-right": function(el, delay, cb){
+        "slide-right": function(el, delay, cb, duration){
             var $el = $(el);
             $el.css({
                 opacity: 0,
@@ -104,13 +104,13 @@
                 $el.animate({
                     opacity: 1,
                     marginLeft: 0
-                }, 1000, 'easeOutCubic', function(){
+                }, duration || 1000, 'easeOutCubic', function(){
                     cb && cb();
                 });
             }, delay);
 
         },
-        "slide-down-l": function(el, delay, cb){
+        "slide-down-l": function(el, delay, cb, duration){
             var $el = $(el);
             $el.css({
                 opacity: 0,
@@ -123,13 +123,13 @@
                     opacity: 1,
                     marginLeft: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
+                }, duration || 1000, 'easeOutCubic', function(){
                     cb && cb();
                 });
             }, delay);
 
         },
-        "slide-down-r": function(el, delay, cb){
+        "slide-down-r": function(el, delay, cb, duration){
             var $el = $(el);
             $el.css({
                 opacity: 0,
@@ -142,13 +142,13 @@
                     opacity: 1,
                     marginLeft: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
+                }, duration || 1000, 'easeOutCubic', function(){
                     cb && cb();
                 });
             }, delay);
 
         },
-        "slide-up-l": function(el, delay, cb){
+        "slide-up-l": function(el, delay, cb, duration){
             var $el = $(el);
             $el.css({
                 opacity: 0,
@@ -161,13 +161,13 @@
                     opacity: 1,
                     marginLeft: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
+                }, duration || 1000, 'easeOutCubic', function(){
                     cb && cb();
                 });
             }, delay);
 
         },
-        "slide-up-r": function(el, delay, cb){
+        "slide-up-r": function(el, delay, cb, duration){
             var $el = $(el);
             $el.css({
                 opacity: 0,
@@ -180,13 +180,13 @@
                     opacity: 1,
                     marginLeft: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
+                }, duration || 1000, 'easeOutCubic', function(){
                     cb && cb();
                 });
             }, delay);
 
         },
-        "slide-up": function(el, delay, cb){
+        "slide-up": function(el, delay, cb, duration){
             var $el = $(el);
             $el.css({
                 opacity: 0,
@@ -199,11 +199,11 @@
                     opacity: 1,
                     // marginRight: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', cb);
+                }, duration || 1000, 'easeOutCubic', cb);
             }, delay);
 
         },
-        "fade-in": function(el, delay, cb){
+        "fade-in": function(el, delay, cb, duration){
             var $el = $(el);
             $el.css({
                 opacity: 0
@@ -212,7 +212,7 @@
             setTimeout(function(){
                 $el.animate({
                     opacity: 1
-                }, 800, cb);
+                }, duration || 1000, cb);
             }, delay);
         }
     };
@@ -230,6 +230,7 @@
         var delay = Number(el.getAttribute('data-delay')||0)*1000;
         var delayAdjust = Number(el.getAttribute('data-delay-adjust')||0)*1000;
         var chain = el.getAttribute('data-chain');
+        var duration = parseFloat(el.getAttribute("data-duration"));
 
         delay = hasDelay ? delay : 0;
         delay += delayAdjust;
@@ -246,6 +247,10 @@
             el.className = [el.className, anim].join(" ");
             el.style['-webkit-animation-delay'] = delay + "ms";
             el.style['animationDelay'] = delay + "ms";
+            if( duration ){
+                el.style['-webkit-animation-duration'] = duration + "ms";
+                el.style['animation-duration'] = duration + "ms";
+            }
             if( chain ) {
                 el.addEventListener('webkitAnimationEnd', chainHandle, false);
                 el.addEventListener('animationend', chainHandle, false);
@@ -258,7 +263,7 @@
                             setAnimate(this, true);
                         });
                     }
-                });
+                }, duration);
             }
         }
     };
@@ -323,6 +328,8 @@
             Resource.el('#evt_container').style.display = 'block';
             correctPNG($('#evt_container').get(0));
             bindScroll('#evt_container');
+            //新增
+
         };
         var loader = new Resource.loadGroup("preload", resData);
         var spin = Resource.el('#evt_spin');

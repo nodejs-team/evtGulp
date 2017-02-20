@@ -474,6 +474,7 @@
             correctPNG($('#evt_container').get(0));
             bindScroll('#evt_container');
             //新增
+            animGif();
 
         };
         var loader = new Resource.loadGroup("preload", resData);
@@ -521,6 +522,29 @@
             }
         }
     };
+
+    var animGif = function () {
+        //图片配置
+        var config = {
+            "gif-1":{"x":296,"y":73,"w":72,"h":71,"offX":22,"offY":31,"sourceW":102,"sourceH":109,duration:2},
+            "gif-2":{"x":222,"y":73,"w":72,"h":71,"offX":22,"offY":29,"sourceW":102,"sourceH":109,duration:2},
+            "gif-3":{"x":148,"y":73,"w":72,"h":71,"offX":22,"offY":28,"sourceW":102,"sourceH":109,duration:2},
+            "gif-4":{"x":74,"y":73,"w":72,"h":71,"offX":22,"offY":26,"sourceW":102,"sourceH":109,duration:2},
+            "gif-5":{"x":0,"y":73,"w":72,"h":71,"offX":22,"offY":24,"sourceW":102,"sourceH":109,duration:2},
+            "gif-6":{"x":370,"y":0,"w":72,"h":71,"offX":22,"offY":23,"sourceW":102,"sourceH":109,duration:2},
+            "gif-7":{"x":296,"y":0,"w":72,"h":71,"offX":22,"offY":21,"sourceW":102,"sourceH":109,duration:2},
+            "gif-8":{"x":222,"y":0,"w":72,"h":71,"offX":22,"offY":24,"sourceW":102,"sourceH":109,duration:2},
+            "gif-9":{"x":148,"y":0,"w":72,"h":71,"offX":22,"offY":26,"sourceW":102,"sourceH":109,duration:2},
+            "gif-10":{"x":74,"y":0,"w":72,"h":71,"offX":22,"offY":29,"sourceW":102,"sourceH":109,duration:2},
+            "gif-11":{"x":0,"y":0,"w":72,"h":71,"offX":22,"offY":31,"sourceW":102,"sourceH":109,duration:2}
+        };
+        // MovieClip 可以通过duration控制两张图片轮播的速度。
+        new MovieClip("images/gif.png", config, 'mc', 'anim-gif').gotoAndPlay(1,-1);
+
+
+    };
+
+
 
     $(function(){
         loadResource();
