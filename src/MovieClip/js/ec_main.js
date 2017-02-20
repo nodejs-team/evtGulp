@@ -179,6 +179,10 @@
             return this;
         },
 
+        addEvent: function(name, callback, ctx){
+          return this.on.apply(this, arguments);
+        },
+
         once: function(name, callback, ctx){
             var self = this;
 

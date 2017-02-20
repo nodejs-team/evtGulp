@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="evt_spin">0%</div>
+<div id="movieclip"></div>
+<script src="http://edm.mcake.com/shuxy/2016/MovieClip/ec_main.js"></script>
+<script>
+     var resLoader = new Resource.JSONloader('res.json');
+
+     resLoader.on("success", function (resData) {
+       var loader = new Resource.loadGroup("preload", resData);
+       var spin = Resource.el('#evt_spin');
+
+       loader.on("progress", function (loaded, total) {
+         spin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
+       });
+
+       loader.on("complete", function(){
+         spin.style.display = "none";
+         var config = {
+           "a2":{"x":224,"y":0,"w":224,"h":205,"offX":4,"offY":1,"sourceW":230,"sourceH":214, duration: 18},
+           "a1":{"x":0,"y":0,"w":222,"h":212,"offX":4,"offY":1,"sourceW":230,"sourceH":214, duration: 30}
+         };
+         new MovieClip("anim_png", config, 'mc', 'movieclip').gotoAndPlay(1,-1);
+       });
+     });
+</script>
+</body>
+</html>

@@ -3,67 +3,67 @@
  */
 (function($){
     var resData = {
-        "groups":[
-            {
-                "keys":"arrow1_png,arrow2_png,bg_png,q1_png,q2_png,q3_png,q4_png,q5_png,text1_png,text2_png,title_png",
-                "name":"preload"
-            }],
+        "groups":[{
+            "keys":"ball_png,buling_png,cake_png,eye_png,icon_png,leaf_png,ribbon-1_png,ribbon-2_png,shose_png,silk_png,banner-bg_jpg",
+            "name":"preload"
+        }],
         "resources":[
             {
-                "name":"arrow1_png",
+                "name":"ball_png",
                 "type":"image",
-                "url":"banner/arrow1.png"
+                "url":"banner/ball.png"
             },
             {
-                "name":"arrow2_png",
+                "name":"buling_png",
                 "type":"image",
-                "url":"banner/arrow2.png"
+                "url":"banner/buling.png"
             },
             {
-                "name":"bg_png",
+                "name":"cake_png",
                 "type":"image",
-                "url":"banner/bg.png"
+                "url":"banner/cake.png"
             },
             {
-                "name":"q1_png",
+                "name":"eye_png",
                 "type":"image",
-                "url":"banner/q1.png"
+                "url":"banner/eye.png"
             },
             {
-                "name":"q2_png",
+                "name":"icon_png",
                 "type":"image",
-                "url":"banner/q2.png"
+                "url":"banner/icon.png"
             },
             {
-                "name":"q3_png",
+                "name":"leaf_png",
                 "type":"image",
-                "url":"banner/q3.png"
+                "url":"banner/leaf.png"
             },
             {
-                "name":"q4_png",
+                "name":"ribbon-1_png",
                 "type":"image",
-                "url":"banner/q4.png"
+                "url":"banner/ribbon-1.png"
             },
             {
-                "name":"q5_png",
+                "name":"ribbon-2_png",
                 "type":"image",
-                "url":"banner/q5.png"
+                "url":"banner/ribbon-2.png"
             },
             {
-                "name":"text1_png",
+                "name":"shose_png",
                 "type":"image",
-                "url":"banner/text1.png"
+                "url":"banner/shose.png"
             },
             {
-                "name":"text2_png",
+                "name":"silk_png",
                 "type":"image",
-                "url":"banner/text2.png"
+                "url":"banner/silk.png"
             },
             {
-                "name":"title_png",
+                "name":"banner-bg_jpg",
                 "type":"image",
-                "url":"banner/title.png"
-            }]
+                "url":"banner/banner-bg.jpg"
+            }
+        ]
     };
 
     $.extend($.easing, {
@@ -204,6 +204,18 @@
 
         },
         "fade-in": function(el, delay, cb, duration){
+            var $el = $(el);
+            $el.css({
+                opacity: 0
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1
+                }, duration || 1000, cb);
+            }, delay);
+        },
+        "bounce-in": function(el, delay, cb, duration){
             var $el = $(el);
             $el.css({
                 opacity: 0

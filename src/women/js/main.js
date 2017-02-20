@@ -444,8 +444,4 @@
         loadResource();
     });
 
-    if( navigator.userAgent.indexOf("Edge") != -1 ){
-        document.body.className += "browser-edge";
-    }
-
 })(jQuery);

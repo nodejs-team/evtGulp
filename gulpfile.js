@@ -94,6 +94,11 @@ gulp.task('compile-sass', function(){
         .pipe(gulp.dest(path.srcCssFolder));
 });
 
+gulp.task('create', function(){
+  return gulp.src('template/**/*')
+    .pipe(gulp.dest(path.src));
+});
+
 //JS检测
 gulp.task('jshint', function(){
     return gulp.src(path.srcJs)
@@ -247,7 +252,7 @@ gulp.task('watch', function(){
 });
 
 //默认任务
-gulp.task('default', ['watch', 'webserver']);
+gulp.task('default', ['compile-sass', 'watch', 'webserver']);
 
 //项目完成提交任务
 gulp.task('build', function(done) {
