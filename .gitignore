@@ -6,6 +6,7 @@
 .tmp
 
 dist
+config.json
 node_modules/*
 bower_components/
 src/lamont_olympic
