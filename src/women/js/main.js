@@ -100,147 +100,278 @@
         }
     });
 
-    var aniMap = {
-        "slide-left": function(el, delay, cb){
-            var $el = $(el);
-            $el.css({
-                opacity: 0,
-                marginLeft: el.offsetWidth*0.5
-            });
+  var isOldIE = !!!window.getComputedStyle;
 
-            setTimeout(function(){
-                $el.animate({
-                    opacity: 1,
-                    marginLeft: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
-                });
-            }, delay);
-
-        },
-        "slide-right": function(el, delay, cb){
-            var $el = $(el);
-            $el.css({
-                opacity: 0,
-                marginLeft: -el.offsetWidth*0.5
-            });
-
-            setTimeout(function(){
-                $el.animate({
-                    opacity: 1,
-                    marginLeft: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
-                });
-            }, delay);
-
-        },
-        "slide-down-l": function(el, delay, cb){
-            var $el = $(el);
-            $el.css({
-                opacity: 0,
-                marginLeft: -el.offsetWidth*0.3,
-                marginTop: -el.offsetHeight*0.8
-            });
-
-            setTimeout(function(){
-                $el.animate({
-                    opacity: 1,
-                    marginLeft: 0,
-                    marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
-                });
-            }, delay);
-
-        },
-        "slide-down-r": function(el, delay, cb){
-            var $el = $(el);
-            $el.css({
-                opacity: 0,
-                marginLeft: el.offsetWidth*0.15,
-                marginTop: -el.offsetHeight*0.8
-            });
-
-            setTimeout(function(){
-                $el.animate({
-                    opacity: 1,
-                    marginLeft: 0,
-                    marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
-                });
-            }, delay);
-
-        },
-        "slide-up-l": function(el, delay, cb){
-            var $el = $(el);
-            $el.css({
-                opacity: 0,
-                marginLeft: -el.offsetWidth*0.5,
-                marginTop: el.offsetHeight*0.5
-            });
-
-            setTimeout(function(){
-                $el.animate({
-                    opacity: 1,
-                    marginLeft: 0,
-                    marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
-                });
-            }, delay);
-
-        },
-        "slide-up-r": function(el, delay, cb){
-            var $el = $(el);
-            $el.css({
-                opacity: 0,
-                marginLeft: el.offsetWidth*0.5,
-                marginTop: el.offsetHeight*0.5
-            });
-
-            setTimeout(function(){
-                $el.animate({
-                    opacity: 1,
-                    marginLeft: 0,
-                    marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
-                });
-            }, delay);
-
-        },
-        "slide-up": function(el, delay, cb){
-            var $el = $(el);
-            $el.css({
-                opacity: 0,
-                //marginRight: -el.offsetWidth*0.5,
-                marginTop: el.offsetHeight*0.5
-            });
-
-            setTimeout(function(){
-                $el.animate({
-                    opacity: 1,
-                    // marginRight: 0,
-                    marginTop: 0
-                }, 1000, 'easeOutCubic', cb);
-            }, delay);
-
-        },
-        "fade-in": function(el, delay, cb){
-            var $el = $(el);
-            $el.css({
-                opacity: 0
-            });
-
-            setTimeout(function(){
-                $el.animate({
-                    opacity: 1
-                }, 800, cb);
-            }, delay);
+  function getNoneStaticNodes(el) {
+    var stacks = [];
+    if( isOldIE ){
+      var els = el.getElementsByTagName("*");
+      for(var i=0; i<els.length; i++){
+        if( els[i].currentStyle['position'] != 'static' ){
+          stacks.push(els[i]);
         }
-    };
+      }
+    }
+
+    return stacks;
+  }
+
+  function setNoneStaticNodesOpacity(stacks, opacity) {
+    for(var i = 0; i < stacks.length; i++){
+      stacks[i].style.filter = "alpha(opacity= " + opacity * 100 + ")";
+    }
+  }
+
+  var jqAnimateMap = {
+    "slide-left": function(el, delay, duration, cb){
+      var $el = $(el);
+      $el.css({
+        opacity: 0,
+        marginLeft: el.offsetWidth*0.5
+      });
+
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
+      setTimeout(function(){
+        $el.animate({
+          opacity: 1,
+          marginLeft: 0
+        }, {
+          duration: duration,
+          easing: 'easeOutCubic',
+          complete: cb,
+          step: function (value, props) {
+            if( props.prop == 'opacity' ){
+              setNoneStaticNodesOpacity(addons, props.now);
+            }
+          }
+        });
+      }, delay);
+
+    },
+    "slide-right": function(el, delay, duration, cb){
+      var $el = $(el);
+      $el.css({
+        opacity: 0,
+        marginLeft: -el.offsetWidth*0.5
+      });
+
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
+      setTimeout(function(){
+        $el.animate({
+          opacity: 1,
+          marginLeft: 0
+        }, {
+          duration: duration,
+          easing: 'easeOutCubic',
+          complete: cb,
+          step: function (value, props) {
+            if( props.prop == 'opacity' ){
+              setNoneStaticNodesOpacity(addons, props.now);
+            }
+          }
+        });
+      }, delay);
+
+    },
+    "slide-down-l": function(el, delay, duration, cb){
+      var $el = $(el);
+      $el.css({
+        opacity: 0,
+        marginLeft: -el.offsetWidth*0.3,
+        marginTop: -el.offsetHeight*0.8
+      });
+
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
+      setTimeout(function(){
+        $el.animate({
+          opacity: 1,
+          marginLeft: 0,
+          marginTop: 0
+        }, {
+          duration: duration,
+          easing: 'easeOutCubic',
+          complete: cb,
+          step: function (value, props) {
+            if( props.prop == 'opacity' ){
+              setNoneStaticNodesOpacity(addons, props.now);
+            }
+          }
+        });
+      }, delay);
+
+    },
+    "slide-down-r": function(el, delay, duration, cb){
+      var $el = $(el);
+      $el.css({
+        opacity: 0,
+        marginLeft: el.offsetWidth*0.15,
+        marginTop: -el.offsetHeight*0.8
+      });
+
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
+      setTimeout(function(){
+        $el.animate({
+          opacity: 1,
+          marginLeft: 0,
+          marginTop: 0
+        }, {
+          duration: duration,
+          easing: 'easeOutCubic',
+          complete: cb,
+          step: function (value, props) {
+            if( props.prop == 'opacity' ){
+              setNoneStaticNodesOpacity(addons, props.now);
+            }
+          }
+        });
+      }, delay);
+
+    },
+    "slide-up-l": function(el, delay, duration, cb){
+      var $el = $(el);
+      $el.css({
+        opacity: 0,
+        marginLeft: -el.offsetWidth*0.5,
+        marginTop: el.offsetHeight*0.5
+      });
+
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
+      setTimeout(function(){
+        $el.animate({
+          opacity: 1,
+          marginLeft: 0,
+          marginTop: 0
+        }, {
+          duration: duration,
+          easing: 'easeOutCubic',
+          complete: cb,
+          step: function (value, props) {
+            if( props.prop == 'opacity' ){
+              setNoneStaticNodesOpacity(addons, props.now);
+            }
+          }
+        });
+      }, delay);
+
+    },
+    "slide-up-r": function(el, delay, duration, cb){
+      var $el = $(el);
+      $el.css({
+        opacity: 0,
+        marginLeft: el.offsetWidth*0.5,
+        marginTop: el.offsetHeight*0.5
+      });
+
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
+      setTimeout(function(){
+        $el.animate({
+          opacity: 1,
+          marginLeft: 0,
+          marginTop: 0
+        }, {
+          duration: duration,
+          easing: 'easeOutCubic',
+          complete: cb,
+          step: function (value, props) {
+            if( props.prop == 'opacity' ){
+              setNoneStaticNodesOpacity(addons, props.now);
+            }
+          }
+        });
+      }, delay);
+
+    },
+    "slide-up": function(el, delay, duration, cb){
+      var $el = $(el);
+      $el.css({
+        opacity: 0,
+        marginTop: el.offsetHeight*0.5
+      });
+
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
+      setTimeout(function(){
+        $el.animate({
+          opacity: 1,
+          marginTop: 0
+        }, {
+          duration: duration,
+          easing: 'easeOutCubic',
+          complete: cb,
+          step: function (value, props) {
+            if( props.prop == 'opacity' ){
+              setNoneStaticNodesOpacity(addons, props.now);
+            }
+          }
+        });
+      }, delay);
+
+    },
+    "slide-down": function(el, delay, duration, cb){
+      var $el = $(el);
+      $el.css({
+        opacity: 0,
+        marginTop: -el.offsetHeight*0.5
+      });
+
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
+      setTimeout(function(){
+        $el.animate({
+          opacity: 1,
+          marginTop: 0
+        }, {
+          duration: duration,
+          easing: 'easeOutCubic',
+          complete: cb,
+          step: function (value, props) {
+            if( props.prop == 'opacity' ){
+              setNoneStaticNodesOpacity(addons, props.now);
+            }
+          }
+        });
+      }, delay);
+
+    },
+    "fade-in": function(el, delay, duration, cb){
+      var $el = $(el);
+      $el.css({
+        opacity: 0
+      });
+
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
+      setTimeout(function(){
+        $el.animate({
+          opacity: 1
+        }, {
+          duration: duration,
+          easing: 'easeOutCubic',
+          complete: cb,
+          step: function (value, props) {
+            if( props.prop == 'opacity' ){
+              setNoneStaticNodesOpacity(addons, props.now);
+            }
+          }
+        });
+      }, delay);
+    }
+  };
 
     var isSupportCss3 = (function(){
         var ret = /MSIE (\d+\.\d+)/.exec(navigator.userAgent);
@@ -250,43 +381,49 @@
         return false;
     })();
 
-    var setAnimate = function(el, hasDelay){
-        var anim = el.getAttribute('data-anim');
-        var delay = Number(el.getAttribute('data-delay')||0)*1000;
-        var delayAdjust = Number(el.getAttribute('data-delay-adjust')||0)*1000;
-        var chain = el.getAttribute('data-chain');
+  var setAnimate = function(el, hasDelay){
+    var anim = el.getAttribute('data-anim');
+    var delay = Number(el.getAttribute('data-delay')||0)*1000;
+    var delayAdjust = Number(el.getAttribute('data-delay-adjust')||0)*1000;
+    var chain = el.getAttribute('data-chain');
+    var duration = parseInt(el.getAttribute('data-duration'));
 
-        delay = hasDelay ? delay : 0;
-        delay += delayAdjust;
+    delay = hasDelay ? delay : 0;
+    delay += delayAdjust;
 
-        if( isSupportCss3 ){
-            var chainHandle = function(){
-                $(chain).each(function(){
-                    setAnimate(this, true);
-                });
-                el.removeEventListener('webkitAnimationEnd', chainHandle, false);
-                el.removeEventListener('animationend', chainHandle, false);
-            };
+    if( isSupportCss3 ){
+      var chainHandle = function(){
+        $(chain).each(function(){
+          setAnimate(this, true);
+        });
+        el.removeEventListener('webkitAnimationEnd', chainHandle, false);
+        el.removeEventListener('animationend', chainHandle, false);
+      };
 
-            el.className = [el.className, anim].join(" ");
-            el.style['-webkit-animation-delay'] = delay + "ms";
-            el.style['animationDelay'] = delay + "ms";
-            if( chain ) {
-                el.addEventListener('webkitAnimationEnd', chainHandle, false);
-                el.addEventListener('animationend', chainHandle, false);
-            }
-        } else {
-            if( aniMap[anim] ) {
-                aniMap[anim].call(el, el, delay, function(){
-                    if( chain ) {
-                        $(chain).each(function(){
-                            setAnimate(this, true);
-                        });
-                    }
-                });
-            }
-        }
-    };
+      el.className = [el.className, anim].join(" ");
+      el.style['-webkit-animation-delay'] = delay + "ms";
+      el.style['animationDelay'] = delay + "ms";
+      if( duration ){
+        el.style['-webkit-animation-duration'] = duration + "ms";
+        el.style['animationDuration'] = duration + "ms";
+      }
+      if( chain ) {
+        el.addEventListener('webkitAnimationEnd', chainHandle, false);
+        el.addEventListener('animationend', chainHandle, false);
+      }
+    } else {
+      duration = duration || 1000;
+      if( jqAnimateMap[anim] ) {
+        jqAnimateMap[anim].call(el, el, delay, duration, function(){
+          if( chain ) {
+            $(chain).each(function(){
+              setAnimate(this, true);
+            });
+          }
+        });
+      }
+    }
+  };
 
     var setAllAnimate = function(container){
         $(container).find("[data-anim]").each(function(){
