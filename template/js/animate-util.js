@@ -198,6 +198,7 @@ var setAnimate = function(el, hasDelay){
       el.addEventListener('animationend', chainHandle, false);
     }
   } else {
+    duration = duration || 1000;
     if( jqAnimateMap[anim] ) {
       jqAnimateMap[anim].call(el, el, delay, duration, function(){
         if( chain ) {
