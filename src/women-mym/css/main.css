@@ -126,34 +126,28 @@ body {
 
 .section-main .picture {
   z-index: 1;
-  right: 89px;
+  left: 546px;
   top: 80px;
 }
 
 .section-main .w1 {
-  right: 10px;
-  bottom: 211px;
+  left: 625px;
+  top: 488px;
 }
 
 .section-main .gobuy {
   width: 120px;
   height: 143px;
   top: 586px;
-  right: 268px;
+  left: 625px;
 }
 
-.section-main .gobuy .buy-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.section-main .gobuy .buy-content .select-item {
+.section-main .gobuy .select-item {
   z-index: 10;
   height: 27px;
 }
 
-.section-main .gobuy .buy-content .select-item b {
+.section-main .gobuy .select-item b {
   float: left;
   display: block;
   font-style: normal;
@@ -169,7 +163,7 @@ body {
   background: url(../images/bangshu.png) center center no-repeat;
 }
 
-.section-main .gobuy .buy-content .select-item ul {
+.section-main .gobuy .select-item ul {
   position: absolute;
   width: 46px;
   top: 30px;
@@ -182,7 +176,7 @@ body {
   z-index: 10;
 }
 
-.section-main .gobuy .buy-content .select-item ul li {
+.section-main .gobuy .select-item ul li {
   height: 30px;
   width: 41px;
   padding-left: 5px;
@@ -191,15 +185,15 @@ body {
   color: #baa1a4;
 }
 
-.section-main .gobuy .buy-content .select-item ul li strong {
+.section-main .gobuy .select-item ul li strong {
   font-size: 14px;
 }
 
-.section-main .gobuy .buy-content .select-item ul li.on {
+.section-main .gobuy .select-item ul li.on {
   color: #4e1b20;
 }
 
-.section-main .gobuy .buy-content .price {
+.section-main .gobuy .price {
   width: 100%;
   font-style: normal;
   display: block;
@@ -212,15 +206,14 @@ body {
   font-weight: bold;
 }
 
-.section-main .gobuy .buy-content .price i {
+.section-main .gobuy .price i {
   font-size: 16px;
   vertical-align: super;
   font-style: normal;
 }
 
-.section-main .gobuy .buy-content .old-price {
+.section-main .gobuy .old-price {
   width: 100%;
-  position: relative;
   font-style: normal;
   display: block;
   font-size: 21px;
@@ -228,28 +221,26 @@ body {
   color: #be9992;
   text-align: left;
   font-weight: bold;
-  z-index: 1;
 }
 
-.section-main .gobuy .buy-content .old-price i {
+.section-main .gobuy .old-price i {
   font-size: 12px;
   vertical-align: super;
   font-style: normal;
 }
 
-.section-main .gobuy .buy-content .line-through {
-  position: absolute;
+.section-main .gobuy .line-through {
   z-index: 1;
-  top: 16px;
-  left: -3px;
+  display: block;
   width: 100%;
   height: 0;
+  margin-top: -12px;
   border-bottom: #be9992 1px solid;
 }
 
-.section-main .gobuy .buy-content .gobuy-btn {
+.section-main .gobuy .gobuy-btn {
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .select-item b strong {
