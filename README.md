@@ -1,2 +1,19 @@
 # evtGulp
-mcake events code
+mcake专题活动代码集
+
+###第一步
+第一次拿到项目，请执行`npm install`
+
+###第二步
+修根目录下的`config.json`，将其中的`projectName`配置项改成你自己的项目名称
+
+###第三步
+执行`gulp create`创建项目
+
+###第四步
+执行`gulp default`开启webserver
+
+###第五步
+项目开发完工后执行`gulp build`
+
+ps: 请将所有图片加上`width`和`height`属性，否则动画在低版本IE下会有瑕疵。

@@ -1,0 +1,38 @@
+.evt-content{
+  /* addon css code goes here */
+
+
+}
+
+.evt-footer{
+  position: relative;
+  z-index: 10;
+}
+
+
+.evt-footer{
+  height:260px;
+  background-color: #fff;
+
+  .footer-bd{
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+  }
+
+  .evt-rules{
+    padding-left:138px;
+    padding-top:30px;
+    color:#907e59;
+    h2{
+      font-size:18px;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size:16px;
+      line-height: 1.5;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+  }
+}

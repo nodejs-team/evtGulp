@@ -4,7 +4,7 @@
         "host" : "localhost",
         "port" : "8081"
     },
-    "tinypngapi": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
+    "tinypngapi": "",
     "ftp" : {
         "host" : "",
         "user" : "",
@@ -12,5 +12,5 @@
         "remotePath": ""
     },
     "projectName": "women",
-    "revPrefix": "http://edm.mcake.com/fangli/2017/"
+    "revPrefix": "http://edm.mcake.com/shuxy/2016/"
 }
