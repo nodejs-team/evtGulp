@@ -25,7 +25,7 @@
       var els = el.getElementsByTagName("*");
       for(var i=0; i<els.length; i++){
         if( els[i].currentStyle['position'] != 'static' ){
-          stacks.push(els[i]);
+          stacks.push([els[i], els[i].currentStyle['filter']||null]);
         }
       }
     }
@@ -35,20 +35,31 @@
 
   function setNoneStaticNodesOpacity(stacks, opacity) {
     for(var i = 0; i < stacks.length; i++){
-      stacks[i].style.filter = "alpha(opacity= " + opacity * 100 + ")";
+      stacks[i][0].style.filter = "alpha(opacity= " + opacity * 100 + ")";
+    }
+  }
+
+  function removeNoneStaticNodesOpacity(stacks, extraEl) {
+    if( extraEl && isOldIE ){
+      stacks.unshift([extraEl, extraEl.currentStyle['filter']||null]);
+    }
+    for(var i = 0; i < stacks.length; i++){
+      if( !stacks[i][1] || /alpha\(opacity=\d+\)/.test(stacks[i][1]) ) {
+        stacks[i][0].style.filter = "none";
+      }
     }
   }
 
   var jqAnimateMap = {
     "slide-left": function(el, delay, duration, cb){
       var $el = $(el);
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: el.offsetWidth*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -57,7 +68,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+            removeNoneStaticNodesOpacity(addons, this);
+            cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -69,13 +83,13 @@
     },
     "slide-right": function(el, delay, duration, cb){
       var $el = $(el);
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: -el.offsetWidth*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -84,7 +98,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+            removeNoneStaticNodesOpacity(addons, this);
+            cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -96,14 +113,14 @@
     },
     "slide-down-l": function(el, delay, duration, cb){
       var $el = $(el);
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: -el.offsetWidth*0.3,
         marginTop: -el.offsetHeight*0.8
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -113,7 +130,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+            removeNoneStaticNodesOpacity(addons, this);
+            cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -125,14 +145,14 @@
     },
     "slide-down-r": function(el, delay, duration, cb){
       var $el = $(el);
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: el.offsetWidth*0.15,
         marginTop: -el.offsetHeight*0.8
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -142,7 +162,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+            removeNoneStaticNodesOpacity(addons, this);
+            cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -154,14 +177,14 @@
     },
     "slide-up-l": function(el, delay, duration, cb){
       var $el = $(el);
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: -el.offsetWidth*0.5,
         marginTop: el.offsetHeight*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -171,7 +194,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+            removeNoneStaticNodesOpacity(addons, this);
+            cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -183,14 +209,14 @@
     },
     "slide-up-r": function(el, delay, duration, cb){
       var $el = $(el);
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: el.offsetWidth*0.5,
         marginTop: el.offsetHeight*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -200,7 +226,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+            removeNoneStaticNodesOpacity(addons, this);
+            cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -212,13 +241,13 @@
     },
     "slide-up": function(el, delay, duration, cb){
       var $el = $(el);
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginTop: el.offsetHeight*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -227,7 +256,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+            removeNoneStaticNodesOpacity(addons, this);
+            cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -239,13 +271,13 @@
     },
     "slide-down": function(el, delay, duration, cb){
       var $el = $(el);
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginTop: -el.offsetHeight*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -254,7 +286,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+            removeNoneStaticNodesOpacity(addons, this);
+            cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -266,12 +301,12 @@
     },
     "fade-in": function(el, delay, duration, cb){
       var $el = $(el);
+      var addons = getNoneStaticNodes(el);
+      setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -279,7 +314,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+            removeNoneStaticNodesOpacity(addons, this);
+            cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -309,13 +347,18 @@
     delay += delayAdjust;
 
     if( isSupportCss3 ){
-      var chainHandle = function(){
-        $(chain).each(function(){
-          setAnimate(this, true);
-        });
+      function chainHandle(){
+        var $this = $(this);
+        $this.trigger.apply($this, ["animatedone"].concat([].slice.call(arguments)));
+        if( chain ) {
+          $(chain).each(function () {
+            setAnimate(this, true);
+          });
+        }
+
         el.removeEventListener('webkitAnimationEnd', chainHandle, false);
         el.removeEventListener('animationend', chainHandle, false);
-      };
+      }
 
       el.className = [el.className, anim].join(" ");
       el.style['-webkit-animation-delay'] = delay + "ms";
@@ -324,14 +367,16 @@
         el.style['-webkit-animation-duration'] = duration + "ms";
         el.style['animationDuration'] = duration + "ms";
       }
-      if( chain ) {
-        el.addEventListener('webkitAnimationEnd', chainHandle, false);
-        el.addEventListener('animationend', chainHandle, false);
-      }
+
+      el.addEventListener('webkitAnimationEnd', chainHandle, false);
+      el.addEventListener('animationend', chainHandle, false);
+
     } else {
       duration = duration || 1000;
       if( jqAnimateMap[anim] ) {
         jqAnimateMap[anim].call(el, el, delay, duration, function(){
+          var $this = $(this);
+          $this.trigger.apply($this, ["animatedone"].concat([].slice.call(arguments)));
           if( chain ) {
             $(chain).each(function(){
               setAnimate(this, true);
