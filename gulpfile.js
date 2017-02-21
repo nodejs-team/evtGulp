@@ -27,11 +27,6 @@ var gulp         = require('gulp'),
     fs           = require('fs'),
     argv         = require('yargs').argv;
 
-if (typeof localStorage === "undefined" || localStorage === null) {
-  var LocalStorage = require('node-localstorage').LocalStorage;
-  localStorage = new LocalStorage('./storage');
-}
-
 var SRC = 'src/' + config.projectName;
 var DIST = 'dist/' + config.projectName;
 var path = {
@@ -102,23 +97,19 @@ gulp.task('compile-sass', function(){
         .pipe(gulp.dest(path.srcCssFolder));
 });
 
-var storageKeyName = 'gulp-projectName';
-
 //创建脚手架工程
 gulp.task('create', function(){
   var argName = argv.name;
+  var projectName = argName || config.projectName;
   var distPath = path.src;
-  var cacheName = localStorage.getItem(storageKeyName);
 
-  if( cacheName ){
-    if( argName ){
-      if( cacheName == argName ){
-        throw new Error(argName + '项目名已存在！');
-      }
-    }
-    else if( cacheName == config.projectName ){
-      throw new Error(config.projectName + "项目名已存在！");
-    }
+  var dirNames = fs.readdirSync(path.src.split("/")[0]);
+  var isProjectExist = dirNames.some(function (name) {
+      return name == projectName;
+  });
+
+  if( isProjectExist ){
+      throw new Error(projectName + "项目名已存在！");
   }
 
   if( argName ){
@@ -128,22 +119,16 @@ gulp.task('create', function(){
   return gulp.src('template/**/*')
     .pipe(gulp.dest(distPath))
     .on("end", function () {
-      localStorage.setItem(storageKeyName, argName || config.projectName);
       if( argName ){
         config.projectName = argName;
         fs.writeFile(require("path").resolve(__dirname, 'config.json'), JSON.stringify(config, null, 1), function(err) {
             if (err) throw err;
-            console.log('项目"' + argName + '"创建成功');
+            console.log('项目"' + projectName + '"创建成功');
         });
       } else {
-        console.log('项目"' + config.projectName + '"创建成功');
+        console.log('项目"' + projectName + '"创建成功');
       }
     });
-});
-
-//清空localStorage
-gulp.task('clear-storage', function(){
-  localStorage.clear();
 });
 
 //JS检测
