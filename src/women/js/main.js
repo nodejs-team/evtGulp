@@ -603,7 +603,7 @@
 
         $(document).click( function() {
             $select.hide();
-            return false;
+            // return false;
         });
     }
 
