@@ -7,7 +7,7 @@ mcake专题活动代码集
 ###第二步
 创建项目：
 
-- 方法1：修根目录下的`config.json`，将其中的`projectName`配置项改成你自己的项目名称。
+- 方法1：修改根目录下的`config.json`，将其中的`projectName`配置项改成你自己的项目名称。
 
 -  方法2：执行`gulp create --name my-project`
 
