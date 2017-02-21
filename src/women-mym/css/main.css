@@ -240,14 +240,6 @@ body {
   border-bottom: #be9992 1px solid;
 }
 
-.old-price.old-ie {
-  text-decoration: line-through !important;
-}
-
-.old-price.old-ie .line-through {
-  display: none !important;
-}
-
 .section-main .gobuy .gobuy-btn {
   cursor: pointer;
   margin-top: 15px;

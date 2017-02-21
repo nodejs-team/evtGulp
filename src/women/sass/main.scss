@@ -158,9 +158,10 @@ body{
     height: 366px;
     top:332px;
     left: 708px;
-    background: url("../images/go-buy.png");
-    background: none\0;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/go-buy.png', sizingMethod='scale');
+
+    .gobuy-bg{
+      position: absolute;
+    }
 
       .select-item{
         position: absolute;
@@ -181,7 +182,9 @@ body{
             padding-left: 10px;
             color: #4e1b20;
             background: url(../images/bangshu.png) center center no-repeat;
-
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
           }
           ul{
             position: absolute;
@@ -265,10 +268,6 @@ body{
 .evt-footer{
   position: relative;
   z-index: 10;
-}
-
-.browser-edge .q-price{
-  -webkit-animation: none !important;
 }
 
 

@@ -236,13 +236,6 @@ body{
       border-bottom:#be9992 1px solid;
     }
 
-    @at-root .old-price.old-ie {
-      text-decoration: line-through !important;
-      .line-through{
-        display:none !important;
-      }
-    }
-
     .gobuy-btn{
       cursor: pointer;
       margin-top: 15px;

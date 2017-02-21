@@ -80,9 +80,45 @@
         }
     });
 
-    var aniMap = {
-        "slide-left": function(el, delay, cb){
+    var isOldIE = !!!window.getComputedStyle;
+
+    function getNoneStaticNodes(el) {
+        var stacks = [];
+        if( isOldIE ){
+            var els = el.getElementsByTagName("*");
+            for(var i=0; i<els.length; i++){
+                if( els[i].currentStyle['position'] != 'static' ){
+                    stacks.push([els[i], els[i].currentStyle['filter']||null]);
+                }
+            }
+        }
+
+        return stacks;
+    }
+
+    function setNoneStaticNodesOpacity(stacks, opacity) {
+        for(var i = 0; i < stacks.length; i++){
+            stacks[i][0].style.filter = "alpha(opacity= " + opacity * 100 + ")";
+        }
+    }
+
+    function removeNoneStaticNodesOpacity(stacks, extraEl) {
+        if( extraEl ){
+            stacks.unshift([extraEl, extraEl.currentStyle['filter']||null]);
+        }
+        for(var i = 0; i < stacks.length; i++){
+            if( !stacks[i][1] ) {
+                stacks[i][0].style.filter = "none";
+            }
+        }
+    }
+
+    var jqAnimateMap = {
+        "slide-left": function(el, delay, duration, cb){
             var $el = $(el);
+            var addons = getNoneStaticNodes(el);
+            setNoneStaticNodesOpacity(addons, 0);
+
             $el.css({
                 opacity: 0,
                 marginLeft: el.offsetWidth*0.5
@@ -92,14 +128,27 @@
                 $el.animate({
                     opacity: 1,
                     marginLeft: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
+                }, {
+                    duration: duration,
+                    easing: 'easeOutCubic',
+                    complete: function(){
+                        removeNoneStaticNodesOpacity(addons, this);
+                        cb && cb.apply(this, arguments);
+                    },
+                    step: function (value, props) {
+                        if( props.prop == 'opacity' ){
+                            setNoneStaticNodesOpacity(addons, props.now);
+                        }
+                    }
                 });
             }, delay);
 
         },
-        "slide-right": function(el, delay, cb){
+        "slide-right": function(el, delay, duration, cb){
             var $el = $(el);
+            var addons = getNoneStaticNodes(el);
+            setNoneStaticNodesOpacity(addons, 0);
+
             $el.css({
                 opacity: 0,
                 marginLeft: -el.offsetWidth*0.5
@@ -109,14 +158,27 @@
                 $el.animate({
                     opacity: 1,
                     marginLeft: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
+                }, {
+                    duration: duration,
+                    easing: 'easeOutCubic',
+                    complete: function(){
+                        removeNoneStaticNodesOpacity(addons, this);
+                        cb && cb.apply(this, arguments);
+                    },
+                    step: function (value, props) {
+                        if( props.prop == 'opacity' ){
+                            setNoneStaticNodesOpacity(addons, props.now);
+                        }
+                    }
                 });
             }, delay);
 
         },
-        "slide-down-l": function(el, delay, cb){
+        "slide-down-l": function(el, delay, duration, cb){
             var $el = $(el);
+            var addons = getNoneStaticNodes(el);
+            setNoneStaticNodesOpacity(addons, 0);
+
             $el.css({
                 opacity: 0,
                 marginLeft: -el.offsetWidth*0.3,
@@ -128,14 +190,27 @@
                     opacity: 1,
                     marginLeft: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
+                }, {
+                    duration: duration,
+                    easing: 'easeOutCubic',
+                    complete: function(){
+                        removeNoneStaticNodesOpacity(addons, this);
+                        cb && cb.apply(this, arguments);
+                    },
+                    step: function (value, props) {
+                        if( props.prop == 'opacity' ){
+                            setNoneStaticNodesOpacity(addons, props.now);
+                        }
+                    }
                 });
             }, delay);
 
         },
-        "slide-down-r": function(el, delay, cb){
+        "slide-down-r": function(el, delay, duration, cb){
             var $el = $(el);
+            var addons = getNoneStaticNodes(el);
+            setNoneStaticNodesOpacity(addons, 0);
+
             $el.css({
                 opacity: 0,
                 marginLeft: el.offsetWidth*0.15,
@@ -147,29 +222,27 @@
                     opacity: 1,
                     marginLeft: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
+                }, {
+                    duration: duration,
+                    easing: 'easeOutCubic',
+                    complete: function(){
+                        removeNoneStaticNodesOpacity(addons, this);
+                        cb && cb.apply(this, arguments);
+                    },
+                    step: function (value, props) {
+                        if( props.prop == 'opacity' ){
+                            setNoneStaticNodesOpacity(addons, props.now);
+                        }
+                    }
                 });
             }, delay);
 
         },
-      "slide-down": function(el, delay, cb){
-        var $el = $(el);
-        $el.css({
-          opacity: 0,
-          marginTop: -el.offsetHeight*0.5
-        });
-
-        setTimeout(function(){
-          $el.animate({
-            opacity: 1,
-            marginTop: 0
-          }, 1000, 'easeOutCubic', cb);
-        }, delay);
-
-      },
-        "slide-up-l": function(el, delay, cb){
+        "slide-up-l": function(el, delay, duration, cb){
             var $el = $(el);
+            var addons = getNoneStaticNodes(el);
+            setNoneStaticNodesOpacity(addons, 0);
+
             $el.css({
                 opacity: 0,
                 marginLeft: -el.offsetWidth*0.5,
@@ -181,14 +254,27 @@
                     opacity: 1,
                     marginLeft: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
+                }, {
+                    duration: duration,
+                    easing: 'easeOutCubic',
+                    complete: function(){
+                        removeNoneStaticNodesOpacity(addons, this);
+                        cb && cb.apply(this, arguments);
+                    },
+                    step: function (value, props) {
+                        if( props.prop == 'opacity' ){
+                            setNoneStaticNodesOpacity(addons, props.now);
+                        }
+                    }
                 });
             }, delay);
 
         },
-        "slide-up-r": function(el, delay, cb){
+        "slide-up-r": function(el, delay, duration, cb){
             var $el = $(el);
+            var addons = getNoneStaticNodes(el);
+            setNoneStaticNodesOpacity(addons, 0);
+
             $el.css({
                 opacity: 0,
                 marginLeft: el.offsetWidth*0.5,
@@ -200,31 +286,87 @@
                     opacity: 1,
                     marginLeft: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', function(){
-                    cb && cb();
+                }, {
+                    duration: duration,
+                    easing: 'easeOutCubic',
+                    complete: function(){
+                        removeNoneStaticNodesOpacity(addons, this);
+                        cb && cb.apply(this, arguments);
+                    },
+                    step: function (value, props) {
+                        if( props.prop == 'opacity' ){
+                            setNoneStaticNodesOpacity(addons, props.now);
+                        }
+                    }
                 });
             }, delay);
 
         },
-        "slide-up": function(el, delay, cb){
+        "slide-up": function(el, delay, duration, cb){
             var $el = $(el);
+            var addons = getNoneStaticNodes(el);
+            setNoneStaticNodesOpacity(addons, 0);
+
             $el.css({
                 opacity: 0,
-                //marginRight: -el.offsetWidth*0.5,
                 marginTop: el.offsetHeight*0.5
             });
 
             setTimeout(function(){
                 $el.animate({
                     opacity: 1,
-                    // marginRight: 0,
                     marginTop: 0
-                }, 1000, 'easeOutCubic', cb);
+                }, {
+                    duration: duration,
+                    easing: 'easeOutCubic',
+                    complete: function(){
+                        removeNoneStaticNodesOpacity(addons, this);
+                        cb && cb.apply(this, arguments);
+                    },
+                    step: function (value, props) {
+                        if( props.prop == 'opacity' ){
+                            setNoneStaticNodesOpacity(addons, props.now);
+                        }
+                    }
+                });
             }, delay);
 
         },
-        "fade-in": function(el, delay, cb){
+        "slide-down": function(el, delay, duration, cb){
             var $el = $(el);
+            var addons = getNoneStaticNodes(el);
+            setNoneStaticNodesOpacity(addons, 0);
+
+            $el.css({
+                opacity: 0,
+                marginTop: -el.offsetHeight*0.5
+            });
+
+            setTimeout(function(){
+                $el.animate({
+                    opacity: 1,
+                    marginTop: 0
+                }, {
+                    duration: duration,
+                    easing: 'easeOutCubic',
+                    complete: function(){
+                        removeNoneStaticNodesOpacity(addons, this);
+                        cb && cb.apply(this, arguments);
+                    },
+                    step: function (value, props) {
+                        if( props.prop == 'opacity' ){
+                            setNoneStaticNodesOpacity(addons, props.now);
+                        }
+                    }
+                });
+            }, delay);
+
+        },
+        "fade-in": function(el, delay, duration, cb){
+            var $el = $(el);
+            var addons = getNoneStaticNodes(el);
+            setNoneStaticNodesOpacity(addons, 0);
+
             $el.css({
                 opacity: 0
             });
@@ -232,7 +374,19 @@
             setTimeout(function(){
                 $el.animate({
                     opacity: 1
-                }, 800, cb);
+                }, {
+                    duration: duration,
+                    easing: 'easeOutCubic',
+                    complete: function(){
+                        removeNoneStaticNodesOpacity(addons, this);
+                        cb && cb.apply(this, arguments);
+                    },
+                    step: function (value, props) {
+                        if( props.prop == 'opacity' ){
+                            setNoneStaticNodesOpacity(addons, props.now);
+                        }
+                    }
+                });
             }, delay);
         }
     };
@@ -250,6 +404,7 @@
         var delay = Number(el.getAttribute('data-delay')||0)*1000;
         var delayAdjust = Number(el.getAttribute('data-delay-adjust')||0)*1000;
         var chain = el.getAttribute('data-chain');
+        var duration = parseInt(el.getAttribute('data-duration'));
 
         delay = hasDelay ? delay : 0;
         delay += delayAdjust;
@@ -266,13 +421,18 @@
             el.className = [el.className, anim].join(" ");
             el.style['-webkit-animation-delay'] = delay + "ms";
             el.style['animationDelay'] = delay + "ms";
+            if( duration ){
+                el.style['-webkit-animation-duration'] = duration + "ms";
+                el.style['animationDuration'] = duration + "ms";
+            }
             if( chain ) {
                 el.addEventListener('webkitAnimationEnd', chainHandle, false);
                 el.addEventListener('animationend', chainHandle, false);
             }
         } else {
-            if( aniMap[anim] ) {
-                aniMap[anim].call(el, el, delay, function(){
+            duration = duration || 1000;
+            if( jqAnimateMap[anim] ) {
+                jqAnimateMap[anim].call(el, el, delay, duration, function(){
                     if( chain ) {
                         $(chain).each(function(){
                             setAnimate(this, true);
@@ -308,22 +468,22 @@
         });
 
         $win.on('scroll', function(){
-                var scrollTop = $win.scrollTop();
-                var docHeight = document.documentElement.clientHeight;
+            var scrollTop = $win.scrollTop();
+            var docHeight = document.documentElement.clientHeight;
 
-                $.each(elemObj, function(i, obj){
-                    if( !obj.isAnimated ) {
-                        if( obj.$elem[0].getAttribute('data-ignore') ){
-                            obj.isAnimated = true;
-                            return;
-                        }
-                        if (scrollTop + docHeight - checkOffset - obj.checkOffset > obj.scrollTop) {
-                            setAnimate(obj.$elem[0], obj.scrollTop < winHeight);
-                            obj.isAnimated = true;
-                        }
+            $.each(elemObj, function(i, obj){
+                if( !obj.isAnimated ) {
+                    if( obj.$elem[0].getAttribute('data-ignore') ){
+                        obj.isAnimated = true;
+                        return;
                     }
-                });
-            })
+                    if (scrollTop + docHeight - checkOffset - obj.checkOffset > obj.scrollTop) {
+                        setAnimate(obj.$elem[0], obj.scrollTop < winHeight);
+                        obj.isAnimated = true;
+                    }
+                }
+            });
+        })
             .trigger('scroll');
     };
 
@@ -343,13 +503,9 @@
             Resource.el('#evt_container').style.display = 'block';
             correctPNG($('#evt_container').get(0));
             bindScroll('#evt_container');
+
             //新增
-            $bshu.click(function(){
-                selectbs();
-                return false;
-            });
-
-
+            bindSelect();
         };
         var loader = new Resource.loadGroup("preload", resData);
         var spin = Resource.el('#evt_spin');
@@ -398,17 +554,22 @@
     };
 
 
-    /*选择磅数*/
-    var $select=$("#js_select");
-    var $bshu=$(".js_bshu");
-    var ticket=38;
-    var $price=$(".price");
-    var selectbs = function (){
+    function bindSelect() {
+        /*选择磅数*/
+        var $select=$("#js_select");
+        var $bshu=$(".js_bshu");
+        var ticket=38;
+        var $price=$(".price");
 
-        $select.show();
+        $bshu.click(function(){
+            $select.toggle();
+            return false;
+        });
+
         $select.find("li").hover(function(){
             $(this).addClass("on").siblings().removeClass("on");
         });
+
         $select.find("li").click(function(){
             var bs=$(this).data("bsn");
             var price=$(this).data("price");
@@ -419,23 +580,16 @@
 
             $(".price b").text(price-ticket);
             $(".old-price span").text(price);
-
-
-            $select.hide();
-            $(document).click( function() {
-                $select.hide();
-                return false;
-            });
         });
 
-    };
-
+        $(document).click( function() {
+            $select.hide();
+            return false;
+        });
+    }
 
     $(function(){
         loadResource();
-      if( !isSupportCss3 ){
-        $("#old_price").addClass("old-ie");
-      }
     });
 
 })(jQuery);

@@ -108,7 +108,7 @@
       var els = el.getElementsByTagName("*");
       for(var i=0; i<els.length; i++){
         if( els[i].currentStyle['position'] != 'static' ){
-          stacks.push(els[i]);
+          stacks.push([els[i], els[i].currentStyle['filter']||null]);
         }
       }
     }
@@ -118,20 +118,31 @@
 
   function setNoneStaticNodesOpacity(stacks, opacity) {
     for(var i = 0; i < stacks.length; i++){
-      stacks[i].style.filter = "alpha(opacity= " + opacity * 100 + ")";
+      stacks[i][0].style.filter = "alpha(opacity= " + opacity * 100 + ")";
     }
   }
+
+    function removeNoneStaticNodesOpacity(stacks, extraEl) {
+        if( extraEl ){
+            stacks.unshift([extraEl, extraEl.currentStyle['filter']||null]);
+        }
+        for(var i = 0; i < stacks.length; i++){
+            if( !stacks[i][1] ) {
+                stacks[i][0].style.filter = "none";
+            }
+        }
+    }
 
   var jqAnimateMap = {
     "slide-left": function(el, delay, duration, cb){
       var $el = $(el);
+        var addons = getNoneStaticNodes(el);
+        setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: el.offsetWidth*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -140,7 +151,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+          complete: function(){
+              removeNoneStaticNodesOpacity(addons, this);
+              cb && cb.apply(this, arguments);
+          },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -152,13 +166,13 @@
     },
     "slide-right": function(el, delay, duration, cb){
       var $el = $(el);
+        var addons = getNoneStaticNodes(el);
+        setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: -el.offsetWidth*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -167,7 +181,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+            complete: function(){
+                removeNoneStaticNodesOpacity(addons, this);
+                cb && cb.apply(this, arguments);
+            },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -179,14 +196,14 @@
     },
     "slide-down-l": function(el, delay, duration, cb){
       var $el = $(el);
+        var addons = getNoneStaticNodes(el);
+        setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: -el.offsetWidth*0.3,
         marginTop: -el.offsetHeight*0.8
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -196,7 +213,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+            complete: function(){
+                removeNoneStaticNodesOpacity(addons, this);
+                cb && cb.apply(this, arguments);
+            },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -208,14 +228,14 @@
     },
     "slide-down-r": function(el, delay, duration, cb){
       var $el = $(el);
+        var addons = getNoneStaticNodes(el);
+        setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: el.offsetWidth*0.15,
         marginTop: -el.offsetHeight*0.8
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -225,7 +245,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+            complete: function(){
+                removeNoneStaticNodesOpacity(addons, this);
+                cb && cb.apply(this, arguments);
+            },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -237,14 +260,14 @@
     },
     "slide-up-l": function(el, delay, duration, cb){
       var $el = $(el);
+        var addons = getNoneStaticNodes(el);
+        setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: -el.offsetWidth*0.5,
         marginTop: el.offsetHeight*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -254,7 +277,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+            complete: function(){
+                removeNoneStaticNodesOpacity(addons, this);
+                cb && cb.apply(this, arguments);
+            },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -266,14 +292,14 @@
     },
     "slide-up-r": function(el, delay, duration, cb){
       var $el = $(el);
+        var addons = getNoneStaticNodes(el);
+        setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginLeft: el.offsetWidth*0.5,
         marginTop: el.offsetHeight*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -283,7 +309,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+            complete: function(){
+                removeNoneStaticNodesOpacity(addons, this);
+                cb && cb.apply(this, arguments);
+            },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -295,13 +324,13 @@
     },
     "slide-up": function(el, delay, duration, cb){
       var $el = $(el);
+        var addons = getNoneStaticNodes(el);
+        setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginTop: el.offsetHeight*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -310,7 +339,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+            complete: function(){
+                removeNoneStaticNodesOpacity(addons, this);
+                cb && cb.apply(this, arguments);
+            },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -322,13 +354,13 @@
     },
     "slide-down": function(el, delay, duration, cb){
       var $el = $(el);
+        var addons = getNoneStaticNodes(el);
+        setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0,
         marginTop: -el.offsetHeight*0.5
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -337,7 +369,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+            complete: function(){
+                removeNoneStaticNodesOpacity(addons, this);
+                cb && cb.apply(this, arguments);
+            },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -349,12 +384,12 @@
     },
     "fade-in": function(el, delay, duration, cb){
       var $el = $(el);
+        var addons = getNoneStaticNodes(el);
+        setNoneStaticNodesOpacity(addons, 0);
+
       $el.css({
         opacity: 0
       });
-
-      var addons = getNoneStaticNodes(el);
-      setNoneStaticNodesOpacity(addons, 0);
 
       setTimeout(function(){
         $el.animate({
@@ -362,7 +397,10 @@
         }, {
           duration: duration,
           easing: 'easeOutCubic',
-          complete: cb,
+            complete: function(){
+                removeNoneStaticNodesOpacity(addons, this);
+                cb && cb.apply(this, arguments);
+            },
           step: function (value, props) {
             if( props.prop == 'opacity' ){
               setNoneStaticNodesOpacity(addons, props.now);
@@ -486,12 +524,7 @@
             correctPNG($('#evt_container').get(0));
             bindScroll('#evt_container');
             //新增
-            $bshu.click(function(){
-                selectbs();
-                return false;
-            });
-
-
+            bindSelect();
         };
         var loader = new Resource.loadGroup("preload", resData);
         var spin = Resource.el('#evt_spin');
@@ -540,41 +573,39 @@
     };
 
 
-    /*选择磅数*/
-    var $select=$("#js_select");
-    var $bshu=$(".js_bshu");
-    var $gobuy=$(".gobuy-btn");
-    var $subPrice=$(".subPrice");
-    var selectbs = function (){
-
+    function bindSelect() {
+        /*选择磅数*/
+        var $select=$("#js_select");
+        var $bshu=$(".js_bshu");
+        var $subPrice=$(".subPrice");
         var $price=$(".price");
 
-        $select.show();
+        $bshu.click(function(){
+            $select.toggle();
+            return false;
+        });
+
         $select.find("li").hover(function(){
             $(this).addClass("on").siblings().removeClass("on");
         });
+
         $select.find("li").click(function(){
-            var bs=$(this).data("bsn");
-            var price=$(this).data("price");
+            var $this = $(this);
+            var bs = $this.data("bsn");
+            var price = $this.data("price");
 
-            $bshu.html($(this).html());
-
+            $bshu.html($this.html());
             $bshu.data("num",bs);
-
             $price.data("price",price);
             $price.find("b").html(price);
-
             $subPrice.find("img").attr('src',"images/price"+bs+".png");
-
-
-            $select.hide();
-            $(document).click( function() {
-                $select.hide();
-                return false;
-            });
         });
 
-    };
+        $(document).click( function() {
+            $select.hide();
+            return false;
+        });
+    }
 
 
     $(function(){
