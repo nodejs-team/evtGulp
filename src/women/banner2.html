@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>女人节-PINK罗塞特</title>
+    <title>女人节</title>
     <!-- build:css css/main.css -->
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <!-- endbuild -->
 </head>
-<body>
+<body style="height:2000px;">
 
 <link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
-<!--header头部-->
+<!--头部-->
 <div class="header">
     <div class="header_top_box">
         <div class="header_top">
@@ -79,89 +79,121 @@
         </div>
     </div>
 </div>
-<!--loading动画-->
+
+<style>
+    .section-banner{
+        height:550px;
+        background: #f5f5f5;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: url(images/banner/banner-bg.jpg) no-repeat;
+    }
+    .section-banner .evt-content{
+        height:550px;
+
+    }
+    .section-banner .icon{
+        right: 0;
+        top: 0;
+    }
+
+    .section-banner .q1{
+        left:157px;
+        top:64px;
+        z-index: 2;
+    }
+    .section-banner .q2{
+        left:290px;
+        top:54px;
+        z-index: 1;
+    }
+    .section-banner .q3{
+        left:167px;
+        top:95px;
+    }
+    .section-banner .q4{
+        left:350px;
+        top:99px;
+    }
+    .section-banner .q5{
+        left:271px;
+        top:221px;
+        z-index: 2;
+    }
+    .section-banner .q6{
+        left:609px;
+        top:126px;
+    }
+    .section-banner .q7{
+        left:372px;
+        top:299px;
+    }
+    .section-banner .q8{
+        left:600px;
+        top:233px;
+        z-index: 1;
+    }
+    .section-banner .q9{
+        left:337px;
+        top:296px;
+    }
+
+
+</style>
+<style>
+    #floater{position:fixed; top:102px; right:10px; z-index:11; width:143px;}
+
+</style>
+<!--loading预加载-->
 <div id="evt_loading">
     <span id="evt_spin">loading: 0%</span>
 </div>
 <!--container部分-->
-<div id="evt_container" class="evt-container">
+<div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
     <div class="section-banner">
         <div class="evt-content">
-            <div class="secItem wo-banner" data-anim="fade-in" data-delay="0.4">
-                <img src="images/wo-banner.png" width="702" height="439" alt="">
+            <!--<div class="secItem icon"  data-anim="slide-left" data-delay="3.8" data-duration="800">-->
+                <!--<img src="images/banner/icon.png" height="194" width="143"/>-->
+            <!--</div>-->
+            <div class="secItem q1" data-anim="fade-in" data-delay="0.8" data-duration="800">
+                <img src="images/banner2/cake.png" height="231" width="199"/>
             </div>
-
-         </div>
-        <span class="line1-lace"></span>
-    </div>
-    <div class="section-main">
-        <div class="evt-content">
-            <div class="secItem rose-cake" data-anim="slide-down-l" data-delay="0" data-delay-adjust="0.4">
-                <img src="images/rose-cake.png" width="658" height="630" />
-
+            <div class="secItem q2" data-anim="fade-in" data-delay="1.2" data-duration="1000">
+                <img src="images/banner/ribbon-1.png" height="110" width="117"/>
             </div>
-            <div class="secItem w1" data-anim="slide-left" data-delay="0.8" data-delay-adjust="0.8">
-                <img src="images/word-01.png" width="282" height="126" />
+            <div class="secItem q3" data-anim="fade-in" data-delay="1.6" data-duration="1000">
+                <img src="images/banner/leaf.png" height="398" width="630"/>
             </div>
-
-            <div class="secItem picture" data-anim="slide-up-l" data-delay="1.6" data-delay-adjust="0.4">
-                <img src="images/picture.png" width="377" height="379" />
+            <div class="secItem q4" data-anim="bounce-in" data-delay="2.4" data-duration="800">
+                <img src="images/banner2/buling.png" height="110" width="262"/>
             </div>
-            <div class="secItem w2" data-anim="slide-right" data-delay="2.4" data-delay-adjust="0.8">
-                <img src="images/word-02.png" width="297" height="122" />
+            <div class="secItem q5" data-anim="fade-in" data-delay="2.8" data-duration="1000">
+                <img src="images/banner2/silk.png" height="123" width="364"/>
             </div>
-
-            <div class="secItem jewel" data-anim="slide-up" data-delay="3.2" data-delay-adjust="0.4">
-                <img src="images/jewel-u.png" width="391" height="263" />
+            <div class="secItem q6" data-anim="fade-in" data-delay="3.2" data-duration="1000">
+                <img src="images/banner2/ball.png" height="127" width="91"/>
             </div>
-            <div class="secItem w3" data-anim="fade-in" data-delay="3.6" data-delay-adjust="0.8">
-                <img src="images/word-03.png" width="308" height="146" />
+            <div class="secItem q7" data-anim="fade-in" data-delay="2" data-duration="1000">
+                <img src="images/banner/eye.png" height="56" width="93"/>
             </div>
-
-            <div class="secItem gobuy" data-anim="slide-left" data-delay="2.4" data-delay-adjust="1.6">
-                <div class="gobuy-bg">
-                    <img src="images/go-buy.png" width="185" height="366" />
-                </div>
-                <div class="select-item">
-                    <b class="js_bshu" data-num="2">2 <strong>磅</strong></b>
-                    <ul id="js_select">
-                        <li data-bsn="1"  data-price="218">1 <strong>磅</strong></li>
-                        <li data-bsn="2" data-price="318" class="on">2 <strong>磅</strong></li>
-                        <li data-bsn="3" data-price="458">3 <strong>磅</strong></li>
-                        <li data-bsn="5" data-price="750">5 <strong>磅</strong></li>
-                    </ul>
-                </div>
-                <div class="price" data-price="318"><i>￥</i><b>318</b></div>
-                <div class="subPrice">
-                    <img src="images/price2.png" width="77" height="37" usemap="true">
-                </div>
-                <img src="images/go-buy-btn.jpg" width="102" height="36" alt="" class="gobuy-btn">
+            <div class="secItem q8" data-anim="fade-in" data-delay="0.8" data-duration="1000">
+                <img src="images/banner/shose.png" height="200" width="81"/>
+            </div>
+            <div class="secItem q9" data-anim="fade-in" data-delay="2" data-duration="1000">
+                <img src="images/banner/ribbon-2.png" height="197" width="518"/>
             </div>
         </div>
 
+        <a href="#" style="width:100%; height:550px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
     </div>
-    <span class="line2-lace"></span>
 
-    <!--footer尾部-->
-    <div class="evt-footer">
-        <div class="footer-bd">
-            <div class="evt-rules">
-                <h2>活动规则：</h2>
-                <p>1、活动时间：2017年2月21日——3月9日</p>
-                <p>2、最晚配送时间：2017年3月31日</p>
-                <p>3、活动城市：上海</p>
-                <p>4、活动渠道：PC端、WAP端、400</p>
-                <p>5、活动期间，购买pink·罗赛特蛋糕+1/4牛奶生巧，即可获得价值399元的16G U盘一个，数量有限，送完即止，赠品以实物为准。</p>
-                <p>6、本活动与会员等级制度、积分、红包、优惠券同享，但不与银行优惠、现金卡同享。</p>
-            </div>
-        </div>
-    </div>
 </div>
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
 <script src="http://edm.mcake.com/shuxy/2016/MovieClip/ec_main.js"></script>
-<!-- build:js js/main.js -->
-<script type="text/javascript" src="js/main.js"></script>
+<!-- build:js js/banner2.js -->
+<script type="text/javascript" src="js/banner2.js"></script>
 <!-- endbuild -->
+
 </body>
 </html>

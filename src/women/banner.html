@@ -141,12 +141,8 @@
 
 </style>
 <style>
-    #floater{position:fixed; top:110px; right:10px; z-index:11; width:178px;}
-    #floater .rules{width:156px; padding:10px; border:1px solid #ff6699; color:#ff6699; font-size:12px; line-height:16px; border-radius:3px; margin-top:-1px; background:#f9f3f6;}
-    #floater .floatImg{width:156px; position:relative; font-size:0; margin:0 0 0 17px;}
-    #floater .floatImg img{width:100%;}
-    #floater .floatImg a{width:100%; display:block; height:144px; position:absolute; top:0; left:0;}
-    #floater .ruleHover{position:absolute; cursor:pointer; width:76px; height:26px; top:145px; left:34px;}
+    #floater{position:fixed; top:90px; right:10px; z-index:11; width:143px;}
+
 </style>
 <!--loading预加载-->
 <div id="evt_loading">
@@ -156,34 +152,34 @@
 <div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
     <div class="section-banner">
         <div class="evt-content">
-            <div class="secItem icon"  data-anim="slide-left" data-delay="3.8" data-duration="800">
-                <img src="images/banner/icon.png" height="194" width="143"/>
-            </div>
+            <!--<div class="secItem icon"  data-anim="slide-left" data-delay="3.8" data-duration="800">-->
+                <!--<img src="images/banner/icon.png" height="194" width="143"/>-->
+            <!--</div>-->
             <div class="secItem q1" data-anim="fade-in" data-delay="0.8" data-duration="800">
                 <img src="images/banner/cake.png" height="117" width="146"/>
             </div>
-            <div class="secItem q2" data-anim="fade-in" data-delay="1.6" data-duration="1000">
+            <div class="secItem q2" data-anim="fade-in" data-delay="1.2" data-duration="1000">
                 <img src="images/banner/ribbon-1.png" height="110" width="117"/>
             </div>
-            <div class="secItem q3" data-anim="fade-in" data-delay="2" data-duration="2000">
+            <div class="secItem q3" data-anim="fade-in" data-delay="1.6" data-duration="1000">
                 <img src="images/banner/leaf.png" height="398" width="630"/>
             </div>
-            <div class="secItem q4" data-anim="bounce-in" data-delay="3" data-duration="800">
+            <div class="secItem q4" data-anim="bounce-in" data-delay="2.4" data-duration="800">
                 <img src="images/banner/buling.png" height="94" width="233"/>
             </div>
-            <div class="secItem q5" data-anim="fade-in" data-delay="3.4" data-duration="1000">
+            <div class="secItem q5" data-anim="fade-in" data-delay="2.8" data-duration="1000">
                 <img src="images/banner/silk.png" height="110" width="327"/>
             </div>
-            <div class="secItem q6" data-anim="fade-in" data-delay="3.6" data-duration="2000">
+            <div class="secItem q6" data-anim="fade-in" data-delay="3.2" data-duration="1000">
                 <img src="images/banner/ball.png" height="129" width="93"/>
             </div>
-            <div class="secItem q7" data-anim="fade-in" data-delay="2.6" data-duration="2000">
+            <div class="secItem q7" data-anim="fade-in" data-delay="2" data-duration="1000">
                 <img src="images/banner/eye.png" height="56" width="93"/>
             </div>
-            <div class="secItem q8" data-anim="fade-in" data-delay="0.8" data-duration="2000">
+            <div class="secItem q8" data-anim="fade-in" data-delay="0.8" data-duration="1000">
                 <img src="images/banner/shose.png" height="200" width="81"/>
             </div>
-            <div class="secItem q9" data-anim="fade-in" data-delay="2.6" data-duration="1000">
+            <div class="secItem q9" data-anim="fade-in" data-delay="2" data-duration="1000">
                 <img src="images/banner/ribbon-2.png" height="197" width="518"/>
             </div>
         </div>
@@ -193,17 +189,12 @@
 
 
 
-    <div id="floater" style="display: none">
+    <div id="floater" data-anim="slide-left" data-delay="3.4" data-duration="800">
         <div class="floatImg">
-            <img src="http://edm.mcake.com/shuxy/2016/strawberry/images/strawberry_floater.png" alt="">
-            <a href="http://www.mcake.com"></a>
+            <img src="images/banner/icon.png" alt="">
+            <a href="#"></a>
         </div>
-        <div class="ruleHover"></div>
-        <div class="rules" style="display:none;">
-            <p>1. 活动时间：2017年1月12日——2月4日</p>
-            <p>2. 活动渠道：PC端、WAP端</p>
-            <p>3. 单笔订单购买任意款蛋糕即可参加新年换购优惠。加10元换购价值156元伊蒂之屋新年礼包（染眉膏*1、腮红*1）数量有限，卖完即止，产品请以实物为准！</p>
-        </div>
+
     </div>
 
 
@@ -218,8 +209,8 @@
 <script>
     ;(function(){
         var height = $("#evt_container").outerHeight();
-        var fHeight = 167;
-        var fTop = 110;
+        var fHeight = 200;
+        var fTop = 90;
         var fRight = 10;
         var floater = $('#floater');
         var floaterPosition = 'fixed';

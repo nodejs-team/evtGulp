@@ -131,130 +131,121 @@ body{
   }
   .picture{
     z-index: 1;
-    right:89px;
+    left:546px;
     top:80px;
   }
 
   .w1{
-    right:10px;
-    bottom:211px;
+    left:625px;
+    top:488px;
   }
 
   .gobuy{
     width: 120px;
     height: 143px;
     top:586px;
-    right: 268px;
+    left: 625px;
 
-    .buy-content{
+    .select-item{
+      z-index: 10;
+      height: 27px;
+        b{
+          float: left;
+          display: block;
+          font-style: normal;
+          font-weight: normal;
+          cursor: pointer;
+          width: 69px;
+          height: 27px;
+          font-size: 18px;
+          text-align: left;
+          line-height: 27px;
+          padding-left: 5px;
+          color: #4e1b20;
+          background: url(../images/bangshu.png) center center no-repeat;
+
+        }
+        ul{
+          position: absolute;
+          width: 46px;
+          top: 30px;
+          left: 50%;
+          text-align: left;
+          margin-left: -58px;
+          font-size: 18px;
+          background: url(../images/bangshuli.png) repeat-y;
+          display: none;
+          z-index: 10;
+        }
+        ul li{
+          height: 30px;
+          width: 41px;
+          padding-left: 5px;
+          line-height: 30px;
+          cursor: pointer;
+          color: #baa1a4;
+        }
+       ul li strong{
+         font-size: 14px;
+      }
+        ul li.on{
+          color: #4e1b20;
+        }
+    }
+    .price{
       width: 100%;
-      height: 100%;
-      .select-item{
-        z-index: 10;
-        height: 27px;
-          b{
-            float: left;
-            display: block;
-            font-style: normal;
-            font-weight: normal;
-            cursor: pointer;
-            width: 69px;
-            height: 27px;
-            font-size: 18px;
-            text-align: left;
-            line-height: 27px;
-            padding-left: 5px;
-            color: #4e1b20;
-            background: url(../images/bangshu.png) center center no-repeat;
+      font-style: normal;
+      display: block;
+      font-size: 28px;
+      margin-top: 5px;
+      line-height: 24px;
+      color: #be9992;
+      z-index: 1;
+      text-align: left;
+      font-weight: bold;
+      i{
+        font-size: 16px;
+        vertical-align: top;
+        font-style:normal;
+      }
+    }
+    .old-price{
+      width: 100%;
+      font-style: normal;
+      display: block;
+      font-size: 21px;
+      line-height: 26px;
+      color: #be9992;
+      text-align: left;
+      font-weight: bold;
 
-          }
-          ul{
-            position: absolute;
-            width: 46px;
-            top: 30px;
-            left: 50%;
-            text-align: left;
-            margin-left: -58px;
-            font-size: 18px;
-            background: url(../images/bangshuli.png) repeat-y;
-            display: none;
-            z-index: 10;
-          }
-          ul li{
-            height: 30px;
-            width: 41px;
-            padding-left: 5px;
-            line-height: 30px;
-            cursor: pointer;
-            color: #baa1a4;
-          }
-         ul li strong{
-           font-size: 14px;
-        }
-          ul li.on{
-            color: #4e1b20;
-          }
+      i{
+        font-size: 12px;
+        vertical-align: super;
+        font-style:normal;
       }
-      .price{
-        width: 100%;
-        font-style: normal;
-        display: block;
-        font-size: 28px;
-        margin-top: 5px;
-        line-height: 24px;
-        color: #be9992;
-        z-index: 1;
-        text-align: left;
-        font-weight: bold;
-        i{
-          font-size: 16px;
-          vertical-align: top;
-          font-style:normal;
-        }
-      }
-      .old-price{
-        width: 100%;
-        font-style: normal;
-        display: block;
-        font-size: 21px;
-        line-height: 26px;
-        color: #be9992;
-        text-align: left;
-        font-weight: bold;
-        z-index: 1;
-        i{
-          font-size: 12px;
-          vertical-align: super;
-          font-style:normal;
-        }
-      }
-      .line-through{
-        position: absolute;
-        z-index: 1;
-        top:80px;
-        left: -3px;
-        width: 100%;
-        height: 0;
-        border-bottom:#be9992 1px solid;
-      }
+    }
+    .line-through{
+      z-index: 1;
+      display: block;
+      top:80px;
+      left: -3px;
+      width: 100%;
+      height: 0;
+      margin-top: -12px;
+      border-bottom:#be9992 1px solid;
+    }
 
-      @at-root .old-price.old-ie {
-        text-decoration: line-through !important;
-        .line-through{
-          display:none !important;
-        }
-      }
-
-      .gobuy-btn{
-        cursor: pointer;
-        margin-top: 10px;
-      }
+    .gobuy-btn{
+      cursor: pointer;
+      margin-top: 15px;
     }
   }
 
 
 
 }
+
 .select-item b strong{
   font-size: 14px;
   font-weight: bold;
@@ -273,10 +264,6 @@ body{
 .evt-footer{
   position: relative;
   z-index: 10;
-}
-
-.browser-edge .q-price{
-  -webkit-animation: none !important;
 }
 
 

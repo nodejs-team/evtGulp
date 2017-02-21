@@ -137,11 +137,11 @@ body{
   .jewel{
     z-index: 1;
     left:85px;
-    bottom:100px;
+    top:854px;
   }
 
   .w1{
-    right:181px;
+    left:531px;
     top:145px;
   }
   .w2{
@@ -150,19 +150,19 @@ body{
   }
   .w3{
     left:499px;
-    bottom:138px;
+    top:909px;
   }
 
   .gobuy{
     width: 185px;
     height: 366px;
     top:332px;
-    right: 107px;
-    background: url("../images/go-buy.png");
-    .buy-content{
-      position: relative;
-      width: 100%;
-      height: 100%;
+    left: 708px;
+
+    .gobuy-bg{
+      position: absolute;
+    }
+
       .select-item{
         position: absolute;
         top:40px;
@@ -182,7 +182,9 @@ body{
             padding-left: 10px;
             color: #4e1b20;
             background: url(../images/bangshu.png) center center no-repeat;
-
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
           }
           ul{
             position: absolute;
@@ -229,7 +231,7 @@ body{
       }
       .subPrice{
         position: absolute;
-        bottom:43px;
+        top:282px;
         left: 50%;
         margin-left: -27.5px;
         z-index: 1;
@@ -237,12 +239,12 @@ body{
 
       .gobuy-btn{
         position: absolute;
-        bottom:0;
+        top:331px;
         left: 50%;
         margin-left: -49px;
         cursor: pointer;
       }
-    }
+
   }
 
 
@@ -266,10 +268,6 @@ body{
 .evt-footer{
   position: relative;
   z-index: 10;
-}
-
-.browser-edge .q-price{
-  -webkit-animation: none !important;
 }
 
 
