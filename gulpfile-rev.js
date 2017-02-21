@@ -114,23 +114,18 @@ gulp.task('compile-sass', function(){
 gulp.task('create', function(){
   var argName = argv.name;
   var projectName = argName || config.projectName;
-  var distPath = path.src;
+  var destPath = path.src;
 
-  var dirNames = fs.readdirSync(path.src.split("/")[0]);
-  var isProjectExist = dirNames.some(function (name) {
-    return name == projectName;
-  });
+  if( argName ){
+    destPath = destPath.replace(/[^/]+$/, argName);
+  }
 
-  if( isProjectExist ){
+  if( fs.existsSync(destPath) ){
     throw new Error(projectName + "项目名已存在！");
   }
 
-  if( argName ){
-    distPath = distPath.replace(/[^/]+$/, argName);
-  }
-
   return gulp.src('template/**/*')
-    .pipe(gulp.dest(distPath))
+    .pipe(gulp.dest(destPath))
     .on("end", function () {
       if( argName ){
         config.projectName = argName;
