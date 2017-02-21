@@ -208,7 +208,7 @@ body {
 
 .section-main .gobuy .price i {
   font-size: 16px;
-  vertical-align: super;
+  vertical-align: top;
   font-style: normal;
 }
 
@@ -232,10 +232,20 @@ body {
 .section-main .gobuy .line-through {
   z-index: 1;
   display: block;
+  top: 80px;
+  left: -3px;
   width: 100%;
   height: 0;
   margin-top: -12px;
   border-bottom: #be9992 1px solid;
+}
+
+.old-price.old-ie {
+  text-decoration: line-through !important;
+}
+
+.old-price.old-ie .line-through {
+  display: none !important;
 }
 
 .section-main .gobuy .gobuy-btn {
@@ -259,10 +269,6 @@ body {
 .evt-footer {
   position: relative;
   z-index: 10;
-}
-
-.browser-edge .q-price {
-  -webkit-animation: none !important;
 }
 
 .evt-footer {

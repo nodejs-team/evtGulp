@@ -98,8 +98,8 @@
     }
 
     .section-banner .q1{
-        left:199px;
-        top:134px;
+        left:157px;
+        top:64px;
         z-index: 2;
     }
     .section-banner .q2{
@@ -112,17 +112,17 @@
         top:95px;
     }
     .section-banner .q4{
-        left:366px;
-        top:123px;
+        left:350px;
+        top:99px;
     }
     .section-banner .q5{
-        left:306px;
-        top:222px;
+        left:271px;
+        top:221px;
         z-index: 2;
     }
     .section-banner .q6{
-        left:603px;
-        top:128px;
+        left:609px;
+        top:126px;
     }
     .section-banner .q7{
         left:372px;
@@ -141,7 +141,7 @@
 
 </style>
 <style>
-    #floater{position:fixed; top:90px; right:10px; z-index:11; width:143px;}
+    #floater{position:fixed; top:102px; right:10px; z-index:11; width:143px;}
 
 </style>
 <!--loading预加载-->
@@ -156,7 +156,7 @@
                 <!--<img src="images/banner/icon.png" height="194" width="143"/>-->
             <!--</div>-->
             <div class="secItem q1" data-anim="fade-in" data-delay="0.8" data-duration="800">
-                <img src="images/banner/cake.png" height="117" width="146"/>
+                <img src="images/banner2/cake.png" height="231" width="199"/>
             </div>
             <div class="secItem q2" data-anim="fade-in" data-delay="1.2" data-duration="1000">
                 <img src="images/banner/ribbon-1.png" height="110" width="117"/>
@@ -165,13 +165,13 @@
                 <img src="images/banner/leaf.png" height="398" width="630"/>
             </div>
             <div class="secItem q4" data-anim="bounce-in" data-delay="2.4" data-duration="800">
-                <img src="images/banner/buling.png" height="94" width="233"/>
+                <img src="images/banner2/buling.png" height="110" width="262"/>
             </div>
             <div class="secItem q5" data-anim="fade-in" data-delay="2.8" data-duration="1000">
-                <img src="images/banner/silk.png" height="110" width="327"/>
+                <img src="images/banner2/silk.png" height="123" width="364"/>
             </div>
             <div class="secItem q6" data-anim="fade-in" data-delay="3.2" data-duration="1000">
-                <img src="images/banner/ball.png" height="129" width="93"/>
+                <img src="images/banner2/ball.png" height="127" width="91"/>
             </div>
             <div class="secItem q7" data-anim="fade-in" data-delay="2" data-duration="1000">
                 <img src="images/banner/eye.png" height="56" width="93"/>
@@ -187,72 +187,13 @@
         <a href="#" style="width:100%; height:550px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
     </div>
 
-
-
-    <div id="floater" data-anim="slide-left" data-delay="3.4" data-duration="800">
-        <div class="floatImg">
-            <img src="images/banner/icon.png" alt="">
-            <a href="#"></a>
-        </div>
-
-    </div>
-
-
-
 </div>
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
 <script src="http://edm.mcake.com/shuxy/2016/MovieClip/ec_main.js"></script>
-<!-- build:js js/banner.js -->
-<script type="text/javascript" src="js/banner.js"></script>
+<!-- build:js js/banner2.js -->
+<script type="text/javascript" src="js/banner2.js"></script>
 <!-- endbuild -->
-<script>
-    ;(function(){
-        var height = $("#evt_container").outerHeight();
-        var fHeight = 200;
-        var fTop = 90;
-        var fRight = 10;
-        var floater = $('#floater');
-        var floaterPosition = 'fixed';
-        var winWidth = $(window).width();
-        var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
-        $(window).on("scroll", function(){
-            var sTop = $(this).scrollTop();
-            if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
-                floater.css({position: "absolute", top: height - fHeight, right: absRight});
-                floaterPosition = 'absolute';
-            }
-            if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
-                floater.css({position: "fixed", top: fTop, right:fRight});
-                floaterPosition = 'fixed';
-            }
-        });
-        var floatHover = $('.ruleHover');
-        var rules = $('#floater .rules');
-        var hideTimer,showTimer;
-        floatHover.on('mouseenter', function(){
-            clearTimeout(hideTimer);
-            showTimer = setTimeout(function(){
-                rules.fadeIn();
-            }, 300)
-        }).on('mouseleave', function(){
-            clearTimeout(showTimer);
-            hideTimer = setTimeout(function(){
-                rules.fadeOut();
-            }, 300)
-        })
-        rules.on('mouseenter', function(){
-            clearTimeout(hideTimer);
-            showTimer = setTimeout(function(){
-                rules.fadeIn();
-            }, 300)
-        }).on('mouseleave', function(){
-            clearTimeout(showTimer);
-            hideTimer = setTimeout(function(){
-                rules.fadeOut();
-            }, 300)
-        })
-    })()
-</script>
+
 </body>
 </html>
