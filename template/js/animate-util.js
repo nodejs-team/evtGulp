@@ -373,17 +373,15 @@
 
     } else {
       duration = duration || 1000;
-      if( jqAnimateMap[anim] ) {
-        jqAnimateMap[anim].call(el, el, delay, duration, function(){
-          var $this = $(this);
-          $this.trigger.apply($this, ["animatedone"].concat([].slice.call(arguments)));
-          if( chain ) {
-            $(chain).each(function(){
-              setAnimate(this, true);
-            });
-          }
-        });
-      }
+      (jqAnimateMap[anim] || jqAnimateMap['fade-in']).call(el, el, delay, duration, function(){
+        var $this = $(this);
+        $this.trigger.apply($this, ["animatedone"].concat([].slice.call(arguments)));
+        if( chain ) {
+          $(chain).each(function(){
+            setAnimate(this, true);
+          });
+        }
+      });
     }
   };
 
