@@ -1,0 +1,52 @@
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+
+body{
+  overflow-x:hidden;
+}
+
+#evt_loading{
+    position:relative;
+    height:600px;
+}
+
+#evt_spin{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-10px;
+    margin-left:-100px;
+    width:200px;
+    text-align:center;
+    font-size:18px;
+    font-family: "Microsoft YaHei", Tahoma, Arial;
+}
+
+.evt-container{
+  display: none;
+  position: relative;
+  width:100%;
+  background-color: #fff;
+}
+
+.evt-content{
+  position: relative;
+  width:1000px;
+  margin:0 auto;
+
+  a{
+    outline: none;
+  }
+
+  img{
+    vertical-align: top;
+  }
+
+  .secItem {
+    position: absolute;
+
+    .arrow {
+      position: absolute;
+    }
+  }
+}
