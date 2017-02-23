@@ -1,0 +1,5 @@
+{"file":"love.png","frames":{
+"love-1":{"x":264,"y":0,"w":130,"h":81,"offX":0,"offY":10,"sourceW":130,"sourceH":99,duration:2},
+"love-2":{"x":264,"y":83,"w":130,"h":75,"offX":0,"offY":11,"sourceW":130,"sourceH":99,duration:0},
+"love-3":{"x":0,"y":0,"w":130,"h":99,"offX":0,"offY":0,"sourceW":130,"sourceH":99,duration:4},
+"love-4":{"x":132,"y":0,"w":130,"h":91,"offX":0,"offY":4,"sourceW":130,"sourceH":99,duration:2}}}
