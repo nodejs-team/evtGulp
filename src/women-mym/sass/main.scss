@@ -1,14 +1,275 @@
+@mixin box-shadow($x, $y, $offset, $color){    //阴影
+  -webkit-box-shadow: $x $y $offset $color;
+  box-shadow: $x $y $offset $color;
+}
+//使用方法：
+//@include box-shadow(0, 0, 17px, rgba(0,0,0,.12));
+@-webkit-keyframes alternate-fade{
+  0%, 100%{
+    opacity: 0.8;
+  }
+  50%{
+    opacity: 0.2
+  }
+}
+@keyframes alternate-fade{
+  0%, 100%{
+    opacity: 0.8;
+  }
+  50%{
+    opacity: 0.2
+  }
+}
+
+@mixin alternate-fade(){
+  -webkit-animation: alternate-fade ease 3s both infinite;
+  animation: alternate-fade ease 3s both infinite;
+}
+
+@-webkit-keyframes mask-motion {
+  0% {
+    background-position: -100px 0;
+  }
+  40% {
+    background-position: 185px 0;
+  }
+  100% {
+    background-position: 185px 0;
+  }
+}
+
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol{list-style: none;}
+img{border:0;}
+
+#evt_loading{
+    position:relative;
+    height:600px;
+}
+
+#evt_spin{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-10px;
+    margin-left:-100px;
+    width:200px;
+    text-align:center;
+    font-size:18px;
+    font-family:"Microsoft YaHei",Tahoma,Arial;
+}
+
+.evt-container{
+    position: relative;
+    display: none;
+}
+
+
+body{
+  overflow-x:hidden;
+}
+
 .evt-content{
-  /* addon css code goes here */
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+}
+
+
+.evt-container{
+  width:100%;
+  background-color: #ffeff0;
+}
+
+.evt-content{   //每个版块居中显示
+    .secItem {   //每个item设置绝对定位
+      position: absolute;
+      .arrow {
+        position: absolute;
+      }
+    }
+
+    a{
+      outline: none;
+    }
 
 
 }
 
+//新增
+.section-banner{
+  position: relative;
+  height:567px;
+  z-index: 10;
+  background: url(../images/banner-bg.jpg) repeat-x 50% 0;
+
+  .wo-banner{
+    left:164px;
+    top:65px;
+  }
+
+  .line1-lace{
+    position: absolute;
+    top:100%;
+    width:100%;
+    height:26px;
+    margin-top: -5px;
+    background: url(../images/line1-lace.png) repeat-x;
+  }
+
+}
+
+.section-main{
+  background: url("../images/bg.jpg") repeat;
+  .evt-content{
+    height:787px;
+  }
+  .rose-cake{
+    z-index: 2;
+    left:-2px;
+    top:-56px;
+  }
+  .picture{
+    z-index: 1;
+    left:546px;
+    top:80px;
+  }
+
+  .w1{
+    left:625px;
+    top:488px;
+  }
+
+  .gobuy{
+    width: 120px;
+    height: 143px;
+    top:586px;
+    left: 625px;
+
+    .select-item{
+      z-index: 10;
+      height: 27px;
+        b{
+          float: left;
+          display: block;
+          font-style: normal;
+          font-weight: normal;
+          cursor: pointer;
+          width: 69px;
+          height: 27px;
+          font-size: 18px;
+          text-align: left;
+          line-height: 27px;
+          padding-left: 5px;
+          color: #4e1b20;
+          background: url(../images/bangshu.png) center center no-repeat;
+
+        }
+        ul{
+          position: absolute;
+          width: 46px;
+          top: 30px;
+          left: 50%;
+          text-align: left;
+          margin-left: -58px;
+          font-size: 18px;
+          background: url(../images/bangshuli.png) repeat-y;
+          display: none;
+          z-index: 10;
+        }
+        ul li{
+          height: 30px;
+          width: 41px;
+          padding-left: 5px;
+          line-height: 30px;
+          cursor: pointer;
+          color: #baa1a4;
+        }
+       ul li strong{
+         font-size: 14px;
+      }
+        ul li.on{
+          color: #4e1b20;
+        }
+    }
+    .price{
+      width: 100%;
+      font-style: normal;
+      display: block;
+      font-size: 28px;
+      margin-top: 5px;
+      line-height: 24px;
+      color: #be9992;
+      z-index: 1;
+      text-align: left;
+      font-weight: bold;
+      i{
+        font-size: 16px;
+        vertical-align: top;
+        font-style:normal;
+      }
+    }
+    .old-price{
+      width: 100%;
+      font-style: normal;
+      display: block;
+      font-size: 21px;
+      line-height: 26px;
+      color: #be9992;
+      text-align: left;
+      font-weight: bold;
+
+      i{
+        font-size: 12px;
+        vertical-align: super;
+        font-style:normal;
+      }
+    }
+    .line-through{
+      z-index: 1;
+      display: block;
+      top:80px;
+      left: -3px;
+      width: 100%;
+      height: 0;
+      margin-top: -12px;
+      border-bottom:#be9992 1px solid;
+    }
+
+    .gobuy-btn{
+      cursor: pointer;
+      margin-top: 15px;
+    }
+  }
+
+
+
+}
+
+.select-item b strong{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.line2-lace{
+  position: absolute;
+  width:100%;
+  height:26px;
+  margin-top: -25px;
+  background: url(../images/line2-lace.png) repeat-x;
+}
+
+
+
 .evt-footer{
   position: relative;
-  background-color: #fff;
   z-index: 10;
+}
 
+
+.evt-footer{
+  height:299px;
+  background-color: #fff;
   .footer-bd{
     position: relative;
     width:1000px;
@@ -16,16 +277,16 @@
   }
 
   .evt-rules{
-    padding-left:138px;
-    padding-top:30px;
-    color:#907e59;
+    padding-top:41px;
+    padding-left: 65px;
+    color:#000;
     h2{
-      font-size:18px;
+      font-size:20px;
       margin-bottom: 5px;
     }
     p{
-      font-size:16px;
-      line-height: 1.5;
+      font-size:18px;
+      line-height: 2;
       padding-left: 1.5em;
       text-indent: -1.5em;
     }
