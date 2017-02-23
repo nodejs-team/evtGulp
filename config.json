@@ -1,4 +1,5 @@
 {
+
     "project" : "Gulp",
     "localserver" : {
         "host" : "localhost",
@@ -11,6 +12,7 @@
         "pass" : "",
         "remotePath": ""
     },
-    "projectName": "Demo2",
+    "projectName": "white-loveDay",
     "revPrefix": "http://edm.mcake.com/fangli/2017/"
 }
+

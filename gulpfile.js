@@ -23,7 +23,9 @@ var gulp         = require('gulp'),
     handleErrors = require('./util/handleErrors'),
     os           = require('os'),
     ifaces       = os.networkInterfaces(),
-    config       = require('./config.json');
+    config       = require('./config.json'),
+    fs           = require('fs'),
+    argv         = require('yargs').argv;
 
 var SRC = 'src/' + config.projectName;
 var DIST = 'dist/' + config.projectName;
@@ -88,15 +90,40 @@ gulp.task('copy-files', function (done) {
 
 });
 
+//编译sass
 gulp.task('compile-sass', function(){
     return gulp.src(path.srcSass)
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(gulp.dest(path.srcCssFolder));
 });
 
+//创建脚手架工程
 gulp.task('create', function(){
+  var argName = argv.name;
+  var projectName = argName || config.projectName;
+  var destPath = path.src;
+
+  if( argName ){
+    destPath = destPath.replace(/[^/]+$/, argName);
+  }
+
+  if( fs.existsSync(destPath) ){
+      throw new Error(projectName + "项目名已存在！");
+  }
+
   return gulp.src('template/**/*')
-    .pipe(gulp.dest(path.src));
+    .pipe(gulp.dest(destPath))
+    .on("end", function () {
+      if( argName ){
+        config.projectName = argName;
+        fs.writeFile(require("path").resolve(__dirname, 'config.json'), JSON.stringify(config, null, 1), function(err) {
+            if (err) throw err;
+            console.log('项目"' + projectName + '"创建成功');
+        });
+      } else {
+        console.log('项目"' + projectName + '"创建成功');
+      }
+    });
 });
 
 //JS检测

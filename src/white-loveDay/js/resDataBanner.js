@@ -1,0 +1,4 @@
+var resDataBanner = {
+  "groups":[],
+  "resources":[]
+};
