@@ -186,6 +186,7 @@ function createConfigFile(isBanner) {
   return new Promise(function (resolve, reject) {
     fs.readFile(fsPath.join(__dirname, path.src, '/images/'+ files.config), 'utf8', function (err, data) {
       if( err ) return resolve(err);
+      if( !data ) return resolve();
 
       data = JSON.parse(data);
 
@@ -196,7 +197,11 @@ function createConfigFile(isBanner) {
       };
       data.resources.forEach(function (item) {
         if ((item.type == 'json' || item.type == 'sheet') && !/res(Banner)?\.json$/.test(item.url)) {
-          itemData = JSON.parse(fs.readFileSync(fsPath.join(__dirname, path.src, '/images/' + item.url), {encoding: 'utf8'}));
+          try {
+            itemData = JSON.parse(fs.readFileSync(fsPath.join(__dirname, path.src, '/images/' + item.url), {encoding: 'utf8'}));
+          } catch (err){
+            throw err;
+          }
           resMap[item.name] = itemData.frames || itemData;
         }
       });
