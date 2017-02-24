@@ -47,15 +47,6 @@
                             <li class="phone"><span>4006-678-678</span><i></i></li>
                             <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
                         </ul>
-                        <div class="city" id="city">
-                            <ul>
-                                <li id="city-641" data-id="641"><a href="javascript: void(0);">杭州市</a></li>
-                                <li id="city-110" data-id="110" class="cur"><a href="javascript: void(0);">上海市</a></li>
-                                <li id="city-665" data-id="665"><a href="javascript: void(0);">苏州市</a></li>
-                                <li id="city-675" data-id="675"><a href="javascript: void(0);">北京市</a></li>
-                            </ul>
-                            <samp></samp>
-                        </div>
                     </div>
                     <ul class="menu">
                         <li>
@@ -82,105 +73,109 @@
 
 </div>
 
-<div id="evt_loading" style="display: none;">
+<div id="evt_loading">
     <span id="evt_spin">loading: 0%</span>
 </div>
 
-<div id="evt_container" class="evt-container" style="display: block;">
+<div id="evt_container" class="evt-container">
 
     <div class="evt-content">
-        <div class="secItem tp-title">
-            <img src="images/tp-title.png" width="759" height="452">
-            <div class="secItem tp-heart">
-                <img src="images/tp-heart.png" width="103" height="76">
+        <div class="secItem tp-title" data-anim="slide-down-l">
+            <img src="images/tp-title.png" width="566" height="303">
+            <div class="secItem tp-heart" id="el_heart">
             </div>
         </div>
         <div class="secItem sec1-p1">
-            <img src="images/sec1-p1.png" width="1031" height="835">
-            <div class="secItem sec-dova">
-                <img src="images/dove.png" width="297" height="305">
+            <div class="secItem sec1-bg">
+                <img src="images/sec1-p1.png" width="903" height="498">
             </div>
-            <div class="secItem sec1-juanl">
+            <div class="secItem sec1-p11" data-anim="slide-right" data-delay="0.8" data-offset="100">
+                <img src="images/tvset.png" width="358" height="283">
+                <div class="secItem sec-dova" id="el_dova"></div>
+            </div>
+            <div class="secItem sec1-p12" data-anim="slide-left" data-delay="0.8" data-offset="30">
+                <img src="images/book.png" width="195" height="182">
+            </div>
+            <div class="secItem sec1-juanl" data-anim="slide-left" data-delay="1.6" data-offset="50">
                 <div class="juanl-body"></div>
-                <div class="juanl-ft"></div>
-                <div class="juanl-hint"></div>
+                <div id="juanl_ft" class="juanl-ft"></div>
+                <div class="juanl-hint">
+                    <div id="juanl_arrow"></div>
+                </div>
             </div>
         </div>
-        <div class="secItem sec1-p2">
+        <div class="secItem sec1-p2" data-anim="slide-down-r" data-delay="2.4">
             <img src="images/sec1-p2.png" width="484" height="498">
         </div>
-        <div class="secItem sec1-p2-text">
+        <div class="secItem sec1-p2-text" data-anim="slide-down-l" data-delay="3.2" data-delay-adjust="0.4">
             <img src="images/sec1-p2-text.png" width="474" height="429">
             <a href="#" class="buy-btn">立即订购</a>
         </div>
-        <div class="secItem sec1-p3">
+        <div class="secItem sec1-p3" data-anim="slide-down-r" data-delay="4" data-delay-adjust="0.4">
             <img src="images/sec1-p3.png" width="296" height="338">
         </div>
         <div class="secItem paint-bg">
             <img src="images/paint-bg.png" width="657" height="2214">
         </div>
-        <div class="secItem sec3-p1">
+        <div class="secItem sec-window">
+            <div id="el_window"></div>
+        </div>
+        <div class="secItem sec-fly">
+            <div id="el_fly"></div>
+        </div>
+        <div class="secItem sec-running">
+            <div id="el_running"></div>
+        </div>
+        <div class="secItem sec3-p1" data-anim="slide-down-l" data-delay="4.8">
             <img src="images/sec3-p1.png" width="420" height="445">
         </div>
-        <div class="secItem sec3-p2">
+        <div class="secItem sec3-p2" data-anim="slide-up-l" data-delay="5.6" data-delay-adjust="0.4">
             <img src="images/sec3-p2.png" width="297" height="319">
         </div>
-        <div class="secItem sec3-text">
+        <div class="secItem sec3-text" data-anim="slide-up-r" data-delay="6.4" data-delay-adjust="0.8">
             <img src="images/sec3-text.png" width="370" height="306">
             <a href="#" class="buy-btn">立即订购</a>
         </div>
-        <div class="secItem sec3-s1">
+        <div class="secItem sec3-s1" data-anim="fade-in" data-delay="8" data-offset="80">
             <img src="images/sec3-s1.png" width="182" height="212">
         </div>
-        <div class="secItem sec3-s2">
+        <div class="secItem sec3-s2" data-anim="fade-in" data-delay="8.8" data-offset="400">
             <img src="images/sec3-s2.png" width="207" height="198">
         </div>
-        <div class="secItem sec3-s3">
+        <div class="secItem sec3-s3" data-anim="fade-in" data-delay="9.6" data-offset="350">
             <img src="images/sec3-s3.png" width="225" height="221">
         </div>
-        <div class="secItem sec3-s4">
+        <div class="secItem sec3-s4" data-anim="fade-in" data-delay="10.4" data-offset="300">
             <img src="images/sec3-s4.png" width="261" height="205">
         </div>
-        <div class="secItem sec3-s5">
+        <div class="secItem sec3-s5" data-anim="fade-in" data-delay="11.2" data-offset="100">
             <img src="images/sec3-s5.png" width="311" height="188">
         </div>
-        <div class="secItem sec3-s6">
+        <div class="secItem sec3-s6" data-anim="fade-in" data-delay="12" data-offset="200">
             <img src="images/sec3-s6.png" width="242" height="207">
         </div>
-        <div class="secItem sec3-p3">
+        <div class="secItem sec3-p3" data-anim="fade-in" data-delay="7.2" data-delay-adjust="0.8">
             <img src="images/sec3-p3.png" width="534" height="410">
         </div>
-        <div class="secItem sec3-text2">
+        <div class="secItem sec3-text2" data-anim="slide-down-l" data-delay="13.6" data-offset="200" data-delay-adjust="0.8">
             <img src="images/sec3-text2.png" width="448" height="385">
             <a href="#" class="buy-btn">立即订购</a>
         </div>
-        <div class="secItem sec3-p4">
+        <div class="secItem sec3-p4" data-anim="slide-up-r" data-delay="12.8" data-offset="100">
             <img src="images/sec3-p4.png" width="680" height="773">
         </div>
         <div class="secItem sec-ft"></div>
     </div>
 
-    <div class="evt-footer" style="display: none;">
-        <div class="footer-bd">
-            <div class="evt-rules">
-                <h2>活动规则</h2>
-                <p>1、活动时间：2017年 1月5日——2月4日</p>
-                <p>2、活动城市：上海、苏州、杭州、北京</p>
-                <p>3、活动渠道：PC端、WAP端</p>
-                <p>4、活动期间，凡购买任意款蛋糕即可获得订单随机立减金额最高20元。（小食类产品不参加）</p>
-                <p>5、活动期间，同一账号每天只可享受三次订单随机立减优惠，如活动订单取消三次当天则不再享受此优惠。</p>
-                <p>6、本活动与会员等级制度、积分、红包、优惠券同享，但不与现金卡、专享卡、银行优惠同享。</p>
-            </div>
-        </div>
-    </div>
 </div>
 
-<!--<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
-<script src="http://edm.mcake.com/shuxy/2016/MovieClip/ec_main.js"></script>-->
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/shuxy/2016/MovieClip/ec_main.js"></script>
 <!-- build:js js/main.js -->
-<!--<script type="text/javascript" src="js/resData.js"></script>
 <script type="text/javascript" src="js/animate-util.js"></script>
-<script type="text/javascript" src="js/main.js"></script>-->
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/mcData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <!-- endbuild -->
 </body>
 </html>

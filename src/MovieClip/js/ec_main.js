@@ -536,7 +536,12 @@
 
     var _getResData = function(res, resKey, el){
         if( typeof res === 'string' ){
-            return Resource.getRes(res);
+            var resData = Resource.getRes(res);
+            if( typeof resData === 'object' && !resData.mc ) {
+                return _getResData(resData, resKey, el);
+            }
+
+            return resData;
         }
         else if( Array.isArray(res) ){
             var resFrames = [];
@@ -575,6 +580,10 @@
             var resFrames = [];
             var resObj = {};
             var resCfg = {mc:{}, res:{}};
+
+            if( res.file && res.frames ){
+                res = res.frames;
+            }
 
             for(var i in res) {
                 var pos = res[i];
@@ -719,21 +728,21 @@
 
             if (cfgItem.type == 'image') {
                 loadImg(cfgItem.url, function(){
-                    assets[cfgItem.name] = cfgItem;
+                    setAsset(cfgItem.name, cfgItem);
                     callback && callback(cfgItem);
                 });
             }
             else if (cfgItem.type == 'json' || cfgItem.type == 'sheet') {
                 loadJSON(cfgItem.url, function (data) {
                     var obj = Extend({}, cfgItem, {data: data});
-                    assets[cfgItem.name] = obj;
+                    setAsset(cfgItem.name, obj);
 
                     if( cfgItem.type == 'sheet' ){
                         var url = cfgItem.url.replace(/\.json$/, '.png');
                         var name = cfgItem.name.replace(/_json$/, '_png');
                         loadImg(url, function(){
                             var obj = Extend({}, cfgItem, {url: url, name: name, type: 'image'});
-                            assets[name] = obj;
+                            setAsset(name, obj);
                             callback && callback(obj);
                         });
                     } else {
@@ -742,7 +751,7 @@
                 });
             }
             else {
-                assets[cfgItem.name] = cfgItem;
+                setAsset(cfgItem.name, cfgItem);
                 callback && callback(cfgItem);
             }
 
@@ -750,6 +759,16 @@
 
         var getAsset = function(){
             return assets;
+        };
+
+        var setAsset = function (keyName, obj) {
+            if( typeof keyName == 'object'){
+                for(var i in keyName){
+                  assets[i] = keyName[i];
+                }
+            } else {
+              assets[keyName] = obj;
+            }
         };
 
         var getRes = function(resId, sheetKey){
@@ -780,8 +799,10 @@
                 if( sheetKey ) return asset.data.frames[sheetKey];
                 return asset.data;
             }
-            else {
+            else if( asset.url ){
                 return regHttps.test(asset.url) ? asset.url : (Resource.baseUrl + asset.url);
+            } else {
+                return asset;
             }
 
             return null;
@@ -891,6 +912,7 @@
             JSONloader: JSONloader,
             loadGroup: loadGroup,
             getAsset: getAsset,
+            setAsset: setAsset,
             getRes: getRes,
             getStyle: _getStyle,
             el: getElement

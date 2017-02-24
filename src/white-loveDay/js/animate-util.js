@@ -419,7 +419,7 @@
             return;
           }
           if (scrollTop + docHeight - obj.checkOffset > obj.scrollTop) {
-            setAnimate(obj.$elem[0], obj.scrollTop < winHeight);
+            setAnimate(obj.$elem[0], obj.scrollTop + obj.checkOffset < winHeight);
             obj.isAnimated = true;
           }
         }

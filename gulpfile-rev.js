@@ -26,6 +26,7 @@ var gulp         = require('gulp'),
     ifaces       = os.networkInterfaces(),
     config       = require('./config.json'),
     fs           = require('fs'),
+    fsPath       = require('path'),
     argv         = require('yargs').argv;
 
 var SRC = 'src/' + config.projectName;
@@ -176,13 +177,100 @@ var buildJs = lazypipe()
 var buildCss = lazypipe().pipe(cssmin);
 
 //基于配置合并路径
-gulp.task('useref', function () {
-    return gulp.src(path.srcHtml)
-        .pipe(useref())
-        .pipe(gulpif('*.html', buildHtml()))
-        .pipe(gulpif('*.js', buildJs()))
-        .pipe(gulpif('*.css', buildCss()))
-        .pipe(gulp.dest(path.tmp));
+gulp.task('useref', function (done) {
+  createConfigFile(false).then(function () {
+    return createConfigFile(true)
+  }).then(function () {
+    gulp.src(path.srcHtml)
+      .pipe(useref())
+      .pipe(gulpif('*.html', buildHtml()))
+      .pipe(gulpif('*.js', buildJs()))
+      .pipe(gulpif('*.css', buildCss()))
+      .pipe(gulp.dest(path.tmp))
+      .on("end", done);
+  });
+});
+
+function createConfigFile(isBanner) {
+  var files = {
+    config:  isBanner ? "resBanner.json" : "res.json",
+    mcData: isBanner ? 'mcDataBanner.js' : 'mcData.js',
+    resData: isBanner ? 'resDataBanner.js' : 'resData.js'
+  };
+  return new Promise(function (resolve, reject) {
+    fs.readFile(fsPath.join(__dirname, path.src, '/images/'+ files.config), 'utf8', function (err, data) {
+      if( err ) return resolve(err);
+
+      data = JSON.parse(data);
+
+      var resMap = {};
+      var itemData;
+      var writeData = function (data) {
+        return "Resource.setAsset(" + data + ");";
+      };
+      data.resources.forEach(function (item) {
+        if ((item.type == 'json' || item.type == 'sheet') && !/res(Banner)?\.json$/.test(item.url)) {
+          itemData = JSON.parse(fs.readFileSync(fsPath.join(__dirname, path.src, '/images/' + item.url), {encoding: 'utf8'}));
+          resMap[item.name] = itemData.frames || itemData;
+        }
+      });
+
+      fs.writeFile(fsPath.join(__dirname, path.src, '/js/' + files.mcData), writeData(JSON.stringify(resMap, null, 1)), function (err) {
+        if( err ) return resolve(err);
+
+        var resResources = [];
+        var sheetKeys = [];
+        data.resources.forEach(function (item) {
+          if (item.type !== 'json' && item.type !== 'sheet') {
+            resResources.push(item);
+          }
+          if (item.type == 'sheet') {
+            var keyName = item.name.replace(/json$/, "png");
+            resResources.push({
+              name: keyName,
+              type: "image",
+              url: item.url.replace(/json$/, "png")
+            });
+            sheetKeys.push(keyName);
+          }
+        });
+
+        var resGroups = [];
+        data.groups.forEach(function (item) {
+          var newKeys = [];
+          item.keys.split(/,/).forEach(function (key) {
+            if (!/_json$/.test(key)) {
+              newKeys.push(key);
+            }
+          });
+          item.keys = newKeys.concat(sheetKeys).join(",");
+          resGroups.push(item);
+        });
+
+        var resData = {
+          groups: resGroups,
+          resources: resResources
+        };
+
+        fs.writeFile(fsPath.join(__dirname, path.src, '/js/' + files.resData), "var resData = " + JSON.stringify(resData, null, 1), function (err) {
+          if( err ) return resolve(err);
+          resolve();
+        });
+
+      });
+
+    });
+
+  });
+
+};
+
+//清空res和mc
+gulp.task('clear-RES', function (done) {
+  ['mcDataBanner', 'mcData','resDataBanner', 'resData'].forEach(function (name) {
+    fs.writeFileSync(fsPath.join(__dirname, path.src, '/js/' + name + '.js'), "");
+  });
+  done();
 });
 
 //加版本号
