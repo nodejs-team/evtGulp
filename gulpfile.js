@@ -102,7 +102,7 @@ gulp.task('compile-sass', function(){
 var ghdownload = require('github-download');
 function downloadRepo(dirPath) {
   return new Promise(function (resolve, reject) {
-    ghdownload('git@github.com:semdy/evtGulp-template.git', fsPath.join(__dirname, dirPath))
+    ghdownload('git@github.com:nodejs-team/evtGulp-template.git', fsPath.join(__dirname, dirPath))
       .on('error', function(err) {
         throw err;
       })
