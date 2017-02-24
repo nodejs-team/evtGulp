@@ -50,6 +50,7 @@
 .evt-content .sec1-p1 .sec1-juanl {
   left: 560px;
   top: 80px;
+  cursor: pointer;
 }
 
 .evt-content .sec1-p1 .sec1-juanl.open .juanl-hint {
@@ -68,7 +69,6 @@
   width: 256px;
   height: 52px;
   background: url(../images/juanl-ft.png) no-repeat 85% 0;
-  cursor: pointer;
 }
 
 .evt-content .sec1-p1 .juanl-hint {
@@ -97,7 +97,7 @@
 
 .evt-content .sec1-p2-text .buy-btn {
   left: 233px;
-  top: 172px;
+  top: 166px;
 }
 
 .evt-content .sec1-p3 {

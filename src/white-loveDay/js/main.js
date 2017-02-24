@@ -41,18 +41,17 @@
     
     function initJuanl() {
       var isOpen = false;
-      $("#juanl_ft").on("click", function () {
+      $("#juanl").on("click", function () {
         var $this = $(this);
-        $this.parent().toggleClass("open");
+        $this.toggleClass("open");
         if( isSupportCss3 ) {
-          $this.prev().height(isOpen ? 53 : 233);
+          $this.find(".juanl-body").height(isOpen ? 53 : 233);
         } else {
-          $this.prev().animate({
+          $this.find(".juanl-body").animate({
             height: isOpen ? 53 : 233
           }, 300, 'easeOutCubic');
         }
         isOpen = !isOpen;
-        $this.next().hide();
         juanlMc.stop().clear();
       });
     }
