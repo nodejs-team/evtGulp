@@ -277,18 +277,6 @@ gulp.task('clear-RES', function (done) {
   done();
 });
 
-//从远程仓库下载模板
-var ghdownload = require('github-download');
-gulp.task("download-template", function (done) {
-  ghdownload('git@github.com:semdy/evtGulp-template.git', fsPath.join(__dirname, path.src))
-    .on('error', function(err) {
-      console.error(err)
-    })
-    .on('end', function() {
-      done();
-    });
-});
-
 /*====task for egret ======*/
 gulp.task('tinypng-egret', function(){
     return gulp.src(SRC + "/resource/assets/**/*.{png,jpg,jpeg}")
