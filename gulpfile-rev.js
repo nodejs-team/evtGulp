@@ -137,7 +137,7 @@ gulp.task('create', function(done){
     throw new Error(projectName + "项目名已存在！");
   }
 
-  console.log("download template...");
+  console.log("template downloading...");
 
   downloadRepo(destPath).then(function(){
     if( argName ){
