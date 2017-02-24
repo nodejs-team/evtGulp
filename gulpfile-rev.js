@@ -124,7 +124,7 @@ function downloadRepo(dirPath) {
 }
 
 //创建脚手架工程
-gulp.task('create', function(){
+gulp.task('create', function(done){
   var argName = argv.name;
   var projectName = argName || config.projectName;
   var destPath = path.src;
@@ -145,9 +145,11 @@ gulp.task('create', function(){
       fs.writeFile(fsPath.join(__dirname, 'config.json'), JSON.stringify(config, null, 1), function(err) {
         if (err) throw err;
         console.log('项目"' + projectName + '"创建成功');
+        done();
       });
     } else {
       console.log('项目"' + projectName + '"创建成功');
+      done();
     }
   });
 
