@@ -254,7 +254,7 @@ function createConfigFile(isBanner) {
 
   });
   
-};
+}
 
 //清空res和mc
 gulp.task('clear-RES', function (done) {
