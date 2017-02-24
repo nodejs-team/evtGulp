@@ -111,6 +111,18 @@ gulp.task('compile-sass', function(){
     .pipe(gulp.dest(path.srcCssFolder));
 });
 
+//从远程仓库下载模板
+var ghdownload = require('github-download');
+function downloadRepo(dirPath) {
+  return new Promise(function (resolve, reject) {
+    ghdownload('git@github.com:semdy/evtGulp-template.git', fsPath.join(__dirname, dirPath))
+      .on('error', function(err) {
+        throw err;
+      })
+      .on('end', resolve);
+  });
+}
+
 //创建脚手架工程
 gulp.task('create', function(){
   var argName = argv.name;
@@ -125,19 +137,20 @@ gulp.task('create', function(){
     throw new Error(projectName + "项目名已存在！");
   }
 
-  return gulp.src('template/**/*')
-    .pipe(gulp.dest(destPath))
-    .on("end", function () {
-      if( argName ){
-        config.projectName = argName;
-        fs.writeFile(require("path").resolve(__dirname, 'config.json'), JSON.stringify(config, null, 1), function(err) {
-          if (err) throw err;
-          console.log('项目"' + projectName + '"创建成功');
-        });
-      } else {
+  console.log("download template...");
+
+  downloadRepo(destPath).then(function(){
+    if( argName ){
+      config.projectName = argName;
+      fs.writeFile(fsPath.join(__dirname, 'config.json'), JSON.stringify(config, null, 1), function(err) {
+        if (err) throw err;
         console.log('项目"' + projectName + '"创建成功');
-      }
-    });
+      });
+    } else {
+      console.log('项目"' + projectName + '"创建成功');
+    }
+  });
+
 });
 
 //JS检测

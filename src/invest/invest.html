@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>大开沙界</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- build:css css/app.css -->
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/swiper.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+    <script type="text/javascript">
+        (function(){
+            var phoneWidth = parseInt(window.screen.width);
+            var phoneScale = phoneWidth/750;
+
+            var ua = navigator.userAgent;
+            if (/Android (\d+\.\d+)/.test(ua)) {
+                var version = parseFloat(RegExp.$1);
+                // andriod 2.3
+                if (version > 2.3) {
+                    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+                    // andriod 2.3以上
+                } else {
+                    document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+                }
+                // 其他系统
+            } else {
+                if(navigator.userAgent.indexOf("iPhone") != -1) {
+                    document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+                }else if(navigator.userAgent.indexOf("iPad") != -1) {
+                    document.write('<meta name="viewport" content="width=1024, user-scalable=no, target-densitydpi=device-dpi">');
+                }
+            }
+        })();
+    </script>
+    <script>
+        var __CONFIG = {
+            postUrl: "",
+            customerUid: "5144257811",
+            wx_openid: "uidndDFDddf4454",
+            questionnaireCode: "123",
+            versionNo: "20150308",
+            onPostSuccess: function (res) {
+                alert("提交成功！");
+            },
+            onPostError: function (xhr, stauts, err) {
+                alert("error:" + err);
+            }
+        };
+    </script>
+
+    <!-- build:js js/app.js -->
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/investConfig.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+
+<script type="text/template" id="invest-secTpl">
+    <div class="swiper-container wapper {{pageClass}}">
+        <div class="wp-header">
+            {{if pageIndex < 4}}
+            <span class="skip-link" data-action="skip">skip</span>
+            {{/if}}
+            <h1>第{{pageIndex}}部分，共4部分</h1>
+        </div>
+
+        <div class="swiper-wrapper">
+            {{each items as item}}
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="cn-header">
+                        <span class="hd-legend"><i class="{{titleIcon}}"></i>{{title}}</span>
+                    </div>
+                    {{each item as question}}
+                    <div class="subject-item">
+                        <h2 class="subject-title">{{question.title}}</h2>
+                        <div class="subject-main {{if question.grid}}subject-grid{{/if}}">
+                            {{if question.icon}}
+                            <div class="subject-icon">
+                                <i class="{{question.icon}}"></i>
+                            </div>
+                            {{/if}}
+                            {{if question.grid}}
+                            {{each question.answers as answer}}
+                            <div class="grid-item {{answer.gridClassName}}" data-action="invest" data-code="{{question.questionCode}}" data-value="{{answer.value}}"  {{if question.plain}}data-plain="true"{{/if}}>
+                                <div class="subject-icon {{answer.theme}}">
+                                    <i class="{{answer.icon}}"></i>
+                                </div>
+                                <h4>{{=answer.text}}</h4>
+                            </div>
+                            {{/each}}
+                            {{else}}
+                            <div class="subject-list">
+                                {{each question.answers as answer}}
+                                <button class="sb-btn" data-action="invest" data-code="{{question.questionCode}}" data-value="{{$index + 1}}">{{answer}}</button>
+                                {{/each}}
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div><!--end swiper-slide-->
+            {{/each}}
+            {{if lastPage}}
+            {{include 'form-secTpl'}}
+            {{/if}}
+        </div>
+        <!--end swiper-wrapper-->
+
+        <div class="page-nav swiper-pagination">
+        </div>
+
+    </div>
+</script>
+
+<script type="text/template" id="form-secTpl">
+    <div class="swiper-slide">
+        <div class="content">
+            <div class="cn-header">
+                <span class="hd-legend"><i class="{{titleIcon}}"></i>{{title}}</span>
+            </div>
+            <div class="profile-wrapper">
+                {{each formData as data}}
+                <div class="profile-item">
+                    <h2>{{data.title}}</h2>
+                    <div class="profile-bd">
+                        {{if data.datetime}}
+                        <select data-code="{{data.questionCode}}" data-value="0" data-plain="true" class="input-style wd-8">
+                            {{each year}}
+                            <option value="{{$value}}">{{$value}}</option>
+                            {{/each}}
+                        </select>
+                        <label>年</label>
+                        <select data-code="{{data.questionCode}}" data-value="1" data-plain="true" class="input-style">
+                            {{each month}}
+                            <option value="{{$value}}">{{$value}}</option>
+                            {{/each}}
+                        </select>
+                        <label>月</label>
+                        <select data-code="{{data.questionCode}}" data-value="2" data-plain="true" class="input-style">
+                            {{each day}}
+                            <option value="{{$value}}">{{$value}}</option>
+                            {{/each}}
+                        </select>
+                        <label>日</label>
+                        {{else}}
+                        <input type="number" data-code="{{data.questionCode}}" data-value="{{$index+1}}" data-plain="true" class="input-style wd-8">
+                        <label>{{data.label}}</label>
+                        {{/if}}
+                    </div>
+                </div>
+                {{/each}}
+
+                <div class="button-field">
+                    <button class="border-btn" data-action="sb-invest">提交</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</script>
+
+</body>
+</html>
