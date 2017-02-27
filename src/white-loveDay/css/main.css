@@ -1,7 +1,7 @@
 .evt-container {
   position: absolute;
   left: 0;
-  top: -40px;
+  top: -633px;
   width: 100%;
   background: #fcf5ee url(../images/bg.jpg);
 }
@@ -12,36 +12,45 @@
 }
 
 .evt-content .tp-title {
-  left: 120px;
-  top: 180px;
+  left: 185px;
+  top: 750px;
 }
 
 .evt-content .tp-title .tp-heart {
-  left: 371px;
-  top: 433px;
+  left: 257px;
+  top: 240px;
 }
 
 .evt-content .sec1-p1 {
+  right: 0;
   left: 52px;
-  top: 745px;
+  top: 1045px;
+}
+
+.evt-content .sec1-p1 .sec1-p11 {
+  left: -60px;
+  top: 0;
+}
+
+.evt-content .sec1-p1 .sec1-p12 {
+  left: 295px;
+  top: 30px;
+}
+
+.evt-content .sec1-p1 .sec1-bg {
+  left: 110px;
+  top: 0;
 }
 
 .evt-content .sec1-p1 .sec-dova {
-  left: 215px;
-  top: 100px;
+  left: 142px;
+  top: 60px;
 }
 
 .evt-content .sec1-p1 .sec1-juanl {
-  right: 70px;
-  top: 462px;
-}
-
-.evt-content .sec1-p1 .sec1-juanl.open .juanl-body {
-  height: 233px;
-}
-
-.evt-content .sec1-p1 .sec1-juanl.open .juanl-ft {
-  background-position-x: 85%;
+  left: 560px;
+  top: 80px;
+  cursor: pointer;
 }
 
 .evt-content .sec1-p1 .sec1-juanl.open .juanl-hint {
@@ -53,21 +62,19 @@
   height: 53px;
   background: url(../images/juanl.png) no-repeat;
   -webkit-transition: height .3s ease-out;
+  transition: height .3s ease-out;
 }
 
 .evt-content .sec1-p1 .juanl-ft {
   width: 256px;
   height: 52px;
-  background: url(../images/juanl-ft.png) no-repeat 100% 0;
+  background: url(../images/juanl-ft.png) no-repeat 85% 0;
 }
 
 .evt-content .sec1-p1 .juanl-hint {
   position: absolute;
   left: 118px;
   top: 120px;
-  width: 36px;
-  height: 57px;
-  background: url(../images/juanl-hint.png) no-repeat;
 }
 
 .evt-content .sec1-p2 {
@@ -90,7 +97,7 @@
 
 .evt-content .sec1-p2-text .buy-btn {
   left: 233px;
-  top: 172px;
+  top: 166px;
 }
 
 .evt-content .sec1-p3 {
@@ -118,6 +125,11 @@
   left: 528px;
 }
 
+.evt-content .sec3-text .buy-btn {
+  left: 132px;
+  top: 233px;
+}
+
 .evt-content .sec3-s1 {
   top: 2823px;
   left: 230px;
@@ -130,7 +142,7 @@
 
 .evt-content .sec3-s3 {
   top: 2738px;
-  left: 642px;
+  left: 680px;
 }
 
 .evt-content .sec3-s4 {
@@ -154,8 +166,9 @@
 }
 
 .evt-content .sec3-text2 {
-  top: 3408px;
+  top: 3395px;
   left: 145px;
+  z-index: 10;
 }
 
 .evt-content .sec3-text2 .buy-btn {
@@ -175,6 +188,21 @@
   width: 100%;
   height: 125px;
   background: url(../images/ft-bg.jpg) no-repeat;
+}
+
+.evt-content .sec-running {
+  left: 500px;
+  top: 2855px;
+}
+
+.evt-content .sec-window {
+  left: 602px;
+  top: 2074px;
+}
+
+.evt-content .sec-fly {
+  top: 1940px;
+  left: 360px;
 }
 
 .evt-footer {

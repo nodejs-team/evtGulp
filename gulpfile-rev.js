@@ -26,6 +26,7 @@ var gulp         = require('gulp'),
     ifaces       = os.networkInterfaces(),
     config       = require('./config.json'),
     fs           = require('fs'),
+    fsPath       = require('path'),
     argv         = require('yargs').argv;
 
 var SRC = 'src/' + config.projectName;
@@ -110,8 +111,20 @@ gulp.task('compile-sass', function(){
     .pipe(gulp.dest(path.srcCssFolder));
 });
 
+//从远程仓库下载模板
+var ghdownload = require('github-download');
+function downloadRepo(dirPath) {
+  return new Promise(function (resolve, reject) {
+    ghdownload('git@github.com:nodejs-team/evtGulp-template.git', fsPath.join(__dirname, dirPath))
+      .on('error', function(err) {
+        throw err;
+      })
+      .on('end', resolve);
+  });
+}
+
 //创建脚手架工程
-gulp.task('create', function(){
+gulp.task('create', function(done){
   var argName = argv.name;
   var projectName = argName || config.projectName;
   var destPath = path.src;
@@ -124,19 +137,22 @@ gulp.task('create', function(){
     throw new Error(projectName + "项目名已存在！");
   }
 
-  return gulp.src('template/**/*')
-    .pipe(gulp.dest(destPath))
-    .on("end", function () {
-      if( argName ){
-        config.projectName = argName;
-        fs.writeFile(require("path").resolve(__dirname, 'config.json'), JSON.stringify(config, null, 1), function(err) {
-          if (err) throw err;
-          console.log('项目"' + projectName + '"创建成功');
-        });
-      } else {
+  console.log("template downloading...");
+
+  downloadRepo(destPath).then(function(){
+    if( argName ){
+      config.projectName = argName;
+      fs.writeFile(fsPath.join(__dirname, 'config.json'), JSON.stringify(config, null, 1), function(err) {
+        if (err) throw err;
         console.log('项目"' + projectName + '"创建成功');
-      }
-    });
+        done();
+      });
+    } else {
+      console.log('项目"' + projectName + '"创建成功');
+      done();
+    }
+  });
+
 });
 
 //JS检测
@@ -176,14 +192,104 @@ var buildJs = lazypipe()
 var buildCss = lazypipe().pipe(cssmin);
 
 //基于配置合并路径
-gulp.task('useref', function () {
-    return gulp.src(path.srcHtml)
-        .pipe(useref())
-        .pipe(gulpif('*.html', buildHtml()))
-        .pipe(gulpif('*.js', buildJs()))
-        .pipe(gulpif('*.css', buildCss()))
-        .pipe(gulp.dest(path.tmp));
+gulp.task('useref', function (done) {
+  createConfigFile(false).then(function () {
+    return createConfigFile(true)
+  }).then(function () {
+    gulp.src(path.srcHtml)
+      .pipe(useref())
+      .pipe(gulpif('*.html', buildHtml()))
+      .pipe(gulpif('*.js', buildJs()))
+      .pipe(gulpif('*.css', buildCss()))
+      .pipe(gulp.dest(path.tmp))
+      .on("end", function () {
+        clearRES(done);
+      });
+  });
 });
+
+function createConfigFile(isBanner) {
+  var files = {
+    config:  isBanner ? "resBanner.json" : "res.json",
+    resData: isBanner ? 'resDataBanner.js' : 'resData.js'
+  };
+  return new Promise(function (resolve, reject) {
+    fs.readFile(fsPath.join(__dirname, path.src, '/images/'+ files.config), 'utf8', function (err, data) {
+      if( err ) return resolve(err);
+      if( !data ) return resolve();
+
+      data = JSON.parse(data);
+
+      var mcData = {};
+      var itemData;
+      var writeData = function (resData, mcData) {
+        return "var resData = " + JSON.stringify(resData, null, 1) + ";\n\nResource.setAsset(" + JSON.stringify(mcData, null, 1) + ");";
+      };
+
+      data.resources.forEach(function (item) {
+        if ((item.type == 'json' || item.type == 'sheet') && !/res(Banner)?\.json$/.test(item.url)) {
+          try {
+            itemData = fs.readFileSync(fsPath.join(__dirname, path.src, '/images/' + item.url), {encoding: 'utf8'});
+            itemData = JSON.parse(itemData.replace(/\s*('|")?duration('|")?/igm, '"duration"'));
+          } catch (err){
+            throw err;
+          }
+          mcData[item.name] = itemData.frames || itemData;
+        }
+      });
+
+      var resResources = [];
+      var sheetKeys = [];
+      data.resources.forEach(function (item) {
+        if (item.type !== 'json' && item.type !== 'sheet') {
+          resResources.push(item);
+        }
+        if (item.type == 'sheet') {
+          var keyName = item.name.replace(/json$/, "png");
+          resResources.push({
+            name: keyName,
+            type: "image",
+            url: item.url.replace(/json$/, "png")
+          });
+          sheetKeys.push(keyName);
+        }
+      });
+
+      var resGroups = [];
+      data.groups.forEach(function (item) {
+        var newKeys = [];
+        item.keys.split(/,/).forEach(function (key) {
+          if (!/_json$/.test(key)) {
+            newKeys.push(key);
+          }
+        });
+        item.keys = newKeys.concat(sheetKeys).join(",");
+        resGroups.push(item);
+      });
+
+      var resData = {
+        groups: resGroups,
+        resources: resResources
+      };
+
+      fs.writeFile(fsPath.join(__dirname, path.src, '/js/' + files.resData), writeData(resData, mcData), function (err) {
+        if( err ) return resolve(err);
+        resolve();
+      });
+
+    });
+
+  });
+
+}
+
+//清空res和mc
+function clearRES(done) {
+  ['resData', 'resDataBanner'].forEach(function (name) {
+    fs.writeFileSync(fsPath.join(__dirname, path.src, '/js/' + name + '.js'), "");
+  });
+  done();
+}
 
 //加版本号
 gulp.task('rev', function (done) {

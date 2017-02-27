@@ -1,7 +1,7 @@
 .evt-container{
   position: absolute;
   left:0;
-  top:-40px;
+  top:-633px;
   width:100%;
   background: #fcf5ee url(../images/bg.jpg);
 }
@@ -9,33 +9,44 @@
 .evt-content{
   height:4360px;
   .tp-title{
-    left:120px;
-    top:180px;
+    left:185px;
+    top:750px;
     .tp-heart{
-      left:371px;
-      top:433px;
+      left:257px;
+      top:240px;
     }
   }
 
   .sec1-p1{
+    right:0;
     left:52px;
-    top:745px;
+    top:1045px;
+
+    .sec1-p11{
+      left:-60px;
+      top:0;
+    }
+
+    .sec1-p12{
+      left:295px;
+      top:30px;
+    }
+
+    .sec1-bg{
+      left:110px;
+      top:0;
+    }
 
     .sec-dova{
-      left:215px;
-      top:100px;
+      left:142px;
+      top:60px;
     }
 
     .sec1-juanl{
-      right:70px;
-      top:462px;
+      left:560px;
+      top:80px;
+      cursor: pointer;
       &.open{
-        .juanl-body{
-          height:233px;
-        }
-        .juanl-ft{
-          background-position-x: 85%;
-        }
         .juanl-hint{
           display: none;
         }
@@ -47,21 +58,19 @@
       height:53px;
       background: url(../images/juanl.png) no-repeat;
       -webkit-transition: height .3s ease-out;
+      transition: height .3s ease-out;
     }
 
     .juanl-ft{
       width:256px;
       height:52px;
-      background: url(../images/juanl-ft.png) no-repeat 100% 0;
+      background: url(../images/juanl-ft.png) no-repeat 85% 0;
     }
 
     .juanl-hint{
       position: absolute;
       left:118px;
       top:120px;
-      width:36px;
-      height:57px;
-      background: url(../images/juanl-hint.png) no-repeat;
     }
 
   }/*end sec1-p1*/
@@ -85,7 +94,7 @@
 
     .buy-btn{
       left:233px;
-      top:172px;
+      top:166px;
     }
   }
 
@@ -112,6 +121,11 @@
   .sec3-text{
     top:2370px;
     left:528px;
+
+    .buy-btn{
+      left:132px;
+      top:233px;
+    }
   }
 
   .sec3-s1{
@@ -125,8 +139,8 @@
   }
 
   .sec3-s3{
-    top:2738px;
-    left:642px;
+    top: 2738px;
+    left: 680px;
   }
 
   .sec3-s4{
@@ -150,8 +164,9 @@
   }
 
   .sec3-text2{
-    top:3408px;
+    top:3395px;
     left:145px;
+    z-index: 10;
 
     .buy-btn{
       left:160px;
@@ -171,6 +186,21 @@
     width:100%;
     height:125px;
     background: url(../images/ft-bg.jpg) no-repeat;
+  }
+
+  .sec-running{
+    left: 500px;
+    top: 2855px;
+  }
+
+  .sec-window{
+    left:602px;
+    top:2074px;
+  }
+
+  .sec-fly{
+    top:1940px;
+    left:360px;
   }
 
 }
