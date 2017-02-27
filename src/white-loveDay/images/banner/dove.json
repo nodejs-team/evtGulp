@@ -1,0 +1,7 @@
+{"file":"dove.png","frames":{
+"d2":{"x":69,"y":0,"w":67,"h":67,"offX":1,"offY":4,"sourceW":70,"sourceH":72,duration:4},
+"d3":{"x":138,"y":0,"w":67,"h":65,"offX":1,"offY":6,"sourceW":70,"sourceH":72,duration:4},
+"d4":{"x":0,"y":142,"w":67,"h":67,"offX":1,"offY":4,"sourceW":70,"sourceH":72,duration:4},
+"d5":{"x":0,"y":72,"w":67,"h":68,"offX":1,"offY":3,"sourceW":70,"sourceH":72,duration:0},
+"d6":{"x":0,"y":0,"w":67,"h":70,"offX":1,"offY":1,"sourceW":70,"sourceH":72,duration:20},
+"d1":{"x":138,"y":67,"w":67,"h":65,"offX":1,"offY":6,"sourceW":70,"sourceH":72,duration:4}}}

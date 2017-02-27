@@ -3,8 +3,21 @@
  */
 (function($){
 
-  var loadComplete = function () {
+  function setDoveMc() {
+    var mc = new MovieClip('dove_png', "dove_json", 'el_dove');
+    mc.gotoAndPlay(1, -1);
+    return mc;
+  }
 
+  function setHeartMc() {
+    var mc = new MovieClip('heart_png', "heart_json", 'el_heart');
+    mc.gotoAndPlay(1, -1);
+    return mc;
+  }
+
+  var loadComplete = function () {
+    setDoveMc();
+    setHeartMc();
   };
 
   var loadResource = function(){

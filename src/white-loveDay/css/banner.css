@@ -1,3 +1,65 @@
+.evt-container {
+  background: url(../images/bg.jpg);
+}
+
 .evt-content {
-  /* addon css code goes here */
+  height: 550px;
+}
+
+.evt-content .bg {
+  left: 175px;
+  top: 95px;
+}
+
+.evt-content .q1 {
+  left: 336px;
+  top: 63px;
+}
+
+.evt-content .q2 {
+  left: 644px;
+  top: 0;
+}
+
+.evt-content .q3 {
+  left: 657px;
+  top: 215px;
+}
+
+.evt-content .q-main {
+  left: 350px;
+  top: 264px;
+}
+
+.evt-content .q4 {
+  left: 175px;
+  top: 216px;
+}
+
+.evt-content .q5 {
+  left: 150px;
+  top: 390px;
+}
+
+.evt-content .q-dove {
+  left: 30px;
+  top: -15px;
+}
+
+.evt-content .q-heart {
+  top: 118px;
+  left: 100px;
+}
+
+.evt-content .buy-btn {
+  position: absolute;
+  width: 134px;
+  height: 36px;
+  line-height: 100;
+  overflow: hidden;
+  background-color: #fff;
+  opacity: 0;
+  filter: alpha(opacity=0) !important;
+  left: 42px;
+  top: 64px;
 }
