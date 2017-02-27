@@ -202,14 +202,15 @@ gulp.task('useref', function (done) {
       .pipe(gulpif('*.js', buildJs()))
       .pipe(gulpif('*.css', buildCss()))
       .pipe(gulp.dest(path.tmp))
-      .on("end", done);
+      .on("end", function () {
+        clearRES(done);
+      });
   });
 });
 
 function createConfigFile(isBanner) {
   var files = {
     config:  isBanner ? "resBanner.json" : "res.json",
-    mcData: isBanner ? 'mcDataBanner.js' : 'mcData.js',
     resData: isBanner ? 'resDataBanner.js' : 'resData.js'
   };
   return new Promise(function (resolve, reject) {
@@ -219,64 +220,61 @@ function createConfigFile(isBanner) {
 
       data = JSON.parse(data);
 
-      var resMap = {};
+      var mcData = {};
       var itemData;
-      var writeData = function (data) {
-        return "Resource.setAsset(" + data + ");";
+      var writeData = function (resData, mcData) {
+        return "var resData = " + JSON.stringify(resData, null, 1) + ";\n\nResource.setAsset(" + JSON.stringify(mcData, null, 1) + ");";
       };
+
       data.resources.forEach(function (item) {
         if ((item.type == 'json' || item.type == 'sheet') && !/res(Banner)?\.json$/.test(item.url)) {
           try {
-            itemData = JSON.parse(fs.readFileSync(fsPath.join(__dirname, path.src, '/images/' + item.url), {encoding: 'utf8'}));
+            itemData = fs.readFileSync(fsPath.join(__dirname, path.src, '/images/' + item.url), {encoding: 'utf8'});
+            itemData = JSON.parse(itemData.replace(/\s*('|")?duration('|")?/igm, '"duration"'));
           } catch (err){
             throw err;
           }
-          resMap[item.name] = itemData.frames || itemData;
+          mcData[item.name] = itemData.frames || itemData;
         }
       });
 
-      fs.writeFile(fsPath.join(__dirname, path.src, '/js/' + files.mcData), writeData(JSON.stringify(resMap, null, 1)), function (err) {
-        if( err ) return resolve(err);
-
-        var resResources = [];
-        var sheetKeys = [];
-        data.resources.forEach(function (item) {
-          if (item.type !== 'json' && item.type !== 'sheet') {
-            resResources.push(item);
-          }
-          if (item.type == 'sheet') {
-            var keyName = item.name.replace(/json$/, "png");
-            resResources.push({
-              name: keyName,
-              type: "image",
-              url: item.url.replace(/json$/, "png")
-            });
-            sheetKeys.push(keyName);
-          }
-        });
-
-        var resGroups = [];
-        data.groups.forEach(function (item) {
-          var newKeys = [];
-          item.keys.split(/,/).forEach(function (key) {
-            if (!/_json$/.test(key)) {
-              newKeys.push(key);
-            }
+      var resResources = [];
+      var sheetKeys = [];
+      data.resources.forEach(function (item) {
+        if (item.type !== 'json' && item.type !== 'sheet') {
+          resResources.push(item);
+        }
+        if (item.type == 'sheet') {
+          var keyName = item.name.replace(/json$/, "png");
+          resResources.push({
+            name: keyName,
+            type: "image",
+            url: item.url.replace(/json$/, "png")
           });
-          item.keys = newKeys.concat(sheetKeys).join(",");
-          resGroups.push(item);
+          sheetKeys.push(keyName);
+        }
+      });
+
+      var resGroups = [];
+      data.groups.forEach(function (item) {
+        var newKeys = [];
+        item.keys.split(/,/).forEach(function (key) {
+          if (!/_json$/.test(key)) {
+            newKeys.push(key);
+          }
         });
+        item.keys = newKeys.concat(sheetKeys).join(",");
+        resGroups.push(item);
+      });
 
-        var resData = {
-          groups: resGroups,
-          resources: resResources
-        };
+      var resData = {
+        groups: resGroups,
+        resources: resResources
+      };
 
-        fs.writeFile(fsPath.join(__dirname, path.src, '/js/' + files.resData), "var resData = " + JSON.stringify(resData, null, 1), function (err) {
-          if( err ) return resolve(err);
-          resolve();
-        });
-
+      fs.writeFile(fsPath.join(__dirname, path.src, '/js/' + files.resData), writeData(resData, mcData), function (err) {
+        if( err ) return resolve(err);
+        resolve();
       });
 
     });
@@ -286,12 +284,12 @@ function createConfigFile(isBanner) {
 }
 
 //清空res和mc
-gulp.task('clear-RES', function (done) {
-  ['mcDataBanner', 'mcData','resDataBanner', 'resData'].forEach(function (name) {
+function clearRES(done) {
+  ['resData', 'resDataBanner'].forEach(function (name) {
     fs.writeFileSync(fsPath.join(__dirname, path.src, '/js/' + name + '.js'), "");
   });
   done();
-});
+}
 
 //加版本号
 gulp.task('rev', function (done) {

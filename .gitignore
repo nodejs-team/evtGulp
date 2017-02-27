@@ -5,12 +5,7 @@
 .gitignore
 .tmp
 
-dist
 config.json
-node_modules/*
+dist/
+node_modules/
 bower_components/
-src/lamont_olympic
-src/live-chat
-src/snake-game-master
-src/vivo
-src/beautyBox

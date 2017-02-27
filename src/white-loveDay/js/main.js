@@ -4,37 +4,37 @@
 (function($){
 
     function setRunningMc() {
-       var mc = new MovieClip('running_png', "running_json", 'running', 'el_running');
+       var mc = new MovieClip('running_png', "running_json", 'el_running');
        mc.gotoAndPlay(1, -1);
        return mc;
     }
 
   function setJuanlMc() {
-    var mc = new MovieClip('juanl-hint_png', "juanl-hint_json", 'juanl-hint', 'juanl_arrow');
+    var mc = new MovieClip('juanl-hint_png', "juanl-hint_json", 'juanl_arrow');
     mc.gotoAndPlay(1, -1);
     return mc;
   }
 
   function setWindowMc() {
-    var mc = new MovieClip('window_png', "window_json", 'window', 'el_window');
+    var mc = new MovieClip('window_png', "window_json", 'el_window');
     mc.gotoAndPlay(1, -1);
     return mc;
   }
 
   function setDovaMc() {
-    var mc = new MovieClip('dove_png', "dove_json", 'dova', 'el_dova');
+    var mc = new MovieClip('dove_png', "dove_json", 'el_dova');
     mc.gotoAndPlay(1, -1);
     return mc;
   }
 
   function setGridFlyMc() {
-    var mc = new MovieClip('gridFly_png', 'gridFly_json', 'fly', 'el_fly');
+    var mc = new MovieClip('gridFly_png', 'gridFly_json', 'el_fly');
     mc.gotoAndPlay(1, -1);
     return mc;
   }
 
   function setHeartMc() {
-    var mc = new MovieClip('tp-heart_png', 'tp-heart_json', 'heart', 'el_heart');
+    var mc = new MovieClip('tp-heart_png', 'tp-heart_json', 'el_heart');
     mc.gotoAndPlay(1, -1);
     return mc;
   }

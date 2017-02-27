@@ -344,12 +344,12 @@
 
 
     /*==============Movieclip===============*/
-    var MovieClip = function(resUrl, res, resKey, el){
+    var MovieClip = function(resUrl, res, el, resKey){
         this.el = typeof el == 'string' ? document.getElementById(el) : el;
         this._startFrame = 0;
         this._startTime = 0;
         this._playTimes = -1;
-        this._resKey = resKey;
+        this._resKey = String(resKey);
         this.currentFrame = 0;
         this.isPlaying = false;
         this.setRES(resUrl, res);
@@ -690,9 +690,9 @@
                 if (xhr.readyState == 4) {
                     if (xhr.status == 200) {
                         try {
-                            sucFn && sucFn(JSON.parse(xhr.responseText));
+                            sucFn && sucFn(JSON.parse(xhr.responseText.replace(/\s*('|")?duration('|")?/igm, '"duration"')));
                         }catch (e){
-                            //console.error(e.message);
+                            throw new Error(e.message);
                         }
                     } else {
                         errFn && errFn(xhr);
