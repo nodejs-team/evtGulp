@@ -346,6 +346,9 @@
     /*==============Movieclip===============*/
     var MovieClip = function(resUrl, res, el, resKey){
         this.el = typeof el == 'string' ? document.getElementById(el) : el;
+        if( !this.el ){
+            throw new Error('element "'+ el +'" can not found!');
+        }
         this._startFrame = 0;
         this._startTime = 0;
         this._playTimes = -1;

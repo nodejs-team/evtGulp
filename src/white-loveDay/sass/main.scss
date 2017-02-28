@@ -87,6 +87,9 @@
     height:50px;
     line-height: 100;
     overflow: hidden;
+    background-color: #fff;
+    opacity:0;
+    filter:alpha(opacity=0) !important;;
   }
 
   .sec1-p2-text{
@@ -131,12 +134,12 @@
 
   .sec3-s1{
     top:2823px;
-    left:230px;
+    left:250px;
   }
 
   .sec3-s2{
-    top:2654px;
-    left:458px;
+    top: 2644px;
+    left: 488px;
   }
 
   .sec3-s3{

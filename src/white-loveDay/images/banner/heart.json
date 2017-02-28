@@ -1,0 +1,5 @@
+{"file":"heart.png","frames":{
+"h4":{"x":100,"y":0,"w":98,"h":71,"offX":0,"offY":3,"sourceW":98,"sourceH":80,duration:20},
+"h1":{"x":100,"y":73,"w":98,"h":62,"offX":0,"offY":9,"sourceW":98,"sourceH":80,duration:0},
+"h2":{"x":0,"y":77,"w":98,"h":57,"offX":0,"offY":10,"sourceW":98,"sourceH":80,duration:2},
+"h3":{"x":0,"y":0,"w":98,"h":75,"offX":0,"offY":2,"sourceW":98,"sourceH":80,duration:0}}}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>make活动banner</title>
-    <!-- build:css css/main.css -->
+    <!-- build:css css/banner.css -->
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
     <link type="text/css" rel="stylesheet" href="css/base.css" />
     <link type="text/css" rel="stylesheet" href="css/banner.css" />
@@ -47,15 +47,6 @@
                             <li class="phone"><span>4006-678-678</span><i></i></li>
                             <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
                         </ul>
-                        <div class="city" id="city">
-                            <ul>
-                                <li id="city-641" data-id="641"><a href="javascript: void(0);">杭州市</a></li>
-                                <li id="city-110" data-id="110" class="cur"><a href="javascript: void(0);">上海市</a></li>
-                                <li id="city-665" data-id="665"><a href="javascript: void(0);">苏州市</a></li>
-                                <li id="city-675" data-id="675"><a href="javascript: void(0);">北京市</a></li>
-                            </ul>
-                            <samp></samp>
-                        </div>
                     </div>
                     <ul class="menu">
                         <li>
@@ -82,34 +73,42 @@
 
 </div>
 
-<style>
-    #floater{position:fixed; top:110px; right:10px; z-index:11; width:178px;}
-    #floater .floatImg{width:156px; position:relative; font-size:0; margin:0 0 0 17px;}
-    #floater .floatImg img{width:100%;}
-    #floater .floatImg a{width:100%; display:block; height:144px; position:absolute; top:0; left:0;}
-</style>
-
 <div id="evt_loading">
     <span id="evt_spin">loading: 0%</span>
 </div>
 
 <div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
-    <div class="section-banner">
-        <div class="evt-content">
-            <div class="secItem q1" data-anim="slide-down-l" data-delay="0.8">
-                <img src="" width="" height="" />
+    <div class="evt-content">
+        <div class="secItem q1" data-anim="slide-down">
+            <img src="images/banner/title.png" width="307" height="146" />
+            <div class="secItem q-dove">
+                <div id="el_dove"></div>
+            </div>
+            <div class="secItem q-heart">
+                <div id="el_heart"></div>
             </div>
         </div>
-        <a href="#" style="width:100%; height:750px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
-    </div>
-
-    <div id="floater">
-        <div class="floatImg">
-            <img src="http://edm.mcake.com/shuxy/2016/strawberry/images/strawberry_floater.png" alt="">
-            <a href="http://www.mcake.com"></a>
+        <div class="secItem q2" data-anim="slide-down-r" data-delay="0.8">
+            <img src="images/banner/tp2.png" width="152" height="156" />
+        </div>
+        <div class="secItem q3" data-anim="fade-in" data-delay="1.6">
+            <img src="images/banner/tp3.png" width="165" height="176" />
+        </div>
+        <div class="secItem bg">
+            <img src="images/banner/b-bg.png" width="611" height="398">
+        </div>
+        <div class="secItem q-main" data-anim="fade-in" data-delay="2.4">
+            <img src="images/banner/tp-main.png" width="323" height="251" />
+        </div>
+        <div class="secItem q4" data-anim="fade-in" data-delay="3.2">
+            <img src="images/banner/tp4.png" width="172" height="190" />
+        </div>
+        <div class="secItem q5" data-anim="fade-in" data-delay="4">
+            <img src="images/banner/buy-text.png" width="205" height="114" />
+            <a href="#" class="buy-btn">立即订购</a>
         </div>
     </div>
-
+    <a href="#" style="width:100%; height:750px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
 </div>
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
@@ -119,28 +118,5 @@
 <script type="text/javascript" src="js/resDataBanner.js"></script>
 <script type="text/javascript" src="js/banner.js"></script>
 <!-- endbuild -->
-<script>
-    /*;(function(){
-        var height = $("#evt_container").outerHeight();
-        var fHeight = 167;
-        var fTop = 110;
-        var fRight = 10;
-        var floater = $('#floater');
-        var floaterPosition = 'fixed';
-        var winWidth = $(window).width();
-        var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
-        $(window).on("scroll", function(){
-            var sTop = $(this).scrollTop();
-            if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
-                floater.css({position: "absolute", top: height - fHeight, right: absRight});
-                floaterPosition = 'absolute';
-            }
-            if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
-                floater.css({position: "fixed", top: fTop, right:fRight});
-                floaterPosition = 'fixed';
-            }
-        });
-    })();*/
-</script>
 </body>
 </html>
