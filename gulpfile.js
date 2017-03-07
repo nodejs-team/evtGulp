@@ -179,9 +179,12 @@ var buildCSS = lazypipe().pipe(cssmin);
 
 //基于配置合并路径
 gulp.task('useref', function (done) {
-  createConfigFile(false).then(function () {
+  var errors = [];
+  createConfigFile(false).then(function (err) {
+    errors[0] = err;
     return createConfigFile(true)
-  }).then(function () {
+  }).then(function (err) {
+    errors[1] = err;
     gulp.src(path.srcHtml)
       .pipe(useref())
       .pipe(gulpif('*.html', buildHTML()))
@@ -189,7 +192,7 @@ gulp.task('useref', function (done) {
       .pipe(gulpif('*.css', buildCSS()))
       .pipe(gulp.dest(path.dist))
       .on("end", function () {
-        clearRES(done);
+        clearRES(done, errors);
       });
   });
 });
@@ -199,10 +202,10 @@ function createConfigFile(isBanner) {
     config:  isBanner ? "resBanner.json" : "res.json",
     resData: isBanner ? 'resDataBanner.js' : 'resData.js'
   };
-  return new Promise(function (resolve, reject) {
+  return new Promise(function (resolve) {
     fs.readFile(fsPath.join(__dirname, path.src, '/images/'+ files.config), 'utf8', function (err, data) {
       if( err ) return resolve(err);
-      if( !data ) return resolve();
+      if( !data ) return resolve("no data");
 
       data = JSON.parse(data);
 
@@ -270,8 +273,9 @@ function createConfigFile(isBanner) {
 }
 
 //清空res和mc
-function clearRES(done) {
-  ['resData', 'resDataBanner'].forEach(function (name) {
+function clearRES(done, errors) {
+  ['resData', 'resDataBanner'].forEach(function (name, i) {
+    if( errors[i] ) return false;
     fs.writeFileSync(fsPath.join(__dirname, path.src, '/js/' + name + '.js'), "");
   });
   done();

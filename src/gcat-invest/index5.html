@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>大开沙界</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript">
+        (function(){
+            var phoneWidth = parseInt(window.screen.width);
+            var phoneScale = phoneWidth/750;
+
+            var ua = navigator.userAgent;
+            if (/Android (\d+\.\d+)/.test(ua)) {
+                var version = parseFloat(RegExp.$1);
+                // andriod 2.3
+                if (version > 2.3) {
+                    document.write('<meta name="viewport" content="width=750, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+                    // andriod 2.3以上
+                } else {
+                    document.write('<meta name="viewport" content="width=750, target-densitydpi=device-dpi">');
+                }
+                // 其他系统
+            } else {
+                if(navigator.userAgent.indexOf("iPhone") != -1) {
+                    document.write('<meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">');
+                }else if(navigator.userAgent.indexOf("iPad") != -1) {
+                    document.write('<meta name="viewport" content="width=1024, user-scalable=no, target-densitydpi=device-dpi">');
+                }
+            }
+        })();
+    </script>
+</head>
+
+<body>
+<div class="wapper sec-second">
+
+    <div class="wp-header">
+        <span class="skip-link">skip</span>
+        <h1>第2部分，共4部分</h1>
+    </div>
+
+    <div class="content">
+
+        <div class="cn-header">
+            <span class="hd-legend"><i class="icons-10"></i>生活习惯</span>
+        </div>
+
+        <div class="subject-item">
+            <h2 class="subject-title">你有运动习惯吗?</h2>
+            <div class="subject-main">
+                <div class="subject-icon">
+                    <i class="icons-11"></i>
+                </div>
+                <div class="subject-list">
+                    <button class="sb-btn">基本不运动</button>
+                    <button class="sb-btn">1周1次</button>
+                    <button class="sb-btn brown">1周3次</button>
+                    <button class="sb-btn">每天运动</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="subject-item">
+            <h2 class="subject-title">排便几天一次?</h2>
+            <div class="subject-main">
+                <div class="subject-icon">
+                    <i class="icons-12"></i>
+                </div>
+                <div class="subject-list">
+                    <button class="sb-btn">每天1次</button>
+                    <button class="sb-btn">2天一次</button>
+                    <button class="sb-btn">不规律有便秘</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="cur"></span>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,20 +1,16 @@
-/* line 1, ../sass/global.scss */
 html {
   font-size: 100%;
 }
 
-/* line 5, ../sass/global.scss */
 html, body {
   height: 100%;
 }
 
-/* line 9, ../sass/global.scss */
 h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, pre, p, fieldset, legend, form, input, button, textarea, th, td {
   margin: 0;
   padding: 0;
 }
 
-/* line 14, ../sass/global.scss */
 body {
   margin: 0;
   font-family: 'Microsoft yahei', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,7 +20,6 @@ body {
 }
 
 /* general body settings */
-/* line 23, ../sass/global.scss */
 input,
 button,
 select,
@@ -34,7 +29,6 @@ textarea {
   line-height: inherit;
 }
 
-/* line 32, ../sass/global.scss */
 a:focus,
 input:focus,
 button:focus,
@@ -43,7 +37,6 @@ select:focus {
   outline: 0;
 }
 
-/* line 40, ../sass/global.scss */
 *, *:after, *:before {
   -webkit-tap-highlight-color: transparent;
   -webkit-box-sizing: border-box;
@@ -51,57 +44,47 @@ select:focus {
   box-sizing: border-box;
 }
 
-/* line 47, ../sass/global.scss */
 .clearfix:before,
 .clearfix:after {
   display: table;
   content: " ";
 }
 
-/* line 53, ../sass/global.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 57, ../sass/global.scss */
 a {
   color: #337ab7;
   text-decoration: none;
 }
 
-/* line 62, ../sass/global.scss */
 a:hover,
 a:focus {
   text-decoration: none;
 }
 
-/* line 67, ../sass/global.scss */
 fieldset, img {
   border: 0;
 }
 
-/* line 71, ../sass/global.scss */
 input, button, select, label, img {
   vertical-align: middle;
 }
 
-/* line 75, ../sass/global.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-size: inherit;
 }
 
-/* line 80, ../sass/global.scss */
 ul, ol {
   list-style: none;
 }
 
-/* line 84, ../sass/global.scss */
 i, cite, em {
   font-style: normal;
 }
 
-/* line 88, ../sass/global.scss */
 label {
   font-weight: 400;
   -webkit-user-select: none;
@@ -109,7 +92,6 @@ label {
   -ms-user-select: none;
 }
 
-/* line 95, ../sass/global.scss */
 hr {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -117,52 +99,43 @@ hr {
   border-top: 1px solid #eee;
 }
 
-/* line 102, ../sass/global.scss */
 textarea {
   overflow: auto;
   resize: none;
 }
 
-/* line 107, ../sass/global.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #ccc;
 }
 
-/* line 112, ../sass/global.scss */
 table {
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-/* line 117, ../sass/global.scss */
 .pull-left {
   float: left;
 }
 
-/* line 121, ../sass/global.scss */
 .pull-right {
   float: right;
 }
 
-/* line 125, ../sass/global.scss */
 .img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 131, ../sass/global.scss */
 .img-circle {
   border-radius: 50%;
 }
 
-/* line 135, ../sass/global.scss */
 .img-rounded {
   border-radius: 6px;
 }
 
-/* line 139, ../sass/global.scss */
 .bage {
   display: inline-block;
   min-width: 1.6em;
@@ -178,7 +151,6 @@ table {
 }
 
 /*=====icons=====*/
-/* line 155, ../sass/global.scss */
 [class^="icon-"],
 [class*="icon-"] {
   position: relative;
