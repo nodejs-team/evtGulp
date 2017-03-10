@@ -135,7 +135,11 @@
                         {{if data.datetime}}
                         <select data-code="{{data.questionCode}}" data-value="0" data-plain="true" class="input-style wd-8">
                             {{each year}}
-                            <option value="{{$value}}">{{$value}}</option>
+                                {{if $value == 1985}}
+                                <option value="{{$value}}" selected>{{$value}}</option>
+                                {{else}}
+                                <option value="{{$value}}">{{$value}}</option>
+                                {{/if}}
                             {{/each}}
                         </select>
                         <label>年</label>

@@ -156,7 +156,8 @@ var investConfig = [
                     icon: "icons-18",
                     text: "我是汉子<br>I AM A BOY",
                     value: "M",
-                    theme: "pink"
+                    theme: "gray",
+                    gridClassName: "active"
                 },{
                     icon: "icons-19",
                     text: "我是妹子<br>I AM A GIRL",
@@ -174,8 +175,8 @@ var investConfig = [
                     icon: "icons-20",
                     text: "正常",
                     value: "1",
-                    theme: "pink",
-                    gridClassName: "grid-item-block"
+                    theme: "gray",
+                    gridClassName: "grid-item-block active"
                 },{
                     icon: "icons-21",
                     text: "偏长型",
@@ -205,7 +206,7 @@ var investConfig = [
             {
                 "questionCode": "11.1",
                 "questionId": "10005574",
-                "itemValue": null,
+                "itemValue": "1985-01-01",
                 "title": "您的生日是?",
                 "datetime": true
             },

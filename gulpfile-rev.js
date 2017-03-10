@@ -193,9 +193,12 @@ var buildCss = lazypipe().pipe(cssmin);
 
 //基于配置合并路径
 gulp.task('useref', function (done) {
-  createConfigFile(false).then(function () {
+  var errors = [];
+  createConfigFile(false).then(function (err) {
+    errors[0] = err;
     return createConfigFile(true)
-  }).then(function () {
+  }).then(function (err) {
+    errors[1] = err;
     gulp.src(path.srcHtml)
       .pipe(useref())
       .pipe(gulpif('*.html', buildHtml()))
@@ -203,7 +206,7 @@ gulp.task('useref', function (done) {
       .pipe(gulpif('*.css', buildCss()))
       .pipe(gulp.dest(path.tmp))
       .on("end", function () {
-        clearRES(done);
+        clearRES(done, errors);
       });
   });
 });
@@ -216,7 +219,7 @@ function createConfigFile(isBanner) {
   return new Promise(function (resolve, reject) {
     fs.readFile(fsPath.join(__dirname, path.src, '/images/'+ files.config), 'utf8', function (err, data) {
       if( err ) return resolve(err);
-      if( !data ) return resolve();
+      if( !data ) return resolve("no data");
 
       data = JSON.parse(data);
 
@@ -284,8 +287,9 @@ function createConfigFile(isBanner) {
 }
 
 //清空res和mc
-function clearRES(done) {
-  ['resData', 'resDataBanner'].forEach(function (name) {
+function clearRES(done, errors) {
+  ['resData', 'resDataBanner'].forEach(function (name, i) {
+    if( errors[i] ) return false;
     fs.writeFileSync(fsPath.join(__dirname, path.src, '/js/' + name + '.js'), "");
   });
   done();
