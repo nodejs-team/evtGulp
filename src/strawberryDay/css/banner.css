@@ -1,0 +1,43 @@
+.evt-container {
+  background: url("../images/banner/bg.jpg") repeat;
+}
+
+.evt-content {
+  /* addon css code goes here */
+  height: 550px;
+}
+
+.evt-content .clod-1 {
+  top: 0;
+  left: -30px;
+}
+
+.evt-content .clod-2 {
+  top: 0;
+  left: 687px;
+}
+
+.evt-content .title {
+  top: 10px;
+  left: 264px;
+}
+
+.evt-content .basket {
+  top: 390px;
+  left: 40px;
+}
+
+.evt-content .cake {
+  top: 305px;
+  left: 266px;
+}
+
+.evt-content .caomei_a {
+  top: 172px;
+  left: 562px;
+}
+
+.evt-content .caomei_b {
+  top: 119px;
+  left: 38px;
+}

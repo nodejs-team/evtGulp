@@ -1,0 +1,185 @@
+.evt-container {
+  background: url("../images/bg.jpg") repeat;
+}
+
+.evt-content {
+  height: 100%;
+}
+
+.evt-content .item {
+  position: absolute;
+}
+
+.section1 {
+  height: 846px;
+}
+
+.section1 .q1 {
+  top: 47px;
+  left: 293px;
+}
+
+.section1 .freak1 {
+  top: 196px;
+  left: -34px;
+}
+
+.section1 .freak1-ying {
+  top: 509px;
+  left: 10px;
+}
+
+.section1 .q2 {
+  top: 367px;
+  left: 216px;
+}
+
+.section1 .freak2 {
+  top: 168px;
+  left: 527px;
+}
+
+.section1 .q3 {
+  top: 614px;
+  left: 323px;
+}
+
+.section2 {
+  height: 1299px;
+  z-index: 8;
+}
+
+.section2 .evt-content {
+  background: url("../images/beautify-1.png") center center;
+  background-size: 100%;
+}
+
+.section2 .word1 {
+  top: 269px;
+  left: 10px;
+}
+
+.section2 .word2 {
+  top: 746px;
+  left: 607px;
+}
+
+.section2 .word3 {
+  top: 1143px;
+  left: 87px;
+  z-index: 9;
+}
+
+.section2 .samllfreak1 {
+  top: 124px;
+  left: 914px;
+  z-index: 2;
+}
+
+.section2 .samllfreak2 {
+  top: 471px;
+  left: 433px;
+}
+
+.section2 .samllfreak3 {
+  top: 961px;
+  left: 776px;
+  z-index: 8;
+}
+
+.section2 .cake2 {
+  top: 121px;
+  left: 533px;
+  z-index: 1;
+}
+
+.section2 .cake3 {
+  top: 545px;
+  left: -27px;
+}
+
+.section2 .cake4 {
+  top: 915px;
+  left: 255px;
+  z-index: 5;
+}
+
+.section3 {
+  height: 1359px;
+  z-index: 1;
+}
+
+.section3 .evt-content {
+  background: url("../images/beautify-2.png") center center;
+  background-size: 100%;
+}
+
+.section3 .word4 {
+  top: 295px;
+  left: 504px;
+}
+
+.section3 .word5 {
+  top: 816px;
+  left: 112px;
+}
+
+.section3 .samllfreak4 {
+  top: 218px;
+  left: 357px;
+  z-index: 1;
+}
+
+.section3 .samllfreak5 {
+  top: 712px;
+  left: 278px;
+  z-index: 2;
+}
+
+.section3 .cake5 {
+  top: 92px;
+  left: -84px;
+  z-index: 8;
+}
+
+.section3 .cake6 {
+  top: 692px;
+  left: 483px;
+}
+
+.section3 .freak3 {
+  top: 1033px;
+  left: -59px;
+}
+
+.evt-footer {
+  position: relative;
+  background-color: #3a2015;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.evt-footer .evt-rules {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 2;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
