@@ -7,7 +7,7 @@ ul, ol {
 }
 
 body {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 #evt_loading {

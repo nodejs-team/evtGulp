@@ -1,21 +1,18 @@
 {
- "project": "Gulp",
- "localserver": {
-  "host": "localhost",
-  "port": "8081"
- },
- "tinypngapi": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
- "ftp": {
-  "host": "",
-  "user": "",
-  "pass": "",
-  "remotePath": ""
- },
-<<<<<<< HEAD
- "projectName": "strawberryDay",
- "revPrefix": "http://edm.mcake.com/fangli/2017/"
-=======
- "projectName": "gcat-invest",
- "revPrefix": "http://edm.mcake.com/shuxy/2017/"
->>>>>>> d38829f7b4f966e81ec327684187abb90f326107
+  "project": "Gulp",
+  "localserver": {
+   "host": "localhost",
+   "port": "8081"
+  },
+  "tinypngapi": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
+  "ftp": {
+   "host": "",
+   "user": "",
+   "pass": "",
+   "remotePath": ""
+  },
+
+  "projectName": "strawberryDay",
+  "revPrefix": "http://edm.mcake.com/fangli/2017/"
+
 }
