@@ -1,0 +1,65 @@
+.evt-container {
+  background: #cedce2;
+  overflow: hidden;
+}
+
+.evt-content {
+  /* addon css code goes here */
+  height: 550px;
+}
+
+.evt-content .b-bg1 {
+  top: 38px;
+  left: 44px;
+}
+
+.evt-content .b-bg2 {
+  top: 0;
+  left: 370px;
+}
+
+.evt-content .b-title {
+  top: 35px;
+  left: 419px;
+}
+
+.evt-content .across {
+  top: 300px;
+  left: 593px;
+  width: 20px;
+}
+
+.evt-content .b-role {
+  top: 120px;
+  left: -38px;
+}
+
+.evt-content .cake {
+  top: 201px;
+  left: 79px;
+}
+
+.evt-content .girl-a {
+  top: 30px;
+  left: 110px;
+}
+
+.evt-content .girl-b {
+  top: 211px;
+  left: 797px;
+}
+
+.evt-content .zjyou {
+  top: 350px;
+  left: 710px;
+}
+
+.alink {
+  width: 100%;
+  height: 550px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}

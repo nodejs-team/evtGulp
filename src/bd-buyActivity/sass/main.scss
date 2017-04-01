@@ -1,0 +1,76 @@
+.evt-container{
+  background: #dce7ea;
+}
+.item{ position: absolute;}
+.evt-content{
+
+  height: 100%;
+
+}
+.section-head{
+  height: 635px;
+  background: #d3dfe4 url("../images/line1.jpg") center bottom no-repeat;
+  .title{  top:-97px;  left:206px;}
+  .cake{  top:364px;  left:259px;}
+  .across1{  top:282px;  left:506px;}
+}
+
+.section-main{
+  height: 1406px;
+  background: #dce7ea;
+  .mbg1{padding-top: 30px;}
+  .s-cake1{ top: 97px; left: 119px;}
+  .s-cake2{ top: 200px; left: 480px;z-index: 3;}
+  .s-cake3{ top: 529px; left: 40px;z-index: 3;}
+  .s-cake4{ top: 610px; left: 525px;}
+  .s-cake5{ top: 696px; left: 741px;}
+
+  .girl1{ top: 3px; left: 139px;}
+  .girl2{ top: 346px; left:770px; z-index: 1;}
+  .girl3{ top: 341px; left: 232px;}
+  .girl4{ top: 744px; left: 332px; z-index: 1;}
+  .girl5{ top: 891px; left: 755px; }
+
+  .word1{ top: 30px; left: 699px;}
+  .word2{ top: 522px; left: 434px;}
+
+  .across{ top: 950px; left: 532px;}
+  .zuan1{ top: 1090px; left: 59px;}
+  .word3{ top: 1013px; left: 354px;}
+  .zuan2{ top: 1059px; left: 759px;}
+
+  .girl{top: 0; left: 0;}
+
+}
+
+
+.evt-footer{
+  height: 378px;
+  position: relative;
+  background: #fff url("../images/line2.jpg") center top no-repeat;
+  z-index: 10;
+
+  .footer-bd{
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+  }
+
+  .evt-rules{
+    padding-left:138px;
+    padding-top:130px;
+    color:#3a4646;
+    h2{
+      font-size:15px;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size:15px;
+      line-height: 1.5;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+  }
+}
+
+

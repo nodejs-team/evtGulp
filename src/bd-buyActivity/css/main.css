@@ -1,0 +1,160 @@
+.evt-container {
+  background: #dce7ea;
+}
+
+.item {
+  position: absolute;
+}
+
+.evt-content {
+  height: 100%;
+}
+
+.section-head {
+  height: 635px;
+  background: #d3dfe4 url("../images/line1.jpg") center bottom no-repeat;
+}
+
+.section-head .title {
+  top: -97px;
+  left: 206px;
+}
+
+.section-head .cake {
+  top: 364px;
+  left: 259px;
+}
+
+.section-head .across1 {
+  top: 282px;
+  left: 506px;
+}
+
+.section-main {
+  height: 1406px;
+  background: #dce7ea;
+}
+
+.section-main .mbg1 {
+  padding-top: 30px;
+}
+
+.section-main .s-cake1 {
+  top: 97px;
+  left: 119px;
+}
+
+.section-main .s-cake2 {
+  top: 200px;
+  left: 480px;
+  z-index: 3;
+}
+
+.section-main .s-cake3 {
+  top: 529px;
+  left: 40px;
+  z-index: 3;
+}
+
+.section-main .s-cake4 {
+  top: 610px;
+  left: 525px;
+}
+
+.section-main .s-cake5 {
+  top: 696px;
+  left: 741px;
+}
+
+.section-main .girl1 {
+  top: 3px;
+  left: 139px;
+}
+
+.section-main .girl2 {
+  top: 346px;
+  left: 770px;
+  z-index: 1;
+}
+
+.section-main .girl3 {
+  top: 341px;
+  left: 232px;
+}
+
+.section-main .girl4 {
+  top: 744px;
+  left: 332px;
+  z-index: 1;
+}
+
+.section-main .girl5 {
+  top: 891px;
+  left: 755px;
+}
+
+.section-main .word1 {
+  top: 30px;
+  left: 699px;
+}
+
+.section-main .word2 {
+  top: 522px;
+  left: 434px;
+}
+
+.section-main .across {
+  top: 950px;
+  left: 532px;
+}
+
+.section-main .zuan1 {
+  top: 1090px;
+  left: 59px;
+}
+
+.section-main .word3 {
+  top: 1013px;
+  left: 354px;
+}
+
+.section-main .zuan2 {
+  top: 1059px;
+  left: 759px;
+}
+
+.section-main .girl {
+  top: 0;
+  left: 0;
+}
+
+.evt-footer {
+  height: 378px;
+  position: relative;
+  background: #fff url("../images/line2.jpg") center top no-repeat;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.evt-footer .evt-rules {
+  padding-left: 138px;
+  padding-top: 130px;
+  color: #3a4646;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 15px;
+  line-height: 1.5;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

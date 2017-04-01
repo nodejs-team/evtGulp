@@ -1,0 +1,25 @@
+{
+  "name": "evtgulp-template",
+  "version": "1.0.0",
+  "description": "template for mcake activities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejs-team/evtGulp-template.git"
+  },
+  "keywords": [
+    "html",
+    "css3",
+    "javascript",
+    "gulp"
+  ],
+  "author": "semdy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodejs-team/evtGulp-template/issues"
+  },
+  "homepage": "https://github.com/nodejs-team/evtGulp-template#readme"
+}
