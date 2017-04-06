@@ -8,17 +8,16 @@ ul,ol{list-style: none;}
     height:600px;
 }
 
-.evt_spin{
-    position:fixed;
-    top:50%;
-    right:50%;
-    margin-top:-10px;
-    margin-right:-100px;
-    width:200px;
-    text-align:center;
-    font-size:18px;
-  z-index: 5;
-    font-family: "Microsoft YaHei", Tahoma, Arial;
+#evt_spin{
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-top:-10px;
+  margin-left:-100px;
+  width:200px;
+  text-align:center;
+  font-size:18px;
+  font-family: "Microsoft YaHei", Tahoma, Arial;
 }
 
 .evt-container{

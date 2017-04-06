@@ -48,7 +48,7 @@
     goodsAnimate.prototype = {
         _init: function () {
             var self = this;
-            self.$className.find(".cake").hover(function () {
+            self.$className.hover(function () {
                 self.overEvent($(this));
             }, function () {
                 self.outEvent($(this));
@@ -56,30 +56,43 @@
         },
         overEvent: function (ele) {
             var self = this;
-            ele.stop().animate({
+            ele.find(".cake").stop().animate({
                 marginLeft: self.marginLeft
             }, 200);
-            ele.siblings('.word').stop().animate({
+            ele.find('.word').stop().animate({
                 marginTop: '0',
                 opacity: 1
             }, 300);
         },
         outEvent: function (ele) {
             var self = this;
-            ele.stop().animate({
+            ele.find(".cake").stop().animate({
                 marginLeft: '0'
             }, 200);
-            ele.siblings('.word').stop().animate({
+            ele.find('.word').stop().animate({
                 marginTop: self.marginTop,
                 opacity: 0
             }, 300);
         }
     };
 
+    var animates = {
+        floader:function(){
+            var mc = new MovieClip('floader_png', "floader_json", 'el_floader');
+            mc.gotoAndPlay(1, -1);
+            return mc;
+        },
+        bdf:function(){
+            var mc = new MovieClip('bdf_png', "bdf_json", 'el_bdf');
+            mc.gotoAndPlay(1, -1);
+            return mc;
+        }
+    };
+
 
     var loadComplete = function () {
         var winW = $(document).width();
-        var floaderW = $('.cloud img').width();
+        var clouderW = $('.cloud img').width();
 
         if (isSupportCss3) {
             /* alert("支持css3")
@@ -88,14 +101,14 @@
             /*alert("不支持")*/
             new clouder({
                 className: "#cloud-1",
-                start: -floaderW,
+                start: -clouderW,
                 end: winW,
                 duration: 20000
             });
             new clouder({
                 className: "#cloud-2",
                 start: winW,
-                end: -floaderW,
+                end: -clouderW,
                 duration: 15000
             });
             new goodsAnimate({
@@ -114,7 +127,14 @@
                 marginTop: '5%'
             });
         }
+
+
+
+        animates.floader();
+        animates.bdf();
+
     };
+
 
     var loadResource = function () {
         if (typeof resData == 'object' && Array.isArray(resData.resources) && resData.resources.length > 0) {
@@ -135,21 +155,18 @@
 
             loader.on("progress", function (loaded, total) {
                 //spin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
+
             });
 
             loader.on("complete", function () {
                 setTimeout(function () {
-                    $("#evt_spin").animate({
-                        top: "100px",
-                        right: '6%'
-                    }, 1000, function () {
-                        $("#icon-2").fadeIn(500);
-                        Resource.el('#evt_loading').style.display = "none";
-                        Resource.el('#evt_container').style.display = 'block';
-                        correctPNG($('#evt_container').get(0));
-                        bindScroll('#evt_container');
-                        loadComplete();
-                    });
+
+                    //$("#icon-2").fadeIn(500);
+                    $('#evt_loading').fadeOut(500);
+                    $('#evt_container').fadeIn(500);
+                    correctPNG($('#evt_container').get(0));
+                    bindScroll('#evt_container');
+                    loadComplete();
                     // $("#evt_spin").addClass("fixed");
                 }, 2000);
             });

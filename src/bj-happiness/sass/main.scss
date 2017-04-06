@@ -1,27 +1,27 @@
-.fixed{left: auto; top: 100px; right: 0; z-index: 5;
-  margin-top:0;
-  margin-right:0;
-  transition: all 2s ease;
+
+.floader{
+   position: fixed; right: 120px; top: 395px; z-index: 5;
 }
-.evt_spin{
-  .icon-container{position: relative}
-  .icon-2{position:absolute; bottom: 0; left: 0; display: none;}
-}
+
+
 .evt-container{overflow: hidden;}
-.cloud{  width: 100%;  position:absolute;  top: -10px;  left: 0;  z-index: 3; }
+.cloud{  width: 100%;  position:absolute;  top: 20px;  left: 0;  }
 .cloud-1{
+  top: 111px;  z-index: 3;
   -webkit-animation: cloudAnimate-1 20s linear infinite;
   animation: cloudAnimate-1 20s linear infinite;
 }
 .cloud-2{
+  top: 125px; z-index: 2;
   -webkit-animation: cloudAnimate-2 20s linear infinite;
   animation: cloudAnimate-2 20s linear infinite;
 }
 
 .sec-1{
-  height: 1050px; z-index: 1;
+  height: 1050px; z-index: 5;
   .evt-content{
-    .s-title{ top: 42px; left: -90px; z-index: 1;}
+    .venez{ top: 42px; left: 352px; z-index: 1;}
+    .s-title{ top:160px; left: -90px; z-index: 5;}
     .s-cake{ top: 506px; left: 85px;}
     .word-tips{ top: 895px; left: 237px;}
     .acrow{ top: 987px; left: 490px;}
@@ -81,33 +81,33 @@
   }
 }
 .sec-3{
-
+  .evt-content{ height: 650px;}
+  .conductor{ position: absolute; top: -229px; left: 0px;}
 }
 
-
-
 .evt-footer{
+  margin-top: -130px;
   position: relative;
-  background-color: #fff;
   z-index: 10;
-
+  .evt-content{ width: 1024px; height: 459px; background: url("../images/guize-bg.png") 0px 20px no-repeat;}
   .footer-bd{
+    padding-top: 148px;
     position: relative;
     width:1000px;
     margin:0 auto;
   }
 
   .evt-rules{
-    padding-left:138px;
+    padding-left:120px;
     padding-top:30px;
-    color:#907e59;
+    color:#000;
     h2{
       font-size:18px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
     }
     p{
       font-size:16px;
-      line-height: 1.5;
+      line-height: 1.8;
       padding-left: 1.5em;
       text-indent: -1.5em;
     }

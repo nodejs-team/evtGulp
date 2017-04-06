@@ -1,24 +1,9 @@
 {
 	"groups":[{
-			"keys":"icon-1_png,icon-2_png,line_png,s-title_png,word-tips_png,acrow_png,cake-0_png,conductor_png,goods-cake-1_png,goods-cake-2_png,goods-cake-3_png,goods-word-1_png,goods-word-2_png,goods-word-3_png,guize-bg_png,icon_png",
+			"keys":"s-title_png,word-tips_png,acrow_png,bdf_json,cake-0_png,cloud-1_png,cloud-2_png,conductor_png,doudou_png,floader_json,goods-cake-1_png,goods-cake-2_png,goods-cake-3_png,goods-word-1_png,goods-word-2_png,goods-word-3_png,guize-bg_png,icon_gif,line_png",
 			"name":"preload"
 		}],
 	"resources":[
-		{
-			"name":"icon-1_png",
-			"type":"image",
-			"url":"icon-1.png"
-		},
-		{
-			"name":"icon-2_png",
-			"type":"image",
-			"url":"icon-2.png"
-		},
-		{
-			"name":"line_png",
-			"type":"image",
-			"url":"line.png"
-		},
 		{
 			"name":"s-title_png",
 			"type":"image",
@@ -35,14 +20,41 @@
 			"url":"acrow.png"
 		},
 		{
+			"name":"bdf_json",
+			"subkeys":"bdf_00000,bdf_00001,bdf_00002,bdf_00003,bdf_00004,bdf_00005,bdf_00006,bdf_00007,bdf_00008,bdf_00009,bdf_00010,bdf_00011,bdf_00012,bdf_00013,bdf_00014,bdf_00015,bdf_00016,bdf_00017,bdf_00018,bdf_00019,bdf_00020,bdf_00021,bdf_00022,bdf_00023,bdf_00024,bdf_00025,bdf_00026,bdf_00027,bdf_00028,bdf_00029",
+			"type":"sheet",
+			"url":"bdf.json"
+		},
+		{
 			"name":"cake-0_png",
 			"type":"image",
 			"url":"cake-0.png"
 		},
 		{
+			"name":"cloud-1_png",
+			"type":"image",
+			"url":"cloud-1.png"
+		},
+		{
+			"name":"cloud-2_png",
+			"type":"image",
+			"url":"cloud-2.png"
+		},
+		{
 			"name":"conductor_png",
 			"type":"image",
 			"url":"conductor.png"
+		},
+		{
+			"name":"doudou_png",
+			"type":"image",
+			"url":"doudou.png"
+		},
+		{
+			"name":"floader_json",
+			"subkeys":"icon_00000,icon_00001,icon_00002,icon_00003,icon_00004,icon_00005,icon_00006,icon_00007,icon_00008,icon_00009,icon_00010,icon_00011,icon_00012,icon_00013,icon_00014,icon_00015,icon_00016,icon_00017,icon_00018,icon_00019,icon_00020,icon_00021,icon_00022,icon_00023,icon_00024,icon_00025,icon_00026,icon_00027,icon_00028,icon_00029",
+			"type":"sheet",
+			"url":"floader.json"
 		},
 		{
 			"name":"goods-cake-1_png",
@@ -80,9 +92,14 @@
 			"url":"guize-bg.png"
 		},
 		{
-			"name":"icon_png",
+			"name":"icon_gif",
 			"type":"image",
-			"url":"icon.png"
+			"url":"icon.gif"
+		},
+		{
+			"name":"line_png",
+			"type":"image",
+			"url":"line.png"
 		}
 	]
 }
