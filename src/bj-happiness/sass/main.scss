@@ -1,20 +1,23 @@
 
 .floader{
-   position: fixed; right: 120px; top: 395px; z-index: 5;
+   position: fixed; right: 120px; top: 395px; z-index: 10;
+   -webkit-animation: bounceIn 1s 0s linear infinite alternate;
+   animation: bounceIn 1s 0s linear infinite alternate;
+
 }
 
 
 .evt-container{overflow: hidden;}
 .cloud{  width: 100%;  position:absolute;  top: 20px;  left: 0;  }
 .cloud-1{
-  top: 111px;  z-index: 3;
-  -webkit-animation: cloudAnimate-1 20s linear infinite;
-  animation: cloudAnimate-1 20s linear infinite;
+  top: 70px;  z-index: 3;
+  -webkit-animation: cloudAnimate-1 50s linear infinite;
+  animation: cloudAnimate-1 50s linear infinite;
 }
 .cloud-2{
-  top: 125px; z-index: 2;
-  -webkit-animation: cloudAnimate-2 20s linear infinite;
-  animation: cloudAnimate-2 20s linear infinite;
+  top: 125px; z-index: 4;
+  -webkit-animation: cloudAnimate-2 52s linear infinite;
+  animation: cloudAnimate-2 52s linear infinite;
 }
 
 .sec-1{
@@ -76,8 +79,8 @@
   }
   .goods-3{
     .cake{top: 72px; left:164px;transition: transform 200ms ease 0s; }
-    .word{top: 116px; left: 542px;}
-    .doudou{top: 255px; left: 588px;}
+    .word{top: 116px; left: 542px; z-index: 2;}
+    .doudou{top: 255px; left: 588px; z-index: 1;}
   }
 }
 .sec-3{
@@ -88,7 +91,7 @@
 .evt-footer{
   margin-top: -130px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
   .evt-content{ width: 1024px; height: 459px; background: url("../images/guize-bg.png") 0px 20px no-repeat;}
   .footer-bd{
     padding-top: 148px;
@@ -117,17 +120,23 @@
 @-webkit-keyframes cloudAnimate-1 {
   0%{
     opacity: 0;
-    -webkit-transform: translate3d(-200px,0,0);
+    -webkit-transform: translate3d(-10%,0,0);
   }
-  20%{
+  2%{
+    opacity: 0;
+  }
+  30%{
     opacity: 1;
   }
-  80%{
+  70%{
     opacity: 1;
+  }
+  98%{
+    opacity: 0;
   }
   100%{
     opacity: 0;
-    -webkit-transform: translate3d(1900px,0,0);
+    -webkit-transform: translate3d(100%,0,0);
   }
 }
 
@@ -136,11 +145,17 @@
     opacity: 0;
     transform: translate3d(-10%,0,0);
   }
-  20%{
+  2%{
+    opacity: 0;
+  }
+  30%{
     opacity: 1;
   }
-  80%{
+  70%{
     opacity: 1;
+  }
+  98%{
+    opacity: 0;
   }
   100%{
     opacity: 0;
@@ -151,17 +166,23 @@
 @-webkit-keyframes cloudAnimate-2 {
   0%{
     opacity: 0;
-    transform: translate3d(100%,0,0);
+    -webkit-transform: translate3d(100%,0,0);
   }
-  20%{
+  2%{
+    opacity: 0;
+  }
+  30%{
     opacity: 1;
   }
-  80%{
+  70%{
     opacity: 1;
+  }
+  98%{
+    opacity: 0;
   }
   100%{
     opacity: 0;
-    transform: translate3d(-10%,0,0);
+    -webkit-transform:translate3d(-10%,0,0);
   }
 }
 @keyframes cloudAnimate-2 {
@@ -169,14 +190,29 @@
     opacity: 0;
     transform: translate3d(100%,0,0);
   }
-  20%{
+  2%{
+    opacity: 0;
+  }
+  30%{
     opacity: 1;
   }
-  80%{
+  70%{
     opacity: 1;
+  }
+   98%{
+    opacity: 0;
   }
   100%{
     opacity: 0;
     transform: translate3d(-10%,0,0);
   }
+}
+@-webkit-keyframes bounceIn {
+  0% {-webkit-transform: translate3d(0,-5%,0)}
+  100% {-webkit-transform: translate3d(0,3%,0)}
+}
+@keyframes bounceIn {
+
+  0% {transform: translate3d(0,-5%,0)}
+  100% {transform: translate3d(0,3%,0)}
 }

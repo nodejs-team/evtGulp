@@ -77,28 +77,66 @@
     };
 
     var animates = {
-        floader:function(){
-            var mc = new MovieClip('floader_png', "floader_json", 'el_floader');
-            mc.gotoAndPlay(1, -1);
-            return mc;
-        },
+
         bdf:function(){
             var mc = new MovieClip('bdf_png', "bdf_json", 'el_bdf');
             mc.gotoAndPlay(1, -1);
             return mc;
         }
     };
+    function initTopIcon(){
+        var icon = $('.floader');
+            winWidth = $(window).width();
+        /*icon.css('top', 395 * (winWidth<1280? 1280 : winWidth) / 1920);*/
+        if(winWidth<1400){
+            icon.css({'top':'40px','right':'0','position':'absolute'});
+        }
+
+
+    }
+
+    function Floader(ele,start,end) {
+
+        var $eles = $(ele);
+        function reset(ele) {
+            ele.animate({
+                top: start
+            });
+        }
+        function doAnimate(ele) {
+            ele.animate(
+                {
+                    top: end
+                }, {
+                    duration: 1000, /*动画持续时间*/
+                    easing: 'linear',
+                    complete: function () {
+                        setTimeout(function () {
+                            reset($eles);
+                            doAnimate($eles);
+                        }, 100);  /*间隔时间*/
+                    }
+                });
+        }
+
+        reset($eles);
+        setTimeout(doAnimate($eles), 100);
+    };
 
 
     var loadComplete = function () {
+        initTopIcon();
+        animates.bdf();
         var winW = $(document).width();
         var clouderW = $('.cloud img').width();
+        var floaderTop = $(".floader").offset().top;
+
 
         if (isSupportCss3) {
-            /* alert("支持css3")
-             css3animate();*/
+            /* alert("支持css3")*/
         } else {
-            /*alert("不支持")*/
+            /*alert("不支持")*//*alert("不支持")*/
+
             new clouder({
                 className: "#cloud-1",
                 start: -clouderW,
@@ -111,6 +149,8 @@
                 end: -clouderW,
                 duration: 15000
             });
+
+
             new goodsAnimate({
                 className: '.goods-1',
                 marginLeft: "-8%",
@@ -126,12 +166,11 @@
                 marginLeft: '-10%',
                 marginTop: '5%'
             });
+
+            Floader('.floader',floaderTop-10,floaderTop+10);
         }
 
 
-
-        animates.floader();
-        animates.bdf();
 
     };
 
@@ -151,24 +190,20 @@
 
         function startLoader(data) {
             var loader = new Resource.loadGroup("preload", data);
-            var spin = Resource.el('#evt_spin');
+            var spin = Resource.el('#spin');
 
             loader.on("progress", function (loaded, total) {
-                //spin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
+                spin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
 
             });
 
             loader.on("complete", function () {
-                setTimeout(function () {
+                $('#evt_loading').fadeOut(100);
+                $('#evt_container').fadeIn(800);
+                correctPNG($('#evt_container').get(0));
+                bindScroll('#evt_container');
+                loadComplete();
 
-                    //$("#icon-2").fadeIn(500);
-                    $('#evt_loading').fadeOut(500);
-                    $('#evt_container').fadeIn(500);
-                    correctPNG($('#evt_container').get(0));
-                    bindScroll('#evt_container');
-                    loadComplete();
-                    // $("#evt_spin").addClass("fixed");
-                }, 2000);
             });
         }
 

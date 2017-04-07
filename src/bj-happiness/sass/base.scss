@@ -11,10 +11,22 @@ ul,ol{list-style: none;}
 #evt_spin{
   position:absolute;
   left:50%;
-  top:50%;
-  margin-top:-10px;
+  top:87%;
+  margin-top:-90px;
   margin-left:-100px;
   width:200px;
+  text-align:center;
+  font-size:18px;
+  font-family: "Microsoft YaHei", Tahoma, Arial;
+}
+
+#loading{
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-top:-98px;
+  margin-left:-94px;
+  width:188px;
   text-align:center;
   font-size:18px;
   font-family: "Microsoft YaHei", Tahoma, Arial;
