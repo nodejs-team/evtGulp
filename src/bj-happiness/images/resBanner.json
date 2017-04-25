@@ -1,0 +1,18 @@
+{
+	"groups":[{
+			"keys":"banenr_jpg,banner-icon_png",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"banenr_jpg",
+			"type":"image",
+			"url":"banner/banenr.jpg"
+		},
+		{
+			"name":"banner-icon_png",
+			"type":"image",
+			"url":"banner/banner-icon.png"
+		}
+	]
+}

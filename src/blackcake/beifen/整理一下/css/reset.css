@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+@font-face {
+	/*font-family: 'sans';
+	src: url('../font/sans.otf'); */
+   }
+*{word-wrap:break-word}
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset{margin:0;padding:0}
+ul,ol,dl{list-style-type:none}
+html,body{*position:static}
+html{font-family: sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button{overflow: visible;vertical-align:middle;outline:none}
+body,th,td,button,input,select,textarea{font-family:"Hiragino Sans GB","sans","Microsoft Yahei","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";font-size:100%;color: #333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing:grayscale}
+body{line-height:1.6}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a,area{outline:none;blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none;cursor: pointer}
+a:hover{text-decoration:underline;outline:none}
+a.ie6:hover{zoom:1}
+a:focus{outline:none}
+a:hover,a:active{outline:none}:focus{outline:none}
+sub,sup{vertical-align:baseline}
+select,input[type="text"],input[type="password"]{-webkit-appearance: none;border-radius:0;}
+button,input[type="button"], input[type="submit"] {line-height:normal !important;-webkit-appearance: none;border-radius:0;}
+/*img*/
+img{border:0;vertical-align:middle;}
+a img,img{-ms-interpolation-mode:bicubic}
+.img-responsive{max-width: 100%;height: auto}
+
+/*IE下a:hover 背景闪烁*/
+*html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+
+/*HTML5 reset*/
+header,footer,section,aside,details,menu,article,section,nav,address,hgroup,figure,figcaption,legend{display:block;margin:0;padding:0}time{display:inline}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none}
+legend{width:100%;margin-bottom:20px;font-size:21px;line-height:40px;border:0;border-bottom:1px solid #e5e5e5}
+legend small{font-size:15px;color:#999}
+svg:not(:root) {overflow: hidden}
+fieldset {border-width:0;padding: 0.35em 0.625em 0.75em;margin: 0 2px;border: 1px solid #c0c0c0}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height: auto}
+input[type="search"] {-webkit-appearance: textfield; /* 1 */-moz-box-sizing: content-box;-webkit-box-sizing: content-box; /* 2 */box-sizing: content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none}
+/*
+	Name:			style_clearfix
+	Example:		class="clearfix|cl"
+	Explain:		Clearfix（简写cl）避免因子元素浮动而导致的父元素高度缺失能问题
+*/
+.cl:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.cl,.clearfix{zoom:1}
+
+
+
+
+html{height:100%; /*min-width:900px;*/font-size:100%; overflow-x:auto !important}
+body{height:100%;position:relative;padding-top:0;font-size:12px;color:#7d7d7d;}
+form{display:block}
+a{font-size:12px; color:#7d7d7d;}
+a:hover{text-decoration:none;}
+.main{width:100%; height:100%; position:relative ;}
+.main-2{padding:40px 0; width:600px; margin:0 auto}
+.section{overflow:hidden;}
+.arrow-down{display:block;position:absolute; right:10px;top:50%; margin-top:-2px; width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-top:5px solid #9a9a9a;}
+.mh{-webkit-backface-visibility: hidden;-webkit-filter: blur(8px); filter: blur(8px);}
+.mh-s{-webkit-backface-visibility: hidden; filter: blur(8px);}
+
+.mb-20{margin-bottom:20px !important}
+.mb-10{margin-bottom:10px !important}
+.l{float:left}
+.r{float:right}
+.ke{text-align:center; background:#ececec;height:22px;line-height:22px; cursor:pointer}
+/*表单*/
+.ui-checkbox-s input{display: inline-block; width: 16px; height: 16px; position: relative; overflow: visible; border:1px solid #ccc; -webkit-appearance: none; outline: 0; margin-right: 8px; vertical-align: middle;cursor:pointer}
+.ui-checkbox-s input:before{width: 15px; height: 15px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: .2px; display: block; color: rgba(0,0,0,.5); content: " "; color: #18b4ed; position: absolute;bottom: 1px; left: 1px; color: #dedfe0;}
+.ui-checkbox-s input:checked:before{background: url(../images/ico_g.png) no-repeat center; background-size: 15px; top: 0px;}
+.ui-form-field{height:22px; border:none; width:100%; /*line-height:22px;*/ text-align:center;font-size:10px;/*color:#dcdcdc;*/}
+.ui-btn{height:22px; border:none; width:100%; line-height:22px; text-align:center; background:#ededed; cursor:pointer; font-size:10px;/*color:#dcdcdc;*/}
+.field-1{background:#c5c5c5}
+.field-2{background:#bdbdbd}
+.field-3{background:#ededed}
+.field-4{background:#bbb}
+.sel-1{background:#f6f6f6 !important}
+.sel-2{background:#dadada !important}
+.sel-3{background:#b3b1b2 !important}
+.select{display: block; position: relative; overflow: hidden; background:#e6e6e6; border: none; text-align:center; width:100%; height:30px;}
+.select > select{position:absolute;top:0;left:0; z-index: 2; width: 30%; height: 30px; line-height: 17px; padding: 5px 9px; padding-right: 0; background: transparent; background: rgba(0, 0, 0, 0); border: 0; -webkit-appearance: none;text-align:center;}
+.select span{line-height:30px; text-align:center}
+.select:before, .select:after{content: ''; position: absolute; right: 11px; width: 0; height: 0; border-left: 3px outset transparent; border-right: 3px outset transparent;}
+
+.select:before{top: 10px; border-bottom: 3px solid #959595;z-index:1000}
+.select:after{top: 16px; border-top: 3px solid #959595;z-index:1000}
+
+.ui-checkbox{margin-left:5px; display:inline-block; vertical-align:middle}
+
+/*头部*/
+.header{ position:absolute; display:block; background:#fff; height:25px; padding:5px 0; text-align:center; top:0; left:0; right:0; z-index:99}
+.header.header-1{ position:fixed}
+.header img{margin-top:9px;width: 166px;opacity: 0.9;
+}
+/*尾部*/
+.foot.foot-1{ position:fixed}
+.foot{ position:fixed; display:block; background:#fff;height:25px; padding:5px 0; text-align:center; bottom:0; left:0; right:0; z-index:999}
+.foot span{ display:block; text-align:center; height:30px; position:relative; cursor:pointer}
+.foot .arrow-down{ right:auto; left:50%; margin-left:-5px; margin-top:5px;border-top:5px solid #333;}
+/*导航*/
+nav.list{ position:absolute; left:35px; bottom:50px;}
+nav.list li{ line-height:24px;color:#b4b4b4}
+nav.list ul a{transition: all 1s;
+-moz-transition: all 1s;	/* Firefox 4 */
+-webkit-transition: all 1s;	/* Safari 和 Chrome */
+-o-transition: all 1s; color:#a3a3a3}
+nav.list ul a:hover{ color:#000000}
+nav.list{ position:absolute; left:35px; bottom:50px;}
+nav.list.bai li{ line-height:24px;color:#666}
+nav.list.bai ul a{transition: all 1s;
+-moz-transition: all 1s;	/* Firefox 4 */
+-webkit-transition: all 1s;	/* Safari 和 Chrome */
+-o-transition: all 1s; color:#666}
+nav.list.bai ul:hover a{ color:#fff }
+/*导航*/
+.menu{ display:block; position:absolute; left:10px;top:10px; height:18px; right:10px; z-index:999}
+.menu span{ display:block; height:9px;/*border-top:1px solid #666863; border-bottom:1px solid #666863;*/ width:32px; cursor:pointer;
+background:url(../images/back.png) no-repeat center;background-size:cover;
+opacity:0.42
+}
+/*
+.menu span:before {
+    content: "";
+	margin-top:3px;
+	height:1px; width:100%; background:#666863;
+	display:block
+}
+*/
+.menu ul{ display:none; position:absolute; left:-17px;top:7px;padding-top:10px;text-align:left}
+.menu ul.on{ display:block}
+.menu ul li{ float:none; padding:3px 20px; margin-right:1px;}
+.menu ul li a{color:#a3a3a3}
+.menu ul li a:hover{ color:#313131}
+
+@media screen and (max-width:910px){
+	.header,.foot{ left:0; right:0}
+.main-2{ width:80%}
+nav.list{ left:10px}
+	}
+
+/*箭头向下*/
+.arrowdown{
+	position:fixed; left:50%; margin-left:-5px; display:block; bottom:10px;
+    width:0; 
+    height:0; 
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:10px solid #656565;
+}	
+
+.index_bottom{position:absolute;height:38px;width:100%;bottom:0;background:#fff;}
+.index_bottom p{text-align:center;font-family:"宋体";line-height:38px;}
+.zf_dz{text-align: center;background: #ececec;height: 30px;line-height: 30px;}
+
+
+.field-3::-webkit-input-placeholder {
+    color:    #999;
+}
+input:-moz-placeholder {
+    color:    #999;
+}
+
+
+@media (max-width: 980px){
+	.tx-ms{font-size:50%;}
+	.index_bottom{height:19px;}
+	.foot{height:13px;}
+}
+.input-31::-webkit-input-placeholder {
+    color:    #313131;
+}
+.input-d0::-webkit-input-placeholder {
+    color:    #d0d0d0;
+}

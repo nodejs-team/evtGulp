@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>建行99</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
+    <style>
+        @font-face {
+            font-family: 'mfshangya';
+            src: url('http://edm.mcake.com/weifengwang/common/mfshangya.woff2') format('woff2'),
+            url('http://edm.mcake.com/weifengwang/common/mfshangya.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="../commoncss/pc-normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild-->
+</head>
+<body>
+<div class="header">
+
+    <div class="header_top_box">
+        <div class="header_top">
+            <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+                <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+                    <div class="wallbox wall_top">
+                        <div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+                        <div class="logoer">
+                            <a href="http://ebsig.mcake.com">
+                                <img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+                            </a>
+                        </div>
+                        <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+                        <ul class="navbar">
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start----->
+                            <li class="record" style="display: none;">
+                                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+                            </li>
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end----->
+                            <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+                            <li class="m_cart">
+                                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="wallbox">
+                    <div class="header_right">
+                        <ul class="phone_delivery">
+                            <li class="phone"><span>4006-678-678</span><i></i></li>
+                            <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+                        </ul>
+                        <div class="city" id="city">
+                            <ul>
+                                <li id="city-641" data-id="641"><a href="javascript: void(0);">杭州市</a></li>
+                                <li id="city-110" data-id="110" class="cur"><a href="javascript: void(0);">上海市</a></li>
+                                <li id="city-665" data-id="665"><a href="javascript: void(0);">苏州市</a></li>
+                                <li id="city-675" data-id="675"><a href="javascript: void(0);">北京市</a></li>
+                            </ul>
+                            <samp></samp>
+                        </div>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+                        </li>
+                        <li>
+                            <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/member_center.html" target="_blank">
+                                <samp>Mon M'CAKE</samp>
+                                <span>会员中心</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="evt_loading">0%</div>
+
+<div id="evt_container"  style="display:none;">
+    <div class="sec-main">
+        <div class="mother-icon"><img src="images/mother-icon.png" width="81" height="73" alt=""></div>
+        <div class="title"><img src="images/title.png" width="484" height="324" alt=""></div>
+        <div class="code"><img src="images/code.png" width="152" height="246" alt=""></div>
+        <div class="cake-1"><img src="images/cake-1.png" width="551" height="534" alt=""></div>
+        <div class="cake-2"><img src="images/cake-2.png" width="739" height="427" alt=""></div>
+        <div class="logo"><img src="images/logo.png" width="168" height="44" alt=""></div>
+        <div class="boy">
+            <canvas width="107" height="177" id="boy"></canvas>
+        </div>
+        <div class="bao">
+            <canvas width="177" height="114" id="bao"></canvas>
+        </div>
+        <div class="girl">
+            <canvas width="123" height="230" id="girl"></canvas>
+        </div>
+        <div class="huojian">
+            <canvas width="161" height="227" id="huojian"></canvas>
+        </div>
+        <div class="qian"><img src="images/qian.png" width="193" height="95" alt=""></div>
+    </div>
+
+
+
+    <!--cake轮播-->
+    <div class="slider">
+        <a href="javascript:;" class="prev"><img src="images/prev.png" alt=""></a>
+        <a href="javascript:;" class="next"><img src="images/next.png" alt=""></a>
+        <div class="slideOuter">
+            <ul class="clearfix products">
+                <li data-pond="1,2,3,5" data-price="198,298,428,728">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li data-pond="1,2,3,5" data-price="198,218,328,528">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li data-pond="1,2" data-price="198,298">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li data-pond="1,2,3,5" data-price="198,298,428,728">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li data-pond="1,2,3,5" data-price="198,298,428,728">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li data-pond="1,2" data-price="198,298">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li data-pond="1,2" data-price="198,298">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li data-pond="1,2" data-price="198,298">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li data-pond="1,2" data-price="198,298">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+                <li data-pond="1,2" data-price="198,298">
+                    <img src="http://mcake.oss-cn-hangzhou.aliyuncs.com/goods/lanmeiqingrunapolun/N0301/list/1.jpg" alt="">
+                    <p class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span><span class="fr"><span class="price" data-price="198">198</span>元</span></p>
+                    <p class="p2 clearfix"><span class="fl">规格：<em class="bangshu" data-num="1">1</em>磅</span>
+                        <span class="fr">
+                            <img src="images/plus.png" alt="" class="plus">
+                            <img src="images/reduce.png" alt="" class="reduce">
+                        </span>
+                    </p>
+                    <a href="javascript:;" class="buybtn">立即订购</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="text1893"><img src="images/text1893.png"  alt=""></div>
+    <div class="card"><img src="images/card.png" alt=""></div>
+    <div class="rules">
+        <h2>活动规则</h2>
+
+        <p>1、活动对象为：62开头龙卡信用卡持卡人；</p>
+        <p>2、参与方式：指定建行龙卡信用卡持卡人登录MCAKE官网活动页www.mcake.com/jh99，购买任意款蛋糕，选择“银联在线”，并使用指定建行指定龙卡信用卡支付，即可享受满198元及以上立减99元活动优惠，每活动日限100次立减机会，每卡每日限享一次，每卡每月最多享2次立减机会，额满即止；</p>
+        <p>3、活动蛋糕订购时间为：2017年4月22日至2017年12月31日期间每周六及5月14日母亲节、6月1日儿童节、6月18日父亲节、8月28日七夕节、10月4日中秋节、12月24日平安夜，每活动日具体订购时间为：10:00-23:59，消费日期以建行系统记录的持卡人刷卡交易时间为准（北京时间），蛋糕配送时间为：2017年4月22日15:00～2018年1月31日22:00（蛋糕配送地区仅限上海v地区）；</p>
+        <p>4、本活动可累积积分，不与其它任何优惠同享（包括优惠券、红包、会员等级等），本活动优惠不能兑换现金，其他货品或折扣，亦不得转让。</p>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<!-- build:js scripts/index.js -->
+
+<script src="../commonjs/polyfill.js"></script>
+<script src="../commonjs/pubsub.js"></script>
+<script src="../commonjs/loader.js"></script>
+
+<script src="../commonjs/movieclip.js"></script>
+
+<script src="scripts/resdata.js"></script>
+<script src="scripts/index.js"></script>
+<!-- endbuild -->
+</body>
+</html>

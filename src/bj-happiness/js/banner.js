@@ -3,8 +3,32 @@
  */
 (function($){
 
-  var loadComplete = function () {
+  function  floater() {
+      ;(function(){
+          var height = $("#evt_container").outerHeight();
+          var fHeight = 167;
+          var fTop = 110;
+          var fRight = 10;
+          var floater = $('#floater');
+          var floaterPosition = 'fixed';
+          var winWidth = $(window).width();
+          var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+          $(window).on("scroll", function(){
+              var sTop = $(this).scrollTop();
+              if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
+                  floater.css({position: "absolute", top: height - fHeight, right: absRight});
+                  floaterPosition = 'absolute';
+              }
+              if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
+                  floater.css({position: "fixed", top: fTop, right:fRight});
+                  floaterPosition = 'fixed';
+              }
+          });
+      })();
+  }
 
+  var loadComplete = function () {
+      floater();
   };
 
   var loadResource = function(){

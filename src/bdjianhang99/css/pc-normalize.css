@@ -1,0 +1,37 @@
+body, ul, li, ol, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+.clearfix { *zoom:1;}
+.clearfix:after{
+    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+
+#evt_loading {
+    height: 600px;
+    width:100%;
+    text-align:center;
+    font-size: 18px;
+    font-family: "Microsoft YaHei",Tahoma,Arial;
+    line-height:600px;
+}
+
+#evt_container{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}

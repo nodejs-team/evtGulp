@@ -1,3 +1,30 @@
 .evt-content {
   /* addon css code goes here */
 }
+
+#floater {
+  position: fixed;
+  top: 110px;
+  right: 10px;
+  z-index: 11;
+  width: 187px;
+}
+
+#floater .floatImg {
+  width: 187px;
+  position: relative;
+  font-size: 0;
+}
+
+#floater .floatImg img {
+  width: 100%;
+}
+
+#floater .floatImg a {
+  width: 100%;
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

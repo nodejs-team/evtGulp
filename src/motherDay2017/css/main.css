@@ -1,0 +1,92 @@
+.evt-content {
+  /* addon css code goes here */
+  height: 100%;
+}
+
+.items {
+  position: absolute;
+}
+
+.sec1 {
+  height: 747px;
+  overflow: hidden;
+  background: #f0e5e2 url("../images/banner-bg.jpg") center center;
+}
+
+.sec1 .title {
+  top: 0;
+  left: 300px;
+}
+
+.sec1 .cake {
+  top: 299px;
+  left: 143px;
+}
+
+.sec1 .word-1 {
+  top: 571px;
+  left: 287px;
+}
+
+.sec2 {
+  height: 213px;
+  background: #f4f0ef url("../images/sliderbar.jpg") center no-repeat;
+}
+
+.sec3 {
+  height: 798px;
+  background: #fff9f7;
+  z-index: 1;
+}
+
+.sec3 .cake {
+  top: 53px;
+  left: 188px;
+}
+
+.sec3 .price {
+  top: 107px;
+  left: 503px;
+}
+
+.sec3 .liwu {
+  top: 484px;
+  left: 253px;
+  z-index: 8;
+}
+
+.evt-footer {
+  position: relative;
+  background-color: #fff;
+  z-index: 5;
+  height: 638px;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.evt-footer .footer-bd .hua {
+  width: 140px;
+  margin: 80px auto 0 auto;
+}
+
+.evt-footer .evt-rules {
+  padding-left: 207px;
+  padding-top: 80px;
+  color: #000000;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

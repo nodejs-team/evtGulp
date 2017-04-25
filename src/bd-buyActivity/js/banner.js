@@ -12,7 +12,9 @@
 
   var loadComplete = function () {
       $("#plax_scene").parallax();
-      Gifs.girl_a();
+      /*Gifs.girl_a();*/
+      $(".float-container").fadeOut();
+      floater();
 
   };
 
@@ -51,5 +53,52 @@
   $(function(){
     loadResource();
   });
+
+
+    function floater(){
+        var height = $("#evt_container").outerHeight();
+        var fHeight = 177;
+        var fTop = 100;
+        var fRight = 10;
+        var floater = $('#floater');
+        var floaterPosition = 'fixed';
+        var winWidth = $(window).width();
+        var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+        $(window).on("scroll", function(){
+            var sTop = $(this).scrollTop();
+            if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
+                floater.css({position: "absolute", top: height - fHeight, right: absRight});
+                floaterPosition = 'absolute';
+                $(".floatImg").unbind('mouseover');
+                $(".floatImg").unbind('mouseout');
+                $(".float-container").stop().fadeOut(200);
+            }
+            if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
+                floater.css({position: "fixed", top: fTop, right:fRight});
+                floaterPosition = 'fixed';
+                $(".floatImg").bind({
+                    "mouseover": fadeIn,
+                    "mouseout":fadeOut
+                });
+            }
+        });
+
+
+
+        $(".floatImg").bind({
+            "mouseover": fadeIn,
+            "mouseout":fadeOut
+        });
+
+        function  fadeIn() {
+
+            $(".float-container").stop().fadeIn(200);
+        }
+        function  fadeOut() {
+            $(".float-container").stop().fadeOut(200);
+        }
+
+
+    };
 
 })(jQuery);

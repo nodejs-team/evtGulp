@@ -1,0 +1,76 @@
+#evt_container{background:url(../images/bg.jpg);
+ /* img{width:100%;}*/
+  .sec-main{ position: relative; width: 1000px; margin: 0 auto; height: 1336px;
+    > div{position: absolute;}
+    .mother-icon{ top:94px; left: 70px;}
+    .title{ top:94px; left: 50px;}
+    .code{ top:414px; left: 184px;}
+    .cake-1{ top:271px; left: 447px; z-index: 5;}
+    .cake-2{ top:786px; left: 0px; z-index: 5;}
+    .logo{ top:94px; left: 806px;}
+    .boy{ top:154px; left: 581px;
+      canvas {
+        width:107px;
+        height:177px;
+      }
+    }
+    .bao{ top:154px; left: 696px;
+      canvas {
+        width:177px;
+        height: 114px;
+      }
+    }
+    .girl{ top:642px; left: 305px;
+      canvas {
+        width:123px;
+        height: 230px;
+      }
+    }
+    .huojian{ top:538px; left: 79px;
+      canvas {
+        width:161px;
+        height: 227px;
+      }
+    }
+    .qian{ top:998px; left: 831px;}
+
+  }
+
+
+
+
+  /*轮播图*/
+  .slider{width:1200px; position:relative; margin:0 auto;
+
+    .prev,.next{width:67px; top:148px; position:absolute;}
+    .prev{left:0;}
+    .next{right:0;}
+  }
+  .slideOuter{width:1028px; height:368px; border-bottom:2px solid #959595; overflow:hidden; margin:0 auto;
+    ul{width:1650px;}
+    li{width:242px; margin:0 20px 18px 0; color:#242424; font-size:12px; float:left;
+      >img{width:100%;}
+      .fl{float:left;}
+      .fr{float:right;}
+      p{font-size: 16px;}
+      .p1{margin:10px 0 3px 0;
+        .fr{color:#0899b2;
+          span{font-size:19px;}
+        }
+        .fl{padding-top:5px;}
+      }
+      .p2{
+        img{ margin: 0 0 0 5px; cursor: pointer;}
+      }
+      em{font-style: normal;}
+      .buybtn{width:100%; height:30px; display:block; border-radius:2px; margin:10px 0 0 0; background:#0066b3; color:#ffffff; text-align:center; line-height:30px; font-size:16px; position:static;}
+    }
+  }
+
+  .text1893{width:300px; margin:26px auto 0 auto;}
+  .card{width:739px; margin:126px auto 0 auto;}
+  .rules{width:920px; font-size:20px; color:#2b2b2b; line-height:28px; margin:10px auto 152px auto;
+    h2{font-size:28px; line-height: 70px; font-weight:normal; text-align: center; color:#02355c; }
+    p{text-indent: -28px; line-height: 35px; color: #51596a; margin-top: 10px;}
+  }
+}

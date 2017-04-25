@@ -11,6 +11,7 @@
 .evt-content .b-bg1 {
   top: 38px;
   left: 44px;
+  z-index: 2;
 }
 
 .evt-content .b-bg2 {
@@ -32,11 +33,13 @@
 .evt-content .b-role {
   top: 120px;
   left: -38px;
+  z-index: 1 !important;
 }
 
 .evt-content .cake {
   top: 201px;
   left: 79px;
+  z-index: 5 !important;
 }
 
 .evt-content .girl-a {
@@ -62,4 +65,42 @@
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+#floater {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  z-index: 11;
+  width: 291px;
+}
+
+#floater .floatImg {
+  position: relative;
+  font-size: 0;
+}
+
+#floater .floatImg a {
+  width: 100%;
+  display: block;
+  height: 177px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#floater .float-icon {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 129px;
+}
+
+#floater .float-container {
+  width: 291px;
+  position: absolute;
+  font-size: 0;
+  top: 130px;
+  left: 0;
+  display: block;
 }

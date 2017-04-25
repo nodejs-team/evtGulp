@@ -74,10 +74,7 @@
 </div>
 
 <style>
-    #floater{position:fixed; top:110px; right:10px; z-index:11; width:178px;}
-    #floater .floatImg{width:156px; position:relative; font-size:0; margin:0 0 0 17px;}
-    #floater .floatImg img{width:100%;}
-    #floater .floatImg a{width:100%; display:block; height:144px; position:absolute; top:0; left:0;}
+
 </style>
 
 <div id="evt_loading">
@@ -86,16 +83,14 @@
 
 <div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
     <div class="evt-content">
-        <div class="secItem q1" data-anim="slide-down-l" data-delay="0.8">
-            <img src="" width="" height="" />
-        </div>
+        <img src="images/banner/banenr.jpg" width="983" height="550" alt="">
     </div>
     <a href="#" style="width:100%; height:750px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
 
     <div id="floater">
         <div class="floatImg">
-            <img src="http://edm.mcake.com/shuxy/2016/strawberry/images/strawberry_floater.png" alt="">
-            <a href="http://www.mcake.com"></a>
+            <img src="images/banner/banner-icon.png" width="187" height="234" alt="">
+            <a href="#"></a>
         </div>
     </div>
 
@@ -109,27 +104,7 @@
 <script type="text/javascript" src="js/banner.js"></script>
 <!-- endbuild -->
 <script>
-    /*;(function(){
-        var height = $("#evt_container").outerHeight();
-        var fHeight = 167;
-        var fTop = 110;
-        var fRight = 10;
-        var floater = $('#floater');
-        var floaterPosition = 'fixed';
-        var winWidth = $(window).width();
-        var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
-        $(window).on("scroll", function(){
-            var sTop = $(this).scrollTop();
-            if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
-                floater.css({position: "absolute", top: height - fHeight, right: absRight});
-                floaterPosition = 'absolute';
-            }
-            if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
-                floater.css({position: "fixed", top: fTop, right:fRight});
-                floaterPosition = 'fixed';
-            }
-        });
-    })();*/
+
 </script>
 </body>
 </html>
