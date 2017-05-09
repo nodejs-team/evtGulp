@@ -1,0 +1,213 @@
+.evt-container {
+  background: #f3fbfe;
+}
+
+.evt-container a {
+  display: block;
+}
+
+.sec-1, .sec-2, .sec-3, .sec-4 {
+  position: relative;
+}
+
+.sec-1 .evt-content {
+  height: 628px;
+}
+
+.sec-1 .evt-content div {
+  position: absolute;
+}
+
+.sec-1 .evt-content .title {
+  top: 60px;
+  left: 20px;
+}
+
+.sec-1 .evt-content .line-1 {
+  top: 278px;
+  left: 569px;
+}
+
+.sec-1 .evt-content .decorate-1 {
+  top: 390px;
+  left: 819px;
+}
+
+.sec-1 .evt-content .cake-1 {
+  top: -55px;
+  left: 410px;
+}
+
+.sec-1 .evt-content .words-1 {
+  top: 392px;
+  left: 638px;
+}
+
+.sec-2 .evt-content {
+  height: 720px;
+}
+
+.sec-2 .evt-content div {
+  position: absolute;
+}
+
+.sec-2 .evt-content .cake-2 {
+  top: 30px;
+  left: -20px;
+}
+
+.sec-2 .evt-content .words-2 {
+  top: 440px;
+  left: -26px;
+}
+
+.sec-2 .evt-content .quan-1 {
+  top: 22px;
+  left: 712px;
+}
+
+.sec-3 .evt-content {
+  height: 508px;
+}
+
+.sec-3 .evt-content div {
+  position: absolute;
+}
+
+.sec-3 .evt-content .decorate-2 {
+  top: -100px;
+  left: 0px;
+}
+
+.sec-3 .evt-content .cake-3 {
+  top: 37px;
+  left: 566px;
+}
+
+.sec-3 .evt-content .words-3 {
+  top: 233px;
+  left: 327px;
+}
+
+.sec-4 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sec-4 .langhua-1 {
+  position: absolute;
+  width: 100%;
+  height: 701px;
+  background: url("../images/langhua-1.png") center no-repeat;
+  bottom: -50px;
+}
+
+.sec-4 .langhua-2 {
+  position: absolute;
+  width: 100%;
+  height: 444px;
+  background: url("../images/langhua-2.png") center no-repeat;
+  bottom: 0px;
+}
+
+.sec-4 .evt-content {
+  height: 555px;
+}
+
+.sec-4 .evt-content div {
+  position: absolute;
+}
+
+.sec-4 .evt-content .cake-4 {
+  top: 0px;
+  left: 70px;
+}
+
+.sec-5 {
+  background-color: #e9f4fa;
+}
+
+.sec-5 .evt-content {
+  z-index: 2;
+  height: 1060px;
+}
+
+.sec-5 .evt-content div {
+  position: absolute;
+}
+
+.sec-5 .evt-content .line-2 {
+  top: -388px;
+  left: 295px;
+}
+
+.sec-5 .evt-content .words-4 {
+  top: -434px;
+  left: 444px;
+}
+
+.sec-5 .evt-content .cake-4-a {
+  top: -544px;
+  left: 90px;
+}
+
+.sec-5 .evt-content .cake-5 {
+  top: 0px;
+  left: 87px;
+}
+
+.sec-5 .evt-content .words-5 {
+  top: 151px;
+  left: 567px;
+}
+
+.sec-5 .evt-content .cake-6 {
+  top: 489px;
+  left: 247px;
+}
+
+.sec-5 .evt-content .decorate-6 {
+  top: 364px;
+  left: 19px;
+}
+
+.sec-5 .evt-content .words-6-1 {
+  top: 700px;
+  left: -5px;
+}
+
+.sec-5 .evt-content .words-6-2 {
+  top: 573px;
+  left: 608px;
+}
+
+.evt-footer {
+  position: relative;
+  background: #fff url("../images/langhua-3.jpg") center top no-repeat;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  height: 432px;
+  margin: 0 auto;
+}
+
+.evt-footer .evt-rules {
+  padding-top: 90px;
+  color: #457181;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

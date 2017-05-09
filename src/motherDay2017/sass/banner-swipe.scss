@@ -1,0 +1,98 @@
+.evt-container{background: url("../images/banner/b-bg.jpg") center no-repeat;}
+
+.swiper-container {
+  width: 100%;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.swiper-slide {
+  text-align: center; cursor: pointer;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+}
+.arrow-left {
+  background: url(../images/banner/arrows.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+ z-index: 2;
+}
+.arrow-right {
+  background: url(../images/banner/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 2;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-right: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+  border: 1px solid #f6eee8;
+  background: #efb79d;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #9e1d19;
+}
+
+
+
+.evt-content{
+  /* addon css code goes here */
+  height: 550px;
+  .b-title{left: 396px; }
+  .b-word{ top:177px; left: 580px;}
+  .b-flower1{ top:54px ;left: 169px;}
+  .b-flower2{ top:273px ;left: 547px;}
+  .b-cake{ top:200px ;left: 207px; opacity: 0;}
+  .b-price{ top:431px ;left: 548px;}
+  .b-btn{top:470px ;left: 698px;}
+}
+
+
+
+#floater{position:fixed; top:110px; right:10px; z-index:11; width:187px;}
+#floater .floatImg{width:187px; position:relative; font-size:0;}
+#floater .floatImg img{width:100%;}
+#floater .floatImg a{width:100%; display:block; height:100%; position:absolute; top:0; left:0;}
+
+
+

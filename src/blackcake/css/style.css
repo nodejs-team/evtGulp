@@ -11,7 +11,9 @@
 .su-x{position:absolute; left:0; right:0; bottom:0;top:0; background:rgba(255,255,255,0.55); display:none }
 .su-x.block{ display:block}
 .su-x .box{ width:550px; margin:0 auto; color:#535353; margin-top:5%;}
-.su-x .box h3{ font-size:16px;letter-spacing:5px; text-align:center; margin-bottom:50px;}
+.su-x .box h4{ font-size:14px; text-align:center; margin-bottom:10px; color: #999999; font-weight: normal;}
+.su-x .box h3{ font-size:14px;letter-spacing:5px; text-align:center; margin-bottom:50px;}
+.su-x .box h3 span{ padding: 5px 10px; border: 1px solid #808080;}
 .su-x .g-g { overflow:hidden; margin-bottom:20px;}
 .su-x .g-g li{ float:left; width:130px; border-right:1px solid #333; margin-right:6px; line-height:30px;}
 .su-x .g-g li:last-child{ border-right:none}
@@ -20,13 +22,15 @@
 .su-x .s-x li.li3{ margin-top:10px}
 .su-x .s-x li.li1{ background:#e4e4e4;margin-top:5px}
 .su-x .s-x li.li2{ background:#ebebeb}
-.su-x .s-x li.li3{ background:#f1f1f1}
+.su-x .s-x li.li3{}
+.su-x .s-x li.li3 span{ background:#b49772; padding: 5px 20px; color: #fff; font-size: 12px;}
 .su-x .s-x li.li3 a{width:100%;height:100%;display:block}
 .su-x .s-x li ol{ position:absolute;top:30px; left:0px; width:100%; background:#ececec; z-index:10; display:none}
 .su-x .s-x li.on ol{ display:block}
 .su-x .s-x li  i{ display:block; line-height:30px; font-style:normal}
 .su-x .m-s{ text-align:center; line-height:24px}
-
+.su-x .m-s p.p1{ line-height: 26px; margin-top: 10px;}
+.su-x .m-s p span.sc-bc{ border: 1px solid #b6b5b3; padding: 2px 5px;}
 
 .su-x .wudianguanbijian{display:block;width:10px;height:10px;background:url(../images/iconfont-guanbi.png) no-repeat center;cursor:pointer;background-size:28px 28px;position:absolute;top:0;right:0;z-index:99999;}
 

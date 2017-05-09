@@ -1,0 +1,273 @@
+@charset "UTF-8";
+.swiper-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+}
+
+.arrow-left {
+  background: url(../images/arrows.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 2;
+}
+
+.arrow-right {
+  background: url(../images/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 2;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-right: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+  border: 1px solid #f6eee8;
+  background: #efb79d;
+}
+
+.swiper-visible-switch {
+  background: #aaa;
+}
+
+.swiper-active-switch {
+  background: #9e1d19;
+}
+
+/*单个banner*/
+.banner-single .evt-content {
+  /* addon css code goes here */
+  height: 550px;
+}
+
+.banner-single .evt-content .b-title {
+  left: 396px;
+}
+
+.banner-single .evt-content .b-word {
+  top: 177px;
+  left: 580px;
+}
+
+.banner-single .evt-content .b-flower1 {
+  top: 54px;
+  left: 169px;
+}
+
+.banner-single .evt-content .b-flower2 {
+  top: 273px;
+  left: 547px;
+}
+
+.banner-single .evt-content .b-cake {
+  top: 200px;
+  left: 207px;
+  opacity: 0;
+}
+
+.banner-single .evt-content .b-price {
+  top: 431px;
+  left: 548px;
+}
+
+.banner-single .evt-content .b-btn {
+  top: 470px;
+  left: 698px;
+}
+
+/*多个个banner*/
+.swiper-container {
+  height: 550px;
+}
+
+.banner-slides .swiper-content {
+  height: 550px;
+}
+
+.banner-slides #slides-0 .b-title {
+  left: 396px;
+}
+
+.banner-slides #slides-0 .b-word {
+  top: 177px;
+  left: 580px;
+}
+
+.banner-slides #slides-0 .b-flower1 {
+  top: 54px;
+  left: 169px;
+}
+
+.banner-slides #slides-0 .b-flower2 {
+  top: 273px;
+  left: 547px;
+}
+
+.banner-slides #slides-0 .b-cake {
+  top: 200px;
+  left: 207px;
+  opacity: 0;
+}
+
+.banner-slides #slides-0 .b-price {
+  top: 431px;
+  left: 548px;
+}
+
+.banner-slides #slides-0 .b-btn {
+  top: 470px;
+  left: 698px;
+}
+
+.banner-slides #slides-1 .clod-1 {
+  top: 0;
+  left: -30px;
+}
+
+.banner-slides #slides-1 .clod-2 {
+  top: 0;
+  left: 687px;
+}
+
+.banner-slides #slides-1 .title {
+  top: 10px;
+  left: 264px;
+}
+
+.banner-slides #slides-1 .basket {
+  top: 390px;
+  left: 40px;
+}
+
+.banner-slides #slides-1 .cake {
+  top: 305px;
+  left: 266px;
+}
+
+.banner-slides #slides-1 .caomei_a {
+  top: 172px;
+  left: 562px;
+}
+
+.banner-slides #slides-1 .caomei_b {
+  top: 119px;
+  left: 38px;
+}
+
+.banner-slides #slides-2 .q1 {
+  left: 199px;
+  top: 134px;
+  z-index: 2;
+}
+
+.banner-slides #slides-2 .q2 {
+  left: 290px;
+  top: 54px;
+  z-index: 1;
+}
+
+.banner-slides #slides-2 .q3 {
+  left: 167px;
+  top: 95px;
+}
+
+.banner-slides #slides-2 .q4 {
+  left: 366px;
+  top: 123px;
+}
+
+.banner-slides #slides-2 .q5 {
+  left: 306px;
+  top: 222px;
+  z-index: 2;
+}
+
+.banner-slides #slides-2 .q6 {
+  left: 603px;
+  top: 128px;
+}
+
+.banner-slides #slides-2 .q7 {
+  left: 372px;
+  top: 299px;
+}
+
+.banner-slides #slides-2 .q8 {
+  left: 600px;
+  top: 233px;
+  z-index: 1;
+}
+
+.banner-slides #slides-2 .q9 {
+  left: 337px;
+  top: 296px;
+}
+
+/*浮动*/
+#floater {
+  position: fixed;
+  top: 110px;
+  right: 10px;
+  z-index: 11;
+  width: 187px;
+}
+
+#floater .floatImg {
+  width: 187px;
+  position: relative;
+  font-size: 0;
+}
+
+#floater .floatImg img {
+  width: 100%;
+}
+
+#floater .floatImg a {
+  width: 100%;
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,5 +1,19 @@
+.evt-container{background: url("../images/banner/b-bg.jpg") center no-repeat;}
 .evt-content{
   /* addon css code goes here */
-
-
+  height: 550px;
+  .b-title{left: 396px;}
+  .b-word{ top:177px; left: 580px;}
+  .b-flower1{ top:54px ;left: 169px;}
+  .b-flower2{ top:273px ;left: 547px;}
+  .b-cake{ top:200px ;left: 207px;}
+  .b-price{ top:431px ;left: 548px;}
+  .b-btn{top:470px ;left: 698px;}
 }
+
+
+
+#floater{position:fixed; top:110px; right:10px; z-index:11; width:187px;}
+#floater .floatImg{width:187px; position:relative; font-size:0;}
+#floater .floatImg img{width:100%;}
+#floater .floatImg a{width:100%; display:block; height:100%; position:absolute; top:0; left:0;}
