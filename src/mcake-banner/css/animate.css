@@ -83,6 +83,11 @@
     animation: bouncein 1s ease-in both;
 }
 
+.arrows {
+    -webkit-animation: arrow 2s linear 1s infinite normal;
+    animation: arrow 2s linear 1s infinite normal
+}
+
 @-webkit-keyframes slide-down-l {
     0%{
         opacity: 0;
@@ -453,3 +458,39 @@
     70%{transform:scale(0.9);}
     100%{opacity:1;transform:scale(1);}
 }
+
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+        transform: translate3d(0,-100%,0);
+    }
+
+    50% {
+        opacity: .5;
+        transform: translate3d(0,0%,0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(0,100%,0);
+    }
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate3d(0,-100%,0);
+    }
+
+    50% {
+        opacity: .5;
+        -webkit-transform: translate3d(0,0%,0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+    }
+}
+

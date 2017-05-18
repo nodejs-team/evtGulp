@@ -4,21 +4,11 @@ html, body {
   height: 100%;
 }
 body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+  background: #f9f1ee;
+
 }
 
-.header{
-  min-height: 100px;
-  overflow: hidden;
-  position: fixed !important;
-  top: 0;
-  z-index: 100;
-}
+
 .bj-container{ width: 100%; height: 100%;}
 
 .swiper-container {  width: 100%;  margin-left: auto;  margin-right: auto;  }
@@ -29,7 +19,7 @@ body {
   background: #f9f1ee;
   /* Center slide text vertically */
   display: -webkit-box;
-  display: -ms-flexbox;
+
   display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
@@ -44,38 +34,47 @@ body {
 
 .swiper-slide{position: relative;}
 .swiper-container { height: 100%;}
-.evt-content{ height: 100%;
+
+.evt-content{
+  height: 100%;
+
   .secItem {position: absolute;}
+}
+
+.oldie{
+  .evt-content{
+    margin: 0 auto;
+  }
 }
 #evt_loading{ background:#f9f1ee; }
 .s1-slide{
-  .title{ top: 120px; left: 312px;}
-  .s1-cake{ top: 305px; left: 242px;}
-  .s1-cao{ top: 360px; left: 123px;}
-  .s1-baozi{ top: 514px; left: 771px;}
-  .s1-che{ top: 470px; left: -17px;}
-  .s1-dadi{ top: 607px; left: -379px;}
-  .s1-l-tree{ top: 267px; left: -283px;}
-  .s1-mg{ top: 584px; left: 706px;}
-  .s1-r-mg{ top: 311px; left: 953px;}
-  .s1-word-1{ top: 436px; left: 720px;}
-  .across{ top: 780px; left: 449px;}
-  .bg-b{ position: absolute; width: 100%; height: 448px; background: url("../images/bg-b.png") repeat; top:579px; }
+  .title{ top: 20px; left: 312px;}
+  .s1-cake{ top: 205px; left: 242px;}
+  .s1-cao{ top: 260px; left: 123px;}
+  .s1-baozi{ top: 414px; left: 771px;}
+  .s1-che{ top: 370px; left: -17px;}
+  .s1-dadi{ top: 507px; left: -379px;}
+  .s1-l-tree{ top: 167px; left: -283px;}
+  .s1-mg{ top: 484px; left: 706px;}
+  .s1-r-mg{ top: 211px; left: 953px;}
+  .s1-word-1{ top: 336px; left: 720px;}
+  .across{ top: 680px; left: 449px;}
+  .bg-b{ position: absolute; width: 100%; height: 448px; background: url("../images/bg-b.png") repeat; top:479px; }
 }
 
 .s2-slide{
-  .s2-btn{ top: 616px; left: 674px;}
-  .s2-cake{ top: 287px; left: 195px;}
-  .s2-kuai{ top: 136px; left: 260px;}
-  .s2-pic{ top: 196px; left: -31px;}
-  .s2-tu{ top: 321px; left: 703px;}
-  .s2-word{ top: 418px; left: 674px;}
-  .s2-xpic{ top: 118px; left: 96px;}
-  .s2-caomei_b{ top:150px; left: 115px;}
-  .s2-caomei{ top:610px; left: 115px;}
-  .s2-mogu{ top:213px; left: 481px;}
-  .s2-diqiu{ top:680px; left: 842px;}
-  .s2-tuer{ top:330px; left: 675px;}
+  .s2-btn{ top: 516px; left: 674px;}
+  .s2-cake{ top: 187px; left: 195px;}
+  .s2-kuai{ top: 36px; left: 260px;}
+  .s2-pic{ top: 96px; left: -31px;}
+  .s2-tu{ top: 221px; left: 703px;}
+  .s2-word{ top: 318px; left: 674px;}
+  .s2-xpic{ top: 18px; left: 96px;}
+  .s2-caomei_b{ top:50px; left: 115px;}
+  .s2-caomei{ top:510px; left: 115px;}
+  .s2-mogu{ top:113px; left: 481px;}
+  .s2-diqiu{ top:580px; left: 842px;}
+  .s2-tuer{ top:230px; left: 675px;}
 
 }
 

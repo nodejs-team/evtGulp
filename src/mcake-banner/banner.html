@@ -75,25 +75,55 @@
 </div>
 
 
-
+<!--banner开始-->
 <div id="evt_loading">
     <span id="evt_spin">loading: 0%</span>
 </div>
 
 <div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
     <div id="floater">
-        <div class="floatImg">
-            <img src="images/motherDay/banner-icon.png" width="187" height="234" alt="">
-            <a href="#"></a>
+        <div class="floatImg" data-anim="fade-in" data-delay="1.2">
+            <div class="float-icon">
+                <img src="images/floader/floader-1.png" alt="">
+            </div>
+
+            <div class="float-container">
+                <img src="images/floader/floader-2.png" alt="">
+
+            </div>
+            <a href="http://www.mcake.com"></a>
         </div>
+
     </div>
 
     <div class="banner-slides">
         <div class="swiper-container">
-            <a class="arrow arrow-left" href="#"></a>
-            <a class="arrow arrow-right" href="#"></a>
+            <a class="arrow arrow-left"></a>
+            <a class="arrow arrow-right"></a>
             <div class="swiper-wrapper">
-                <div class="swiper-slide" id="slides-0" style="background:url(images/motherDay/b-bg.jpg) no-repeat center;background-size:cover;">
+                <!--swiper-slide 开始-->
+                <!-- swiper-slide-chihuo -->
+                <div class="swiper-slide slides-first slides-chihuo" style="background:url(images/ChowhoundDay/banner-bg.jpg) no-repeat center;background-size:cover;">
+                    <div class="swiper-content">
+                        <div class="secItem title" data-anim="slide-down-l" data-delay="0.2">
+                            <img src="images/ChowhoundDay/title.png" width="494" height="339" />
+                        </div>
+                        <div class="secItem decorate-1" data-anim="fade-in" data-delay="0.8">
+                            <img src="images/ChowhoundDay/decorate-1.png" width="331" height="271" />
+                        </div>
+                        <div class="secItem decorate-2" data-anim="fade-in" data-delay="0.8">
+                            <img src="images/ChowhoundDay/decorate-2.png" width="213" height="93" />
+                        </div>
+                        <div class="secItem cake" data-anim="slide-up-r" data-delay="1">
+                            <img src="images/ChowhoundDay/cake.png" width="655" height="505" />
+                        </div>
+                    </div>
+                    <a href="#a" class="slide-link"></a>
+                </div>
+
+
+                <!-- swiper-slide-motherDay -->
+                <div class="swiper-slide  slides-motherDay" style="background:url(images/motherDay/b-bg.jpg) no-repeat center;background-size:cover;">
                     <div class="swiper-content">
                         <div class="secItem b-title" data-anim="slide-down" data-delay="0.5">
                             <img src="images/motherDay/b-title.png" width="391" height="197" />
@@ -117,78 +147,108 @@
                             <img src="images/motherDay/b-btn.png" width="93" height="24" />
                         </div>
                     </div>
-
+                    <a href="#b" class="slide-link"></a>
                 </div>
-                <div class="swiper-slide" id="slides-1" style="background:url(images/strawberryDay/bg.jpg) no-repeat center;background-size:cover; ">
+
+
+
+
+                <!-- swiper-slide-song -->
+                <div class="swiper-slide  slides-song" style="background:#fff;background-size:cover;">
                     <div class="swiper-content">
-                        <div class="secItem clod-1">
-                            <img src="images/strawberryDay/clod-1.png" width="292" height="420" />
+                        <div class="secItem title" data-anim="slide-down" data-delay="0.2">
+                            <img src="images/song/title.png" width="418" height="201" />
                         </div>
-                        <div class="secItem clod-2">
-                            <img src="images/strawberryDay/clod-2.png" width="355" height="420" />
+                        <div class="secItem yuans-1" data-anim="slide-right" data-delay="0.5">
+                            <img src="images/song/yuans-1.png" width="185" height="343" />
                         </div>
-                        <div class="secItem title">
-                            <img src="images/strawberryDay/banner-title.png" width="479" height="255" />
+                        <div class="secItem yuans-2" data-anim="slide-left" data-delay="0.5">
+                            <img src="images/song/yuans-2.png" width="344" height="206" />
                         </div>
-                        <div class="secItem caomei_b" id="el_caomei_b"></div>
-                        <div class="secItem basket">
-                            <img src="images/strawberryDay/basket.png" width="153" height="153" />
+                        <div class="secItem cake" data-anim="slide-up-r" data-delay="0.8">
+                            <img src="images/song/cake.png" width="674" height="354" />
                         </div>
-                        <div class="secItem caomei_a" id="el_caomei_a">
+                        <div class="secItem quan" data-anim="fade-in" data-delay="0.5">
+                            <img src="images/song/quan.png" width="223" height="106" />
+                        </div>
+                        <div class="secItem across" data-anim="slide-down" data-delay="0.5">
+                            <img src="images/song/across.png" width="33" height="18" class="arrows" />
+                        </div>
+                        <div class="secItem btn" data-anim="slide-up" data-delay="0.8">
+                            <img src="images/song/btn.png" width="123" height="29" />
+                        </div>
+                    </div>
+                    <a href="#b" class="slide-link"></a>
+                </div>
 
+
+
+
+
+                <!--swiper-slide-520-->
+                <div class="swiper-slide  slides-520" style="background:url(images/520/banner-bg.jpg) no-repeat center;background-size:cover;">
+                    <div class="swiper-content">
+                        <div class="secItem boy" data-anim="slide-left" data-delay="1">
+                            <img src="images/520/boy.png" width="135" height="355" />
                         </div>
-                        <div class="secItem cake">
-                            <img src="images/strawberryDay/cake.png" width="423" height="255" />
+                        <div class="secItem girl" data-anim="slide-right" data-delay="1">
+                            <img src="images/520/girl.png" width="312" height="288" />
+                        </div>
+                        <div class="secItem title" data-anim="slide-down" data-delay="0.5">
+                            <img src="images/520/title.png" width="455" height="192" />
+                        </div>
+                        <div class="secItem cake" data-anim="fade-in" data-delay="0.2">
+                            <img src="images/520/cake.png" width="670" height="346" />
+                        </div>
+                    </div>
+                    <a href="#b" class="slide-link"></a>
+                </div>
+
+
+                <!--swiper-slide-ChildrenDay-->
+                <div class="swiper-slide  slides-ChildrenDay" style="background:url(images/ChildrenDay/banner-bg.jpg) repeat-x center;background-size:contain;">
+                    <div class="swiper-content">
+                        <div class="secItem title" data-anim="slide-down" >
+                            <img src="images/ChildrenDay/title.png" width="326" height="222" />
+                        </div>
+                        <div class="secItem left" data-anim="slide-right" data-delay="0.5">
+                            <img src="images/ChildrenDay/left.png" width="380" height="225" />
+                        </div>
+                        <div class="secItem right" data-anim="slide-left" data-delay="0.5">
+                            <img src="images/ChildrenDay/right.png" width="221" height="213" />
                         </div>
 
+                        <div class="secItem chezi" id="el_chezi">sdfsdf</div>
+                        <div class="secItem baozi" id="el_baozi"></div>
+                        <div class="secItem long-mogu" id="el_longmogu"></div>
+
+
+
+                        <div class="secItem long-mogu" data-anim="slide-up" data-delay="0.5">
+                            <img src="images/ChildrenDay/long-mogu.png" width="30" height="105" />
+                        </div>
+                        <div class="secItem cake" data-anim="slide-up" data-delay="0.5">
+                            <img src="images/ChildrenDay/cake.png" width="408" height="432" />
+                        </div>
+                        <div class="secItem btn" data-anim="fade-in" data-delay="1.2">
+                            <img src="images/ChildrenDay/btn.png" width="139" height="191" />
+                        </div>
 
                     </div>
+                    <a href="#b" class="slide-link"></a>
                 </div>
-                <div class="swiper-slide" id="slides-2" style="background:url(images/women/banner-bg.jpg) no-repeat center;background-size:cover; ">
-                    <div class="swiper-content">
-                        <div class="secItem q1" data-anim="fade-in" data-delay="0.8" data-duration="800">
-                            <img src="images/women/cake.png" height="117" width="146"/>
-                        </div>
-                        <div class="secItem q2" data-anim="fade-in" data-delay="1.2" data-duration="1000">
-                            <img src="images/women/ribbon-1.png" height="110" width="117"/>
-                        </div>
-                        <div class="secItem q3" data-anim="fade-in" data-delay="1.6" data-duration="1000">
-                            <img src="images/women/leaf.png" height="398" width="630"/>
-                        </div>
-                        <div class="secItem q4" data-anim="bounce-in" data-delay="2.4" data-duration="800">
-                            <img src="images/women/buling.png" height="94" width="233"/>
-                        </div>
-                        <div class="secItem q5" data-anim="fade-in" data-delay="2.8" data-duration="1000">
-                            <img src="images/women/silk.png" height="110" width="327"/>
-                        </div>
-                        <div class="secItem q6" data-anim="fade-in" data-delay="3.2" data-duration="1000">
-                            <img src="images/women/ball.png" height="129" width="93"/>
-                        </div>
-                        <div class="secItem q7" data-anim="fade-in" data-delay="2" data-duration="1000">
-                            <img src="images/women/eye.png" height="56" width="93"/>
-                        </div>
-                        <div class="secItem q8" data-anim="fade-in" data-delay="0.8" data-duration="1000">
-                            <img src="images/women/shose.png" height="200" width="81"/>
-                        </div>
-                        <div class="secItem q9" data-anim="fade-in" data-delay="2" data-duration="1000">
-                            <img src="images/women/ribbon-2.png" height="197" width="518"/>
-                        </div>
 
-                    </div>
-                </div>
+                <!--swiper-slide 结束-->
+
 
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination pagination"></div>
         </div>
-
     </div>
 
-    <!--<a href="#" style="width:100%; height:550px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>-->
-
-
-
 </div>
+<!--banner结束-->
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
 <script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>

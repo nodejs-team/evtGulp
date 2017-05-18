@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"b-bg_jpg,b-btn_png,b-cake_png,b-title_png,banner-1_jpg,banner-icon_png,floader-container_png,floader-icon_png,flower-1_png,flower-2_png,price_png,word_png,banner-title_png,basket_png,bg_jpg,cake_png,clod-1_png,clod-2_png,arrows_png,banner-caomei-a_json,caomei-b_json",
+			"keys":"b-bg_jpg,b-btn_png,b-cake_png,b-title_png,banner-1_jpg,banner-icon_png,floader-container_png,floader-icon_png,flower-1_png,flower-2_png,price_png,word_png,banner-title_png,basket_png,bg_jpg,cake_png,clod-1_png,clod-2_png,arrows_png,banner-caomei-a_json,caomei-b_json,banner-bg_jpg,baozi_json,btn_png,cake_png,chezi_json,left_png,long-mogu_json,right_png,title_png",
 			"name":"preload"
 		}],
 	"resources":[
@@ -110,6 +110,54 @@
 			"subkeys":"caomei_b_00000,caomei_b_00001,caomei_b_00002,caomei_b_00003,caomei_b_00004,caomei_b_00005,caomei_b_00006,caomei_b_00007,caomei_b_00008,caomei_b_00009,caomei_b_00010,caomei_b_00011,caomei_b_00012,caomei_b_00013,caomei_b_00014,caomei_b_00015,caomei_b_00016,caomei_b_00017,caomei_b_00018,caomei_b_00019,caomei_b_00020,caomei_b_00021,caomei_b_00022,caomei_b_00023,caomei_b_00024,caomei_b_00025,caomei_b_00026,caomei_b_00027,caomei_b_00028,caomei_b_00029,caomei_b_00030,caomei_b_00031,caomei_b_00032,caomei_b_00033,caomei_b_00034,caomei_b_00035,caomei_b_00036,caomei_b_00037,caomei_b_00038,caomei_b_00039,caomei_b_00040,caomei_b_00041,caomei_b_00042,caomei_b_00043,caomei_b_00044,caomei_b_00045,caomei_b_00046,caomei_b_00047,caomei_b_00048,caomei_b_00049",
 			"type":"sheet",
 			"url":"caomei-b.json"
+		},
+		{
+			"name":"banner-bg_jpg",
+			"type":"image",
+			"url":"ChildrenDay/banner-bg.jpg"
+		},
+		{
+			"name":"baozi_json",
+			"subkeys":"baozi-1,baozi-2,baozi-3,baozi-4",
+			"type":"sheet",
+			"url":"ChildrenDay/baozi.json"
+		},
+		{
+			"name":"btn_png",
+			"type":"image",
+			"url":"ChildrenDay/btn.png"
+		},
+		{
+			"name":"cake_png",
+			"type":"image",
+			"url":"ChildrenDay/cake.png"
+		},
+		{
+			"name":"chezi_json",
+			"subkeys":"chezi-1,chezi-2",
+			"type":"sheet",
+			"url":"ChildrenDay/chezi.json"
+		},
+		{
+			"name":"left_png",
+			"type":"image",
+			"url":"ChildrenDay/left.png"
+		},
+		{
+			"name":"long-mogu_json",
+			"subkeys":"long-mogu-1,long-mogu-2,long-mogu-3",
+			"type":"sheet",
+			"url":"ChildrenDay/long-mogu.json"
+		},
+		{
+			"name":"right_png",
+			"type":"image",
+			"url":"ChildrenDay/right.png"
+		},
+		{
+			"name":"title_png",
+			"type":"image",
+			"url":"ChildrenDay/title.png"
 		}
 	]
 }

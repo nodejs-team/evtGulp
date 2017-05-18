@@ -1,11 +1,6 @@
 .evt-container{}
 
-.swiper-container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
-}
+.swiper-container {  width: 100%;  margin-left: auto;  margin-right: auto;  }
 
 .swiper-slide {
   text-align: center; cursor: pointer;
@@ -26,32 +21,14 @@
   align-items: center;
 }
 
-.pagination {
-  position: absolute;
-  left: 0;
-  text-align: center;
-  bottom:5px;
-  width: 100%;
-}
+.pagination {  position: absolute;  left: 0;  text-align: center;  bottom:5px;  width: 100%;  }
 .arrow-left {
   background: url(../images/arrows.png) no-repeat left top;
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  margin-top: -15px;
-  width: 17px;
-  height: 30px;
- z-index: 2;
+  position: absolute;  left: 10px;  top: 50%;  margin-top: -15px;  width: 17px;  height: 30px;  z-index: 2; cursor: pointer;
 }
 .arrow-right {
   background: url(../images/arrows.png) no-repeat left bottom;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  margin-top: -15px;
-  width: 17px;
-  height: 30px;
-  z-index: 2;
+  position: absolute;  right: 10px;  top: 50%;  margin-top: -15px;  width: 17px;  height: 30px;  z-index: 2; cursor: pointer;
 }
 
 .swiper-pagination-switch {
@@ -62,39 +39,30 @@
   margin-right: 5px;
   opacity: 0.8;
   cursor: pointer;
-  border: 1px solid #f6eee8;
-  background: #efb79d;
-}
-.swiper-visible-switch {
+  border: 1px solid #eee;
   background: #aaa;
 }
+.swiper-visible-switch {  background: #aaa;  }
 .swiper-active-switch {
-  background: #9e1d19;
+background: #a5002f;
 }
+.slide-link{position: absolute; top:0; left: 5%; display: block; width: 90%; height: 100%; }
+.swiper-slide{position: relative;}
 
-
-
-/*单个banner*/
-.banner-single{
-  .evt-content{
-    /* addon css code goes here */
-    height: 550px;
-    .b-title{left: 396px; }
-    .b-word{ top:177px; left: 580px;}
-    .b-flower1{ top:54px ;left: 169px;}
-    .b-flower2{ top:273px ;left: 547px;}
-    .b-cake{ top:200px ;left: 207px; opacity: 0;}
-    .b-price{ top:431px ;left: 548px;}
-    .b-btn{top:470px ;left: 698px;}
+.oldie{
+  .swiper-content{
+    margin: 0 auto;
   }
 }
-/*多个个banner*/
+
+/*banner*/
 .swiper-container { height: 550px;}
 .banner-slides{
   .swiper-content{
     height: 550px;
   }
-  #slides-0{
+
+  .slides-motherDay{
     .b-title{left: 396px; }
     .b-word{ top:177px; left: 580px;}
     .b-flower1{ top:54px ;left: 169px;}
@@ -103,7 +71,7 @@
     .b-price{ top:431px ;left: 548px;}
     .b-btn{top:470px ;left: 698px;}
   }
-  #slides-1{
+  .slides-strawberryDay{
     .clod-1{ top:0; left: -30px;}
     .clod-2{ top:0; left: 687px;}
     .title{ top: 10px; left: 264px;}
@@ -112,57 +80,71 @@
     .caomei_a{  top: 172px; left: 562px;}
     .caomei_b{ top: 119px; left: 38px;}
   }
-  #slides-2{
-    .q1{
-      left:199px;
-      top:134px;
-      z-index: 2;
-    }
-    .q2{
-      left:290px;
-      top:54px;
-      z-index: 1;
-    }
-    .q3{
-      left:167px;
-      top:95px;
-    }
-    .q4{
-      left:366px;
-      top:123px;
-    }
-    .q5{
-      left:306px;
-      top:222px;
-      z-index: 2;
-    }
-    .q6{
-      left:603px;
-      top:128px;
-    }
-    .q7{
-      left:372px;
-      top:299px;
-    }
-    .q8{
-      left:600px;
-      top:233px;
-      z-index: 1;
-    }
-    .q9{
-      left:337px;
-      top:296px;
-    }
+  .slides-women{
+    .q1{  left:199px;  top:134px;  z-index: 2;  }
+    .q2{  left:290px;  top:54px;  z-index: 1;  }
+    .q3{  left:167px;  top:95px;  }
+    .q4{  left:366px;  top:123px;  }
+    .q5{  left:306px;  top:222px;  z-index: 2;  }
+    .q6{  left:603px;  top:128px;  }
+    .q7{  left:372px;  top:299px;  }
+    .q8{  left:600px;  top:233px;  z-index: 1;  }
+    .q9{  left:337px;  top:296px;  }
   }
+
+  .slides-chihuo{
+    .title{ top: 13px; left: 26px; }
+    .decorate-1{ top:240px ;left: -34px;}
+    .decorate-2{ top:26px ;left: 633px;}
+    .cake{ top:45px ;left: 447px; }
+
+  }
+
+  .slides-song{
+    .title{ top: 48px; left: 163px; }
+    .yuans-1{ top: 86px; left: -22px; }
+    .yuans-2{ top: 86px; left: 622px; }
+    .cake{ top: 196px; left: 350px; }
+    .quan{ top: 235px; left: 180px; }
+    .across{ top: 370px; left: 276px; }
+    .btn{ top: 417px; left: 230px; }
+
+  }
+
+  .slides-520{
+    .boy{ top: 129px; left: 0px; }
+    .girl{ top: 189px; left: 781px; }
+    .title{ top: 42px; left: 246px; }
+    .cake{ top: 204px; left: 145px; }
+  }
+
+  .slides-ChildrenDay{
+    .title{ top: 20px; left: 443px; }
+    .left{ top: 267px; left: -160px; }
+    .right{ top: 256px; left: 909px; }
+    .long-mogu{ top: 365px; left: 761px; }
+    .cake{ top: 118px; left: 239px; }
+    .btn{ top: 267px; left: 654px; }
+    .chezi{top: 356px; left: 0;}
+    .baozi{top: 356px; left: 0;}
+    .long-mogu{top: 356px; left: 0;}
+
+
+  }
+
 
 
 }
 
 
 /*浮动*/
-#floater{position:fixed; top:110px; right:10px; z-index:11; width:187px;}
-#floater .floatImg{width:187px; position:relative; font-size:0;}
-#floater .floatImg img{width:100%;}
-#floater .floatImg a{width:100%; display:block; height:100%; position:absolute; top:0; left:0;}
 
+#floater{position:fixed; top:100px; right:10px; z-index:11; width:300px;
+  .floatImg{ position:relative; font-size:0;
+    img{width: 100%;}
+    a{width:100%; display:block; height:180px; position:absolute; top:0; left:0;}
+  }
+  .float-icon{ position: absolute; top: 0; left: 0; width:300px;}
+  .float-container{width:300px; position:absolute; font-size:0;  top:180px;  left:0; display: block; }
+}
 

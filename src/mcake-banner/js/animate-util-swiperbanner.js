@@ -329,13 +329,13 @@
       "bounce-in": function(el, delay, cb, duration){
         var $el = $(el);
         $el.css({
-            opacity: 0
+          opacity: 0
         });
 
         setTimeout(function(){
-            $el.animate({
-                opacity: 1
-            }, duration || 1000, cb);
+          $el.animate({
+            opacity: 1
+          }, duration || 1000, cb);
         }, delay);
     }
   };
@@ -400,7 +400,7 @@
   var setAllAnimate = function(container){
 
     $(container).find("[data-anim]").each(function(){
-      console.log(this);
+
       setAnimate(this);
     });
   };
@@ -409,11 +409,11 @@
 
     var $win = $(window);
     var winHeight = $win.height();
-    var elems = $(container).find('[data-anim]');
+    var elems = container.find('[data-anim]');
     var elemObj = [];
 
-
     elems.each(function(){
+
       elemObj.push({
         $elem: $(this),
         anim: this.getAttribute('data-anim'),
@@ -422,11 +422,9 @@
         isAnimated: false
       });
     });
-     // console.log(elems);
-
-
 
     $win.on('scroll', function(){
+
       var scrollTop = $win.scrollTop();
       var docHeight = document.documentElement.clientHeight;
 
@@ -445,6 +443,7 @@
       });
     })
       .trigger('scroll');
+
   };
 
   var correctPNG = function(container){
