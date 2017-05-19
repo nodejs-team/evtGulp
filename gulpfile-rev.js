@@ -42,7 +42,7 @@ var path = {
     distCssFolder: DIST + '/css',
     distCss: DIST + '/css/**/*.css',
     srcImg: SRC + '/images/**/*.{png,jpg,jpeg}',
-    srcImgGif: SRC + '/images/**/*.gif',
+    srcImgGifSvg: SRC + '/images/**/*.{gif,svg}',
     srcHtml: SRC +'/*.html',
     distHtml: DIST +'/*.html',
     srcFont: SRC + '/fonts/**/*',
@@ -89,7 +89,7 @@ gulp.task('copy-files', function (done) {
     var tasks = [];
 
     tasks.push(
-        gulp.src(path.srcImgGif)
+        gulp.src(path.srcImgGifSvg)
         .pipe(rev())
         .pipe(gulp.dest(path.distImgFolder))
         .pipe(rev.manifest())

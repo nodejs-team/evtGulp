@@ -77,7 +77,7 @@ body {
 }
 
 .s1-slide .s1-baozi {
-  top: 414px;
+  top: 454px;
   left: 771px;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .s1-slide .s1-mg {
-  top: 484px;
+  top: 524px;
   left: 706px;
 }
 
@@ -107,8 +107,23 @@ body {
 }
 
 .s1-slide .s1-word-1 {
+  width: 280px;
+  height: 200px;
   top: 336px;
   left: 720px;
+  background: url(../images/s1-word-1.svg) no-repeat;
+  background-size: 100% auto;
+}
+
+.s1-slide .s1-word-1 img {
+  visibility: hidden;
+}
+
+.s1-slide .s1-word-1 .hi {
+  position: absolute;
+  left: -50px;
+  top: 10px;
+  visibility: visible;
 }
 
 .s1-slide .across {
@@ -123,6 +138,10 @@ body {
   background: url("../images/bg-b.png") repeat;
   left: 0;
   bottom: 0;
+}
+
+:root .s1-word-1 {
+  top: 316px;
 }
 
 .s2-slide .s2-btn {
@@ -153,6 +172,16 @@ body {
 .s2-slide .s2-word {
   top: 318px;
   left: 674px;
+}
+
+.s2-slide .s2-word .text {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: 400px;
+  color: #638331;
+  font-size: 15px;
+  text-align: left;
 }
 
 .s2-slide .s2-xpic {

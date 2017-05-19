@@ -51,15 +51,28 @@ body {
   .title{ top: 20px; left: 312px;}
   .s1-cake{ top: 205px; left: 242px;}
   .s1-cao{ top: 260px; left: 123px;}
-  .s1-baozi{ top: 414px; left: 771px;}
+  .s1-baozi{ top: 454px; left: 771px;}
   .s1-che{ top: 370px; left: -17px;}
   .s1-dadi{ top: 507px; left: -379px;}
   .s1-l-tree{ top: 167px; left: -283px;}
-  .s1-mg{ top: 484px; left: 706px;}
+  .s1-mg{ top: 524px; left: 706px;}
   .s1-r-mg{ top: 211px; left: 953px;}
-  .s1-word-1{ top: 336px; left: 720px;}
+  .s1-word-1{ width:280px; height:200px; top: 336px; left: 720px; background: url(../images/s1-word-1.svg) no-repeat; background-size: 100% auto;}
+  .s1-word-1 img{visibility: hidden;}
+  .s1-word-1 {
+    .hi{
+      position: absolute;
+      left:- 50px;
+      top: 10px;
+      visibility: visible;
+    }
+  }
   .across{ top: 680px; left: 449px;}
   .bg-b{ position: absolute; width: 100%; height: 448px; background: url("../images/bg-b.png") repeat; left:0; bottom:0; }
+}
+
+:root .s1-word-1{
+  top:316px;
 }
 
 .s2-slide{
@@ -68,7 +81,19 @@ body {
   .s2-kuai{ top: 36px; left: 260px;}
   .s2-pic{ top: 96px; left: -31px;}
   .s2-tu{ top: 221px; left: 703px;}
-  .s2-word{ top: 318px; left: 674px;}
+  .s2-word{
+    top: 318px;
+    left: 674px;
+    .text{
+      position: absolute;
+      left:0;
+      top: 75px;
+      width: 400px;
+      color:#638331;
+      font-size: 15px;
+      text-align: left;
+    }
+  }
   .s2-xpic{ top: 18px; left: 96px;}
   .s2-caomei_b{ top:50px; left: 115px;}
   .s2-caomei{ top:510px; left: 115px;}
