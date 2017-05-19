@@ -121,7 +121,8 @@ body {
   width: 100%;
   height: 448px;
   background: url("../images/bg-b.png") repeat;
-  top: 479px;
+  left: 0;
+  bottom: 0;
 }
 
 .s2-slide .s2-btn {

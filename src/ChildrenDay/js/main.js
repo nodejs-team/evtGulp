@@ -102,8 +102,34 @@
         }
       });
     }
-  }
+  };
 
+  function createResponsiveStyle() {
+    var style = document.createElement("style");
+    style.type = "text/css";
+    document.head.appendChild(style);
+
+    return {
+      setStyle: function (text) {
+        style.innerHTML = "";
+        if( style.styleSheet ){
+          style.styleSheet.cssText = text;
+        } else {
+          style.innerHTML = text;
+        }
+      },
+      getRespStyle: function(){
+        var ratio = Math.max(0.6, Math.min(1, window.innerHeight/960));
+        return ".evt-content{" +
+            "position:absolute;height:800px;left:50%;top:50%;" +
+            "-webkit-transform:translate(-50%,-50%) scale("+ratio+");" +
+            "transform:translate(-50%,-50%) scale("+ratio+");" +
+            "-webkit-transform-origin:50% 50%;" +
+            "transform-origin:50% 50%;" +
+          "}";
+      }
+    }
+  }
 
   var loadComplete = function () {
 
@@ -111,10 +137,16 @@
 
     if( !isSupportCss3 ){
       $(document.body).addClass("oldie");
+    } else {
+      var respStyle = createResponsiveStyle();
+      respStyle.setStyle(respStyle.getRespStyle());
+      $(window).resize(function () {
+        respStyle.setStyle(respStyle.getRespStyle());
+      });
     }
 
     if(winH<900){
-      $(".bj-container").height('900px');
+      //$(".bj-container").height('900px');
       swiperFn.swiperFn1();
     }else{
       swiperFn.swiperFn2();

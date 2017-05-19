@@ -7,6 +7,7 @@ var investConfig = [
         title: "饮食习惯",
         titleIcon: "icons-1",
         pageClass: "sec-first",
+        pageIndex: 1,
         questions: [
             {
                 "questionCode": "1.1",
@@ -71,6 +72,7 @@ var investConfig = [
         title: "生活习惯",
         titleIcon: "icons-10",
         pageClass: "sec-second",
+        pageIndex: 2,
         questions: [
             {
                 "questionCode": "5.1",
@@ -127,6 +129,7 @@ var investConfig = [
         title: "生活感受",
         titleIcon: "icons-16",
         pageClass: "sec-third",
+        pageIndex: 3,
         questions: [
             {
                 "questionCode": "8.1",
@@ -143,6 +146,7 @@ var investConfig = [
         title: "基本信息",
         titleIcon: "icons-17",
         pageClass: "sec-fourth",
+        pageIndex: 4,
         lastPage: true,
         questions: [
             {
