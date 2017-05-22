@@ -3,38 +3,38 @@
  */
 (function ($) {
   var loadComplete = function () {
-    if( !isSupportCss3 ){
-      $(document.body).addClass("oldie");
-    }
 
     var animations = {
-      caomei_a: function () {
-        var mc = new MovieClip('banner-caomei-a_png', "banner-caomei-a_json", 'el_caomei_a');
-        mc.gotoAndPlay(1, -1);
-        return mc;
-      },
-      caomei_b: function () {
-        var mc = new MovieClip('caomei-b_png', "caomei-b_json", 'el_caomei_b');
-        mc.gotoAndPlay(1, -1);
-        return mc;
-      },
-      chezi: function () {
-        var mc = new MovieClip('chezi_png', "chezi_json", 'el_chezi');
-        mc.gotoAndPlay(1, -1);
-        return mc;
+      chezi:function () {
+        $(".chezi").each(function(i, el){   /*循环播放会创建多个节点*/
+          var mc = new MovieClip('chezi_png', "chezi_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+          /*"duration":4  0.2*20 */
+        });
       },
       baozi: function () {
-        var mc = new MovieClip('baozi_png', "baozi_json", 'el_baozi');
-        mc.gotoAndPlay(1, -1);
-        return mc;
+
+        $(".baozi").each(function(i, el){
+          var mc = new MovieClip('baozi_png', "baozi_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
       },
       longmogu: function () {
-        var mc = new MovieClip('long-mogu_png', "long-mogu_json", 'el_longmogu');
-        mc.gotoAndPlay(1, -1);
-        return mc;
+        $(".long-mogu").each(function(i, el){
+          var mc = new MovieClip('long-mogu_png', "long-mogu_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
       }
     };
 
+
+    if( !isSupportCss3 ){
+      $(document.body).addClass("oldie");
+    }
 
     var slidesLen = $(".banner-slides").find('.swiper-slide').length;
     if (1 == slidesLen) {
@@ -43,7 +43,6 @@
       bannerSwiperSingle();
     } else {
       bannerSwiper();
-      console.log(111);
       animations.chezi();
       animations.baozi();
       animations.longmogu();
@@ -51,6 +50,8 @@
     $(".float-container").fadeOut();
     floater();
   };
+
+
 
   var loadResource = function () {
     if (typeof resData == 'object' && Array.isArray(resData.resources) && resData.resources.length > 0) {
@@ -125,7 +126,7 @@
           bindScroll($('.slides-first'));
           $(".swiper-slide:last").addClass('on');
         }
-         /*bindScroll($(swiper.getLastSlide()));*/
+
       },
       onSlideChangeStart: function () {
         if ($(swiper.activeSlide()).hasClass("on")) {
@@ -136,6 +137,7 @@
       },
       onSlideChangeEnd: function (swiper) {
         $(swiper.activeSlide()).addClass('on');
+
       }
     });
     if (!isSupportCss3) {

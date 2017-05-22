@@ -1,126 +1,38 @@
 {
 	"groups":[{
-			"keys":"b-bg_jpg,b-btn_png,b-cake_png,b-title_png,banner-1_jpg,banner-icon_png,floader-container_png,floader-icon_png,flower-1_png,flower-2_png,price_png,word_png,banner-title_png,basket_png,bg_jpg,cake_png,clod-1_png,clod-2_png,arrows_png,banner-caomei-a_json,caomei-b_json,banner-bg_jpg,baozi_json,btn_png,cake_png,chezi_json,left_png,long-mogu_json,right_png,title_png",
+			"keys":"1banner-bg_jpg,boy_png,1cake_png,girl_png,1title_png,banner-bg_jpg,btn_png,cake_png,left_png,right_png,2title_png,2banner-bg_jpg,2cake_png,decorate-1_png,decorate-2_png,title_png,floader-1_png,floader-2_png,floader-container_png,floader-icon_png,arrows_png,baozi_json,chezi_json,long-mogu_json",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"b-bg_jpg",
+			"name":"1banner-bg_jpg",
 			"type":"image",
-			"url":"motherDay/b-bg.jpg"
+			"url":"520/banner-bg.jpg"
 		},
 		{
-			"name":"b-btn_png",
+			"name":"boy_png",
 			"type":"image",
-			"url":"motherDay/b-btn.png"
+			"url":"520/boy.png"
 		},
 		{
-			"name":"b-cake_png",
+			"name":"1cake_png",
 			"type":"image",
-			"url":"motherDay/b-cake.png"
+			"url":"520/cake.png"
 		},
 		{
-			"name":"b-title_png",
+			"name":"girl_png",
 			"type":"image",
-			"url":"motherDay/b-title.png"
+			"url":"520/girl.png"
 		},
 		{
-			"name":"banner-1_jpg",
+			"name":"1title_png",
 			"type":"image",
-			"url":"motherDay/banner-1.jpg"
-		},
-		{
-			"name":"banner-icon_png",
-			"type":"image",
-			"url":"motherDay/banner-icon.png"
-		},
-		{
-			"name":"floader-container_png",
-			"type":"image",
-			"url":"motherDay/floader-container.png"
-		},
-		{
-			"name":"floader-icon_png",
-			"type":"image",
-			"url":"motherDay/floader-icon.png"
-		},
-		{
-			"name":"flower-1_png",
-			"type":"image",
-			"url":"motherDay/flower-1.png"
-		},
-		{
-			"name":"flower-2_png",
-			"type":"image",
-			"url":"motherDay/flower-2.png"
-		},
-		{
-			"name":"price_png",
-			"type":"image",
-			"url":"motherDay/price.png"
-		},
-		{
-			"name":"word_png",
-			"type":"image",
-			"url":"motherDay/word.png"
-		},
-		{
-			"name":"banner-title_png",
-			"type":"image",
-			"url":"strawberryDay/banner-title.png"
-		},
-		{
-			"name":"basket_png",
-			"type":"image",
-			"url":"strawberryDay/basket.png"
-		},
-		{
-			"name":"bg_jpg",
-			"type":"image",
-			"url":"strawberryDay/bg.jpg"
-		},
-		{
-			"name":"cake_png",
-			"type":"image",
-			"url":"strawberryDay/cake.png"
-		},
-		{
-			"name":"clod-1_png",
-			"type":"image",
-			"url":"strawberryDay/clod-1.png"
-		},
-		{
-			"name":"clod-2_png",
-			"type":"image",
-			"url":"strawberryDay/clod-2.png"
-		},
-		{
-			"name":"arrows_png",
-			"type":"image",
-			"url":"arrows.png"
-		},
-		{
-			"name":"banner-caomei-a_json",
-			"subkeys":"caomei_a_00000,caomei_a_00001,caomei_a_00002,caomei_a_00003,caomei_a_00004,caomei_a_00005,caomei_a_00006,caomei_a_00007,caomei_a_00008,caomei_a_00009,caomei_a_00010,caomei_a_00011,caomei_a_00012,caomei_a_00013,caomei_a_00014,caomei_a_00015,caomei_a_00016,caomei_a_00017,caomei_a_00018,caomei_a_00019,caomei_a_00020,caomei_a_00021,caomei_a_00022,caomei_a_00023,caomei_a_00024,caomei_a_00025,caomei_a_00026,caomei_a_00027,caomei_a_00028,caomei_a_00029,caomei_a_00030,caomei_a_00031,caomei_a_00032,caomei_a_00033,caomei_a_00034,caomei_a_00035,caomei_a_00036,caomei_a_00037,caomei_a_00038,caomei_a_00039,caomei_a_00040,caomei_a_00041,caomei_a_00042,caomei_a_00043,caomei_a_00044,caomei_a_00045,caomei_a_00046,caomei_a_00047,caomei_a_00048,caomei_a_00049",
-			"type":"sheet",
-			"url":"banner-caomei-a.json"
-		},
-		{
-			"name":"caomei-b_json",
-			"subkeys":"caomei_b_00000,caomei_b_00001,caomei_b_00002,caomei_b_00003,caomei_b_00004,caomei_b_00005,caomei_b_00006,caomei_b_00007,caomei_b_00008,caomei_b_00009,caomei_b_00010,caomei_b_00011,caomei_b_00012,caomei_b_00013,caomei_b_00014,caomei_b_00015,caomei_b_00016,caomei_b_00017,caomei_b_00018,caomei_b_00019,caomei_b_00020,caomei_b_00021,caomei_b_00022,caomei_b_00023,caomei_b_00024,caomei_b_00025,caomei_b_00026,caomei_b_00027,caomei_b_00028,caomei_b_00029,caomei_b_00030,caomei_b_00031,caomei_b_00032,caomei_b_00033,caomei_b_00034,caomei_b_00035,caomei_b_00036,caomei_b_00037,caomei_b_00038,caomei_b_00039,caomei_b_00040,caomei_b_00041,caomei_b_00042,caomei_b_00043,caomei_b_00044,caomei_b_00045,caomei_b_00046,caomei_b_00047,caomei_b_00048,caomei_b_00049",
-			"type":"sheet",
-			"url":"caomei-b.json"
+			"url":"520/title.png"
 		},
 		{
 			"name":"banner-bg_jpg",
 			"type":"image",
 			"url":"ChildrenDay/banner-bg.jpg"
-		},
-		{
-			"name":"baozi_json",
-			"subkeys":"baozi-1,baozi-2,baozi-3,baozi-4",
-			"type":"sheet",
-			"url":"ChildrenDay/baozi.json"
 		},
 		{
 			"name":"btn_png",
@@ -133,21 +45,9 @@
 			"url":"ChildrenDay/cake.png"
 		},
 		{
-			"name":"chezi_json",
-			"subkeys":"chezi-1,chezi-2",
-			"type":"sheet",
-			"url":"ChildrenDay/chezi.json"
-		},
-		{
 			"name":"left_png",
 			"type":"image",
 			"url":"ChildrenDay/left.png"
-		},
-		{
-			"name":"long-mogu_json",
-			"subkeys":"long-mogu-1,long-mogu-2,long-mogu-3",
-			"type":"sheet",
-			"url":"ChildrenDay/long-mogu.json"
 		},
 		{
 			"name":"right_png",
@@ -155,9 +55,77 @@
 			"url":"ChildrenDay/right.png"
 		},
 		{
-			"name":"title_png",
+			"name":"2title_png",
 			"type":"image",
 			"url":"ChildrenDay/title.png"
+		},
+		{
+			"name":"2banner-bg_jpg",
+			"type":"image",
+			"url":"ChowhoundDay/banner-bg.jpg"
+		},
+		{
+			"name":"2cake_png",
+			"type":"image",
+			"url":"ChowhoundDay/cake.png"
+		},
+		{
+			"name":"decorate-1_png",
+			"type":"image",
+			"url":"ChowhoundDay/decorate-1.png"
+		},
+		{
+			"name":"decorate-2_png",
+			"type":"image",
+			"url":"ChowhoundDay/decorate-2.png"
+		},
+		{
+			"name":"title_png",
+			"type":"image",
+			"url":"ChowhoundDay/title.png"
+		},
+		{
+			"name":"floader-1_png",
+			"type":"image",
+			"url":"floader/floader-1.png"
+		},
+		{
+			"name":"floader-2_png",
+			"type":"image",
+			"url":"floader/floader-2.png"
+		},
+		{
+			"name":"floader-container_png",
+			"type":"image",
+			"url":"floader/floader-container.png"
+		},
+		{
+			"name":"floader-icon_png",
+			"type":"image",
+			"url":"floader/floader-icon.png"
+		},
+		{
+			"name":"arrows_png",
+			"type":"image",
+			"url":"arrows.png"
+		},
+		{
+			"name":"baozi_json",
+			"subkeys":"baozi-1,baozi-2,baozi-3,baozi-4",
+			"type":"sheet",
+			"url":"baozi.json"
+		},
+		{
+			"name":"chezi_json",
+			"subkeys":"chezi-1,chezi-2",
+			"type":"sheet",
+			"url":"chezi.json"
+		},
+		{
+			"name":"long-mogu_json",
+			"subkeys":"long-mogu-1,long-mogu-2,long-mogu-3",
+			"type":"sheet",
+			"url":"long-mogu.json"
 		}
 	]
 }
