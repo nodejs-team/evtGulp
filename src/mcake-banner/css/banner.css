@@ -342,6 +342,11 @@
   left: 0;
 }
 
+.banner-slides .slides-duanwu .q1 {
+  left: 126px;
+  top: 34px;
+}
+
 /*浮动*/
 #floater {
   position: fixed;

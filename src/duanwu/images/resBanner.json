@@ -1,0 +1,18 @@
+{
+  "groups":[
+  {
+    "keys":"b-bg_jpg,b-text_png",
+    "name":"preload"
+  }],
+  "resources":[
+  {
+    "name":"b-bg_jpg",
+    "type":"image",
+    "url":"banner/b-bg.jpg"
+  },
+  {
+    "name":"b-text_png",
+    "type":"image",
+    "url":"banner/b-text.png"
+  }]
+}

@@ -137,7 +137,7 @@ body {
   height: 448px;
   background: url("../images/bg-b.png") repeat;
   left: 0;
-  bottom: 0;
+  top: 313px;
 }
 
 :root .s1-word-1 {

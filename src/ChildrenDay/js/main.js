@@ -119,7 +119,7 @@
         }
       },
       getRespStyle: function(){
-        var ratio = Math.max(0.7, Math.min(1, window.innerHeight/960));
+        var ratio = Math.max(0.65, Math.min(1, window.innerHeight/960));
         return ".evt-content{" +
             "position:absolute;height:800px;left:50%;top:50%;" +
             "-webkit-transform:translate(-50%,-50%) scale("+ratio+");" +
