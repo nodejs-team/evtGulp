@@ -32,21 +32,17 @@
 }
 
 .evt-content .s2-text {
-  left: 204px;
+  left: 50%;
   top: 73px;
+  margin-left: -407px;
   padding-top: 20px;
   border-top: 2px solid #c7000a;
-  height: 7.4%;
-}
-
-.evt-content .s2-text .s2-title {
-  height: 100%;
 }
 
 .evt-content .s2-text .s2-title img {
   display: block;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .evt-content .s3-text {

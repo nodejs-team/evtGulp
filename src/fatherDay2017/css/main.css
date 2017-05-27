@@ -1,0 +1,127 @@
+.evt-container {
+  width: 100%;
+  background: url(../images/bg.jpg);
+  overflow: hidden;
+}
+
+.evt-content {
+  height: 2135px;
+  z-index: 11;
+}
+
+.evt-content .buy-btn {
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  line-height: 100;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.evt-content .q1 {
+  left: 595px;
+  top: -100px;
+}
+
+.evt-content .q2 {
+  left: 56px;
+  top: 74px;
+}
+
+.evt-content .text1 {
+  left: 528px;
+  top: 290px;
+}
+
+.evt-content .text1 .buy-btn {
+  left: 215px;
+  top: 135px;
+}
+
+.evt-content .q3 {
+  left: -20px;
+  top: 506px;
+}
+
+.evt-content .text2 {
+  left: 384px;
+  top: 884px;
+}
+
+.evt-content .text2 .buy-btn {
+  left: 0;
+  bottom: 0;
+}
+
+.evt-content .q-text2 {
+  left: 557px;
+  top: 630px;
+}
+
+.evt-content .q4 {
+  left: 500px;
+  top: 1055px;
+}
+
+.evt-content .text3 {
+  left: 190px;
+  top: 1150px;
+}
+
+.evt-content .text3 .buy-btn {
+  left: 190px;
+  top: 192px;
+}
+
+.evt-content .q5 {
+  left: 83px;
+  top: 1563px;
+}
+
+.evt-content .text4 {
+  left: 542px;
+  top: 1695px;
+}
+
+.evt-content .text4 .buy-btn {
+  left: 8px;
+  top: 50px;
+}
+
+.evt-content .q6 {
+  left: 652px;
+  top: 1872px;
+}
+
+.evt-footer {
+  position: relative;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.evt-footer .evt-rules {
+  width: 620px;
+  padding-left: 138px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  color: #907e59;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
