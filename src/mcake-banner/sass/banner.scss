@@ -132,6 +132,12 @@ background: #a5002f;
 
   }
 
+  .slides-duanwu {
+    .q1 {
+      left: 126px;
+      top: 34px;
+    }
+  }
 
 
 }
@@ -139,12 +145,17 @@ background: #a5002f;
 
 /*浮动*/
 
-#floater{position:fixed; top:100px; right:10px; z-index:11; width:300px;
+.floater{position:fixed; top:100px; right:10px; z-index:11; width:300px;
   .floatImg{ position:relative; font-size:0;
     img{width: 100%;}
     a{width:100%; display:block; height:180px; position:absolute; top:0; left:0;}
   }
   .float-icon{ position: absolute; top: 0; left: 0; width:300px;}
   .float-container{width:300px; position:absolute; font-size:0;  top:180px;  left:0; display: block; }
+}
+
+
+.icon{position:fixed; top:100px; right:40px; z-index:11;
+  a{width:100%; display:block; height:150px; position:absolute; top:0; left:0;}
 }
 

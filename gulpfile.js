@@ -38,7 +38,7 @@ var path = {
     srcSass: SRC + '/sass/**/*.scss',
     srcCssFolder: SRC + '/css',
     srcImg: SRC + '/images/**/*.{png,jpg,jpeg}',
-    srcImgGif: SRC + '/images/**/*.gif',
+    srcImgGifSvg: SRC + '/images/**/*.{gif,svg}',
     srcFont: SRC + '/fonts/**/*',
     distFontFolder: DIST + '/fonts',
     srcHtml: SRC +'/*.html',
@@ -78,7 +78,7 @@ gulp.task('copy-files', function (done) {
     var tasks = [];
 
     tasks.push(
-        gulp.src(path.srcImgGif)
+        gulp.src(path.srcImgGifSvg)
         .pipe(gulp.dest(path.distImgFolder))
     );
 

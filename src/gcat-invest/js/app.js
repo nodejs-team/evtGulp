@@ -8,13 +8,13 @@
       this.index = 0;
       this.config = investConfig.slice();
       this.swiper = null;
+      this.pageIndex = 1;
       this.doc = $(document.body);
       this.create(this.index);
       this._initEvents();
     },
-    create: function (index) {
+    _getData: function ( index ) {
       this.index = index;
-      var self = this;
       var data = this.config[index];
       var _data = this._getPageData(data);
 
@@ -26,21 +26,32 @@
 
       data.pageIndex = index + 1;
 
+      return data;
+    },
+    create: function (index) {
+      var self = this;
+      var data = this._getData(index);
       this.doc.find(".swiper-container").addClass("leave").transitionEnd(function () {
         $(this).remove();
       });
 
-      var panel = $(this.renderTemplate(data)).addClass("out").prependTo(this.doc);
+      var panel = $(this.renderTemplate('invest-secTpl', data)).addClass("out").prependTo(this.doc);
       document.body.offsetWidth;
       panel.removeClass("out").transitionEnd(function () {
         self._createSwiper( index == 3 );
       });
     },
     createNext: function () {
-      this.create(++this.index);
+      //this.create(++this.index);
+      if( ++this.index > 3 ){
+        this.index = 3;
+      }
+      this.swiper.paginationContainer.css("display", "none");
+      var data = this._getData(this.index);
+      this.swiper.appendSlide(this.renderTemplate('secTpl-item', data) + ( data.lastPage ? this.renderTemplate('form-secTpl', data) : "" ));
     },
-    renderTemplate: function (data) {
-      return template('invest-secTpl', data);
+    renderTemplate: function (id, data) {
+      return template(id, data);
     },
     setData: function( code, value, plain ){
       var retData = this.config[this.index].questions;
@@ -161,12 +172,40 @@
       return items;
     },
     _createSwiper: function (hidePagenation) {
+      var self = this;
+      var initX = 0;
+      var initY = 0;
       this.swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         speed: 400,
         onInit: function (swiper) {
           if( swiper.slides.length == 1 ){
             swiper.paginationContainer.addClass("hidden");
+          }
+          swiper.lockSwipeToNext();
+        },
+        onSlideNextStart: function (swiper) {
+          swiper.lockSwipeToNext();
+        },
+        onSlideNextEnd: function () {
+          self.swiper.paginationContainer.css("display", "block");
+        },
+        onTouchStart: function (swiper, event) {
+          var touch = event.targetTouches[0];
+            initX = touch.pageX;
+            initY = touch.pageY;
+        },
+        onTouchEnd: function(swiper, event){
+          var touch = event.changedTouches[0];
+          var diffX = touch.pageX - initX;
+          var diffY = touch.pageY - initY;
+          if( Math.abs(diffX) > Math.abs(diffY) ){
+            if( diffX < -30 ){
+              if( swiper.slides.eq(swiper.activeIndex).hasClass("actived") ){
+                self.swiper.unlockSwipeToNext();
+                self.swiper.slideNext();
+              }
+            }
           }
         },
         onSlideChangeStart: function(swiper){
@@ -176,12 +215,41 @@
           } else {
             swiper.paginationContainer.removeClass("hidden");
           }
+        },
+        onSlideChangeEnd: function (swiper) {
+          var activeIndex = swiper.activeIndex;
+          if( activeIndex < 4 ){
+            self.pageIndex = 1;
+            self._hideBullets(0, 4);
+          } else if( activeIndex > 3 && activeIndex < 7 ){
+            self.pageIndex = 2;
+            self._hideBullets(4, 7);
+          } else if( activeIndex > 6 && activeIndex < 8 ){
+            self.pageIndex = 3;
+            self._hideBullets(7, 8);
+          } else {
+            self.pageIndex = 4;
+            self._hideBullets(8, swiper.bullets.length);
+          }
+          $("#pageIndex").text(self.pageIndex);
+          if( activeIndex == 10 ){
+            swiper.slides.eq(10).addClass("actived");
+          }
         }
       });
 
       if( Array.isArray(this.swiper) ){
         this.swiper = this.swiper.shift();
       }
+    },
+    _hideBullets: function (start, end) {
+      this.swiper.bullets.each(function (i, slide) {
+        if( i >= start && i < end ) {
+          slide.style.display = "inline-block";
+        } else {
+          slide.style.display = "none";
+        }
+      });
     },
     _initEvents: function () {
       var self = this;
@@ -197,17 +265,17 @@
 
         self.setData(data.code, data.value, data.plain);
         var clsName = "";
-        switch (self.index){
-          case 0:
+        switch (self.pageIndex){
+          case 1:
             clsName = "brown";
             break;
-          case 1:
+          case 2:
             clsName = "green";
             break;
-          case 2:
+          case 3:
             clsName = "blue";
             break;
-          case 3:
+          case 4:
             clsName = "";
             break;
         }
@@ -222,9 +290,10 @@
           if (content.find("[data-action='invest'].active").length == itemCount) {
             if (self.swiper.activeIndex === self.swiper.slides.length - 1) {
               self.createNext();
-            } else {
-              self.swiper.slideNext();
             }
+            self.swiper.slides.eq(self.swiper.activeIndex).addClass('actived');
+            self.swiper.unlockSwipeToNext();
+            self.swiper.slideNext();
           }
         }, 200);
       });

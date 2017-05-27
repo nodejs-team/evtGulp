@@ -1,4 +1,5 @@
 {
+
   "project": "Gulp",
   "localserver": {
    "host": "localhost",
@@ -12,7 +13,7 @@
    "remotePath": ""
   },
 
-  "projectName": "ChildrenDay",
+  "projectName": "ChildrenDay-test",
   "revPrefix": "http://edm.mcake.com/fangli/2017-pc/"
 
 }

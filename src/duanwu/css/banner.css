@@ -1,0 +1,30 @@
+.sec-layer {
+  position: relative;
+  width: 100%;
+}
+
+.sec-layer .respv {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.evt-content {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1200px;
+  height: 100%;
+  margin-left: -600px;
+}
+
+.evt-content .q1 {
+  left: 126px;
+  top: 6.18%;
+}
+
+.evt-content .q1 img {
+  display: block;
+  width: auto;
+  height: 100%;
+}

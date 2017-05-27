@@ -49,6 +49,7 @@
     }
     $(".float-container").fadeOut();
     floater();
+    icon();
   };
 
 
@@ -209,6 +210,29 @@
     }
 
 
+  };
+
+  function icon(){
+    var height = $("#evt_container").outerHeight();
+    var fHeight = $(".icon").height();
+    var fTop = 100;
+    var fRight = 40;
+    var floater = $('#icon');
+    var floaterPosition = 'fixed';
+    var winWidth = $(window).width();
+    var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+    $(window).on("scroll", function(){
+      var sTop = $(this).scrollTop();
+      if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
+        floater.css({position: "absolute", top: height - fHeight, right: absRight});
+        floaterPosition = 'absolute';
+      }
+      if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
+        floater.css({position: "fixed", top: fTop, right:fRight});
+        floaterPosition = 'fixed';
+
+      }
+    });
   };
 
 })(jQuery);

@@ -63,52 +63,16 @@
 <body>
 
 <script type="text/template" id="invest-secTpl">
-    <div class="swiper-container wapper {{pageClass}}">
+    <div class="swiper-container wapper">
         <div class="wp-header">
             {{if pageIndex < 4}}
             <span class="skip-link" data-action="skip">skip</span>
             {{/if}}
-            <h1>第{{pageIndex}}部分，共4部分</h1>
+            <h1>第<span id="pageIndex">{{pageIndex}}</span>部分，共4部分</h1>
         </div>
 
         <div class="swiper-wrapper">
-            {{each items as item}}
-            <div class="swiper-slide">
-                <div class="content">
-                    <div class="cn-header">
-                        <span class="hd-legend"><i class="{{titleIcon}}"></i>{{title}}</span>
-                    </div>
-                    {{each item as question}}
-                    <div class="subject-item">
-                        <h2 class="subject-title">{{question.title}}</h2>
-                        <div class="subject-main {{if question.grid}}subject-grid{{/if}}">
-                            {{if question.icon}}
-                            <div class="subject-icon">
-                                <i class="{{question.icon}}"></i>
-                            </div>
-                            {{/if}}
-                            {{if question.grid}}
-                            {{each question.answers as answer}}
-                            <div class="grid-item {{answer.gridClassName}}" data-action="invest" data-code="{{question.questionCode}}" data-value="{{answer.value}}"  {{if question.plain}}data-plain="true"{{/if}}>
-                                <div class="subject-icon {{answer.theme}}">
-                                    <i class="{{answer.icon}}"></i>
-                                </div>
-                                <h4>{{=answer.text}}</h4>
-                            </div>
-                            {{/each}}
-                            {{else}}
-                            <div class="subject-list">
-                                {{each question.answers as answer}}
-                                <button class="sb-btn" data-action="invest" data-code="{{question.questionCode}}" data-value="{{$index + 1}}">{{answer}}</button>
-                                {{/each}}
-                            </div>
-                            {{/if}}
-                        </div>
-                    </div>
-                    {{/each}}
-                </div>
-            </div><!--end swiper-slide-->
-            {{/each}}
+            {{include 'secTpl-item'}}
             {{if lastPage}}
             {{include 'form-secTpl'}}
             {{/if}}
@@ -121,8 +85,48 @@
     </div>
 </script>
 
+<script type="text/template" id="secTpl-item">
+    {{each items as item}}
+    <div class="swiper-slide {{pageClass}}">
+        <div class="content">
+            <div class="cn-header">
+                <span class="hd-legend"><i class="{{titleIcon}}"></i>{{title}}</span>
+            </div>
+            {{each item as question}}
+            <div class="subject-item">
+                <h2 class="subject-title">{{question.title}}</h2>
+                <div class="subject-main {{if question.grid}}subject-grid{{/if}}">
+                    {{if question.icon}}
+                    <div class="subject-icon">
+                        <i class="{{question.icon}}"></i>
+                    </div>
+                    {{/if}}
+                    {{if question.grid}}
+                    {{each question.answers as answer}}
+                    <div class="grid-item {{answer.gridClassName}}" data-action="invest" data-code="{{question.questionCode}}" data-value="{{answer.value}}"  {{if question.plain}}data-plain="true"{{/if}}>
+                    <div class="subject-icon {{answer.theme}}">
+                        <i class="{{answer.icon}}"></i>
+                    </div>
+                    <h4>{{=answer.text}}</h4>
+                </div>
+                {{/each}}
+                {{else}}
+                <div class="subject-list">
+                    {{each question.answers as answer}}
+                    <button class="sb-btn" data-action="invest" data-code="{{question.questionCode}}" data-value="{{$index + 1}}">{{answer}}</button>
+                    {{/each}}
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    </div><!--end swiper-slide-->
+    {{/each}}
+</script>
+
 <script type="text/template" id="form-secTpl">
-    <div class="swiper-slide">
+    <div class="swiper-slide {{pageClass}}">
         <div class="content">
             <div class="cn-header">
                 <span class="hd-legend"><i class="{{titleIcon}}"></i>{{title}}</span>
