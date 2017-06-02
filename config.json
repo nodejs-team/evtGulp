@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 
   "project": "Gulp",
   "localserver": {
@@ -17,4 +18,20 @@
   "revPrefix": "http://edm.mcake.com/fangli/2017-pc/"
 
 
+=======
+ "project": "Gulp",
+ "localserver": {
+  "host": "localhost",
+  "port": "8081"
+ },
+ "tinypngapi": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
+ "ftp": {
+  "host": "",
+  "user": "",
+  "pass": "",
+  "remotePath": ""
+ },
+ "projectName": "mcake-history",
+ "revPrefix": "http://edm.mcake.com/fangli/2017-pc/"
+>>>>>>> feb6dcacac58ed18046f553aaaac703911e3441b
 }
