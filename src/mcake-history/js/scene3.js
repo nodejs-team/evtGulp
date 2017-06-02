@@ -1,0 +1,48 @@
+/**
+ * Created by mcake on 2017/6/1.
+ */
+
+(function(window){
+  "use strict";
+
+  var Scene3 = Element.extend({
+    initialize: function () {
+      Scene3.superclass.initialize.apply(this, arguments);
+
+      var mainFlag = new Element({
+        className: "scene-flag",
+        html: ImgElement("3-1_png", {width: 778})
+      });
+
+      var bg1 = new Element({
+        className: "scene-bg1",
+        html: ImgElement("3-2_png", {width: 2670})
+      });
+
+      var bg2 = new Element({
+        className: "scene-bg2",
+        html: ImgElement("3-3_png", {width: 1256})
+      });
+
+      var text = new Element({
+        className: "scene-text",
+        html: '<span class="scene-year">2014</span><h3>Josephine</h3><p>2014年，<br>你说，<br>今年的520吃的不是狗粮<br>而是约瑟芬，<br>并且不用坐着高铁到上海，<br>开心。</p>'
+      });
+
+      this.addChild(bg1);
+      this.addChild(mainFlag);
+      this.addChild(bg2);
+      this.addChild(text);
+    },
+    initEvents: function () {
+      this.on("scrolling", function (value) {
+        this.children.forEach(function(element){
+          element.emit("scrolling", value);
+        });
+      }.bind(this));
+    }
+  });
+
+  window.Scene3 = Scene3;
+
+})(window);
