@@ -1,6 +1,63 @@
+html,body{
+  height:100%;
+}
+
 body{
+  background-color: #e2f3fc !important;
   overflow-x: hidden;
 }
+
+
+#scene_loading{
+  position: absolute;
+  left:50%;
+  top:50%;
+  width:60%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#scene_progress{
+  width:100%;
+  position: relative;
+  height:60px;
+  overflow: hidden;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: transform 1s cubic-bezier(0, 0, 0.01, 1);
+
+  .progress-line{
+    width:100%;
+    height:1px;
+    margin-top: 30px;
+    background-color: #000;
+    -webkit-transition: -webkit-transform .3s ease-in;
+    transition: transform .3s ease-in;
+  }
+
+  .progress-text{
+    position: absolute;
+    right:0;
+    top:0;
+    font-size:18px;
+    -webkit-transition: -webkit-transform .4s ease-out;
+    transition: transform .4s ease-out;
+  }
+}
+
+#scene_spin{
+  position: absolute;
+  right:0;
+  bottom:0;
+  font-size:18px;
+  color: #444;
+  -webkit-transition: -webkit-transform .4s ease-out;
+  transition: transform .4s ease-out;
+}
+
 .swiper-container {
   width: 100%;
   height:100%;
@@ -13,7 +70,8 @@ body{
 .swiper-wrapper{
   cursor: -webkit-grab !important;
   cursor: grab !important;
-  transition-timing-function: cubic-bezier(0.35, 0.84, 0.2, 1.05);
+  cursor: move;
+  transition-timing-function: cubic-bezier(0.35, 0.84, 0.21, 1.14);
 }
 
 .scenes-container{
@@ -23,7 +81,6 @@ body{
   top:100px;
   bottom: 0;
   overflow: hidden;
-  background-color: #e2f3fc;
 }
 
 .scene{
@@ -40,17 +97,33 @@ body{
   }
   .scene-flag {
     > img {
-      margin-left:12%;
+      margin-left:13%;
     }
   }
   .scene-bg2{
     text-align: right;
+  }
+  .scene-textbg{
+    font-size:380px;
+    color: #d9effb;
+    font-family: Times New Roman;
+    white-space: nowrap;
+    bottom: 5%;
+
+    @media (max-width: 1366px) {
+      font-size: 340px;
+    }
+
+    @media (max-width: 1280px) {
+      font-size: 300px;
+    }
   }
   .scene-text{
     width: auto;
     bottom: auto;
     left:50%;
     top:15%;
+    font-family: Times New Roman;
     text-align: center;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -63,8 +136,8 @@ body{
       border-radius: 100%;
       text-align: center;
       color: #fff;
-      font-size: 30px;
-      font-family: "Comic Sans MS";
+      font-size: 36px;
+      font-family: Times New Roman;
       margin-bottom: 45px;
     }
 
@@ -72,13 +145,16 @@ body{
       font-size:18px;
       font-weight: bold;
       color: #000;
-      font-family: '宋体';
       margin-bottom: 15px;
     }
 
     p{
       font-size:14px;
       line-height: 1.5;
+
+      strong{
+        color: #333;
+      }
     }
   }
 }
@@ -116,6 +192,9 @@ body{
   .scene-year{
     background-color: #1d7bba;
   }
+  .scene-textbg{
+    text-align: center;
+  }
 }
 
 .scene6{
@@ -123,6 +202,17 @@ body{
     background-color: #fcd8d0;
   }
 }
+
+
+.scene9{
+  .scene-text{
+    img {
+      margin-top: 30px;
+    }
+  }
+}
+
+
 
 .cursor-indictor{
   position: absolute;
@@ -132,8 +222,6 @@ body{
   -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: 99;
-  /*-webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;*/
 
   svg{
     position: absolute;
@@ -152,6 +240,7 @@ body{
     stroke-dashoffset: 0;
 
     circle, path{
+      -webkit-transition: all .2s ease-out;
       transition: all .2s ease-out;
     }
 
@@ -177,4 +266,56 @@ body{
     }
   }
 
+}
+
+.IE8 {
+  #scene_loading{
+    width: 800px;
+    margin-left: -400px;
+  }
+  .scene1{
+    .scene-text{
+      margin-left:-135px\0;
+    }
+  }
+  .scene2{
+    .scene-text{
+      margin-left:-220px\0;
+    }
+  }
+  .scene4{
+    .scene-text{
+      margin-left:-110px\0;
+    }
+  }
+  .scene6{
+    .scene-text{
+      margin-left:-120px\0;
+    }
+  }
+  .scene7{
+    .scene-text{
+      margin-left:-270px\0;
+    }
+  }
+  .scene8{
+    .scene-text{
+      margin-left:-250px\0;
+    }
+  }
+  .scene9{
+    .scene-text{
+      margin-left:-135px\0;
+    }
+  }
+
+  .cursor-indictor{
+    border:none;
+    &.cursor-prev{
+      background: url(../images/cursor-left.png) no-repeat;
+    }
+    &.cursor-next{
+      background: url(../images/cursor-right.png) no-repeat;
+    }
+  }
 }

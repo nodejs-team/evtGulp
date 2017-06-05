@@ -348,7 +348,7 @@
 }
 
 /*浮动*/
-#floater {
+.floater {
   position: fixed;
   top: 100px;
   right: 10px;
@@ -356,16 +356,16 @@
   width: 300px;
 }
 
-#floater .floatImg {
+.floater .floatImg {
   position: relative;
   font-size: 0;
 }
 
-#floater .floatImg img {
+.floater .floatImg img {
   width: 100%;
 }
 
-#floater .floatImg a {
+.floater .floatImg a {
   width: 100%;
   display: block;
   height: 180px;
@@ -374,18 +374,34 @@
   left: 0;
 }
 
-#floater .float-icon {
+.floater .float-icon {
   position: absolute;
   top: 0;
   left: 0;
   width: 300px;
 }
 
-#floater .float-container {
+.floater .float-container {
   width: 300px;
   position: absolute;
   font-size: 0;
   top: 180px;
   left: 0;
   display: block;
+}
+
+.icon {
+  position: fixed;
+  top: 100px;
+  right: 40px;
+  z-index: 11;
+}
+
+.icon a {
+  width: 100%;
+  display: block;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

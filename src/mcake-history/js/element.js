@@ -14,19 +14,35 @@
       this.moveRatio = 1;
       this._setProps(attrs);
     },
-    attr: function(attrs){
-      for(var i in attrs||{}){
-        this.el.setAttribute(i, attrs[i]);
+    attr: function(key, value){
+      if( typeof key === 'object' ) {
+        for (var i in key) {
+          this.el.setAttribute(i, key[i]);
+        }
+      } else {
+        this.el.setAttribute(key, value);
       }
       return this;
     },
-    css: function (props) {
-      for(var i in props||{}){
-        this.el.style[i] = props[i];
+    css: function (key, value) {
+      if( typeof key === 'object' ) {
+        for (var i in key) {
+          this.el.style[i] = key[i];
+        }
+      } else {
+        this.el.style[key] = value;
       }
       return this;
+    },
+    find: function (selector) {
+      return this.el.querySelector(selector);
+    },
+    findAll: function (selector) {
+      return [].slice.call(this.el.querySelectorAll(selector));
     },
     _setProps: function (attrs) {
+      if( typeof attrs !== 'object' ) return;
+
       for(var i in attrs){
         if( i === "className" ){
           this.el.className = attrs[i];
@@ -38,13 +54,16 @@
             this.el.innerHTML = attrs[i];
           }
         }
-        else if( i === "cssText" ){
+        else if( i === "style" || i === "cssText" ){
           this.el.style.cssText = attrs[i];
+        }
+        else {
+          this.attr(attrs);
         }
       }
     },
     addChild: function (element) {
-      if( !(element instanceof Element)){
+      if( !(element instanceof Element) ){
         throw new Error("the element you added is not instance of Element");
       }
       element.parent = this;
@@ -97,15 +116,6 @@
       }
 
       return this;
-    },
-    enter: function () {
-
-    },
-    leave: function () {
-
-    },
-    move: function (value) {
-      TweenMax.set(this.el, {x: -value*this.moveRatio});
     },
     initEvents: function () {
       this.on("scrolling", function (value) {

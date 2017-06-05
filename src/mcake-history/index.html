@@ -73,19 +73,24 @@
 
 </div>
 
-<div id="evt_loading">
-    <span id="evt_spin">loading: 0%</span>
+<div id="scene_loading">
+    <div id="scene_progress">
+        <span class="progress-text">Loading</span>
+        <div class="progress-line"></div>
+    </div>
+    <span id="scene_spin">0</span>
 </div>
 
-<div id="root" class="scenes-container"></div>
+<div id="root" class="scenes-container" style="display: none"></div>
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
 <script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>
 <!-- build:js js/main.js -->
 <script type="text/javascript" src="js/resData.js"></script>
 <script type="text/javascript" src="js/pollyfill.js"></script>
+<script type="text/javascript" src="js/classList.js"></script>
 <script type="text/javascript" src="js/EventEmitter.js"></script>
-<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
 <script type="text/javascript" src="js/TweenMax.min.js"></script>
 <script type="text/javascript" src="js/imgelement.js"></script>
 <script type="text/javascript" src="js/element.js"></script>

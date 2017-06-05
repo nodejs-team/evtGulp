@@ -56,6 +56,23 @@
 .evt-content .q-text2 {
   left: 557px;
   top: 630px;
+  /*.q-text2-hover{
+      position: absolute;
+      left:0;
+      top:0;
+      width:200px;
+      height:200px;
+      background-color: #fff;
+      opacity: 0;
+      filter:alpha(opacity=0);
+    }*/
+}
+
+.evt-content .q-text2 .q-text2-layer {
+  position: absolute;
+  left: -550px;
+  top: 0;
+  display: none;
 }
 
 .evt-content .q4 {

@@ -1,7 +1,7 @@
 {
 	"groups":[
 	{
-		"keys":"7-2_png,7-3_png,8-2_png,8-3_png,9-2_png,9-3_png,1-1_png,1-2_png,1-3_png,2-1_png,2-2_png,2-3_png,3-1_png,3-2_png,3-3_png,4-1_png,4-2_png,4-3_png,5-1_png,5-2_png,5-3_png,6-1_png,6-2_png,6-3_png",
+		"keys":"7-2_png,7-3_png,8-2_png,8-3_png,9-2_png,9-3_png,1-1_png,1-2_png,1-3_png,2-1_png,2-2_png,2-3_png,3-1_png,3-2_png,3-3_png,4-1_png,4-2_png,4-3_png,5-1_png,5-2_png,5-3_png,6-1_png,6-2_png,6-3_png,logo_png",
 		"name":"preload"
 	}],
 	"resources":[
@@ -124,5 +124,10 @@
 		"name":"6-3_png",
 		"type":"image",
 		"url":"6-3.png"
+	},
+	{
+		"name":"logo_png",
+		"type":"image",
+		"url":"logo.png"
 	}]
 }

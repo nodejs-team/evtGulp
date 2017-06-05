@@ -42,11 +42,11 @@
 
       this.cursor = new Element({
         className: "cursor-indictor",
-        html: '<svg viewBox="0 0 59.3 63.2">\
-          <circle cx="29.7" cy="31.6" r="4.8"></circle>\
-          <path class="right" d="M39.9 40l8.6-8.3-8.7-8.4"></path>\
-          <path class="left" d="M19.4 23.3l-8.6 8.3 8.7 8.4"></path>\
-        </svg>'
+        html: '<svg viewBox="0 0 59.3 63.2">' +
+            '<circle cx="29.7" cy="31.6" r="4.8"></circle>' +
+            '<path class="right" d="M39.9 40l8.6-8.3-8.7-8.4"></path>' +
+            '<path class="left" d="M19.4 23.3l-8.6 8.3 8.7 8.4"></path>' +
+          '</svg>'
       }).renderTo(document.body).el;
 
       this.on("addToPage", function () {
@@ -58,7 +58,7 @@
       var self = this;
       var $el = $(this.el);
       var oldClassName = this.cursor.className;
-      $el.on("mouseover", function (e) {
+      $el.on("mousemove", function (e) {
         var itemW = getWindowWidth()/3;
         var pageX = e.pageX;
         var pageY = e.pageY;
