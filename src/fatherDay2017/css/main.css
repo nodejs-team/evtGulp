@@ -11,11 +11,12 @@
 
 .evt-content .buy-btn {
   position: absolute;
-  width: 120px;
-  height: 30px;
-  line-height: 100;
+  width: 119px;
+  height: 29px;
+  line-height: 100px;
   overflow: hidden;
   cursor: pointer;
+  background: url("../images/btn.png") no-repeat;
 }
 
 .evt-content .q1 {

@@ -1,0 +1,5 @@
+{"file":"light.png","frames":{
+"light-1":{"x":136,"y":1,"w":61,"h":76,"offX":53,"offY":31,"sourceW":160,"sourceH":131,"duration":5},
+"light-2":{"x":1,"y":90,"w":133,"h":87,"offX":12,"offY":25,"sourceW":160,"sourceH":131,"duration":5},
+"light-3":{"x":1,"y":179,"w":133,"h":76,"offX":12,"offY":31,"sourceW":160,"sourceH":131,"duration":5},
+"light-4":{"x":1,"y":1,"w":133,"h":87,"offX":12,"offY":25,"sourceW":160,"sourceH":131,"duration":5}}}

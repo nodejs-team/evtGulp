@@ -1,0 +1,269 @@
+@charset "UTF-8";
+.evt-container {
+  background: #f8f6ee;
+  /*轮播图*/
+}
+
+.evt-container .decorate-1 {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
+
+.evt-container .sec-main-1 {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  height: 825px;
+}
+
+.evt-container .sec-main-1 > div {
+  position: absolute;
+}
+
+.evt-container .sec-main-1 .title {
+  top: 41px;
+  left: -55px;
+}
+
+.evt-container .sec-main-1 .light {
+  top: 152px;
+  left: 96px;
+}
+
+.evt-container .sec-main-1 .maozi {
+  top: 228px;
+  left: 618px;
+}
+
+.evt-container .sec-main-1 .cake-1 {
+  top: 342px;
+  left: 525px;
+}
+
+.evt-container .sec-main-1 .word-1 {
+  top: 582px;
+  left: 122px;
+}
+
+.evt-container .sec-main-2 {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  height: 1211px;
+}
+
+.evt-container .sec-main-2 > div {
+  position: absolute;
+}
+
+.evt-container .sec-main-2 .cake-2 {
+  top: 0px;
+  left: 0px;
+}
+
+.evt-container .sec-main-2 .word-2 {
+  top: 203px;
+  left: 565px;
+}
+
+.evt-container .sec-main-2 .caomei {
+  top: -10px;
+  left: 440px;
+}
+
+.evt-container .sec-main-2 .happy-bao {
+  top: 515px;
+  left: 130px;
+}
+
+.evt-container .sec-main-2 .shi-1 {
+  top: 653px;
+  left: -77px;
+}
+
+.evt-container .sec-main-2 .quan {
+  top: 961px;
+  left: 27px;
+}
+
+.evt-container .sec-main-2 .shi-2 {
+  top: 802px;
+  left: 904px;
+}
+
+.evt-container .sec-main-2 .balloon {
+  top: 478px;
+  left: 913px;
+}
+
+.evt-container .slider {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.evt-container .slider .prev, .evt-container .slider .next {
+  width: 67px;
+  top: 148px;
+  position: absolute;
+}
+
+.evt-container .slider .prev {
+  left: 0;
+}
+
+.evt-container .slider .next {
+  right: 0;
+}
+
+.evt-container .slideOuter {
+  width: 1028px;
+  height: 365px;
+  border-bottom: 2px solid #959595;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.evt-container .slideOuter ul {
+  width: 1650px;
+}
+
+.evt-container .slideOuter li {
+  width: 242px;
+  margin: 0 20px 18px 0;
+  color: #242424;
+  font-size: 12px;
+  float: left;
+}
+
+.evt-container .slideOuter li > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.evt-container .slideOuter li .fl {
+  float: left;
+}
+
+.evt-container .slideOuter li .fr {
+  float: right;
+}
+
+.evt-container .slideOuter li p {
+  font-size: 16px;
+}
+
+.evt-container .slideOuter li .p1 {
+  margin: 10px 0 3px 0;
+  color: #56342d;
+}
+
+.evt-container .slideOuter li .p1 .fr {
+  color: #d41f32;
+}
+
+.evt-container .slideOuter li .p1 .fr span {
+  font-size: 19px;
+}
+
+.evt-container .slideOuter li .p1 .fl {
+  padding-top: 5px;
+}
+
+.evt-container .slideOuter li .p2 {
+  color: #84837f;
+}
+
+.evt-container .slideOuter li .p2 img {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+}
+
+.evt-container .slideOuter li em {
+  font-style: normal;
+}
+
+.evt-container .slideOuter li i.postid {
+  display: none;
+}
+
+.evt-container .slideOuter li .buybtn {
+  width: 100%;
+  height: 30px;
+  display: block;
+  border-radius: 2px;
+  margin: 10px 0 0 0;
+  background: #de7c12;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  position: static;
+  border-radius: 10px;
+}
+
+.evt-container .text1893 {
+  width: 369px;
+  margin: 26px auto 0 auto;
+}
+
+.evt-container .rules {
+  width: 920px;
+  font-size: 22px;
+  color: #5e4641;
+  line-height: 28px;
+  margin: 95px auto 152px auto;
+}
+
+.evt-container .rules h2 {
+  font-size: 28px;
+  line-height: 70px;
+  font-weight: normal;
+  text-align: center;
+  color: #431c14;
+}
+
+.evt-container .rules p {
+  text-indent: -28px;
+  line-height: 35px;
+  color: #5e4641;
+  margin-top: 5px;
+}
+
+/*新加*/
+.arrow {
+  -webkit-animation: arrow 2s linear 1s infinite normal;
+  animation: arrow 2s linear 1s infinite normal;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -100%, 0);
+  }
+  50% {
+    opacity: .5;
+    -webkit-transform: translate3d(0, 0%, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 150%, 0);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, -100%, 0);
+  }
+  50% {
+    opacity: .5;
+    transform: translate3d(0, 0%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 150%, 0);
+  }
+}

@@ -1,0 +1,6 @@
+{"file":"baozi.png","frames":{
+"baozi-1":{"x":1,"y":163,"w":190,"h":160,"offX":0,"offY":3,"sourceW":191,"sourceH":163,"duration":2},
+"baozi-2":{"x":1,"y":325,"w":186,"h":163,"offX":0,"offY":0,"sourceW":191,"sourceH":163,"duration":2},
+"baozi-3":{"x":193,"y":1,"w":190,"h":160,"offX":0,"offY":3,"sourceW":191,"sourceH":163,"duration":2},
+"baozi-4":{"x":189,"y":325,"w":186,"h":163,"offX":0,"offY":0,"sourceW":191,"sourceH":163,"duration":2},
+"baozi-5":{"x":1,"y":1,"w":190,"h":160,"offX":0,"offY":3,"sourceW":191,"sourceH":163,"duration":14}}}
