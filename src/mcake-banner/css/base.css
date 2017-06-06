@@ -36,6 +36,10 @@ ul, ol {
   margin: 0 auto;
 }
 
+:root .swiper-content {
+  margin: 0;
+}
+
 .evt-content a, .swiper-content a {
   outline: none;
 }

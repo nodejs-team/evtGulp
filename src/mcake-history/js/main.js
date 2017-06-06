@@ -3,6 +3,25 @@
  */
 (function($){
 
+  var isSupportTransition = (function(){
+    var rootStyle = document.documentElement.style;
+    var keys = ["transition", "WebkitTranstion", "MozTranstion", "msTranstion", "OTransition"];
+    for(var i=0; i<keys.length; i++){
+      if( keys[i] in rootStyle ){
+        return true;
+      }
+    }
+    return false;
+  })();
+
+  var isIE8 = /msie 8.0/i.test(navigator.userAgent);
+
+  isIE8 && (document.documentElement.className += " IE8");
+
+  function getWindowWidth(){
+    return window.innerWidth || document.documentElement.clientWidth;
+  }
+
   var loadComplete = function () {
     var container = new Element({
       className: "swiper-container"
@@ -13,12 +32,41 @@
     });
 
     var swiper;
+    var slideIndex = 0;
+    var slideLength = page.children.length;
 
     page.on("addToPage", function () {
       swiper = new Swiper(container.el, {
-        speed: 1500,
-        mousewheelControl: true
+        speed: 1800,
+        mousewheelControl: true,
+        parallax: true,
+        keyboardControl: true
       });
+
+      if( !isSupportTransition ){
+        swiper.slidePrev = function () {
+          if( --slideIndex < 0 ) {
+            slideIndex = 0;
+          }
+          if( isIE8 ) {
+            TweenMax.to(page.el, 1, {left: -slideIndex * getWindowWidth()})
+          } else {
+            TweenMax.to(page.el, 1, {x: -slideIndex * getWindowWidth()})
+          }
+        };
+
+        swiper.slideNext = function () {
+          if( ++slideIndex > slideLength - 1 ){
+            slideIndex = slideLength - 1;
+          }
+          if( isIE8 ) {
+            TweenMax.to(page.el, 1, {left: -slideIndex * getWindowWidth()})
+          } else {
+            TweenMax.to(page.el, 1, {x: -slideIndex * getWindowWidth()})
+          }
+        }
+      }
+
     });
 
     page.on("leftClick", function(){
@@ -30,6 +78,8 @@
     });
 
     container.addChild(page).renderTo(document.getElementById("root"));
+
+    window.pageSwiper = swiper;
   };
 
   var loadResource = function(){
@@ -47,16 +97,37 @@
 
     function startLoader(data) {
       var loader = new Resource.loadGroup("preload", data);
-      var spin = Resource.el('#evt_spin');
+      var spin = Resource.el('#scene_spin');
+      var progress = Resource.el("#scene_progress");
+      var ptext = Resource.el(".progress-text")[0];
+      var pline = Resource.el(".progress-line")[0];
+
+      var startLoadTime = +new Date;
 
       loader.on("progress", function (loaded, total) {
-        spin.innerHTML = "loading: " + Math.floor(loaded / total * 100) + "%";
+        spin.innerHTML = Math.floor(loaded/total*100) + "";
+        progress.style.transform = "translate3d("+ ((loaded/total*100)-100) +"%,0,0)";
+        progress.style.transitionDuration = ".2s";
       });
 
       loader.on("complete", function () {
-        Resource.el('#evt_loading').style.display = "none";
-        Resource.el('#root').style.display = 'block';
-        loadComplete();
+        var timeout = 1000;
+        var loadTime = +new Date - startLoadTime;
+        if( loadTime < 300 ){
+          progress.style.transitionDuration = "1s";
+          timeout = 1500;
+        }
+        setTimeout(function(){
+          pline.style.transform = "translate3d(100%,0,0)";
+          ptext.style.transform = "translate3d(100%,0,0)";
+          spin.style.transform = "translate3d(100%,0,0)";
+
+          setTimeout(function(){
+            document.body.removeChild(Resource.el('#scene_loading'));
+            Resource.el('#root').style.display = 'block';
+            loadComplete();
+          }, 400);
+        }, timeout);
       });
     }
 

@@ -4,7 +4,12 @@
 (function($){
 
   var loadComplete = function () {
-
+    var $layer = $(".q-text2-layer");
+    $(".q-text2").hover(function () {
+      $layer.show();
+    }, function () {
+      $layer.hide();
+    });
   };
 
   var loadResource = function(){

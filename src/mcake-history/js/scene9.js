@@ -12,16 +12,16 @@
       var bg1 = new Element({
         className: "scene-bg1",
         html: ImgElement("9-2_png", {width: 2033})
-      });
+      }).attr("data-swiper-parallax", "-300");
 
       var bg2 = new Element({
         className: "scene-bg2",
         html: ImgElement("9-3_png", {width: 1427})
-      });
+      }).attr("data-swiper-parallax", "-600");
 
       var text = new Element({
         className: "scene-text",
-        html: '<h3>你眼中的的Mcake</h3><p>2017年，<br>你说，<br>每一个重要的时刻，<br>都需要甜蜜的鉴证，<br>安逸兔与属兔的你是冥冥之中的约定。</p>'
+        html: '<p>在每一个重要的时刻，我们都希望与你相伴。<br>距离，近一点，<br>再近一点。<br>愿你的心意能出现在我的邮箱，<br>那么，<br>你与Mcake奇妙缘分在这一刻延续。<br></p>' + ImgElement("logo_png")
       });
 
       this.addChild(bg1);
@@ -29,11 +29,7 @@
       this.addChild(text);
     },
     initEvents: function () {
-      this.on("scrolling", function (value) {
-        this.children.forEach(function(element){
-          element.emit("scrolling", value);
-        });
-      }.bind(this));
+
     }
   });
 

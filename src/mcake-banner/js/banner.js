@@ -28,6 +28,14 @@
           return mc;
         });
 
+      },
+      ninoRocket: function () {
+        $(".mc-rocket").each(function(i, el){
+          var mc = new MovieClip('rocket_png', "rocket_json", el);
+          mc.gotoAndPlay(1, 1);
+          return mc;
+        });
+
       }
     };
 
@@ -46,6 +54,9 @@
       animations.chezi();
       animations.baozi();
       animations.longmogu();
+      $(".slides-nino .q3").on("animatedone", function () {
+        animations.ninoRocket();
+      });
     }
     $(".float-container").fadeOut();
     floater();
