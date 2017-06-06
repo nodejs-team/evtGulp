@@ -126,7 +126,7 @@
       pagination: '.pagination',
       slidesPerView: 1,
       loop: true,
-      autoplay: 5000,
+      autoplay: false,
       autoplayDisableOninteraction:false,
       paginationClickable: true,
       spaceBetween: 0,

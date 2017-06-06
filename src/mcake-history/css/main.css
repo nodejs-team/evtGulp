@@ -105,7 +105,7 @@ body {
 .scene .scene-textbg {
   font-size: 380px;
   color: #d9effb;
-  font-family: Times New Roman;
+  font-family: Times New Roman, "Microsoft YaHei";
   white-space: nowrap;
   bottom: 5%;
   text-align: center;
@@ -129,7 +129,7 @@ body {
   bottom: auto;
   left: 50%;
   top: 15%;
-  font-family: Times New Roman;
+  font-family: Times New Roman, "Microsoft YaHei";
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -144,19 +144,19 @@ body {
   text-align: center;
   color: #fff;
   font-size: 36px;
-  font-family: Times New Roman;
+  font-family: Times New Roman, "Microsoft YaHei";
   margin-bottom: 45px;
 }
 
 .scene .scene-text h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: #000;
   margin-bottom: 15px;
 }
 
 .scene .scene-text p {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.5;
 }
 
@@ -180,6 +180,12 @@ body {
   background-color: #5a2e21;
 }
 
+@media (max-width: 1366px) {
+  .scene3 .scene-flag > img {
+    margin-left: 8%;
+  }
+}
+
 .scene4 .scene-year {
   background-color: #d73310;
 }
@@ -194,6 +200,35 @@ body {
 
 .scene6 .scene-year {
   background-color: #fcd8d0;
+}
+
+.scene7 .scene-text {
+  top: 5%;
+}
+
+.scene8 .scene-text {
+  top: 3%;
+}
+
+.scene8 .scene-text p {
+  font-size: 15px;
+}
+
+.scene8 .scene-flag.flag1 img {
+  margin-left: 17%;
+}
+
+.scene8 .scene-flag.flag2 img {
+  margin-left: 2%;
+}
+
+.scene8 .scene-flag.flag3 img {
+  margin-left: 70%;
+}
+
+.scene8 .scene-bg2 {
+  text-align: center;
+  bottom: -20px;
 }
 
 .scene9 .scene-text img {
