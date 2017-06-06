@@ -347,6 +347,26 @@
   top: 34px;
 }
 
+<<<<<<< HEAD
+.banner-slides .slides-Father .f-yd {
+  top: 179px;
+  left: -38px;
+}
+
+.banner-slides .slides-Father .f-title {
+  top: 52px;
+  left: 106px;
+}
+
+.banner-slides .slides-Father .f-cake {
+  top: 0px;
+  left: 520px;
+}
+
+.banner-slides .slides-Father .f-lz {
+  top: 399px;
+  left: 100px;
+=======
 .banner-slides .slides-nino .q1 {
   left: -97px;
   top: 108px;
@@ -368,6 +388,7 @@
   top: -32px;
   width: 400px;
   height: 400px;
+>>>>>>> 9e91b618b0a585661301484fcee3256b42ca34ca
 }
 
 .banner-slides .slides-history .q1 {
