@@ -31,7 +31,7 @@
 
       var text = new Element({
         className: "scene-text",
-        html: '<span class="scene-year">2015</span><h3>Fraisier</h3><p>2015年，<br>你说，<br>感恩遇见，<br>感谢有你，<br>最美的姑娘，<br>今天的莓红1893有泪水的味道。</p>'
+        html: '<span class="scene-year">2015</span><p>你说，<br>感恩遇见，<br>感谢有你，<br>最美的新娘，<br>今天的莓红1893有泪水的味道。</p>'
       });
 
       this.addChild(textBg);

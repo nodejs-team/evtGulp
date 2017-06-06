@@ -65,12 +65,23 @@
 
         if( pageX > 0 && pageX <= itemW ){
           self.cursor.className = oldClassName + " cursor-prev";
+          if( pageSwiper.activeIndex === 0 ){
+            self.cursor.style.display = "none";
+          } else {
+            self.cursor.style.display = "";
+          }
         }
         else if( pageX > itemW && pageX <= itemW*2 ){
           self.cursor.className = oldClassName;
+          self.cursor.style.display = "";
         }
         else if( pageX > itemW*2 ){
           self.cursor.className = oldClassName + " cursor-next";
+          if( pageSwiper.activeIndex === pageSwiper.slides.length - 1 ){
+            self.cursor.style.display = "none";
+          } else {
+            self.cursor.style.display = "";
+          }
         }
         self.cursor.style.left = pageX + 20 + "px";
         self.cursor.style.top = pageY + 20 + "px";

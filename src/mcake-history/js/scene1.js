@@ -32,8 +32,7 @@
       var text = new Element({
         className: "scene-text",
         html: '<span class="scene-year">2012</span>' +
-        '<h3>Napoleon aux myrtilles</h3>' +
-        '<p>2012年，<br>你说，<br>没有什么失恋是一块蓝莓拿破仑解决不了，<br>如果有，<br>来两块。</p>'
+        '<p>你说，<br>没有什么失恋是<br>一块蓝莓拿破仑解决不了的，<br>如果有，<br>来两块。</p>'
       });
 
       var flagTexture = mainFlag.find("img");

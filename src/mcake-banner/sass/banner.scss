@@ -1,6 +1,6 @@
 .evt-container{}
 
-.swiper-container {  width: 100%;  margin-left: auto;  margin-right: auto;  }
+.swiper-container {  width: 100%;  margin-left: auto;  margin-right: auto; }
 
 .swiper-slide {
   text-align: center; cursor: pointer;
@@ -136,6 +136,28 @@ background: #a5002f;
     .q1 {
       left: 126px;
       top: 34px;
+    }
+  }
+
+  .slides-nino {
+    .q1 {
+      left: -97px;
+      top: 108px;
+    }
+    .q2 {
+      left: 398px;
+      top: 73px;
+    }
+    .q3 {
+      left: 398px;
+      top: 85px;
+    }
+    .nino-rocket{
+      position: absolute;
+      left:-80px;
+      top:-32px;
+      width:400px;
+      height:400px;
     }
   }
 

@@ -32,6 +32,10 @@ ul,ol{list-style: none;}
   width:1000px;
   margin:0 auto;
 
+  @at-root :root .swiper-content{
+    margin:0;
+  }
+
   a{
     outline: none;
   }

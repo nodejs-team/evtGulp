@@ -95,7 +95,7 @@ body {
 }
 
 .scene .scene-flag > img {
-  margin-left: 13%;
+  margin-left: 12%;
 }
 
 .scene .scene-bg2 {
@@ -108,6 +108,8 @@ body {
   font-family: Times New Roman;
   white-space: nowrap;
   bottom: 5%;
+  text-align: center;
+  z-index: -1;
 }
 
 @media (max-width: 1366px) {

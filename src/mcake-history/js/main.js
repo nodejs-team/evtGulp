@@ -78,6 +78,8 @@
     });
 
     container.addChild(page).renderTo(document.getElementById("root"));
+
+    window.pageSwiper = swiper;
   };
 
   var loadResource = function(){
