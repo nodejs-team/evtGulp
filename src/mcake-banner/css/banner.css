@@ -347,6 +347,26 @@
   top: 34px;
 }
 
+.banner-slides .slides-Father .f-yd {
+  top: 179px;
+  left: -38px;
+}
+
+.banner-slides .slides-Father .f-title {
+  top: 52px;
+  left: 106px;
+}
+
+.banner-slides .slides-Father .f-cake {
+  top: 0px;
+  left: 520px;
+}
+
+.banner-slides .slides-Father .f-lz {
+  top: 399px;
+  left: 100px;
+}
+
 /*浮动*/
 .floater {
   position: fixed;

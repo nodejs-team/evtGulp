@@ -1,6 +1,4 @@
 {
-
-
   "project": "Gulp",
   "localserver": {
    "host": "localhost",
@@ -14,8 +12,6 @@
    "remotePath": ""
   },
 
-  "projectName": "Birthday-party",
+  "projectName": "mcake-banner",
   "revPrefix": "http://edm.mcake.com/fangli/2017-pc/"
-
-
 }
