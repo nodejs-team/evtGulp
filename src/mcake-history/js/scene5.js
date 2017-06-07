@@ -31,7 +31,7 @@
 
       var text = new Element({
         className: "scene-text",
-        html: '<span class="scene-year">2016</span><p>你说，<br>天使的到来，<br>让幸福加磅，<br>卢克和咚咚是她最好的玩伴，<br>不过你先替他品尝。</p>'
+        html: '<span class="scene-year">2016</span><p>你说，<br>天使的到来，<br>让幸福加磅，<br>卢克和咚咚是他最好的玩伴，<br>不过你先替他品尝。</p>'
       });
 
       this.addChild(textBg);
