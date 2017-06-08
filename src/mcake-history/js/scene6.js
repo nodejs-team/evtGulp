@@ -31,7 +31,7 @@
 
       var text = new Element({
         className: "scene-text",
-        html: '<span class="scene-year">2017</span><p>每一个重要的时刻，<br>都需要甜蜜的鉴证，<br>安逸兔与属兔的你是冥冥之中的约定。</p>'
+        html: '<span class="scene-year">2017</span><p>你说，<br>每一个重要的时刻，<br>都需要甜蜜的鉴证，<br>安逸兔与属兔的你是冥冥之中的约定。</p>'
       });
 
       this.addChild(textBg);
