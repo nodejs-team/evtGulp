@@ -1,0 +1,72 @@
+.evt-container{ background-color: #fefbf3;}
+
+.sec-1{
+   background: url("../images/line.png") bottom center repeat-x;
+  .evt-content{
+     width: 1000px; height: 565px;
+    .g-factor{ top: 20px; left: -168px;}
+    .title{ top: 64px; left: 0px;}
+    .yun-1{ top: 133px; left: -269px;}
+    .yun-2{ top: 274px; right: -248px;}
+    .lineyun-1{ bottom: 12px; left: -329px;}
+    .lineyun-2{ bottom: 12px; right: -173px;}
+    .cake-1{ top: 20px; left: 467px;}
+    .mario{ bottom: 5px; left: 225px;}
+  }
+}
+
+
+.sec-2{
+  .evt-content{
+    height: 1121px;
+    .words-1{ top: 112px; left: 0px;}
+    .words-2{ top: 1132px; left: 696px;}
+    .jiantou{ top: 86px; left: 458px;}
+    .shuidi{ top: 411px; left: 1050px;}
+    .hetao{ top: 144px; left: 957px;}
+    .chengbao{ top: 217px; left: 312px;}
+    .mogu{ top: 872px; left: 22px;}
+    .shengbang{ top: 598px; left: 390px;}
+    .cake-2{ top: 286px; left: 0px;}
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.evt-footer{
+  position: relative;
+  background-color: #a18c76;
+  z-index: 10;
+
+  .footer-bd{
+    position: relative;
+    width:1000px;
+    margin:0 auto;
+  }
+
+  .evt-rules{
+    padding-left:138px;
+    padding-top:30px;
+    padding-bottom:35px;
+    color:#fff;
+    h2{
+      font-size:18px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    p{
+      font-size:16px;
+      line-height: 1.5;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+  }
+}

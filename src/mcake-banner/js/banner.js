@@ -4,6 +4,8 @@
 (function ($) {
   var loadComplete = function () {
 
+
+
     var animations = {
       chezi:function () {
         $(".chezi").each(function(i, el){   /*循环播放会创建多个节点*/
@@ -61,6 +63,14 @@
     $(".float-container").fadeOut();
     floater();
     icon();
+
+
+    $(".guize").hover(function(){
+      $(".guizeShow").stop().fadeIn();
+    },function () {
+      $(".guizeShow").stop().fadeOut();
+    });
+
   };
 
 
