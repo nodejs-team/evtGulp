@@ -1,0 +1,138 @@
+.evt-container {
+  background-color: #fefbf3;
+}
+
+.sec-1 {
+  background: url("../images/line.png") bottom center repeat-x;
+}
+
+.sec-1 .evt-content {
+  width: 1000px;
+  height: 565px;
+}
+
+.sec-1 .evt-content .g-factor {
+  top: 20px;
+  left: -168px;
+}
+
+.sec-1 .evt-content .title {
+  top: 64px;
+  left: 0px;
+}
+
+.sec-1 .evt-content .yun-1 {
+  top: 133px;
+  left: -269px;
+}
+
+.sec-1 .evt-content .yun-2 {
+  top: 274px;
+  right: -248px;
+}
+
+.sec-1 .evt-content .lineyun-1 {
+  bottom: 12px;
+  left: -329px;
+}
+
+.sec-1 .evt-content .lineyun-2 {
+  bottom: 12px;
+  right: -173px;
+}
+
+.sec-1 .evt-content .cake-1 {
+  top: 20px;
+  left: 467px;
+}
+
+.sec-1 .evt-content .mario {
+  bottom: 5px;
+  left: 225px;
+}
+
+.sec-2 {
+  position: relative;
+}
+
+.sec-2 .cake-2 {
+  position: absolute;
+  top: 286px;
+  left: 0px;
+}
+
+.sec-2 .evt-content {
+  height: 1121px;
+}
+
+.sec-2 .evt-content .words-1 {
+  top: 112px;
+  left: 0px;
+}
+
+.sec-2 .evt-content .words-2 {
+  top: 1132px;
+  left: 696px;
+}
+
+.sec-2 .evt-content .jiantou {
+  top: 86px;
+  left: 458px;
+}
+
+.sec-2 .evt-content .shuidi {
+  top: 411px;
+  left: 1050px;
+}
+
+.sec-2 .evt-content .hetao {
+  top: 144px;
+  left: 957px;
+}
+
+.sec-2 .evt-content .chengbao {
+  top: 217px;
+  left: 312px;
+}
+
+.sec-2 .evt-content .mogu {
+  top: 872px;
+  left: 22px;
+}
+
+.sec-2 .evt-content .shengbang {
+  top: 598px;
+  left: 390px;
+}
+
+.evt-footer {
+  position: relative;
+  background-color: #a18c76;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.evt-footer .evt-rules {
+  padding-left: 138px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  color: #fff;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

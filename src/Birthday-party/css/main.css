@@ -50,7 +50,7 @@
   position: relative;
   width: 1000px;
   margin: 0 auto;
-  height: 1211px;
+  height: 1311px;
 }
 
 .evt-container .sec-main-2 > div {
@@ -95,6 +95,11 @@
 .evt-container .sec-main-2 .balloon {
   top: 478px;
   left: 913px;
+}
+
+.evt-container .sec-main-2 .words {
+  top: 1100px;
+  left: 379px;
 }
 
 .evt-container .slider {
