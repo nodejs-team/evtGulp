@@ -167,7 +167,20 @@ body{
       top: 700px;
     }
     .q2-text{
+      width: 669px;
+      height:340px;
       top:903px;
+      background: url(../images/q2-text-sm.png) no-repeat;
+      background-size: 100% auto;
+
+      > img{
+        visibility: hidden;
+      }
+
+      > .buy-btn{
+        width:260px;
+        height:40px;
+      }
     }
   }
   .evt-content{

@@ -166,7 +166,18 @@ body {
     top: 700px;
   }
   .evt-section .q2-text {
+    width: 669px;
+    height: 340px;
     top: 903px;
+    background: url(../images/q2-text-sm.png) no-repeat;
+    background-size: 100% auto;
+  }
+  .evt-section .q2-text > img {
+    visibility: hidden;
+  }
+  .evt-section .q2-text > .buy-btn {
+    width: 260px;
+    height: 40px;
   }
   .evt-content {
     transform: scale(0.9);
