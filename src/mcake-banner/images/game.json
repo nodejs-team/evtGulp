@@ -1,0 +1,26 @@
+{"file":"game.png","frames":{
+"game-1":{"x":373,"y":208,"w":305,"h":205,"offX":20,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-2":{"x":566,"y":415,"w":239,"h":205,"offX":86,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-3":{"x":1397,"y":415,"w":176,"h":205,"offX":149,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-4":{"x":1145,"y":831,"w":134,"h":192,"offX":191,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-5":{"x":1281,"y":831,"w":93,"h":172,"offX":236,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-6":{"x":1145,"y":622,"w":127,"h":207,"offX":261,"offY":46,"sourceW":638,"sourceH":269,"duration":2},
+"game-7":{"x":373,"y":679,"w":191,"h":262,"offX":261,"offY":7,"sourceW":638,"sourceH":269,"duration":4},
+"game-8":{"x":566,"y":622,"w":191,"h":252,"offX":261,"offY":17,"sourceW":638,"sourceH":269,"duration":4},
+"game-9":{"x":373,"y":415,"w":191,"h":262,"offX":261,"offY":7,"sourceW":638,"sourceH":269,"duration":4},
+"game-10":{"x":745,"y":1,"w":191,"h":252,"offX":261,"offY":17,"sourceW":638,"sourceH":269,"duration":20},
+"game-11":{"x":952,"y":622,"w":191,"h":252,"offX":261,"offY":17,"sourceW":638,"sourceH":269,"duration":4},
+"game-12":{"x":759,"y":622,"w":191,"h":252,"offX":261,"offY":17,"sourceW":638,"sourceH":269,"duration":4},
+"game-13":{"x":1131,"y":1,"w":191,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-14":{"x":938,"y":1,"w":191,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-15":{"x":1204,"y":415,"w":191,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-16":{"x":1011,"y":415,"w":191,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-17":{"x":807,"y":255,"w":202,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-18":{"x":1011,"y":208,"w":191,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-19":{"x":373,"y":1,"w":370,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-20":{"x":1,"y":622,"w":370,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-21":{"x":1,"y":415,"w":370,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-22":{"x":1,"y":208,"w":370,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2},
+"game-23":{"x":1,"y":1,"w":370,"h":205,"offX":261,"offY":64,"sourceW":638,"sourceH":269,"duration":2}
+ }
+}

@@ -1,17 +1,17 @@
-.evt-container{ background-color: #fefbf3;}
+.evt-container{ background-color: #fefbf3; overflow: hidden;}
 
 .sec-1{
    background: url("../images/line.png") bottom center repeat-x;
   .evt-content{
      width: 1000px; height: 565px;
     .g-factor{ top: 20px; left: -168px;}
-    .title{ top: 64px; left: 0px;}
+    .title{ top: 72px; left: 0px;}
     .yun-1{ top: 133px; left: -269px;}
     .yun-2{ top: 274px; right: -248px;}
     .lineyun-1{ bottom: 12px; left: -329px;}
     .lineyun-2{ bottom: 12px; right: -173px;}
     .cake-1{ top: 20px; left: 467px;}
-    .mario{ bottom: 5px; left: 225px;}
+    .mario{ bottom: 6px; left: -84px;}
   }
 }
 
@@ -20,24 +20,35 @@
   .evt-content{
     height: 1121px;
     .words-1{ top: 112px; left: 0px;}
-    .words-2{ top: 1132px; left: 696px;}
+    .words-2{ top: 292px; left: 696px;}
     .jiantou{ top: 86px; left: 458px;}
     .shuidi{ top: 411px; left: 1050px;}
     .hetao{ top: 144px; left: 957px;}
     .chengbao{ top: 217px; left: 312px;}
     .mogu{ top: 872px; left: 22px;}
     .shengbang{ top: 598px; left: 390px;}
-    .cake-2{ top: 286px; left: 0px;}
+    .ie8btn{width: 250px; height: 40px; left: 853px;  display: none; background: url("../images/btn.png") right no-repeat;
+      input{float: left;}
+      a{display: block; float: right; width: 60%; height: 100%; }
+    }
+    .ie8btn-hl{ background: url("../images/btn-hl.png") right no-repeat; }
+    .btn-1{top: 700px;   z-index: 5; }
+    .btn-2{  top: 903px; z-index: 5; }
 
+    .cake-2{ top: 286px; left: -460px;}
+    .select{top: 618px; left: 880px; width:247px; height: 400px; display: none;
+      .in1{ margin-top:85px;}
+      .in2{ margin-top:170px;}
+    }
   }
 }
 
 
-
-
-
-
-
+@media (max-width:1366px) {
+  .sec-2 .evt-content .cake-2{ top: 437px; left: -173px;
+    img{ width: 70%;}
+  }
+}
 
 
 

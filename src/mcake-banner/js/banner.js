@@ -39,6 +39,15 @@
         });
 
       }
+      ,
+      game: function () {
+        $(".mario").each(function(i, el){
+          var mc = new MovieClip('game_png', "game_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      }
     };
 
 
@@ -56,6 +65,13 @@
       animations.chezi();
       animations.baozi();
       animations.longmogu();
+
+      var el_game = '<div id="el_game"></div>';
+      setTimeout(function () {
+        $(".mario").append(el_game);
+        animations.game();
+      },1000);
+
       $(".slides-nino .q3").on("animatedone", function () {
         animations.ninoRocket();
       });
@@ -136,7 +152,7 @@
       pagination: '.pagination',
       slidesPerView: 1,
       loop: true,
-      autoplay: false,
+      autoplay: 5000,
       autoplayDisableOninteraction:false,
       paginationClickable: true,
       spaceBetween: 0,

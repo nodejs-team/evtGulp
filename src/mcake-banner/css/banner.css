@@ -398,16 +398,16 @@
 
 .banner-slides .slides-nino .q4 .txt {
   position: absolute;
-  width: 200px;
-  top: 90px;
-  left: 84px;
+  width: 218px;
+  top: 80px;
+  left: 75px;
   color: #53322c;
   font-size: 14px;
   text-align: left;
 }
 
 .banner-slides .slides-nino .q4 .txt p {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .banner-slides .slides-nino .q5 {
@@ -460,6 +460,46 @@
   color: #eae5df;
   font-size: 450px;
   font-family: Times New Roman;
+}
+
+.banner-slides .slides-ricotta .g-factor {
+  top: 20px;
+  left: -168px;
+}
+
+.banner-slides .slides-ricotta .title {
+  top: 72px;
+  left: 0px;
+}
+
+.banner-slides .slides-ricotta .yun-1 {
+  top: 133px;
+  left: -269px;
+}
+
+.banner-slides .slides-ricotta .yun-2 {
+  top: 274px;
+  right: -248px;
+}
+
+.banner-slides .slides-ricotta .lineyun-1 {
+  bottom: 12px;
+  left: -329px;
+}
+
+.banner-slides .slides-ricotta .lineyun-2 {
+  bottom: 12px;
+  right: -173px;
+}
+
+.banner-slides .slides-ricotta .cake-1 {
+  top: 20px;
+  left: 467px;
+}
+
+.banner-slides .slides-ricotta .mario {
+  bottom: 4px;
+  left: -84px;
 }
 
 /*浮动*/

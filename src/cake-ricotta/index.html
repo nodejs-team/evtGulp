@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>make活动</title>
     <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/jquery-labelauty.css">
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
     <link type="text/css" rel="stylesheet" href="css/base.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
@@ -81,31 +82,39 @@
 
     <div class="sec-1">
         <div class="evt-content">
-            <div class="secItem g-factor"><img src="images/g-factor.png" height="25" width="1342"/></div>
-            <div class="secItem title"><img src="images/title.png" width="454" height="342"></div>
-            <div class="secItem yun-1"><img src="images/yun-1.png" height="106" width="121"/></div>
-            <div class="secItem yun-2"><img src="images/yun-2.png" height="186" width="209"/></div>
-            <div class="secItem lineyun-1"><img src="images/lineyun-1.png" height="104" width="239"/></div>
-            <div class="secItem lineyun-2"><img src="images/lineyun-2.png" height="104" width="95"/></div>
-            <div class="secItem cake-1"><img src="images/cake-1.png" width="630" height="716" /></div>
-            <div class="secItem mario"><img src="images/mario.png" height="106" width="94"/></div>
-
-
+            <div class="secItem g-factor" data-anim="fade-in" data-delay="0.2"><img src="images/g-factor.png" height="25" width="1342"/></div>
+            <div class="secItem title" data-anim="fade-in" data-delay="0.2"><img src="images/title.png" width="454" height="342"></div>
+            <div class="secItem yun-1" data-anim="fade-in" data-delay="0.5"><img src="images/yun-1.png" height="106" width="121"/></div>
+            <div class="secItem yun-2" data-anim="fade-in" data-delay="0.5"><img src="images/yun-2.png" height="186" width="209"/></div>
+            <div class="secItem lineyun-1" data-anim="fade-in" data-delay="0.5"><img src="images/lineyun-1.png" height="104" width="239"/></div>
+            <div class="secItem lineyun-2" data-anim="fade-in" data-delay="0.5"><img src="images/lineyun-2.png" height="104" width="95"/></div>
+            <div class="secItem cake-1" data-anim="slide-up-r" data-delay="0.2"><img src="images/cake-1.png" width="630" height="716" /></div>
+            <div class="secItem mario"  data-anim="fade-in" data-delay="0.5"></div>
         </div>
     </div>
 
     <div class="sec-2">
         <div class="evt-content">
-            <div class="secItem words-1"><img src="images/words-1.png" height="148" width="399"/></div>
-            <div class="secItem words-2"><img src="images/words-2.png" height="125" width="394"/></div>
-            <div class="secItem jiantou"><img src="images/jiantou.png" height="59" width="96"/></div>
-            <div class="secItem shuidi"><img src="images/shuidi.png" height="71" width="62"/></div>
-            <div class="secItem hetao"><img src="images/hetao.png" height="118" width="124"/></div>
-            <div class="secItem chengbao"><img src="images/chengbao.png" height="291" width="321"/></div>
-            <div class="secItem mogu"><img src="images/mogu.png" height="90" width="107"/></div>
-            <div class="secItem shengbang"><img src="images/shengbang.png" height="402" width="714"/></div>
-            <div class="secItem cake-2"><img src="images/cake-2.png" width="868" height="669" /></div>
+            <div class="secItem words-1" data-anim="slide-right" data-delay-adjust="0.5"><img src="images/words-1.png" height="148" width="399"/></div>
+            <div class="secItem words-2" data-anim="slide-left" data-delay-adjust="0.5"><img src="images/words-2.png" height="125" width="394"/></div>
+            <div class="secItem jiantou" data-anim="slide-left" data-delay-adjust="0.5"><img src="images/jiantou.png" height="59" width="96"/></div>
+            <div class="secItem shuidi" data-anim="slide-left" data-delay-adjust="0.5"><img src="images/shuidi.png" height="71" width="62"/></div>
+            <div class="secItem hetao" data-anim="slide-left" data-delay-adjust="0.5"><img src="images/hetao.png" height="118" width="124"/></div>
+            <div class="secItem chengbao" data-anim="fade-in" data-delay-adjust="0.8"><img src="images/chengbao.png" height="291" width="321"/></div>
+            <div class="secItem mogu" data-anim="fade-in" data-delay-adjust="1.2"><img src="images/mogu.png" height="90" width="107"/></div>
+            <div class="secItem shengbang" data-anim="fade-in" data-delay-adjust="1"><img src="images/shengbang.png" height="402" width="512"/></div>
 
+            <div class="secItem btn-1 ie8btn" data-anim="fade-in" data-delay-adjust="1"><input type="radio" name="radio" checked> </div>
+            <div class="secItem btn-2 ie8btn" data-anim="fade-in" data-delay-adjust="1"><input type="radio" name="radio"></div>
+
+            <div class="secItem cake-2" data-anim="slide-right" data-delay-adjust="1"><img src="images/cake-2.png" /></div>
+
+            <div class="secItem select" data-anim="fade-in" data-delay-adjust="1.2">
+                <ul class="dowebok">
+                    <li class="in1"><input type="radio" name="radio" data-labelauty="视觉设计师" checked></li>
+                    <li class="in2"><input type="radio" name="radio" data-labelauty="交互设计师"></li>
+                </ul>
+            </div>
 
         </div>
     </div>
@@ -131,7 +140,9 @@
 <!-- build:js js/main.js -->
 <script type="text/javascript" src="js/animate-util.js"></script>
 <script type="text/javascript" src="js/resData.js"></script>
+<script src="js/jquery-labelauty.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
 <!-- endbuild -->
 </body>
 </html>

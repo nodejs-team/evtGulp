@@ -1,5 +1,6 @@
 .evt-container {
   background-color: #fefbf3;
+  overflow: hidden;
 }
 
 .sec-1 {
@@ -17,7 +18,7 @@
 }
 
 .sec-1 .evt-content .title {
-  top: 64px;
+  top: 72px;
   left: 0px;
 }
 
@@ -47,18 +48,8 @@
 }
 
 .sec-1 .evt-content .mario {
-  bottom: 5px;
-  left: 225px;
-}
-
-.sec-2 {
-  position: relative;
-}
-
-.sec-2 .cake-2 {
-  position: absolute;
-  top: 286px;
-  left: 0px;
+  bottom: 6px;
+  left: -84px;
 }
 
 .sec-2 .evt-content {
@@ -71,7 +62,7 @@
 }
 
 .sec-2 .evt-content .words-2 {
-  top: 1132px;
+  top: 292px;
   left: 696px;
 }
 
@@ -103,6 +94,70 @@
 .sec-2 .evt-content .shengbang {
   top: 598px;
   left: 390px;
+}
+
+.sec-2 .evt-content .ie8btn {
+  width: 250px;
+  height: 40px;
+  left: 853px;
+  display: none;
+  background: url("../images/btn.png") right no-repeat;
+}
+
+.sec-2 .evt-content .ie8btn input {
+  float: left;
+}
+
+.sec-2 .evt-content .ie8btn a {
+  display: block;
+  float: right;
+  width: 60%;
+  height: 100%;
+}
+
+.sec-2 .evt-content .ie8btn-hl {
+  background: url("../images/btn-hl.png") right no-repeat;
+}
+
+.sec-2 .evt-content .btn-1 {
+  top: 700px;
+  z-index: 5;
+}
+
+.sec-2 .evt-content .btn-2 {
+  top: 903px;
+  z-index: 5;
+}
+
+.sec-2 .evt-content .cake-2 {
+  top: 286px;
+  left: -460px;
+}
+
+.sec-2 .evt-content .select {
+  top: 618px;
+  left: 880px;
+  width: 247px;
+  height: 400px;
+  display: none;
+}
+
+.sec-2 .evt-content .select .in1 {
+  margin-top: 85px;
+}
+
+.sec-2 .evt-content .select .in2 {
+  margin-top: 170px;
+}
+
+@media (max-width: 1366px) {
+  .sec-2 .evt-content .cake-2 {
+    top: 437px;
+    left: -173px;
+  }
+  .sec-2 .evt-content .cake-2 img {
+    width: 70%;
+  }
 }
 
 .evt-footer {

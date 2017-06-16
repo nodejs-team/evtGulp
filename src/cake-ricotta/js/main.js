@@ -2,8 +2,42 @@
  * Created by mcake on 2016/5/24.
  */
 (function($){
+  var animations= {
+    game: function () {
+      var mc = new MovieClip('game_png', "game_json", 'el_game');
+      mc.gotoAndPlay(1, -1);
+      return mc;
+    }
+  }
+
 
   var loadComplete = function () {
+
+
+
+    if(!isSupportCss3){
+      $(".ie8btn").show();
+      $(".ie8btn").click(function () {
+        var alink = '<a href="#" class="alink"></a>';
+        $(".ie8btn").find('.alink').remove();
+        $(this).append(alink);
+        $(this).addClass('ie8btn-hl');
+        $(this).find('input').attr('checked','checked');
+
+        $(this).siblings().removeClass('ie8btn-hl');
+
+      });
+    }else{
+      $(".select").show();
+      $(function(){
+        $(':input').labelauty();
+      });
+    }
+    var el_game = '<div id="el_game"></div>';
+    setTimeout(function () {
+      $(".mario").append(el_game);
+      animations.game();
+    },1000);
 
   };
 
