@@ -151,7 +151,7 @@ body {
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 750px) {
   .evt-section.sec1 {
     height: 1400px;
   }
