@@ -84,6 +84,7 @@
   display: block;
   width: 90%;
   height: 100%;
+  z-index: 100;
 }
 
 .swiper-slide {
@@ -462,6 +463,7 @@
   font-family: Times New Roman;
 }
 
+<<<<<<< HEAD
 .banner-slides .slides-ricotta .g-factor {
   top: 20px;
   left: -168px;
@@ -500,6 +502,28 @@
 .banner-slides .slides-ricotta .mario {
   bottom: 4px;
   left: -84px;
+=======
+.banner-slides .slides-clearance .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-clearance .q1 {
+  left: 345px;
+  top: 76px;
+  z-index: 5;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.21, 1.51);
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.21, 1.51);
+}
+
+.banner-slides .slides-clearance .q2 {
+  left: 0;
+  top: 214px;
+}
+
+.banner-slides .slides-clearance .q3 {
+  left: 870px;
+  top: 220px;
+>>>>>>> 2be90cb7fa07ceddd73b299d72581b08b4cfb149
 }
 
 /*浮动*/

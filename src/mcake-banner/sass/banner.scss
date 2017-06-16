@@ -46,7 +46,7 @@
 .swiper-active-switch {
 background: #a5002f;
 }
-.slide-link{position: absolute; top:0; left: 5%; display: block; width: 90%; height: 100%; }
+.slide-link{position: absolute; top:0; left: 5%; display: block; width: 90%; height: 100%; z-index: 100;}
 .swiper-slide{position: relative;}
 
 .oldie{
@@ -220,6 +220,7 @@ background: #a5002f;
     }
   }
 
+<<<<<<< HEAD
 
 
   .slides-ricotta{
@@ -237,6 +238,28 @@ background: #a5002f;
 
 
 
+=======
+  .slides-clearance {
+    .swiper-content{
+      width:1200px;
+    }
+    .q1{
+      left: 345px;
+      top: 76px;
+      z-index: 5;
+      -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.21, 1.51);
+      animation-timing-function: cubic-bezier(0.25, 0.1, 0.21, 1.51);
+    }
+    .q2{
+      left: 0;
+      top:214px;
+    }
+    .q3{
+      left: 870px;
+      top: 220px;
+    }
+  }
+>>>>>>> 2be90cb7fa07ceddd73b299d72581b08b4cfb149
 }
 
 
