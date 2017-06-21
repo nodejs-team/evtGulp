@@ -100,12 +100,7 @@
   width: 250px;
   height: 40px;
   left: 853px;
-  display: none;
-  background: url("../images/btn.png") right no-repeat;
-}
-
-.sec-2 .evt-content .ie8btn input {
-  float: left;
+  background: url("../images/btn-hl.png") right no-repeat;
 }
 
 .sec-2 .evt-content .ie8btn a {
@@ -113,10 +108,6 @@
   float: right;
   width: 60%;
   height: 100%;
-}
-
-.sec-2 .evt-content .ie8btn-hl {
-  background: url("../images/btn-hl.png") right no-repeat;
 }
 
 .sec-2 .evt-content .btn-1 {

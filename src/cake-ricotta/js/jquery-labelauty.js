@@ -148,6 +148,10 @@
 			// Now, add necessary tags to make this work
 			// Here, we're going to test some control variables and act properly
 			$object.after( create( input_id, labels_object, use_labels ) );
+		///	console.log($(".labelauty-checked-btn"))
+
+
+
 
 			// Now, add "min-width" to label
 			// Let's say the truth, a fixed width is more beautiful than a variable width
@@ -226,6 +230,7 @@
 								'<div class="labelauty-unchecked-btn"></div>' +
 								'<div class="labelauty-checked-btn"><a href="#b"></a></div>'+
 						'</label>';
+
 		}
 		else
 		{

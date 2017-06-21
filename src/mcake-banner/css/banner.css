@@ -23,6 +23,7 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .pagination {
@@ -463,7 +464,6 @@
   font-family: Times New Roman;
 }
 
-<<<<<<< HEAD
 .banner-slides .slides-ricotta .g-factor {
   top: 20px;
   left: -168px;
@@ -502,7 +502,8 @@
 .banner-slides .slides-ricotta .mario {
   bottom: 4px;
   left: -84px;
-=======
+}
+
 .banner-slides .slides-clearance .swiper-content {
   width: 1200px;
 }
@@ -523,7 +524,6 @@
 .banner-slides .slides-clearance .q3 {
   left: 870px;
   top: 220px;
->>>>>>> 2be90cb7fa07ceddd73b299d72581b08b4cfb149
 }
 
 /*浮动*/

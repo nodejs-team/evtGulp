@@ -80,7 +80,6 @@
     floater();
     icon();
 
-
     $(".guize").hover(function(){
       $(".guizeShow").stop().fadeIn();
     },function () {
