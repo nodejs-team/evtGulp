@@ -1,122 +1,132 @@
 {
 	"groups":[{
-			"keys":"baozi_json,chezi_json,game_json,long-mogu_json,f-bg_jpg,f-cake_png,f-lz_png,f-title_png,f-yd_png,bg1_png,logo_png,text_png,cake-ricotta_png,lineyun-1_png,lineyun-2_png,r-title_png,t-bar_png,yun-1_png,yun-2_png,bg_jpg,text1_png,arrows_png,guize_png,nino_png,nino_bg_png,q1_png,rocket_json",
+			"keys":"hyou_png,quqi-1_png,quqi-2_png,quqi-3_png,quqi-4_png,ren-box_json,ren-pao_json,ren-quqi_json,ren-tizi_json,title1_png,banner-bg2_jpg,boy_png,cake1_png,girl_png,title2_png,banner-bg_jpg,cake_png,decorate-1_png,decorate-2_png,title_png,bg_png,q13_png,q2_png,q3_png,guize_png,nino_png,nino_bg_png,q1_png,rocket_json",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"baozi_json",
-			"subkeys":"baozi-1,baozi-2,baozi-3,baozi-4",
+			"name":"hyou_png",
+			"type":"image",
+			"url":"quqi-exchange/hyou.png"
+		},
+		{
+			"name":"quqi-1_png",
+			"type":"image",
+			"url":"quqi-exchange/quqi-1.png"
+		},
+		{
+			"name":"quqi-2_png",
+			"type":"image",
+			"url":"quqi-exchange/quqi-2.png"
+		},
+		{
+			"name":"quqi-3_png",
+			"type":"image",
+			"url":"quqi-exchange/quqi-3.png"
+		},
+		{
+			"name":"quqi-4_png",
+			"type":"image",
+			"url":"quqi-exchange/quqi-4.png"
+		},
+		{
+			"name":"ren-box_json",
+			"subkeys":"ren-box-1,ren-box-2",
 			"type":"sheet",
-			"url":"baozi.json"
+			"url":"quqi-exchange/ren-box.json"
 		},
 		{
-			"name":"chezi_json",
-			"subkeys":"chezi-1,chezi-2",
+			"name":"ren-pao_json",
+			"subkeys":"ren-pao-1,ren-pao-2,ren-pao-3,ren-pao-4,ren-pao-5,ren-pao-6,ren-pao-7,ren-pao-8",
 			"type":"sheet",
-			"url":"chezi.json"
+			"url":"quqi-exchange/ren-pao.json"
 		},
 		{
-			"name":"game_json",
-			"subkeys":"game-1,game-10,game-11,game-12,game-13,game-14,game-15,game-16,game-17,game-18,game-19,game-2,game-20,game-21,game-22,game-23,game-3,game-4,game-5,game-6,game-7,game-8,game-9",
+			"name":"ren-quqi_json",
+			"subkeys":"ren-quqi-1,ren-quqi-2",
 			"type":"sheet",
-			"url":"game.json"
+			"url":"quqi-exchange/ren-quqi.json"
 		},
 		{
-			"name":"long-mogu_json",
-			"subkeys":"long-mogu-1,long-mogu-2,long-mogu-3",
+			"name":"ren-tizi_json",
+			"subkeys":"ren-tizi-1,ren-tizi-2",
 			"type":"sheet",
-			"url":"long-mogu.json"
+			"url":"quqi-exchange/ren-tizi.json"
 		},
 		{
-			"name":"f-bg_jpg",
+			"name":"title1_png",
 			"type":"image",
-			"url":"Father/f-bg.jpg"
+			"url":"quqi-exchange/title.png"
 		},
 		{
-			"name":"f-cake_png",
+			"name":"banner-bg2_jpg",
 			"type":"image",
-			"url":"Father/f-cake.png"
+			"url":"520/banner-bg.jpg"
 		},
 		{
-			"name":"f-lz_png",
+			"name":"boy_png",
 			"type":"image",
-			"url":"Father/f-lz.png"
+			"url":"520/boy.png"
 		},
 		{
-			"name":"f-title_png",
+			"name":"cake1_png",
 			"type":"image",
-			"url":"Father/f-title.png"
+			"url":"520/cake.png"
 		},
 		{
-			"name":"f-yd_png",
+			"name":"girl_png",
 			"type":"image",
-			"url":"Father/f-yd.png"
+			"url":"520/girl.png"
 		},
 		{
-			"name":"bg1_png",
+			"name":"title2_png",
 			"type":"image",
-			"url":"history/bg1.png"
+			"url":"520/title.png"
 		},
 		{
-			"name":"logo_png",
+			"name":"banner-bg_jpg",
 			"type":"image",
-			"url":"history/logo.png"
+			"url":"ChowhoundDay/banner-bg.jpg"
 		},
 		{
-			"name":"text_png",
+			"name":"cake_png",
 			"type":"image",
-			"url":"history/text.png"
+			"url":"ChowhoundDay/cake.png"
 		},
 		{
-			"name":"cake-ricotta_png",
+			"name":"decorate-1_png",
 			"type":"image",
-			"url":"ricotta/cake-ricotta.png"
+			"url":"ChowhoundDay/decorate-1.png"
 		},
 		{
-			"name":"lineyun-1_png",
+			"name":"decorate-2_png",
 			"type":"image",
-			"url":"ricotta/lineyun-1.png"
+			"url":"ChowhoundDay/decorate-2.png"
 		},
 		{
-			"name":"lineyun-2_png",
+			"name":"title_png",
 			"type":"image",
-			"url":"ricotta/lineyun-2.png"
+			"url":"ChowhoundDay/title.png"
 		},
 		{
-			"name":"r-title_png",
+			"name":"bg_png",
 			"type":"image",
-			"url":"ricotta/r-title.png"
+			"url":"clearance/bg.png"
 		},
 		{
-			"name":"t-bar_png",
+			"name":"q13_png",
 			"type":"image",
-			"url":"ricotta/t-bar.png"
+			"url":"clearance/q1.png"
 		},
 		{
-			"name":"yun-1_png",
+			"name":"q2_png",
 			"type":"image",
-			"url":"ricotta/yun-1.png"
+			"url":"clearance/q2.png"
 		},
 		{
-			"name":"yun-2_png",
+			"name":"q3_png",
 			"type":"image",
-			"url":"ricotta/yun-2.png"
-		},
-		{
-			"name":"bg_jpg",
-			"type":"image",
-			"url":"yunding/bg.jpg"
-		},
-		{
-			"name":"text1_png",
-			"type":"image",
-			"url":"yunding/text.png"
-		},
-		{
-			"name":"arrows_png",
-			"type":"image",
-			"url":"arrows.png"
+			"url":"clearance/q3.png"
 		},
 		{
 			"name":"guize_png",

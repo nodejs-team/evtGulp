@@ -1,0 +1,230 @@
+.evt-container {
+  background-color: #f3f8ff;
+  overflow: hidden;
+}
+
+.sec-1 .evt-content {
+  width: 1000px;
+  height: 773px;
+}
+
+.sec-1 .evt-content .ren-quqi {
+  top: 150px;
+  left: -117px;
+}
+
+.sec-1 .evt-content .ren-tizi {
+  top: 0px;
+  left: 686px;
+}
+
+.sec-1 .evt-content .ren-box {
+  top: 490px;
+  left: 265px;
+}
+
+.sec-1 .evt-content .ren-pao {
+  top: 460px;
+  left: 911px;
+}
+
+.sec-1 .evt-content .hyou {
+  top: 504px;
+  left: -100px;
+}
+
+.sec-1 .evt-content .title {
+  top: 50px;
+  left: 232px;
+}
+
+.sec-1 .evt-content .quqi-1 {
+  top: -30px;
+  left: -20px;
+}
+
+.sec-1 .evt-content .quqi-2 {
+  top: 50px;
+  left: 918px;
+}
+
+.sec-1 .evt-content .quqi-3 {
+  top: 322px;
+  left: 90px;
+}
+
+.sec-1 .evt-content .quqi-4 {
+  top: 294px;
+  left: 486px;
+}
+
+.sec-2 .evt-content {
+  width: 1000px;
+  height: 605px;
+}
+
+.sec-2 .evt-content .flowers {
+  top: 50px;
+  left: 500px;
+}
+
+.sec-2 .evt-content .info-1 {
+  top: 150px;
+  left: -108px;
+}
+
+.sec-2 .evt-content .quqi-cake {
+  top: 90px;
+  left: 490px;
+}
+
+.sec-2 .evt-content .ren-wyao {
+  top: 347px;
+  left: 278px;
+}
+
+.sec-2 .evt-content .go-btn {
+  top: 338px;
+  left: 33px;
+}
+
+.sec-2 .evt-content .go-btn span {
+  padding: 5px 20px;
+  background: #f5b740;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+.sec-3 .evt-content {
+  width: 1000px;
+  height: 849px;
+}
+
+.sec-3 .evt-content .quqi-5 {
+  top: 65px;
+  left: 1006px;
+}
+
+.sec-3 .evt-content .quqi-6 {
+  top: 245px;
+  left: -123px;
+}
+
+.sec-3 .evt-content .huangyou {
+  top: 593px;
+  left: 842px;
+}
+
+.sec-3 .evt-content .dazi {
+  top: 292px;
+  left: 671px;
+}
+
+.sec-3 .evt-content .qiqiu {
+  top: 20px;
+  left: 0px;
+}
+
+.sec-3 .evt-content .ren-guize {
+  bottom: 0px;
+  left: 613px;
+}
+
+.sec-3 .evt-content .more-btn {
+  top: 78px;
+  left: 706px;
+  width: 165px;
+  height: 102px;
+  background: url("../images/more.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-3 .evt-content .more-btn.hover {
+  background: url("../images/more-hl.png") no-repeat;
+}
+
+.sec-3 .evt-content .info {
+  font-size: 22px;
+  color: #3c211a;
+  width: 730px;
+  letter-spacing: 3px;
+}
+
+.sec-3 .evt-content .info p.mb {
+  margin-bottom: 10px;
+}
+
+.sec-3 .evt-content .info .ry {
+  display: inline-block;
+  font-size: 16px;
+  padding-top: 17px;
+  padding-left: 60px;
+  background: url("../images/ic-box.png") 0 0 no-repeat;
+}
+
+.sec-3 .evt-content .info p.english {
+  font-size: 14px;
+  margin-top: 28px;
+  letter-spacing: 0px;
+}
+
+.sec-3 .evt-content .info-2 {
+  top: 100px;
+  left: 387px;
+  background: url("../images/ic-58.png") 180px 0 no-repeat;
+  padding-top: 37px;
+}
+
+.sec-3 .evt-content .info-3 {
+  top: 427px;
+  left: 387px;
+  font-size: 20px;
+  padding-top: 70px;
+  background: url("../images/ic-zhi.png") 0 0 no-repeat;
+}
+
+.sec-3 .evt-content .go-btn {
+  top: 241px;
+  left: 384px;
+}
+
+.sec-3 .evt-content .go-btn span {
+  padding: 5px 20px;
+  background: #f5b740;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+.evt-footer {
+  position: relative;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.evt-footer .evt-rules {
+  padding-left: 138px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #3c211a;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 33px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 20px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

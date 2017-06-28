@@ -1,0 +1,6 @@
+{"file":"ren-wyao.png","frames":{
+"ren-wyao-1":{"x":1,"y":299,"w":252,"h":147,"offX":3,"offY":1,"sourceW":258,"sourceH":152,"duration":4},
+"ren-wyao-2":{"x":255,"y":150,"w":252,"h":147,"offX":3,"offY":1,"sourceW":258,"sourceH":152,"duration":4},
+"ren-wyao-3":{"x":1,"y":150,"w":252,"h":147,"offX":3,"offY":1,"sourceW":258,"sourceH":152,"duration":10},
+"ren-wyao-4":{"x":255,"y":1,"w":252,"h":147,"offX":3,"offY":1,"sourceW":258,"sourceH":152,"duration":2},
+"ren-wyao-5":{"x":1,"y":1,"w":252,"h":147,"offX":3,"offY":1,"sourceW":258,"sourceH":152,"duration":20}}}

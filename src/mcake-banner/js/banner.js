@@ -50,6 +50,44 @@
       }
     };
 
+    var quqiExchange = {
+      renQuqi: function () {
+        $(".ren-quqi").each(function(i, el){
+          var mc = new MovieClip('ren-quqi_png', "ren-quqi_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      renTizi: function () {
+        $(".ren-tizi").each(function(i, el){
+          var mc = new MovieClip('ren-tizi_png', "ren-tizi_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      renBox: function () {
+        $(".ren-box").each(function(i, el){
+          var mc = new MovieClip('ren-box_png', "ren-box_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      renPao: function () {
+        $(".ren-pao").each(function(i, el){
+          var mc = new MovieClip('ren-pao_png', "ren-pao_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      }
+
+
+
+    }
+
 
     if( !isSupportCss3 ){
       $(document.body).addClass("oldie");
@@ -65,6 +103,12 @@
       animations.chezi();
       animations.baozi();
       animations.longmogu();
+
+
+      quqiExchange.renQuqi();
+      quqiExchange.renTizi();
+      quqiExchange.renBox();
+      quqiExchange.renPao();
 
       var el_game = '<div id="el_game"></div>';
       setTimeout(function () {

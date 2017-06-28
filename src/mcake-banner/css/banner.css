@@ -526,6 +526,56 @@
   top: 220px;
 }
 
+.banner-slides .slides-quqi-exchange .ren-quqi {
+  top: 126px;
+  left: -78px;
+}
+
+.banner-slides .slides-quqi-exchange .ren-tizi {
+  top: 0px;
+  left: 595px;
+}
+
+.banner-slides .slides-quqi-exchange .ren-box {
+  bottom: 45px;
+  left: 180px;
+}
+
+.banner-slides .slides-quqi-exchange .ren-pao {
+  bottom: 16px;
+  left: 915px;
+}
+
+.banner-slides .slides-quqi-exchange .hyou {
+  bottom: 68px;
+  left: -100px;
+}
+
+.banner-slides .slides-quqi-exchange .title {
+  top: 20px;
+  left: 203px;
+}
+
+.banner-slides .slides-quqi-exchange .quqi-1 {
+  top: -30px;
+  left: -20px;
+}
+
+.banner-slides .slides-quqi-exchange .quqi-2 {
+  top: 32px;
+  left: 939px;
+}
+
+.banner-slides .slides-quqi-exchange .quqi-3 {
+  top: 322px;
+  left: 90px;
+}
+
+.banner-slides .slides-quqi-exchange .quqi-4 {
+  top: 172px;
+  left: 517px;
+}
+
 /*浮动*/
 .floater {
   position: fixed;
