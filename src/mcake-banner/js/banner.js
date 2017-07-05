@@ -113,8 +113,9 @@
       var el_game = '<div id="el_game"></div>';
       setTimeout(function () {
         $(".mario").append(el_game);
+
         animations.game();
-      },1000);
+      },100);
 
       $(".slides-nino .q3").on("animatedone", function () {
         animations.ninoRocket();

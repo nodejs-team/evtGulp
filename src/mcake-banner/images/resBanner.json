@@ -1,9 +1,140 @@
 {
 	"groups":[{
-			"keys":"hyou_png,quqi-1_png,quqi-2_png,quqi-3_png,quqi-4_png,ren-box_json,ren-pao_json,ren-quqi_json,ren-tizi_json,title1_png,banner-bg2_jpg,boy_png,cake1_png,girl_png,title2_png,banner-bg_jpg,cake_png,decorate-1_png,decorate-2_png,title_png,bg_png,q13_png,q2_png,q3_png,guize_png,nino_png,nino_bg_png,q1_png,rocket_json",
+			"keys":"cake-ricotta_png,lineyun-1_png,lineyun-2_png,r-title_png,t-bar_png,yun-1_png,yun-2_png,banner-bg1_jpg,boy_png,cake1_png,girl_png,title1_png,banner-bg2_jpg,cake2_png,decorate-1_png,decorate-2_png,title3_png,bg_png,q13_png,q2_png,q3_png,guize_png,nino_png,nino_bg_png,q1_png,rocket_json,hyou_png,quqi-1_png,quqi-2_png,quqi-3_png,quqi-4_png,ren-box_json,ren-pao_json,ren-quqi_json,ren-tizi_json,title4_png,banner-bg_jpg,btn_png,cake_png,left_png,right_png,title_png,game_json",
 			"name":"preload"
 		}],
 	"resources":[
+		{
+			"name":"cake-ricotta_png",
+			"type":"image",
+			"url":"ricotta/cake-ricotta.png"
+		},
+		{
+			"name":"lineyun-1_png",
+			"type":"image",
+			"url":"ricotta/lineyun-1.png"
+		},
+		{
+			"name":"lineyun-2_png",
+			"type":"image",
+			"url":"ricotta/lineyun-2.png"
+		},
+		{
+			"name":"r-title_png",
+			"type":"image",
+			"url":"ricotta/r-title.png"
+		},
+		{
+			"name":"t-bar_png",
+			"type":"image",
+			"url":"ricotta/t-bar.png"
+		},
+		{
+			"name":"yun-1_png",
+			"type":"image",
+			"url":"ricotta/yun-1.png"
+		},
+		{
+			"name":"yun-2_png",
+			"type":"image",
+			"url":"ricotta/yun-2.png"
+		},
+		{
+			"name":"banner-bg1_jpg",
+			"type":"image",
+			"url":"520/banner-bg.jpg"
+		},
+		{
+			"name":"boy_png",
+			"type":"image",
+			"url":"520/boy.png"
+		},
+		{
+			"name":"cake1_png",
+			"type":"image",
+			"url":"520/cake.png"
+		},
+		{
+			"name":"girl_png",
+			"type":"image",
+			"url":"520/girl.png"
+		},
+		{
+			"name":"title1_png",
+			"type":"image",
+			"url":"520/title.png"
+		},
+		{
+			"name":"banner-bg2_jpg",
+			"type":"image",
+			"url":"ChowhoundDay/banner-bg.jpg"
+		},
+		{
+			"name":"cake2_png",
+			"type":"image",
+			"url":"ChowhoundDay/cake.png"
+		},
+		{
+			"name":"decorate-1_png",
+			"type":"image",
+			"url":"ChowhoundDay/decorate-1.png"
+		},
+		{
+			"name":"decorate-2_png",
+			"type":"image",
+			"url":"ChowhoundDay/decorate-2.png"
+		},
+		{
+			"name":"title3_png",
+			"type":"image",
+			"url":"ChowhoundDay/title.png"
+		},
+		{
+			"name":"bg_png",
+			"type":"image",
+			"url":"clearance/bg.png"
+		},
+		{
+			"name":"q13_png",
+			"type":"image",
+			"url":"clearance/q1.png"
+		},
+		{
+			"name":"q2_png",
+			"type":"image",
+			"url":"clearance/q2.png"
+		},
+		{
+			"name":"q3_png",
+			"type":"image",
+			"url":"clearance/q3.png"
+		},
+		{
+			"name":"guize_png",
+			"type":"image",
+			"url":"ninuo/guize.png"
+		},
+		{
+			"name":"nino_png",
+			"type":"image",
+			"url":"ninuo/nino.png"
+		},
+		{
+			"name":"nino_bg_png",
+			"type":"image",
+			"url":"ninuo/nino_bg.png"
+		},
+		{
+			"name":"q1_png",
+			"type":"image",
+			"url":"ninuo/q1.png"
+		},
+		{
+			"name":"rocket_json",
+			"subkeys":"rocket_00000,rocket_00001,rocket_00002,rocket_00003,rocket_00004,rocket_00005,rocket_00006,rocket_00007,rocket_00008,rocket_00009,rocket_00010,rocket_00011,rocket_00012,rocket_00013,rocket_00014,rocket_00015,rocket_00016,rocket_00017,rocket_00018,rocket_00019,rocket_00020,rocket_00021,rocket_00022,rocket_00023,rocket_00024,rocket_00025,rocket_00026,rocket_00027,rocket_00028",
+			"type":"sheet",
+			"url":"ninuo/rocket.json"
+		},
 		{
 			"name":"hyou_png",
 			"type":"image",
@@ -54,105 +185,45 @@
 			"url":"quqi-exchange/ren-tizi.json"
 		},
 		{
-			"name":"title1_png",
+			"name":"title4_png",
 			"type":"image",
 			"url":"quqi-exchange/title.png"
 		},
 		{
-			"name":"banner-bg2_jpg",
-			"type":"image",
-			"url":"520/banner-bg.jpg"
-		},
-		{
-			"name":"boy_png",
-			"type":"image",
-			"url":"520/boy.png"
-		},
-		{
-			"name":"cake1_png",
-			"type":"image",
-			"url":"520/cake.png"
-		},
-		{
-			"name":"girl_png",
-			"type":"image",
-			"url":"520/girl.png"
-		},
-		{
-			"name":"title2_png",
-			"type":"image",
-			"url":"520/title.png"
-		},
-		{
 			"name":"banner-bg_jpg",
 			"type":"image",
-			"url":"ChowhoundDay/banner-bg.jpg"
+			"url":"ChildrenDay/banner-bg.jpg"
+		},
+		{
+			"name":"btn_png",
+			"type":"image",
+			"url":"ChildrenDay/btn.png"
 		},
 		{
 			"name":"cake_png",
 			"type":"image",
-			"url":"ChowhoundDay/cake.png"
+			"url":"ChildrenDay/cake.png"
 		},
 		{
-			"name":"decorate-1_png",
+			"name":"left_png",
 			"type":"image",
-			"url":"ChowhoundDay/decorate-1.png"
+			"url":"ChildrenDay/left.png"
 		},
 		{
-			"name":"decorate-2_png",
+			"name":"right_png",
 			"type":"image",
-			"url":"ChowhoundDay/decorate-2.png"
+			"url":"ChildrenDay/right.png"
 		},
 		{
 			"name":"title_png",
 			"type":"image",
-			"url":"ChowhoundDay/title.png"
+			"url":"ChildrenDay/title.png"
 		},
 		{
-			"name":"bg_png",
-			"type":"image",
-			"url":"clearance/bg.png"
-		},
-		{
-			"name":"q13_png",
-			"type":"image",
-			"url":"clearance/q1.png"
-		},
-		{
-			"name":"q2_png",
-			"type":"image",
-			"url":"clearance/q2.png"
-		},
-		{
-			"name":"q3_png",
-			"type":"image",
-			"url":"clearance/q3.png"
-		},
-		{
-			"name":"guize_png",
-			"type":"image",
-			"url":"ninuo/guize.png"
-		},
-		{
-			"name":"nino_png",
-			"type":"image",
-			"url":"ninuo/nino.png"
-		},
-		{
-			"name":"nino_bg_png",
-			"type":"image",
-			"url":"ninuo/nino_bg.png"
-		},
-		{
-			"name":"q1_png",
-			"type":"image",
-			"url":"ninuo/q1.png"
-		},
-		{
-			"name":"rocket_json",
-			"subkeys":"rocket_00000,rocket_00001,rocket_00002,rocket_00003,rocket_00004,rocket_00005,rocket_00006,rocket_00007,rocket_00008,rocket_00009,rocket_00010,rocket_00011,rocket_00012,rocket_00013,rocket_00014,rocket_00015,rocket_00016,rocket_00017,rocket_00018,rocket_00019,rocket_00020,rocket_00021,rocket_00022,rocket_00023,rocket_00024,rocket_00025,rocket_00026,rocket_00027,rocket_00028",
+			"name":"game_json",
+			"subkeys":"game-1,game-10,game-11,game-12,game-13,game-14,game-15,game-16,game-17,game-18,game-19,game-2,game-20,game-21,game-22,game-23,game-3,game-4,game-5,game-6,game-7,game-8,game-9",
 			"type":"sheet",
-			"url":"ninuo/rocket.json"
+			"url":"game.json"
 		}
 	]
 }
