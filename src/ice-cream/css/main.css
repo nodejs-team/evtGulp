@@ -1,0 +1,121 @@
+.evt-container {
+  overflow: hidden;
+}
+
+.sec-1 {
+  background: #e8f3f6;
+  z-index: 1;
+  position: relative;
+}
+
+.sec-1 .evt-content {
+  width: 1000px;
+  height: 1014px;
+}
+
+.sec-1 .evt-content .title {
+  top: 58px;
+  left: 321px;
+}
+
+.sec-1 .evt-content .ice-water {
+  top: -96px;
+  left: -23px;
+}
+
+.sec-1 .evt-content .cake-1 {
+  top: 482px;
+  left: 377px;
+}
+
+.sec-1 .evt-content .words-1 {
+  top: 415px;
+  left: 37px;
+}
+
+.sec-1 .evt-content .words-btn-1 {
+  top: 729px;
+  left: 33px;
+}
+
+.sec-2 {
+  background: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.sec-2 .evt-content {
+  width: 1000px;
+  height: 497px;
+}
+
+.sec-2 .evt-content .quan-bao {
+  top: 73px;
+  left: 364px;
+}
+
+.sec-2 .evt-content .quan-bao-shou {
+  top: 81px;
+  left: 189px;
+}
+
+.sec-2 .evt-content .gobuy {
+  top: 350px;
+  left: 385px;
+}
+
+.sec-3 {
+  background: #e8f3f6;
+}
+
+.sec-3 .evt-content {
+  width: 1000px;
+  height: 734px;
+}
+
+.sec-3 .evt-content .cake-2 {
+  top: 111px;
+  left: 38px;
+}
+
+.sec-3 .evt-content .words-2 {
+  top: 105px;
+  left: 522px;
+}
+
+.sec-3 .evt-content .words-btn-2 {
+  top: 471px;
+  left: 562px;
+}
+
+.evt-footer {
+  position: relative;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.evt-footer .evt-rules {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #62768d;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 1.6;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

@@ -1,0 +1,204 @@
+.evt-container {
+  background-color: #dbecf5;
+  overflow: hidden;
+}
+
+.sec-1 .evt-content {
+  width: 1000px;
+  height: 969px;
+}
+
+.sec-1 .evt-content .title {
+  top: 97px;
+  left: 325px;
+}
+
+.sec-1 .evt-content .cake-1 {
+  top: 358px;
+  left: 0px;
+}
+
+.sec-1 .evt-content .ren-1 {
+  top: 590px;
+  left: 0px;
+}
+
+.sec-1 .evt-content .words-1 {
+  top: 619px;
+  left: 776px;
+}
+
+.sec-1 .evt-content .words-btn-1 {
+  top: 874px;
+  left: 557px;
+}
+
+.sec-2 .evt-content {
+  width: 1000px;
+  height: 536px;
+}
+
+.sec-2 .evt-content .cake-2 {
+  top: 32px;
+  left: 419px;
+}
+
+.sec-2 .evt-content .ren-2 {
+  top: 129px;
+  left: 120px;
+}
+
+.sec-2 .evt-content .words-2 {
+  top: 167px;
+  left: 102px;
+}
+
+.sec-2 .evt-content .words-btn-2 {
+  top: 445px;
+  left: 131px;
+}
+
+.sec-3 .evt-content {
+  width: 1000px;
+  height: 536px;
+}
+
+.sec-3 .evt-content .cake-3 {
+  top: 21px;
+  left: 40px;
+}
+
+.sec-3 .evt-content .ren-3 {
+  top: 0px;
+  left: 466px;
+}
+
+.sec-3 .evt-content .words-3 {
+  top: 72px;
+  left: 510px;
+}
+
+.sec-3 .evt-content .words-btn-3 {
+  top: 376px;
+  left: 623px;
+}
+
+.sec-4 .evt-content {
+  width: 1000px;
+  height: 808px;
+}
+
+.sec-4 .evt-content .city {
+  top: 207px;
+  left: 115px;
+}
+
+.sec-4 .evt-content .girl {
+  top: 238px;
+  left: 64px;
+}
+
+.sec-4 .evt-content .car-1 {
+  top: 451px;
+  left: 822px;
+}
+
+.sec-4 .evt-content .car-2 {
+  top: 377px;
+  left: 912px;
+}
+
+.sec-4 .evt-content .boy {
+  top: 543px;
+  left: 752px;
+}
+
+.sec-4 .evt-content .cake-4 {
+  top: 0px;
+  left: 550px;
+}
+
+.sec-4 .evt-content .pic {
+  top: 172px;
+  left: 390px;
+}
+
+.sec-4 .evt-content .words-4 {
+  top: 35px;
+  left: 165px;
+}
+
+.sec-4 .evt-content .words-btn-4 {
+  top: 419px;
+  left: 63px;
+}
+
+.evt-footer {
+  position: relative;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  color: #60758d;
+}
+
+.evt-footer .evt-rules {
+  width: 718px;
+  padding-left: 138px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 1.7;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.evt-footer .quan {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.evt-footer .quan p {
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.evt-footer .quan-guize {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.evt-footer .yong-rules {
+  position: absolute;
+  z-index: 5;
+  bottom: 100px;
+  left: 50%;
+  width: 370px;
+  display: none;
+  margin-left: -205px;
+  -webkit-box-shadow: 0 0 20px #c2cdd1;
+  -moz-box-shadow: 0 0 20px #c2cdd1;
+  box-shadow: 0 0 20px #c2cdd1;
+  border-radius: 5px;
+  background: #dbecf5;
+  padding: 20px;
+}
+
+.evt-footer .yong-rules p {
+  font-size: 11px;
+  color: #315273;
+  line-height: 18px;
+}

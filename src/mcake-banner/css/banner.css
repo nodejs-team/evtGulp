@@ -576,6 +576,56 @@
   left: 517px;
 }
 
+.banner-slides .slides-lianlian .lian-title {
+  top: 106px;
+  left: 10px;
+}
+
+.banner-slides .slides-lianlian .lian-words {
+  top: 376px;
+  left: 40px;
+}
+
+.banner-slides .slides-xiari .xiari-words {
+  top: 139px;
+  left: -117px;
+}
+
+.banner-slides .slides-xiari .xiari-cake {
+  top: 15px;
+  left: 480px;
+}
+
+.banner-slides .slides-xiari .xiari-btn {
+  top: 334px;
+  left: -98px;
+}
+
+.banner-slides .slides-xiatian .xiatian-bg {
+  top: 276px;
+  left: 79px;
+}
+
+.banner-slides .slides-xiatian .xiatian-title {
+  top: 33px;
+  left: 380px;
+}
+
+.banner-slides .slides-xiatian .xiatian-words {
+  top: 286px;
+  left: 738px;
+}
+
+.banner-slides .slides-xiatian .xiatian-cake {
+  top: 92px;
+  left: 66px;
+}
+
+.banner-slides .slides-xiatian .xiatian-btn {
+  top: 470px;
+  left: 507px;
+}
+
 /*浮动*/
 .floater {
   position: fixed;
