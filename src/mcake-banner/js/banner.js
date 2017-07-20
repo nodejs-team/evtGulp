@@ -89,6 +89,36 @@
     }
 
 
+    var manyuemei= {
+
+      mymA: function () {
+
+        $(".mym-a").each(function(i, el){
+          var mc = new MovieClip('mym-a_png', "mym-a_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      mymB: function () {
+        $(".mym-b").each(function(i, el){
+          var mc = new MovieClip('mym-b_png', "mym-b_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      mymC: function () {
+        $(".mym-c").each(function(i, el){
+          var mc = new MovieClip('mym-c_png', "mym-c_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      }
+    }
+
+
     if( !isSupportCss3 ){
       $(document.body).addClass("oldie");
     }
@@ -109,6 +139,10 @@
       quqiExchange.renTizi();
       quqiExchange.renBox();
       quqiExchange.renPao();
+
+      manyuemei.mymA();
+      manyuemei.mymB();
+      manyuemei.mymC();
 
       var el_game = '<div id="el_game"></div>';
       setTimeout(function () {

@@ -626,6 +626,150 @@
   left: 507px;
 }
 
+.banner-slides .slides-baicaoji .bc-bg {
+  top: 348px;
+  left: 104px;
+}
+
+.banner-slides .slides-baicaoji .bc-title {
+  top: 34px;
+  left: 312px;
+}
+
+.banner-slides .slides-baicaoji .bc-word {
+  top: 200px;
+  left: 695px;
+}
+
+.banner-slides .slides-baicaoji .bc-tz {
+  top: 272px;
+  left: 480px;
+}
+
+.banner-slides .slides-baicaoji .bc-cake {
+  top: 93px;
+  left: 75px;
+}
+
+.banner-slides .slides-baicaoji .bc-btn {
+  top: 453px;
+  left: 542px;
+}
+
+.banner-slides .slides-ice-cream .ic-han {
+  top: 127px;
+  left: 553px;
+}
+
+.banner-slides .slides-ice-cream .ic-yang {
+  top: -30px;
+  left: 836px;
+}
+
+.banner-slides .slides-ice-cream .ic-word {
+  top: 369px;
+  left: 74px;
+}
+
+.banner-slides .slides-ice-cream .ic-title {
+  top: 34px;
+  left: 0px;
+}
+
+.banner-slides .slides-ice-cream .ic-cake {
+  top: 76px;
+  left: 405px;
+}
+
+.banner-slides .slides-gonghang .gh-line {
+  top: 179px;
+  left: 114px;
+}
+
+.banner-slides .slides-gonghang .gh-sm {
+  top: 370px;
+  left: 733px;
+}
+
+.banner-slides .slides-gonghang .gh-title {
+  top: 10px;
+  left: 84px;
+}
+
+.banner-slides .slides-gonghang .gh-cake-1 {
+  top: 0;
+  left: 484px;
+}
+
+.banner-slides .slides-gonghang .gh-cake-2 {
+  top: 290px;
+  left: 40px;
+}
+
+.banner-slides .slides-manyuemei .mym-a {
+  width: 240px;
+  height: 241px;
+  top: 247px;
+  left: 874px;
+}
+
+.banner-slides .slides-manyuemei .mym-b {
+  width: 118px;
+  height: 109px;
+  top: 68px;
+  left: 909px;
+}
+
+.banner-slides .slides-manyuemei .mym-c {
+  width: 207px;
+  height: 209px;
+  top: 176px;
+  left: -67px;
+}
+
+.banner-slides .slides-manyuemei .m-title {
+  top: 111px;
+  left: 235px;
+}
+
+.banner-slides .slides-manyuemei .cake-big {
+  top: 280px;
+  left: 88px;
+}
+
+.banner-slides .slides-manyuemei .top-cm {
+  top: 0;
+  left: 100px;
+}
+
+.banner-slides .slides-manyuemei .cake-small {
+  width: 223px;
+  height: 222px;
+  top: 510px;
+  left: -112px;
+  background: url("../images/manyuemei/cake-small.png");
+}
+
+.banner-slides .slides-manyuemei .cake-small.c-l-2 {
+  left: -335px;
+}
+
+.banner-slides .slides-manyuemei .cake-small.c-l-3 {
+  left: -557px;
+}
+
+.banner-slides .slides-manyuemei .cake-small.c-r-1 {
+  left: 874px;
+}
+
+.banner-slides .slides-manyuemei .cake-small.c-r-2 {
+  left: 1096px;
+}
+
+.banner-slides .slides-manyuemei .cake-small.c-r-3 {
+  left: 1318px;
+}
+
 /*浮动*/
 .floater {
   position: fixed;

@@ -33,8 +33,13 @@
   left: 37px;
 }
 
-.sec-1 .evt-content .words-btn-1 {
+.sec-1 .evt-content .words-s-1 {
   top: 729px;
+  left: 33px;
+}
+
+.sec-1 .evt-content .words-btn-1 {
+  top: 816px;
   left: 33px;
 }
 
@@ -83,9 +88,14 @@
   left: 522px;
 }
 
-.sec-3 .evt-content .words-btn-2 {
+.sec-3 .evt-content .words-s-2 {
   top: 471px;
   left: 562px;
+}
+
+.sec-3 .evt-content .words-btn-2 {
+  top: 570px;
+  left: 719px;
 }
 
 .evt-footer {

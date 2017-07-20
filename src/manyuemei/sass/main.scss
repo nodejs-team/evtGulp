@@ -1,0 +1,71 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.evt-container{ overflow: hidden;}
+.sec-top{
+  background:url("../images/top-bg.jpg") center; z-index: 1;
+  .evt-content{
+    width: 1000px; height: 621px;
+    .mym-a{ width: 240px; height: 241px; top: 247px; left: 874px;}
+    .mym-b{ width: 118px; height: 109px; top: 68px; left: 909px;}
+    .mym-c{ width: 207px; height: 209px; top: 176px; left: -67px;}
+
+    .title{ top: 111px; left: 235px;}
+    .cake-big{ top: 280px; left: 88px;}
+    .top-cm{ top: 0; left: 100px;}
+    .cake-small{width: 223px; height: 222px;  top: 510px; left: -112px; background: url("../images/cake-small.png");}
+    .cake-small.c-l-2{ left: -335px;}
+    .cake-small.c-l-3{ left: -557px;}
+
+    .cake-small.c-r-1{ left: 874px;}
+    .cake-small.c-r-2{ left: 1096px;}
+    .cake-small.c-r-3{ left: 1318px;}
+
+
+  }
+}
+
+.main-top-bar{ position: relative; width: 100%; margin-top: -25px; height: 38px; background: url("../images/bolang.png") repeat-x; z-index: 10;}
+
+.sec-main{
+  background:url("../images/main-bg.jpg") repeat;
+  z-index: 10; position: relative;
+  .evt-content{
+    width: 1000px; height: 1531px;
+    .cake-yuan{ top: 126px; left: 276px;}
+    .classic{ top: 126px; left: -100px;}
+    .qz{ top: 187px; left: 658px;}
+    .word-title{ top: 762px; left: -158px;}
+    .line-1{ top: 895px; left: -99px;}
+    .line-2{ top: 1095px; left: -99px;}
+    .mym{ top: 833px; left: 712px;}
+    .go-btn{ width: 152px;height: 48px; background: url("../images/btn.png"); top: 983px; left: 524px;
+      a{display: block; width: 100%; height: 100%;}
+    }
+    .go-btn.btn-1{ top: 1157px; }
+  }
+}
+
+
+
+.evt-footer{
+  position: relative;  background:#4e3d40;  z-index: 10; width: 100%;
+
+  .footer-left{position: relative; float: left; width:45%; height: 340px; background: url("../images/footer-left_02.jpg") center; background-size: cover;}
+  .footer-bd{float: left;  position: relative; width:55%;  color:#fff;
+    .evt-rules{
+      width:70%; padding:70px 0 15px 60px;
+      h2{  font-size:20px; font-weight: normal;  margin-bottom: 5px;  }
+      p{  font-size:18px;  line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+    .x-mym{position: absolute; top: -63px; right: 10%;}
+  }
+
+
+
+
+}

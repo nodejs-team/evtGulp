@@ -1,9 +1,19 @@
 {
 	"groups":[{
-			"keys":"cake-2_png,words-1_png,words-2_png,words-3_png,words-4_png,words-btn-1_png,words-btn-2_png,words-btn-3_png,words-btn-4_png,across_png,boy_png,cake-1_png,title_png,cake-3_png,cake-4_png,car-1_png,car-2_png,city_png,girl_png,img-1_png,pic_png,ren-1_png,ren-2_png,ren-3_png",
+			"keys":"taoz-1_png,taoz-2_png,title_png,words-1_png,words-3_png,words-4_png,words-btn-1_png,words-btn-3_png,words-btn-4_png,boy_png,cake-1_png,cake-3_png,cake-4_png,car-1_png,car-2_png,city_png,girl_png,pic_png,ren-1_png,ren-3_png",
 			"name":"preload"
 		}],
 	"resources":[
+		{
+			"name":"taoz-1_png",
+			"type":"image",
+			"url":"taoz-1.png"
+		},
+		{
+			"name":"taoz-2_png",
+			"type":"image",
+			"url":"taoz-2.png"
+		},
 		{
 			"name":"title_png",
 			"type":"image",
@@ -13,11 +23,6 @@
 			"name":"words-1_png",
 			"type":"image",
 			"url":"words-1.png"
-		},
-		{
-			"name":"words-2_png",
-			"type":"image",
-			"url":"words-2.png"
 		},
 		{
 			"name":"words-3_png",
@@ -35,11 +40,6 @@
 			"url":"words-btn-1.png"
 		},
 		{
-			"name":"words-btn-2_png",
-			"type":"image",
-			"url":"words-btn-2.png"
-		},
-		{
 			"name":"words-btn-3_png",
 			"type":"image",
 			"url":"words-btn-3.png"
@@ -50,11 +50,6 @@
 			"url":"words-btn-4.png"
 		},
 		{
-			"name":"across_png",
-			"type":"image",
-			"url":"across.png"
-		},
-		{
 			"name":"boy_png",
 			"type":"image",
 			"url":"boy.png"
@@ -63,11 +58,6 @@
 			"name":"cake-1_png",
 			"type":"image",
 			"url":"cake-1.png"
-		},
-		{
-			"name":"cake-2_png",
-			"type":"image",
-			"url":"cake-2.png"
 		},
 		{
 			"name":"cake-3_png",
@@ -100,11 +90,6 @@
 			"url":"girl.png"
 		},
 		{
-			"name":"img-1_png",
-			"type":"image",
-			"url":"img-1.png"
-		},
-		{
 			"name":"pic_png",
 			"type":"image",
 			"url":"pic.png"
@@ -113,11 +98,6 @@
 			"name":"ren-1_png",
 			"type":"image",
 			"url":"ren-1.png"
-		},
-		{
-			"name":"ren-2_png",
-			"type":"image",
-			"url":"ren-2.png"
 		},
 		{
 			"name":"ren-3_png",

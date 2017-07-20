@@ -292,7 +292,49 @@ background: #a5002f;
     .xiatian-words{ top: 286px; left: 738px;}
     .xiatian-cake{ top: 92px; left: 66px;}
     .xiatian-btn{ top: 470px; left: 507px;}
+  }
 
+  .slides-baicaoji{
+    .bc-bg{ top: 348px; left: 104px;}
+    .bc-title{ top: 34px; left: 312px;}
+    .bc-word{ top: 200px; left: 695px;}
+    .bc-tz{ top: 272px; left: 480px;}
+
+    .bc-cake{ top: 93px; left: 75px;}
+    .bc-btn{ top: 453px; left: 542px;}
+  }
+
+  .slides-ice-cream{
+    .ic-han{ top: 127px; left: 553px;}
+    .ic-yang{ top: -30px; left: 836px;}
+    .ic-word{ top: 369px; left: 74px;}
+    .ic-title{ top: 34px; left: 0px;}
+    .ic-cake{ top: 76px; left: 405px;}
+  }
+
+  .slides-gonghang{
+    .gh-line{ top: 179px; left: 114px;}
+    .gh-sm{ top: 370px; left: 733px;}
+    .gh-title{ top: 10px; left: 84px;}
+    .gh-cake-1{ top: 0; left: 484px;}
+    .gh-cake-2{ top: 290px; left: 40px;}
+  }
+
+  .slides-manyuemei{
+    .mym-a{ width: 240px; height: 241px; top: 247px; left: 874px;}
+    .mym-b{ width: 118px; height: 109px; top: 68px; left: 909px;}
+    .mym-c{ width: 207px; height: 209px; top: 176px; left: -67px;}
+
+    .m-title{ top: 111px; left: 235px;}
+    .cake-big{ top: 280px; left: 88px;}
+    .top-cm{ top: 0; left: 100px;}
+    .cake-small{width: 223px; height: 222px;  top: 510px; left: -112px; background: url("../images/manyuemei/cake-small.png");}
+    .cake-small.c-l-2{ left: -335px;}
+    .cake-small.c-l-3{ left: -557px;}
+
+    .cake-small.c-r-1{ left: 874px;}
+    .cake-small.c-r-2{ left: 1096px;}
+    .cake-small.c-r-3{ left: 1318px;}
   }
 
 }

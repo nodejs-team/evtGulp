@@ -1,113 +1,151 @@
 {
 	"groups":[{
-			"keys":"cake-ricotta_png,lineyun-1_png,lineyun-2_png,r-title_png,t-bar_png,yun-1_png,yun-2_png,banner-bg1_jpg,boy_png,cake1_png,girl_png,title1_png,banner-bg2_jpg,cake2_png,decorate-1_png,decorate-2_png,title3_png,bg_png,q13_png,q2_png,q3_png,guize_png,nino_png,nino_bg_png,q1_png,rocket_json,hyou_png,quqi-1_png,quqi-2_png,quqi-3_png,quqi-4_png,ren-box_json,ren-pao_json,ren-quqi_json,ren-tizi_json,title4_png,banner-bg_jpg,btn_png,cake_png,left_png,right_png,title_png,game_json",
+			"keys":"bc-bg_png,bc-btn_png,bc-cake_png,bc-title_png,bc-tz_png,bc-word_png,bcbg_jpg,gh-cake-1_png,gh-cake-2_png,gh-line_png,gh-sm_png,gh-title_png,bg1_png,logo_png,text_png,ic-cake_png,ic-han_png,ic-title_png,ic-word_png,ic-yang_png,cake-big_png,cake-small_png,m-title_png,mym-a_json,mym-b_json,mym-c_json,top-bg_jpg,top-cm_png,guize_png,nino_png,nino_bg_png,q1_png,rocket_json,hyou_png,quqi-1_png,quqi-2_png,quqi-3_png,quqi-4_png,ren-box_json,ren-pao_json,ren-quqi_json,ren-tizi_json,title_png,xiatian-bg_png,xiatian-btn_png,xiatian-cake_png,xiatian-title_png,xiatian-words_png,arrows_png,baozi_json,chezi_json,game_json,long-mogu_json",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"cake-ricotta_png",
+			"name":"bc-bg_png",
 			"type":"image",
-			"url":"ricotta/cake-ricotta.png"
+			"url":"baicaoji/bc-bg.png"
 		},
 		{
-			"name":"lineyun-1_png",
+			"name":"bc-btn_png",
 			"type":"image",
-			"url":"ricotta/lineyun-1.png"
+			"url":"baicaoji/bc-btn.png"
 		},
 		{
-			"name":"lineyun-2_png",
+			"name":"bc-cake_png",
 			"type":"image",
-			"url":"ricotta/lineyun-2.png"
+			"url":"baicaoji/bc-cake.png"
 		},
 		{
-			"name":"r-title_png",
+			"name":"bc-title_png",
 			"type":"image",
-			"url":"ricotta/r-title.png"
+			"url":"baicaoji/bc-title.png"
 		},
 		{
-			"name":"t-bar_png",
+			"name":"bc-tz_png",
 			"type":"image",
-			"url":"ricotta/t-bar.png"
+			"url":"baicaoji/bc-tz.png"
 		},
 		{
-			"name":"yun-1_png",
+			"name":"bc-word_png",
 			"type":"image",
-			"url":"ricotta/yun-1.png"
+			"url":"baicaoji/bc-word.png"
 		},
 		{
-			"name":"yun-2_png",
+			"name":"bcbg_jpg",
 			"type":"image",
-			"url":"ricotta/yun-2.png"
+			"url":"baicaoji/bcbg.jpg"
 		},
 		{
-			"name":"banner-bg1_jpg",
+			"name":"gh-cake-1_png",
 			"type":"image",
-			"url":"520/banner-bg.jpg"
+			"url":"gonghang/gh-cake-1.png"
 		},
 		{
-			"name":"boy_png",
+			"name":"gh-cake-2_png",
 			"type":"image",
-			"url":"520/boy.png"
+			"url":"gonghang/gh-cake-2.png"
 		},
 		{
-			"name":"cake1_png",
+			"name":"gh-line_png",
 			"type":"image",
-			"url":"520/cake.png"
+			"url":"gonghang/gh-line.png"
 		},
 		{
-			"name":"girl_png",
+			"name":"gh-sm_png",
 			"type":"image",
-			"url":"520/girl.png"
+			"url":"gonghang/gh-sm.png"
 		},
 		{
-			"name":"title1_png",
+			"name":"gh-title_png",
 			"type":"image",
-			"url":"520/title.png"
+			"url":"gonghang/gh-title.png"
 		},
 		{
-			"name":"banner-bg2_jpg",
+			"name":"bg1_png",
 			"type":"image",
-			"url":"ChowhoundDay/banner-bg.jpg"
+			"url":"history/bg1.png"
 		},
 		{
-			"name":"cake2_png",
+			"name":"logo_png",
 			"type":"image",
-			"url":"ChowhoundDay/cake.png"
+			"url":"history/logo.png"
 		},
 		{
-			"name":"decorate-1_png",
+			"name":"text_png",
 			"type":"image",
-			"url":"ChowhoundDay/decorate-1.png"
+			"url":"history/text.png"
 		},
 		{
-			"name":"decorate-2_png",
+			"name":"ic-cake_png",
 			"type":"image",
-			"url":"ChowhoundDay/decorate-2.png"
+			"url":"ice-cream/ic-cake.png"
 		},
 		{
-			"name":"title3_png",
+			"name":"ic-han_png",
 			"type":"image",
-			"url":"ChowhoundDay/title.png"
+			"url":"ice-cream/ic-han.png"
 		},
 		{
-			"name":"bg_png",
+			"name":"ic-title_png",
 			"type":"image",
-			"url":"clearance/bg.png"
+			"url":"ice-cream/ic-title.png"
 		},
 		{
-			"name":"q13_png",
+			"name":"ic-word_png",
 			"type":"image",
-			"url":"clearance/q1.png"
+			"url":"ice-cream/ic-word.png"
 		},
 		{
-			"name":"q2_png",
+			"name":"ic-yang_png",
 			"type":"image",
-			"url":"clearance/q2.png"
+			"url":"ice-cream/ic-yang.png"
 		},
 		{
-			"name":"q3_png",
+			"name":"cake-big_png",
 			"type":"image",
-			"url":"clearance/q3.png"
+			"url":"manyuemei/cake-big.png"
+		},
+		{
+			"name":"cake-small_png",
+			"type":"image",
+			"url":"manyuemei/cake-small.png"
+		},
+		{
+			"name":"m-title_png",
+			"type":"image",
+			"url":"manyuemei/m-title.png"
+		},
+		{
+			"name":"mym-a_json",
+			"subkeys":"mym-a-1,mym-a-10,mym-a-11,mym-a-12,mym-a-13,mym-a-14,mym-a-15,mym-a-16,mym-a-17,mym-a-18,mym-a-19,mym-a-2,mym-a-20,mym-a-21,mym-a-22,mym-a-23,mym-a-24,mym-a-25,mym-a-26,mym-a-27,mym-a-28,mym-a-29,mym-a-3,mym-a-30,mym-a-31,mym-a-32,mym-a-33,mym-a-34,mym-a-35,mym-a-36,mym-a-37,mym-a-38,mym-a-39,mym-a-4,mym-a-40,mym-a-41,mym-a-42,mym-a-43,mym-a-44,mym-a-45,mym-a-46,mym-a-47,mym-a-48,mym-a-5,mym-a-6,mym-a-7,mym-a-8,mym-a-9",
+			"type":"sheet",
+			"url":"manyuemei/mym-a.json"
+		},
+		{
+			"name":"mym-b_json",
+			"subkeys":"mym-b-1,mym-b-10,mym-b-11,mym-b-12,mym-b-13,mym-b-14,mym-b-15,mym-b-16,mym-b-17,mym-b-18,mym-b-19,mym-b-2,mym-b-20,mym-b-21,mym-b-22,mym-b-23,mym-b-24,mym-b-25,mym-b-26,mym-b-27,mym-b-28,mym-b-29,mym-b-3,mym-b-30,mym-b-31,mym-b-32,mym-b-33,mym-b-34,mym-b-35,mym-b-36,mym-b-37,mym-b-38,mym-b-39,mym-b-4,mym-b-40,mym-b-41,mym-b-42,mym-b-43,mym-b-44,mym-b-45,mym-b-46,mym-b-47,mym-b-48,mym-b-5,mym-b-6,mym-b-7,mym-b-8,mym-b-9",
+			"type":"sheet",
+			"url":"manyuemei/mym-b.json"
+		},
+		{
+			"name":"mym-c_json",
+			"subkeys":"mym-c-1,mym-c-10,mym-c-11,mym-c-12,mym-c-13,mym-c-14,mym-c-15,mym-c-16,mym-c-17,mym-c-18,mym-c-19,mym-c-2,mym-c-20,mym-c-21,mym-c-22,mym-c-23,mym-c-24,mym-c-25,mym-c-26,mym-c-27,mym-c-28,mym-c-29,mym-c-3,mym-c-30,mym-c-31,mym-c-32,mym-c-33,mym-c-34,mym-c-35,mym-c-36,mym-c-37,mym-c-38,mym-c-39,mym-c-4,mym-c-40,mym-c-41,mym-c-42,mym-c-43,mym-c-44,mym-c-45,mym-c-46,mym-c-47,mym-c-48,mym-c-5,mym-c-6,mym-c-7,mym-c-8,mym-c-9",
+			"type":"sheet",
+			"url":"manyuemei/mym-c.json"
+		},
+		{
+			"name":"top-bg_jpg",
+			"type":"image",
+			"url":"manyuemei/top-bg.jpg"
+		},
+		{
+			"name":"top-cm_png",
+			"type":"image",
+			"url":"manyuemei/top-cm.png"
 		},
 		{
 			"name":"guize_png",
@@ -185,45 +223,63 @@
 			"url":"quqi-exchange/ren-tizi.json"
 		},
 		{
-			"name":"title4_png",
+			"name":"title_png",
 			"type":"image",
 			"url":"quqi-exchange/title.png"
 		},
 		{
-			"name":"banner-bg_jpg",
+			"name":"xiatian-bg_png",
 			"type":"image",
-			"url":"ChildrenDay/banner-bg.jpg"
+			"url":"xiatian/xiatian-bg.png"
 		},
 		{
-			"name":"btn_png",
+			"name":"xiatian-btn_png",
 			"type":"image",
-			"url":"ChildrenDay/btn.png"
+			"url":"xiatian/xiatian-btn.png"
 		},
 		{
-			"name":"cake_png",
+			"name":"xiatian-cake_png",
 			"type":"image",
-			"url":"ChildrenDay/cake.png"
+			"url":"xiatian/xiatian-cake.png"
 		},
 		{
-			"name":"left_png",
+			"name":"xiatian-title_png",
 			"type":"image",
-			"url":"ChildrenDay/left.png"
+			"url":"xiatian/xiatian-title.png"
 		},
 		{
-			"name":"right_png",
+			"name":"xiatian-words_png",
 			"type":"image",
-			"url":"ChildrenDay/right.png"
+			"url":"xiatian/xiatian-words.png"
 		},
 		{
-			"name":"title_png",
+			"name":"arrows_png",
 			"type":"image",
-			"url":"ChildrenDay/title.png"
+			"url":"arrows.png"
+		},
+		{
+			"name":"baozi_json",
+			"subkeys":"baozi-1,baozi-2,baozi-3,baozi-4",
+			"type":"sheet",
+			"url":"baozi.json"
+		},
+		{
+			"name":"chezi_json",
+			"subkeys":"chezi-1,chezi-2",
+			"type":"sheet",
+			"url":"chezi.json"
 		},
 		{
 			"name":"game_json",
 			"subkeys":"game-1,game-10,game-11,game-12,game-13,game-14,game-15,game-16,game-17,game-18,game-19,game-2,game-20,game-21,game-22,game-23,game-3,game-4,game-5,game-6,game-7,game-8,game-9",
 			"type":"sheet",
 			"url":"game.json"
+		},
+		{
+			"name":"long-mogu_json",
+			"subkeys":"long-mogu-1,long-mogu-2,long-mogu-3",
+			"type":"sheet",
+			"url":"long-mogu.json"
 		}
 	]
 }
