@@ -770,6 +770,31 @@
   left: 1318px;
 }
 
+.banner-slides .slides-foodPack .gao-line {
+  top: 0px;
+  left: -68px;
+}
+
+.banner-slides .slides-foodPack .title {
+  top: 167px;
+  left: 50px;
+}
+
+.banner-slides .slides-foodPack .bu {
+  top: 53px;
+  left: 89px;
+}
+
+.banner-slides .slides-foodPack .ren {
+  top: 0px;
+  left: 520px;
+}
+
+.banner-slides .slides-foodPack .c-zu {
+  top: 90px;
+  left: 465px;
+}
+
 /*浮动*/
 .floater {
   position: fixed;

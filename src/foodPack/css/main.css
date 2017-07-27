@@ -1,0 +1,231 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.jpg") repeat;
+}
+
+.sec-1 .evt-content {
+  width: 1000px;
+  height: 642px;
+}
+
+.sec-1 .evt-content .gao-line {
+  top: 0px;
+  left: -68px;
+}
+
+.sec-1 .evt-content .title {
+  top: 184px;
+  left: 35px;
+}
+
+.sec-1 .evt-content .bu {
+  top: 70px;
+  left: 77px;
+}
+
+.sec-1 .evt-content .ren {
+  top: -10px;
+  left: 484px;
+}
+
+.sec-1 .evt-content .c-zu {
+  top: 103px;
+  left: 427px;
+}
+
+.sec-2 {
+  z-index: 10;
+  position: relative;
+}
+
+.sec-2 .evt-content {
+  width: 1000px;
+  height: 736px;
+}
+
+.sec-2 .evt-content .start {
+  top: 35px;
+  left: 57px;
+}
+
+.sec-2 .evt-content .cake-1 {
+  top: 283px;
+  left: 50px;
+}
+
+.sec-2 .evt-content .pic-1 {
+  top: 167px;
+  left: 327px;
+}
+
+.sec-2 .evt-content .words-1 {
+  top: 479px;
+  left: 462px;
+}
+
+.sec-3 {
+  z-index: 10;
+  position: relative;
+}
+
+.sec-3 .evt-content {
+  width: 1000px;
+  height: 552px;
+}
+
+.sec-3 .evt-content .words-2 {
+  top: 105px;
+  left: 28px;
+}
+
+.sec-3 .evt-content .pic-2 {
+  top: 40px;
+  left: 448px;
+}
+
+.sec-3 .evt-content .cake-2 {
+  top: 40px;
+  left: 451px;
+}
+
+.sec-3 .evt-content .jiantou {
+  top: 385px;
+  left: 470px;
+}
+
+.sec-4 {
+  z-index: 10;
+  position: relative;
+}
+
+.sec-4 .evt-content {
+  width: 1000px;
+  height: 516px;
+}
+
+.sec-4 .evt-content .pic-3 {
+  top: 78px;
+  left: 0px;
+}
+
+.sec-4 .evt-content .cake-3 {
+  top: 40px;
+  left: 527px;
+}
+
+.sec-4 .evt-content .words-3 {
+  top: 110px;
+  left: 301px;
+}
+
+.sec-5 {
+  z-index: 10;
+  position: relative;
+}
+
+.sec-5 .evt-content {
+  width: 1000px;
+  height: 544px;
+}
+
+.sec-5 .evt-content .quan-l {
+  top: 64px;
+  left: 92px;
+}
+
+.sec-5 .evt-content .quan-r {
+  top: 64px;
+  left: 385px;
+}
+
+.sec-5 .evt-content .words-4 {
+  top: 348px;
+  left: 391px;
+}
+
+.sec-5 .evt-content .line-l {
+  top: 179px;
+  left: 30px;
+}
+
+.sec-5 .evt-content .line-r {
+  top: 262px;
+  left: 822px;
+}
+
+.sec-6 {
+  z-index: 10;
+  position: relative;
+}
+
+.sec-6 .evt-content {
+  width: 1000px;
+  height: 529px;
+}
+
+.sec-6 .evt-content .pic-4 {
+  top: 49px;
+  left: 40px;
+}
+
+.sec-6 .evt-content .words-5 {
+  top: 83px;
+  left: 575px;
+}
+
+.sec-6 .evt-content .go-btn {
+  width: 139px;
+  height: 40px;
+  background: #2a2e95;
+  top: 323px;
+  left: 800px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sec-6 .evt-content .go-btn span {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.evt-footer {
+  position: relative;
+  background: #fff;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  color: #4a4a4a;
+}
+
+.evt-footer .evt-rules {
+  width: 780px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 1.6em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

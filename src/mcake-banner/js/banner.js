@@ -118,6 +118,19 @@
       }
     }
 
+    var foodPack= {
+      ren: function () {
+
+        $(".ren").each(function(i, el){
+          var mc = new MovieClip('ren_png', "ren_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      }
+    }
+
+
 
     if( !isSupportCss3 ){
       $(document.body).addClass("oldie");
@@ -143,6 +156,9 @@
       manyuemei.mymA();
       manyuemei.mymB();
       manyuemei.mymC();
+
+
+      foodPack.ren();
 
       var el_game = '<div id="el_game"></div>';
       setTimeout(function () {
