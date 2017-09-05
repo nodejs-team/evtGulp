@@ -1,0 +1,53 @@
+.sec-banner{ position: relative;background: #1f2025;
+  .img{width: 100%;}
+  .img-1{height: 711px; background: url("../images/img-1.jpg") center no-repeat;}
+  .img-2{height: 765px; background: url("../images/img-2.jpg") center no-repeat;}
+  .img-3{position: relative; height: 687px; background: url("../images/img-3.jpg") center no-repeat;
+
+  }
+  .img-4{height: 759px; background: url("../images/img-4.jpg") center no-repeat;}
+  .img-5{height: 1335px; background: url("../images/img-5.jpg") center no-repeat;}
+
+  .evt-content{ height: 100%;
+    .video{position: absolute; top: 240px; left: 200px; z-index: 0;  cursor: pointer;}
+    .video.ie8{ width: 623px; height:374px;  background: url("../images/vi.png")}
+
+    video{ width: 100%; z-index: 0; cursor: pointer;}
+    .vjs-control-bar{display: none;}
+    .video-trigger{position: absolute; cursor: pointer;
+      top: 220px; left: 200px;
+      width:598px;
+      height:410px;
+      z-index: 10;
+    }
+    .video-trigger b{
+      position: absolute;
+      left:50%;
+      top:50%;
+      width:49px;
+      height:49px;
+      margin:-25px 0 0 -25px;
+      cursor: pointer;
+      opacity:.9;
+      filter:alpha(opacity=90);
+      display: none;
+      background: url(../images/video-play.png) no-repeat;
+    }
+
+    .video-trigger b.video-pause{
+      background-image: url(../images/video-pause.png);
+    }
+    .video-trigger b:hover{
+      opacity:1;
+      filter:alpha(opacity=100);
+    }
+    .video-trigger-hover b{
+      display: block;
+    }
+
+
+
+
+  }
+
+}

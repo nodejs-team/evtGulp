@@ -1,0 +1,99 @@
+.sec-banner {
+  position: relative;
+  background: #1f2025;
+}
+
+.sec-banner .img {
+  width: 100%;
+}
+
+.sec-banner .img-1 {
+  height: 711px;
+  background: url("../images/img-1.jpg") center no-repeat;
+}
+
+.sec-banner .img-2 {
+  height: 765px;
+  background: url("../images/img-2.jpg") center no-repeat;
+}
+
+.sec-banner .img-3 {
+  position: relative;
+  height: 687px;
+  background: url("../images/img-3.jpg") center no-repeat;
+}
+
+.sec-banner .img-4 {
+  height: 759px;
+  background: url("../images/img-4.jpg") center no-repeat;
+}
+
+.sec-banner .img-5 {
+  height: 1335px;
+  background: url("../images/img-5.jpg") center no-repeat;
+}
+
+.sec-banner .evt-content {
+  height: 100%;
+}
+
+.sec-banner .evt-content .video {
+  position: absolute;
+  top: 240px;
+  left: 200px;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.sec-banner .evt-content .video.ie8 {
+  width: 623px;
+  height: 374px;
+  background: url("../images/vi.png");
+}
+
+.sec-banner .evt-content video {
+  width: 100%;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.sec-banner .evt-content .vjs-control-bar {
+  display: none;
+}
+
+.sec-banner .evt-content .video-trigger {
+  position: absolute;
+  cursor: pointer;
+  top: 220px;
+  left: 200px;
+  width: 598px;
+  height: 410px;
+  z-index: 10;
+}
+
+.sec-banner .evt-content .video-trigger b {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 49px;
+  height: 49px;
+  margin: -25px 0 0 -25px;
+  cursor: pointer;
+  opacity: .9;
+  filter: alpha(opacity=90);
+  display: none;
+  background: url(../images/video-play.png) no-repeat;
+}
+
+.sec-banner .evt-content .video-trigger b.video-pause {
+  background-image: url(../images/video-pause.png);
+}
+
+.sec-banner .evt-content .video-trigger b:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.sec-banner .evt-content .video-trigger-hover b {
+  display: block;
+}

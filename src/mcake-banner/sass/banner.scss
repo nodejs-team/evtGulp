@@ -346,6 +346,63 @@ background: #a5002f;
     .c-zu{ top: 90px; left: 465px;}
   }
 
+  .slides-qingrenjie{
+    .word{ color: #fff; font-size: 20px;}
+    .wave-1{position: absolute; bottom: 53px; left: -410px;}
+    .wave-2{position: absolute; bottom: 98px; left: auto; right: -386px;}
+    .sec-bg{position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: url("../images/qingrenjie/sekuai.png") right; }
+    .sec-bg-2{position: absolute; top: 0; left:auto; right: 0; width: 50%; height: 100%; background: url("../images/qingrenjie/qr-bg-2.png") right; }
+    .line{ top: 303px; left: -70px;}
+    .word-r-1{ top: 190px; right: -80px;}
+    .logo{ bottom: 30px; right: -71px;}
+
+    .word-l-1{ top: 20px; left: -71px;}
+    .word-l-2{ top: 215px; left: -71px; font-size: 63px; text-transform: uppercase;}
+    .word-l-3{ bottom: 60px; left: -71px;}
+    .cake{ top: 0px; left: 120px;}
+  }
+
+  .slides-midAutumn{
+    .swiper-content{ width: 1200px;}
+    .banner-bg{ position: absolute; top: 0px; left: 0px;}
+    .banner-box{ top: 0px; left: -405px;}
+    .banner-815{ top: 10px; left: 20px;}
+    .banner-c-1{ top: 379px; left:55px;}
+    .banner-c-2{ top: 0px; left: 350px;}
+    .banner-c-3{ top: 0px; left: 1020px;}
+    .banner-c-4{ top: 60px; left: 860px;}
+    .banner-c-5{ top: 331px; left: 920px;}
+    .banner-c-6{ top: 440px; left: 1048px;}
+    .banner-moon{ top: 470px; left: 50%; margin-left: -130px;}
+
+    .banner-s1{ top: 0px; left: -370px;}
+    .banner-s2{ top: 164px; left: auto; right:-400px; }
+    .banner-title{ top: 130px; left: 50%; margin-left: -107px;}
+    .banner-w-1{ top: 83px; left: 1000px;}
+
+
+  }
+
+
+  .slides-qx{
+
+    .ribbon-1{ bottom: 0px; left: -460px;}
+    .ribbon-2{ top: 0px; left: auto; right: -460px;}
+    .qx-s-1{ top: 0px; left: 885px;}
+    .qx-s-2{ top: 20px; left: 629px;}
+    .qx-s-3{ top: 134px; left: 583px;}
+    .qx-cake{ top: 80px; left: 456px;}
+    .qx-title{ top: 190px; left: -67px;}
+    .qx-line{ top: 278px; left: -130px;}
+    .qx-subtitle{ top: 297px; left: 66px;}
+    .qx-w-1{ top: 380px; left: 100px;}
+    .qx-bo{ top: 380px; left: 517px;}
+    .qx-music{ width: 288px; top: 275px; left: 445px;}
+    .qx-w-2{ width: 200px; top: 430px; left: 120px; color: #be7284; font-size: 22px; text-align: center; }
+
+  }
+
+
 }
 
 
@@ -361,7 +418,7 @@ background: #a5002f;
 }
 
 
-.icon{position:fixed; top:100px; right:40px; z-index:11;
-  a{width:100%; display:block; height:150px; position:absolute; top:0; left:0;}
+.icon{position:fixed; top:115px; z-index:11;
+  a{width:100%; display:block; height:100%; position:absolute; top:0; left:0;}
 }
 

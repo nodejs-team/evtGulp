@@ -1,0 +1,378 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.evt-container .btns {
+  width: 139px;
+  background: #937c52;
+  top: 429px;
+  left: -25px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.evt-container .btns span {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.sec-banner {
+  position: relative;
+  background: #1f2025;
+}
+
+.sec-banner .banner-bg {
+  position: absolute;
+  width: 100%;
+  height: 1239px;
+  top: 0;
+  left: 0;
+  background: url("../images/banner-bg.png") center;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  height: 1118px;
+}
+
+.sec-banner .evt-content .banner-box {
+  top: 100px;
+  left: -405px;
+}
+
+.sec-banner .evt-content .banner-815 {
+  top: 34px;
+  left: 0px;
+}
+
+.sec-banner .evt-content .banner-c-1 {
+  top: 748px;
+  left: -165px;
+}
+
+.sec-banner .evt-content .banner-c-2 {
+  top: 0px;
+  left: 360px;
+}
+
+.sec-banner .evt-content .banner-c-3 {
+  top: 0px;
+  left: 807px;
+}
+
+.sec-banner .evt-content .banner-c-4 {
+  top: 212px;
+  left: 878px;
+}
+
+.sec-banner .evt-content .banner-c-5 {
+  top: 534px;
+  left: 1004px;
+}
+
+.sec-banner .evt-content .banner-c-6 {
+  top: 676px;
+  left: 1198px;
+}
+
+.sec-banner .evt-content .banner-moon {
+  top: 748px;
+  left: 50%;
+  margin-left: -149px;
+}
+
+.sec-banner .evt-content .banner-s1 {
+  top: 0px;
+  left: -370px;
+}
+
+.sec-banner .evt-content .banner-s2 {
+  top: 190px;
+  left: auto;
+  right: -370px;
+}
+
+.sec-banner .evt-content .banner-title {
+  top: 255px;
+  left: 50%;
+  margin-left: -135px;
+}
+
+.sec-banner .evt-content .banner-w-1 {
+  top: 212px;
+  left: 1017px;
+}
+
+.sec-banner .evt-content .word {
+  width: 633px;
+  color: #bcbcbd;
+  line-height: 20px;
+  font-size: 14px;
+  left: 50%;
+  margin-left: -307px;
+  text-align: center;
+}
+
+.sec-banner .evt-content .word b {
+  color: #dfdfdf;
+  line-height: 34px;
+}
+
+.sec-banner .evt-content .word-1 {
+  top: 860px;
+}
+
+.sec-banner .evt-content .word-2 {
+  top: 945px;
+  font-size: 12px;
+  color: #797a7c;
+}
+
+.sec-1 {
+  position: relative;
+}
+
+.sec-1 .banner-line {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 256px;
+  background: url("../images/banner-line.png");
+  margin-top: -100px;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+  height: 2238px;
+}
+
+.sec-1 .evt-content .dis-1 {
+  position: absolute;
+  top: -192px;
+  right: -390px;
+}
+
+.sec-1 .evt-content .dis-2 {
+  position: absolute;
+  top: 747px;
+  left: -370px;
+}
+
+.sec-1 .evt-content .dis-3 {
+  position: absolute;
+  top: 1182px;
+  right: -370px;
+}
+
+.sec-1 .evt-content .dis-4 {
+  position: absolute;
+  top: 1668px;
+  left: -370px;
+}
+
+.sec-1 .evt-content .row {
+  height: 504px;
+}
+
+.sec-1 .evt-content .row .r-left {
+  float: left;
+}
+
+.sec-1 .evt-content .row .r-right {
+  float: right;
+}
+
+.sec-1 .evt-content .row .row-pic {
+  width: 600px;
+}
+
+.sec-1 .evt-content .row .row-word {
+  width: 530px;
+  height: 100%;
+  padding-left: 70px;
+  position: relative;
+}
+
+.sec-1 .evt-content .row .row-word .row-word-title {
+  margin-top: 70px;
+  line-height: 44px;
+}
+
+.sec-1 .evt-content .row .row-word .row-word-title p.p1 {
+  font-size: 18px;
+  color: #000;
+}
+
+.sec-1 .evt-content .row .row-word .row-word-title p.p2 {
+  font-size: 14px;
+  color: #000;
+}
+
+.sec-1 .evt-content .row .row-word .row-word-title p.p2 span {
+  font-size: 24px;
+}
+
+.sec-1 .evt-content .row .row-word .row-word-bottom p {
+  position: absolute;
+  line-height: 20px;
+  bottom: 45px;
+  left: 70px;
+  width: 460px;
+  color: #a3a3a3;
+}
+
+.sec-1 .evt-content .row-1 {
+  padding-top: 126px;
+}
+
+.sec-1 .evt-content .r-left.row-word {
+  padding-left: 44px;
+}
+
+.sec-1 .evt-content .r-left.row-word .row-word-bottom p {
+  left: 44px !important;
+}
+
+.sec-2 {
+  position: relative;
+}
+
+.sec-2 .evt-content {
+  width: 1200px;
+  height: 1064px;
+}
+
+.sec-2 .evt-content .w-title {
+  text-align: center;
+  line-height: 50px;
+}
+
+.sec-2 .evt-content .w-title i {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  font-size: 15px;
+  font-style: normal;
+  color: #a19682;
+}
+
+.sec-2 .evt-content .w-title strong {
+  position: relative;
+  font-size: 33px;
+  color: #a19682;
+  font-weight: normal;
+  padding-left: 14px;
+}
+
+.sec-2 .evt-content .go-btn {
+  width: 188px;
+  height: 56px;
+  background: #414650;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 28px;
+}
+
+.sec-2 .evt-content .go-btn span {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 56px;
+}
+
+.sec-2 .evt-content .box-in {
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.sec-2 .evt-content .box-out {
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.sec-2 .evt-content .yueyuan {
+  top: 614px;
+  width: 100%;
+  text-align: center;
+}
+
+.sec-2 .evt-content .yueyuan .center {
+  width: 580px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sec-2 .evt-content .yueyuan p {
+  margin: 0 auto;
+  line-height: 50px;
+  font-size: 16px;
+  color: #000;
+}
+
+.sec-footer {
+  position: relative;
+  background: #2e3037;
+}
+
+.sec-footer .evt-content {
+  width: 1200px;
+  padding: 100px 0;
+}
+
+.sec-footer .evt-content .hd-guize {
+  width: 600px;
+  float: left;
+}
+
+.sec-footer .evt-content .lp-guize {
+  width: 600px;
+  float: right;
+}
+
+.sec-footer .evt-content h2 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #a19682;
+}
+
+.sec-footer .evt-content p {
+  font-size: 14px;
+  color: #bebec0;
+  line-height: 1.6em;
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+  .sec-banner .evt-content .banner-c-2 {
+    top: -70px;
+  }
+  .sec-banner .evt-content .banner-title {
+    top: 148px;
+  }
+  .sec-banner .evt-content .banner-moon {
+    top: 654px;
+  }
+  .sec-banner .evt-content .word-1 {
+    top: 779px;
+  }
+  .sec-banner .evt-content .word-2 {
+    top: 900px;
+  }
+}

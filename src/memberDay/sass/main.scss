@@ -1,0 +1,65 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.evt-container{ overflow: hidden;}
+.sec-top{
+  background:url("../images/bg.png") center; z-index: 1;
+  .evt-content{
+    width: 1000px; height: 712px;
+    .ds-1{ top: -10px; left: -20px;}
+    .ds-2{ top: 382px; left: 93px;}
+    .ds-3{ top: 546px; left: 264px;}
+    .ds-4{ top: 514px; left: -20px;}
+    .cake-1{ top: 115px; left: 180px;}
+    .yh{ top: 150px; left: -55px;}
+    .title{ top: 100px; left: 643px;}
+  }
+}
+
+
+
+.sec-main{  position: relative; z-index: 1;
+  .evt-content{
+    width: 1000px; height: 1000px;
+    .cake-2{ top: 113px; left: -50px;}
+    .logo{ top: 143px; left: 607px;}
+    .lv{ top: 230px; left: 532px;}
+
+    .select{position: absolute; top:535px; left:628px; width:400px;  padding:0;
+      .radio {opacity:0; display:none; height:0; }
+      label.label {background:url(../images/kugou.ico) left no-repeat; background-size: 8%; height:30px; padding-left:50px; margin:10px auto;font-size: 5px; display: block; cursor: pointer;
+        img{width: 90%;}
+      }
+      input[type='radio'].radio:checked + .label{background:url(../images/qqplayer.ico) no-repeat; background-size: 8%; margin: 10px auto;}
+    }
+
+    .go-btn{ width: 200px;height: 63px; background: url("../images/btn.png"); top: 667px; left: 702px; text-align: center;
+      a{display: block; width: 100%; height: 100%; color: #fff;}
+    }
+
+    .go-btn span{font-size: 30px; color: #fff; text-align: center; line-height:63px; }
+  }
+}
+
+
+.main-top-bar{ position: absolute; width: 1280px; height: 93px; background: url("../images/bolang.png"); z-index: 10; top: -60px;}
+.evt-footer{
+  position: relative;  background:#f1f2b4;  z-index: 10; width: 100%; margin-top: -80px;
+  .evt-content{width: 1280px;}
+  .footer-left{position: relative; float: left; width:451px; height: 372px; margin-left: 70px; margin-top: 20px;}
+  .footer-bd{float: left;  position: relative; width:52%;  color:#000; margin-left: 65px;
+    .evt-rules{ padding:90px 0 15px 60px; font-size:20px; margin-left: 40px;
+      h2{  font-weight: normal;  margin-bottom: 5px;  }
+      p{ line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+    .x-mym{position: absolute; top: -63px; right: 10%;}
+  }
+
+
+
+
+}

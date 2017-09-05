@@ -4,13 +4,15 @@
   "host": "localhost",
   "port": "8081"
  },
- "tinypngapi": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
+ "tinypngapi": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
+ "beiyong":"Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
  "ftp": {
   "host": "",
   "user": "",
   "pass": "",
   "remotePath": ""
  },
- "projectName": "mcake-banner",
+ "projectName": "bj-mid-autumn",
  "revPrefix": "http://edm.mcake.com/fangli/2017-pc/"
 }
+

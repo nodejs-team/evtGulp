@@ -1,0 +1,155 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+
+.evt-container{ overflow: hidden;
+  .btns{ width: 139px; background:#937c52; top:429px; left:-25px; text-align: center; border-radius: 1px; cursor: pointer;
+    span{ display: block; color: #fff; font-size: 16px; line-height: 35px;}
+  }
+}
+
+body{background: #eff7fc;}
+
+.sec-banner{ position: relative;background: #1f2025;
+  .banner-bg{position: absolute; width:100%; height: 806px; top:0; left: 0; background:url("../images/top-bg.png") center;}
+  .evt-content{
+    width: 1200px; height: 806px;
+    .mon{ top: -100px; left: 50%; margin-left: -301.5px;}
+    .sicon{ top: 22px; left: 50%; margin-left: 342px;}
+    .light-r{ top: -100px; left: auto; right: -360px;}
+    .title{ top: 243px; left: 50%; margin-left: -155.5px;}
+
+    .word{ width: 633px; color: #bcbcbd;line-height: 20px; font-size: 14px;left: 50%; margin-left: -307px; text-align: center;
+      b{color: #e7b685; line-height: 30px; font-size: 23px;}
+    }
+    .word-1{ top: 580px;}
+    .word-2{ top: 668px; font-size: 14px; color: #fff;}
+
+  }
+}
+
+
+.sec-1{position: relative; background: #eff7fc;
+  .evt-content{
+    width: 1000px;
+    .row{position: relative;height: 476px;
+      div{position: absolute;}
+      .moon-hl{display: none;}
+    }
+    .row-0{
+      .ka{cursor: pointer;
+        img{width: 100%;}
+      }
+      .ka-1{ width: 450px; top: 100px; left: -10px; z-index: 1;}
+      .ka-2{width: 595px; top: 60px; left: 100px; z-index: 2;}
+      .ws-1{top: 100px; left: auto; right: -10px;}
+    }
+    .row-1{ height: 706px;
+      .w-1{top: 211px; left: -16px;}
+      .cloud-1-1{ width: 99px; height: 37px; top: 146px; left: -110px; background: url("../images/cloud-1-1.png");}
+      .cloud-1-2{width: 139px; height: 52px; top: 480px; left: 330px; background: url("../images/cloud-1-2.png");}
+      .pic-1{top: 57px; left: 360px;}
+      .cake-1{top: 100px; left: 460px;}
+      .moon{top: 126px; left: 58px;}
+    }
+
+    .row-2{ height: 730px;
+      .w-2{top: 390px; left: 793px;}
+      .cloud-2-1{width: 139px; height: 52px; top: 196px; left: 16px; background: url("../images/cloud-2-1.png");}
+      .cloud-2-2{width: 139px; height: 52px; top: 466px; left: 680px; background: url("../images/cloud-2-1.png");}
+      .pic-2{top: 286px; left: -20px;}
+      .cake-2{top: 0px; left: 100px;}
+      .moon{top: 258px; left: 819px;}
+
+    }
+
+    .row-3{ height: 768px;
+      .w-3{top: 225px; left: -13px;}
+      .cloud-3-1{width: 137px; height: 52px; top: 535px; left: 221px; background: url("../images/cloud-3-1.png");}
+      .cloud-3-2{width: 108px; height: 40px; top: 409px; left: 879px; background: url("../images/cloud-3-2.png");}
+      .cake-3{top: 192px; left: 348px;}
+      .moon{top: 103px; left: 56px;}
+      .pic-3{top: 75px; left: 670px;}
+      .scal{top: 84px; left: 196px;}
+    }
+    .row-4{ height: 1051px;
+      .w-4{top: 225px; left: 805px;}
+      .cloud{width: 137px; height: 52px; top: 90px; left: 295px; background: url("../images/cloud-3-1.png");}
+      .c-1{top: 90px; left: 295px;}
+      .c-2{top: 452px; left: 735px;}
+      .c-3{top: 776px; left: 342px;}
+      .c-4{top: 874px; left: 540px;width: 139px; height: 52px; background: url("../images/cloud-2-1.png");}
+      .pic-4{top: 60px; left: -28px;}
+      .cake-4{top: 125px; left: 9px;}
+      .moon{top: 127px; left: 805px;}
+      .more{top: 776px; left: 50%; margin-left: -467px;}
+    }
+
+
+  }
+}
+
+
+
+
+.sec-footer{
+  position: relative; background: url("../images/f-bg.jpg");
+  .evt-content {
+    width: 1000px; padding: 100px 0;
+    .hd-guize{ width: 376px; float: left;}
+    .lp-guize{ width: 540px; float: right;}
+    h2{
+      font-size:26px; font-weight: normal;
+      margin-bottom: 5px; color: #fff;
+    }
+    p{
+      font-size:14px; color: #fff;
+      line-height: 1.6em;
+      padding-left: 1em;
+      text-indent: -1em;
+      margin-top: 5px;
+    }
+  }
+}
+
+@media  screen and (max-width: 1400px) {
+
+  .sec-banner{
+    .evt-content{
+      .banner-c-2 { top: -70px;}
+      .banner-title{ top: 148px;}
+      .banner-moon{ top: 654px;}
+      .light-r{right: -480px;}
+      .word-1{ top: 779px;}
+      .word-2{ top: 900px;}
+    }
+  }
+
+}
+
+
+@media  screen and (max-width: 1400px) {
+
+  .sec-banner{
+    .evt-content{
+      .mon{ top: -200px; left: 50%; margin-left: -301.5px;}
+      .sicon{ top: -0px; left: 50%; margin-left: 342px;}
+      .title{ top: 143px; left: 50%; margin-left: -155.5px;}
+
+      .word{ width: 633px; color: #bcbcbd;line-height: 20px; font-size: 14px;left: 50%; margin-left: -307px; text-align: center;
+        b{color: #e7b685; line-height: 30px; font-size: 23px;}
+      }
+      .word-1{ top: 450px;}
+      .word-2{ top: 568px; font-size: 14px; color: #fff;}
+    }
+  }
+
+
+}
+

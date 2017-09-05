@@ -130,7 +130,17 @@
       }
     }
 
+    var qx= {
+      music: function () {
 
+        $(".qx-music").each(function(i, el){
+          var mc = new MovieClip('qx-music_png', "qx-music_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      }
+    }
 
     if( !isSupportCss3 ){
       $(document.body).addClass("oldie");
@@ -160,6 +170,7 @@
 
       foodPack.ren();
 
+      qx.music();
       var el_game = '<div id="el_game"></div>';
       setTimeout(function () {
         $(".mario").append(el_game);
@@ -173,7 +184,7 @@
     }
     $(".float-container").fadeOut();
     floater();
-    icon();
+    icon2();
 
     $(".guize").hover(function(){
       $(".guizeShow").stop().fadeIn();
@@ -246,7 +257,7 @@
       pagination: '.pagination',
       slidesPerView: 1,
       loop: true,
-      autoplay: 5000,
+      autoplay: 5000,  /*5000*/
       autoplayDisableOninteraction:false,
       paginationClickable: true,
       spaceBetween: 0,
@@ -360,6 +371,43 @@
       }
       if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
         floater.css({position: "fixed", top: fTop, right:fRight});
+        floaterPosition = 'fixed';
+
+      }
+    });
+  };
+
+
+
+
+  function icon2(){
+    var height = $("#evt_container").outerHeight();
+    var fHeight = $(".icon").height();
+    var fTop = 110;
+    var fRight = 40;
+    var floater = $('#icon');
+    var floaterPosition = 'fixed';
+    var winWidth = $(window).width();
+    var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+
+   var dLeft = $(".delivery span").offset().left+50;
+
+    floater.css({ left: dLeft});
+
+    $(window).resize(function() {
+      dLeft = $(".delivery span").offset().left+50;
+      floater.css({ left: dLeft});
+    });
+
+    $(window).on("scroll", function(){
+
+      var sTop = $(this).scrollTop();
+      if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
+        floater.css({position: "absolute", top: height - fHeight, left: dLeft});
+        floaterPosition = 'absolute';
+      }
+      if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
+        floater.css({position: "fixed", top: fTop, dLeft: dLeft});
         floaterPosition = 'fixed';
 
       }

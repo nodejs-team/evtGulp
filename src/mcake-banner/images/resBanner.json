@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"guize_png,nino_png,nino_bg_png,q1_png,rocket_json,bg1_png,logo_png,text_png,hyou_png,quqi-1_png,quqi-2_png,quqi-3_png,quqi-4_png,ren-box_json,ren-pao_json,ren-quqi_json,ren-tizi_json,title_png,xiatian-bg_png,xiatian-btn_png,xiatian-cake_png,xiatian-title_png,xiatian-words_png,bc-bg_png,bc-btn_png,bc-cake_png,bc-title_png,bc-tz_png,bc-word_png,bcbg_jpg,ic-cake_png,ic-han_png,ic-title_png,ic-word_png,ic-yang_png,gh-cake-1_png,gh-cake-2_png,gh-line_png,gh-sm_png,gh-title_png,cake-big_png,cake-small_png,m-title_png,mym-a_json,mym-b_json,mym-c_json,top-bg_jpg,top-cm_png,bg_jpg,bu_png,c-zu_png,gao-line_png,ren_json",
+			"keys":"guize_png,nino_png,nino_bg_png,q1_png,rocket_json,bg1_png,logo_png,text_png,hyou_png,quqi-1_png,quqi-2_png,quqi-3_png,quqi-4_png,ren-box_json,ren-pao_json,ren-quqi_json,ren-tizi_json,title_png,xiatian-bg_png,xiatian-btn_png,xiatian-cake_png,xiatian-title_png,xiatian-words_png,bc-bg_png,bc-btn_png,bc-cake_png,bc-title_png,bc-tz_png,bc-word_png,bcbg_jpg,ic-cake_png,ic-han_png,ic-title_png,ic-word_png,ic-yang_png,gh-cake-1_png,gh-cake-2_png,gh-line_png,gh-sm_png,gh-title_png,cake-big_png,cake-small_png,m-title_png,mym-a_json,mym-b_json,mym-c_json,top-bg_jpg,top-cm_png,bg_jpg,bu_png,c-zu_png,gao-line_png,ren_json,qx-bg_jpg,qx-cake_png,qx-line_png,qx-music_json,qx-s-1_png,qx-s-2_png,qx-s-3_png,qx-subtitle_png,qx-title_png,qx-w_png,ribbon-1_png,ribbon-2_png",
 			"name":"preload"
 		}],
 	"resources":[
@@ -282,6 +282,67 @@
 			"name":"f-title_png",
 			"type":"image",
 			"url":"foodPack/f-title.png"
+		},
+		{
+			"name":"qx-bg_jpg",
+			"type":"image",
+			"url":"qx/qx-bg.jpg"
+		},
+		{
+			"name":"qx-cake_png",
+			"type":"image",
+			"url":"qx/qx-cake.png"
+		},
+		{
+			"name":"qx-line_png",
+			"type":"image",
+			"url":"qx/qx-line.png"
+		},
+		{
+			"name":"qx-music_json",
+			"subkeys":"qx-music0,qx-music1,qx-music2,qx-music3,qx-music4,qx-music5,qx-music6,qx-music7,qx-music8,qx-music9",
+			"type":"sheet",
+			"url":"qx/qx-music.json"
+		},
+		{
+			"name":"qx-s-1_png",
+			"type":"image",
+			"url":"qx/qx-s-1.png"
+		},
+		{
+			"name":"qx-s-2_png",
+			"type":"image",
+			"url":"qx/qx-s-2.png"
+		},
+		{
+			"name":"qx-s-3_png",
+			"type":"image",
+			"url":"qx/qx-s-3.png"
+		},
+		{
+			"name":"qx-subtitle_png",
+			"type":"image",
+			"url":"qx/qx-subtitle.png"
+		},
+		{
+			"name":"qx-title_png",
+			"type":"image",
+			"url":"qx/qx-title.png"
+		},
+		{
+			"name":"qx-w_png",
+			"type":"image",
+			"url":"qx/qx-w.png"
+		},
+		{
+			"name":"ribbon-1_png",
+			"type":"image",
+			"url":"qx/ribbon-1.png"
+		},
+		{
+			"name":"ribbon-2_png",
+			"type":"image",
+			"url":"qx/ribbon-2.png"
 		}
 	]
 }
