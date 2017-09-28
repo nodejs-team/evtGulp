@@ -1,0 +1,114 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.evt-container{ overflow: hidden;background:url("../images/bg.jpg") repeat; }
+.sec-1{
+
+  .evt-content{
+    width: 1000px; height: 642px;
+    .gao-line{top: 0px; left: -68px;}
+    .title{ top: 184px; left: 35px;}
+    .bu{ top: 70px; left: 77px;}
+    .ren{ top: -10px; left: 484px;}
+    .c-zu{ top: 103px; left: 427px;}
+  }
+}
+
+
+
+.sec-2{
+
+  z-index: 10; position: relative;
+  .evt-content{
+    width: 1000px; height: 736px;
+    .start{ top: 35px; left: 57px;}
+    .cake-1{ top: 283px; left: 50px;}
+    .pic-1{ top: 167px; left: 327px;}
+    .words-1{ top: 479px; left: 462px;}
+  }
+}
+
+.sec-3{
+
+  z-index: 10; position: relative;
+  .evt-content{
+    width: 1000px; height: 552px;
+    .words-2{ top: 105px; left: 28px;}
+    .pic-2{ top: 40px; left: 448px;}
+    .cake-2{ top: 40px; left: 451px;}
+    .jiantou{ top: 385px; left: 470px;}
+  }
+}
+
+.sec-4{
+
+  z-index: 10; position: relative;
+  .evt-content{
+    width: 1000px; height: 516px;
+    .pic-3{ top: 78px; left: 0px;}
+    .cake-3{ top: 40px; left: 527px;}
+    .words-3{ top: 110px; left: 301px;}
+  }
+}
+
+.sec-5{
+
+  z-index: 10; position: relative;
+  .evt-content{
+    width: 1000px; height: 544px;
+    .quan-l{ top: 64px; left: 92px;}
+    .quan-r{ top: 64px; left: 385px;}
+    .words-4{ top: 348px; left: 391px;}
+    .line-l{ top: 179px; left: 30px;}
+    .line-r{ top: 262px; left: 822px;}
+  }
+}
+.sec-6{
+
+  z-index: 10; position: relative;
+  .evt-content{
+    width: 1000px; height: 529px;
+    .pic-4{ top: 49px; left: 40px;}
+    .words-5{ top: 83px; left: 575px;}
+
+    .go-btn{ width: 139px;height: 40px; background:#2a2e95; top:323px; left: 800px; text-align: center; border-radius: 5px;
+       span{ display: block; color: #fff; font-size: 18px; line-height: 40px;}
+    }
+
+  }
+}
+
+
+.evt-footer{
+  position: relative;
+  background:#fff;
+  z-index: 10;
+
+  .footer-bd{
+    position: relative;
+    width:1000px;
+    margin:0 auto; color:#4a4a4a;
+  }
+
+  .evt-rules{
+
+    width:780px; margin: 0 auto; padding:80px 0;
+
+    h2{
+      font-size:26px; font-weight: normal;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size:16px;
+      line-height: 1.6em;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+  }
+
+
+}

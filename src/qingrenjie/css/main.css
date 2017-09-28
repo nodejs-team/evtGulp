@@ -1,0 +1,337 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.word {
+  color: #fff;
+  font-size: 20px;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.evt-container .btns {
+  width: 139px;
+  background: #937c52;
+  top: 429px;
+  left: -25px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.evt-container .btns span {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.sec-top {
+  position: relative;
+}
+
+.sec-top .sec-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url("../images/sekuai.png") right;
+}
+
+.sec-top .wave {
+  position: absolute;
+  bottom: 80px;
+  left: 67px;
+}
+
+.sec-top .evt-content {
+  width: 1000px;
+  height: 711px;
+}
+
+.sec-top .evt-content .line {
+  top: 355px;
+  left: -70px;
+}
+
+.sec-top .evt-content .word-r-1 {
+  top: 237px;
+  right: -76px;
+}
+
+.sec-top .evt-content .logo {
+  bottom: 30px;
+  right: -71px;
+}
+
+.sec-top .evt-content .word-l-1 {
+  top: 20px;
+  left: -71px;
+}
+
+.sec-top .evt-content .word-l-2 {
+  top: 275px;
+  left: -71px;
+  font-size: 63px;
+  text-transform: uppercase;
+}
+
+.sec-top .evt-content .word-l-3 {
+  bottom: 60px;
+  left: -71px;
+}
+
+.sec-top .evt-content .cake {
+  top: 6px;
+  left: 53px;
+}
+
+.sec-1 {
+  position: relative;
+}
+
+.sec-1 .wave {
+  position: absolute;
+  bottom: 148px;
+  right: 0px;
+}
+
+.sec-1 .evt-content {
+  width: 1000px;
+  height: 1200px;
+}
+
+.sec-1 .evt-content .naiyou {
+  top: 609px;
+  right: -97px;
+}
+
+.sec-1 .evt-content .word {
+  color: #472929;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.sec-1 .evt-content .word p.p1 {
+  margin-top: 40px;
+}
+
+.sec-1 .evt-content .word p.p2 {
+  margin-top: 20px;
+  font-size: 8px;
+  line-height: 12px;
+}
+
+.sec-1 .evt-content .s2-word-1 {
+  top: 80px;
+  left: -25px;
+}
+
+.sec-1 .evt-content .s2-word-2 {
+  top: 183px;
+  left: -25px;
+}
+
+.sec-1 .evt-content .s2-word-3 {
+  top: 309px;
+  left: -25px;
+  line-height: 30px;
+}
+
+.sec-1 .evt-content .s2-word-4 {
+  top: 408px;
+  left: -25px;
+  font-size: 20px;
+}
+
+.sec-1 .evt-content .s2-word-4 i {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  font-size: 15px;
+  font-style: normal;
+  color: #a58875;
+}
+
+.sec-1 .evt-content .s2-word-4 span {
+  position: relative;
+  font-size: 33px;
+  color: #a58875;
+  font-weight: normal;
+  padding-left: 14px;
+}
+
+.sec-1 .evt-content .go-btn {
+  top: 443px;
+  left: -25px;
+}
+
+.sec-1 .evt-content .pic-1 {
+  top: 0px;
+  left: 498px;
+}
+
+.sec-1 .evt-content .pic-2 {
+  width: 343px;
+  top: 589px;
+  left: -25px;
+  text-transform: uppercase;
+}
+
+.sec-1 .evt-content .pic-3 {
+  width: 442px;
+  top: 644px;
+  left: 498px;
+  text-transform: uppercase;
+}
+
+.sec-1 .evt-content .wave-s-1 {
+  top: 992px;
+  left: -25px;
+}
+
+.sec-1 .evt-content .wave-s-2 {
+  top: 1100px;
+  left: 504px;
+}
+
+.sec-1 .evt-content .love {
+  top: 216px;
+  left: 155px;
+}
+
+.sec-1 .evt-content .love-music {
+  top: 177px;
+  left: 348px;
+}
+
+.sec-ad {
+  position: relative;
+}
+
+.sec-ad .ad {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -489.5px;
+  margin-top: -50px;
+}
+
+.sec-2 {
+  z-index: 10;
+  position: relative;
+}
+
+.sec-2 .evt-content {
+  width: 1000px;
+  height: 607px;
+}
+
+.sec-2 .evt-content .w-title {
+  top: 54px;
+  left: 344px;
+  text-align: center;
+  line-height: 33px;
+  color: #472929;
+}
+
+.sec-2 .evt-content .w-title i {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  font-size: 15px;
+  font-style: normal;
+  color: #a58875;
+}
+
+.sec-2 .evt-content .w-title strong {
+  position: relative;
+  font-size: 33px;
+  color: #a58875;
+  font-weight: normal;
+  padding-left: 14px;
+}
+
+.sec-2 .evt-content .s-btn {
+  display: block;
+  position: relative;
+  height: 30px;
+  color: #472929;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.sec-2 .evt-content .s-btn i {
+  display: block;
+  width: 110px;
+  height: 4px;
+  background: #a58875;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -55px;
+  z-index: -1;
+}
+
+.sec-2 .evt-content .logo-1 {
+  top: 329px;
+  left: 89px;
+}
+
+.sec-2 .evt-content .logo-2 {
+  top: 307px;
+  left: 787px;
+}
+
+.sec-2 .evt-content .xiangfen {
+  top: 200px;
+  left: 110px;
+}
+
+.sec-2 .evt-content .erhuan {
+  top: 253px;
+  left: 400px;
+}
+
+.evt-footer {
+  position: relative;
+  background: #f6f6f6;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  color: #472929;
+}
+
+.evt-footer .evt-rules {
+  width: 810px;
+  margin: 0 auto;
+  padding: 64px 0 70px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 2;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

@@ -3,6 +3,7 @@
  */
 (function($){
 
+<<<<<<< HEAD
   function setNumber(hours, minites, seconds) {
     hours = hours.toString();
     minites = minites.toString();
@@ -64,6 +65,16 @@
 
   var loadResource = function(){
     if( typeof resData === 'object' && Array.isArray(resData.resources) && resData.resources.length > 0 ){
+=======
+
+
+  var loadComplete = function () {
+
+  };
+
+  var loadResource = function(){
+    if( typeof resData == 'object' && Array.isArray(resData.resources) && resData.resources.length > 0 ){
+>>>>>>> 176d4b942d76586526e479a7155b78161f2727f3
       startLoader(resData);
     } else {
       var resLoader = new Resource.JSONloader('res.json');

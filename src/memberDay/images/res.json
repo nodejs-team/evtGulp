@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	"groups":[
 	{
 		"keys":"cake-tips_png,coffee_png,cake-sm_png,footer-action_png,main-bg_jpg,main-action_png,nut_png,deco2_png,decimal_png,main-cake_jpg,count-down-bg_png,banner_bg_jpg,spoon_png,banner-text_png,deco3_png,deco4_png,cake_png,main-text_png,checkbox_png,deco1_png",
@@ -105,4 +106,82 @@
 		"type":"image",
 		"url":"deco1.png"
 	}]
+=======
+	"groups":[{
+			"keys":"mx_png,title_png,yh_png,bg_png,bolang_png,btn_png,cake-1_png,cake-2_png,ds-1_png,ds-2_png,ds-3_png,ds-4_png,logo _png,lv_png",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"mx_png",
+			"type":"image",
+			"url":"mx.png"
+		},
+		{
+			"name":"title_png",
+			"type":"image",
+			"url":"title.png"
+		},
+		{
+			"name":"yh_png",
+			"type":"image",
+			"url":"yh.png"
+		},
+		{
+			"name":"bg_png",
+			"type":"image",
+			"url":"bg.png"
+		},
+		{
+			"name":"bolang_png",
+			"type":"image",
+			"url":"bolang.png"
+		},
+		{
+			"name":"btn_png",
+			"type":"image",
+			"url":"btn.png"
+		},
+		{
+			"name":"cake-1_png",
+			"type":"image",
+			"url":"cake-1.png"
+		},
+		{
+			"name":"cake-2_png",
+			"type":"image",
+			"url":"cake-2.png"
+		},
+		{
+			"name":"ds-1_png",
+			"type":"image",
+			"url":"ds-1.png"
+		},
+		{
+			"name":"ds-2_png",
+			"type":"image",
+			"url":"ds-2.png"
+		},
+		{
+			"name":"ds-3_png",
+			"type":"image",
+			"url":"ds-3.png"
+		},
+		{
+			"name":"ds-4_png",
+			"type":"image",
+			"url":"ds-4.png"
+		},
+		{
+			"name":"logo _png",
+			"type":"image",
+			"url":"logo .png"
+		},
+		{
+			"name":"lv_png",
+			"type":"image",
+			"url":"lv.png"
+		}
+	]
+>>>>>>> 176d4b942d76586526e479a7155b78161f2727f3
 }

@@ -50,6 +50,97 @@
       }
     };
 
+    var quqiExchange = {
+      renQuqi: function () {
+        $(".ren-quqi").each(function(i, el){
+          var mc = new MovieClip('ren-quqi_png', "ren-quqi_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      renTizi: function () {
+        $(".ren-tizi").each(function(i, el){
+          var mc = new MovieClip('ren-tizi_png', "ren-tizi_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      renBox: function () {
+        $(".ren-box").each(function(i, el){
+          var mc = new MovieClip('ren-box_png', "ren-box_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      renPao: function () {
+        $(".ren-pao").each(function(i, el){
+          var mc = new MovieClip('ren-pao_png', "ren-pao_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      }
+
+
+
+    }
+
+
+    var manyuemei= {
+
+      mymA: function () {
+
+        $(".mym-a").each(function(i, el){
+          var mc = new MovieClip('mym-a_png', "mym-a_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      mymB: function () {
+        $(".mym-b").each(function(i, el){
+          var mc = new MovieClip('mym-b_png', "mym-b_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      },
+      mymC: function () {
+        $(".mym-c").each(function(i, el){
+          var mc = new MovieClip('mym-c_png', "mym-c_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      }
+    }
+
+    var foodPack= {
+      ren: function () {
+
+        $(".ren").each(function(i, el){
+          var mc = new MovieClip('ren_png', "ren_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      }
+    }
+
+    var qx= {
+      music: function () {
+
+        $(".qx-music").each(function(i, el){
+          var mc = new MovieClip('qx-music_png', "qx-music_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+
+      }
+    }
 
     if( !isSupportCss3 ){
       $(document.body).addClass("oldie");
@@ -66,11 +157,26 @@
       animations.baozi();
       animations.longmogu();
 
+
+      quqiExchange.renQuqi();
+      quqiExchange.renTizi();
+      quqiExchange.renBox();
+      quqiExchange.renPao();
+
+      manyuemei.mymA();
+      manyuemei.mymB();
+      manyuemei.mymC();
+
+
+      foodPack.ren();
+
+      qx.music();
       var el_game = '<div id="el_game"></div>';
       setTimeout(function () {
         $(".mario").append(el_game);
+
         animations.game();
-      },1000);
+      },100);
 
       $(".slides-nino .q3").on("animatedone", function () {
         animations.ninoRocket();
@@ -78,7 +184,7 @@
     }
     $(".float-container").fadeOut();
     floater();
-    icon();
+    icon2();
 
     $(".guize").hover(function(){
       $(".guizeShow").stop().fadeIn();
@@ -151,7 +257,7 @@
       pagination: '.pagination',
       slidesPerView: 1,
       loop: true,
-      autoplay: 5000,
+      autoplay: 5000,  /*5000*/
       autoplayDisableOninteraction:false,
       paginationClickable: true,
       spaceBetween: 0,
@@ -265,6 +371,43 @@
       }
       if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
         floater.css({position: "fixed", top: fTop, right:fRight});
+        floaterPosition = 'fixed';
+
+      }
+    });
+  };
+
+
+
+
+  function icon2(){
+    var height = $("#evt_container").outerHeight();
+    var fHeight = $(".icon").height();
+    var fTop = 110;
+    var fRight = 40;
+    var floater = $('#icon');
+    var floaterPosition = 'fixed';
+    var winWidth = $(window).width();
+    var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+
+   var dLeft = $(".delivery span").offset().left+50;
+
+    floater.css({ left: dLeft});
+
+    $(window).resize(function() {
+      dLeft = $(".delivery span").offset().left+50;
+      floater.css({ left: dLeft});
+    });
+
+    $(window).on("scroll", function(){
+
+      var sTop = $(this).scrollTop();
+      if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
+        floater.css({position: "absolute", top: height - fHeight, left: dLeft});
+        floaterPosition = 'absolute';
+      }
+      if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
+        floater.css({position: "fixed", top: fTop, dLeft: dLeft});
         floaterPosition = 'fixed';
 
       }

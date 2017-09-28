@@ -1,0 +1,71 @@
+.evt-container{ background:url("../images/bg.png") repeat-y; overflow: hidden;}
+.sec-1{
+  .evt-content{
+    width: 1000px; height: 969px;
+    .title{ top: 65px; left: 197px;}
+    .taozhuang{ top: 455px; left: 490px;}
+    .cake-1{ top: 263px; left: -20px;}
+    .ren-1{ top: 600px; left: 10px;}
+    .words-1{ top: 365px; left: 804px;}
+    .words-btn-1{ top: 779px; left: 533px;}
+  }
+}
+
+
+
+.sec-3{
+  .evt-content{
+    width: 1000px; height: 536px;
+    .cake-3{ top: 30px; left: 539px;}
+    .ren-3{ top: 37px; left: 95px;}
+    .words-3{ top: 10px; left: 183px;}
+    .words-btn-3{ top: 429px; left: 117px;}
+  }
+}
+.sec-4{
+  .evt-content{
+    width: 1000px; height: 808px;
+    .city{ top: 279px; left: 598px;}
+    .girl{ top: 310px; left: 845px;}
+    .car-1{ top: 523px; left: 72px;}
+    .car-2{ top: 450px; left: -33px;}
+    .boy{ top: 654px; left: 742px;}
+    .cake-4{ top: 85px; left: 0px;}
+    .pic{ top: 259px; left: 250px;}
+    .words-4{ top: 55px; left: 675px;}
+    .words-btn-4{ top: 530px; left: 645px;}
+
+  }
+}
+
+
+
+.evt-footer{
+  position: relative;
+  background: url("../images/foot-bg.png") repeat-x;
+  z-index: 10;
+
+  .footer-bd{
+    position: relative;
+    width:1000px;
+    margin:0 auto; color:#4a4a4a;
+  }
+
+  .evt-rules{
+
+    width:780px; margin: 0 auto; padding:116px 0 90px;
+
+    h2{
+      font-size:20px; font-weight: normal;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size:18px;
+      line-height: 2;
+      padding-left: 1.5em;
+      text-indent: -1.5em;
+    }
+  }
+
+
+}
