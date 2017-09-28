@@ -133,7 +133,7 @@ gulp.task('create', function(done){
           if (err) throw err;
           console.log('项目"' + projectName + '"创建成功');
           done();
-      });
+      }); 
     } else {
       console.log('项目"' + projectName + '"创建成功');
       done();
