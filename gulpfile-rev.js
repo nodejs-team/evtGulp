@@ -181,8 +181,8 @@ var buildHtml = lazypipe()
         },
         cssSelector: 'style[data-minify!="false"]'
     })
-    .pipe(replace, /"(css|images|js)\/([^"]+?)"/gm, '"' + config.revPrefix + config.projectName + "/" + '$1/$2' + '"')
-    .pipe(replace, /(:\s*url\()(\.\.)?([^)]+?)/gm, '$1' + config.revPrefix + config.projectName + '/$3');
+    .pipe(replace, /(:\s*url\(['"]?)(\.\.)?([^)]+?)/gm, '$1' + config.revPrefix + config.projectName + '/$3')
+    .pipe(replace, /(['"])(css|images|js)\/([^"]+?)(['"])/gm, '$1' + config.revPrefix + config.projectName + "/" + '$2/$3' + '$4');
 
 var buildJs = lazypipe()
     .pipe(uglify)
