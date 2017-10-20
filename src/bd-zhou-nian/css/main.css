@@ -1,0 +1,155 @@
+.clearfix:after {
+  content: '.';
+  height: 0;
+  line-height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+
+.evt-container {
+  background: url("../images/bg.jpg") repeat;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+  height: 1113px;
+}
+
+.sec-1 .evt-content .title {
+  top: 260px;
+  left: -40px;
+}
+
+.sec-1 .evt-content .cake {
+  top: -54px;
+  left: 728px;
+}
+
+.sec-1 .evt-content .flower {
+  top: -10px;
+  left: 0;
+}
+
+.sec-1 .evt-content .cake-2 {
+  top: 769px;
+  left: -10px;
+}
+
+.sec-3 .evt-content {
+  width: 1200px;
+  height: 2021px;
+}
+
+.sec-3 .evt-content .fuli-1 {
+  top: 15px;
+  left: 99px;
+}
+
+.sec-3 .evt-content .fuli-2 {
+  top: 605px;
+  left: -70px;
+}
+
+.sec-3 .evt-content .words {
+  width: 390px;
+  border: #aaa 1px dashed;
+  border-radius: 10px;
+  top: 1155px;
+  left: 748px;
+  padding: 20px;
+}
+
+.sec-3 .evt-content .words p {
+  font-size: 14px;
+  color: #828181;
+  padding-left: 5em;
+  text-indent: -5em;
+}
+
+.sec-3 .evt-content .fuli-3 {
+  top: 1288px;
+  left: 118px;
+}
+
+.sec-4 .evt-content {
+  width: 1200px;
+  height: 1052px;
+}
+
+.sec-4 .evt-content .yinhang {
+  width: 1200px;
+  height: 1044px;
+  top: 0;
+  left: 0;
+}
+
+.sec-4 .evt-content .title {
+  position: relative;
+  width: 474px;
+  margin: 0 auto;
+}
+
+.sec-4 .evt-content ul {
+  position: relative;
+  width: 1077px;
+  margin: 20px auto;
+}
+
+.sec-4 .evt-content ul li {
+  position: relative;
+  float: left;
+  width: 528px;
+}
+
+.sec-4 .evt-content ul li .pic {
+  position: absolute;
+  top: 10px;
+  left: 38px;
+  display: block;
+}
+
+.sec-4 .evt-content ul li .pic-title {
+  position: absolute;
+  bottom: 80px;
+  display: block;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  width: 479px;
+  left: 38px;
+  overflow: hidden;
+  color: #000;
+}
+
+.evt-footer {
+  position: relative;
+  z-index: 10;
+}
+
+.evt-footer .footer-bd {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  color: #4a4a4a;
+}
+
+.evt-footer .evt-rules {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  color: #475177;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 20px;
+  color: #8c94a8;
+  line-height: 2;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

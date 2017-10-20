@@ -107,6 +107,14 @@
 
     }
 
+    .price-w{ width: 240px; height: 37px; margin: 0 auto;  border-top: #cacaca 1px solid; padding-top: 17px;}
+    .price_num{ width: 170px; margin: 0 auto; }
+    .price_num span{float: left; font-size: 18px; color: #000;}
+    .price_num dl {  float: left;  }
+    .price_num dl dd {  background: #fff url("../images/in-l.png") repeat;  cursor: pointer;  float: left;  height: 20px;  width: 21px;  }
+    .price_num dl dd.nopoint {  background: #fff url("../images/in-r.png") repeat scroll;  }
+    .price_num dl dt {  float: left;  height: 22px;  width: 60px;  }
+    .price_num dl dt input {  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: medium none;  color: #a19682;  height: 20px; text-align: center;  width: 60px;  font-size: 18px; }
 
   }
 }

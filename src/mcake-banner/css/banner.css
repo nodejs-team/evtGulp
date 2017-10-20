@@ -369,18 +369,22 @@
   left: 100px;
 }
 
+.banner-slides .slides-nino .swiper-content {
+  margin-left: -110px;
+}
+
 .banner-slides .slides-nino .q1 {
   left: -97px;
   top: 108px;
 }
 
 .banner-slides .slides-nino .q2 {
-  left: 398px;
+  left: 357px;
   top: 73px;
 }
 
 .banner-slides .slides-nino .q3 {
-  left: 398px;
+  left: 358px;
   top: 85px;
 }
 
@@ -393,8 +397,8 @@
 }
 
 .banner-slides .slides-nino .q4 {
-  left: 800px;
-  top: 110px;
+  left: 760px;
+  top: 114px;
   display: none;
 }
 
@@ -415,8 +419,8 @@
 .banner-slides .slides-nino .q5 {
   width: 330px;
   height: 440px;
-  left: 822px;
-  top: 30px;
+  left: 776px;
+  top: 100px;
   z-index: 5;
 }
 
@@ -901,7 +905,7 @@
 
 .banner-slides .slides-midAutumn .banner-c-3 {
   top: 0px;
-  left: 1020px;
+  left: 1080px;
 }
 
 .banner-slides .slides-midAutumn .banner-c-4 {
@@ -1018,6 +1022,227 @@
   text-align: center;
 }
 
+.banner-slides .slides-memberDay .m-ds-1 {
+  top: 0px;
+  left: 0px;
+}
+
+.banner-slides .slides-memberDay .m-ds-2 {
+  top: 240px;
+  left: 94px;
+}
+
+.banner-slides .slides-memberDay .m-ds-3 {
+  top: 400px;
+  left: 144px;
+}
+
+.banner-slides .slides-memberDay .m-ds-4 {
+  top: 378px;
+  left: 0px;
+}
+
+.banner-slides .slides-memberDay .m-title {
+  top: 120px;
+  left: 627px;
+}
+
+.banner-slides .slides-memberDay .m-cake {
+  top: 104px;
+  left: 160px;
+}
+
+.banner-slides .slides-bj-midAutumn .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-box {
+  top: 168px;
+  left: -326px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-moon {
+  top: 470px;
+  left: 50%;
+  margin-left: -130px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-title {
+  top: 136px;
+  left: 50%;
+  margin-left: -104px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-w-1 {
+  top: 85px;
+  left: 843px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-c-1 {
+  top: 22px;
+  left: -137px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-c-2 {
+  top: 0px;
+  left: 440px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-c-3 {
+  top: 0px;
+  left: 1206px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-c-4 {
+  top: 136px;
+  left: 869px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-c-5 {
+  top: 187px;
+  left: 1182px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-c-6 {
+  top: 400px;
+  left: 947px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-c-7 {
+  bottom: 0px;
+  left: 1056px;
+}
+
+.banner-slides .slides-bj-midAutumn .bj-banner-c-8 {
+  top: 430px;
+  left: 135px;
+}
+
+.banner-slides .slides-chunv .c-logo {
+  top: 50px;
+  left: 733px;
+}
+
+.banner-slides .slides-chunv .c-shou {
+  top: 0px;
+  left: 125px;
+}
+
+.banner-slides .slides-chunv .w-1 {
+  top: 275px;
+  left: 145px;
+}
+
+.banner-slides .slides-chunv .w-2 {
+  top: 150px;
+  left: 480px;
+}
+
+.banner-slides .slides-chunv .w-3 {
+  top: 275px;
+  left: 640px;
+}
+
+.banner-slides .slides-quqi .qq-title {
+  top: 40px;
+  left: 550px;
+}
+
+.banner-slides .slides-quqi .qq-word {
+  top: 425px;
+  left: 598px;
+}
+
+.banner-slides .slides-lanmei .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-lanmei .banner-xiong {
+  position: absolute;
+  top: 57px;
+  left: 48px;
+}
+
+.banner-slides .slides-lanmei .banner-shu {
+  position: absolute;
+  top: 331px;
+  right: 40px;
+}
+
+.banner-slides .slides-lanmei .banner-title {
+  position: absolute;
+  top: 64px;
+  left: 539px;
+}
+
+.banner-slides .slides-lanmei .banner-cake {
+  position: absolute;
+  top: 260px;
+  left: 490px;
+}
+
+.banner-slides .slides-beiyong .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-beiyong .mon {
+  top: 0px;
+  left: 50%;
+  margin-left: -301.5px;
+}
+
+.banner-slides .slides-beiyong .sicon {
+  top: 22px;
+  left: 50%;
+  margin-left: 342px;
+}
+
+.banner-slides .slides-beiyong .light-r {
+  top: -100px;
+  left: auto;
+  right: -360px;
+}
+
+.banner-slides .slides-beiyong .title {
+  top: 158px;
+  left: 50%;
+  margin-left: -155.5px;
+}
+
+.banner-slides .slides-beiyong .word {
+  width: 633px;
+  color: #bcbcbd;
+  line-height: 20px;
+  font-size: 14px;
+  left: 50%;
+  margin-left: -307px;
+  text-align: center;
+}
+
+.banner-slides .slides-beiyong .word b {
+  color: #e7b685;
+  line-height: 30px;
+  font-size: 23px;
+}
+
+.banner-slides .slides-beiyong .word-1 {
+  top: 433px;
+}
+
+.banner-slides .slides-potato .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-potato .cake {
+  top: 180px;
+  left: 70px;
+}
+
+.banner-slides .slides-potato .title {
+  top: 40px;
+  left: 410px;
+}
+
 /*浮动*/
 .floater {
   position: fixed;
@@ -1063,7 +1288,7 @@
 
 .icon {
   position: fixed;
-  top: 115px;
+  top: 110px;
   z-index: 11;
 }
 

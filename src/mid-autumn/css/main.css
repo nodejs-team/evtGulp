@@ -323,6 +323,57 @@
   color: #000;
 }
 
+.sec-2 .evt-content .price-w {
+  width: 240px;
+  height: 37px;
+  margin: 0 auto;
+  border-top: #cacaca 1px solid;
+  padding-top: 17px;
+}
+
+.sec-2 .evt-content .price_num {
+  width: 170px;
+  margin: 0 auto;
+}
+
+.sec-2 .evt-content .price_num span {
+  float: left;
+  font-size: 18px;
+  color: #000;
+}
+
+.sec-2 .evt-content .price_num dl {
+  float: left;
+}
+
+.sec-2 .evt-content .price_num dl dd {
+  background: #fff url("../images/in-l.png") repeat;
+  cursor: pointer;
+  float: left;
+  height: 20px;
+  width: 21px;
+}
+
+.sec-2 .evt-content .price_num dl dd.nopoint {
+  background: #fff url("../images/in-r.png") repeat scroll;
+}
+
+.sec-2 .evt-content .price_num dl dt {
+  float: left;
+  height: 22px;
+  width: 60px;
+}
+
+.sec-2 .evt-content .price_num dl dt input {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  color: #a19682;
+  height: 20px;
+  text-align: center;
+  width: 60px;
+  font-size: 18px;
+}
+
 .sec-footer {
   position: relative;
   background: #2e3037;

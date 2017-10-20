@@ -43,12 +43,12 @@ body{background: #eff7fc;}
       .moon-hl{display: none;}
     }
     .row-0{
-      .ka{cursor: pointer;
-        img{width: 100%;}
+      .ka{
+        img{width: 100% !important; display: block;}
       }
       .ka-1{ width: 450px; top: 100px; left: -10px; z-index: 1;}
       .ka-2{width: 595px; top: 60px; left: 100px; z-index: 2;}
-      .ws-1{top: 100px; left: auto; right: -10px;}
+      .ws-1{top: 53px; left: auto; right: -10px;}
     }
     .row-1{ height: 706px;
       .w-1{top: 211px; left: -16px;}
@@ -101,15 +101,16 @@ body{background: #eff7fc;}
 .sec-footer{
   position: relative; background: url("../images/f-bg.jpg");
   .evt-content {
-    width: 1000px; padding: 100px 0;
-    .hd-guize{ width: 376px; float: left;}
-    .lp-guize{ width: 540px; float: right;}
+    width: 1000px; padding: 70px 0;
+
+    .hd-guize{width:600px; margin: 0 auto; }
+
     h2{
       font-size:26px; font-weight: normal;
       margin-bottom: 5px; color: #fff;
     }
     p{
-      font-size:14px; color: #fff;
+      font-size:18px; color: #fff;
       line-height: 1.6em;
       padding-left: 1em;
       text-indent: -1em;
@@ -118,20 +119,7 @@ body{background: #eff7fc;}
   }
 }
 
-@media  screen and (max-width: 1400px) {
 
-  .sec-banner{
-    .evt-content{
-      .banner-c-2 { top: -70px;}
-      .banner-title{ top: 148px;}
-      .banner-moon{ top: 654px;}
-      .light-r{right: -480px;}
-      .word-1{ top: 779px;}
-      .word-2{ top: 900px;}
-    }
-  }
-
-}
 
 
 @media  screen and (max-width: 1400px) {

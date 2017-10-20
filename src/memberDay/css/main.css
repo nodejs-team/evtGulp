@@ -58,6 +58,7 @@
 .sec-main {
   position: relative;
   z-index: 1;
+  background: url(../images/bg.jpg) repeat;
 }
 
 .sec-main .evt-content {

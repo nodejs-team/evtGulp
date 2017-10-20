@@ -144,16 +144,17 @@ background: #a5002f;
   }
 
   .slides-nino {
+    .swiper-content{ margin-left: -110px;}
     .q1 {
       left: -97px;
       top: 108px;
     }
     .q2 {
-      left: 398px;
+      left: 357px;
       top: 73px;
     }
     .q3 {
-      left: 398px;
+      left: 358px;
       top: 85px;
     }
     .nino-rocket{
@@ -164,16 +165,16 @@ background: #a5002f;
       height:400px;
     }
     .q4 {
-      left: 800px;
-      top: 110px;  display: none;
+      left: 760px;
+      top: 114px;  display: none;
       .txt{position: absolute; width: 218px;  top: 80px; left: 75px; color: #53322c; font-size: 14px; text-align: left;
         p{ margin-bottom: 0px;}
       }
     }
     .q5 {
       width: 330px; height: 440px;
-      left: 822px;
-      top: 30px;  z-index: 5;
+      left: 776px;
+      top: 100px;  z-index: 5;
     }
   }
 
@@ -369,7 +370,7 @@ background: #a5002f;
     .banner-815{ top: 10px; left: 20px;}
     .banner-c-1{ top: 379px; left:55px;}
     .banner-c-2{ top: 0px; left: 350px;}
-    .banner-c-3{ top: 0px; left: 1020px;}
+    .banner-c-3{ top: 0px; left: 1080px;}
     .banner-c-4{ top: 60px; left: 860px;}
     .banner-c-5{ top: 331px; left: 920px;}
     .banner-c-6{ top: 440px; left: 1048px;}
@@ -403,6 +404,83 @@ background: #a5002f;
   }
 
 
+  .slides-memberDay{
+    .m-ds-1{ top: 0px; left: 0px;}
+    .m-ds-2{ top: 240px; left: 94px;}
+    .m-ds-3{ top: 400px; left: 144px;}
+    .m-ds-4{ top: 378px; left: 0px;}
+    .m-title{ top: 120px; left: 627px;}
+    .m-cake{ top: 104px; left: 160px;}
+
+
+  }
+
+  .slides-bj-midAutumn{
+    .swiper-content{ width: 1200px;}
+
+    .bj-banner-box{ top: 168px; left: -326px;}
+
+    .bj-banner-moon{ top: 470px; left: 50%; margin-left: -130px;}
+
+    .bj-banner-title{ top: 136px; left: 50%; margin-left: -104px;}
+    .bj-banner-w-1{ top: 85px; left: 843px;}
+
+
+    .bj-banner-c-1{ top: 22px; left:-137px;}
+    .bj-banner-c-2{ top: 0px; left: 440px;}
+    .bj-banner-c-3{ top: 0px; left: 1206px;}
+    .bj-banner-c-4{ top: 136px; left: 869px;}
+    .bj-banner-c-5{ top: 187px; left: 1182px;}
+    .bj-banner-c-6{ top: 400px; left: 947px;}
+    .bj-banner-c-7{ bottom: 0px; left: 1056px;}
+    .bj-banner-c-8{ top: 430px; left: 135px;}
+
+
+  }
+
+  .slides-chunv{
+    .c-logo{ top: 50px; left:733px;}
+    .c-shou{ top: 0px; left:125px;}
+    .w-1{ top: 275px; left:145px;}
+    .w-2{ top: 150px; left:480px;}
+    .w-3{ top: 275px; left:640px;}
+  }
+  .slides-quqi{
+    .qq-title{ top: 40px; left:550px;}
+    .qq-word{ top: 425px; left:598px;}
+
+  }
+
+  .slides-lanmei{
+    .swiper-content{width: 1200px;}
+    .banner-xiong{position: absolute; top: 57px; left: 48px;}
+    .banner-shu{position: absolute; top: 331px; right: 40px;}
+    .banner-title{position: absolute; top: 64px; left: 539px;}
+    .banner-cake{position: absolute; top: 260px; left: 490px;}
+
+  }
+
+  .slides-beiyong{
+    .swiper-content{width: 1200px;}
+    .mon{ top: 0px; left: 50%; margin-left: -301.5px;}
+    .sicon{ top: 22px; left: 50%; margin-left: 342px;}
+    .light-r{ top: -100px; left: auto; right: -360px;}
+    .title{ top: 158px; left: 50%; margin-left: -155.5px;}
+
+    .word{ width: 633px; color: #bcbcbd;line-height: 20px; font-size: 14px;left: 50%; margin-left: -307px; text-align: center;
+      b{color: #e7b685; line-height: 30px; font-size: 23px;}
+    }
+    .word-1{ top: 433px;}
+
+  }
+
+  .slides-potato{
+    .swiper-content{width: 1200px;}
+    .cake{ top: 180px; left: 70px;}
+    .title{ top: 40px; left: 410px;}
+  }
+
+
 }
 
 
@@ -418,7 +496,7 @@ background: #a5002f;
 }
 
 
-.icon{position:fixed; top:115px; z-index:11;
+.icon{position:fixed; top:110px; z-index:11;
   a{width:100%; display:block; height:100%; position:absolute; top:0; left:0;}
 }
 

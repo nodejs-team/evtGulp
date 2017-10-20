@@ -1,0 +1,286 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+body {
+  background: #000 !important;
+}
+
+.loadings {
+  position: relative;
+  height: 100%;
+  background: #000;
+  display: none;
+}
+
+.loadings .evt-content {
+  width: 1280px;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #000;
+}
+
+.evt-content {
+  width: 1200px;
+  border-top: none;
+}
+
+.sec-top {
+  background: #000 url("../images/bg.jpg") top center no-repeat;
+  z-index: 1;
+}
+
+.sec-top .evt-content {
+  height: 949px;
+}
+
+.sec-top .evt-content .b-title {
+  top: 75px;
+  left: 50%;
+  margin-left: -265px;
+}
+
+.sec-top .evt-content .gui-tou {
+  top: 313px;
+  left: 50%;
+  margin-left: -788.5px;
+}
+
+.sec-top .evt-content .tou {
+  top: 479px;
+  left: 200px;
+}
+
+.sec-top .evt-content .floadMen {
+  width: 158px;
+  height: 335px;
+  top: 0;
+  right: 0;
+  left: auto;
+  background: url("../images/floadMen.png") no-repeat;
+}
+
+.sec-top .evt-content .floadMen.hover {
+  background: url("../images/floadMen-hover.png") no-repeat;
+}
+
+.wbtn {
+  cursor: pointer;
+}
+
+.sec-row1 {
+  position: relative;
+  z-index: 1;
+}
+
+.sec-row1 .line {
+  position: absolute;
+  top: 980px;
+  left: 50%;
+  margin-left: -956px;
+}
+
+.sec-row1 .evt-content {
+  width: 1200px;
+  height: 1539px;
+}
+
+.sec-row1 .evt-content .cake {
+  top: 63px;
+  left: 46px;
+}
+
+.sec-row1 .evt-content .word {
+  top: 167px;
+  left: 753px;
+}
+
+.sec-row1 .evt-content .guihun {
+  top: 474px;
+  left: 535px;
+}
+
+.sec-row1 .evt-content .menpiao {
+  top: 690px;
+  left: 326px;
+}
+
+.sec-row1 .evt-content .mens {
+  width: 84px;
+  height: 83px;
+  top: 783px;
+  left: 577px;
+}
+
+.sec-row1 .evt-content .price {
+  width: 320px;
+  height: 320px;
+  top: 350px;
+  left: 870px;
+}
+
+.sec-row1 .evt-content .price div {
+  position: relative;
+}
+
+.sec-row1 .evt-content .price .price-title {
+  width: 211px;
+  margin: 0 auto;
+}
+
+.sec-row1 .evt-content .price .price-title .new-pirce {
+  position: absolute;
+  top: 20px;
+  left: 116px;
+  color: #fff;
+}
+
+.sec-row1 .evt-content .price .price-title .new-pirce span {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.sec-row1 .evt-content .price .price-title .old-pirce {
+  position: absolute;
+  top: 69px;
+  left: 116px;
+  color: #b3b3b3;
+}
+
+.sec-row1 .evt-content .price .price-title .old-pirce s {
+  font-size: 26px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.sec-row1 .evt-content .price .num-content {
+  width: 181px;
+  margin: 20px auto 0;
+}
+
+.sec-row1 .evt-content .price .num-content .nums {
+  margin: 22px auto;
+}
+
+.sec-row1 .evt-content .price .num-content .mins, .sec-row1 .evt-content .price .num-content .add {
+  float: left;
+  width: 54px;
+  height: 42px;
+  background: url("../images/mins.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-row1 .evt-content .price .num-content .add {
+  background: url("../images/add.png") no-repeat;
+}
+
+.sec-row1 .evt-content .price .num-content .num {
+  float: left;
+  width: 30px;
+  margin: 0 20px;
+  line-height: 42px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sec-row1 .evt-content .price .num-content .go-btn {
+  width: 181px;
+  height: 45px;
+  margin: 0 auto;
+  background: url("../images/go-btn.png") no-repeat;
+}
+
+.sec-row1 .evt-content .price .num-content .go-btn.hover {
+  background: url("../images/go-btn-hover.png") no-repeat;
+}
+
+.sec-row2 {
+  position: relative;
+  z-index: 1;
+}
+
+.sec-row2 .evt-content {
+  width: 1200px;
+  height: 1128px;
+}
+
+.sec-row2 .evt-content .gui-1 {
+  top: 80px;
+  left: 0;
+}
+
+.sec-row2 .evt-content .gui-2 {
+  top: 238px;
+  left: auto;
+  right: 10px;
+}
+
+.sec-row2 .evt-content .duihua {
+  top: 87px;
+  left: 50%;
+  margin-left: -411.5px;
+}
+
+.sec-row2 .evt-content .cake {
+  top: 304px;
+  left: 370px;
+}
+
+.sec-row2 .evt-content .pic {
+  top: 304px;
+  left: 50%;
+  margin-left: -404.5px;
+}
+
+.sec-row2 .evt-content .go {
+  width: 378px;
+  height: 65px;
+  top: 1150px;
+  left: 50%;
+  margin: -189px;
+  background: url("../images/go.png") no-repeat;
+}
+
+.sec-row2 .evt-content .go.hover {
+  background: url("../images/go-hover.png") no-repeat;
+}
+
+.evt-footer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background: url("../images/foot-bg.png") center no-repeat;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  padding: 100px 0;
+}
+
+.evt-footer .huodong {
+  width: 620px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.evt-footer .huodong h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .huodong p {
+  font-size: 16px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  color: #d3d3d3;
+}

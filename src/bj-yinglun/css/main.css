@@ -1,0 +1,124 @@
+.sec-banner {
+  position: relative;
+  background: #1f2025;
+}
+
+.sec-banner .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sec-banner img {
+  width: 100%;
+  display: block;
+}
+
+.sec-banner .img-1 {
+  height: 210px;
+  background: url("../images/img-1.jpg") center no-repeat;
+}
+
+.sec-banner .img-2 {
+  height: 176px;
+  background: url("../images/img-2.jpg") center no-repeat;
+}
+
+.sec-banner .img-3 {
+  height: 216px;
+  background: url("../images/img-3.jpg") center no-repeat;
+}
+
+.sec-banner .img-4 {
+  height: 763px;
+  background: url("../images/img-4.jpg") center no-repeat;
+}
+
+.sec-banner .img-5 {
+  height: 221px;
+  background: url("../images/img-5.jpg") center no-repeat;
+}
+
+.sec-banner .img-6 {
+  height: 300px;
+  background: url("../images/img-6.jpg") center no-repeat;
+}
+
+.sec-banner .img-7 {
+  height: 270px;
+  background: url("../images/img-7.jpg") center no-repeat;
+}
+
+.sec-banner .img-8 {
+  height: 238px;
+  background: url("../images/img-8.jpg") center no-repeat;
+}
+
+.sec-banner .img-9 {
+  height: 219px;
+  background: url("../images/img-9.jpg") center no-repeat;
+}
+
+.sec-banner .img-10 {
+  height: 347px;
+  background: url("../images/img-10.jpg") center no-repeat;
+}
+
+.sec-banner .video {
+  position: absolute;
+  top: 173px;
+  width: 706px;
+  height: 480px;
+  left: 50%;
+  margin-left: -353px;
+  z-index: 6;
+  background: #fff;
+}
+
+.sec-banner .link {
+  position: absolute;
+  top: -88px;
+  left: 50%;
+  margin-left: -420px;
+  width: 300px;
+  height: 300px;
+}
+
+.sec-banner .link-2 {
+  top: 100px;
+  margin-left: -29px;
+  z-index: 1;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer .text {
+  width: 840px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.footer .text h2 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.footer .text p {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.bgcover {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  display: none;
+}

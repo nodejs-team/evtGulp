@@ -1,0 +1,4 @@
+var resData = {
+  "groups":[],
+  "resources":[]
+};

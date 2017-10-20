@@ -23,7 +23,6 @@
         top:100,
         left:-10,
         width:this.smallWidth
-
       }
     }
     this.init();

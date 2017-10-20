@@ -222,7 +222,10 @@
         Resource.el('#evt_container').style.display = 'block';
         correctPNG($('#evt_container').get(0));
         bindScroll($('#floater'));
+       /* loadComplete();*/
+
         loadComplete();
+
       });
     }
 
@@ -388,14 +391,14 @@
     var floater = $('#icon');
     var floaterPosition = 'fixed';
     var winWidth = $(window).width();
-    var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+    var absRight = winWidth<1400 ? (1400-winWidth+fRight) : fRight;
 
-   var dLeft = $(".delivery span").offset().left+50;
+   var dLeft = $(".delivery span").offset().left+120;
 
     floater.css({ left: dLeft});
 
     $(window).resize(function() {
-      dLeft = $(".delivery span").offset().left+50;
+      dLeft = $(".delivery span").offset().left+160;
       floater.css({ left: dLeft});
     });
 
@@ -413,5 +416,8 @@
       }
     });
   };
+  
+
+
 
 })(jQuery);

@@ -1,0 +1,240 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.evt-container .btns {
+  width: 178px;
+  height: 40px;
+  background: url("../images/btn-bg.png") no-repeat;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+  float: left;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.evt-container .btns span {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.sec-banner {
+  position: relative;
+  background: #fffcef;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  height: 777px;
+}
+
+.sec-banner .evt-content .banner-xiong {
+  position: absolute;
+  top: 57px;
+  left: -88px;
+}
+
+.sec-banner .evt-content .banner-shu {
+  position: absolute;
+  top: 414px;
+  right: -107px;
+}
+
+.sec-banner .evt-content .banner-title {
+  position: absolute;
+  top: 39px;
+  left: 487px;
+}
+
+.sec-banner .evt-content .banner-cake {
+  position: absolute;
+  top: 340px;
+  left: 430px;
+}
+
+.sec-1 {
+  position: relative;
+  background: #fffcef;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+  height: 961px;
+}
+
+.sec-1 .evt-content .s1-w1 {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  margin-left: -289.5px;
+}
+
+.sec-1 .evt-content .s1-w2 {
+  position: absolute;
+  top: 641px;
+  left: 85px;
+}
+
+.sec-1 .evt-content .s1-cloud1 {
+  position: absolute;
+  top: 274px;
+  left: 85px;
+}
+
+.sec-1 .evt-content .s1-cloud2 {
+  position: absolute;
+  top: 136px;
+  left: 998px;
+}
+
+.sec-1 .evt-content .s1-xiong {
+  position: absolute;
+  top: 394px;
+  left: 862px;
+}
+
+.sec-1 .evt-content .s1-cake {
+  position: absolute;
+  top: 394px;
+  left: 50%;
+  margin-left: -280px;
+}
+
+.sec-2 {
+  position: relative;
+  background: #fffcef;
+}
+
+.sec-2 .evt-content {
+  width: 1200px;
+  height: 1157px;
+}
+
+.sec-2 .evt-content .line {
+  position: absolute;
+  top: -100px;
+  left: 100px;
+}
+
+.sec-2 .evt-content .s2-ny {
+  position: absolute;
+  top: 7px;
+  left: 885px;
+}
+
+.sec-2 .evt-content .s2-w2 {
+  position: absolute;
+  top: 353px;
+  left: 725px;
+}
+
+.sec-2 .evt-content .s2-xiong {
+  position: absolute;
+  top: 61px;
+  left: 0px;
+}
+
+.sec-2 .evt-content .s2-cake {
+  position: absolute;
+  top: 195px;
+  left: 189px;
+}
+
+.sec-2 .evt-content .s2-w {
+  position: absolute;
+  top: 804px;
+  left: 261px;
+}
+
+.sec-2 .evt-content .price {
+  position: absolute;
+  width: 400px;
+  height: 289px;
+  top: 444px;
+  left: 727px;
+}
+
+.sec-2 .evt-content .price ul {
+  width: 100%;
+}
+
+.sec-2 .evt-content .price ul li {
+  margin-top: 24px;
+  background: url("../images/gou-1.png") right no-repeat;
+  cursor: pointer;
+}
+
+.sec-2 .evt-content .price ul li.on {
+  margin-top: 24px;
+  background: url("../images/gou-2.png") right no-repeat;
+}
+
+.sec-3 {
+  position: relative;
+  background: #fffcef;
+}
+
+.sec-3 .evt-content {
+  width: 1200px;
+  height: 636px;
+}
+
+.sec-3 .evt-content .s3-xiong {
+  position: absolute;
+  top: 352px;
+  left: 840px;
+}
+
+.sec-3 .evt-content .s3-cake {
+  position: absolute;
+  top: 44px;
+  left: 295px;
+}
+
+.sec-3 .evt-content .more {
+  position: absolute;
+  top: 535px;
+  left: 463px;
+}
+
+.sec-footer {
+  position: relative;
+  background: #dde7f3;
+}
+
+.sec-footer .evt-content {
+  width: 1200px;
+  padding: 100px 0;
+}
+
+.sec-footer .evt-content .hd-guize {
+  width: 820px;
+  margin: 0 auto;
+}
+
+.sec-footer .evt-content h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.sec-footer .evt-content p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.8em;
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-top: 5px;
+}
