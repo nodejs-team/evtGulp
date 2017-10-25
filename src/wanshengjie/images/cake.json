@@ -1,5 +1,5 @@
 {"file":"cake.png","frames":{
-"cake-1":{"x":457,"y":0,"w":454,"h":489,"offX":49,"offY":84,"sourceW":526,"sourceH":617,"duration":16},
-"cake-2":{"x":0,"y":551,"w":447,"h":425,"offX":49,"offY":148,"sourceW":526,"sourceH":617,"duration":16},
-"cake-3":{"x":0,"y":0,"w":447,"h":541,"offX":49,"offY":32,"sourceW":526,"sourceH":617,"duration":16},
-"cake-4":{"x":457,"y":499,"w":447,"h":425,"offX":49,"offY":148,"sourceW":526,"sourceH":617,"duration":16}}}
+"cake-1":{"x":371,"y":0,"w":367,"h":395,"offX":42,"offY":58,"sourceW":440,"sourceH":472,"duration":16},
+"cake-2":{"x":0,"y":447,"w":361,"h":343,"offX":42,"offY":110,"sourceW":440,"sourceH":472,"duration":16},
+"cake-3":{"x":0,"y":0,"w":361,"h":437,"offX":42,"offY":16,"sourceW":440,"sourceH":472,"duration":16},
+"cake-4":{"x":371,"y":405,"w":361,"h":343,"offX":42,"offY":110,"sourceW":440,"sourceH":472,"duration":16}}}

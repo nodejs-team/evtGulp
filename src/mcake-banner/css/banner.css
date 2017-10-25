@@ -1243,6 +1243,40 @@
   left: 410px;
 }
 
+.banner-slides .slides-wansheng .floadMen {
+  position: absolute;
+  width: 158px;
+  height: 335px;
+  top: 0;
+  left: 50%;
+  margin-left: 670px;
+  background: url("../images/wansheng/floadMen.png") no-repeat;
+  z-index: 101;
+}
+
+.banner-slides .slides-wansheng .floadMen.hover {
+  background: url("../images/wansheng/floadMen-hover.png") no-repeat;
+}
+
+.banner-slides .slides-wansheng .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-wansheng .w-title {
+  top: 119px;
+  left: 80px;
+}
+
+.banner-slides .slides-wansheng .gui-tou {
+  top: 10px;
+  left: 250px;
+}
+
+.banner-slides .slides-wansheng .tou {
+  top: 100px;
+  left: 300px;
+}
+
 /*浮动*/
 .floater {
   position: fixed;

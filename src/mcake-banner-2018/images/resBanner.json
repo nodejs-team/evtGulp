@@ -1,0 +1,24 @@
+{
+	"groups":[{
+			"keys":"banner_jpg,arrows_png,guitou_json",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"banner_jpg",
+			"type":"image",
+			"url":"zhounian/banner.jpg"
+		},
+		{
+			"name":"arrows_png",
+			"type":"image",
+			"url":"arrows.png"
+		},
+		{
+			"name":"guitou_json",
+			"subkeys":"tou-1,tou-2,tou-3,tou-4,tou-5,tou-6",
+			"type":"sheet",
+			"url":"guitou.json"
+		}
+	]
+}

@@ -105,6 +105,16 @@ function aaaa() {
       $(this).removeClass("hover");
     });
 
+    var on = false;
+    $(".huangou").click(function () {
+      console.log(on);
+      if(on){
+        $(this).addClass("on");
+      }else{
+        $(this).removeClass("on");
+      }
+      on=!on;
+    });
 
 
   };
@@ -140,7 +150,7 @@ function aaaa() {
           correctPNG($('#evt_container').get(0));
           bindScroll('#evt_container');
           loadComplete();
-        },6500);
+        },10000);
 
       });
     }

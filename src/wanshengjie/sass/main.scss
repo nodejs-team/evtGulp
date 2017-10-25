@@ -5,8 +5,8 @@
   height: 0;
   visibility: hidden;
 }
-body{background: #000 !important;}
-.loadings{ position:relative;  height:100%; background: #000; display: none;
+body{background: #000 !important; min-height: 1000px;}
+.loadings{ position:relative;  min-height: 1000px; background: #000; display: none;
   .evt-content{width: 1280px;}
 }
 
@@ -33,26 +33,30 @@ body{background: #000 !important;}
   .line{position:absolute; top:980px; left:50%; margin-left: -956px;}
   .evt-content{
     width: 1200px; height: 1539px;
-    .cake{ top: 63px; left: 46px;}
-    .word{ top: 167px; left: 753px;}
+    .cake{ top: 63px; left: 46px; }
+    .word{ top: 84px; left: 753px;}
     .guihun{ top:474px; left:535px;}
     .menpiao{ top:690px; left:326px;}
     .mens{width:84px; height: 83px; top:783px; left:577px;}
-    .price{ width: 320px; height: 320px; top: 350px; left: 870px;
+    .price{ width: 320px; height: 320px; top: 265px; left: 870px;
       div{position: relative;}
       .price-title{ width: 211px; margin: 0 auto;
         .new-pirce{position: absolute; top:20px; left:116px; color: #fff;
-          span{font-size: 35px; line-height: 50px; font-weight: bold;}
+          span{font-size: 35px; line-height: 50px; font-weight: bold; font-family: 'Arial','Microsoft YaHei','微软雅黑','黑体',SimHei;}
         }
         .old-pirce{position: absolute; top:69px; left:116px; color: #b3b3b3;
-          s{font-size: 26px; line-height: 50px; font-weight: bold;}
+          s{font-size: 26px; line-height: 50px; font-weight: bold; font-family: 'Arial','Microsoft YaHei','微软雅黑','黑体',SimHei;}
         }
       }
-      .num-content{ width: 181px; margin: 20px auto 0;
-        .nums{ margin: 22px auto;}
+      .num-content{ width: 250px; margin: 20px auto 0;
+        .nums{ margin: 22px auto; padding-left: 30px;}
         .mins,.add{ float: left; width: 54px; height: 42px; background: url("../images/mins.png") no-repeat; cursor: pointer;}
         .add{background: url("../images/add.png") no-repeat;}
         .num{ float: left; width: 30px;margin: 0 20px; line-height: 42px; color: #fff; font-size: 30px; text-align: center;}
+        .huangou{ background: url("../images/gou.png") 0px 10px no-repeat;  padding: 10px 0 20px 30px; cursor: pointer;
+          p{font-size: 20px; line-height: 30px; color: #fff;}
+        }
+        .huangou.on{ background: url("../images/guigou.png") 0px 10px no-repeat; }
         .go-btn{ width: 181px; height: 45px; margin: 0 auto; background: url("../images/go-btn.png") no-repeat;}
         .go-btn.hover{ background: url("../images/go-btn-hover.png") no-repeat;}
       }
@@ -68,7 +72,7 @@ body{background: #000 !important;}
     .gui-1{top: 80px; left: 0;}
     .gui-2{top: 238px; left:auto; right: 10px;}
     .duihua{ top: 87px; left:50%; margin-left: -411.5px;}
-    .cake{ top: 304px; left:370px;}
+    .cake{ top: 360px; left:412px; }
     .pic{ top: 304px; left:50%; margin-left: -404.5px;}
     .go{ width: 378px; height: 65px; top: 1150px; left: 50%; margin: -189px; background: url("../images/go.png") no-repeat;}
     .go.hover{ background: url("../images/go-hover.png") no-repeat;}
@@ -77,10 +81,10 @@ body{background: #000 !important;}
 
 .evt-footer{
   position: relative;  z-index: 10; width: 100%; background: url("../images/foot-bg.png") center no-repeat;
-  .evt-content{width: 1200px; padding: 100px 0;}
+  .evt-content{width: 1200px; padding: 50px 0;}
   .huodong{width: 620px; margin: 0 auto; color: #fff;
-    h2{ font-size: 28px;  font-weight: normal;  margin-bottom: 5px;  }
-    p{ font-size: 16px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em; color: #d3d3d3; }
+    h2{ font-size: 28px;  font-weight: normal;  margin-bottom: 5px;}
+    p{ font-size: 16px; line-height: 1.8em;  color: #d3d3d3; }
   }
 
 }

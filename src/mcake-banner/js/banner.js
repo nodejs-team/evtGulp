@@ -128,8 +128,16 @@
         });
 
       }
-    }
+    };
 
+    var wansheng= {
+      tou: function () {
+        var mc = new MovieClip('tou_png', "tou_json", 'el_tou');
+        mc.gotoAndPlay(1, -1);
+        /*"duration":12 = 0.6*20*/
+        return mc;
+      }
+    };
     var qx= {
       music: function () {
 
@@ -190,6 +198,12 @@
       $(".guizeShow").stop().fadeIn();
     },function () {
       $(".guizeShow").stop().fadeOut();
+    });
+
+    $(".floadMen").hover(function () {
+      $(this).addClass("hover");
+    },function () {
+      $(this).removeClass("hover");
     });
 
   };

@@ -479,7 +479,15 @@ background: #a5002f;
     .cake{ top: 180px; left: 70px;}
     .title{ top: 40px; left: 410px;}
   }
+  .slides-wansheng{
+    .floadMen{position:absolute; width: 158px; height: 335px; top:0; left: 50%; margin-left: 670px; background: url("../images/wansheng/floadMen.png") no-repeat; z-index: 101; }
+    .floadMen.hover{ background: url("../images/wansheng/floadMen-hover.png") no-repeat; }
+    .swiper-content{width: 1200px;}
+    .w-title{ top: 119px; left: 80px;}
+    .gui-tou{ top: 10px; left: 250px;}
+    .tou{ top:100px; left:300px; }
 
+  }
 
 }
 

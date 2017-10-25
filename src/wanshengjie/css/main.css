@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .clearfix:after {
   clear: both;
   content: ".";
@@ -8,11 +9,12 @@
 
 body {
   background: #000 !important;
+  min-height: 1000px;
 }
 
 .loadings {
   position: relative;
-  height: 100%;
+  min-height: 1000px;
   background: #000;
   display: none;
 }
@@ -97,7 +99,7 @@ body {
 }
 
 .sec-row1 .evt-content .word {
-  top: 167px;
+  top: 84px;
   left: 753px;
 }
 
@@ -121,7 +123,7 @@ body {
 .sec-row1 .evt-content .price {
   width: 320px;
   height: 320px;
-  top: 350px;
+  top: 265px;
   left: 870px;
 }
 
@@ -145,6 +147,7 @@ body {
   font-size: 35px;
   line-height: 50px;
   font-weight: bold;
+  font-family: 'Arial','Microsoft YaHei','微软雅黑','黑体',SimHei;
 }
 
 .sec-row1 .evt-content .price .price-title .old-pirce {
@@ -158,15 +161,17 @@ body {
   font-size: 26px;
   line-height: 50px;
   font-weight: bold;
+  font-family: 'Arial','Microsoft YaHei','微软雅黑','黑体',SimHei;
 }
 
 .sec-row1 .evt-content .price .num-content {
-  width: 181px;
+  width: 250px;
   margin: 20px auto 0;
 }
 
 .sec-row1 .evt-content .price .num-content .nums {
   margin: 22px auto;
+  padding-left: 30px;
 }
 
 .sec-row1 .evt-content .price .num-content .mins, .sec-row1 .evt-content .price .num-content .add {
@@ -189,6 +194,22 @@ body {
   color: #fff;
   font-size: 30px;
   text-align: center;
+}
+
+.sec-row1 .evt-content .price .num-content .huangou {
+  background: url("../images/gou.png") 0px 10px no-repeat;
+  padding: 10px 0 20px 30px;
+  cursor: pointer;
+}
+
+.sec-row1 .evt-content .price .num-content .huangou p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.sec-row1 .evt-content .price .num-content .huangou.on {
+  background: url("../images/guigou.png") 0px 10px no-repeat;
 }
 
 .sec-row1 .evt-content .price .num-content .go-btn {
@@ -230,8 +251,8 @@ body {
 }
 
 .sec-row2 .evt-content .cake {
-  top: 304px;
-  left: 370px;
+  top: 360px;
+  left: 412px;
 }
 
 .sec-row2 .evt-content .pic {
@@ -262,7 +283,7 @@ body {
 
 .evt-footer .evt-content {
   width: 1200px;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .evt-footer .huodong {
@@ -280,7 +301,5 @@ body {
 .evt-footer .huodong p {
   font-size: 16px;
   line-height: 1.8em;
-  padding-left: 1.5em;
-  text-indent: -1.5em;
   color: #d3d3d3;
 }
