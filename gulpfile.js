@@ -133,7 +133,7 @@ gulp.task('create', function(done){
           if (err) throw err;
           console.log('项目"' + projectName + '"创建成功');
           done();
-      });
+      }); 
     } else {
       console.log('项目"' + projectName + '"创建成功');
       done();
@@ -167,8 +167,8 @@ var buildHTML = lazypipe()
         },
         cssSelector: 'style[data-minify!="false"]'
     })
-    .pipe(replace, /"(css|images|js)\/([^"]+?)"/gm, '"' + config.revPrefix + config.projectName + "/" + '$1/$2' + '"')
-    .pipe(replace, /(:\s*url\()(\.\.)?([^)]+?)/gm, '$1' + config.revPrefix + config.projectName + '/$3');
+    .pipe(replace, /(:\s*url\(['"]?)(\.\.)?([^)]+?)/gm, '$1' + config.revPrefix + config.projectName + '/$3')
+    .pipe(replace, /(['"])(css|images|js)\/([^"]+?)(['"])/gm, '$1' + config.revPrefix + config.projectName + "/" + '$2/$3' + '$4');
 
 var buildJS = lazypipe()
     .pipe(uglify)
