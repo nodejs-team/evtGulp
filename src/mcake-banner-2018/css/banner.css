@@ -153,6 +153,20 @@
   z-index: 101;
 }
 
+.banner-slides .slides-shuang11 .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-shuang11 .cake {
+  top: 0px;
+  left: 240px;
+}
+
+.banner-slides .slides-shuang11 .title {
+  top: 30px;
+  left: 70px;
+}
+
 /*浮动 1*/
 .floater {
   position: fixed;

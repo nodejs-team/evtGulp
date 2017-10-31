@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>make活动banner</title>
     <!-- build:css css/banner.css -->
-    <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
     <link type="text/css" rel="stylesheet" href="css/base.css" />
     <link type="text/css" rel="stylesheet" href="css/banner.css" />
@@ -74,121 +73,63 @@
 
 </div>
 
+<style>
+    #floater{position:fixed; top:110px; right:10px; z-index:11; width:178px;}
+    #floater .floatImg{width:156px; position:relative; font-size:0; margin:0 0 0 17px;}
+    #floater .floatImg img{width:100%;}
+    #floater .floatImg a{width:100%; display:block; height:144px; position:absolute; top:0; left:0;}
+</style>
 
-<!--banner开始-->
 <div id="evt_loading">
     <span id="evt_spin">loading: 0%</span>
 </div>
 
 <div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
-    <!--floater 浮动窗口1-->
-    <div class="floater" id="floater" style="display: none;">
-        <div class="floatImg" data-anim="fade-in" data-delay="1.2">
-            <div class="float-icon">
-                <img src="images/floader/floader-1.png" alt="">
-            </div>
-
-            <div class="float-container">
-                <img src="images/floader/floader-2.png" alt="">
-            </div>
-            <a href="http://www.mcake.com"></a>
+    <div class="evt-content">
+        <div class="secItem q1" data-anim="slide-down-l" data-delay="0.8">
+            <img src="" width="" height="" />
         </div>
-
     </div>
+    <a href="#" style="width:100%; height:750px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
 
-    <!--icon 浮动窗口2-->
-    <div class="icon" id="icon">
-        <img src="images/floader/bd-zn.jpg" alt="">
-        <a href="http://www.mcake.com"></a>
-    </div>
-
-
-    <!--banner-slides-->
-    <div class="banner-slides">
-        <div class="swiper-container">
-            <a class="arrow arrow-left"></a>
-            <a class="arrow arrow-right"></a>
-            <div class="swiper-wrapper">
-                <!--swiper-slide 开始-->
-                <!--万圣节-->
-                <div class="swiper-slide slides-wansheng slides-first"  style="background:url(images/wansheng/bg.jpg) center repeat;">
-                    <div class="swiper-content">
-                        <div class="secItem w-title" data-anim="slide-right" data-delay="0.4">
-                            <img src="images/wansheng/w-title.png"/>
-                        </div>
-                        <div class="secItem gui-tou" data-anim="fade-in" data-delay="0.6">
-                            <img src="images/wansheng/gui-tou.png"/>
-                        </div>
-                        <div class="secItem tou" data-anim="fade-in" data-delay="0.6" id="el_tou"></div>
-                        <div class="secItem floadMen"></div>
-                    </div>
-                    <a href="#" class="slide-link"></a>
-
-                </div>
-
-                <!--会员日-->
-                <div class="swiper-slide slides-memberDay"  style="background:url(images/memberDay/member.jpg) center repeat;">
-                    <a href="#" class="slide-link"></a>
-                </div>
-
-                <!--周年庆-->
-                <div class="swiper-slide slides-zn"  style="background:url(images/zhounian/banner.jpg) center repeat;">
-                    <a href="#" class="slide-link"></a>
-                </div>
-
-                <!--赠薯片-->
-                <div class="swiper-slide slides-potato"  style="background:url(images/potato/bg-1.jpg) center repeat;">
-                    <div class="swiper-content">
-                        <div class="secItem cake" data-anim="slide-right" data-delay="0.6">
-                            <img src="images/potato/cake.png"/>
-                        </div>
-                        <div class="secItem title" data-anim="slide-left" data-delay="0.6">
-                            <img src="images/potato/p-ttt.png"/>
-                        </div>
-                    </div>
-                    <a href="#" class="slide-link"></a>
-                </div>
-
-
-
-
-                <!--北京：万圣节-->
-                <div class="swiper-slide slides-wansheng"  style="background:url(images/bj-wansheng/bj-banner.jpg) center repeat;">
-                    <a href="#" class="slide-link"></a>
-                </div>
-
-                <!--双11-->
-                <div class="swiper-slide slides-shuang11"  style="background:url(images/shuang11/bg-1.jpg) center repeat;">
-                    <div class="swiper-content">
-                        <div class="secItem cake" data-anim="slide-left" data-delay="0.6">
-                            <img src="images/shuang11/b-cake.png"/>
-                        </div>
-                        <div class="secItem title" data-anim="slide-right" data-delay="0.4">
-                            <img src="images/shuang11/b-tt.png"/>
-                        </div>
-                    </div>
-                    <a href="#" class="slide-link"></a>
-                </div>
-
-
-                <!--swiper-slide 结束-->
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination pagination"></div>
+    <div id="floater">
+        <div class="floatImg">
+            <img src="http://edm.mcake.com/shuxy/2016/strawberry/images/strawberry_floater.png" alt="">
+            <a href="http://www.mcake.com"></a>
         </div>
     </div>
 
 </div>
-<!--banner结束-->
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
 <script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>
 <!-- build:js js/banner.js -->
-<script src="js/idangerous.swiper.min.js"></script>
-<script type="text/javascript" src="js/animate-util-swiperbanner.js"></script>
+<script type="text/javascript" src="js/animate-util.js"></script>
 <script type="text/javascript" src="js/resDataBanner.js"></script>
 <script type="text/javascript" src="js/banner.js"></script>
 <!-- endbuild -->
-
+<script>
+    /*;(function(){
+        var height = $("#evt_container").outerHeight();
+        var fHeight = 167;
+        var fTop = 110;
+        var fRight = 10;
+        var floater = $('#floater');
+        var floaterPosition = 'fixed';
+        var winWidth = $(window).width();
+        var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+        $(window).on("scroll", function(){
+            var sTop = $(this).scrollTop();
+            if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
+                floater.css({position: "absolute", top: height - fHeight, right: absRight});
+                floaterPosition = 'absolute';
+            }
+            if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
+                floater.css({position: "fixed", top: fTop, right:fRight});
+                floaterPosition = 'fixed';
+            }
+        });
+    })();*/
+</script>
 </body>
 </html>
