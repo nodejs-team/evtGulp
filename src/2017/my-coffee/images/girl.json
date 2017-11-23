@@ -1,0 +1,5 @@
+{"file":"girl.png","frames":{
+"girl-1":{"x":0,"y":429,"w":389,"h":419,"offX":77,"offY":36,"sourceW":557,"sourceH":498,"duration":12},
+"girl-2":{"x":0,"y":0,"w":389,"h":419,"offX":77,"offY":36,"sourceW":557,"sourceH":498,"duration":12},
+"girl-3":{"x":399,"y":429,"w":385,"h":419,"offX":81,"offY":36,"sourceW":557,"sourceH":498,"duration":12},
+"girl-4":{"x":399,"y":0,"w":385,"h":419,"offX":81,"offY":36,"sourceW":557,"sourceH":498,"duration":12}}}

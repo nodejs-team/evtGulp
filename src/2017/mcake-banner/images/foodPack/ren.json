@@ -1,0 +1,9 @@
+{"file":"ren.png","frames":{
+
+"ren-1":{"x":379,"y":304,"w":336,"h":144,"offX":14,"offY":0,"sourceW":371,"sourceH":158,"duration":4},
+"ren-2":{"x":0,"y":324,"w":356,"h":140,"offX":12,"offY":0,"sourceW":371,"sourceH":158,"duration":0},
+"ren-3":{"x":379,"y":0,"w":356,"h":140,"offX":12,"offY":0,"sourceW":371,"sourceH":158,"duration":0},
+"ren-4":{"x":379,"y":152,"w":356,"h":140,"offX":12,"offY":0,"sourceW":371,"sourceH":158,"duration":10},
+"ren-5":{"x":0,"y":0,"w":367,"h":152,"offX":1,"offY":0,"sourceW":371,"sourceH":158,"duration":4},
+"ren-6":{"x":0,"y":164,"w":367,"h":148,"offX":1,"offY":0,"sourceW":371,"sourceH":158,"duration":4}
+}}

@@ -1,0 +1,169 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.jpg") center top no-repeat;
+}
+
+.evt-container .btns {
+  width: 207px;
+  height: 67px;
+  background: #f19ec2;
+  top: 982px;
+  left: 130px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.evt-container .btns span {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  line-height: 67px;
+}
+
+.sec-banner {
+  position: relative;
+  background: url("../images/banner.png") top center no-repeat;
+}
+
+.sec-banner .evt-content {
+  width: 1000px;
+  height: 713px;
+}
+
+.sec-banner .evt-content .time {
+  position: absolute;
+  width: 600px;
+  top: 438px;
+  left: 50%;
+  margin-left: -300px;
+  color: #a75836;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sec-1 {
+  position: relative;
+}
+
+.sec-1 .evt-content {
+  width: 1000px;
+  height: 2531px;
+}
+
+.sec-1 .evt-content div {
+  position: absolute;
+}
+
+.sec-1 .evt-content .pic-1 {
+  top: -71px;
+  left: 0px;
+}
+
+.sec-1 .evt-content .pic-2 {
+  top: 565px;
+  left: 377px;
+}
+
+.sec-1 .evt-content .pic-3 {
+  top: 1544px;
+  left: 88px;
+}
+
+.sec-1 .evt-content .pic-4 {
+  top: 1961px;
+  left: 88px;
+}
+
+.sec-1 .evt-content .word-1 {
+  top: 147px;
+  left: 626px;
+}
+
+.sec-1 .evt-content .word-2 {
+  top: 693px;
+  left: 60px;
+}
+
+.sec-1 .evt-content .word-3 {
+  top: 1295px;
+  left: 280px;
+}
+
+.sec-footer {
+  background: #ffedef;
+  box-shadow: 0 0 20px #c5c5c5;
+}
+
+.sec-footer .evt-content {
+  width: 1000px;
+}
+
+.sec-footer .evt-content .more {
+  position: absolute;
+  right: 82px;
+  bottom: 56px;
+  width: 130px;
+  height: 130px;
+}
+
+.sec-footer .evt-content .hd-guize {
+  width: 750px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.sec-footer .evt-content h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-left: -80px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.sec-footer .evt-content p {
+  font-size: 20px;
+  color: #000;
+  line-height: 1.6em;
+  padding-left: 30px;
+  text-indent: -30px;
+  margin-top: 5px;
+}
+
+.floater {
+  position: fixed;
+  width: 145px;
+  height: 145px;
+  top: 600px;
+  z-index: 11;
+  left: 50%;
+  margin-left: 470px;
+  cursor: pointer;
+}
+
+.floater .tips {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  right: 0;
+  top: -5px;
+  border-radius: 50%;
+  background: url("../images/tips.png") center no-repeat;
+  text-align: center;
+  z-index: 12;
+  cursor: Default;
+}
+
+.floater .tips span {
+  font-size: 24px;
+  color: #fff;
+  line-height: 38px;
+}

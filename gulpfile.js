@@ -28,8 +28,8 @@ var gulp         = require('gulp'),
     fsPath       = require('path'),
     argv         = require('yargs').argv;
 
-var SRC = 'src/' + config.projectName;
-var DIST = 'dist/' + config.projectName;
+var SRC = 'src/'+ config.activeName + config.projectName;
+var DIST = 'dist/'+ config.activeName + config.projectName;
 var path = {
     src: SRC,
     dist: DIST,

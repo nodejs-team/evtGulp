@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>make活动</title>
+  <!-- build:css css/main.css -->
+  <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+  <link type="text/css" rel="stylesheet" href="css/base.css"/>
+  <link type="text/css" rel="stylesheet" href="css/main.css"/>
+  <!-- endbuild -->
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
+<div class="header">
+
+  <div class="header_top_box">
+    <div class="header_top">
+      <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+        <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+          <div class="wallbox wall_top">
+            <div id="scrollobj"
+                 style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+            <div class="logoer">
+              <a href="http://ebsig.mcake.com">
+                <img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+              </a>
+            </div>
+            <ul class="navbar" id="welcome">
+              <li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li>
+              <li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li>
+            </ul>
+            <ul class="navbar">
+              <!--网站录音功能 add by zan.yu 2015-12-11 ---start----->
+              <li class="record" style="display: none;">
+                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count"
+                                                                                                    style="margin-left: 5px;">0</span>个</a>
+              </li>
+              <!--网站录音功能 add by zan.yu 2015-12-11 ---end----->
+              <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold"
+                                                           target="_blank"><i></i> <span id="msg_count">0</span>封</a>
+              </li>
+              <li class="m_cart">
+                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+              </li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="wallbox">
+          <div class="header_right">
+            <ul class="phone_delivery">
+              <li class="phone"><span>4006-678-678</span><i></i></li>
+              <li class="delivery"><span><a href="/shop/article-48.html#city_110"
+                                            target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+            </ul>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos
+                Produits</samp><span>全部产品</span></a>
+            </li>
+            <li>
+              <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+            </li>
+            <li>
+              <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+            </li>
+            <li>
+              <a href="/shop/member_center.html" target="_blank">
+                <samp>Mon M'CAKE</samp>
+                <span>会员中心</span>
+              </a>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="evt_loading">
+  <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container">
+
+  <div class="evt-banner">
+    <div class="evt-content">
+      <div class="nut-bg">
+        <img src="images/nut.png" width="391" height="301" alt="">
+      </div>
+      <div class="b-cake" data-anim="slide-up-l" data-chain=".cake-tips">
+        <img src="images/cake.png" width="580" height="526"/>
+        <div class="cake-tips" data-anim="fade-in" data-ignore="true">
+          <img src="images/cake-tips.png" width="396" height="198" alt="">
+        </div>
+      </div>
+      <div class="banner-text" data-anim="slide-left" data-delay="1.4">
+        <img src="images/banner-text.png" width="491" height="531"/>
+      </div>
+      <div class="cake-sm" data-anim="slide-up-l" data-delay="2">
+        <img src="images/cake-sm.png" width="187" height="242" alt="">
+      </div>
+      <div class="cake-spoon" data-anim="slide-up-l" data-delay="2.6">
+        <img src="images/spoon.png" width="271" height="227" alt="">
+      </div>
+      <div class="coffee" data-anim="slide-down" data-delay="3.2">
+        <img src="images/coffee.png" width="217" height="217" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="evt-main">
+    <div class="evt-content">
+      <div class="counter-down counter-down-2">
+        <div class="text">距活动开始还有</div>
+        <div id="count_fliper2" class="counter-flips">
+          <span class="flipx day">
+            <span style="background-position: 0 -0px;"></span>
+            <span style="background-position: 0 -48px;"></span>
+          </span>
+
+
+        </div>
+      </div>
+
+      <div class="counter-down" style="display:none">
+        <div class="text">距活动结束还有</div>
+        <div id="count_fliper" class="counter-flips">
+          <span class="flip hour">
+            <span></span>
+            <span></span>
+          </span>
+          <span class="flip minite">
+            <span></span>
+            <span></span>
+          </span>
+          <span class="flip second">
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="main-cake">
+        <img src="images/main-cake.jpg" width="576" height="660" alt="">
+      </div>
+
+      <div class="main-action-wrap">
+        <div class="main-text">
+          <img src="images/main-text.png" width="472" height="244" alt="">
+        </div>
+        <div class="main-action">
+          <div class="cake-select">
+            <span class="c-check checked"></span>
+            <span class="c-check"></span>
+          </div>
+          <div>
+            <img src="images/main-action.png" width="477" height="72" alt="">
+          </div>
+          <a href="#" class="buy-btn">立即订购</a>
+        </div>
+      </div>
+
+      <div class="footer-action">
+        <a href="#">
+          <img src="images/footer-action.png" width="525" height="53" alt="">
+        </a>
+      </div>
+
+      <div class="main-deco1">
+        <img src="images/deco1.png" width="152" height="220" alt="">
+      </div>
+
+      <div class="main-deco2">
+        <img src="images/deco2.png" width="203" height="170" alt="">
+      </div>
+
+      <div class="main-deco3">
+        <img src="images/deco3.png" width="198" height="178" alt="">
+      </div>
+
+      <div class="main-deco4">
+        <img src="images/deco4.png" width="247" height="242" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="evt-footer">
+    <div class="footer-bd">
+      <div class="evt-rules">
+        <h2>活动规则</h2>
+        <p>1、活动时间：2017年10月每周二10:00——22:00</p>
+        <p>2、活动城市：上海、苏州、杭州</p>
+        <p>3、支付方式：微信、支付宝、现金</p>
+        <p>4、活动仅限会员等级LV2及以上会员参与</p>
+        <p>5、会员日活动期间，购买法香奶油可丽蛋糕(1磅、2磅，限量各100个）可享受8折优惠，另送Ora²皓乐齿奢选香氛水漾橙香或馥郁花果漱口水一瓶（口味随机不指定 ）抢完即止，不与任何活动同享。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  __END_DATE__ = '2017-11-5'
+</script>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
