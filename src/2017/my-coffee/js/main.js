@@ -23,6 +23,7 @@
           self.num++;
         }
         ele.siblings().find('.num').val(self.num);
+        ele.siblings().find('.num-span').html(self.num);
         self.numCounts(ele);
     },
     reduce:function (ele) {
@@ -32,6 +33,7 @@
           self.num--;
         }
         ele.siblings().find('.num').val(self.num);
+        ele.siblings().find('.num-span').html(self.num);
         self.numCounts(ele);
     },
     numCounts:function (ele) {
@@ -59,13 +61,19 @@
     numInit:function () {
         var self = this;
         var Oldprice=0;
+      var totalOldprice=0;
+      $(".num").val(1);
 
         this.$els.each(function () {
           Oldprice= $(this).find('.price_p li.cur').data('oldprice');
           var totalNum = $(this).find(".num").val();
-          var totalOldprice = Oldprice * totalNum;
+
+
+          totalOldprice = Oldprice * totalNum;
+
           var ix = parseInt(totalNum / 2);
           var totalPrice =(Oldprice * totalNum) - (Oldprice/2 * ix);
+
           $(this).find('.old-price').html(totalOldprice);
           $(this).find('.now-price').html(totalPrice);
 

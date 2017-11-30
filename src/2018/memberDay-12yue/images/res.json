@@ -1,9 +1,14 @@
 {
 	"groups":[{
-			"keys":"select_png,select-on_png,spoon_png,title_png,title-1_png,title-2_png,title-3_png,yh_png,banner_bg_jpg,banner-bg_png,banner-cake_png,banner-text_png,banner-title_png,bg_jpg,bg_png,bolang_png,btn_png,cake_png,cake-1_png,cake-2_png,cake-3_png,cake-sm_png,cake-tips_png,checkbox_png,coffee_png,count-down-bg_png,decimal_png,deco1_png,deco2_png,deco3_png,deco4_png,ds-1_png,ds-2_png,ds-3_png,ds-4_png,footer-action_png,foot-img_png,go-btn_png,hd_png,img-1_png,img-2_png,img-3_png,img-4_png,kugou_ico,logo _png,lv_png,main-action_png,main-bg_jpg,main-cake_jpg,main-text_png,m-logo_png,mx_png,nut_png,pr-1_png,pr-2_png,price_png,qqplayer_ico",
+			"keys":"price_png,select_png,select-on_png,title-1_png,title-2_png,title-3_png,banner-bg_png,banner-cake_png,banner-title_png,cake-1_png,cake-2_png,cake-3_png,foot-img_png,go-btn_png,hd_png,img-1_png,img-2_png,img-3_png,img-4_png,m-logo_png",
 			"name":"preload"
 		}],
 	"resources":[
+		{
+			"name":"price_png",
+			"type":"image",
+			"url":"price.png"
+		},
 		{
 			"name":"select_png",
 			"type":"image",
@@ -13,16 +18,6 @@
 			"name":"select-on_png",
 			"type":"image",
 			"url":"select-on.png"
-		},
-		{
-			"name":"spoon_png",
-			"type":"image",
-			"url":"spoon.png"
-		},
-		{
-			"name":"title_png",
-			"type":"image",
-			"url":"title.png"
 		},
 		{
 			"name":"title-1_png",
@@ -40,16 +35,6 @@
 			"url":"title-3.png"
 		},
 		{
-			"name":"yh_png",
-			"type":"image",
-			"url":"yh.png"
-		},
-		{
-			"name":"banner_bg_jpg",
-			"type":"image",
-			"url":"banner_bg.jpg"
-		},
-		{
 			"name":"banner-bg_png",
 			"type":"image",
 			"url":"banner-bg.png"
@@ -60,39 +45,9 @@
 			"url":"banner-cake.png"
 		},
 		{
-			"name":"banner-text_png",
-			"type":"image",
-			"url":"banner-text.png"
-		},
-		{
 			"name":"banner-title_png",
 			"type":"image",
 			"url":"banner-title.png"
-		},
-		{
-			"name":"bg_jpg",
-			"type":"image",
-			"url":"bg.jpg"
-		},
-		{
-			"name":"bg_png",
-			"type":"image",
-			"url":"bg.png"
-		},
-		{
-			"name":"bolang_png",
-			"type":"image",
-			"url":"bolang.png"
-		},
-		{
-			"name":"btn_png",
-			"type":"image",
-			"url":"btn.png"
-		},
-		{
-			"name":"cake_png",
-			"type":"image",
-			"url":"cake.png"
 		},
 		{
 			"name":"cake-1_png",
@@ -108,81 +63,6 @@
 			"name":"cake-3_png",
 			"type":"image",
 			"url":"cake-3.png"
-		},
-		{
-			"name":"cake-sm_png",
-			"type":"image",
-			"url":"cake-sm.png"
-		},
-		{
-			"name":"cake-tips_png",
-			"type":"image",
-			"url":"cake-tips.png"
-		},
-		{
-			"name":"checkbox_png",
-			"type":"image",
-			"url":"checkbox.png"
-		},
-		{
-			"name":"coffee_png",
-			"type":"image",
-			"url":"coffee.png"
-		},
-		{
-			"name":"count-down-bg_png",
-			"type":"image",
-			"url":"count-down-bg.png"
-		},
-		{
-			"name":"decimal_png",
-			"type":"image",
-			"url":"decimal.png"
-		},
-		{
-			"name":"deco1_png",
-			"type":"image",
-			"url":"deco1.png"
-		},
-		{
-			"name":"deco2_png",
-			"type":"image",
-			"url":"deco2.png"
-		},
-		{
-			"name":"deco3_png",
-			"type":"image",
-			"url":"deco3.png"
-		},
-		{
-			"name":"deco4_png",
-			"type":"image",
-			"url":"deco4.png"
-		},
-		{
-			"name":"ds-1_png",
-			"type":"image",
-			"url":"ds-1.png"
-		},
-		{
-			"name":"ds-2_png",
-			"type":"image",
-			"url":"ds-2.png"
-		},
-		{
-			"name":"ds-3_png",
-			"type":"image",
-			"url":"ds-3.png"
-		},
-		{
-			"name":"ds-4_png",
-			"type":"image",
-			"url":"ds-4.png"
-		},
-		{
-			"name":"footer-action_png",
-			"type":"image",
-			"url":"footer-action.png"
 		},
 		{
 			"name":"foot-img_png",
@@ -220,74 +100,9 @@
 			"url":"img-4.png"
 		},
 		{
-			"name":"kugou_ico",
-			"type":"bin",
-			"url":"kugou.ico"
-		},
-		{
-			"name":"logo _png",
-			"type":"image",
-			"url":"logo .png"
-		},
-		{
-			"name":"lv_png",
-			"type":"image",
-			"url":"lv.png"
-		},
-		{
-			"name":"main-action_png",
-			"type":"image",
-			"url":"main-action.png"
-		},
-		{
-			"name":"main-bg_jpg",
-			"type":"image",
-			"url":"main-bg.jpg"
-		},
-		{
-			"name":"main-cake_jpg",
-			"type":"image",
-			"url":"main-cake.jpg"
-		},
-		{
-			"name":"main-text_png",
-			"type":"image",
-			"url":"main-text.png"
-		},
-		{
 			"name":"m-logo_png",
 			"type":"image",
 			"url":"m-logo.png"
-		},
-		{
-			"name":"mx_png",
-			"type":"image",
-			"url":"mx.png"
-		},
-		{
-			"name":"nut_png",
-			"type":"image",
-			"url":"nut.png"
-		},
-		{
-			"name":"pr-1_png",
-			"type":"image",
-			"url":"pr-1.png"
-		},
-		{
-			"name":"pr-2_png",
-			"type":"image",
-			"url":"pr-2.png"
-		},
-		{
-			"name":"price_png",
-			"type":"image",
-			"url":"price.png"
-		},
-		{
-			"name":"qqplayer_ico",
-			"type":"bin",
-			"url":"qqplayer.ico"
 		}
 	]
 }

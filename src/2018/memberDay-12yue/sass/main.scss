@@ -7,59 +7,96 @@
 }
 .evt-container{ overflow: hidden;}
 .sec-top{
-  background:url("../images/bg.png") center; z-index: 1;
+  background:url("../images/banner-bg.png") center; z-index: 1;
   .evt-content{
-    width: 1000px; height: 712px;
-    .ds-1{ top: -10px; left: -20px;}
-    .ds-2{ top: 382px; left: 93px;}
-    .ds-3{ top: 546px; left: 264px;}
-    .ds-4{ top: 514px; left: -20px;}
-    .cake-1{ top: 115px; left: 180px;}
-    .yh{ top: 150px; left: -55px;}
-    .title{ top: 100px; left: 643px;}
+    width: 1200px; height: 581px;
+    .banner-cake{ top: 40px; left: 20px;}
+    .banner-title{ top: 100px; left: 695px;}
   }
 }
 
 
 
-.sec-main{  position: relative; z-index: 1;background:url(../images/bg.jpg) repeat;
+.sec-main{  position: relative; z-index: 1;background:#fffff7; padding-bottom: 50px;
   .evt-content{
-    width: 1000px; height: 1000px;
-    .cake-2{ top: 113px; left: -50px;}
-    .logo{ top: 143px; left: 607px;}
-    .lv{ top: 230px; left: 532px;}
+    width: 1000px;
+    .row{position: relative; }
+    .row0{height: 389px;
+      .m-logo{ top: 60px; width: 403px; left:50%; margin-left: -201.5px;}
+      .hd{ top: 165px; width: 608px; left:50%; margin-left: -304px;}
+    }
+    .row1{height: 660px;
+      .cake{top: 0; left: 139px;}
+      .price-select{ top: 158px; left: 745px;}
+    }
+    .row2{height: 561px;
+      .cake{top: -80px; left: 467px;}
+      .price-select{ top: 244px; left: 156px;}
+    }
+    .row3{height: 678px;
+      .cake{top: 10px; left: -162px;}
+      .price-select{ top: 312px; left: 784px;}
+    }
+    .row4{
+        .more{ width: 297px; margin: 50px auto;}
+        .prolist{ width: 1010px; margin: 0 auto;
+            ul{ margin-left: 20px;
+            li{ width: 227px; margin-right: 20px; float: left;
+              .des{position: relative; padding:30px 20px 10px;
+                p{font-size: 18px;}
+                .cl{position: relative; margin: 10px auto; padding-left:13px; line-height: 30px;color:#b08d67;
+                  i{font-style: normal; position: absolute; top: -3px; left: 0;}
+                  span{ font-size: 30px; }
+                }
 
-    .select{position: absolute; top:535px; left:628px; width:400px;  padding:0;
-      .radio {opacity:0; display:none; height:0; }
-      label.label {background:url(../images/kugou.ico) left no-repeat; background-size: 8%; height:30px; padding-left:50px; margin:10px auto;font-size: 5px; display: block; cursor: pointer;
-        img{width: 90%;}
+                .gobtn{ text-align: center; line-height:30px;  background:url("../images/gobtn.png") center no-repeat; border-radius: 5px;
+                  span{font-size: 16px; color: #fff;}
+                }
+              }
+            }
+          }
+        }
+    }
+
+
+
+    .price-select{position: absolute; top:535px; left:628px; width:400px; padding:0;
+      .price-title{margin-bottom: 30px;}
+      .price{padding-left: 40px; position: relative;
+        .select-li{position: absolute; left: 0; top:-3px;
+          li{width: 34px; height: 33px; background: url("../images/select.png") no-repeat; margin-bottom: 10px; cursor: pointer;}
+          li.on{ background: url("../images/select-on.png") no-repeat;}
+        }
       }
-      input[type='radio'].radio:checked + .label{background:url(../images/qqplayer.ico) no-repeat; background-size: 8%; margin: 10px auto;}
+      .go-btn{ width: 141px;height: 41px; background: url("../images/go-btn.png"); margin-top: 30px; cursor: pointer; }
     }
 
-    .go-btn{ width: 200px;height: 63px; background: url("../images/btn.png"); top: 667px; left: 702px; text-align: center;
-      a{display: block; width: 100%; height: 100%; color: #fff;}
+    /*磅数选择*/
+    .select{position: absolute; right: 0; top: 5px; width: 64px;
+      .js_bshu{ display: block; width: 100%; height: 25px; z-index: 2; font-size: 16px !important; line-height: 25px;  cursor: pointer; text-indent: 10px;
+      background: url("../images/sele-li.png") left no-repeat;
+        em{font-style: normal;}
+      }
+      .js_bshu.on{ background: #d2d2d2;}
+      dl.js_select{  position: absolute;width:62.5px;  top: 25px;  left: 50%;  text-align: left;  margin-left: -50%;  font-size: 18px;  background: #fffff7; border: #d8d8d8 1px solid; border-top: none;  z-index: 10; display: none;
+        dd{ height: 22px; width:100%; text-indent: 10px;  line-height: 22px;  cursor: pointer;  color: #757575;  margin: 0; font-size: 16px;  background: #fffff7;  }
+        strong{  font-size: 14px;  }
+        dd.on{  color: #fff; background: #e4c27b; }
+      }
     }
 
-    .go-btn span{font-size: 30px; color: #fff; text-align: center; line-height:63px; }
+
   }
 }
 
 
-.main-top-bar{ position: absolute; width: 1280px; height: 93px; background: url("../images/bolang.png"); z-index: 10; top: -60px;}
+
 .evt-footer{
-  position: relative;  background:#f1f2b4;  z-index: 10; width: 100%; margin-top: -80px;
-  .evt-content{width: 1280px;}
-  .footer-left{position: relative; float: left; width:451px; height: 372px; margin-left: 70px; margin-top: 20px;}
-  .footer-bd{float: left;  position: relative; width:52%;  color:#000; margin-left: 65px;
-    .evt-rules{ padding:90px 0 15px 60px; font-size:20px; margin-left: 40px;
-      h2{  font-weight: normal;  margin-bottom: 5px;  }
-      p{ line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+  position: relative;  background:#6f594e; width: 100%;
+  .foot-img{position: absolute; top: 50px; right:300px;}
+  .evt-content{width: 1200px;}
+    .evt-rules{width: 960px; margin: 0 auto; padding:50px 0 60px 55px; color: #fff;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:20px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
     }
-    .x-mym{position: absolute; top: -63px; right: 10%;}
-  }
-
-
-
-
 }

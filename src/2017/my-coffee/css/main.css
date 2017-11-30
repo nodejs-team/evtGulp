@@ -464,6 +464,14 @@
   line-height: 27px;
   font-size: 18px;
   font-weight: bold;
+  opacity: 1;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .price .price_num dl dd.on {
@@ -484,14 +492,17 @@
   margin: 0 5px;
 }
 
-.price .price_num dl dt input {
+.price .price_num dl dt input, .price span.num-span {
+  display: block;
   background: transparent none repeat scroll 0 0;
   border: medium none;
   color: #000;
+  line-height: 30px;
   height: 30px;
   text-align: center;
   width: 100%;
   font-size: 18px;
+  opacity: 1;
 }
 
 .price ul.buy_btn_box {

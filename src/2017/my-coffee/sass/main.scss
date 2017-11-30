@@ -130,12 +130,23 @@
 
   .price_num{margin-bottom: 20px;}
   .price_num dl {  float: right; margin-right: 18px; }
-  .price_num dl dd { border: #b7e5d3 1px solid; border-radius: 50%;  cursor: pointer;  float: left; width: 30px;  height:30px;  color: #000;  text-align: center; line-height: 27px; font-size: 18px; font-weight: bold;}
+  .price_num dl dd { border: #b7e5d3 1px solid; border-radius: 50%;  cursor: pointer;  float: left; width: 30px;  height:30px;  color: #000;  text-align: center; line-height: 27px; font-size: 18px; font-weight: bold; opacity: 1;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+  }
   .price_num dl dd.on { background: #b7e5d3; }
   .price_l{display:block; float: left; font-size: 16px;  line-height: 30px; }
 
   .price_num dl dt {  float: left;  height: 30px;  width: 60px; margin: 0 5px;  }
-  .price_num dl dt input {  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: medium none;  color: #000;  height: 30px; text-align: center;  width: 100%; font-size: 18px; }
+
+  .price_num dl dt input,span.num-span {display: block;  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: medium none;  color: #000; line-height: 30px;  height: 30px; text-align: center;  width: 100%; font-size: 18px; opacity: 1;  }
+
+
   ul.buy_btn_box {  overflow: hidden;margin-top: 10px;  }
   ul.buy_btn_box li {  float: left;  width:46%; height: 40px;margin-right:10px;  }
   ul.buy_btn_box li span { display: block; background: #a6e0cc; border:none; color: #000; cursor: pointer; height: 40px; line-height: 40px; font-size: 16px; width: 100%; text-align: center; font-weight: bold;  }
