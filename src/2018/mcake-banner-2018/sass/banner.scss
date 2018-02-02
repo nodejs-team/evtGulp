@@ -267,21 +267,64 @@ background: #a5002f;
     .cake{top: 146px; left: 850px;}
   }
 
+
   .slides-ChristmasDay{
     .swiper-content{width: 1200px;}
-    div{position: absolute;}
-    .chri-w-l{ top: 180px; left: 216px;}
-    .chri-men{ top: 27px; left:50%; margin-left: -196px;}
-    .chri-w-r{ top: 65px; left: 685px;}
-    .chri-word{ width: 341px; top: 385px; left:50%; margin-left: -184px;}
-    .word{ width: 1000px; top: 498px; left:50%; margin-left: -500px;
+    .chri-w-l{position: absolute; top: 180px; left: 216px;}
+    .chri-men{position: absolute; top: 27px; left:50%; margin-left: -196px;}
+    .chri-w-r{position: absolute; top: 65px; left: 685px;}
+    .chri-word{position: absolute; width: 341px; top: 385px; left:50%; margin-left: -184px;}
+    .word{position: absolute; width: 1000px; top: 498px; left:50%; margin-left: -500px;
+      span{ line-height: 15px; color: #fff; display: inline-block; font-size: 16px; padding: 0 35px; border-right:#fff 1px solid;text-align: center;}
+    }
+    .word2{position: absolute; width: 1200px; top: 498px; left:50%; margin-left: -600px;
       span{ line-height: 15px; color: #fff; display: inline-block; font-size: 16px; padding: 0 35px; border-right:#fff 1px solid;text-align: center;}
     }
   }
 
 
+  .slides-newYear{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+
+    .new-year-1{ top: 123px; left: 50%; width: 565px; margin-left: -282.5px;}
+    .new-year-2{ top: 196px; left: 50%; width: 723px; margin-left: -361.5px;}
+    .new-year-3{ top: 304px; left:50%; width: 396px; margin-left:-198px;}
+    .b-cake{top: 73px;left:50%; width: 801px; margin-left: -400.5px;}
+    .b-m{top: -100px;left: 28px;}
+    .b-m2{top: 250px;left: 400px;}
+  }
 
 
+  .slides-memberDay-1yue{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .banner-title{ top: 0; left: 50%; width: 1322px; margin-left: -661px;}
+    .banner-l{ top: 0; left: 50%; margin-left: -1000px;  margin-left: -1000px !important;}
+    .banner-r{ top: 0; left: 50%;  margin-left: 350px;  margin-left: 350px !important;}
+
+  }
+
+  .slides-new-people{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .banner-title{ top: 107px; left: -10px;}
+    .banner-cake{top: 0; left: 505px;}
+    .banner-guang{ top: 0; left: 505px;}
+  }
+
+  .slides-caomei{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .banner-cake{ top: 85px; left: 20px;}
+    .banner-title{ top: 116px; left: 630px;}
+    .banner-cake1{ bottom:-100px; left: 979px;}
+    .banner-caomei{ top: 317px; left: -60px;}
+  }
 
 
 }

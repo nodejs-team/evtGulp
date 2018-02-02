@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container">
+
+    <div class="sec-main">
+        <div class="evt-content">
+            <div class="bt"><img src="images/bt.png" alt=""></div>
+            <div class="heartList">
+                <ul>
+                    <li class="clearfix"><div class="icon"><img src="images/icon.png" alt=""></div>
+                        <div class="content">
+                            <h2>ID: Distlemoto</h2>
+                            <p>我们把新世纪的祝福和希望，悄悄地放在将融地雪被下，让它们，沿着春天地秧
+                                苗生长，送给你满年地丰硕与芬芳！我们把新世纪的祝福和希望，悄悄地放在将融地雪被下，让它们，沿着春天地秧
+                                苗生长</p>
+                        </div>
+                        <div class="heart">
+                            <div class="tips tipstwinkling">
+                                <span>+1</span>
+                            </div>
+                            <img src="images/heart.png" class="twinkling" alt="">
+                            142
+                        </div>
+                    </li>
+                    <li class="clearfix"><div class="icon"><img src="images/icon.png" alt=""></div>
+                        <div class="content">
+                            <h2>ID: Distlemoto</h2>
+                            <p>我们把新世纪的祝福和希望，悄悄地放在将融地雪被下，让它们，沿着春天地秧
+                                苗生长，送给你满年地丰硕与芬芳！</p>
+                        </div>
+                        <div class="heart">
+                            <div class="tips tipstwinkling">
+                                <span>+1</span>
+                            </div>
+                            <img src="images/heart.png" class="twinkling" alt="">142
+                        </div>
+                    </li>
+                    <li class="clearfix num1 ani-move"><div class="icon"><img src="images/icon.png" alt=""></div>
+                        <div class="content">
+                            <h2>ID: Distlemoto</h2>
+                            <p>送给你满年地丰硕与芬芳！</p>
+                        </div>
+                        <div class="heart">
+                            <div class="tips tipstwinkling">
+                                <span>+1</span>
+                            </div>
+                            <img src="images/heart.png" class="twinkling" alt="">142
+                        </div>
+                    </li>
+                    <li class="clearfix"><div class="icon"><img src="images/icon.png" alt=""></div>
+                        <div class="content">
+                            <h2>ID: Distlemoto</h2>
+                            <p>送给你满年地丰硕与芬芳！</p>
+                        </div>
+                        <div class="heart"><img src="images/heart.png" alt="">142</div>
+                    </li>
+                    <li class="clearfix"><div class="icon"><img src="images/icon.png" alt=""></div>
+                        <div class="content">
+                            <h2>ID: Distlemoto</h2>
+                            <p>我们把新世纪的祝福和希望，悄悄地放在将融地雪被下，让它们，沿着春天地秧
+                                苗生长，送给你满年地丰硕与芬芳！我们把新世纪的祝福和希望，悄悄地放在将融地雪被下，让它们，沿着春天地秧
+                                苗生长</p>
+                        </div>
+                        <div class="heart"><img src="images/heart.png" alt="">142</div>
+                    </li>
+                    <li class="clearfix"><div class="icon"><img src="images/icon.png" alt=""></div>
+                        <div class="content">
+                            <h2>ID: Distlemoto</h2>
+                            <p>我们把新世纪的祝福和希望，悄悄地放在将融地雪被下，让它们，沿着春天地秧
+                                苗生长，送给你满年地丰硕与芬芳！我们把新世纪的祝福和希望，悄悄地放在将融地雪被下，让它们，沿着春天地秧
+                                苗生长</p>
+                        </div>
+                        <div class="heart"><img src="images/heart.png" alt="">142</div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--<div class="bottomCover"></div>-->
+    </div>
+</div>
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+
+  function newHeart() {
+    var str = '<li class="ani-fadein clearfix"><div class="icon"><img src="images/icon.png" alt=""></div>'
+      +'<div class="content">'
+      +'<h2>ID: Distlemoto</h2>'
+      +'<p>我们把新世纪的祝福和希望，悄悄地放在将融地雪被下，让它们，沿着春天地秧苗生长，送给你满年地丰硕与芬芳！我们把新世纪的祝福和希望，悄悄地放在将融地雪被下，让它们，沿着春天地秧苗生长</p>'
+      +'</div>'
+      +'<div class="heart">'
+      +'<div class="tips tipstwinkling">'
+      +'<span>+1</span>'
+      +'</div>'
+      +'<img src="images/heart.png" class="twinkling" alt="">'
+      +'88888'
+      +'</div>'
+      +'</li>';
+    $(".heartList ul").prepend(str);
+
+    setTimeout(function () {
+      var scor = $(".heartList ul li.num1");
+      $(".heartList ul").prepend(scor);
+    },5000);
+  }
+  //$(".heartList ul li:last").remove();
+
+  setInterval(newHeart,2000);
+</script>
+</body>
+</html>

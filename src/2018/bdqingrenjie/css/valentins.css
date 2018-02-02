@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+body{ padding:0; margin:0;font-family:'Microsoft YaHei','微软雅黑','黑体','SimHei';}
+ul,li{padding:0; margin:0; list-style:none;}
+input,textarea,div,span,p,samp{font-family:'Microsoft YaHei','微软雅黑','黑体','SimHei'; padding:0; margin:0;}
+a.w_link:link,a.w_link:visited,a.w_link:active{
+	color: #fff;
+	}
+a.w_link:hover{
+	color: #fff;
+}
+
+
+input{outline:none}
+/***********************************************/
+div.embed{ height:0; overflow:hidden}
+.BD-valentins{min-width:1200px;margin:0 auto;background:url(../images/bg.png) no-repeat center 0 #502a02;padding-top:729px;position:relative;}
+.BD_active{position:absolute;width:1200px;height:729px;margin:0 auto;top:0;left:50%;margin-left:-600px}
+.active_cake{width:400px;margin:456px 0 0 75px}
+.active_cake p,.active_cake span{float:left;color:#6d3700;font-size:18px}
+.number_position{width:140px;height:52px;position:absolute;top:398px;left:256px;z-index:30;}/*1-29修改*/
+.number_position ul{text-align:center; display:table; margin:0 auto;}
+.number_position ul li{float:left;width:40px;display:block;height:52px;*float:none;  *display:inline;  *zoom:1;}
+.link_look{width:90px;height:85px;cursor:pointer;position:absolute;top:480px;right:70px;z-index:30;/*1-29修改*/
+-webkit-animation:click linear 1s infinite;
+-o-animation:click linear 1s infinite;
+-moz-animation:click linear 1s infinite;
+animation:click linear 1s infinite;}
+
+@keyframes click{
+	
+					0% {top:580px;}
+					50% {top:565px;}
+					100% {top:580px;}
+	}
+@-webkit-keyframes click{
+	
+					0% {top:580px;}
+					50% {top:565px;}
+					100% {top:580px;}
+	}
+@-o-keyframes click{
+	
+					0% {top:580px;}
+					50% {top:565px;}
+					100% {top:580px;}	
+	}
+@-moz-keyframes click{
+	
+					0% {top:580px;}
+					50% {top:565px;}
+					100% {top:580px;}
+	}
+
+.link_look a{display:block;width:90px;height:85px;cursor:pointer}
+.love_letters{margin:0 auto;width:1200px;height:435px;background:url(../images/love_letters.png) no-repeat center 0;height:435px;position:relative}
+.love_letters samp{position: absolute; left: 253px; top: 96px;}
+.love_letters textarea{resize:none;width:935px;height:100px;margin:0 auto;position:absolute;top:125px;left:50%;margin-left:-467px;line-height:24px;font-size:14px;color:#502a02;display:block;border:none;background:none;}
+.textarea2{resize:none;width:420px;height:260px;margin:0px;position:absolute;line-height:24px;font-size:18px;color:#502a02;display:block;border:none;background:none;}
+
+.love_letters .BD_letters{width: 175px;height: 42px;position: absolute;top: 260px;left: 50%;margin-left: -87px;font-size: 36px;color: #502a02;border: 2px solid #502a02;background: none;text-align: center;}
+.love_letters .ewm{position: absolute; right: 130px; bottom: 50px;}
+
+.love_letters  .buttombtn{width:124px;height:30px;margin:100px auto 0 -62px;border:none;background:#502a02;color:#fff;font-size:18px;left:50%;top:225px;position:absolute; border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;cursor:pointer;}
+
+.section{width:1200px;position:relative;margin:0 auto;z-indez:10;margin-top:25px}
+.cakelist_box{ margin:55px auto 0 auto; height:320px;width:978px}
+.cakelist_box ul{height:inherit;}
+.cakelist_box{margin:0 auto;width:970px}
+.cakelist_box li{float:left; height:320px; width:320px; margin:0 3px;position:relative; line-height:0; color:#fff;font-size:12px;}
+.cakelist_box li div{ position:absolute; z-index:20; height:82px;background:rgba(0,0,0,.5); width:320px; bottom:0; left:0;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); /* For IE 8*/ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";}
+.cakelist_box li div p{  text-align:left; line-height:25px;margin:0 8px;}
+.cakelist_box li div p.cakename{ border-bottom:1px #fff solid; position:relative; font-size:14px; line-height:30px;}
+.cakelist_box li div p.cakename span{ position:absolute; right:0; top:0;_top:-3px;*top:-3px; font-size:12px;}
+.cakelist_box li div p.cake_price_buy{ position:absolute; right:10px; top:33px; text-align:right;line-height:24px}
+.cakelist_box li div p.cake_price_buy span{ display:block; height:24px;}
+.cakelist_box li div p.cake_price_buy span b{ font-size:24px; font-weight:normal}
+.cakelist_box li div dl{ padding:0 8px; margin:5px;}
+.cakelist_box li div dl dd{ line-height:18px; float:left; width:30px; text-align:center; border:1px #fff solid; cursor:pointer;margin-left:5px}
+.cakelist_box li div dl dd.cur{ background:#fff; color:#000;}
+
+.section .leftbtn,.section .rightbtn{width:56px;height:81px;position:absolute;top:50%;cursor:pointer;margin-top:-40px}
+.section .leftbtn{background:url(../images/leftbtn.png) no-repeat;left:49px;}
+.section .rightbtn{background:url(../images/rightbtn.png) no-repeat;right:49px;}
+
+.activeerule{width:1200px;margin:70px auto 0 auto;border-top:1px #fff solid}
+.active_word{width:970px;margin:30px auto 0 auto;padding-bottom:50px; text-indent: -28px; padding-left: 30px;}
+.active_word h2{color: #dcd4cc; font-weight: normal; font-size: 22px;}
+.active_word p{color:#fff;font-size:16px;line-height:28px;}
+
+
+
+/***************弹窗********************/
+.tc-con{ width:971px; height:686px;background:url(../images/popup_bg.png) no-repeat; padding:0;margin:0 auto;
+
+	-webkit-border-radius:10px;
+	position:absolute;
+	z-index:99999; 
+	_position:absolute;
+	font-size:14px;
+	left:50%;/*FF IE7*/
+    top: 50%;/*FF IE7*/
+    margin-left:-485px!important;/*FF IE7 该值为本身宽的一半 */
+    margin-top:-300px!important;/*FF IE7 该值为本身高的一半*/
+    margin-top:-300px;
+    position:fixed!important;/*FF IE7*/
+    position:absolute;/*IE6*/
+    _top: e­xpression(eval(document.compatMode &&
+            document.compatMode=='CSS1Compat') ?
+            documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+            document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+
+}
+
+.tc-cover{width:100%;height:100%;position:absolute;z-index:200;top:0px;left:0px;opacity:0.5;-moz-opacity:0.5;filter:alpha(opacity=50);background-color:#000}
+.close{width:46px; height:46px; display:block; position:absolute; top:10px; right:76px; background:url(../images/closebtn.png) no-repeat center center; text-indent:-9999px; z-index:10000;}
+
+.Keytime {position:relative;margin:0 auto}
+.Keytime p{display:block;width:420px;margin:0 auto;position:absolute;top:200px;left:50%;margin-left:-250px;height:280px;border:none;background: none;font-size:18px;line-height:24px;padding-left:80px;overflow:hidden;color:#414141;opacity:0;filter:alpha(opacity=0);/*IE*/}
+.Keytime .input-num{width:175px;position:absolute;left:460px;top:520px;font-size:35px;color:#502a02;border:2px solid #502a02;background:none;text-align:center;height:42px; }
+
+.Keytime .input-q{width:124px;height:45px;position:absolute;left:50%;font-size:24px;color:#fff;top:520px;z-index:10;background:#502a02;border:none;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;cursor:pointer;margin-left:170px;}
+
+.collect{margin:50px auto 0 auto;width:450px;height:350px}
+.collect1{margin:110px auto 0 auto;}
+.collect li input,.collect1 li input{border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;-webkit-border-radius:3px;}
+.collect li{text-align:center}
+.collect_p{font-size:20px;color:#545353;}
+.collect_o{color:#545353;font-size:18px;margin-top:30px}
+.collect_o span{color:#9d1e30}
+.collect li .collect_i {width:350px;height:44px;margin-top:30px;font-size:18px;border:1px #bfbebe solid;}
+
+.collect_y span{color:#9d1e30;font-size:18px;line-height:60px}
+.collect_t{width:200px;height:40px;border:none;background:#ae8f69;color:#fff;font-size:18px;margin-top:40px;border:none; cursor:pointer}
+
+.sorry_box,.sorry_next{ font-size:18px;color:#545353;}
+.Determine_go{width:200px;height:40px;color:#fff;background:#ae8f69;margin-top:100px; font-size:18px;border:none; cursor:pointer}
+
+.collect1{width:350px;display:block;text-align:center}
+
+
+.warn{ text-align:center; color:#b0916a; padding:5px 0 20px 0; line-height:24px;}
+.link_c{ text-align:center}
+.pay_Remind{ padding:0 0 0 30px; color:#b0916a}
+
+ul.Remote_payment.pay_msg{width:355px; height:180px;margin: 10px;}
+ul.Remote_payment.pay_msg .login_btn{ width:45%; padding:0;}
+ul.Remote_payment.pay_msg li.pay_v{ padding:60px 0 0 0;}
+p.pay_msg_txt{ text-align:center; padding:30px 0 20px 0}
+
+input.login_btn{background:#b0916a; padding:0 65px;*padding:0 35px;_padding:0 35px;border:none; margin:2px; height:34px; color:#FFF; cursor:pointer; -moz-border-radius: 2px;/* Gecko browsers */-webkit-border-radius: 2px;   /* Webkit browsers */
+    border-radius:2px;/* W3C syntax */}
+ul.Remote_payment li.coupon_btn{ text-align:center; padding:15px 0 0 0; width:100%;}
+input.login_btn:hover{ background:#8B7860;}
+a.Grey:link, a.Grey:visited, a.Grey:active {
+    color: #8C8C8C;
+}
+a.Grey:hover {
+    color: #ABABAB;
+    text-decoration: underline;
+}

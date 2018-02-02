@@ -1,0 +1,548 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.evt-content div {
+  position: absolute;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.evt-container .btns {
+  width: 139px;
+  background: #937c52;
+  top: 429px;
+  left: -25px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.evt-container .btns span {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.sec-banner {
+  position: relative;
+  background: url("../images/banner-bg.jpg") repeat-x;
+  z-index: 2;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  height: 960px;
+}
+
+.sec-banner .evt-content .chri-w-l {
+  top: 354px;
+  left: 108px;
+}
+
+.sec-banner .evt-content .chri-men {
+  top: 40px;
+  left: 50%;
+  margin-left: -369px;
+}
+
+.sec-banner .evt-content .chri-w-r {
+  top: 169px;
+  left: 763px;
+}
+
+.sec-banner .evt-content .chri-word {
+  width: 418px;
+  top: 756px;
+  left: 50%;
+  margin-left: -209px;
+}
+
+.sec-banner .evt-content .word {
+  width: 1000px;
+  top: 930px;
+  left: 50%;
+  margin-left: -500px;
+  text-align: center;
+}
+
+.sec-banner .evt-content .word span {
+  line-height: 15px;
+  color: #fff;
+  display: inline-block;
+  font-size: 25px;
+  padding: 0 35px;
+  border-right: #fff 1px solid;
+  text-align: center;
+}
+
+.sec-1.on {
+  background: #c72521;
+}
+
+.sec-1 {
+  background: #c72521;
+  position: relative;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+}
+
+.sec-1 .evt-content div {
+  position: relative;
+}
+
+.sec-1 .evt-content .cake-tab {
+  padding: 80px 0;
+}
+
+.sec-1 .evt-content .cake-tab .tab-top ul li {
+  width: 594px;
+  margin-right: 10px;
+  list-style: none;
+  float: left;
+  cursor: pointer;
+}
+
+.sec-1 .evt-content .cake-tab .tab-top ul li.on {
+  opacity: 0.6;
+  -khtml-opacity: 0.6;
+  -moz-opacity: 0.6;
+  filter: alpha(opacity=60);
+  filter: "alpha(opacity=60)";
+  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+
+.sec-1 .evt-content .cake-tab .tab-box {
+  height: 564px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-swiper {
+  float: left;
+  width: 791px;
+  height: 100%;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-swiper .over {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right {
+  border-left: #e3e3e3 1px solid;
+  float: left;
+  padding: 0 0 0 30px;
+  height: 100%;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .title {
+  margin-top: 50px;
+  margin-left: -10px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .subtitle {
+  color: #9b8d73;
+  font-size: 30px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .select-price {
+  margin-top: 50px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .p1 {
+  position: relative;
+  width: 100%;
+  font-size: 20px;
+  color: #9c9c9c;
+  padding-left: 20px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .p1 i {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  color: #000;
+  font-style: normal;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .p1 .price {
+  font-size: 48px;
+  color: #000;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .p1 .price em {
+  font-style: normal;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .p2 {
+  padding-left: 40px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .p2 i {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  width: 24px;
+  height: 23px;
+  background: url("../images/quan.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .p2 i.on {
+  background: url("../images/quan-gou.png") no-repeat;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .p3 {
+  background: url("../images/point.png") left center no-repeat;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .price_num {
+  width: 170px;
+  float: left;
+  margin-left: 8px;
+  margin-top: 20px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .price_num span {
+  float: left;
+  font-size: 18px;
+  color: #000;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .price_num dl {
+  float: left;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .price_num dl dd {
+  background: #fff url("../images/in-l.png") no-repeat;
+  cursor: pointer;
+  float: left;
+  height: 25px;
+  width: 26px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .price_num dl dd.nopoint {
+  background: #fff url("../images/in-r.png") no-repeat scroll;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .price_num dl dt {
+  float: left;
+  height: 22px;
+  width: 60px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .price_num dl dt input, .sec-1 .evt-content .cake-tab .tab-box .box-right .price_num dl dt span {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  color: #a19682;
+  height: 20px;
+  text-align: center;
+  width: 20px;
+  font-size: 18px;
+  margin: 0 20px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .buybtns {
+  height: 42px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .buybtns ul {
+  margin-left: 5px;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .buybtns ul li {
+  width: 165px;
+  height: 42px;
+  line-height: 42px;
+  float: left;
+  border: #d2d2d2 1px solid;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sec-1 .evt-content .cake-tab .tab-box .box-right .buybtns ul li.on {
+  background: #f0f0f0;
+}
+
+.sec-2 {
+  position: relative;
+  background: #f7f7f7;
+  padding-bottom: 50px;
+}
+
+.sec-2 .evt-content {
+  width: 1200px;
+}
+
+.sec-2 .evt-content div {
+  position: relative;
+}
+
+.sec-2 .tuijian-title {
+  width: 513px;
+  padding: 120px 0 100px;
+  margin: 0 auto;
+}
+
+.sec-2 .tuijian-title p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.sec-2 .prolist {
+  width: 1200px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.sec-2 .prolist ul {
+  margin-right: -15px;
+}
+
+.sec-2 .prolist ul li {
+  width: 390px;
+  height: 520px;
+  background: #fff;
+  margin-right: 15px;
+  float: left;
+  margin-top: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sec-2 .prolist ul li p {
+  text-align: center;
+  margin-top: 8px;
+  color: #000;
+  font-size: 18px;
+}
+
+.sec-2 .prolist ul li p span {
+  position: relative;
+  font-size: 28px;
+}
+
+.sec-2 .prolist ul li p i {
+  position: absolute;
+  bottom: 3px;
+  left: -14px;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.sec-2 .prolist ul li p.tt {
+  font-size: 16px;
+}
+
+.sec-2 .prolist .buybtns {
+  height: 28px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.sec-2 .prolist .buybtns ul {
+  margin-left: 15px;
+  margin-top: 0 !important;
+}
+
+.sec-2 .prolist .buybtns ul li {
+  width: 170px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+  color: #444444;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: #e1e1e1;
+  margin-top: 0 !important;
+  cursor: pointer;
+}
+
+.sec-2 .prolist .buybtns ul li.on {
+  background: #b2997b;
+  color: #fff;
+}
+
+.sec-2 .more {
+  width: 223px;
+  margin: 0 auto;
+}
+
+.sec-footer {
+  position: relative;
+  background: #307665;
+}
+
+.sec-footer .evt-content {
+  width: 1200px;
+  padding: 100px 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.sec-footer .evt-content .hd-guize {
+  position: relative;
+  width: 680px;
+  margin-left: 10px;
+}
+
+.sec-footer .evt-content .footimg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 456px;
+}
+
+.sec-footer .evt-content h2 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.sec-footer .evt-content li {
+  list-style: disc;
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 1.6em;
+  margin-top: 5px;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.pagination {
+  position: absolute !important;
+  left: 0;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.swiper-active-switch {
+  background: #626262;
+  opacity: 1;
+}
+
+/*雪花*/
+.snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2000;
+}
+
+.snow-container .snow {
+  position: absolute;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  background: url(../images/snow.png) no-repeat\9;
+}
+
+/*兼容小屏幕*/
+@media screen and (max-width: 1650px) {
+  .sec-banner .evt-content {
+    height: 800px !important;
+  }
+  .sec-banner img {
+    width: 100%;
+  }
+  .sec-banner .chri-w-l {
+    width: 300px !important;
+    top: 294px !important;
+    left: 195px !important;
+  }
+  .sec-banner .chri-men {
+    top: 20px !important;
+    margin-left: -290px !important;
+    width: 460px !important;
+  }
+  .sec-banner .chri-w-r {
+    width: 360px !important;
+    top: 100px !important;
+    left: 739px !important;
+  }
+  .sec-banner .chri-word {
+    top: 586px !important;
+    left: 50%;
+    margin-left: -209px;
+  }
+  .sec-banner .word {
+    top: 750px !important;
+    margin-left: -500px;
+  }
+}

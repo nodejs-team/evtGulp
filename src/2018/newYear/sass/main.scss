@@ -1,0 +1,172 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.evt-container{ overflow: hidden;background:url("../images/bg.jpg") repeat;}
+.evt-content{text-align: center;}
+.sec-top{
+  background:url("../images/new-year-banner.png") center; z-index: 1;
+  .evt-content{
+    width: 1200px; height: 657px;
+    .new-year-1{ top: 123px; left: 50%; width: 565px; margin-left: -282.5px;}
+    .new-year-2{ top: 196px; left: 50%; width: 723px; margin-left: -361.5px;}
+    .new-year-3{ top: 304px; left:50%; width: 396px; margin-left:-198px;}
+    .b-cake{top: 73px;left:50%; width: 801px; margin-left: -400.5px;}
+    .b-m{top: -100px;left: 28px;}
+    .b-m2{top: 250px;left: 400px;}
+  }
+}
+
+.title{ position: relative; margin:70px auto; width: 450px; text-align: center; }
+
+.sec-1{ position: relative; z-index: 1;
+  .evt-content{ width: 1200px;
+    .card{ overflow: hidden; margin-bottom: 100px;
+      ul{padding-left: 35px;
+        li{position: relative; width: 352px; margin-right: 35px; float: left; list-style: none;
+          .card-w{position: absolute; bottom: 20px; width: 70%; background: #fef5e4; line-height: 32px; left: 50%; margin-left: -35%; text-align: center; font-size: 18px; color: #c43938; cursor: pointer;}
+          .card-w.card-success{color: #877777;
+            img{vertical-align:sub; margin-right: 10px;}
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.sec-2{ position: relative; height: 776px; z-index: 1; background: url("../images/fd-bg.png") center;
+  .evt-content{height: 0; }
+  .fd-pic{position: relative; width:100%; height: 776px; border-radius: 10px; overflow: hidden;
+    .swiper-slide a{display: block; width: 100%; height: 100%;}
+  }
+  .fd-active{ position: absolute; width: 1080px; top: 510px; left: 50%; z-index: 10; margin-left:-540px !important;
+    ul{
+      li{position: relative; width:512px; height: 225px;  background: #d6cece; border-radius: 5px; float: left; margin-right:50px;
+        .price{width: 319px; margin:20px auto 10px;}
+        .buys{width: 100%; border-top:#e0e0e0 1px solid;
+          span{width: 49.8%; display: block; text-align: center; border-right: #e0e0e0 1px solid; line-height:40px; float: left; font-size: 16px; cursor: pointer;}
+          span.on{color: #c71c1c;}
+        }
+
+        .gobtn{ width: 110px; height: 30px; border-radius:30px; border: #b67f1f 1px solid; line-height: 30px; text-align: center; color: #b67f1f; cursor: pointer;
+        }
+        .btn2{}
+        .gobtn.on{ background: #daa343; border: #daa343 1px solid; color: #fff;}
+      }
+      li.on{ background: #fff;}
+    }
+  }
+}
+
+.sec-3{ position: relative; z-index: 1;background: url("../images/tj.png") 10px 900px no-repeat; margin-bottom: 100px;
+  .evt-content{ width: 1200px;
+    .new-wnl{margin: 120px auto 0; width: 1200px; }
+    .prolist{ overflow: hidden; margin-top: -50px;
+      ul{ overflow: hidden; width: 1000px; padding-left: 97px; margin: 0 auto; padding-bottom:100px;
+        li{ width: 400px; list-style: none; float: left; margin-right: 70px; background: #fff;border-radius: 10px; overflow: hidden; box-shadow: 0 10px 80px #c5b99e; margin-top: 100px; padding-top: 20px;
+          img{border-radius: 5px; margin:0 25px; width: 350px;}
+          .des{margin: 5px auto; width:350px;
+            p{font-size: 18px; color: #43403c; text-align: left;
+              em{ display: block; font-size: 12px; color: #e0deda;}
+              b{font-weight: normal;}
+              span.pr{display: inline-block; float: right; color: #d5a551; font-size: 25px;
+                i{font-size: 12px; font-style: normal;}
+              }
+            }
+          }
+          .selectBs{width: 360px; margin: 10px auto; overflow: hidden;
+            ul{width: auto; float: right; margin: 0; padding: 0;
+              li{width: auto; border: #807a72 1px solid; box-shadow:none; margin-right: 10px; border-radius: 30px; cursor: pointer; padding: 0; margin-top: 0;
+                span{padding: 5px 12px; font-size: 14px; line-height: 20px;}
+              }
+              li.on{color: #fff; background: #d5a551; border: #d5a551 1px solid;}
+            }
+          }
+          .btns{
+            ul{ width: 400px; margin: 0; padding: 0;
+              li{width: 50%; margin: 0; border-radius: 0;  line-height: 58px; font-size: 16px; color: #fff; background: #d8c097; float: left; text-align: center; box-shadow:none;cursor: pointer;padding: 0;
+              span{display: block;}
+                a{color: #fff;}
+              }
+              li.on{background: #d5a551;}
+            }
+          }
+        }
+      }
+      .coffee{ width: 701px; margin: 0 auto;}
+      .more{ width: 419px; margin: 30px auto 0;}
+    }
+  }
+}
+
+
+
+.evt-footer{
+  position: relative;  background:#c63938; width: 100%;
+  .evt-content{width: 1200px;}
+    .evt-rules{width:780px; margin: 0 auto; padding:50px 0 60px 55px; color: #fadfbb; text-align: left;
+      h2{ text-align: center;}
+      ul{margin-top:50px;}
+      li{ font-size:20px; line-height: 1.8em;  padding-left: 1.5em; background: url("../images/li-style.png") 0px 13px no-repeat; }
+    }
+}
+
+
+.swiper-container { position: relative;  width: 100%;  height: 100%;  }
+.swiper-slide {
+  text-align: center; position: relative;  font-size: 18px;  background: #fff;  display: -webkit-box;  display: -ms-flexbox;
+  display: -webkit-flex;  display: flex;  -webkit-box-pack: center;  -ms-flex-pack: center;
+  -webkit-justify-content: center;  justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;
+  -webkit-align-items: center;  align-items: center;
+}
+.pagination {
+  position: absolute !important;
+  left: 0;
+  text-align: center;
+  bottom:20px;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  opacity:0.5;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #626262;
+  opacity:1;
+}
+
+
+.arrow-left {
+  background: url(../images/arrows.png) no-repeat left top;
+  position: absolute;
+  left: -50px;
+  top:300px;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.arrow-right {
+  background: url(../images/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: -45px;
+  top:300px;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 2;
+  cursor: pointer;
+}

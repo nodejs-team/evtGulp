@@ -1,0 +1,454 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.evt-content div {
+  position: absolute;
+}
+
+@font-face {
+  font-family: 'gothambold';
+  src: url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sec-banner {
+  position: relative;
+  background: url("../images/banner-bg.jpg") repeat-x;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content {
+  width: 1000px;
+  height: 885px;
+  position: relative;
+}
+
+.sec-banner .evt-content .banner-title {
+  top: 83px;
+  left: 20px;
+}
+
+.sec-banner .evt-content .banner-subtitle {
+  top: 528px;
+  left: 90px;
+}
+
+.banner-cake {
+  position: absolute;
+  top: 60px;
+  left: 980px;
+}
+
+.banner-laoren {
+  position: absolute;
+  top: 0px;
+  left: -550px;
+}
+
+.sec-1 {
+  background: #ffff;
+  position: relative;
+  padding-top: 50px;
+  z-index: 10;
+}
+
+.sec-1 .evt-content {
+  width: 1000px;
+}
+
+.sec-1 .evt-content .act-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sec-1 .evt-content .time {
+  position: relative;
+}
+
+.sec-1 .evt-content .time p {
+  color: #e60000;
+  font-size: 43px;
+  padding-left: 26px;
+  font-family: 'gothambold';
+  margin: 30px 0 0;
+}
+
+.sec-1 .evt-content .time p i {
+  color: #000;
+  font-style: normal;
+  font-family: '微软雅黑';
+}
+
+.sec-1 .evt-content .zhi {
+  vertical-align: middle;
+  margin: 0 10px 10px;
+}
+
+.sec-1 .evt-content .libox {
+  position: relative;
+  width: 900px;
+  margin: 70px auto;
+}
+
+.sec-1 .evt-content .huodong {
+  position: relative;
+}
+
+.sec-2 {
+  background: #ffff;
+  position: relative;
+}
+
+.sec-2 .evt-content {
+  width: 1000px;
+}
+
+.sec-2 .evt-content .act-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sec-2 .evt-content .cake {
+  position: relative;
+}
+
+.sec-2 .evt-content .cake div {
+  position: relative;
+}
+
+.sec-2 .evt-content .cake h2 {
+  margin-bottom: 50px;
+}
+
+.sec-2 .evt-content .cake .swiper-cake {
+  position: relative;
+  width: 1000px;
+  height: 370px;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .cakeImg {
+  width: 210px;
+  height: 210px;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .title {
+  width: 100%;
+  margin-bottom: 15px;
+  color: #e60000;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .price {
+  text-align: center;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .price i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  border: #9fa0a0 1px solid;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .price .num-minus {
+  background: url("../images/btn-minus.png") center no-repeat;
+  background-size: 100%;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .price .num-add {
+  background: url("../images/btn-add.png") center no-repeat;
+  background-size: 100%;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .price em {
+  display: inline-block;
+  width: 116px;
+  height: 25px;
+  border: #9fa0a0 1px solid;
+  line-height: 25px;
+  font-style: normal;
+  vertical-align: middle;
+  margin: 0 3px;
+  color: #000;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .price .btns {
+  background: #e60000;
+  width: 117px;
+  height: 25px;
+  margin: 15px auto;
+  color: #fff;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .price .btns span {
+  display: block;
+  font-size: 18px;
+}
+
+.sec-2 .evt-content .cake .swiper-cake .price .btns a {
+  color: #fff;
+}
+
+.sec-footer {
+  position: relative;
+  background: #fff;
+}
+
+.sec-footer .evt-content {
+  width: 1000px;
+  padding: 100px 0;
+  color: #000;
+  overflow: hidden;
+}
+
+.sec-footer .evt-content .act-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sec-footer .evt-content .hd-guize {
+  position: relative;
+  margin: 50px auto 50px 0;
+}
+
+.sec-footer .evt-content p {
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  text-indent: -27px;
+  margin-bottom: 10px;
+}
+
+.sec-footer .evt-content p span {
+  color: #e60000;
+}
+
+.sec-footer .evt-content h2 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.sec-footer .evt-content li {
+  list-style: disc;
+  margin-left: 14px;
+  font-size: 15px;
+  line-height: 1.6em;
+  margin-top: 5px;
+}
+
+.act {
+  position: relative !important;
+  height: 540px;
+  width: 1000px;
+  margin: 55px auto 0 auto;
+}
+
+.act .act_text {
+  position: relative !important;
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 60px;
+  text-align: center;
+  color: #4b87b2;
+}
+
+.act .act_text b {
+  font-size: 70px;
+  color: #08499d;
+}
+
+.act .act_sheng {
+  width: 117px;
+  position: absolute;
+  top: 266px;
+  left: 50%;
+  margin-left: -550px;
+}
+
+.act .act_ge {
+  width: 60px;
+  position: absolute;
+  top: 266px;
+  left: 50%;
+  margin-left: 432px;
+}
+
+.act .plate {
+  width: 521px;
+  height: 501px;
+  top: 16px;
+  left: 50%;
+  margin-left: -270px;
+  position: absolute;
+  background: url("../images/plate.png") no-repeat;
+}
+
+.act .plate span {
+  position: absolute;
+  display: block;
+  color: #e60000;
+  font-size: 222px;
+  top: 145px;
+  left: 191px;
+  width: 150px;
+  height: 250px;
+  line-height: 250px;
+  text-align: center;
+}
+
+.act .plate .word {
+  width: 166px;
+  position: absolute;
+  top: 186px;
+  left: 186px;
+}
+
+.act .plate1 {
+  margin-left: -544px;
+}
+
+.act .plate3 {
+  margin-left: 5px;
+}
+
+.act .plate4 {
+  margin-left: -416px;
+}
+
+.act .plate5 {
+  margin-left: -123px;
+}
+
+.act .act_sheng.sheng {
+  margin-left: -400px;
+}
+
+.act .act_ge.ge {
+  margin-left: 313px;
+}
+
+.act .act_sheng.sheng1 {
+  margin-left: -523px;
+}
+
+.act .act_ge.ge1 {
+  margin-left: 433px;
+}
+
+.act_next {
+  position: relative !important;
+  text-align: center;
+  color: #e60000;
+  height: 240px;
+  font-family: 'gothambold';
+}
+
+.act_next h2 {
+  margin: 0 0 50px 0;
+  font-size: 38px;
+}
+
+.act_next p {
+  font-size: 24px;
+  color: #000;
+}
+
+.act_next p span {
+  color: #e60000;
+}
+
+.act_end {
+  position: relative !important;
+}
+
+.act_end .plate span {
+  font-size: 128px;
+}
+
+.swiper-container {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  position: relative !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  position: relative !important;
+  font-size: 18px;
+}
+
+.arrow-left, .arrow-right {
+  width: 30px;
+  height: 31px;
+  z-index: 5;
+}
+
+.arrow-left {
+  background: url(../images/prev.png) no-repeat;
+  position: absolute;
+  left: -30px;
+  top: 35%;
+  margin-top: -15px;
+}
+
+.arrow-right {
+  background: url(../images/next.png) no-repeat;
+  position: absolute;
+  right: -30px;
+  top: 35%;
+  margin-top: -15px;
+}
+
+/*雪花*/
+.snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 2000;
+}
+
+.snow-container .snow {
+  position: absolute;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  background: url(../images/snow.png) no-repeat\9;
+}
+
+/*兼容大屏幕*/
+@media screen and (max-width: 1650px) {
+  .banner-cake {
+    left: 850px;
+  }
+  .banner-laoren {
+    left: -470px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .banner-cake {
+    left: 880px;
+  }
+  .banner-laoren {
+    left: -430px;
+  }
+}

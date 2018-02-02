@@ -1,0 +1,86 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+::-webkit-scrollbar{width:0px}
+.evt-container{ overflow: hidden; background: #bd3636;}
+.evt-content{text-align: center;}
+.sec-main{position: relative;  background:url("../images/bg-1.jpg") top no-repeat; z-index: 1; min-height: 1080px;
+  .evt-content{
+    width: 1000px; padding-bottom: 10px;
+      .bt{width: 656px; margin: 0 auto;}
+      .heartList{ margin-top: -40px; width: 1000px; overflow: hidden;
+        ul{margin: 0; padding: 0 10px 0 10px; width: 1000px; height: 800px; overflow-y: scroll;
+          li{position: relative; background: #fff; margin:0 10px 10px 0; border-radius: 10px; padding: 10px 0;
+            .icon{position: absolute; top: 50%; margin-top:-39px; left: 20px; width:70px; height: 70px; border-radius: 50%; overflow: hidden; border: #cdcdcd 4px solid; }
+            .content{ float:left; margin-left:120px; width:72%; text-align: left; padding: 10px 0;
+              h2{font-size: 18px; line-height: 26px;}
+              p{font-size: 15px; line-height: 24px; color: #737373; }
+            }
+            .heart{position: absolute; top: 50%; margin-top:-25px; right: 20px; height: 50px; vertical-align: middle; line-height: 50px; font-size: 22px;
+              img{vertical-align: middle; margin-right: 10px;}
+              .tips{ position: absolute; width: 20px; left: 10px; bottom: 33px; font-size: 14px; color:#d81e06; line-height: 18px; font-weight: bold;
+              }
+            }
+          }
+          li.num1{border: #e5b985 7px solid;}
+        }
+      }
+
+  }
+  .bottomCover{position: fixed; bottom: 0; width: 100%; background: #bd3636; height: 300px; opacity: 0.2;}
+}
+
+
+
+
+
+.ani-fadein{ animation: ani-fadein 0.5s forwards;}
+.ani-move{ animation: aani-move 0.5s forwards;}
+.twinkling{ animation: twinkling 0.5s alternate infinite  ease-in-out;}
+.tipstwinkling{ animation: tipstwinkling 0.5s alternate infinite  ease-in-out;}
+
+@keyframes ani-fadein {
+  0%{
+    opacity: 0;
+    transform: scale(0.6,0.5); margin-bottom:-30px;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1,1);margin-bottom: 10px;
+  }
+}
+
+@keyframes ani-move {
+  0%{
+    transform: scale(0.6,0.1); margin-bottom:-50px;
+  }
+  100%{
+    transform: scale(1,1);margin-bottom: 10px;
+  }
+}
+
+@keyframes twinkling{
+  0%{
+    opacity: 0;transform:scale(0.6);
+  }
+
+  100%{
+    opacity: 1;transform:scale(1);
+  }
+}
+
+@keyframes tipstwinkling{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+

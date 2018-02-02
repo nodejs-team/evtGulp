@@ -114,6 +114,12 @@
 
 .sec-1 .evt-content .cake-tab .tab-top ul li.on {
   opacity: 0.6;
+  -khtml-opacity: 0.6;
+  -moz-opacity: 0.6;
+  filter: alpha(opacity=60);
+  filter: "alpha(opacity=60)";
+  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
 }
 
 .sec-1 .evt-content .cake-tab .tab-box {
@@ -335,6 +341,7 @@
   text-align: center;
   margin-top: 8px;
   color: #000;
+  font-size: 18px;
 }
 
 .sec-2 .prolist ul li p span {
@@ -344,7 +351,7 @@
 
 .sec-2 .prolist ul li p i {
   position: absolute;
-  top: 7px;
+  bottom: 3px;
   left: -14px;
   font-size: 14px;
   font-style: normal;
@@ -470,11 +477,13 @@
   background: #999;
   box-shadow: 0px 1px 2px #555 inset;
   margin: 0 3px;
+  opacity: 0.5;
   cursor: pointer;
 }
 
 .swiper-active-switch {
-  background: blue;
+  background: #626262;
+  opacity: 1;
 }
 
 /*雪花*/
@@ -489,16 +498,12 @@
 
 .snow-container .snow {
   position: absolute;
-  background-color: #fff;
+  background: #fff;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
   background: url(../images/snow.png) no-repeat\9;
-}
-
-:root .snow-container .snow {
-  background: none\9;
 }
 
 /*兼容小屏幕*/

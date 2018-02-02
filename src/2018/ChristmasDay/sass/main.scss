@@ -38,7 +38,8 @@
       .tab-top{
         ul{
           li{width: 594px; margin-right: 10px; list-style: none; float: left; cursor: pointer;}
-          li.on{opacity: 0.6;}
+          li.on{opacity: 0.6;-khtml-opacity:0.6;-moz-opacity:0.6;filter:alpha(opacity=60);filter:"alpha(opacity=60)";opacity:0.6; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);}
+
         }
       }
       .tab-box{height: 564px; background: #ffffff; border-radius: 10px; margin-top: 12px; overflow: hidden;
@@ -101,9 +102,9 @@
   .prolist{ width: 1200px; padding-bottom: 50px; overflow: hidden;
     ul{ margin-right:-15px;
       li{width: 390px; height: 520px; background: #fff; margin-right: 15px; float: left; margin-top: 18px; border-radius: 10px; overflow: hidden;
-        p{ text-align: center; margin-top: 8px; color: #000;
+        p{ text-align: center; margin-top: 8px; color: #000; font-size: 18px;
           span{position: relative;font-size: 28px;}
-          i{position: absolute; top: 7px; left: -14px; font-size: 14px; font-style: normal;}
+          i{position: absolute; bottom: 3px; left: -14px; font-size: 14px; font-style: normal;}
         }
         p.tt{font-size: 16px;}
       }
@@ -166,11 +167,15 @@
   background: #999;
   box-shadow: 0px 1px 2px #555 inset;
   margin: 0 3px;
+  opacity:0.5;
   cursor: pointer;
 }
 .swiper-active-switch {
-  background: blue;
+  background: #626262;
+  opacity:1;
 }
+
+
 /*雪花*/
 .snow-container {
   position: fixed;
@@ -183,7 +188,7 @@
 
 .snow-container .snow {
   position: absolute;
-  background-color: #fff;
+  background: #fff;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
@@ -192,7 +197,7 @@
 }
 
 :root .snow-container .snow {
-  background: none\9;
+
 }
 
 /*兼容小屏幕*/

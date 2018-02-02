@@ -1,0 +1,355 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+b, i, em {
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.evt-content {
+  text-align: center;
+}
+
+.sec-main {
+  position: relative;
+  background: url("../images/bg-1.jpg") top no-repeat;
+  z-index: 1;
+  min-height: 500px;
+}
+
+.sec-main .evt-content {
+  width: 1000px;
+}
+
+.sec-main .bt {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.sec-main .bt img {
+  width: 100%;
+}
+
+.sec-main .voteList {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.sec-main .voteList ul {
+  position: relative;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  border-top: #dfdfdf 1px solid;
+  border-bottom: #dfdfdf 1px solid;
+}
+
+.sec-main .voteList ul .vote-bt {
+  position: absolute;
+  width: 127px;
+  top: 50px;
+  right: -170px;
+}
+
+.sec-main .voteList ul li {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  float: left;
+  border-left: #dfdfdf 1px solid;
+}
+
+.sec-main .voteList ul li i {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  top: -23px;
+  left: -50px;
+  font-style: normal;
+}
+
+.sec-main .voteList ul li.li-last {
+  flex: 0;
+}
+
+.sec-main .voteList ul dl.vote-items {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+.sec-main .voteList ul dl.vote-items dd {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+  text-align: left;
+  overflow: visible;
+}
+
+.sec-main .voteList ul dl.vote-items dd .percent {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #da3636;
+  border-radius: 0 20px 20px 0;
+}
+
+.sec-main .voteList ul dl.vote-items dd .department {
+  display: block;
+  width: 150px;
+  font-size: 12px;
+  color: #666666;
+  margin-left: -155px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sec-main .voteList ul dl.vote-items dd .department b {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #000;
+}
+
+.sec-main .voteList ul dl.vote-items dd .title {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 100%;
+  font-size: 12px;
+  line-height: 100%;
+  color: #000;
+}
+
+.sec-main .voteList ul dl.vote-items dd .title b {
+  font-size: 12px;
+}
+
+.sec-main .voteList ul dl.vote-items dd .vote-btn {
+  display: none;
+  float: left;
+  z-index: 3;
+  margin-left: -50px;
+}
+
+.sec-main .voteList ul dl.vote-items dd:nth-child(2n) .percent {
+  background: #cd1b1b;
+}
+
+.sec-main .voteList ul dl.vote-items dd:nth-child(3n) .percent {
+  background: #2499fb;
+}
+
+.sec-main .voteList ul dl.vote-items dd:nth-child(3n+1) .percent {
+  background: #e5b985;
+}
+
+.vote-wx {
+  position: fixed;
+  width: 1200px;
+  top: 100%;
+  left: 50%;
+  margin-left: -600px;
+  color: #fff;
+  text-align: center;
+  z-index: 10;
+  font-size: 14px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.vote-wx em {
+  margin: 0 auto;
+  line-height: 40px;
+  padding: 20px 50px;
+  background: #000;
+  border-radius: 40px;
+}
+
+.vote-wx em b {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.vote-wx em span {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.vote-wx em i {
+  display: inline-block;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #2499fb;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.ani-fadein {
+  -webkit-animation: ani-fadein 0.5s forwards;
+  animation: ani-fadein 0.5s forwards;
+}
+
+.ani-move {
+  -webkit-animation: aani-move 0.5s forwards;
+  animation: aani-move 0.5s forwards;
+}
+
+.voteMove {
+  -webkit-animation: voteMove 6s forwards;
+  animation: voteMove 6s forwards;
+}
+
+.twinkling {
+  -webkit-animation: twinkling 0.5s alternate infinite  ease-in-out;
+  animation: twinkling 0.5s alternate infinite  ease-in-out;
+}
+
+.tipstwinkling {
+  -webkit-animation: tipstwinkling 0.5s alternate infinite  ease-in-out;
+  animation: tipstwinkling 0.5s alternate infinite  ease-in-out;
+}
+
+@-webkit-keyframes ani-fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.6, 0.5);
+    margin-bottom: -30px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ani-fadein {
+  0% {
+    opacity: 0;
+    transform: scale(0.6, 0.5);
+    margin-bottom: -30px;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+    margin-bottom: 10px;
+  }
+}
+
+@-webkit-keyframes ani-move {
+  0% {
+    -webkit-transform: scale(0.6, 0.1);
+    margin-bottom: -50px;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ani-move {
+  0% {
+    transform: scale(0.6, 0.1);
+    margin-bottom: -50px;
+  }
+  100% {
+    transform: scale(1, 1);
+    margin-bottom: 10px;
+  }
+}
+
+@-webkit-keyframes twinkling {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes twinkling {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes tipstwinkling {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes voteMove {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: translateX(20%);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateX(20%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20%);
+  }
+}
+
+@keyframes voteMove {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(20%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+}

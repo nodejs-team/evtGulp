@@ -493,27 +493,27 @@
   width: 1200px;
 }
 
-.banner-slides .slides-ChristmasDay div {
-  position: absolute;
-}
-
 .banner-slides .slides-ChristmasDay .chri-w-l {
+  position: absolute;
   top: 180px;
   left: 216px;
 }
 
 .banner-slides .slides-ChristmasDay .chri-men {
+  position: absolute;
   top: 27px;
   left: 50%;
   margin-left: -196px;
 }
 
 .banner-slides .slides-ChristmasDay .chri-w-r {
+  position: absolute;
   top: 65px;
   left: 685px;
 }
 
 .banner-slides .slides-ChristmasDay .chri-word {
+  position: absolute;
   width: 341px;
   top: 385px;
   left: 50%;
@@ -521,6 +521,7 @@
 }
 
 .banner-slides .slides-ChristmasDay .word {
+  position: absolute;
   width: 1000px;
   top: 498px;
   left: 50%;
@@ -535,6 +536,150 @@
   padding: 0 35px;
   border-right: #fff 1px solid;
   text-align: center;
+}
+
+.banner-slides .slides-ChristmasDay .word2 {
+  position: absolute;
+  width: 1200px;
+  top: 498px;
+  left: 50%;
+  margin-left: -600px;
+}
+
+.banner-slides .slides-ChristmasDay .word2 span {
+  line-height: 15px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 35px;
+  border-right: #fff 1px solid;
+  text-align: center;
+}
+
+.banner-slides .slides-newYear .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-newYear .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-newYear .new-year-1 {
+  top: 123px;
+  left: 50%;
+  width: 565px;
+  margin-left: -282.5px;
+}
+
+.banner-slides .slides-newYear .new-year-2 {
+  top: 196px;
+  left: 50%;
+  width: 723px;
+  margin-left: -361.5px;
+}
+
+.banner-slides .slides-newYear .new-year-3 {
+  top: 304px;
+  left: 50%;
+  width: 396px;
+  margin-left: -198px;
+}
+
+.banner-slides .slides-newYear .b-cake {
+  top: 73px;
+  left: 50%;
+  width: 801px;
+  margin-left: -400.5px;
+}
+
+.banner-slides .slides-newYear .b-m {
+  top: -100px;
+  left: 28px;
+}
+
+.banner-slides .slides-newYear .b-m2 {
+  top: 250px;
+  left: 400px;
+}
+
+.banner-slides .slides-memberDay-1yue .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-memberDay-1yue .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-memberDay-1yue .banner-title {
+  top: 0;
+  left: 50%;
+  width: 1322px;
+  margin-left: -661px;
+}
+
+.banner-slides .slides-memberDay-1yue .banner-l {
+  top: 0;
+  left: 50%;
+  margin-left: -1000px;
+  margin-left: -1000px !important;
+}
+
+.banner-slides .slides-memberDay-1yue .banner-r {
+  top: 0;
+  left: 50%;
+  margin-left: 350px;
+  margin-left: 350px !important;
+}
+
+.banner-slides .slides-new-people .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-new-people .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-new-people .banner-title {
+  top: 107px;
+  left: -10px;
+}
+
+.banner-slides .slides-new-people .banner-cake {
+  top: 0;
+  left: 505px;
+}
+
+.banner-slides .slides-new-people .banner-guang {
+  top: 0;
+  left: 505px;
+}
+
+.banner-slides .slides-caomei .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-caomei .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-caomei .banner-cake {
+  top: 85px;
+  left: 20px;
+}
+
+.banner-slides .slides-caomei .banner-title {
+  top: 116px;
+  left: 630px;
+}
+
+.banner-slides .slides-caomei .banner-cake1 {
+  bottom: -100px;
+  left: 979px;
+}
+
+.banner-slides .slides-caomei .banner-caomei {
+  top: 317px;
+  left: -60px;
 }
 
 /*兼容小屏幕*/
