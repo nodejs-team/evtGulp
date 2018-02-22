@@ -18,6 +18,8 @@ div.embed{ height:0; overflow:hidden}
 .BD_active{position:absolute;width:1200px;height:729px;margin:0 auto;top:0;left:50%;margin-left:-600px}
 .active_cake{width:400px;margin:456px 0 0 75px}
 .active_cake p,.active_cake span{float:left;color:#6d3700;font-size:18px}
+.sheng{position: absolute; top:409px;left:76px;z-index:1; }
+.shouqing{position: absolute; top:400px;left:76px;z-index:1; font-size: 34px; color: #c6171e; }
 .number_position{width:140px;height:52px;position:absolute;top:398px;left:256px;z-index:30;}/*1-29修改*/
 .number_position ul{text-align:center; display:table; margin:0 auto;}
 .number_position ul li{float:left;width:40px;display:block;height:52px;*float:none;  *display:inline;  *zoom:1;}

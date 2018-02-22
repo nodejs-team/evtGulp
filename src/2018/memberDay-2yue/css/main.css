@@ -7,6 +7,17 @@
   visibility: hidden;
 }
 
+/*数量加减时，禁止双击选中*/
+span.num {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .evt-container {
   overflow: hidden;
   background: url("../images/bg.jpg") repeat;
@@ -30,16 +41,6 @@
 .more {
   width: 286px;
   margin: 50px auto;
-}
-
-span {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .sec-0 .evt-content {

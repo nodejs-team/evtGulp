@@ -1,0 +1,94 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.word,span.num{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background: url("../images/bg.jpg") repeat;}
+.sec-banner{ position: relative;
+  background:#ffe8fc; z-index: 1;
+  .evt-content{
+    width: 1000px; height: 790px;
+    .banner-cril{ top:0; left:0;}
+    .banner-title{ top: 112px; left:429px;}
+    .banner-cake{top: 112px; left: -248px;}
+    .banner-zhishi{top: 470px; left: 345px;}
+
+  }
+  .banner-line{position: absolute; width: 100%; bottom: -30px; left:0; height: 37px; background: url("../images/line.png") repeat-x; z-index: 5;}
+}
+.more{ width: 286px; margin: 50px auto;}
+
+.sec-2{  position: relative; z-index: 1; padding-bottom: 50px;
+  .evt-content{
+    width: 1000px;
+    .row{position: relative;  }
+    .s-title{position: relative; width: 808px; margin: 0 auto;}
+    .quan{ padding:100px 0;
+      ul{width: 840px; margin: 0 auto; padding-top: 50px;}
+      li{ width: 396px; position: relative; float: left; margin-right: 40px; cursor: pointer;
+        img{width: 100%;}
+        .word{position: absolute; text-align: center; line-height: 36px; font-size: 20px; top:133px; left:83px; width: 229px; height: 36px; background: #fff; color: #a1879b; }
+        .w-1{}
+        .w-2{ display: none;}
+      }
+    }
+    .row1{height: 982px;
+      .cp-bg{position: absolute;top:197px; left:0;}
+      .cp-title{position: absolute;top:0; left:50%; width: 369px; margin-left: -184.5px !important;}
+      .cake{position: absolute;top:226px; left:85px;}
+      .price{ top:826px; left: 462px; }
+    }
+    .row2{height: 819px;
+      .cp-bg{position: absolute;top:0; left:0;}
+      .cake{position: absolute;top: 0; left: 50px;}
+      .price{ top:546px; left: 694px;}
+
+    }
+    .row3{height: 898px;
+      .cp-bg{position: absolute;top:0; left:0;}
+      .cake{position: absolute;top: 66px; left: 135px;}
+      .price{ top:699px; left: 430px; }
+
+    }
+
+
+
+  }
+}
+
+
+
+/*价格*/
+.price{ position: absolute;  width: 174px; text-align: left;
+  .buy_btn_box { cursor: pointer;  overflow: hidden; width: 177px; height: 56px; margin:10px 0; background: url("../images/go-btn .png");  }
+
+}
+
+
+
+
+.evt-footer{
+  .footer-line{position: absolute; width: 100%; top: -10px; left:0; height: 37px; background: url("../images/line.png") repeat-x; z-index: 5;}
+  position: relative;  background:#ffe8fc; width: 100%;
+  .foot-img{position: absolute; width: 230px; top: 20px; right:220px;
+    img{width: 100%;}
+  }
+  .evt-content{width: 1200px;}
+    .evt-rules{width: 1200px; margin: 0 auto; padding:70px 0 60px 55px; color: #7b6977;
+      h2{ font-size: 30px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+
