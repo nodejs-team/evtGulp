@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动banner</title>
+    <!-- build:css css/banner.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/banner.css" />
+    <!-- endbuild -->
+</head>
+<body style="height:2000px;">
+
+<link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
+<div class="header">
+
+    <div class="header_top_box">
+        <div class="header_top">
+            <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+                <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+                    <div class="wallbox wall_top">
+                        <div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+                        <div class="logoer">
+                            <a href="http://ebsig.mcake.com">
+                                <img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+                            </a>
+                        </div>
+                        <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+                        <ul class="navbar">
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start----->
+                            <li class="record" style="display: none;">
+                                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+                            </li>
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end----->
+                            <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+                            <li class="m_cart">
+                                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="wallbox">
+                    <div class="header_right">
+                        <ul class="phone_delivery">
+                            <li class="phone"><span>4006-678-678</span><i></i></li>
+                            <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+                        </ul>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+                        </li>
+                        <li>
+                            <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/member_center.html" target="_blank">
+                                <samp>Mon M'CAKE</samp>
+                                <span>会员中心</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    #floater{position:fixed; top:110px; right:10px; z-index:11; width:178px;}
+    #floater .floatImg{width:156px; position:relative; font-size:0; margin:0 0 0 17px;}
+    #floater .floatImg img{width:100%;}
+    #floater .floatImg a{width:100%; display:block; height:144px; position:absolute; top:0; left:0;}
+</style>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
+    <div class="evt-content">
+        <div class="secItem q1" data-anim="slide-down-l" data-delay="0.8">
+            <img src="" width="" height="" />
+        </div>
+    </div>
+    <a href="#" style="width:100%; height:750px; display:block; position:absolute; top:0; left:0; z-index:10;"></a>
+
+    <div id="floater">
+        <div class="floatImg">
+            <img src="http://edm.mcake.com/shuxy/2016/strawberry/images/strawberry_floater.png" alt="">
+            <a href="http://www.mcake.com"></a>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>
+<!-- build:js js/banner.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resDataBanner.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<!-- endbuild -->
+<script>
+    /*;(function(){
+        var height = $("#evt_container").outerHeight();
+        var fHeight = 167;
+        var fTop = 110;
+        var fRight = 10;
+        var floater = $('#floater');
+        var floaterPosition = 'fixed';
+        var winWidth = $(window).width();
+        var absRight = winWidth<1280 ? (1280-winWidth+fRight) : fRight;
+        $(window).on("scroll", function(){
+            var sTop = $(this).scrollTop();
+            if(floaterPosition === 'fixed' &&  sTop > height - fHeight -10 ){
+                floater.css({position: "absolute", top: height - fHeight, right: absRight});
+                floaterPosition = 'absolute';
+            }
+            if(floaterPosition === 'absolute' && sTop<height-fHeight -10){
+                floater.css({position: "fixed", top: fTop, right:fRight});
+                floaterPosition = 'fixed';
+            }
+        });
+    })();*/
+</script>
+</body>
+</html>

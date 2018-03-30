@@ -326,6 +326,26 @@ background: #a5002f;
     .banner-caomei{ top: 317px; left: -60px;}
   }
 
+  .slides-shengbang-caomei{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .banner-cake{ top:0; left:0;}
+    .banner-title{ top: 24px; left: 470px;}
+    .banner-xiong{ top:10px; left: 820px;}
+
+  }
+
+
+  .slides-memberDay-4yue{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .banner-l{position: absolute; top: 120px; left: 50%; margin-left: -710px; }
+    .banner-r{position: absolute; top: auto; bottom: -140px; left: 50%; margin-left: 240px;}
+    .banner-title{position: absolute; top:123px; left: 50%; margin-left: -208px;}
+
+  }
 
 }
 

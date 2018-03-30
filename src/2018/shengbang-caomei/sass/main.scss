@@ -1,0 +1,93 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+
+.evt-container{ overflow: hidden; background: url("../images/bg.jpg") repeat;
+  .btns{ width: 178px; height: 40px; background:url("../images/btn-bg.png") no-repeat; text-align: center; border-radius: 1px; cursor: pointer; float: left; margin-top: 30px; margin-right: 10px;
+    span{ display: block; color: #fff; font-size: 20px; line-height: 40px;}
+  }
+}
+
+
+
+.sec-banner{ position: relative; z-index: 2;
+  .evt-content{
+    width: 1200px; height: 723px;
+    .banner-cake{position: absolute; top: 0; left: -50px;}
+    .banner-title{position: absolute; top: 40px; left: 473px;}
+    .banner-xiong{position: absolute; top: 20px; left: 770px;}
+  }
+}
+
+.sec-1{position: relative; z-index: 1;
+  .evt-content{
+    width: 1200px; height: 630px;
+    .across{position: absolute; top: 40px; left: 465px;}
+    .line{position: absolute; top: -200px; left: 0;}
+    .price{position: absolute; top: 260px; left: 223px;
+      .goubtn{ padding: 20px 0;
+        span{padding: 3px 30px; background: #cf6e54; color: #fff; font-size:20px; margin: 0 10px 0 0; border-radius: 5px; }
+      }
+    }
+    .cake{position: absolute; top: 120px; left: 675px;}
+    .select{position: absolute; top: 341px; left: 605px;
+      ul{
+        li{ width: 38px; height: 36px; background: url("../images/gou-1.png"); margin-bottom: 49px; cursor: pointer; }
+        li.on{ background: url("../images/gou-2.png");}
+      }
+    }
+  }
+}
+
+
+.sec-2{  position: relative; z-index: 2;
+  .evt-content{
+    width: 1200px; height: 720px;
+    .line{position: absolute; top:-40px; left:0;}
+    .cake{position: absolute; top: 136px; left: 250px;}
+    .price{position: absolute; top: 270px; left: 800px;}
+
+  }
+}
+
+.sec-3{  position: relative; z-index: 1;
+  .evt-content {  position: relative;
+    width: 1200px; height: 383px;
+    .shuangxiong{position: absolute; bottom:-3px; left: -100px;}
+  }
+}
+
+
+
+
+
+
+.sec-footer{
+  position: relative; background: #ddccae;z-index: 2;
+  .evt-content {
+    width: 1200px; padding: 100px 0; color: #625033;
+    .hd-guize{ width:820px; margin: 0 auto;}
+
+    h2{
+      font-size:24px; font-weight: normal;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size:16px;
+      line-height: 1.8em;
+      padding-left: 1em;
+      text-indent: -1em;
+      margin-top: 5px;
+    }
+  }
+}
+
+
+
+

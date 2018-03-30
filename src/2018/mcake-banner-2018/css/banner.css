@@ -682,6 +682,59 @@
   left: -60px;
 }
 
+.banner-slides .slides-shengbang-caomei .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-shengbang-caomei .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-shengbang-caomei .banner-cake {
+  top: 0;
+  left: 0;
+}
+
+.banner-slides .slides-shengbang-caomei .banner-title {
+  top: 24px;
+  left: 470px;
+}
+
+.banner-slides .slides-shengbang-caomei .banner-xiong {
+  top: 10px;
+  left: 820px;
+}
+
+.banner-slides .slides-memberDay-4yue .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-memberDay-4yue .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-memberDay-4yue .banner-l {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  margin-left: -710px;
+}
+
+.banner-slides .slides-memberDay-4yue .banner-r {
+  position: absolute;
+  top: auto;
+  bottom: -140px;
+  left: 50%;
+  margin-left: 240px;
+}
+
+.banner-slides .slides-memberDay-4yue .banner-title {
+  position: absolute;
+  top: 123px;
+  left: 50%;
+  margin-left: -208px;
+}
+
 /*兼容小屏幕*/
 @media screen and (max-width: 1650px) {
   .slides-bafei .cake {
