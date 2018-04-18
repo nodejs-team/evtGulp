@@ -9,6 +9,8 @@
     <link type="text/css" rel="stylesheet" href="css/base.css" />
     <link type="text/css" rel="stylesheet" href="css/banner.css" />
     <!-- endbuild -->
+    <link rel="stylesheet" href="http://edm.mcake.com/fangli/2018-pc/mcake-banner-2018/css/barrageWall_wall.css">
+    <script src="http://edm.mcake.com/fangli/2018-pc/mcake-banner-2018/js/barrageWall.js"></script>
 </head>
 <body style="height:2000px;">
 
@@ -80,6 +82,9 @@
     <span id="evt_spin">loading: 0%</span>
 </div>
 
+
+
+
 <div id="evt_container" class="evt-container" style="margin-bottom: 15px;">
     <!------------floater 浮动窗口1------------->
     <div class="floater" id="floater" style="display: none;">
@@ -97,7 +102,7 @@
     </div>
 
     <!-----------icon 浮动窗口2------------->
-    <div class="icon" id="icon">
+    <div class="icon" id="icon" style="display: none;">
         <img src="images/floader/bd-zn.jpg" alt="">
         <a href="http://www.mcake.com"></a>
     </div>
@@ -111,8 +116,9 @@
             <div class="swiper-wrapper">
                 <!------------------swiper-slide 开始----------------->
 
+
                 <!--万圣节-->
-                <div class="swiper-slide slides-wansheng slides-first"  style="background:url(images/wansheng/bg.jpg) center repeat;">
+                <div class="swiper-slide slides-wansheng slides-first "  style="background:url(images/wansheng/bg.jpg) center repeat;">
                     <div class="swiper-content">
                         <div class="secItem w-title" data-anim="slide-right" data-delay="0.4">
                             <img src="images/wansheng/w-title.png"/>
@@ -125,6 +131,17 @@
                     </div>
                     <a href="#" class="slide-link"></a>
                 </div>
+
+                <!--母亲节：MotherDay-->
+                <div class="swiper-slide slides-MotherDay"  style="background:url(images/MotherDay/banner.jpg) center repeat;">
+                    <div class="swiper-content">
+                        <div class="icon ani-shake"><img src="images/MotherDay/icon.png" alt=""></div>
+                        <div id="MotherDay-barrage" class="container"></div>
+                    </div>
+                    <a href="#" class="slide-link"></a>
+                </div>
+
+
 
                 <!--swiper-slides-foodPack-->
                 <div class="swiper-slide slides-foodPack"  style="background:url(images/foodPack/bg.jpg) center repeat;">
@@ -396,6 +413,10 @@
                     <a href="#" class="slide-link"></a>
                 </div>
 
+
+
+
+
                 <!--***********swiper-slide 结束***********-->
             </div>
             <div class="swiper-pagination pagination"></div>
@@ -405,8 +426,11 @@
 </div>
 <!--=============banner结束=================-->
 
+
+
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
 <script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>
+<script type="text/javascript" src="http://edm.mcake.com/fangli/2018-pc/mcake-banner-2018/js/barrageWall.js"></script>
 <!-- build:js js/banner.js -->
 <script src="js/idangerous.swiper.min.js"></script>
 <script type="text/javascript" src="js/animate-util-swiperbanner.js"></script>

@@ -735,6 +735,52 @@
   margin-left: -208px;
 }
 
+.banner-slides .slides-MotherDay .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-MotherDay .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-MotherDay .icon {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: 486px;
+}
+
+.banner-slides .slides-MotherDay .ani-shake {
+  -webkit-animation: shake 3s ease-in-out infinite alternate;
+  animation: shake 3s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(20deg);
+    transform-origin: 20% 0;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(-5deg);
+    transform-origin: 20% 0;
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(20deg);
+    transform-origin: 20% 0;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(-5deg);
+    transform-origin: 20% 0;
+  }
+}
+
 /*兼容小屏幕*/
 @media screen and (max-width: 1650px) {
   .slides-bafei .cake {

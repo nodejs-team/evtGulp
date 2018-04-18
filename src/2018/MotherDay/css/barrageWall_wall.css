@@ -1,0 +1,74 @@
+/*-----------------------------------------*/
+/****************公用样式*******************/
+/*-----------------------------------------*/
+.clear-both::after {
+  clear: both;
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+.transition {
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.transform-scale {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.hover-transform-scale {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+
+/*此处为每条弹幕的样式*/
+.container{ position: absolute; top: 700px; left: 45%; width: 1100px; height: 200px; }
+.container .list {
+  position: absolute;
+  left: 100%;
+  white-space: nowrap;
+  height: 30px;
+  line-height: 30px;
+  font-size:16px; padding: 0 10px;
+  -webkit-transition: -webkit-transform 15s linear;
+  -moz-transition: -moz-transform 15s linear;
+  -o-transition: -o-transform 15s linear;
+  transition: transform 15s linear, opacity 2s ease-out 7s;
+  z-index: 999; box-shadow:0 0 3px 3px #f1e3ea; border-radius: 15px; background: #fff; color: #be365c;
+}
+/*此处弹幕的移动动画，使用transform不会引起页面的重绘，性能更好*/
+.container .list.animate {
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+  -webkit-transform: translateX(-2000px);
+  -moz-transform: translateX(-2000px);
+  -ms-transform: translateX(-2000px);
+  -o-transform: translateX(-2000px);
+  transform: translateX(-2000px); opacity: 0;
+
+}
+.container .list .content {
+  display: inline-block;
+  opacity: 1;
+}
+.container .list img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  border-radius: 50%;
+  vertical-align: text-top;
+}

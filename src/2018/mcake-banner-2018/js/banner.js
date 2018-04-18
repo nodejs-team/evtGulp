@@ -42,9 +42,6 @@
     }
     /*---------- 动画 end ----------*/
 
-
-
-
     if( !isSupportCss3 ){
       $(document.body).addClass("oldie");
     }
@@ -71,8 +68,49 @@
     foodPack.ren();
     /*---end---*/
 
+    /*---母亲节弹幕---*/
 
+    function barrage (){
+      var textArr = [
+        '祝万能的妈妈，母亲节快乐！'
+        ,'妈妈永远健康、年轻漂亮！'
+        ,'温情五月，充满感恩'
+        ,'虽然您很唠叨，但是我知道你是爱我的'
+        ,'她不记得过节，回家的日子就是母亲节'
+        ,'你放不下工作，可她却放不下你'
+        ,'我的时光，您的白发'
+        ,'陪伴是最好的节日礼物'
+        ,'岁月是优雅的力量，致最美丽的妈妈们'
+        ,'希望妈妈们永远年轻'
+        ,'和妈妈们一起分享甜蜜时光'
+        ,'应该给家里的女王准备好您礼物了'
+        ,'记得要给最美丽的妈妈准备礼物'
+        ,'致伟大的妈妈，永不落幕的爱'
+        ,'感谢那个给予我生命的你'
+        ,'宠爱母亲，好好秀把甜蜜'
+        ,'岁月不是偷走妈妈青春的神偷，你才是妈妈的小棉袄'
+        ,'对不起，我的青春叛逆，遇上了你的不善表达'
+        ,'你老这样在朋友圈过母亲节，你妈知道吗？'
+      ];
 
+      var option={
+        container:"#MotherDay-barrage", /*弹幕墙的id*/
+        barrageLen:3 /*弹幕的行数*/
+      }
+      barrageWall.init(option);/*初始化弹幕墙*/
+
+      //模拟用户输入
+      var num=0,timer =setInterval(function(){
+        num++;
+        if(num>textArr.length-1){
+          num = 0;
+        }else{
+          barrageWall.upWall(null,null,textArr[num]);
+        }
+      },1500);
+    }
+
+    barrage();
 
   };
 

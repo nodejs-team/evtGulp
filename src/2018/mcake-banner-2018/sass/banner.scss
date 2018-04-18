@@ -344,8 +344,49 @@ background: #a5002f;
     .banner-l{position: absolute; top: 120px; left: 50%; margin-left: -710px; }
     .banner-r{position: absolute; top: auto; bottom: -140px; left: 50%; margin-left: 240px;}
     .banner-title{position: absolute; top:123px; left: 50%; margin-left: -208px;}
+  }
+
+  .slides-MotherDay{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .icon{position: absolute; top: -10px; left: 50%; margin-left: 486px;}
+    .ani-shake{
+      -webkit-animation: shake 3s ease-in-out infinite alternate;
+      animation: shake 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes shake {
+      0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(20deg);
+        transform-origin:20% 0;
+      }
+      100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(-5deg);
+        transform-origin:20% 0;
+      }
+
+    }
+    @-webkit-keyframes shake {
+      0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(20deg);
+        transform-origin:20% 0;
+      }
+      100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(-5deg);
+        transform-origin:20% 0;
+      }
+
+    }
 
   }
+
+
+
 
 }
 
