@@ -286,7 +286,7 @@
 
   function icon(){
     var height = $("#evt_container").outerHeight();
-    var fHeight = $(".icon").height();
+    var fHeight = $("#icon").height();
     var fTop = 100;
     var fRight = 40;
     var floater = $('#icon');
@@ -312,7 +312,7 @@
 
   function icon2(){
     var height = $("#evt_container").outerHeight();
-    var fHeight = $(".icon").height();
+    var fHeight = $("#icon").height();
     var fTop = 110;
     var fRight = 40;
     var floater = $('#icon');

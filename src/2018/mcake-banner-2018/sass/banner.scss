@@ -301,7 +301,7 @@ background: #a5002f;
     .swiper-content{width: 1200px;
       div{position: absolute;}
     }
-    .banner-title{ top: 0; left: 50%; width: 1322px; margin-left: -661px;}
+    .banner-title{ top: 0; left: 50%; width: 1322px; margin-left: -661px !important;}
     .banner-l{ top: 0; left: 50%; margin-left: -1000px;  margin-left: -1000px !important;}
     .banner-r{ top: 0; left: 50%;  margin-left: 350px;  margin-left: 350px !important;}
 
@@ -341,51 +341,30 @@ background: #a5002f;
     .swiper-content{width: 1200px;
       div{position: absolute;}
     }
-    .banner-l{position: absolute; top: 120px; left: 50%; margin-left: -710px; }
-    .banner-r{position: absolute; top: auto; bottom: -140px; left: 50%; margin-left: 240px;}
-    .banner-title{position: absolute; top:123px; left: 50%; margin-left: -208px;}
+    .banner-l{position: absolute; top: 120px; left: 50%; margin-left: -710px !important; }
+    .banner-r{position: absolute; top: auto; bottom: -140px; left: 50%; margin-left: 240px !important;}
+    .banner-title{position: absolute; top:123px; left: 50%; margin-left: -208px !important;}
   }
+
+  .slides-memberDay-5yue{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .banner-1{width: 256px; top: 0; left: 0;}
+    .banner-2{width: 419px; top: 0; left:819px;}
+    .banner-3{width: 472px; top: 90px; left: -80px;}
+    .banner-4{width: 212px; top: 328px; left: 861px;}
+    .banner-title{width: 478px; top: 161px; left: 401px;}
+  }
+
 
   .slides-MotherDay{
     .swiper-content{width: 1200px;
       div{position: absolute;}
     }
-    .icon{position: absolute; top: -10px; left: 50%; margin-left: 486px;}
-    .ani-shake{
-      -webkit-animation: shake 3s ease-in-out infinite alternate;
-      animation: shake 3s ease-in-out infinite alternate;
-    }
-
-    @keyframes shake {
-      0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(20deg);
-        transform-origin:20% 0;
-      }
-      100%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(-5deg);
-        transform-origin:20% 0;
-      }
-
-    }
-    @-webkit-keyframes shake {
-      0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(20deg);
-        transform-origin:20% 0;
-      }
-      100%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(-5deg);
-        transform-origin:20% 0;
-      }
-
-    }
+    .icon{position: absolute; top: -10px; left: 50%; margin-left: 420px !important;}
 
   }
-
-
 
 
 }
@@ -415,7 +394,7 @@ background: #a5002f;
 }
 
 /*浮动 2*/
-.icon{position:fixed; top:110px; z-index:11;
+.floaterIcon{position:fixed; top:110px; z-index:11;
   a{width:100%; display:block; height:100%; position:absolute; top:0; left:0;}
 }
 

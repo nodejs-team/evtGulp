@@ -234,9 +234,32 @@
   }
 
 
+  /*判断较小屏幕（笔记本）
+   * 小屏幕下：banner上移
+   * 小屏幕下：浮动窗口往里移动
+   * */
+  (function screen(){
+    var screenW = document.body.clientWidth;  //网页可见区域宽
+    function smallScreen() {
+      if(screenW<1700){  /*小屏幕*/
+        $(".sec-banner").css("margin-top","-180px"); /*小屏banner向上偏移*/
+        $(".floater").addClass("samllScreen");/*小屏floater向左偏移*/
+      }else{
+        $(".sec-banner").css("margin-top","0");
+        $(".floater").removeClass("samllScreen");
+      }
+    }
+
+    smallScreen();
+
+    $(window).resize(function() {  /*缩放屏幕*/
+      screenW = document.body.clientWidth;
+      smallScreen();
+    });
+
+  })();
+
   var loadComplete = function () {
-
-
     new Price('.js_price',{
       add:'.add',
       reduce:'.reduce'
@@ -252,14 +275,12 @@
       reduce:'.reduce'
     },[50]);
 
-
+    /*一键订购*/
     $(".floater").fadeOut(10);
     $("html,body").animate({scrollTop: 0},500,function () {
       floater();
     });
 
-
-    
   };
 
   var loadResource = function(){
@@ -297,6 +318,8 @@
   $(function(){
     loadResource();
   });
+
+
 
 })(jQuery);
 

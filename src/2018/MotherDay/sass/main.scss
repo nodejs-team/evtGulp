@@ -134,12 +134,12 @@ span.num{
 
 }
 .sec-3{ background: url("../images/main-bg-3.jpg") top no-repeat; height: 1051px;
-  .evt-content{  width: 1400px; padding-top: 130px;
+  .evt-content{  width: 1200px; padding-top: 130px;
     .zp-title{ width: 877px; margin:60px auto;}
     .pro-ms{position: relative; margin: 0 auto;
-      ul{ margin-left: 68px;
-        li{ width: 319px; float: left;
-          .des{position: relative; width: 254px; margin:-20px auto 20px; padding: 0;
+      ul{ margin-left: 28px;
+        li{ width: 279px; float: left;
+          .des{position: relative; width: 224px; margin:-20px auto 20px; padding-left:41px;
             p{font-size: 22px; text-align: center; color: #000; line-height: 40px; border-bottom: #222222 1px solid; }
             .cl{position: relative; margin: 10px auto; color: #222222; line-height: 30px; font-size: 28px; text-align: center;
               s{ font-size: 20px; color: #595759;}
@@ -208,16 +208,19 @@ span.num{
     }
 }
 
+
+/*一键订购浮动*/
 .floater{  position: fixed; width: 145px; height: 145px; top: 600px;  z-index: 11; left: 50%; margin-left: 510px; cursor: pointer;
   .tips{ position: absolute; width: 50px; height: 50px; right:-5px; top: -5px; border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12; cursor: Default;
     span{ font-size:18px; color: #fff; line-height: 50px;}
   }
 }
+.floater.samllScreen{margin-left:420px;}
 
 
+/*小屏幕判断，不兼容ie8*/
 @media screen and (max-width:1700px) {
-   .dis-1{left: -100px !important;}
-   .dis-2{right: -180px !important;}
+
 }
 
 /*录音传情提示*/
@@ -233,35 +236,3 @@ span.num{
   }
 }
 
-
-.ani-shake{
-  -webkit-animation: shake 3s ease-in-out infinite alternate;
-  animation: shake 3s ease-in-out infinite alternate;
-}
-
-@keyframes shake {
-  0%{
-    -webkit-transform: rotate(0deg);
-    transform: rotate(20deg);
-    transform-origin:20% 0;
-  }
-  100%{
-    -webkit-transform: rotate(0deg);
-    transform: rotate(-5deg);
-    transform-origin:20% 0;
-  }
-
-}
-@-webkit-keyframes shake {
-  0%{
-    -webkit-transform: rotate(0deg);
-    transform: rotate(20deg);
-    transform-origin:20% 0;
-  }
-  100%{
-    -webkit-transform: rotate(0deg);
-    transform: rotate(-5deg);
-    transform-origin:20% 0;
-  }
-
-}

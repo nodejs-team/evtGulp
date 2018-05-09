@@ -444,7 +444,7 @@ span.num {
 }
 
 .sec-3 .evt-content {
-  width: 1400px;
+  width: 1200px;
   padding-top: 130px;
 }
 
@@ -459,19 +459,19 @@ span.num {
 }
 
 .sec-3 .evt-content .pro-ms ul {
-  margin-left: 68px;
+  margin-left: 28px;
 }
 
 .sec-3 .evt-content .pro-ms ul li {
-  width: 319px;
+  width: 279px;
   float: left;
 }
 
 .sec-3 .evt-content .pro-ms ul li .des {
   position: relative;
-  width: 254px;
+  width: 224px;
   margin: -20px auto 20px;
-  padding: 0;
+  padding-left: 41px;
 }
 
 .sec-3 .evt-content .pro-ms ul li .des p {
@@ -713,6 +713,7 @@ span.num {
   text-indent: -1.5em;
 }
 
+/*一键订购浮动*/
 .floater {
   position: fixed;
   width: 145px;
@@ -744,15 +745,11 @@ span.num {
   line-height: 50px;
 }
 
-@media screen and (max-width: 1700px) {
-  .dis-1 {
-    left: -100px !important;
-  }
-  .dis-2 {
-    right: -180px !important;
-  }
+.floater.samllScreen {
+  margin-left: 420px;
 }
 
+/*小屏幕判断，不兼容ie8*/
 /*录音传情提示*/
 .chuanqing {
   background: url("../images/right.png") no-repeat center 60px;
@@ -814,35 +811,4 @@ span.num {
 .chuanqing .cq_wap p {
   line-height: 20px;
   margin-top: 5px;
-}
-
-.ani-shake {
-  -webkit-animation: shake 3s ease-in-out infinite alternate;
-  animation: shake 3s ease-in-out infinite alternate;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(20deg);
-    transform-origin: 20% 0;
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(-5deg);
-    transform-origin: 20% 0;
-  }
-}
-
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(20deg);
-    transform-origin: 20% 0;
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(-5deg);
-    transform-origin: 20% 0;
-  }
 }

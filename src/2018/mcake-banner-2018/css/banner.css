@@ -614,7 +614,7 @@
   top: 0;
   left: 50%;
   width: 1322px;
-  margin-left: -661px;
+  margin-left: -661px !important;
 }
 
 .banner-slides .slides-memberDay-1yue .banner-l {
@@ -717,7 +717,7 @@
   position: absolute;
   top: 120px;
   left: 50%;
-  margin-left: -710px;
+  margin-left: -710px !important;
 }
 
 .banner-slides .slides-memberDay-4yue .banner-r {
@@ -725,14 +725,52 @@
   top: auto;
   bottom: -140px;
   left: 50%;
-  margin-left: 240px;
+  margin-left: 240px !important;
 }
 
 .banner-slides .slides-memberDay-4yue .banner-title {
   position: absolute;
   top: 123px;
   left: 50%;
-  margin-left: -208px;
+  margin-left: -208px !important;
+}
+
+.banner-slides .slides-memberDay-5yue .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-memberDay-5yue .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-memberDay-5yue .banner-1 {
+  width: 256px;
+  top: 0;
+  left: 0;
+}
+
+.banner-slides .slides-memberDay-5yue .banner-2 {
+  width: 419px;
+  top: 0;
+  left: 819px;
+}
+
+.banner-slides .slides-memberDay-5yue .banner-3 {
+  width: 472px;
+  top: 90px;
+  left: -80px;
+}
+
+.banner-slides .slides-memberDay-5yue .banner-4 {
+  width: 212px;
+  top: 328px;
+  left: 861px;
+}
+
+.banner-slides .slides-memberDay-5yue .banner-title {
+  width: 478px;
+  top: 161px;
+  left: 401px;
 }
 
 .banner-slides .slides-MotherDay .swiper-content {
@@ -747,38 +785,7 @@
   position: absolute;
   top: -10px;
   left: 50%;
-  margin-left: 486px;
-}
-
-.banner-slides .slides-MotherDay .ani-shake {
-  -webkit-animation: shake 3s ease-in-out infinite alternate;
-  animation: shake 3s ease-in-out infinite alternate;
-}
-
-@keyframes shake {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(20deg);
-    transform-origin: 20% 0;
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(-5deg);
-    transform-origin: 20% 0;
-  }
-}
-
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(20deg);
-    transform-origin: 20% 0;
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(-5deg);
-    transform-origin: 20% 0;
-  }
+  margin-left: 420px !important;
 }
 
 /*兼容小屏幕*/
@@ -832,13 +839,13 @@
 }
 
 /*浮动 2*/
-.icon {
+.floaterIcon {
   position: fixed;
   top: 110px;
   z-index: 11;
 }
 
-.icon a {
+.floaterIcon a {
   width: 100%;
   display: block;
   height: 100%;
