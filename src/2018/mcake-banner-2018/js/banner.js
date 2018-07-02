@@ -2,7 +2,56 @@
  * Created by mcake on 2016/5/24.
  */
 (function ($) {
+
+  /*
+   *适配banner适配小屏幕
+   * 给banner里面的元素增加一个class:newPosition
+   * */
+  var maxWidth = $(window).width();
+  function BannerRedraw(ele,opts) {
+    this.$ele = $(ele);
+    this.$opts = opts;
+    this._init();
+  }
+  BannerRedraw.prototype = {
+    removenewPosition:function () {
+      for(var i=0;i<this.$opts.length;i++){
+        $(this.$opts[i]).removeClass("newPosition");
+      }
+    },
+    addnewPosition:function () {
+      for(var i=0;i<this.$opts.length;i++){
+        $(this.$opts[i]).addClass("newPosition");
+      }
+    },
+    _init:function () {
+      var self = this;
+      if(maxWidth < 1700){
+        self.addnewPosition();
+      }else{
+        self.removenewPosition();
+      }
+      /*缩放窗口*/
+      $(window).resize(function() {
+        maxWidth = $(window).width();
+        if(maxWidth < 1700){
+          self.addnewPosition();
+        }else{
+          self.removenewPosition();
+        }
+      });
+
+    }
+  };
+
+
+
+
   var loadComplete = function () {
+
+    /*父亲节：banner适配小屏*/
+    new BannerRedraw(".slides-fatherDay", ['.dis-0','.dis-1','.dis-2','.dis-3','.banner-gif','.zhekou']);
+
 
     /*---------- 动画 ----------*/
     var wsj= {
@@ -40,6 +89,17 @@
 
       }
     }
+
+    var father = {
+      father: function () {
+        $(".father").each(function(i, el){
+          var mc = new MovieClip('father_png', "father_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+      }
+    }
+
     /*---------- 动画 end ----------*/
 
     if( !isSupportCss3 ){
@@ -66,11 +126,12 @@
     wsj.tou();
     coffee.girl();
     foodPack.ren();
+    father.father();
     /*---end---*/
 
     /*---母亲节弹幕---*/
 
-    function barrage (){
+    /*function barrage (){
       var textArr = [
         '祝万能的妈妈，母亲节快乐！'
         ,'妈妈永远健康、年轻漂亮！'
@@ -94,10 +155,10 @@
       ];
 
       var option={
-        container:"#MotherDay-barrage", /*弹幕墙的id*/
-        barrageLen:3 /*弹幕的行数*/
+        container:"#MotherDay-barrage", /!*弹幕墙的id*!/
+        barrageLen:3 /!*弹幕的行数*!/
       }
-      barrageWall.init(option);/*初始化弹幕墙*/
+      barrageWall.init(option);/!*初始化弹幕墙*!/
 
       //模拟用户输入
       var num=0,timer =setInterval(function(){
@@ -110,7 +171,7 @@
       },1500);
     }
 
-    barrage();
+    barrage();*/
 
   };
 
@@ -356,7 +417,7 @@
     }
     /*ie8,ie9不支持css animation*/
     if(navigator.userAgent.indexOf("MSIE")>0){
-      if(navigator.userAgent.indexOf("MSIE 8.0")>0 || navigator.userAgent.indexOf("MSIE 9.0")>0){//这里是重点，你懂的
+      if(navigator.userAgent.indexOf("MSIE 8.0")>0 || navigator.userAgent.indexOf("MSIE 9.0")>0){ /*这里是重点，你懂的*/
         $(".lobo-gif").fadeIn(0);
         $(".tuzi-gif").fadeIn(0);
       }

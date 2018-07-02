@@ -367,6 +367,144 @@ background: #a5002f;
   }
 
 
+  .slides-chihuo{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .banner-bg{ width:746px; height: 343px; top: 70px; left:230px; background: url("../images/chihuo/banner-bg.png");}
+    .b-cake-1{ top: 238px; left:215px;}
+    .b-cake-2{ top: 289px; left:494px;}
+    .b-cake-3{ top: 260px; left:690px;}
+    .m-logo{ top: 20px; left:473px;}
+    .cake-title{ top: 97px; left:390px;  }
+    .des-1{ top: 74px; left:36px;}
+    .des-2{ top:0; left:956px;}
+  }
+
+  .slides-children-Day{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+      img{width: 100%;}
+    }
+    .banner{ top:20px; left: -84px;}
+    .cake-sh{ width: 750px; top:40px; left: -84px;}
+    .floats{ width: 100px; top:-10px; right: 0;  }
+
+  }
+
+
+  .slides-children-Day-bj{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+      img{width: 100%;}
+    }
+    .banner{ top:20px; left: -84px;}
+    .cake-sh{ width: 630px; top:19px; left: 110px;}
+    .floats{ width: 100px; top:-10px; right:0;  }
+    .fade-swing{
+      animation:swing 5s linear infinite;
+      -moz-animation:swing 5s linear infinite;
+      -webkit-animation:swing 5s linear infinite;
+      -o-animation:swing 5s linear infinite
+    }
+    @-webkit-keyframes swing {
+      10% {
+        transform:rotate(15deg)
+      }
+      20% {
+        transform:rotate(-10deg)
+      }
+      30% {
+        transform:rotate(5deg)
+      }
+      40% {
+        transform:rotate(-5deg)
+      }
+      100%,50% {
+        transform:rotate(0)
+      }
+    }
+    @-moz-keyframes swing {
+      10% {
+        transform:rotate(15deg)
+      }
+      20% {
+        transform:rotate(-10deg)
+      }
+      30% {
+        transform:rotate(5deg)
+      }
+      40% {
+        transform:rotate(-5deg)
+      }
+      100%,50% {
+        transform:rotate(0)
+      }
+    }
+    @-o-keyframes swing {
+      10% {
+        transform:rotate(15deg)
+      }
+      20% {
+        transform:rotate(-10deg)
+      }
+      30% {
+        transform:rotate(5deg)
+      }
+      40% {
+        transform:rotate(-5deg)
+      }
+      100%,50% {
+        transform:rotate(0)
+      }
+    }
+    @keyframes swing {
+      10% {
+        transform:rotate(15deg)
+      }
+      20% {
+        transform:rotate(-10deg)
+      }
+      30% {
+        transform:rotate(5deg)
+      }
+      40% {
+        transform:rotate(-5deg)
+      }
+      100%,50% {
+        transform:rotate(0)
+      }
+    }
+
+  }
+
+
+  .slides-fatherDay{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .banner-title{top: 90px; left: 210px;}
+    .dis-0{top:-50px; left: -350px;}
+    .dis-0.newPosition{ left: -310px;}
+
+    .dis-1{top:-10px; left: 1090px;}
+    .dis-1.newPosition{left:1028px;}
+
+    .dis-2{top: 370px; left: -147px;}
+    .dis-2.newPosition{top: 354px; left: -67px;}
+
+    .dis-3{top: 351px; left: 1086px;}
+    .dis-3.newPosition{top: 351px; left: 990px;}
+
+    .zhekou{top: 50px; left: 870px;}
+    .zhekou.newPosition{ left: 820px;}
+
+    .banner-gif{top:-20px; left: 150px;}
+    .banner-gif.newPosition{left: 133px;}
+
+  }
+
+
 }
 
 

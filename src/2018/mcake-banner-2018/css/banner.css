@@ -788,6 +788,263 @@
   margin-left: 420px !important;
 }
 
+.banner-slides .slides-chihuo .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-chihuo .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-chihuo .banner-bg {
+  width: 746px;
+  height: 343px;
+  top: 70px;
+  left: 230px;
+  background: url("../images/chihuo/banner-bg.png");
+}
+
+.banner-slides .slides-chihuo .b-cake-1 {
+  top: 238px;
+  left: 215px;
+}
+
+.banner-slides .slides-chihuo .b-cake-2 {
+  top: 289px;
+  left: 494px;
+}
+
+.banner-slides .slides-chihuo .b-cake-3 {
+  top: 260px;
+  left: 690px;
+}
+
+.banner-slides .slides-chihuo .m-logo {
+  top: 20px;
+  left: 473px;
+}
+
+.banner-slides .slides-chihuo .cake-title {
+  top: 97px;
+  left: 390px;
+}
+
+.banner-slides .slides-chihuo .des-1 {
+  top: 74px;
+  left: 36px;
+}
+
+.banner-slides .slides-chihuo .des-2 {
+  top: 0;
+  left: 956px;
+}
+
+.banner-slides .slides-children-Day .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-children-Day .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-children-Day .swiper-content img {
+  width: 100%;
+}
+
+.banner-slides .slides-children-Day .banner {
+  top: 20px;
+  left: -84px;
+}
+
+.banner-slides .slides-children-Day .cake-sh {
+  width: 750px;
+  top: 40px;
+  left: -84px;
+}
+
+.banner-slides .slides-children-Day .floats {
+  width: 100px;
+  top: -10px;
+  right: 0;
+}
+
+.banner-slides .slides-children-Day-bj .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-children-Day-bj .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-children-Day-bj .swiper-content img {
+  width: 100%;
+}
+
+.banner-slides .slides-children-Day-bj .banner {
+  top: 20px;
+  left: -84px;
+}
+
+.banner-slides .slides-children-Day-bj .cake-sh {
+  width: 630px;
+  top: 19px;
+  left: 110px;
+}
+
+.banner-slides .slides-children-Day-bj .floats {
+  width: 100px;
+  top: -10px;
+  right: 0;
+}
+
+.banner-slides .slides-children-Day-bj .fade-swing {
+  animation: swing 5s linear infinite;
+  -moz-animation: swing 5s linear infinite;
+  -webkit-animation: swing 5s linear infinite;
+  -o-animation: swing 5s linear infinite;
+}
+
+@-webkit-keyframes swing {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  100%, 50% {
+    transform: rotate(0);
+  }
+}
+
+@-moz-keyframes swing {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  100%, 50% {
+    transform: rotate(0);
+  }
+}
+
+@-o-keyframes swing {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  100%, 50% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes swing {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  100%, 50% {
+    transform: rotate(0);
+  }
+}
+
+.banner-slides .slides-fatherDay .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slides-fatherDay .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slides-fatherDay .banner-title {
+  top: 90px;
+  left: 210px;
+}
+
+.banner-slides .slides-fatherDay .dis-0 {
+  top: -50px;
+  left: -350px;
+}
+
+.banner-slides .slides-fatherDay .dis-0.newPosition {
+  left: -310px;
+}
+
+.banner-slides .slides-fatherDay .dis-1 {
+  top: -10px;
+  left: 1090px;
+}
+
+.banner-slides .slides-fatherDay .dis-1.newPosition {
+  left: 1028px;
+}
+
+.banner-slides .slides-fatherDay .dis-2 {
+  top: 370px;
+  left: -147px;
+}
+
+.banner-slides .slides-fatherDay .dis-2.newPosition {
+  top: 354px;
+  left: -67px;
+}
+
+.banner-slides .slides-fatherDay .dis-3 {
+  top: 351px;
+  left: 1086px;
+}
+
+.banner-slides .slides-fatherDay .dis-3.newPosition {
+  top: 351px;
+  left: 990px;
+}
+
+.banner-slides .slides-fatherDay .zhekou {
+  top: 50px;
+  left: 870px;
+}
+
+.banner-slides .slides-fatherDay .zhekou.newPosition {
+  left: 820px;
+}
+
+.banner-slides .slides-fatherDay .banner-gif {
+  top: -20px;
+  left: 150px;
+}
+
+.banner-slides .slides-fatherDay .banner-gif.newPosition {
+  left: 133px;
+}
+
 /*兼容小屏幕*/
 @media screen and (max-width: 1650px) {
   .slides-bafei .cake {

@@ -173,8 +173,8 @@
   };
 
   /*点击复制地址*/
-  function copyUrl(){
-    var Url = document.getElementById("ewmUrl");
+  function copyUrl(str){
+    var Url = document.getElementById(str);
     Url.select();
     document.execCommand("Copy");
     alert("已复制好，可贴粘。");
@@ -186,16 +186,16 @@
     var tHTML = $(this).html();
     if(i===0){
       $(this).html('<div class="mark mark-1 top-ns"><span>'+(i+1)+'</span></div>'+'<div class="guan guan-1"></div>'+ tHTML);
-      $(this).find(".buy_btn_box").before('<h2><p class="p-new"><i>￥</i><span class="now-price">298</span></p><p class="p-old  delete"> ￥<b class="old-price">298</b>.00</p></h2>');
+      $(this).find(".buy_btn_box").before('<h2><p class="p-new"><em>吃货价</em><i>￥</i><span class="now-price">298</span></p><p class="p-old  delete"> ￥<b class="old-price">298</b>.00</p></h2>');
     }else if(i===1){
       $(this).html('<div class="mark mark-2 top-ns"><span>'+(i+1)+'</span></div>'+'<div class="guan guan-2"></div>'+ tHTML);
-      $(this).find(".buy_btn_box").before('<h2><p class="p-new"><i>￥</i><span class="now-price">298</span></p><p class="p-old delete"> ￥<b class="old-price">298</b>.00</p></h2>');
+      $(this).find(".buy_btn_box").before('<h2><p class="p-new"><em>吃货价</em><i>￥</i><span class="now-price">298</span></p><p class="p-old delete"> ￥<b class="old-price">298</b>.00</p></h2>');
     }else if(i===2){
       $(this).html('<div class="mark mark-3 top-ns"><span>'+(i+1)+'</span></div>'+'<div class="guan guan-3"></div>'+ tHTML);
-      $(this).find(".buy_btn_box").before('<h2><p class="p-new"><i>￥</i><span class="now-price">298</span></p><p class="p-old delete"> ￥<b class="old-price">298</b>.00</p></h2>');
+      $(this).find(".buy_btn_box").before('<h2><p class="p-new"><em>吃货价</em><i>￥</i><span class="now-price">298</span></p><p class="p-old delete"> ￥<b class="old-price">298</b>.00</p></h2>');
     }else if(i<8){
       $(this).html('<div class="mark"><span>'+(i+1)+'</span></div>'+tHTML);
-      $(this).find(".buy_btn_box").before('<h2><p class="p-old bigfont"><i>￥</i><b class="old-price">298</b></p></h2>');
+      $(this).find(".buy_btn_box").before('<h2><p class="p-old bigfont"><i>￥</i><b class="old-price">298</b>.00</p></h2>');
     }
   });
 
@@ -208,9 +208,15 @@
     $closes=$(".closes");
 
   function QuanDialog(n) {
+    if(n==2){
+      $closes.fadeOut(0);
+    }else{
+      $closes.fadeIn(0);
+    }
     $Dialogbg.fadeIn(300);
     $Dialog.fadeIn(300);
     $Dialog.find(".tip-"+n).fadeIn(300).siblings().not(".closes").hide();
+
   }
 
   /*关闭*/
@@ -229,10 +235,85 @@
   window.QuanDialog = QuanDialog;
 
 
+  /*投票*/
+  var Vote = {
+    totalNum:MaxVoteNum,
+    voteNum:0,
+    percent: 0,
+    voteAni:function (ele) {
+      var self = ele;
+      this.voteNum = self.siblings('.ptxt').find(".voteNum").text()-0;
+
+      this.voteNum++;
+      this.percent = this.voteNum / this.totalNum;
+
+      if(this.percent >=1){
+        this.percent=1;
+        this.voteNum = this.totalNum;
+      }
+
+      self.siblings('.ptxt').find(".voteNum").text(this.voteNum);
+      self.siblings(".percent").stop().animate({
+        width:(this.percent*100)+"%"
+      },500);
+
+    },
+
+    vote:function (ele) {
+
+      this.voteNum = ele.parent(".voteItem").find('.ptxt').find(".voteNum").text()-0;
+      this.voteNum++;
+      Vote.percent = this.voteNum / Vote.totalNum;
+
+      if(Vote.percent >=1){
+        Vote.percent=1;
+       /* this.voteNum = Vote.totalNum;*/
+      }
+
+      ele.parent(".voteItem").find('.ptxt').find(".voteNum").text(this.voteNum);
+      ele.parent(".voteItem").find(".percent").stop().animate({
+        width:(Vote.percent*100)+"%"
+      },500);
+
+    },
+
+    init:function () {
+      var self = this;
+
+     /* $(".vote-btn").click(function () {
+        self.vote($(this));
+      });*/
+      /*刷新初始化*/
+      $(".voteItem").each(function () {
+        self.voteNum = $(this).find(".voteNum").text()-0;
+        self.percent = self.voteNum / self.totalNum;
+        $(this).find(".voteNum").text(self.voteNum);
+        $(this).find('.percent').stop().animate({
+          width:(self.percent*100)+"%"
+        },500);
+      });
+    }
+  };
+  window.voteFun = Vote.vote;
+  Vote.init();
+
 
   var loadComplete = function () {
+    /*刚进入页面，自动滚动到顶部*/
     $("html,body").animate({scrollTop: 0},500);
+    /*banner适配第一屏*/
+    new BannerRedraw(".sec-banner", ['.evt-content','.banner-bg','.cake-title','.b-cake-1','.b-cake-2','.b-cake-3']);
 
+    /*3,5,7的倍数，去掉右margin*/
+    $('.vote-cake .row:nth-child(2n+1)').addClass("noMargin");
+    $('.vote-cake .row:nth-child(2n+1)').css('margin-right',0);
+
+     if(IEVersion() == 8){
+       $(".ewm-box").html('<p>请升级浏览器，<br> 或直接复制链接<br>参与投票！</p>');
+       $(".code-wrap").html('<p>请升级<br>浏览器</p>');
+    }
+
+   /*电话号码中间4位用*代替*/
     $(".vote-txt li").each(function () {
       var mobile = $(this).find('.tel-phone').text();
       var reg = new RegExp("(\\d{3})(\\d{4})(\\d{4})");
@@ -240,9 +321,7 @@
       $(this).find('.tel-phone').text(tel);
     });
 
-
-    $(".row:nth-child(2n+1)").addClass("noMargin");
-
+    /*价格计算*/
     new Price('.js_price1',{
       add:'.add',
       reduce:'.reduce'
@@ -284,12 +363,19 @@
       $(this).removeClass("hover");
     });
 
-    $(".copyBtn").click(function () {
-      copyUrl();
+    $(".copyBtn1").click(function () {
+      copyUrl("ewmUrl1");
     });
 
 
+    $(".copyBtn2").click(function () {
+      copyUrl("ewmUrl2");
+    });
 
+    $(".code-url").click(function () {
+      var val= $(this).find("input").data("val");
+      $(this).find("input").val(val);
+    });
 
   };
 

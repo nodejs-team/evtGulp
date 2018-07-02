@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"banner_jpg,arrows_png,guitou_json,banner-c1_png,banner-c2_png,banner-cake_png,banner-girl_png,girl_json,ren_json",
+			"keys":"banner_jpg,arrows_png,guitou_json,banner-c1_png,banner-c2_png,banner-cake_png,banner-girl_png,girl_json,ren_json,,father_json",
 			"name":"preload"
 		}],
 	"resources":[
@@ -51,6 +51,12 @@
 			"subkeys":"ren-1,ren-2,ren-3,ren-4,ren-5,ren-6",
 			"type":"sheet",
 			"url":"foodPack/ren.json"
+		},
+		{
+			"name":"father_json",
+			"subkeys":"father-1,father-10,father-11,father-12,father-13,father-14,father-15,father-16,father-17,father-18,father-19,father-2,father-20,father-21,father-22,father-23,father-3,father-4,father-5,father-6,father-7,father-8,father-9",
+			"type":"sheet",
+			"url":"fatherDay/father.json"
 		}
 	]
 }

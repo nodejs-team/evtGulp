@@ -28,11 +28,11 @@
                         </div>
                         <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
                         <ul class="navbar">
-                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start----->
+                            <!--网站录音功能 add by zan.yu 2015-12-11 start-->
                             <li class="record" style="display: none;">
                                 <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
                             </li>
-                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end----->
+                            <!--网站录音功能 add by zan.yu 2015-12-11 end-->
                             <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
                             <li class="m_cart">
                                 <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
@@ -80,13 +80,15 @@
 <div id="evt_container" class="evt-container">
     <div class="CodeRight">
         <div class="code-wrap">生成二维码图片</div>
-        <div class="code-url"><input type="text" value="www.mcake.com/shop/110/index.html"></div>
+        <div class="code-url">
+            <input type="text" class="copyUrl" value="m.mcake.com" data-val="www.mcake.com/shop/110/index.html" disabled>
+        </div>
         <img src="images/code.png" />
     </div>
 
     <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
         <div class="evt-content">
-            <div class="banner-bg" data-anim="fade-in" data-delay="1"><img src="images/banner-bg.png" /></div>
+            <div class="banner-bg" data-anim="fade-in" data-delay="1"></div>
             <div class="m-logo" data-anim="fade-in" data-delay="0.4"><img src="images/m-logo.png" /></div>
             <div class="b-cake-1" data-anim="slide-right" data-delay="0.8"><img src="images/b-cake-1.png" /></div>
             <div class="b-cake-3" data-anim="slide-left" data-delay="0.8"><img src="images/b-cake-3.png" /></div>
@@ -127,11 +129,11 @@
             <div class="vote-cake clearfix" id="ranking">
                 <div class="row voteItem first-cake">
                     <div class="cake"><img src="images/cake-1.png" alt=""></div>
-                    <div class="vote-btn"></div>
+                    <div class="vote-btn vote-btn1"></div>
                     <div class="piao-num">
                         <div class="percent-wrap">
                             <div class="percent"></div>
-                            <div class="ptxt"><i class="voteNum">2800</i>票</div>
+                            <div class="ptxt"><i class="voteNum">398</i>票</div>
                         </div>
                     </div>
                     <div class="price js_price1">
@@ -165,7 +167,6 @@
                             <div class="percent"></div>
                             <div class="ptxt"><i class="voteNum">40</i>票</div>
                         </div>
-
                     </div>
                     <div class="price js_price2">
                         <div class="price-title"><img src="images/s-title-2.png"/></div>
@@ -204,11 +205,9 @@
                     <div class="price js_price3">
                         <div class="price-title"><img src="images/s-title-3.png"/></div>
 
-                        <ul class="price_p clearfix">
+                        <ul class="price_p short2 clearfix">
                             <li data-oldPrice="198" data-bs="1"><span class="bs">1磅</span></li>
                             <li data-oldPrice="298" data-bs="2" class="cur"><span class="bs">2磅</span></li>
-                            <li data-oldPrice="428" data-bs="3"><span class="bs">3磅</span></li>
-                            <li data-oldPrice="428" data-bs="3"><span class="bs">5磅</span></li>
                         </ul>
 
                         <div class="price_num clearfix" style="display: none;">
@@ -372,7 +371,7 @@
                 <div class="fuli-2-hover DBlock"><img src="images/glalen-hover .png" /></div>
                 <img src="images/ch-fuli-quan.png" />
             </div>
-            <div class="more"></div>
+            <div class="more"><a href="#"></a></div>
         </div>
     </div>
     <div class="evt-footer clearfix">
@@ -420,7 +419,7 @@
             <p class="p1">现在喊15位好友帮忙投票成功 <br>
                 即可获赠 <span>萝拉小朵(原味)100g</span></p>
             <p class="p2">订单金额满168元随订单配送</p>
-            <div class="copy-link"><input type="text" id="ewmUrl" value="http://www.mcake.com/shop/110/index.html" > <span class="copyBtn"  >复制链接</span></div>
+            <div class="copy-link"><input type="text" id="ewmUrl1" value="http://www.mcake.com" disabled > <span class="copyBtn1"  >复制链接</span></div>
         </div>
     </div>
     <div class="tip-wrap tip-2">
@@ -436,14 +435,13 @@
             <p class="p1">现在喊15位好友帮忙投票成功 <br>
                 即可获赠 <span>萝拉小朵(原味)100g</span></p>
             <p class="p2">订单金额满168元随订单配送</p>
-            <div class="copy-link"><input type="text" id="ewmUrl" value="http://www.mcake.com/shop/110/index.html" > <span class="copyBtn"  >复制链接</span></div>
+            <div class="copy-link"><input type="text" id="ewmUrl2" value="http://www.mcake.com/shop/110/index.html" disabled="disabled" > <span class="copyBtn2">复制链接</span></div>
         </div>
         <div class="go-btn">
             <span class="go-buy">直接下单</span>
             <span class="go-wait">再等等看</span>
         </div>
     </div>
-    <!--<div class="quan quan-1"><a class="go-use" href="#cake"></a><img src="images/jp-1.png" alt=""></div>-->
 
 
 </div>
@@ -451,6 +449,10 @@
 
 <script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
 <script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>
+<script src="http://edm.mcake.com/fangli/common/public-shimily.js"></script>
+<script>
+  var MaxVoteNum = 400;
+</script>
 <!-- build:js js/main.js -->
 <script type="text/javascript" src="js/animate-util.js"></script>
 <script type="text/javascript" src="js/resData.js"></script>
@@ -461,11 +463,13 @@
 <script type="text/javascript" src="js/main.js"></script>
 <!-- endbuild -->
     <script>
+
+
       $(".qrcodeCanvas").qrcode({
         render : "canvas",
         text : "http://www.mcake.com/shop/110/index.html",
-        width : "187",
-        height : "182",
+        width : "130",
+        height : "130",
         background : "#ffffff",
         foreground : "#000000",
         src: ''
@@ -474,7 +478,7 @@
       /*滚动显示投票信息*/
       function AutoScroll(obj){
         $(obj).find("ul").animate({
-          marginTop:"-48px"
+          marginTop:"-33px"
         },500,function(){
           $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
         });
@@ -482,70 +486,14 @@
 
         setInterval('AutoScroll("#scrollDiv")',2000)
 
-
-      /*投票*/
-      var vote = {
-        totalNum:3000,
-        voteNum:0,
-        percent: 0,
-        voteAni:function (ele) {
-          var self = ele;
-          this.voteNum = self.siblings('.ptxt').find(".voteNum").text()-0;
-
-          this.voteNum++;
-          this.percent = this.voteNum / this.totalNum;
-
-          if(this.percent >=1){
-            this.percent=1;
-          }
-
-          self.siblings('.ptxt').find(".voteNum").text(this.voteNum);
-          self.siblings(".percent").stop().animate({
-            width:(this.percent*100)+"%"
-          },500);
-
-        },
-
-        vote:function (ele) {
-          this.voteNum = ele.parent(".voteItem").find('.ptxt').find(".voteNum").text()-0;
-          this.voteNum++;
-          this.percent = this.voteNum / this.totalNum;
-
-          if(this.percent >=1){
-            this.percent=1;
-          }
-
-          ele.parent(".voteItem").find('.ptxt').find(".voteNum").text(this.voteNum);
-          ele.parent(".voteItem").find(".percent").stop().animate({
-            width:(this.percent*100)+"%"
-          },500);
-
-        },
-
-        init:function () {
-          var self = this;
-
-          $(".vote-btn").click(function () {
-            self.vote($(this));
-          });
-            /*刷新初始化*/
-          $(".voteItem").each(function () {
-            self.voteNum = $(this).find(".voteNum").text()-0;
-            self.percent = self.voteNum / self.totalNum;
-            $(this).find(".voteNum").text(self.voteNum);
-            $(this).find('.percent').stop().animate({
-              width:(self.percent*100)+"%"
-            },500);
-          });
-        }
-      };
-
-      vote.init();
-
       /*投票弹窗*/
+
        $(".vote-btn").click(function () {
-         QuanDialog(2);
+         voteFun($(this));
+         QuanDialog(1);
        });
+
+
     </script>
 </body>
 </html>
