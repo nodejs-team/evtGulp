@@ -1,0 +1,537 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #fff;
+}
+
+.evt-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.sec-banner {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 896px;
+}
+
+.sec-banner .banner {
+  width: 100%;
+  background: url("../images/banner.png") center;
+  background-size: cover;
+  height: 896px;
+  overflow: hidden;
+}
+
+.sec-banner .banner.small {
+  height: 630px;
+}
+
+.sec-banner .banner-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.sec-banner .banner-word {
+  position: absolute;
+  top: 448px;
+  left: 0;
+}
+
+.sec-banner .banner-word.small {
+  top: 200px;
+}
+
+.sec-banner .banner-btn {
+  position: absolute;
+  top: 753px;
+  left: 923px;
+}
+
+.sec-banner .banner-btn.small {
+  top: 500px;
+}
+
+.sec-banner.small {
+  height: 630px;
+}
+
+.sec-1 .evt-content {
+  width: 100%;
+}
+
+.sec-1 .evt-content div {
+  position: relative;
+}
+
+.sec-1 .libox-title {
+  padding: 50px 0;
+  width: 1200px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.sec-1 .libox-title div {
+  display: block;
+  width: 583px;
+  float: left;
+  padding: 0;
+}
+
+.sec-1 .libox-title div.on {
+  opacity: 0.6;
+  -webkit-html-opacity: 0.6;
+  -moz-opacity: 0.6;
+  filter: alpha(opacity=60);
+  filter: "alpha(opacity=60)";
+  opacity: 0.6;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+
+.sec-1 .lihe-content {
+  background: #b7d8dd;
+  height: 650px;
+}
+
+.sec-1 .lihe-content .buy {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 200px;
+  left: 50%;
+  margin-left: -538px;
+  z-index: 2;
+}
+
+.sec-1 .lihe-content .buy .go-buy {
+  position: absolute;
+  width: 170px;
+  height: 51px;
+  left: 0;
+  top: 180px;
+  background: url("../images/go-btn.png") center no-repeat;
+  cursor: pointer;
+}
+
+.sec-1 .lihe-content .buy .price {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 200px;
+  color: #fff;
+  font-family: "黑体";
+}
+
+.sec-1 .lihe-content .buy .price h1 {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 50px;
+}
+
+.sec-1 .lihe-content .buy .price h2 {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.sec-1 .lihe-content .buy .price h2 span {
+  font-size: 26px;
+}
+
+.sec-1 .lihe-content .buy .price h3 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 35px;
+}
+
+.sec-1 .lihe-content .buy .price h4 {
+  font-size: 18px;
+  color: #79949c;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.sec-1 .lihe-content .libox {
+  position: absolute;
+  width: 1250px;
+  left: 50%;
+  margin-left: -510px;
+  height: 722px;
+  overflow: hidden;
+  top: 0;
+}
+
+.sec-1 .lihe-content .libox img {
+  width: 100%;
+}
+
+.title {
+  width: 380px;
+  margin: 30px auto 0;
+}
+
+.content {
+  width: 1200px;
+  margin: 30px auto 0;
+}
+
+.sec-2 {
+  position: relative;
+  z-index: 1;
+}
+
+.sec-2 .evt-content {
+  border-bottom: #b2b2b2 1px solid;
+  padding-bottom: 80px;
+}
+
+.sec-2 div {
+  position: relative;
+}
+
+.sec-2 .moons {
+  margin-top: -80px;
+  position: relative;
+}
+
+.sec-2 .moons ul {
+  margin-left: -28px;
+}
+
+.sec-2 .moons ul li {
+  width: 580px;
+  margin-left: 28px;
+  float: left;
+  position: relative;
+  margin-top: 80px;
+}
+
+.sec-2 .moons ul li img {
+  margin-bottom: 20px;
+}
+
+.sec-2 .moons ul li .mei-60 {
+  width: 140px;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  top: 450px;
+  background: url("../images/60mei.png") no-repeat;
+}
+
+.sec-2 .moons ul li .discprit {
+  margin: 50px 0 0 20px;
+  text-align: left;
+  font-size: 14px;
+  color: #000;
+}
+
+.zoom {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.zoom.on {
+  transform: scale(0.97);
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-3 .evt-content {
+  padding-bottom: 80px;
+}
+
+.sec-3 .guize-content {
+  border: #cdcccc 2px dashed;
+}
+
+.sec-3 .guize-more {
+  width: 141px;
+  padding: 30px 100px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.sec-3 .guize {
+  position: relative;
+  width: 1200px;
+  height: 687px;
+  background: url("../images/guize.png") no-repeat;
+  margin-top: 50px;
+}
+
+.sec-3 .card {
+  position: relative;
+  width: 1200px;
+  height: 402px;
+  background: url("../images/card-duihuan.png") no-repeat;
+  margin-bottom: 50px;
+}
+
+.sec-3 .card .jiao {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 147px;
+  height: 147px;
+  background: url("../images/card-jiao.png") no-repeat;
+  z-index: 3;
+}
+
+.sec-3 .card .card-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 1;
+  -moz-opacity: .5;
+  filter: alpha(opacity=50);
+  display: none;
+}
+
+.sec-3 .card .cardList {
+  position: absolute;
+  top: 60px;
+  left: 540px;
+  width: 760px;
+  z-index: 3;
+}
+
+.sec-3 .card .cardList li {
+  float: left;
+  width: 378px;
+  margin-left: -50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sec-3 .card .cardList li .duihuan-btn {
+  width: 144px;
+  height: 38px;
+  margin: -10px auto 0;
+  background: url("../images/duihuan-btn.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-3 .card .cardList li .duihuan-btn.on {
+  background: url("../images/duihuan-btn-on.png") no-repeat;
+}
+
+.sec-3 .card-guize {
+  position: relative;
+  width: 1200px;
+  height: 868px;
+  background: url("../images/card-guize.png") no-repeat;
+  margin-top: 50px;
+  display: none;
+}
+
+.sec-3 .gztxt-1, .sec-3 .gztxt-2, .sec-3 .gztxt-3, .sec-3 .gztxt-4 {
+  position: absolute;
+  top: 160px;
+  left: 650px;
+}
+
+.sec-3 .gztxt-1 ul li, .sec-3 .gztxt-2 ul li, .sec-3 .gztxt-3 ul li, .sec-3 .gztxt-4 ul li {
+  line-height: 28px;
+  background: url("../images/dot.png") 0 13px no-repeat;
+  padding-left: 16px;
+  font-size: 16px;
+  color: #000;
+}
+
+.sec-3 .gztxt-1 ul li.nobg, .sec-3 .gztxt-2 ul li.nobg, .sec-3 .gztxt-3 ul li.nobg, .sec-3 .gztxt-4 ul li.nobg {
+  background: none;
+}
+
+.sec-3 .gztxt-2 {
+  top: 430px;
+  left: 320px;
+  right: auto;
+}
+
+.sec-3 .gztxt-3 {
+  top: 160px;
+  left: 310px;
+}
+
+.sec-3 .gztxt-3 ul li {
+  font-size: 14px;
+}
+
+.sec-3 .gztxt-4 {
+  top: 434px;
+  left: 310px;
+}
+
+.sec-3 .gztxt-4 ul li {
+  font-size: 14px;
+}
+
+.evt-footer {
+  position: relative;
+  background: #fff;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  color: #5d5d5d;
+}
+
+.evt-footer .evt-rules {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*swiper补充样式*/
+.box-swiper {
+  position: relative;
+  width: 100%;
+  height: 650px;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  cursor: default;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.libox {
+  cursor: default;
+}
+
+.pagination {
+  position: absolute !important;
+  left: 0;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #fff;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.swiper-active-switch {
+  background: #23c7cf;
+  opacity: 1;
+}
+
+div.swiper-button-white {
+  position: absolute !important;
+  top: 50%;
+  margin-top: -27px;
+  left: 50%;
+  width: 54px;
+  height: 54px;
+  opacity: 1;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.swiper-button-white.swiper-button-next {
+  background: url("../images/next.png") center no-repeat;
+  margin-left: 580px;
+}
+
+.swiper-button-white.swiper-button-prev {
+  background: url("../images/prev.png") center no-repeat;
+  margin-left: -640px;
+}
+
+/*小屏*/
+@media (max-width: 1700px) {
+  .sec-1 .libox-title {
+    padding: 0;
+  }
+  .sec-1 .lihe-content, .sec-1 .box-swiper {
+    height: 450px;
+  }
+  .sec-1 .lihe-content .buy, .sec-1 .box-swiper .buy {
+    top: 100px;
+    margin-left: -350px;
+  }
+  .sec-1 .lihe-content .libox, .sec-1 .box-swiper .libox {
+    width: 900px;
+    margin-left: -250px;
+  }
+  .swiper-button-white.swiper-button-next {
+    margin-left: 550px;
+  }
+  .swiper-button-white.swiper-button-prev {
+    margin-left: -600px;
+  }
+}

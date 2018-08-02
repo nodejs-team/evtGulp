@@ -1,0 +1,437 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.sec-banner {
+  background: url("../images/qx-banner.jpg") center;
+  z-index: 1;
+  height: 580px;
+  overflow: hidden;
+}
+
+.sec-banner.bj {
+  background: url("../images/qx-banner-bj.png") center;
+  z-index: 1;
+  height: 580px;
+  overflow: hidden;
+}
+
+.sec-banner.beijing {
+  background: url("../images/bj-banner.jpg") center;
+}
+
+.hy-title {
+  width: 662px;
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  margin-left: -311px;
+}
+
+.ms-time {
+  width: 390px;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  margin-left: -195px;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+  padding: 50px 0 50px;
+}
+
+.sec-1 div {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sec-1 img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sec-1 .title-1 {
+  margin: 20px auto;
+}
+
+.sec-2 {
+  position: relative;
+  z-index: 1;
+  background: url("../images/sec-bg.png") center;
+}
+
+.sec-2 .love {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+}
+
+.sec-2 .evt-content {
+  height: 922px;
+  width: 1200px;
+}
+
+.sec-2 .evt-content .row {
+  position: relative;
+}
+
+.sec-2 .evt-content .price-title {
+  margin-bottom: 10px;
+}
+
+.sec-2 .evt-content .row1 {
+  height: 540px;
+}
+
+.sec-2 .evt-content .row1 .cake {
+  position: absolute;
+  top: 340px;
+  left: 560px;
+}
+
+.sec-2 .evt-content .row1 .price {
+  top: 350px;
+  left: 220px;
+}
+
+.sec-2 .evt-content .row1 .price ul.price_p li {
+  background: #aec69c !important;
+}
+
+.sec-2 .evt-content .row1 .price h2, .sec-2 .evt-content .row1 .price h2 span, .sec-2 .evt-content .row1 .price s, .sec-2 .evt-content .row1 .price .price_num dl dt span, .sec-2 .evt-content .row1 .price .huangou {
+  color: #eb6175;
+}
+
+.sec-2 .evt-content .row1 .price ul.price_p li.cur {
+  background: #eb6175 !important;
+}
+
+.sec-2 .evt-content .row1 .price .reduce {
+  background: url("../images/reduce-5.png") center no-repeat scroll;
+  background-size: 80%;
+}
+
+.sec-2 .evt-content .row1 .price .nopoint {
+  background: url("../images/add-5.png") center no-repeat scroll;
+  background-size: 80%;
+}
+
+.sec-2 .evt-content .row1 .price .icon {
+  background: url("../images/icon-5.png") center no-repeat;
+  background-size: 100%;
+}
+
+.sec-2 .evt-content .row1 .price .icon.on {
+  background: url("../images/icon-5-h.png") center no-repeat;
+  background-size: 100%;
+}
+
+.sec-2 .evt-content .more {
+  width: 398px !important;
+}
+
+.sec-2 .evt-content.ms .price {
+  top: 413px;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-3 .evt-content {
+  width: 1200px;
+}
+
+.sec-3 div {
+  position: relative;
+  margin: 50px auto;
+}
+
+.sec-3 img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sec-3 .haoli {
+  margin: 80px auto;
+}
+
+.sec-3 .xin-1 {
+  position: absolute;
+  top: 100px;
+  left: -300px;
+}
+
+.sec-3 .xin-2 {
+  position: absolute;
+  top: 100px;
+  right: -300px;
+}
+
+/*价格*/
+.price {
+  position: absolute;
+  width: 392px;
+  text-align: center;
+}
+
+.price h2 {
+  margin: 20px auto;
+  position: relative;
+}
+
+.price h2 span {
+  position: absolute;
+  display: block;
+  width: 67px;
+  right: 55px;
+  top: 0;
+  line-height: 26px;
+  text-align: center;
+  font-size: 27px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.price s {
+  font-size: 16px;
+  color: #9b4245;
+  font-weight: normal;
+  line-height: 26px;
+  text-decoration: sh;
+}
+
+.price ul.price_p {
+  margin: 10px auto;
+  color: #9b4245;
+  width: 152px;
+}
+
+.price ul.price_p.short {
+  width: 50px;
+}
+
+.price ul.price_p.short2 {
+  width: 100px;
+}
+
+.price ul.price_p li {
+  cursor: pointer;
+  width: 45px;
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #f7c2bc;
+  margin-right: 5px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.price ul.price_p li span {
+  padding: 0 5px;
+}
+
+.price ul.price_p li.cur {
+  background: #de9092 !important;
+  color: #fff !important;
+}
+
+.price ul.price_p li.hover {
+  background: #e9e9e9;
+  color: #000;
+}
+
+.price .huangou {
+  position: relative;
+  width: 188px;
+  font-size: 18px;
+  color: #9b4245;
+  margin: 10px auto;
+  cursor: pointer;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.price .huangou .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icon-1.png") center no-repeat;
+  z-index: 2;
+  background-size: 100%;
+}
+
+.price .huangou .icon.on {
+  background: url("../images/icon-1-h.png");
+}
+
+.price .huangou {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.price .price_num {
+  width: 124px;
+  margin: 15px auto;
+}
+
+.price .price_num dl {
+  float: left;
+}
+
+.price .price_num dl dd {
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+
+.price .price_num dl dd.reduce {
+  background: url("../images/reduce-1.png") repeat;
+  background-size: 100%;
+  float: left;
+}
+
+.price .price_num dl dd.add {
+  background: url("../images/add-1.png") repeat scroll;
+  background-size: 100%;
+  float: right;
+}
+
+.price .price_num dl dt {
+  float: left;
+  height: 26px;
+  margin: 0 5px;
+}
+
+.price .price_num dl dt span {
+  display: block;
+  width: 55px;
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  color: #9b4245;
+  line-height: 26px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.price ul.buy_btn_box {
+  overflow: hidden;
+  width: 122px;
+  margin: 10px auto;
+}
+
+.price ul.buy_btn_box li {
+  float: left;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.price ul.buy_btn_box li.fr {
+  float: right;
+}
+
+.price ul.buy_btn_box li span {
+  display: block;
+  width: 114px;
+  background: url("../images/go-btn.png");
+  cursor: pointer;
+  height: 31px;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: #ffeef6;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #646464;
+}
+
+.evt-footer .evt-rules {
+  width: 980px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.floater {
+  position: fixed;
+  width: 145px;
+  height: 145px;
+  top: 600px;
+  z-index: 11;
+  left: 50%;
+  margin-left: 520px;
+  cursor: pointer;
+}
+
+.floater .tips {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  background: url("../images/tips.png") center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  z-index: 12;
+  cursor: Default;
+}
+
+.floater .tips span {
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.floater.samllScreen {
+  margin-left: 420px;
+}

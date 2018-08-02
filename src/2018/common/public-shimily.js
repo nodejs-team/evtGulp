@@ -27,7 +27,7 @@
   });
  */
 
-  /*
+  /*判断小屏幕
   *适配banner在第一屏显示完全
   * 给banner里面的元素增加一个class:newPosition
   * */
@@ -39,13 +39,15 @@
   }
   BannerRedraw.prototype = {
     removenewPosition:function () {
+      this.$ele.removeClass("small");
       for(var i=0;i<this.$opts.length;i++){
-        $(this.$opts[i]).removeClass("newPosition");
+        $(this.$opts[i]).removeClass("small");
       }
     },
     addnewPosition:function () {
+       this.$ele.addClass("small");
       for(var i=0;i<this.$opts.length;i++){
-        $(this.$opts[i]).addClass("newPosition");
+        $(this.$opts[i]).addClass("small");
       }
     },
     _init:function () {

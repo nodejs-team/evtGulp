@@ -1,0 +1,471 @@
+@charset "UTF-8";
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+  display: block;
+  /*加入的这个元素转换为块级元素。*/
+  clear: both;
+  /*清除左右两边浮动。*/
+  visibility: hidden;
+  /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+  line-height: 0;
+  /*行高为0；*/
+  height: 0;
+  /*高度为0；*/
+  font-size: 0;
+  /*字体大小为0；*/
+}
+
+/*数量加减时，禁止双击选中*/
+span.num {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.jpg") repeat;
+}
+
+.sec-banner {
+  background: url("../images/banner-bg.png") center;
+  z-index: 1;
+  height: 876px;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  padding: 0;
+}
+
+.sec-banner .evt-content div {
+  position: absolute;
+}
+
+.sec-banner .evt-content .banner-cake2 {
+  top: 0;
+  left: 700px;
+}
+
+.sec-banner .evt-content .banner-shaozi {
+  top: 10px;
+  left: 190px;
+}
+
+.sec-banner .evt-content .banner-cake1 {
+  top: 115px;
+  left: 5px;
+}
+
+.sec-banner .evt-content .banner-title {
+  top: 111px;
+  left: 372px;
+}
+
+.sec-1 {
+  margin-top: -250px;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+  padding: 0;
+}
+
+.sec-1 .title-1 {
+  width: 564px;
+  margin: 20px auto 40px;
+}
+
+.sec-1 .slider {
+  width: 1200px;
+  position: relative;
+  margin: 10px auto 0;
+}
+
+.sec-1 .slider .prev, .sec-1 .slider .next {
+  width: 79px;
+  top: 148px;
+  position: absolute;
+}
+
+.sec-1 .slider .prev {
+  left: 0;
+}
+
+.sec-1 .slider .next {
+  right: 0;
+}
+
+.sec-1 .slideOuter {
+  position: relative;
+  width: 1028px;
+  height: 420px;
+  border-bottom: 2px solid #959595;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.sec-1 .slideOuter ul {
+  position: relative;
+  width: 1650px;
+}
+
+.sec-1 .slideOuter li {
+  position: relative;
+  width: 242px;
+  margin: 0 20px 18px 0;
+  color: #005873;
+  font-size: 12px;
+  float: left;
+}
+
+.sec-1 .slideOuter li .fl {
+  float: left;
+  text-align: left;
+}
+
+.sec-1 .slideOuter li .fl.ftitle {
+  width: 98px;
+  height: 40px;
+  overflow: hidden;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: left;
+  justify-content: left;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+
+.sec-1 .slideOuter li img {
+  width: 242px;
+  height: 279px;
+}
+
+.sec-1 .slideOuter li .fr {
+  float: right;
+  text-align: left;
+}
+
+.sec-1 .slideOuter li .p1 {
+  margin: 10px 0 3px 0;
+}
+
+.sec-1 .slideOuter li .p2 .fr {
+  color: #ff4213;
+}
+
+.sec-1 .slideOuter li .p2 .fr span {
+  font-size: 19px;
+}
+
+.sec-1 .slideOuter li .p2 .fl {
+  padding-top: 5px;
+}
+
+.sec-1 .slideOuter li .buybtn {
+  width: 100%;
+  height: 30px;
+  display: block;
+  border-radius: 5px;
+  margin: 16px 0 0 0;
+  background: #57b7cd;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  position: static;
+}
+
+.sec-1 .slideOuter .pro-num {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  width: 140px;
+  height: 20px;
+}
+
+.sec-1 .slideOuter .pro-num a {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  top: 2px;
+}
+
+.sec-1 .slideOuter .pro-num .minus {
+  background: url(../images/btn-1.png);
+  left: 0;
+  background-size: 100%;
+}
+
+.sec-1 .slideOuter .pro-num .plus {
+  background: url(../images/btn-2.png);
+  right: 0;
+  background-size: 100%;
+}
+
+.sec-1 .slideOuter .pro-num input {
+  border: none;
+  display: block;
+  background: url(../images/input.png);
+  background-size: 100%;
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  text-align: center;
+  color: #626262;
+  font-size: 12px;
+  padding: 0;
+}
+
+.sec-1 .text1893 {
+  width: 394px;
+  margin: 26px auto 0 auto;
+}
+
+.sec-2 {
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+}
+
+.sec-2 .evt-content {
+  width: 1200px;
+}
+
+.sec-2 .evt-content .title-2 {
+  width: 243px;
+  margin: 20px auto 40px;
+}
+
+.sec-2 .evt-content .qidai {
+  width: 744px;
+  margin: 20px auto 40px;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.sec-3 .evt-content {
+  width: 1024px;
+  height: 660px;
+}
+
+.sec-3 .evt-content img {
+  width: 100%;
+}
+
+.sec-3 .evt-content .title-3 {
+  width: 306px;
+  margin: 20px auto 40px;
+}
+
+.sec-3 .evt-content .slideContain {
+  position: absolute;
+  width: 100%;
+  height: 365px;
+  left: 0;
+  top: 140px;
+}
+
+.sec-3 .evt-content .slideContain a {
+  display: block;
+  position: absolute;
+}
+
+.sec-3 .evt-content .slideContent {
+  position: absolute;
+  width: 839px;
+  height: 365px;
+  left: 50%;
+  top: 0;
+  margin-left: -418px;
+}
+
+.sec-3 .evt-content .slideItem {
+  width: 328px;
+  height: 365px;
+  position: absolute;
+}
+
+.sec-3 .evt-content .slideItem .product {
+  position: absolute;
+  top: 3%;
+  left: 4.5%;
+  width: 91%;
+}
+
+.sec-3 .evt-content .slideItem span {
+  display: block;
+  position: absolute;
+  left: 0;
+  color: #626262;
+  text-align: center;
+  width: 100%;
+}
+
+.sec-3 .evt-content .slidePrev, .sec-3 .evt-content .slideNext {
+  width: 63px;
+  height: 45px;
+  top: 50%;
+  margin-top: -22px;
+}
+
+.sec-3 .evt-content .slidePrev {
+  background: url(../images/prev.png);
+  left: 0;
+}
+
+.sec-3 .evt-content .slideNext {
+  background: url(../images/next.png);
+  right: 0;
+}
+
+.sec-3 .evt-content .pro-price {
+  position: absolute;
+  width: 360px;
+  left: 50%;
+  top: 515px;
+  margin-left: -180px;
+  text-align: center;
+  font-size: 15px;
+  color: #005773;
+}
+
+.sec-3 .evt-content .pro-price b {
+  color: #fd4426;
+  font-size: 18px;
+}
+
+.sec-3 .evt-content .pro-num {
+  position: absolute;
+  width: 148px;
+  left: 50%;
+  top: 560px;
+  font-size: 0;
+  margin-left: -74px;
+}
+
+.sec-3 .evt-content .pro-num a {
+  position: absolute;
+  width: 31px;
+  height: 32px;
+  display: block;
+  top: 4px;
+}
+
+.sec-3 .evt-content .pro-num .minus-btn {
+  background: url(../images/minus.png);
+  left: 0;
+}
+
+.sec-3 .evt-content .pro-num .plus-btn {
+  background: url(../images/plus.png);
+  right: 0;
+}
+
+.sec-3 .evt-content .pro-num input {
+  border: none;
+  display: block;
+  font-size: 16px;
+  background: url(../images/input-2.png);
+  width: 80px;
+  height: 36px;
+  line-height: 36px;
+  position: absolute;
+  top: 0;
+  left: 35px;
+  text-align: center;
+  color: #616161;
+  padding: 0;
+}
+
+.sec-3 .evt-content .buybtn {
+  position: absolute;
+  width: 152px;
+  height: 34px;
+  background: url(../images/buybtn.png);
+  top: 614px;
+  left: 50%;
+  margin-left: -77px;
+}
+
+.sec-4 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-4 .evt-content {
+  width: 1200px;
+  padding: 10px 0 50px;
+}
+
+.sec-4 .zp {
+  width: 688px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.sec-4 .zp-txt {
+  width: 688px;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/footer-bg.png") repeat-x;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #626262;
+}
+
+.evt-footer .evt-rules {
+  width: 650px;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
