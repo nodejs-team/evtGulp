@@ -27,16 +27,17 @@
       grabCursor: true,
       loop:true,
       autoplay : 3000,
+      speed:200,
       effect : 'fade',
       noSwiping : true,
       noSwipingClass : 'stop-swiping',
       autoplayDisableOnInteraction : false,
       paginationClickable: true,
       onSlideChangeStart:function () {
-         $(".buy").fadeOut(20);
+         //$(".buy").fadeOut(20);
       },
       onSlideChangeEnd: function(swiper){
-          $(".buy").stop().fadeIn(200);
+          //$(".buy").stop().fadeIn(200);
       }
     });
 
@@ -54,20 +55,22 @@
       grabCursor: true,
       loop:true,
       autoplay : 3000,
+      speed:200,
       effect : 'fade',
       noSwiping : true,
       noSwipingClass : 'stop-swiping',
       autoplayDisableOnInteraction : false,
       paginationClickable: true,
       onSlideChangeStart:function () {
-        $(".buy").fadeOut(20);
+        //$(".buy").fadeOut(20);
       },
       onSlideChangeEnd: function(swiper){
-        $(".buy").stop().fadeIn(200);
+       // $(".buy").stop().fadeIn(200);
       }
     });
     
-    
+
+    /*产品悬浮时，停止自动播放，移开是，开始自动播放*/
     $(".libox").hover(function () {
       swiper1.stopAutoplay();
       swiper2.stopAutoplay();
@@ -89,20 +92,18 @@
     var Tab = {
       _init:function () {
         $('.libox-title div').hover(function () {
-          $(".buy").stop().fadeIn(0);
+          //$(".buy").stop().fadeIn(0);
           $(this).removeClass("on").siblings().addClass('on');
           var idx = $(this).index();
-          $(".li-box").eq(idx).fadeIn(0).siblings(".li-box").fadeOut(0);
+          $(".li-box").eq(idx).addClass("on").siblings(".li-box").removeClass("on");
           $(".moons").eq(idx).fadeIn(0).siblings(".moons").fadeOut(0);
-          /*swiper1.autoplay.start();*/
-          swiper1.startAutoplay();
-          swiper2.startAutoplay();
+
         });
 
       }
     };
 
-    $(".li-box-hide").hide();/*需要先进行加载，获取高度*/
+
     $(".moonsHide").hide();/*需要先进行加载，获取高度*/
 
     Tab._init();

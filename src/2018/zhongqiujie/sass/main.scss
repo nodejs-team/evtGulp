@@ -24,22 +24,26 @@ span.num{
   .banner.small{ height: 630px;}
   .banner-content{position: absolute; width: 100%; height:100%; top: 0; left: 0; z-index: 10; }
   .banner-word{position: absolute; top: 448px; left: 0;}
-  .banner-word.small{top: 200px;}
+  .banner-word.small{top: 150px;}
   .banner-btn{position: absolute;top: 753px; left: 923px;}
-  .banner-btn.small{top: 500px;}
+  .banner-btn.small{top: 430px;}
 }
-.sec-banner.small{ height: 630px;}
+/*小屏下的banner全屏*/
+.sec-banner.small{ height: 550px;}
 
-.sec-1{
+.sec-1{ position: relative;
   .evt-content{ width:100%;
     div{position: relative;}
   }
+  .li-box{}
   .libox-title{ padding: 50px 0; width: 1200px; margin: 0 auto; cursor: pointer;
     div{display:block; width: 583px; float: left; padding: 0;}
     div.on{opacity: 0.6; -webkit-html-opacity:0.6;-moz-opacity:0.6; filter:alpha(opacity=60); filter:"alpha(opacity=60)";opacity:0.6; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);}
 
   }
-  .lihe-content{ background: #b7d8dd; height: 650px;
+  .lihe-content{ position: relative; background: #b7d8dd; width: 100%; height: 650px;
+    .li-box{ position: absolute; top: 0; left: 0; width: 100%; z-index: -1;}
+    .li-box.on{z-index: 10;}
     .buy{position: absolute; width: 250px; height: 250px; top: 200px; left: 50%; margin-left: -538px; z-index: 2;
       .go-buy{position: absolute; width: 170px; height: 51px; left: 0; top: 180px; background:url("../images/go-btn.png") center no-repeat; cursor: pointer;}
       .price{position: absolute; width: 100%; top:0; height:200px;  color: #fff; font-family:"黑体";
@@ -60,7 +64,7 @@ span.num{
 
 .title{width: 380px; margin: 30px auto 0;}
 .content{width: 1200px; margin: 30px auto 0;}
-.sec-2{  position: relative; z-index: 1;
+.sec-2{  position: relative; z-index: 1; padding-bottom: 1px;
   .evt-content{
     border-bottom: #b2b2b2 1px solid; padding-bottom: 80px;
   }
@@ -80,8 +84,9 @@ span.num{
 .zoom.on{ transform: scale(0.97);}
 
 .sec-3{position: relative; z-index: 2;
+  .title{ margin: -50px auto 0;}
   .evt-content{
-   padding-bottom: 80px;
+   padding-top: 100px;
   }
 
   .guize-content{border: #cdcccc 2px dashed;}
@@ -118,7 +123,7 @@ span.num{
 
 }
 
-
+#card{ padding-bottom: 50px;}
 .evt-footer{
   position: relative;  background:#fff; width: 100%;
   .evt-content{color: #5d5d5d;}

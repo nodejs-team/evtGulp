@@ -514,10 +514,20 @@ background: #a5002f;
     .banner-r{ top: 0; right: -420px;}
     .banner-cake{ top: 119px; left: 119px;}
     .banner-title{ top: 133px; left: 534px;}
-
   }
 
 
+  .memberDay-8yue{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+      img{width: 100%;}
+    }
+    .banner-1{top: 0; left: -250px;}
+    .banner-2{top: 0; right: -200px;}
+    .banner-3{bottom: 0; left: -200px;}
+    .banner-4{bottom: 0; right: -100px;}
+    .banner-t{top:110px; left: 50%; margin-left: -254px;}
+  }
 
 }
 

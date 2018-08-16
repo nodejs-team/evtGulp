@@ -1,0 +1,201 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.evt-container{ overflow: hidden; background:#fff; }
+.evt-content{ width: 1200px; margin: 0 auto; }
+.sec-banner{ position: relative;background:#000;  z-index: 1;  overflow: hidden;
+  .evt-content{ height: 850px;}
+  .banner-moon{position: absolute; top: 0; left:278px;}
+  .banner-title{position: absolute; top: 200px; left:0;}
+  .banner-time{position: absolute; width:50%; bottom: 0; left: 0; height: 150px; background: #ffffff; z-index: 1;  }
+  .w-time{position: absolute; bottom: 0; left: 0; text-align: center; line-height: 150px; font-size: 28px; color: #1cb7d2; z-index: 2;}
+  .w-time.small{height: 100px;  line-height: 100px; left: 100px;}
+  .banner-moon.small{top:0; left: 360px; width: 800px;}
+  .banner-title.small{top:140px; left: 100px; width: 200px;}
+  .banner-time.small{ height: 100px; line-height: 100px;}
+  .small img{width: 100%;}
+}
+.sec-banner.small{.evt-content{ height: 560px;}}
+
+
+.sec-1{position: relative; z-index: 1; padding:140px 0 10px;
+  .evt-content{}
+  .lihe{float: left;}
+  .lihe-right{float: right; width: 280px; padding-top: 20px;
+    .buyPrice{position: absolute; bottom: 5px; right:0; width: 280px; color: #000; line-height: 24px;
+      h2{ font-weight:normal;
+        i{color: #1cb7d2; font-style: normal;}
+        span{font-size: 50px; color: #1cb7d2;}
+      }
+      h3{font-weight:normal; font-size: 18px;}
+      h4{font-weight:normal;  position: relative; line-height: 40px; font-size: 20px; color: #4c4c4c;
+        b{position: absolute; top: 50%; left: -3px; height:0; display: block; width: 125px; border-bottom: #b83333 2px solid; }
+      }
+      p{font-size: 15px; line-height: 34px; color: #1cb7d2;}
+    }
+  }
+}
+
+
+.sec-2{  position: relative; z-index: 1;
+  .evt-content{}
+  .cakes{ margin-top: 80px; position: relative;
+    ul{ margin-left: -28px;
+      li{ width: 674px; height: 864px; margin-left: 28px; float: left; position: relative;
+
+      }
+      li.Small{width: 488px; height: 708px;
+        .price{
+          .content{padding-left: 30px;}
+          .s-price{right:30px;}
+          .price_num{right:30px;}
+        }
+      }
+      li.orange{
+        ul.price_p li { cursor: pointer; border: #d9c247 2px solid;}
+        ul.price_p li.cur {  border: #403b1c 2px solid; }
+        ul.price_p li.hover {border: #403b1c 2px solid;}
+        ul.buy_btn_box li span {background: #ffffff;}
+        .price{color: #000;}
+      }
+    }
+  }
+}
+
+.buy-btn{ width: 100px; text-align: center; line-height: 50px; padding: 0 20px; border-radius: 50px; background: #1cb7d2; margin: 20px 0; color: #fff; font-size: 16px; cursor: pointer; }
+.buy-btn.on{ background: #139fb7;}
+
+.title{width: 589px; margin: 100px auto;}
+
+
+.sec-3{position: relative; z-index: 2;
+  .evt-content{ padding-bottom: 80px; }
+  .swiper-box{width: 597px; float: left;}
+  .box-right{width: 594px; float: right;
+    .img1{margin-bottom: 7px;}
+  }
+}
+
+
+
+.sec-4{position: relative; z-index: 2;
+  .evt-content{padding: 100px 0; }
+
+  .guize{position: relative; width: 1200px; height: 456px; background: url("../images/guize.png") no-repeat;  }
+  .gztxt-1{position: absolute; top: 60px; left: 320px;
+    ul{
+      li{line-height: 28px; background: url("../images/dot.png") 0 12px no-repeat; padding-left:16px; font-size: 16px;color: #5fb5c7;}
+
+    }
+  }
+
+}
+
+
+.evt-footer{
+  position: relative;  background:#fff; width: 100%;
+  .evt-content{color: #5d5d5d;}
+    .evt-rules{position: relative; width: 980px; margin: 0 auto; padding:100px 0 100px 55px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+
+/*价格*/
+
+.price{ position: absolute !important; bottom: 0;  width: 100%;color: #fff; height: 200px;
+  .content{position: relative; height: 100%; padding-left: 75px;
+      .price-title{ font-size: 24px;}
+      .s-price{position: absolute; top: 70px; right:60px; text-align: right;}
+      h2{font-size: 18px; font-weight: normal; line-height: 30px;
+        i{font-size: 14px; font-style: normal;vertical-align: baseline; }
+        span{font-size: 28px; }
+      }
+      s{font-size: 16px;font-weight: normal; line-height: 26px; text-decoration: sh}
+
+     ul.price_p{margin: 20px 0;}
+
+      ul.price_p li { cursor: pointer; width: 45px; float: left;  height: 45px;  line-height: 45px;  text-align: center; border: #8e8785 2px solid; margin-right: 5px; border-radius: 50%;  margin-left:0;
+        span{padding: 0 5px;}
+      }
+      ul.price_p li.cur {  border: #ffe32a 2px solid; }
+      ul.price_p li.hover {border: #ffe32a 2px solid;}
+
+      .price_num{ position: absolute; top: 10px; right: 60px; width: 124px; margin: 15px auto;}
+      .price_num dl {  float: left;  }
+      .price_num dl dd{  height: 28px;  width: 28px; cursor: pointer;}
+      .price_num dl dd.reduce{ background: url("../images/reduce-1.png") center no-repeat; background-size: 80%;   float: left; }
+      .price_num dl dd.add { background:url("../images/add-1.png")  center no-repeat; background-size: 80%;  float: right; }
+
+
+      .price_num dl dt {  float: left;  height: 26px;margin: 0 5px;  }
+      .price_num dl dt span{ display: block; width: 55px; background: rgba(0, 0, 0, 0) none repeat scroll 0 0;  border: medium none;   line-height: 26px; font-size: 18px; text-align: center;   }
+
+      ul.buy_btn_box {  overflow: hidden; margin:10px 0; }
+
+      ul.buy_btn_box li { width:150px;  float: left;  margin-right: 5px; margin-left: 0; }
+
+      ul.buy_btn_box li span { display: block; width: 130px; background: #ffe32a; border:none; color: #000; cursor: pointer; height: 44px; line-height: 44px; font-size: 17px;  text-align: center;   border-radius: 20px; }
+  }
+}
+
+
+
+/*swiper补充样式*/
+.box-swiper{position: relative; width: 597px;  height: 709px; }
+.swiper-container { position: relative;  width: 597px;  height: 709px;  }
+.swiper-slide { cursor: default;
+  text-align: center; position: relative;  font-size: 18px; display: -webkit-box;  display: -ms-flexbox;
+  display: -webkit-flex;  display: flex;  -webkit-box-pack: center;  -ms-flex-pack: center;
+  -webkit-justify-content: center;  justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;
+  -webkit-align-items: center;  align-items: center;
+}
+
+.pagination {
+  position: absolute !important;
+  /*left: 0;*/
+  text-align: center;
+  bottom:20px;  right: 20px;
+  width:35px; z-index: 10; padding:0; cursor: pointer;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #909090;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #ffffff;
+  opacity:1;
+}
+
+div.swiper-button-white{position: absolute !important; top: 50%;
+  margin-top: -27px; left: 50%; width: 54px; height: 54px; opacity: 1; z-index: 5; cursor: pointer;}
+.swiper-button-white.swiper-button-next{background: url("../images/next.png") center no-repeat; margin-left: 580px;}
+.swiper-button-white.swiper-button-prev{background: url("../images/prev.png") center no-repeat; margin-left: -640px;}
+
+
+/*小屏*/
+@media (max-width: 1700px) {
+
+
+}

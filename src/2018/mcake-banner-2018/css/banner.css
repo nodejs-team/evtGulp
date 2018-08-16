@@ -1077,6 +1077,44 @@
   left: 534px;
 }
 
+.banner-slides .memberDay-8yue .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .memberDay-8yue .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .memberDay-8yue .swiper-content img {
+  width: 100%;
+}
+
+.banner-slides .memberDay-8yue .banner-1 {
+  top: 0;
+  left: -250px;
+}
+
+.banner-slides .memberDay-8yue .banner-2 {
+  top: 0;
+  right: -200px;
+}
+
+.banner-slides .memberDay-8yue .banner-3 {
+  bottom: 0;
+  left: -200px;
+}
+
+.banner-slides .memberDay-8yue .banner-4 {
+  bottom: 0;
+  right: -100px;
+}
+
+.banner-slides .memberDay-8yue .banner-t {
+  top: 110px;
+  left: 50%;
+  margin-left: -254px;
+}
+
 /*兼容小屏幕*/
 @media screen and (max-width: 1650px) {
   .slides-bafei .cake {

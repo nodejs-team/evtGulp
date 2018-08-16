@@ -25,9 +25,9 @@ span.num{
   .evt-content{ width: 1200px;  padding:0;
     div{ position: absolute;}
     .banner-cake2{ top:0; left:700px;}
-    .banner-shaozi{ top:10px; left:190px;}
+    .banner-shaozi{ top:0px; left:190px;}
     .banner-cake1{ top:115px; left:5px;}
-    .banner-title{ top:111px; left:372px;}
+    .banner-title{ top:111px; left:402px;}
   }
 }
 
@@ -84,9 +84,24 @@ span.num{
   .text1893{width:394px; margin:26px auto 0 auto;}
 }
 .sec-2{ position: relative; z-index: 1; padding-top: 60px;
+
   .evt-content{ width: 1200px;
+    .dis-1{position: absolute; top:50px; right: -300px; }
+    .dis-3{position: absolute; top:200px; right: -300px; }
+    .dis-2{position: absolute; top:500px; left: -300px; }
     .title-2{width: 243px; margin:20px auto 40px;}
-    .qidai{width: 744px; margin:20px auto 40px;}
+    .qidai{width: 744px; margin:20px auto 100px;
+      .buys-qx{position: absolute; width: 225px; top: 450px; left: 260px;}
+      .buys-yb{position: absolute; width: 223px; top: 450px; left: 720px; z-index: 1;
+        .zhekou{position: absolute; bottom: -5px; right: 0; font-size: 25px; color: #ff6800;}
+      }
+      .buy-btn{position: absolute;  bottom: -50px; left: 50%; margin-left: -75px; width: 150px; line-height: 34px; border-radius: 34px; background: #5ab7cc; text-align: center; color: #fff; font-size: 20px; cursor: pointer; }
+      .buy-btn.on{background: #bcbcbc;}
+      .tips{position: absolute; width:250px;  top: 30px; left: -60px; background: #e0eff0; color: #000; border:#d6ebec 1px solid; border-radius: 5px; padding:20px 50px; z-index: 5; font-size: 16px; line-height: 30px; display: none;
+        b{font-size: 18px; font-weight: normal; color: #fd8750;}
+      }
+    }
+    .code{width: 347px; margin:0 auto 100px;}
   }
 }
 

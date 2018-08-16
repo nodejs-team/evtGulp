@@ -122,7 +122,6 @@
 
         $(this).parents("li").find(".postid").data("postid", currentItem.postId[ix]);
         $(this).parents("li").find(".price").val(currentItem.ids[ix]);
-
         totalPrice = currentItem.ids[ix]*discount;
         $(this).parents("li").find(".dis-price").html(totalPrice.toFixed(1));
 
@@ -137,12 +136,22 @@
         }
 
         $(this).parents("li").find("input").val(currentItem.ponds[ix]+' / ￥'+currentItem.ids[ix]);
+
         $(this).parents("li").find(".postid").data("postid", currentItem.postId[ix]);
         $(this).parents("li").find(".price").val(currentItem.ids[ix]);
         totalPrice = currentItem.ids[ix]*discount;
         $(this).parents("li").find(".dis-price").html(totalPrice.toFixed(1));
       });
 
+
+      /*初始化默认值*/
+      $(this).find(".postid").data("postid", currentItem.postId[0])
+
+
+      /*购买时获取postid*/
+      /*$(".buybtn").on('click', function(){
+         console.log($(this).parents("li").find(".postid").data("postid"));
+      });*/
 
     });
   };

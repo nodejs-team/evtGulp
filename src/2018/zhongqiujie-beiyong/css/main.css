@@ -1,0 +1,598 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #fff;
+}
+
+.evt-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.sec-banner {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 896px;
+}
+
+.sec-banner .banner {
+  width: 100%;
+  background: url("../images/banner.png") center;
+  background-size: cover;
+  height: 896px;
+  overflow: hidden;
+}
+
+.sec-banner .banner.small {
+  height: 630px;
+}
+
+.sec-banner .banner-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.sec-banner .banner-word {
+  position: absolute;
+  top: 448px;
+  left: 0;
+}
+
+.sec-banner .banner-word.small {
+  top: 150px;
+}
+
+.sec-banner .banner-btn {
+  position: absolute;
+  top: 753px;
+  left: 923px;
+}
+
+.sec-banner .banner-btn.small {
+  top: 430px;
+}
+
+/*小屏下的banner全屏*/
+.sec-banner.small {
+  height: 550px;
+}
+
+.sec-1 {
+  position: relative;
+}
+
+.sec-1 .evt-content {
+  width: 100%;
+}
+
+.sec-1 .evt-content div {
+  position: relative;
+}
+
+.title {
+  width: 250px;
+  margin: 60px auto;
+}
+
+.title-3 {
+  width: 100%;
+  padding: 45px 0;
+  border: #cdcccc 2px dashed;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content {
+  width: 1200px;
+  margin: 30px auto 0;
+}
+
+.sec-2 {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 1px;
+}
+
+.sec-2 .evt-content {
+  padding-bottom: 80px;
+}
+
+.sec-2 div {
+  position: relative;
+}
+
+.sec-2 .cakes {
+  margin-top: -80px;
+  position: relative;
+}
+
+.sec-2 .cakes ul {
+  margin-left: -28px;
+}
+
+.sec-2 .cakes ul li {
+  width: 591px;
+  height: 523px;
+  margin-left: 23px;
+  float: left;
+  position: relative;
+  margin-top: 80px;
+}
+
+.sec-2 .cakes ul li img {
+  margin-bottom: 20px;
+}
+
+.sec-2 .cakes ul li .m-title {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+}
+
+.sec-2 .cakes ul li .m-car {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+  width: 37px;
+  height: 37px;
+  background: url("../images/car.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-2 .cakes ul li .m-car.on {
+  background: url("../images/car-on.png") no-repeat;
+}
+
+.sec-2 .cakes ul li .m-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  font-size: 18px;
+  text-align: center;
+  width: 150px;
+  line-height: 40px;
+  color: #fff;
+  background: #3ac8e0;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.sec-2 .cakes ul li .m-btn.on {
+  background: #1a8c9f;
+}
+
+.sec-2 .cakes ul li .m-price {
+  position: absolute;
+  bottom: 42px;
+  left: 40px;
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+}
+
+.sec-2 .cakes ul li .m-price span {
+  font-size: 24px;
+}
+
+.zoom {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.zoom.on {
+  transform: scale(0.97);
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-3 .title {
+  margin: 80px auto;
+  width: 508px;
+}
+
+.sec-3 .guize-content {
+  border: #cdcccc 2px dashed;
+}
+
+.sec-3 .guize-more {
+  width: 141px;
+  padding: 30px 100px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.sec-3 .guize {
+  position: relative;
+  width: 1200px;
+  height: 687px;
+  background: url("../images/guize.png") no-repeat;
+  margin-top: 50px;
+}
+
+.sec-3 .card {
+  position: relative;
+  width: 1200px;
+  height: 310px;
+  background: url("../images/card-duihuan.png") no-repeat;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+}
+
+.sec-3 .card .duihuan-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 230px;
+  width: 150px;
+  line-height: 40px;
+  text-align: center;
+  background: #3ac8e0;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 16px;
+}
+
+.sec-3 .card .duihuan-btn.btn2 {
+  left: 830px;
+}
+
+.sec-3 .card .duihuan-btn.on {
+  background: #1a8c9f;
+}
+
+.sec-3 .card-guize {
+  position: relative;
+  width: 1200px;
+  height: 868px;
+  background: url("../images/card-guize.png") no-repeat;
+  margin-top: 20px;
+}
+
+.sec-3 .gztxt-1, .sec-3 .gztxt-2, .sec-3 .gztxt-3, .sec-3 .gztxt-4 {
+  position: absolute;
+  top: 160px;
+  left: 650px;
+  width: 810px;
+}
+
+.sec-3 .gztxt-1 ul li, .sec-3 .gztxt-2 ul li, .sec-3 .gztxt-3 ul li, .sec-3 .gztxt-4 ul li {
+  line-height: 28px;
+  background: url("../images/dot.png") 0 13px no-repeat;
+  padding-left: 16px;
+  font-size: 16px;
+  color: #000;
+}
+
+.sec-3 .gztxt-1 ul li.nobg, .sec-3 .gztxt-2 ul li.nobg, .sec-3 .gztxt-3 ul li.nobg, .sec-3 .gztxt-4 ul li.nobg {
+  background: none;
+}
+
+.sec-3 .gztxt-2 {
+  top: 430px;
+  left: 320px;
+  right: auto;
+}
+
+.sec-3 .gztxt-3 {
+  top: 140px;
+  left: 310px;
+}
+
+.sec-3 .gztxt-3 ul li {
+  font-size: 14px;
+}
+
+.sec-3 .gztxt-4 {
+  top: 414px;
+  left: 310px;
+}
+
+.sec-3 .gztxt-4 ul li {
+  font-size: 14px;
+}
+
+#card {
+  padding-bottom: 50px;
+}
+
+.evt-footer {
+  position: relative;
+  background: #fff;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  color: #5d5d5d;
+}
+
+.evt-footer .evt-rules {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*蛋糕选择弹窗*/
+.Dialogbg-Select {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.Dialog-Select {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  width: 520px;
+  height: 480px;
+  margin-top: -240px;
+  margin-left: -260px;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  border-radius: 20px;
+  display: none;
+}
+
+.s-closes {
+  position: absolute;
+  right: -30px;
+  top: 8px;
+  width: 17px;
+  height: 17px;
+  background: url("../images/close.png");
+  cursor: pointer;
+}
+
+.Select {
+  position: relative;
+  color: #000;
+  height: 100%;
+}
+
+.Select .s-title {
+  height: 96px;
+  background: #f2f2f2;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Select .s-title h2 {
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.Select .s-title b {
+  font-size: 14px;
+  color: #9a9a9a;
+  font-weight: normal;
+  padding-left: 40px;
+}
+
+.Select .s-bangshu {
+  padding-top: 30px;
+}
+
+.Select .s-bangshu ul {
+  margin-left: 40px;
+}
+
+.Select .s-bangshu ul li {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  color: #4a4a4a;
+  margin-right: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Select .s-bangshu ul li.on {
+  background: #3ac8e0;
+  color: #fff;
+}
+
+.Select .d-tips {
+  padding: 15px 40px;
+  color: #4c4c4c;
+  font-size: 12px;
+}
+
+.Select .s-num {
+  border-top: #ededed 1px solid;
+  border-bottom: #ededed 1px solid;
+  padding-left: 40px;
+}
+
+.Select .s-num b {
+  display: inline-block;
+  width: 200px;
+  margin: 10px 0;
+  line-height: 52px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-num .nums {
+  display: inline-block;
+  margin: 15px 40px 0;
+  float: right;
+  height: 52px;
+  position: relative;
+  width: 150px;
+}
+
+.Select .s-num .nums a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2px;
+}
+
+.Select .s-num .nums .minus {
+  background: url("../images/btn-1.png") center no-repeat;
+  background-size: 100%;
+  left: 0;
+}
+
+.Select .s-num .nums .plus {
+  background: url("../images/btn-2.png") center no-repeat;
+  background-size: 100%;
+  right: 0;
+}
+
+.Select .s-num .nums input {
+  background: none;
+  border: none;
+  color: #626262;
+  display: block;
+  font-size: 26px;
+  height: 40px;
+  left: 35px;
+  line-height: 40px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 80px;
+}
+
+.Select .s-prices {
+  font-size: 22px;
+  padding: 0 40px;
+  margin-top: 35px;
+}
+
+.Select .s-prices b {
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+  line-height: 56px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-prices p {
+  display: block;
+  line-height: 56px;
+  text-align: right;
+}
+
+.Select .s-prices span {
+  font-size: 26px;
+}
+
+.Select .s-prices i {
+  font-style: normal;
+}
+
+.Select .btns {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  height: 55px;
+  line-height: 55px;
+  flex-direction: row;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.Select .btns div {
+  flex: 1;
+  cursor: pointer;
+  width: 50%;
+}
+
+.Select .btns .go-car {
+  background: #ffe542;
+  border-bottom-left-radius: 10px;
+  float: left;
+  color: #4a4a4a;
+}
+
+.Select .btns .go-buy {
+  background: #3ac8e0;
+  border-bottom-right-radius: 10px;
+  float: left;
+}
+
+.Select .btns .go-buy.on {
+  background: #1a8c9f;
+}
+
+.Select .btns .go-car.on {
+  background: #d9be15;
+}
+
+/*小屏*/

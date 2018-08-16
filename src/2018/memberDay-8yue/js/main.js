@@ -258,7 +258,7 @@
     new Price('.js_price',{
       add:'.add',
       reduce:'.reduce'
-    },[20,40,60,0]);
+    },[30,50,80,0]);
 
 
     $(".floater").fadeOut(10);
