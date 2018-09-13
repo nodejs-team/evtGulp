@@ -49,8 +49,8 @@ span.num{
   div{position: relative;}
   .cakes{ margin-top: -80px; position: relative;
     ul{ margin-left: -28px;
-      li{ width: 591px; height: 523px; margin-left: 23px; float: left; position: relative; margin-top: 80px;
-        img{margin-bottom: 20px;}
+      li{ width: 590px; height: 523px; margin-left: 23px; float: left; position: relative; margin-top: 80px; background: #f5f5f5;
+        img{margin-bottom: 20px; width: 100%;}
         .m-title{ position: absolute; top: 40px; left: 40px; font-size: 16px; text-align: left; color: #000;}
         .m-car{ position: absolute; top: 40px; right: 40px; font-size: 16px; text-align: left; color: #000; width: 37px; height: 37px; background: url("../images/car.png") no-repeat; cursor: pointer;}
         .m-car.on{ background: url("../images/car-on.png") no-repeat;}
@@ -118,7 +118,7 @@ span.num{
 }
 
 .Dialog-Select{
-  background: #fff none repeat scroll 0 0; box-shadow: 0 0 0 #999; font-size:14px; width:520px; height:480px; margin-top: -240px; margin-left: -260px; left: 50%; padding: 0; position: fixed; top: 50%; z-index: 99999;border-radius:20px; display: none;
+  background: #fff none repeat scroll 0 0; box-shadow: 0 0 0 #999; font-size:14px; width:520px; height:480px; margin-top: -240px; margin-left: -260px; left: 50%; padding: 0; position: fixed; top: 50%; z-index: 99999;border-radius:10px; display: none;
 }
 .s-closes{position: absolute; right: -30px; top: 8px; width: 17px; height: 17px; background: url("../images/close.png"); cursor:pointer;}
 .Select{ position: relative; color: #000; height: 100%;
@@ -149,8 +149,8 @@ span.num{
   }
   .btns{ width: 100%; position: absolute; bottom:0px; display: flex; height: 55px; line-height: 55px; flex-direction: row;  text-align: center; font-size: 18px; color: #fff;
     div{ flex: 1; cursor: pointer; width: 50%;}
-    .go-car{background: #ffe542; border-bottom-left-radius:10px; float: left; color: #4a4a4a; }
-    .go-buy{background: #3ac8e0; border-bottom-right-radius:10px; float: left;}
+    .go-car{background: #ffe542; border-bottom-left-radius:10px; border-bottom-right-radius:10px;  float: left; color: #4a4a4a; }
+    .go-buy{background: #3ac8e0; border-bottom-right-radius:10px; border-bottom-left-radius:10px; float: left;}
     .go-buy.on{background: #1a8c9f;}
     .go-car.on{background: #d9be15;}
 

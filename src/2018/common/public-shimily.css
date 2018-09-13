@@ -1,13 +1,22 @@
 .clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden;}
 /*数量加减时，禁止双击选中*/
-span.num{ moz-user-select: -moz-none; -moz-user-select: none; -o-user-select:none; -khtml-user-select:none; -webkit-user-select:none; -ms-user-select:none; user-select:none;}
+span.num,.noselect{ moz-user-select: -moz-none; -moz-user-select: none; -o-user-select:none; -khtml-user-select:none; -webkit-user-select:none; -ms-user-select:none; user-select:none;}
+
+/*******************************/
 
 /*彈窗*/
 .Dialogbg-box {background-color: #000; height: 100%; left: 0; opacity: 0.7; position: fixed; top: 0; width: 100%; z-index: 200; display: none; -moz-opacity: .7; filter: alpha(opacity=70); }
 .Dialog-box {box-shadow: 0 0 0 #999; font-size: 14px; width: 640px; height: 568px; top: 50%; left: 50%; margin-bottom: 0; margin-left: -320px; margin-right: auto; margin-top: -284px; padding: 0; position: fixed; z-index: 99999; display: none; border-radius: 5px;}
 .Dialog-box .closes { width: 40px; height: 40px; position: absolute; top: 112px; right: 30px; cursor: pointer; z-index: 8;}
-.Dialog-box .box-wrap { position: relative; display: none;}
+.Dialog-box .box-wrap { position: relative;}
 .Dialog-box .box-wrap .go-use { display: block; position: absolute; bottom: 207px; left: 50%; margin-left: -120px; width: 240px; height: 50px; cursor: pointer;}
+
+/*******************************/
+.floater{ position: fixed; width: 145px; height: 145px; top: 600px;  z-index: 11; left: 50%;  cursor: pointer;}
+.floater .tips{ position: absolute; width: 50px; height: 50px; right:-5px; top: -5px; border-radius: 50%; background-size: 100%; text-align: center; z-index: 12; cursor: Default;}
+.floater .tips span{ font-size:18px; color: #fff; line-height: 50px;}
+
+/*******************************/
 
 /*小屏浏览器*/
 @media screen and (max-width:1700px) {

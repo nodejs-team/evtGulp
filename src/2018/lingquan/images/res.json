@@ -1,0 +1,28 @@
+{
+	"groups":[{
+			"keys":"quan-bg_01_png,quan-bg_02_jpg,quan-2_png,quan-1_png",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"quan-bg_01_png",
+			"type":"image",
+			"url":"quan-bg_01.png"
+		},
+		{
+			"name":"quan-bg_02_jpg",
+			"type":"image",
+			"url":"quan-bg_02.jpg"
+		},
+		{
+			"name":"quan-2_png",
+			"type":"image",
+			"url":"quan-2.png"
+		},
+		{
+			"name":"quan-1_png",
+			"type":"image",
+			"url":"quan-1.png"
+		}
+	]
+}

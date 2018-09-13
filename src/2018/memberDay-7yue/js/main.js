@@ -306,3 +306,8 @@
   });
 
 })(jQuery);
+
+/*阻止页面内容被选中*/
+document.body.onselectstart = function () {
+  return false;
+};

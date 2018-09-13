@@ -304,6 +304,12 @@ span.num {
   color: #ff6800;
 }
 
+.sec-2 .evt-content .qidai .buys-yb .zpin {
+  position: absolute;
+  top: -350px;
+  right: -160px;
+}
+
 .sec-2 .evt-content .qidai .buy-btn {
   position: absolute;
   bottom: -50px;

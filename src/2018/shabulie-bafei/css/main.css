@@ -1,0 +1,72 @@
+*{
+		margin: 0;
+		padding: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	.content-wrap{
+		width: 100%;
+		background: url('../images/bg.jpg') no-repeat center;
+		background-size: cover;
+	}
+	.content-top{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.content-top div{
+		text-align: center;
+	}
+	.c-top01 img{
+		height: 462px;
+	}
+	.c-top03{
+		position: relative;
+	}
+	.img03{
+		height: 688px;
+	}
+	.img04{
+		position: absolute;
+		left: -99px;
+		bottom: -72px;
+		width: 280px;
+	}
+	.buy-btn1{
+		position: absolute;
+		right: 226px;
+		bottom: 188px;
+		width: 156px;
+		height: 62px;
+	}
+	.buy-btn2{
+		position: absolute;
+		right: 226px;
+		bottom: 56px;
+		width: 156px;
+		height: 62px;
+	}
+	.content-bot{
+		width: 100%;
+		height: 380px;
+		padding-top: 100px;
+		background: #fff;
+	}
+	.bot-wrap{
+		width: 1080px;
+		margin: 0 auto;
+	}
+	.b-left{
+		float: left;
+	}
+	.b-right{
+		float: left;
+		width: 530px;
+		margin-left: 88px;
+	}
+	.b-right p{
+		color: #7e3c2d;
+		font-size: 15px;
+		font-family: PingFangSC-Regular;
+		line-height: 30px;
+	}

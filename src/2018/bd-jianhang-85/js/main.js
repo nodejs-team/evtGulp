@@ -6,7 +6,7 @@
 
 
   var loadComplete = function () {
-    $(".buy-btn.on").hover(function () {
+    $(".buys-yb .buy-btn.on").hover(function () {
       $(".tips").fadeIn(200);
     },function () {
       $(".tips").fadeOut(10);
