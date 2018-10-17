@@ -1,0 +1,106 @@
+.clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden;}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none; }
+
+.evt-container{ overflow: hidden; background:url("../images/bg.png") repeat; }
+.sec-banner{  z-index: 1; height: 560px; overflow: hidden;
+  .evt-content{ width: 1200px; margin: 0 auto; height: 550px; }
+  .banner-1{ position: absolute; top: 0; left: -280px;}
+  .banner-2{ position: absolute; top: 0; right: -220px;}
+  .banner-3{ position: absolute; bottom: 0; left: -355px;}
+  .banner-4{ position: absolute; bottom: 0; right: -430px;}
+  .banner-t{ position: absolute; top:0; left: 50%; margin-left: -408px;}
+  .banner-3.small{ left: -50px;}
+  .banner-4.small{ right:0;}
+  .banner-t.small{ width: 700px; margin-left: -350px;}
+
+
+}
+.hy-title{width: 457px; margin: 0 auto 20px;position: relative;}
+.sec-1{position: relative;
+  .evt-content{ width: 1200px; margin: 0 auto;
+      .zuhe{ position: relative; width: 1102px; margin: 0 auto; overflow: hidden; background: url("../images/cake-bg.png") no-repeat;
+        .zuhe-ck{overflow: hidden;}
+
+        .icon-zuhe{position: absolute; top: 30%; left: 50%; margin-left: -50px; margin-top: -60px; z-index: 10;}
+        .cake-zh{ position: relative; float: left; width: 540px;overflow: hidden; z-index: 1; margin-top: 14px; margin-left: 14px;
+          img{width: 100%;}
+        }
+        .xiaoshi-zh{ position: relative;width: 540px; float: left;overflow: hidden; margin-top: 14px; margin-left: -5px;
+          img{width: 100%;}
+        }
+        .sw-title{width: 100%; position: absolute; bottom: 0; height: 145px;
+          .p-title{position: absolute; left: 23px; bottom: 20px; color:#3a091a; z-index: 2; text-align: left;
+            p{font-size: 16px;}
+            h2{font-size: 22px; font-weight: normal;}
+          }
+          s{font-size: 22px; font-weight: normal;
+            i{font-style:normal; font-size: 16px;}
+          }
+          .p-old-price{position: absolute; right: 23px; bottom: 20px; color:#3a091a; z-index: 2; text-align: left; }
+          .bg{position: absolute; left: 0; bottom: 0;background:url("../images/s-bg.png") repeat; width: 100%; height: 145px; z-index: 1;}
+        }
+      }
+      .zuhejia{position: relative; width: 197px; margin:50px auto 100px;
+        .price{position: absolute; top: 63px; left: 91px; font-size: 46px; font-weight: bold; font-style: italic; color: #3a091a;}
+        .buy-btn{position: absolute; top: 130px; left:0; cursor: pointer;}
+      }
+  }
+}
+
+.sec-2{
+  .evt-content{width: 1200px;}
+  .qiqiu-1{position: absolute; right: -148px; top: 100px; z-index: 1;}
+  .haoli{width: 1102px;margin: 50px auto; z-index: 3;}
+}
+
+
+
+
+.evt-footer{ z-index: 1;
+  position: relative; width: 100%;
+  .evt-content{width: 1200px;color: #5c5c5c;}
+    .qiqiu-2{position: absolute; left: -100px; bottom:0; z-index: 1;}
+    .evt-rules{width:700px; margin: 0 auto; padding:20px 0 100px 30px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+.floater{position: fixed; width: 145px; height: 145px; top: 600px; z-index: 11; left: 50%; margin-left: 520px; cursor: pointer;
+  .tips{ position: absolute; width: 50px; height: 50px; right:-5px; top: -5px; border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12; cursor: Default;
+    span{ font-size:18px; color: #fff; line-height: 50px;}
+  }
+}
+
+.floater.samllScreen{margin-left:420px;}
+
+
+/*swiper补充样式*/
+.box-swiper{position: relative; width: 540px;  height: 430px; }
+.swiper-container { position: relative;  width: 540px;  height: 430px;  }
+.swiper-slide { cursor: default;
+  text-align: center; position: relative;  font-size: 18px; display: -webkit-box;  display: -ms-flexbox;
+  display: -webkit-flex;  display: flex;  -webkit-box-pack: center;  -ms-flex-pack: center;
+  -webkit-justify-content: center;  justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;
+  -webkit-align-items: center;  align-items: center;
+}
+
+.pagination { position: absolute; left: 0; text-align: center; bottom:20px;  right: 20px; width:100%; z-index: 10; padding:0; cursor: pointer; }
+.swiper-pagination-switch { display: inline-block; width: 10px; height: 10px; border-radius: 10px; background: #909090; margin: 0 3px; cursor: pointer;  }
+.swiper-active-switch { background: #ffffff; opacity:1;}
+
+div.swiper-button-white{position: absolute !important; top:70%; left: 50%; width: 21px; height: 37px; opacity: 1; z-index: 5; cursor: pointer;}
+.swiper-button-white.swiper-button-next{background: url("../images/next.png") center no-repeat; margin-left: 225px;}
+.swiper-button-white.swiper-button-prev{background: url("../images/prev.png") center no-repeat; margin-left: -250px;}
+
+@media screen and (max-width:1700px) {
+  .sec-banner img{ width: 100%;}
+  .banner-1{ width: 400px; left: -150px !important;}
+  .banner-2{ width: 300px; right: -100px !important;}
+  .banner-3{ width: 250px; left: -50px!important;}
+  .banner-4{ width: 150px; right: 0!important;}
+  .banner-t{ width: 700px !important; top:50px !important; margin-left: -350px !important;}
+}
+
+

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link type="text/css" rel="stylesheet" href="https://act.mcake.com/fangli/2018/pc/common/comm_header.css" />
+
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+
+</head>
+<body>
+<div class="header">
+    <div class="header_top_box">
+        <div class="header_top">
+            <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+                <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+                    <div class="wallbox wall_top">
+                        <div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+                        <div class="logoer">
+                            <a href="http://ebsig.mcake.com">
+                                <img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+                            </a>
+                        </div>
+                        <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+                        <ul class="navbar">
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start-->
+                            <li class="record" style="display: none;">
+                                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+                            </li>
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end-->
+                            <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+                            <li class="m_cart">
+                                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="wallbox">
+                    <div class="header_right">
+                        <ul class="phone_delivery">
+                            <li class="phone"><span>4006-678-678</span><i></i></li>
+                            <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+                        </ul>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+                        </li>
+                        <li>
+                            <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/member_center.html" target="_blank">
+                                <samp>Mon M'CAKE</samp>
+                                <span>会员中心</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
+        <!--<div class="banner"></div>-->
+        <div class="bannerbg banner-l"></div>
+        <div class="bannerbg banner-r"></div>
+        <div class="banner-content">
+            <div class="logo-7zhou" data-anim="slide-up" data-delay="0.2"><img src="images/logo-7zhou.png" alt=""></div>
+            <div class="banner-word" data-anim="fade-in" data-delay="0.8"><img src="images/banner-word.png" alt=""></div>
+            <div class="logos" data-anim="slide-up" data-delay="1.4"><img src="images/logos.png" alt=""></div>
+        </div>
+    </div>
+    <div class="sec-video">
+        <div class="evt-content">
+            <video controls="controls" preload="auto" width="800px" style="margin: 0 auto;"  poster="https://act.mcake.com/fangli/2018/pc/zhou-nian/video/video-load.png" id="video" autoplay -webkit-playsinline="true" src="https://act.mcake.com/fangli/2018/pc/zhou-nian/video/zhounian-7.mp4">
+            </video>
+        </div>
+    </div>
+
+   <!--活动攻略-->
+    <div class="sec-gonlue">
+        <div class="evt-content">
+            <div class="zn-title" data-anim="slide-up" data-delay="0.8"><img src="images/zn-title-hd.png" alt=""></div>
+            <div class="zn-hd-list" data-anim="slide-up" data-delay="0.8">
+                <ul class="clearfix">
+                    <li class="scaleImg">
+                        <div class="txt"><img src="images/hd-t-1.png" alt=""></div>
+                        <div class="zn-btn whdlink"></div>
+                        <img src="images/hd-img-1.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-2.png" alt=""></div>
+                        <div class="zn-btn zuhelink"></div>
+                        <img src="images/hd-img-2.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-3.png" alt=""></div>
+                        <div class="zn-btn xplink"></div>
+                        <img src="images/hd-img-3.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-4.png" alt=""></div>
+                        <div class="zn-btn zclink"></div>
+                        <img src="images/hd-img-4.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-5.png" alt=""></div>
+                        <div class="zn-btn toplink"></div>
+                        <img src="images/hd-img-5.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-6.png" alt=""></div>
+                        <div class="zn-btn manzenglink"></div>
+                        <img src="images/hd-img-6.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-7.png" alt=""></div>
+                        <div class="zn-btn yuan1link"></div>
+                        <img src="images/hd-img-7.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-8.png" alt=""></div>
+                        <div class="zn-btn qingshenglink"></div>
+                        <img src="images/hd-img-8.jpg" class="scale" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sec-gonlue">
+        <div class="evt-content">
+            <div class="zn-title" data-anim="slide-up" data-delay="0.8"><img src="images/zn-title-hd.png" alt=""></div>
+            <div class="zn-hd-list" data-anim="slide-up" data-delay="0.8">
+                <ul class="clearfix">
+                    <li class="scaleImg">
+                        <div class="txt"><img src="images/hd-t-1.png" alt=""></div>
+                        <div class="zn-btn whdlink"></div>
+                        <img src="images/hd-img-1.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-2.png" alt=""></div>
+                        <div class="zn-btn zuhelink"></div>
+                        <img src="images/hd-img-2.jpg" class="scale" alt="">
+                    </li>
+
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-4.png" alt=""></div>
+                        <div class="zn-btn zclink"></div>
+                        <img src="images/hd-img-4.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-5.png" alt=""></div>
+                        <div class="zn-btn toplink"></div>
+                        <img src="images/hd-img-5.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-6.png" alt=""></div>
+                        <div class="zn-btn manzenglink"></div>
+                        <img src="images/hd-img-6-2.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-7.png" alt=""></div>
+                        <div class="zn-btn yuan1link"></div>
+                        <img src="images/hd-img-7-2.jpg" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg"><div class="txt"><img src="images/hd-t-8.png" alt=""></div>
+                        <div class="zn-btn qingshenglink"></div>
+                        <img src="images/hd-img-8-2.jpg" class="scale" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--微互动-->
+    <div class="sec-whd" id="whd">
+        <div class="evt-content">
+            <div class="zn-title" data-anim="slide-up" data-delay="0.8">
+                <img src="images/zn-title-whd.png" alt="">
+                <div class="hd-titme">10.10-11.11</div>
+                <div class="hd-txt">加文字</div>
+                <div class="guize-btn"><b>活动规则</b>
+                    <div class="txtHtml">
+                        <div class="txt">
+                            <h2>活动规则</h2>
+                            <p>活动时间：10.10-11.11</p>
+                            <h3>关注微信</h3>
+                            <p>1、微信互动：微信后台上传你与MCAKE幸福一刻（照片需体现MCAKE蛋糕内容），入选后投票前10名赠Juicy Couture玫瑰闪耀香氛，价值：480元/瓶</p>
+                            <p>2、微信推文：转发#周年庆推文#且点赞数77人以上，即可截图至微博后台，赠VHlondon  手表 （599元，3个）</p>
+                            <h3>关注微博</h3>
+                            <p>1、并转发七周年庆@五位好友随机抽取5名幸运用户赠彼得罗夫 ·玫瑰舒润瞬采凝霜 价值：620元/瓶</p>
+                            <p>2、在七周年微博留言中抽取2名幸运用户赠VHlondon  手表 （599元，2个）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zn-zl-list" data-anim="slide-up" data-delay="0.8">
+                <ul class="clearfix">
+                    <div class="whd-left">
+                        <li class="scaleImg">
+                            <div class="txt"><img src="images/whd-txt-1.png" alt=""></div>
+                            <img src="images/whd-1.png" class="scale" alt="">
+                        </li>
+                        <li class="mL scaleImg">
+                            <div class="txt"><img src="images/whd-txt-2.png" alt=""></div>
+                            <img src="images/whd-2.png" class="scale" alt="">
+                        </li>
+                    </div>
+                    <div class="whd-right">
+                        <li class="scaleImg" style="height: 652px;">
+                            <div class="txt"><img src="images/whd-txt-3.png" alt=""></div>
+                            <img src="images/whd-3.png" class="scale" alt="">
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="ewm"><img src="images/ewm.png" alt=""></div>
+        </div>
+    </div>
+
+    <!--券礼组合-->
+    <div class="sec-zuhe" id="quanli">
+        <div class="evt-content">
+            <div class="zn-title" data-anim="slide-up" data-delay="0.8"><img src="images/zn-title-zh.png" alt="">
+                <div class="hd-titme">10.10-11.11</div>
+                <div class="hd-txt">加文字加文字加文字加文字加文字加文字</div>
+            </div>
+        </div>
+        <div class="zuhe">
+            <div class="evt-content">
+                <div class="guize-btn"><b>活动规则</b>
+                    <div class="txtHtml">
+                        <div class="txt">
+                            <h2>活动规则</h2>
+                            <p>1、活动时间：2018年10月10日-2018年11月11日</p>
+                            <p>2、活动城市：上海、北京、苏州、杭州</p>
+                            <p>3、支付方式：微信、支付宝、现金</p>
+                            <p>4、庆生礼包内容：<br>
+                            ·礼包一：198元蛋糕券1张，298元蛋糕券1张，48元小食抵扣券x1，50元优惠券x1（有效期自购买之日起2年内有效）<br>
+                            ·礼包二：298元蛋糕券1张，48元小食抵扣券x1，50元优惠券x1（有效期自购买之日起2年内有效）<br>
+                            ·198元/298元蛋糕券仅限兑换同等价格蛋糕<br>
+                            ·48元小食抵扣券仅限小食类产品使用，抵扣金额48元<br>
+                            ·50元优惠券全场消费金额满298元可使用<br>
+                            ·生日礼包内含优惠券金额不可多退少补，每笔订单仅限使用1张，不与其他优惠同享<br>
+                            ·凡购买庆生礼包成功后，在会员中心-我的优惠券内即可使用</p>
+                            <p>5、本活动不与其他优惠同享</p>
+                            <p>6、本活动最终解释权归MCAKE所有</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zuhecard zuhe-1" data-anim="slide-up" data-delay="0.4" data-delay-adjust="0.4" ><img src="images/zuhe-1.png" alt=""></div>
+                <div class="zuhecard zuhe-2" data-anim="slide-up" data-delay="1" data-delay-adjust="1"><img src="images/zuhe-2.png" alt=""></div>
+                <div class="zuhecard zuhe-3" data-anim="slide-up" data-delay="0.8" data-delay-adjust="0.8"><img src="images/zuhe-3.png" alt=""></div>
+                <div class="zuhecard zuhe-4" data-anim="slide-up" data-delay="1.4" data-delay-adjust="1.2"><img src="images/zuhe-4.png" alt=""></div>
+                <div class="zuhecard zuhe-5" data-anim="slide-up" data-delay="2" data-delay-adjust="1.4"><img src="images/zuhe-5.png" alt=""></div>
+                <div class="zuheBar">
+                    <p>庆生价：<b><i>￥</i>417.00</b><s>原价: ￥594.00</s></p>
+                    <div class="buy-card">
+                        <div class="buy-yuanbtn"><span>立即购买</span></div>
+                    </div>
+                </div>
+                <div class="txt">凡活动期间购买庆生礼包即赠MCAKE定制手提袋1个，赠品将随订单配送</div>
+            </div>
+        </div>
+    </div>
+
+    <!--新品推荐-->
+    <div class="sec-xp" id="xp">
+        <div class="evt-content">
+            <div class="zn-title" data-anim="slide-up" data-delay="0.8"><img src="images/zn-title-xp.png" alt="">
+                <div class="hd-titme">10.10-11.11</div>
+            </div>
+            <div class="xp xincake" data-anim="slide-up" data-delay="0.8"  data-pond="1.5磅,2.5磅,3.5磅,5.5磅" data-price="218,318,458,750" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                <div class="buy-price"><i>￥</i><span>318.00</span>/2.5磅</div>
+                <div class="buy-btns">
+                    <div class="buy-btn buy-xp-card"><span>加入购物车</span></div>
+                    <div class="buy-btn buy-xp-btn on"><span>立即订购</span></div>
+                </div>
+                <img src="images/xp-img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--折扣专场-->
+    <div class="sec-cakes" id="zhekou">
+        <div class="evt-content">
+            <div class="zn-title" data-anim="slide-up" data-delay="0.8">
+                <img src="images/zn-title-zk.png" alt="">
+                <div class="hd-titme">10.10-11.11</div>
+                <div class="hd-txt">加文字加文字加文字加文字加文字加文字</div>
+                <div class="guize-btn"><b>活动规则</b>
+                    <div class="txtHtml">
+                        <div class="txt">
+                            <h2>活动规则</h2>
+                            <p>1、活动时间：2018年10月10日-2018年11月11日</p>
+                            <p>2、活动城市：上海、北京、苏州、杭州</p>
+                            <p>3、支付方式：支付宝、微信、现金</p>
+                            <p>4、优惠内容：<br>
+                                ·活动期间凡在活动页面专区下单，商品享7.7折<br>
+                                ·每日每位用户ID仅限参与1次<br>
+                                ·折扣商品不可以与优惠券同享</p>
+                            <p>5、本活动最终解释权归MCAKE所有</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cakes products" data-anim="slide-up" data-delay="0.8">
+                <ul class="clearfix">
+                    <li data-pond="1磅,2磅,3磅,5磅" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                        <img src="images/img-1.png" class="zoom" alt="">
+                        <div class="m-title">朗姆醇栗</div>
+                        <div class="m-subtitle">Mont Blanc</div>
+                        <div class="m-price">￥<span>152.46</span></div>
+                        <s class="m-old-price">￥<span>198.00</span></s>
+                        <div class="m-btn">立即订购</div>
+                        <div class="m-last">剩余：99</div>
+                    </li>
+                    <li data-pond="1磅,2磅,3磅,5磅" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                        <img src="images/img-2.png" class="zoom" alt="">
+                        <div class="m-title">安逸兔</div>
+                        <div class="m-subtitle">lapin détendu</div>
+                        <div class="m-price">￥<span>152.46</span></div>
+                        <s class="m-old-price">￥<span>198.00</span></s>
+                        <div class="m-btn">立即订购</div>
+                        <div class="m-last">剩余：99</div>
+                    </li>
+                    <li data-pond="1磅,2磅,3磅,5磅" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                        <img src="images/img-3.png" class="zoom" alt="">
+                        <div class="m-title">蔓越莓红丝绒</div>
+                        <div class="m-subtitle">Velour rouge</div>
+                        <div class="m-price">￥<span>152.46</span></div>
+                        <s class="m-old-price">￥<span>198.00</span></s>
+                        <div class="m-btn">立即订购</div>
+                        <div class="m-last">剩余：99</div>
+                    </li>
+                    <li data-pond="1磅,2磅,3磅,5磅" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                        <img src="images/img-4.png" class="zoom" alt="">
+                        <div class="m-title">蓝莓轻乳拿破仑</div>
+                        <div class="m-subtitle">Napoléon aux myrtilles</div>
+                        <div class="m-price">￥<span>152.46</span></div>
+                        <s class="m-old-price">￥<span>198.00</span></s>
+                        <div class="m-btn">立即订购</div>
+                        <div class="m-last">剩余：99</div>
+                    </li>
+                    <li data-pond="1磅,2磅,3磅,5磅" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                        <img src="images/img-5.png" class="zoom" alt="">
+                        <div class="m-title">V.S.O.P生巧</div>
+                        <div class="m-subtitle">M'chocolat</div>
+                        <div class="m-price">￥<span>152.46</span></div>
+                        <s class="m-old-price">￥<span>198.00</span></s>
+                        <div class="m-btn">立即订购</div>
+                        <div class="m-last">剩余：99</div>
+                    </li>
+                    <li data-pond="1磅,2磅,3磅,5磅" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸： 2-3人食 15cm*3.5cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm">
+                        <img src="images/img-6.png" class="zoom" alt="">
+                        <div class="m-title">知识小生</div>
+                        <div class="m-subtitle">Dimsum intelligent</div>
+                        <div class="m-price">￥<span>152.46</span></div>
+                        <s class="m-old-price">￥<span>198.00</span></s>
+                        <div class="m-btn">立即订购</div>
+                        <div class="m-last">剩余：99</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--TOP消费-->
+    <div class="sec-Top" id="Top">
+        <div class="evt-content">
+            <div class="zn-title" data-anim="slide-up" data-delay="0.8"><img src="images/zn-title-top.png" alt="">
+                <div class="hd-titme">10.10-11.11</div>
+            </div>
+            <div class="xiaofei" data-anim="slide-up" data-delay="0.8">
+                <div class="bangList">
+                    <div class="title-txt">排行榜
+                        <div class="guize-btn"><b>活动说明</b>
+                            <div class="txtHtml">
+                                <div class="txt">
+                                    <h2>活动规则</h2>
+                                    <p>1、活动时间：2018年10月10日-2018年11月11日</p>
+                                    <p>2、活动城市：上海、北京、苏州、杭州</p>
+                                    <p>3、支付方式：支付宝、微信、现金</p>
+                                    <p>4、优惠内容：<br>
+                                        ·活动期间累积订单金额排名1-17，即可获赠相应赠品<br>
+                                        ·活动期间，消费金额排名截止时间：11月11日当日24整点<br>
+                                        ·赠品将在11月11日活动结束后，5-10个工作日内由工作人员联系，快递寄出</p>
+                                    <p>5、本活动最终解释权归MCAKE所有</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bang-list">
+                        <div id="box" style="height:520px; position:relative; overflow:hidden;">
+                            <ul id="ul1">
+                                <li class="clearfix"><b>1</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>9684,5455,6556,38.00</span></li>
+                                <li class="clearfix"><b>2</b><span class="tel-phone">13482289821</span><span class="price"><i>￥</i>92.00</span></li>
+                                <li class="clearfix"><b>3</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="clearfix"><b>4</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="clearfix"><b>5</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="clearfix"><b>6</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="clearfix"><b>7</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="clearfix"><b>8</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                            </ul>
+                            <ul id="ul2"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy-prize">
+                    <div class="prize scaleImg">
+                        <div class="prizeImg" style="display: block;">
+                            <div class="txt"><img src="images/top-txt-1.png" alt=""></div>
+                            <img src="images/top-img-1.png" class="scale" alt="">
+                        </div>
+                        <div class="prizeImg">
+                            <div class="txt"><img src="images/top-txt-2.png" alt=""></div>
+                            <img src="images/top-img-2.png" class="scale" alt="">
+                        </div>
+                        <div class="prizeImg">
+                            <div class="txt"><img src="images/top-txt-3.png" alt=""></div>
+                            <img src="images/top-img-3.png" class="scale" alt="">
+                        </div>
+                        <div class="prizeImg">
+                            <div class="txt"><img src="images/top-txt-4.png" alt=""></div>
+                            <img src="images/top-img-4.png" class="scale" alt="">
+                        </div>
+
+                    </div>
+                    <div class="prize-nub">
+                        <ul class="clearfix">
+                            <li class="bd on"><p><b>NO.1</b><span>赠SU live 兰芯蕙质18K金\玛瑙 <br>\碧玺价值：3688元 </span></p></li>
+                            <li><p><b>NO.2-4</b><span>赠 PISTACHIO 开心果系列拉杆箱<br>价值：2196元</span></p> </li>
+                            <li class="bd bdnone"><p><b>NO.5-9</b><span>赠Links of London Friendship<br>系列手链价值：1800元  </span></p></li>
+                            <li class="bdnone"><p><b>NO.10-17</b><span>赠雅氏蛋卷鞋，价值：1260元</span></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--满额赠礼-->
+    <div class="sec-zengli" id="lb">
+        <div class="evt-content">
+            <div class="zn-title">
+                <img src="images/zn-title-zl.png" alt="">
+                <div class="hd-titme">10.20-10.31</div>
+                <div class="guize-btn">
+                <b>活动规则</b>
+                    <div class="txtHtml">
+                        <div class="txt">
+                            <h2>活动规则</h2>
+                            <p>1、活动时间：2018年10月20日-2018年10月31日</p>
+                            <p>2、活动城市：上海、北京、苏州、杭州</p>
+                            <p>3、支付方式：支付宝、微信、现金</p>
+                            <p>4、活动内容：<br>
+                            ·全场单笔订单实付金额满277元，赠MCAKE定制款手提袋<br>
+                            ·全场单笔订单实付金额满377元，赠377元赠Juicy Couture玫瑰闪耀香氛小样<br>
+                            ·全场单笔订单实付金额满477元，赠eco&more玫瑰草广藿香沐浴凝露<br>
+                            ·赠品数量有限，赠完即止<br>
+                            ·赠品最晚配送时间：2018年11月31日</p>
+                            <p>5、本活动最终解释权归MCAKE所有</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zn-zl-list manzeng" data-anim="slide-up" data-delay="0.8">
+                <div class="not-startbg"></div>
+                <div class="not-start">
+                    <div class="txt">
+                        <h2>活动暂未开启</h2>
+                        <p>开启时间：11.5-11.11</p>
+                    </div>
+                </div>
+                <ul class="clearfix">
+                    <li class="scaleImg">
+                        <div class="txt"><img src="images/zl-txt-1.png" alt=""></div>
+                        <img src="images/zl-1.png" class="scale" alt="">
+                    </li>
+                    <li class="mL scaleImg">
+                        <div class="txt"><img src="images/zl-txt-2.png" alt=""></div>
+                        <img src="images/zl-2.png" class="scale" alt="">
+                    </li>
+                    <li class="scaleImg" style="margin-top: 50px;">
+                        <div class="txt"><img src="images/zl-txt-3.png" alt=""></div>
+                        <img src="images/zl-3.png" class="scale" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--1元购-->
+    <div class="sec-1yuan" id="1yuan">
+        <div class="evt-content">
+            <div class="zn-title" data-anim="slide-up" data-delay="0.8"><img src="images/zn-title-1yuan.png" alt="">
+                <div class="hd-titme">11.11-11.11</div>
+            </div>
+            <div class="tuan-yuan" data-anim="slide-up" data-delay="0.8">
+                <div class="not-startbg"></div>
+                <div class="not-start">
+                    <div class="txt">
+                        <h2>活动暂未开启</h2>
+                        <p>开启时间：11.11-11.11</p>
+                    </div>
+                </div>
+                <div class="yuan">
+                    <div class="guize-btn">
+                        <b>活动规则</b>
+                        <div class="txtHtml">
+                            <div class="txt">
+                                <h2>活动规则</h2>
+                                <p>1、活动时间：2018年11月11日-2018年11月11日</p>
+                                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                                <p>3、支付方式：支付宝、微信</p>
+                                <p>4、活动内容：<br>
+                                    ·全场+1元即可换购萝拉小朵（原味）/100g，每天限量77份<br>
+                                    ·活动期间每位用户仅限换购1次</p>
+                                <p>5、本活动最终解释权归MCAKE所有</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/1yuan.png" alt="">
+                </div>
+                <div class="price">
+                    <div class="cake-title">萝拉小朵（原味）/100g</div>
+                    <div class="cake-price"><i>￥</i>1.00 <s>￥48.00</s></div>
+                    <div class="buy-1yuan">
+                        <div class="buy-yuanbtn"><span>加入购物车</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--庆生返场-->
+    <div class="sec-qingsheng" id="kh">
+        <div class="evt-content">
+            <div class="zn-title" data-anim="slide-up" data-delay="0.8"><img src="images/zn-title-qs.png" alt="">
+                <div class="hd-titme">11.5-11.11</div>
+            </div>
+            <div class="juhui" data-anim="slide-up" data-delay="0.8">
+                <div class="not-startbg" style="display: none;"></div>
+                <div class="not-start" style="display: none;">
+                    <div class="txt">
+                        <h2>活动暂未开启</h2>
+                        <p>开启时间：10.10-11.11</p>
+                    </div>
+                </div>
+                <div class="title-txt"><span>先抽奖</span> 后下单
+                    <div class="guize-btn">
+                        <b>抽奖说明</b>
+                        <div class="txtHtml">
+                            <div class="txt">
+                                <h2>活动规则</h2>
+                                <p>1、活动时间：2018年11月5日-2018年11月11日</p>
+                                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                                <p>3、支付方式：支付宝、微信</p>
+                                <p>4、活动内容： <br>
+                                ·每日每位用户仅限抽奖1次<br>
+                                ·实物礼品将随订单配送（有效期中奖之日当天24：00点之前有效，过期不补发）</p>
+                                <p>5、本活动最终解释权归MCAKE所有</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choujiang">
+                    <ul class="clearfix">
+                        <li class="on">
+                            <img src="images/jiang-1.png" alt="">
+                            <div class="txt">
+                                <h2>1等奖</h2>
+                                <p>SU live 项链</p>
+                                <p class="price"><i>￥</i>1888.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/jiang-2.png" alt="">
+                            <div class="txt">
+                                <h2>2等奖</h2>
+                                <p>LINKS手链</p>
+                                <p class="price"><i>￥</i>1800.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/jiang-3.png" alt="">
+                            <div class="txt">
+                                <h2>3等奖</h2>
+                                <p>雅氏蛋卷鞋</p>
+                                <p class="price"><i>￥</i>1260.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/jiang-4.png" alt="">
+                            <div class="txt">
+                                <h2>4等奖</h2>
+                                <p>彼得罗夫 ·玫瑰舒润<br>
+                                    瞬采凝霜</p>
+                                <p class="price"><i>￥</i>620.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/jiang-5.png" alt="">
+                            <div class="txt">
+                                <h2>5等奖</h2>
+                                <p>彼得罗夫PTR清凉<br>
+                                    香薰面膜</p>
+                                <p class="price"><i>￥</i>380.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/jiang-6.png" alt="">
+                            <div class="txt">
+                                <h2>6等奖</h2>
+                                <p>半熟芝士(原味) 1盒</p>
+                                <p class="price"><i>￥</i>48.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/jiang-7.png" alt="">
+                            <div class="txt">
+                                <h2>7等奖</h2>
+                                <p>100元优惠券1张</p>
+                                <p class="price"><i>￥</i>100.00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="jiang-btn"><span>点击抽奖</span></div>
+                <div class="award">
+                    <h2>获奖名单</h2>
+                    <div class="awardlist"  id="box2">
+                        <ul id="ul3">
+                            <li class="clearfix"><b>1等奖</b>
+                                <span class="tel-phone">用户ID:13482289820</span>
+                                <span class="wonName">获得：项链</span>
+                                <span class="jiage">价值：<i>￥</i>9688.00</span>
+                            </li>
+                            <li class="clearfix"><b>2等奖</b>
+                                <span class="tel-phone">用户ID:13482289820</span>
+                                <span class="wonName">获得：项链</span>
+                                <span class="jiage">价值：<i>￥</i>9688.00</span>
+                            </li>
+                            <li class="clearfix"><b>3等奖</b>
+                                <span class="tel-phone">用户ID:13482289820</span>
+                                <span class="wonName">获得：项链</span>
+                                <span class="jiage">价值：<i>￥</i>9688.00</span>
+                            </li>
+                            <li class="clearfix"><b>4等奖</b>
+                                <span class="tel-phone">用户ID:13482289820</span>
+                                <span class="wonName">获得：项链</span>
+                                <span class="jiage">价值：<i>￥</i>9688.00</span>
+                            </li>
+
+                        </ul>
+                        <ul id="ul4"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--蛋糕选择弹窗-->
+<div class="Dialogbg-Select" ontouchmove="return false;"></div>
+<div class="Dialog-Select" ontouchmove="return false;">
+    <div class="s-closes"></div>
+    <div class="Select" ontouchmove="return false;">
+        <div class="s-title">
+            <h2>选择您要订购的磅数：</h2>
+            <b>Sélectionnez la commande le nombre de livres：</b>
+        </div>
+        <div class="s-bangshu clearfix">
+            <ul class="clearfix"></ul>
+            <div class="d-tips">
+                <div class="time">提示：需提前5小时预订</div>
+                <div class="tips">尺寸： 4-7人食 18cm*4cm（不含玫瑰花瓣）</div>
+            </div>
+        </div>
+        <div class="s-num clearfix">
+            <b>数量：</b>
+            <div class="nums">
+                <a href="javascript:;" class="minus"></a>
+                <input class="num" value="1" readonly="" type="text" data-num="">
+                <a href="javascript:;" class="plus"></a>
+            </div>
+        </div>
+        <div class="s-prices">
+            <b>价格：</b>
+            <input type="hidden" class="postid" data-postid="">
+           <!-- <p>￥<span class="s-price">00</span></p>-->
+            <p><i>￥</i> <span class="s-new-price">00</span> <s class="old-p">￥<samp class="s-price">00</samp></s></p>
+        </div>
+        <div class="btns">
+            <div class="go-car">加入购物车</div>
+            <div class="go-buy">立即订购</div>
+        </div>
+
+    </div>
+</div>
+
+<!--活动规则-->
+<div class="Dialogbg-rules"></div>
+<div class="Dialog-rules">
+    <div class="closes"></div>
+    <div class="rules"></div>
+</div>
+
+
+<!--弹窗提示-->
+<div class="Dialogbg-tip"></div>
+<div class="Dialog-tip">
+    <div class="closesx"></div>
+    <div class="tip-wrap tip-0">
+        <div class="tip-header">
+            <div class="jp" style="background: url('images/jiang-1.png') center; background-size: cover;"></div>
+            <h2 class="jp-leve">1等奖</h2>
+            <p><b>恭喜您获得：</b><strong class="jp-name">SU live项链</strong></p>
+            <p><i>￥</i><span class="jp-price">9688.00</span></p>
+        </div>
+        <div class="tip-footer">
+            <p class="p1">实物礼品将随订单配送</p>
+            <p class="p2">（有效期中奖之日当天24：00点之前有效，过期不补发）</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2018/pc/common/jquery.min.js"></script>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2018/pc/common/main.js"></script>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2018/pc/common/public-shimily.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/respond.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+
+  /*活动是否开始：1开始  0未开始*/
+    ActStart(".manzeng",0);
+    ActStart(".tuan-yuan",1);
+    ActStart(".juhui",1);
+
+  /*折扣*/
+  $(".products li").each(function () {
+    var self = this;
+    /*$(this).find('.m-car').click(function () {
+     $(".go-buy").hide(0).siblings().show(0);
+      SelectShow(self);
+    });*/
+    $(this).find('.m-btn').click(function () {
+      $(".go-car").hide(0).siblings().show(0);
+      SelectShow(self,0.77,false,0);
+    });
+  });
+
+  /*新品*/
+  $(".xincake").each(function () {
+    var self = this;
+    $(".buy-xp-card").click(function () {
+      $(".go-buy").hide(0).siblings().show(0);
+      SelectShow(self,1,true,1);
+    });
+    $(".buy-xp-btn").click(function () {
+      $(".go-car").hide(0).siblings().show(0);
+      SelectShow(self,1,true,1);
+    });
+  });
+
+  $(".go-car").click(function () {
+    SelectHide();
+  });
+  $(".go-buy").click(function () {
+    SelectHide();
+  });
+  $(".s-closes").click(function () {
+    SelectHide();
+  });
+
+  /*点击抽奖*/
+  var random= parseInt(Math.random()*(6+1),10);
+  var arr = [0,1,2,3,4,5,6];
+  var num = 0;
+  $(".jiang-btn").click(function () {
+    var timer = setInterval(function () {
+
+      if(num>=7){
+        num=0;
+      }
+      $(".choujiang li").eq(num).addClass("on").siblings().removeClass("on");
+      num++;
+    },100);
+
+
+    setTimeout(function () {
+      num=random;
+      clearInterval(timer);
+      $(".choujiang li").eq(arr[random]).addClass("on").siblings().removeClass("on");
+
+        /*获得奖品*/
+          var jpArr=[
+            {leve:"1等奖",name:"SU live项链",price:"1888.00"},
+            {leve:"2等奖",name:"LINKS手链",price:"1800.00"},
+            {leve:"3等奖",name:"雅氏蛋卷鞋",price:"1260.00"},
+            {leve:"4等奖",name:"彼得罗夫 ·玫瑰舒润瞬采凝霜",price:"620.00"},
+            {leve:"5等奖",name:"彼得罗夫PTR清凉香薰面膜",price:"380.00"},
+            {leve:"6等奖",name:"半熟芝士(原味) 1盒",price:"48.00"},
+            {leve:"7等奖",name:"100元优惠券1张",price:"100.00"}
+          ];
+          QuanDialog(num,jpArr);
+    },3000);
+
+  });
+
+</script>
+</body>
+</html>

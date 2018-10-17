@@ -12,10 +12,8 @@
     var fTop = 110; /*导航高度*/
     var floaterPosition =floater.css("position") ;  /*'fixed'*/
 
-
     $(".floater").fadeIn(500);
 
-   
 
     /*初始化位置*/
     floater.css({

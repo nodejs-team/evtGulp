@@ -21,8 +21,6 @@ span.num {
 /*清除焦点高亮*/
 input {
   outline: none;
-  border: none;
-  background: none;
 }
 
 input::-ms-clear {
@@ -35,7 +33,6 @@ input::-ms-clear {
 
 /*清除输入时背景变黄*/
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
-  background-color: none !important;
   background-image: none !important;
   color: black !important;
   -webkit-box-shadow: 0 0 0px 1000px white inset;
@@ -54,6 +51,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   color: #838383;
 }
 
+/*禁用修改颜色*/
 input[disabled], input:disabled {
   color: #000000;
   opacity: 1;
@@ -64,19 +62,20 @@ input[disabled], input:disabled {
   background: url("../images/quan-bg_02.jpg");
 }
 
+.evt-container img {
+  width: 100%;
+}
+
 .evt-content {
   width: 1200px;
   margin: 0 auto;
-}
-
-.evt-content img {
-  width: 100%;
 }
 
 .sec-banner {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  margin-top: -60px;
 }
 
 .sec-banner .lingquan {
@@ -112,6 +111,7 @@ input[disabled], input:disabled {
   padding: 0 5%;
   background: #eaeaea;
   color: #000000 !important;
+  border: none;
 }
 
 .sec-banner .lingquan ul li input.placeholder {
@@ -200,11 +200,11 @@ input[disabled], input:disabled {
 .quan-tc {
   box-shadow: 0 0 0 #999;
   font-size: 14px;
-  max-width: 600px;
+  max-width: 500px;
   width: 90%;
   max-height: 630px;
   left: 50%;
-  margin: -300px auto 0 -300px;
+  margin: -250px auto 0 -250px;
   padding: 0;
   position: fixed;
   top: 50%;
@@ -249,10 +249,10 @@ input[disabled], input:disabled {
   top: 70%;
   left: 50%;
   width: 40%;
-  height: 20%;
+  height: 12%;
   max-width: 250px;
   max-height: 100px;
-  margin-left: -125px;
+  margin-left: -109px;
   cursor: pointer;
   z-index: 202;
   background: #000;

@@ -19,7 +19,7 @@
 
   var loadComplete = function () {
     scroll();
-    new BannerRedraw(".sec-banner", ['.banner-word','.banner','.banner-btn']);
+    new BannerRedraw(".sec-banner", ['.banner-word','.banner','.banner-btn','.banner-card']);
 
 
     $(".duihuan-btn,.m-btn,.go-buy,.go-car,.m-car").hover(function () {

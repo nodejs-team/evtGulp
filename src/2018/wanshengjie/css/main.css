@@ -1,0 +1,858 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #2f2523;
+}
+
+.sec-banner {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sec-banner .banner {
+  width: 100%;
+  background: url("../images/b-bg.png") center no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.sec-banner .banner-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.sec-banner .b-title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin: 0 auto 0 -244px;
+}
+
+.sec-banner .dongwu {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin: 0 auto 0 -960px;
+}
+
+.sec-banner .b-word {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  margin: 0 auto 0 -126.5px;
+}
+
+.sec-banner .moun-1 {
+  position: absolute;
+  width: 27%;
+  left: 0;
+  bottom: 0;
+}
+
+.sec-banner .moun-2 {
+  position: absolute;
+  width: 64%;
+  left: 14%;
+  bottom: 0;
+}
+
+.sec-banner .moun-3 {
+  position: absolute;
+  width: 38%;
+  right: 0;
+  bottom: 0;
+}
+
+.sec-banner .moun img {
+  width: 100%;
+}
+
+.sec-1 {
+  position: relative;
+  background: url("../images/s-bg-1.png") center no-repeat;
+  background-size: cover;
+  height: 798px;
+  padding-top: 1px;
+}
+
+.sec-1 .evt-content {
+  position: relative;
+  width: 1200px;
+  margin: 196px auto 0;
+  height: 646px;
+}
+
+.sec-1 .evt-content .door-left {
+  position: absolute;
+  top: 0;
+  left: 305px;
+  z-index: 3;
+}
+
+.sec-1 .evt-content .door-right {
+  position: absolute;
+  top: 0;
+  right: 305px;
+  z-index: 3;
+}
+
+.sec-1 .evt-content .qm-acrow {
+  position: absolute;
+  top: 420px;
+  left: 720px;
+  z-index: 3;
+}
+
+.sec-1 .evt-content .qm-shou {
+  position: absolute;
+  top: 240px;
+  left: 690px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.sec-1 .evt-content .qm-word {
+  position: absolute;
+  top: 129px;
+  left: 546px;
+  z-index: 3;
+}
+
+.sec-1 .evt-content .door-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sec-1 .evt-content .room {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/xiangzi.png") center no-repeat;
+  display: none;
+  z-index: 2;
+}
+
+.sec-1 .evt-content .box {
+  width: 344px;
+  height: 203px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -130px;
+  z-index: 2;
+}
+
+.sec-1 .evt-content .box div {
+  position: absolute;
+}
+
+.sec-1 .evt-content .cards {
+  position: absolute;
+  width: 430px;
+  height: 448px;
+  top: 0;
+  left: 50%;
+  margin-left: -220px;
+}
+
+.sec-1 .evt-content .cards .card {
+  position: absolute;
+  top: 450px;
+  left: 137px;
+  cursor: pointer;
+  width: 50px;
+  width: 111px\0;
+  z-index: 2;
+}
+
+.sec-1 .evt-content .cards img {
+  width: 100%;
+  display: block;
+  opacity: 1;
+}
+
+.sec-1 .evt-content .cards .card-1.fly {
+  width: 111px;
+  top: 44px;
+  left: 92px;
+  transition: all 0.5s;
+}
+
+.sec-1 .evt-content .cards .card-2.fly {
+  width: 111px;
+  top: 44px;
+  left: 237px;
+  transition: all 0.5s;
+}
+
+.sec-1 .evt-content .cards .card-3.fly {
+  width: 111px;
+  top: 220px;
+  left: 25px;
+  transition: all 0.5s;
+}
+
+.sec-1 .evt-content .cards .card-4.fly {
+  width: 111px;
+  top: 220px;
+  left: 167px;
+  transition: all 0.5s;
+}
+
+.sec-1 .evt-content .cards .card-5.fly {
+  width: 111px;
+  top: 220px;
+  left: 309px;
+  transition: all 0.5s;
+}
+
+.sec-1 .evt-content .cards .card-1.on {
+  width: 111px;
+  top: 44px;
+  left: 92px;
+}
+
+.sec-1 .evt-content .cards .card-2.on {
+  width: 111px;
+  top: 44px;
+  left: 237px;
+}
+
+.sec-1 .evt-content .cards .card-3.on {
+  width: 111px;
+  top: 220px;
+  left: 25px;
+}
+
+.sec-1 .evt-content .cards .card-4.on {
+  width: 111px;
+  top: 220px;
+  left: 167px;
+}
+
+.sec-1 .evt-content .cards .card-5.on {
+  width: 111px;
+  top: 220px;
+  left: 309px;
+}
+
+.sec-2 {
+  position: relative;
+  background: url("../images/s-bg-2.png") center 100px no-repeat;
+  background-size: cover;
+  height: 810px;
+  padding-top: 120px;
+}
+
+.sec-2 .evt-content {
+  position: relative;
+  width: 1200px;
+  margin: 130px auto 0;
+  height: 646px;
+  overflow: hidden;
+}
+
+.sec-2 .evt-content .door-left {
+  position: absolute;
+  top: 0;
+  left: 303px;
+  z-index: 3;
+}
+
+.sec-2 .evt-content .door-right {
+  position: absolute;
+  top: 0;
+  right: 303px;
+  z-index: 3;
+}
+
+.sec-2 .evt-content .qm-acrow {
+  position: absolute;
+  top: 420px;
+  left: 720px;
+  z-index: 3;
+}
+
+.sec-2 .evt-content .qm-shou {
+  position: absolute;
+  top: 240px;
+  left: 690px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.sec-2 .evt-content .qm-word {
+  position: absolute;
+  top: 129px;
+  left: 546px;
+  z-index: 3;
+}
+
+.sec-2 .evt-content .room {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/xiangzi.png") center no-repeat;
+  display: none;
+  z-index: 2;
+}
+
+.sec-2 .evt-content .nangua {
+  position: absolute;
+  bottom: 61px;
+  left: 50%;
+  margin-left: -296px;
+  z-index: 2;
+}
+
+.sec-2 .evt-content .zhizhu {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: 90px;
+  z-index: 2;
+  animation: padong 3s infinite alternate linear;
+}
+
+.sec-2 .evt-content .saozhu {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -209px;
+  z-index: 2;
+}
+
+.sec-2 .evt-content .paopao {
+  position: absolute;
+  top: 197px;
+  left: 50%;
+  margin-left: 130px;
+  z-index: 2;
+}
+
+.sec-2 .evt-content .yanjing {
+  position: absolute;
+  top: 380px;
+  left: 50%;
+  margin-left: 164px;
+  animation: bounce 1.5s 2s infinite ease;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.sec-2 .evt-content .shuigang {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: 65px;
+  z-index: 2;
+}
+
+.sec-2 .evt-content .cake-0 {
+  width: 1200px;
+  position: absolute;
+  top: -1000px;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 10;
+}
+
+.sec-2 .evt-content .cake-0 .buy {
+  position: absolute;
+  width: 305px;
+  height: 247px;
+  top: 190px;
+  left: 50%;
+  margin-left: 210px;
+  z-index: 10;
+  text-align: center;
+  background: url("../images/buy-title-1.png") center no-repeat;
+}
+
+.sec-2 .evt-content .cake-0 .buy .go-buy {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  color: #000;
+  border-radius: 60px;
+  left: 50px;
+  top: 180px;
+  cursor: pointer;
+  line-height: 60px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.sec-2 .evt-content .cake-0 .buy .go-buy.on {
+  background: #cd1223;
+  color: #fff;
+}
+
+.sec-3 {
+  position: relative;
+  background: url("../images/s-bg-3.png") center no-repeat;
+  background-size: cover;
+  height: 890px;
+  padding-top: 1px;
+}
+
+.sec-3 .evt-content {
+  position: relative;
+  width: 1200px;
+  margin-top: 174px;
+}
+
+.sec-3 .buy {
+  position: absolute;
+  width: 292px;
+  height: 247px;
+  top: 160px;
+  left: 750px;
+  z-index: 100;
+  text-align: center;
+  background: url("../images/buy-title.png") center no-repeat;
+}
+
+.sec-3 .buy .go-buy {
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  color: #000;
+  border-radius: 60px;
+  left: 50px;
+  top: 220px;
+  cursor: pointer;
+  line-height: 60px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.sec-3 .buy .go-buy.on {
+  background: #ffcf00;
+}
+
+.sec-3 .buy-2 {
+  margin-left: -510px;
+}
+
+.evt-footer {
+  background: url("../images/s-bg-4.png") center no-repeat;
+  background-size: cover;
+  height: 780px;
+  position: relative;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #fff;
+}
+
+.evt-footer .evt-rules {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 150px 0 20px 30px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 17px;
+  line-height: 1.9em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*优惠券 彈窗*/
+.Dialogbg-tip {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.Dialog-tip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  width: 846px;
+  height: 463px;
+  background: url("../images/tc-bg.png") no-repeat;
+  margin: -231.5px  auto 0 -423px;
+  padding: 0;
+  z-index: 99999;
+  display: none;
+  border-radius: 5px;
+}
+
+.Dialog-tip .tip-wrap .tip-header {
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 15px 15px 0 0;
+}
+
+.Dialog-tip .tip-wrap .tip-header h3 {
+  width: 106px;
+  height: 21px;
+  background: url("../images/tc-t.png") no-repeat;
+  margin: 40px auto 20px;
+}
+
+.Dialog-tip .tip-wrap .tip-header h2 {
+  font-size: 34px;
+  line-height: 60px;
+  color: #f44053;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-leve {
+  width: 139px;
+  height: 44px;
+  margin: 0 auto 20px;
+  background: url("../images/leve-1.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-leve.leve-0 {
+  background: url("../images/leve-1.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-leve.leve-1 {
+  background: url("../images/leve-2.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-leve.leve-2 {
+  background: url("../images/leve-3.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-leve.leve-3 {
+  background: url("../images/leve-4.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-leve.leve-4 {
+  background: url("../images/leve-5.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-quan {
+  width: 580px;
+  height: 208px;
+  margin: 0 auto;
+  background: url("../images/quan-1-1.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-quan.quan-0 {
+  background: url("../images/quan-1-1.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-quan.quan-0-2 {
+  background: url("../images/quan-1-2.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-quan.quan-1 {
+  background: url("../images/quan-2.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-quan.quan-2 {
+  background: url("../images/quan-3.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-quan.quan-3 {
+  background: url("../images/quan-4.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp-quan.quan-4 {
+  background: url("../images/quan-5.png") no-repeat;
+}
+
+.Dialog-tip .tip-wrap .tip-header .quans-2 {
+  position: relative;
+}
+
+.Dialog-tip .tip-wrap .tip-header .tips-word {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  text-align: center;
+  width: 400px;
+  margin-left: -200px;
+  background: #000;
+  line-height: 30px;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 10;
+  color: #fff;
+}
+
+.Dialog-tip .tip-wrap .tip-footer {
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.Dialog-tip .tip-wrap .tip-footer p {
+  font-size: 20px;
+  color: #633b2a;
+  line-height: 24px;
+}
+
+.Dialog-tip .tip-wrap .go-btn {
+  position: absolute;
+  bottom: -30px;
+  width: 210px;
+  left: 50%;
+  margin-left: -105px;
+}
+
+.Dialog-tip .tip-wrap .go-btn span {
+  display: block;
+  width: 100%;
+  height: 60px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 60px;
+  float: left;
+  font-size: 18px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+
+.Dialog-tip .tip-wrap .go-btn span.on {
+  background: #ae896f;
+  color: #fff;
+}
+
+.Dialog-tip .closesx {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: -50px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+/*swiper补充样式*/
+.box-swiper {
+  position: relative;
+  width: 1200px;
+  height: 633px;
+}
+
+.swiper-container {
+  position: relative;
+  width: 1200px;
+  height: 633px;
+}
+
+.swiper-container.swiper2 {
+  position: relative;
+  width: 580px;
+  height: 208px;
+}
+
+.swiper-slide {
+  cursor: default;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.pagination {
+  position: absolute !important;
+  left: 0;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: #fff 2px solid;
+  border-radius: 10px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.swiper-active-switch {
+  background: #ffdd00;
+  border: #ffdd00 2px solid;
+  opacity: 1;
+}
+
+div.swiper-button-white {
+  position: absolute !important;
+  top: 50%;
+  margin-top: -22px;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  opacity: 1;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.swiper-button-white.swiper-button-next {
+  background: url("../images/next.png") center no-repeat;
+  margin-left: 538px;
+}
+
+.swiper-button-white.swiper-button-next.on {
+  background: url("../images/next-1.png") center no-repeat;
+}
+
+.swiper-button-white.swiper-button-prev {
+  background: url("../images/prev.png") center no-repeat;
+  margin-left: -590px;
+}
+
+.swiper-button-white.swiper-button-prev.on {
+  background: url("../images/prev-1.png") center no-repeat;
+}
+
+.swiper-button-white.swiper-button-next.button-next2 {
+  margin-left: 308px;
+}
+
+.swiper-button-white.swiper-button-prev.button-prev2 {
+  margin-left: -355px;
+}
+
+.across {
+  animation: acros 1.5s infinite ease-out;
+}
+
+.qiaomen {
+  animation: qiaomen 0.2s 2 ease-out;
+}
+
+.a-flip {
+  animation: flip 1s ease-out backwards;
+}
+
+@keyframes acros {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes qiaomen {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: rotateY(720deg);
+    animation-timing-function: ease-out;
+  }
+}
+
+/*@keyframes flip{
+  0%{transform:perspective(400px) rotateY(0);animation-timing-function:ease-out;}
+  40%{transform:perspective(400px) translateZ(150px) rotateY(170deg);animation-timing-function:ease-out;}
+  50%{transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);animation-timing-function:ease-in;}
+  80%{transform:perspective(400px) rotateY(360deg) scale(0.95);animation-timing-function:ease-in;}
+  100%{transform:perspective(400px) scale(1);animation-timing-function:ease-in;}
+}*/
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes padong {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}

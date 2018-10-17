@@ -1153,6 +1153,73 @@
   margin-left: -254px;
 }
 
+.banner-slides .memberDay-10yue .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .memberDay-10yue .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .memberDay-10yue .swiper-content img {
+  width: 100%;
+}
+
+.banner-slides .memberDay-10yue .banner-t {
+  top: 110px;
+  left: 50%;
+  margin-left: -316px;
+}
+
+.banner-slides .wanshengjie img {
+  width: 100%;
+}
+
+.banner-slides .wanshengjie .b-title {
+  position: absolute;
+  width: 26%;
+  max-width: 385px;
+  top: 12%;
+  left: 50%;
+  margin: 0 auto 0 -13%;
+}
+
+.banner-slides .wanshengjie .dongwu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  margin: 0 auto 0 -50%;
+}
+
+.banner-slides .wanshengjie .b-word {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  margin: 0 auto 0 -126.5px;
+}
+
+.banner-slides .wanshengjie .moun-1 {
+  position: absolute;
+  width: 27%;
+  left: 0;
+  bottom: 0;
+}
+
+.banner-slides .wanshengjie .moun-2 {
+  position: absolute;
+  width: 64%;
+  left: 14%;
+  bottom: 0;
+}
+
+.banner-slides .wanshengjie .moun-3 {
+  position: absolute;
+  width: 38%;
+  right: 0;
+  bottom: 0;
+}
+
 .banner-slides .slides-kxj img {
   width: 100%;
 }

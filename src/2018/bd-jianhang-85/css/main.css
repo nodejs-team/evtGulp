@@ -52,6 +52,17 @@ span.num {
   position: absolute;
 }
 
+.sec-banner .evt-content .zpin {
+  position: absolute;
+  width: 120px;
+  top: 270px;
+  right: 270px;
+}
+
+.sec-banner .evt-content .zpin img {
+  width: 100%;
+}
+
 .sec-banner .evt-content .banner-cake2 {
   top: 0;
   left: 700px;
@@ -302,12 +313,6 @@ span.num {
   right: 0;
   font-size: 25px;
   color: #ff6800;
-}
-
-.sec-2 .evt-content .qidai .buys-yb .zpin {
-  position: absolute;
-  top: -350px;
-  right: -160px;
 }
 
 .sec-2 .evt-content .qidai .buy-btn {

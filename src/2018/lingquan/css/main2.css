@@ -1,0 +1,305 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*清除焦点高亮*/
+input {
+  outline: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+::-ms-clear, ::-ms-reveal {
+  display: none;
+}
+
+/*清除输入时背景变黄*/
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-image: none !important;
+  color: black !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+/*修改placeholder颜色*/
+::-moz-placeholder {
+  color: #838383;
+}
+
+::-webkit-input-placeholder {
+  color: #838383;
+}
+
+:-ms-input-placeholder {
+  color: #838383;
+}
+
+/*禁用修改颜色*/
+input[disabled], input:disabled {
+  color: #fff;
+  opacity: 1;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.evt-container img {
+  width: 100%;
+}
+
+.evt-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.sec-banner {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: -60px;
+}
+
+.sec-banner .lingquan {
+  position: absolute;
+  width: 21%;
+  top: 33%;
+  left: 50%;
+  min-height: 334px;
+  height: 45%;
+  margin-left: -26%;
+  color: #000;
+  background: #ffffff;
+}
+
+.sec-banner .lingquan .quan-top {
+  text-align: center;
+  line-height: 60px;
+  font-size: 18px;
+  color: #825b5b;
+  padding: 15px 0;
+}
+
+.sec-banner .lingquan ul {
+  position: relative;
+  min-width: 230px;
+  width: 70%;
+  margin: 0 auto 0;
+  font-size: 16px;
+}
+
+.sec-banner .lingquan ul li {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 2px;
+  overflow: hidden;
+  border: #eeecec 1px solid;
+  background: #f8f8f8;
+  padding: 1px;
+}
+
+.sec-banner .lingquan ul li input {
+  width: 90%;
+  min-height: 55px;
+  line-height: 400%;
+  padding: 0 5%;
+  background: none;
+  color: #000 !important;
+  border: none;
+}
+
+.sec-banner .lingquan ul li input.placeholder {
+  color: #838383 !important;
+}
+
+.sec-banner .lingquan ul li .yzm {
+  display: block;
+  position: absolute;
+  width: 10%;
+  min-width: 115px;
+  text-align: center;
+  bottom: 1px;
+  right: 1px;
+  line-height: 100%;
+  background: #ff5252;
+  cursor: pointer;
+  color: #fff !important;
+}
+
+.sec-banner .lingquan ul .get-quan {
+  padding-top: 12%;
+  position: relative;
+}
+
+.sec-banner .lingquan ul .get-quan span {
+  display: block;
+  text-align: center;
+  max-width: 230px;
+  padding: 6% 10%;
+  background: #ff5252;
+  margin: 0 auto;
+  cursor: pointer;
+  color: #fff;
+}
+
+.evt-footer {
+  position: relative;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  color: #000;
+}
+
+.evt-footer .evt-rules {
+  position: relative;
+  width: 989px;
+  margin: 0 auto;
+  padding: 50px 50px 50px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.evt-footer .evt-rules span {
+  display: block;
+  text-indent: -16px;
+  margin-left: 1px;
+}
+
+/*通用弹窗*/
+.quan-tc-bg {
+  background-color: #000;
+  filter: alpha(opacity=70);
+  /*IE浏览器*/
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+}
+
+.quan-tc {
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 630px;
+  left: 50%;
+  margin: -250px auto 0 -250px;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 201;
+  display: none;
+}
+
+.quan-tc .txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.quan-tc p {
+  font-size: 18px;
+  margin: 100px 50px 0 120px;
+  color: #264b58;
+  line-height: 33px;
+}
+
+.quan-tc img {
+  width: 100%;
+}
+
+.quan-tc .quan-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 13%;
+  height: 18%;
+  max-width: 90px;
+  max-height: 90px;
+  cursor: pointer;
+  z-index: 202;
+  background: #000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.quan-tc .go-use {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 40%;
+  height: 12%;
+  max-width: 250px;
+  max-height: 100px;
+  margin-left: -109px;
+  cursor: pointer;
+  z-index: 202;
+  background: #000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+@media screen and (max-width: 750px) {
+  .quan-tc {
+    margin: -35% auto 0 -45%;
+  }
+  .quan-tc p {
+    font-size: 14px;
+    margin: 15% 3% 0 22%;
+    line-height: 24px;
+  }
+  .quan-tc .go-use {
+    margin-left: -20%;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .quan-tc p {
+    font-size: 18px;
+    margin: 15% 3% 0 22%;
+  }
+  .quan-tc .go-use {
+    margin-left: -20%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .lingquan ul {
+    margin: 0 auto 0 !important;
+    height: 50px !important;
+  }
+}

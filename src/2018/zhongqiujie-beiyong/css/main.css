@@ -62,6 +62,16 @@ span.num {
   left: 0;
 }
 
+.sec-banner .banner-card {
+  position: absolute;
+  top: 500px;
+  left: 40%;
+}
+
+.sec-banner .banner-card.small {
+  top: 200px;
+}
+
 .sec-banner .banner-word.small {
   top: 150px;
 }

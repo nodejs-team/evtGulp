@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>领券</title>
+    <!-- build:css css/main2.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main2.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
+<div class="header">
+
+    <div class="header_top_box">
+        <div class="header_top">
+            <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+                <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+                    <div class="wallbox wall_top">
+                        <div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+                        <div class="logoer">
+                            <a href="http://ebsig.mcake.com">
+                                <img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+                            </a>
+                        </div>
+                        <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+                        <ul class="navbar">
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start-->
+                            <li class="record" style="display: none;">
+                                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+                            </li>
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end-->
+                            <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+                            <li class="m_cart">
+                                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="wallbox">
+                    <div class="header_right">
+                        <ul class="phone_delivery">
+                            <li class="phone"><span>4006-678-678</span><i></i></li>
+                            <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+                        </ul>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+                        </li>
+                        <li>
+                            <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/member_center.html" target="_blank">
+                                <samp>Mon M'CAKE</samp>
+                                <span>会员中心</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
+        <div class="lingquan">
+            <div class="quan-top">输入手机号  领取优惠券</div>
+            <ul>
+                <li><input type="tel" maxlength="11" placeholder="输入手机号码" autocomplete="off"></li>
+                <li><input type="tel" maxlength="6" placeholder="输入验证码" autocomplete="off">
+                    <input type="button" class="yzm" id="btn" value="获取验证码" onclick="settime(this)" />
+                </li>
+                <div class="get-quan"><span>立即领券</span></div>
+            </ul>
+
+        </div>
+        <img src="images/quan-bg_02.png" alt="">
+    </div>
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则:</h2>
+                <p>1、活动城市：上海、北京、杭州、苏州</p>
+                <p>2、支付方式：支付宝，微信，现金</p>
+                <p>3、活动时间：即日起至2019年6月30日</p>
+                <p>4、配送范围：MCAKE可配送区域，具体范围可在官网配送服务内查询</p>
+                <p>5、领券规则： <br>
+                    <span>· 每位用户即可在活动页面领取优惠券，优惠券金额随机</span>
+                    <span>· 每日每位用户仅限领取1张优惠券</span></p>
+                <p>6、优惠券使用说明：<br>
+                    <span>· 优惠券使用方式：可在订单确认页面，选择使用卡券抵扣即可使用优惠券</span>
+                    <span>· 有效期：领取之日至2019年6月30日</span>
+                    <span>· 本活动优惠券不与其他活动同享</span></p>
+                <p>7、本活动不与其他优惠同享</p>
+                <p>8、本活动最终解释权归MCAKE所有</p>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="quan-tc-bg"></div>
+<div class="quan-tc">
+    <div class="quan-close"></div>
+    <div class="go-use"></div>
+    <img src="images/quan-1.png" class="quan-1">
+    <img src="images/quan-2.png" class="quan-2" style="display: none;">
+</div>
+
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>  <!--低版本浏览器支持css3 @media查询-->
+
+<!-- build:js js/main2.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main2.js"></script>
+<!-- endbuild -->
+<script>
+
+
+  var countdown=60;
+  function settime(obj) {
+    if (countdown == 0) {
+      obj.removeAttribute("disabled");
+      obj.value="获取验证码";
+      countdown = 60;
+      return;
+    } else {
+      obj.setAttribute("disabled", true);
+      obj.value="重新发送(" + countdown + "s)";
+      countdown--;
+    }
+    setTimeout(function() {
+        settime(obj) }
+      ,1000)
+  }
+
+  $(".get-quan").click(function () {
+    $(".quan-tc-bg,.quan-tc").fadeIn(200);
+  });
+
+  $(".quan-close,.quan-tc-bg").click(function(){
+    $(".quan-tc-bg,.quan-tc").hide();
+  });
+</script>
+</body>
+</html>

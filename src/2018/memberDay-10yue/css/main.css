@@ -1,0 +1,442 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.jpg") repeat;
+}
+
+.sec-banner {
+  background: url("../images/banner.png") center;
+  z-index: 1;
+  height: 550px;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 550px;
+}
+
+.sec-banner .banner-t {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  margin-left: -316px;
+}
+
+.hy-title {
+  width: 662px;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+  padding: 100px 0 80px;
+}
+
+.sec-1 .quanyi {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sec-1 .hongbao {
+  position: relative;
+  margin: 80px auto 20px;
+  text-align: center;
+}
+
+.sec-1 .hongbao .hb {
+  position: absolute;
+  bottom: 0;
+  width: 133px;
+  height: 43px;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 43px;
+  cursor: pointer;
+}
+
+.sec-1 .hongbao .hb1 {
+  left: 206px;
+}
+
+.sec-1 .hongbao .hb2 {
+  left: 520px;
+}
+
+.sec-1 .hongbao .hb3 {
+  left: 832px;
+}
+
+.sec-1 .hongbao .hb.on {
+  color: #a19d9d;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.sec-3 .evt-content {
+  width: 1200px;
+}
+
+.sec-3 .evt-content .row {
+  position: relative;
+}
+
+.sec-3 .evt-content .price-title {
+  margin-bottom: 10px;
+}
+
+.sec-3 .evt-content .row1 {
+  height: 540px;
+}
+
+.sec-3 .evt-content .row1 .cake {
+  position: absolute;
+  top: 20px;
+  left: 144px;
+}
+
+.sec-3 .evt-content .row1 .price {
+  top: 90px;
+  left: 628px;
+}
+
+.sec-3 .evt-content .row1 .price ul.price_p li {
+  background: #bc7664 !important;
+}
+
+.sec-3 .evt-content .row1 .price h2, .sec-3 .evt-content .row1 .price h2 span, .sec-3 .evt-content .row1 .price s, .sec-3 .evt-content .row1 .price .price_num dl dt span, .sec-3 .evt-content .row1 .price .huangou {
+  color: #a5513c;
+}
+
+.sec-3 .evt-content .row1 .price ul.price_p li.cur, .sec-3 .evt-content .row1 .price .buy_btn_box span {
+  background: #a5513c !important;
+}
+
+.sec-3 .evt-content .row1 .price .reduce {
+  background: url("../images/reduce-2.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .row1 .price .nopoint {
+  background: url("../images/add-2.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .row1 .price .icon {
+  background: url("../images/icon-2.png");
+}
+
+.sec-3 .evt-content .row1 .price .icon.on {
+  background: url("../images/icon-2-h.png");
+}
+
+.sec-3 .evt-content .row2 {
+  height: 540px;
+}
+
+.sec-3 .evt-content .row2 .cake {
+  position: absolute;
+  top: 80px;
+  left: 435px;
+}
+
+.sec-3 .evt-content .row2 .price {
+  top: 87px;
+  left: 150px;
+}
+
+.sec-3 .evt-content .row2 .price ul.price_p li {
+  background: #9b5f5f !important;
+}
+
+.sec-3 .evt-content .row2 .price h2, .sec-3 .evt-content .row2 .price h2 span, .sec-3 .evt-content .row2 .price s, .sec-3 .evt-content .row2 .price .price_num dl dt span, .sec-3 .evt-content .row2 .price .huangou {
+  color: #610f0f;
+}
+
+.sec-3 .evt-content .row2 .price ul.price_p li.cur, .sec-3 .evt-content .row2 .price .buy_btn_box span {
+  background: #610f0f !important;
+}
+
+.sec-3 .evt-content .row2 .price .reduce {
+  background: url("../images/reduce-1.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .row2 .price .nopoint {
+  background: url("../images/add-1.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .row2 .price .icon {
+  background: url("../images/icon-1.png");
+}
+
+.sec-3 .evt-content .row2 .price .icon.on {
+  background: url("../images/icon-1-h.png");
+}
+
+.sec-3 .evt-content .row3 {
+  height: 540px;
+}
+
+.sec-3 .evt-content .row3 .cake {
+  position: absolute;
+  top: 20px;
+  left: 144px;
+}
+
+.sec-3 .evt-content .row3 .price {
+  top: 60px;
+  left: 628px;
+}
+
+.sec-3 .evt-content .row3 .price ul.price_p li {
+  background: #9b5f5f !important;
+}
+
+.sec-3 .evt-content .row3 .price h2, .sec-3 .evt-content .row3 .price h2 span, .sec-3 .evt-content .row3 .price s, .sec-3 .evt-content .row3 .price .price_num dl dt span, .sec-3 .evt-content .row3 .price .huangou {
+  color: #610f0f;
+}
+
+.sec-3 .evt-content .row3 .price ul.price_p li.cur, .sec-3 .evt-content .row3 .price .buy_btn_box span {
+  background: #610f0f !important;
+}
+
+.sec-3 .evt-content .row3 .price .reduce {
+  background: url("../images/reduce-1.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .row3 .price .nopoint {
+  background: url("../images/add-1.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .row3 .price .icon {
+  background: url("../images/icon-1.png");
+}
+
+.sec-3 .evt-content .row3 .price .icon.on {
+  background: url("../images/icon-1-h.png");
+}
+
+.sec-3 .evt-content .row4 {
+  height: 540px;
+}
+
+.sec-3 .evt-content .row4 .cake {
+  position: absolute;
+  top: 60px;
+  left: 460px;
+}
+
+.sec-3 .evt-content .row4 .price {
+  top: 87px;
+  left: 190px;
+}
+
+.sec-3 .evt-content .row4 .price ul.price_p li {
+  background: #e3a47e !important;
+}
+
+.sec-3 .evt-content .row4 .price h2, .sec-3 .evt-content .row4 .price h2 span, .sec-3 .evt-content .row4 .price s, .sec-3 .evt-content .row4 .price .price_num dl dt span, .sec-3 .evt-content .row4 .price .huangou {
+  color: #8d360a;
+}
+
+.sec-3 .evt-content .row4 .price ul.price_p li.cur, .sec-3 .evt-content .row4 .price .buy_btn_box span {
+  background: #bf724f !important;
+}
+
+.sec-3 .evt-content .row4 .price .reduce {
+  background: url("../images/reduce-3.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .row4 .price .nopoint {
+  background: url("../images/add-3.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .row4 .price .icon {
+  background: url("../images/icon-3.png");
+}
+
+.sec-3 .evt-content .row4 .price .icon.on {
+  background: url("../images/icon-3-h.png");
+}
+
+.sec-3 .evt-content .more {
+  width: 398px !important;
+}
+
+.sec-3 .evt-content .price-select {
+  position: absolute;
+  top: 535px;
+  left: 628px;
+  width: 400px;
+  padding: 0;
+}
+
+.sec-3 .evt-content .price-select .price-title {
+  margin-bottom: 30px;
+}
+
+.sec-3 .evt-content .price-select .price {
+  padding-left: 40px;
+  position: relative;
+}
+
+.sec-3 .evt-content .price-select .price .select-li {
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.sec-3 .evt-content .price-select .price .select-li li {
+  width: 34px;
+  height: 33px;
+  background: url("../images/icon-select.png") 0 0 no-repeat;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sec-3 .evt-content .price-select .price .select-li li.on {
+  background: url("../images/icon-select.png") -50px 0 no-repeat;
+}
+
+.sec-3 .evt-content .price-select .go-btn {
+  width: 166px;
+  height: 45px;
+  background: #e5b1bb;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.sec-3 .evt-content .price-select .go-btn span {
+  display: block;
+  line-height: 45px;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+}
+
+.sec-4 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-4 .evt-content {
+  width: 1200px;
+  padding: 10px 0 50px;
+}
+
+.sec-4 .zp {
+  width: 688px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.sec-4 .zp-txt {
+  width: 688px;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #834634;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: #e9dbd1;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #371515;
+}
+
+.evt-footer .evt-rules {
+  width: 710px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.price .huangou {
+  width: 290px !important;
+}
+
+.floater {
+  position: fixed;
+  width: 145px;
+  height: 145px;
+  top: 600px;
+  z-index: 11;
+  left: 50%;
+  margin-left: 520px;
+  cursor: pointer;
+}
+
+.floater .tips {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  background: url("../images/tips.png") center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  z-index: 12;
+  cursor: Default;
+}
+
+.floater .tips span {
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}

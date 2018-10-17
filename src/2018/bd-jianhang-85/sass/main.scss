@@ -24,6 +24,8 @@ span.num{
   background:url("../images/banner-bg.png") center; z-index: 1; height: 876px; overflow: hidden;
   .evt-content{ width: 1200px;  padding:0;
     div{ position: absolute;}
+    .zpin{position: absolute; width: 120px; top: 270px; right: 270px; }
+    .zpin img{width: 100%;}
     .banner-cake2{ top:0; left:700px;}
     .banner-shaozi{ top:0px; left:190px;}
     .banner-cake1{ top:115px; left:5px;}
@@ -94,7 +96,7 @@ span.num{
       .buys-qx{position: absolute; width: 225px; top: 450px; left: 260px;}
       .buys-yb{position: absolute; width: 223px; top: 450px; left: 720px; z-index: 1;
         .zhekou{position: absolute; bottom: -5px; right: 0; font-size: 25px; color: #ff6800;}
-        .zpin{position: absolute; top: -350px; right: -160px; }
+
       }
       .buy-btn{position: absolute;  bottom: -50px; left: 50%; margin-left: -75px; width: 150px; line-height: 34px; border-radius: 34px; background: #5ab7cc; text-align: center; color: #fff; font-size: 20px; cursor: pointer; }
       .buy-btn.on{background: #bcbcbc;}

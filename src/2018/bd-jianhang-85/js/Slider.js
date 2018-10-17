@@ -156,11 +156,12 @@
     });
   };
 
+  /*实例化
   new Slider('.slideOuter',{
     prev: '.prev',
     next: '.next',
     autoplay: false
-  });
+  });*/
   initDisprice();
   initNum();
 
