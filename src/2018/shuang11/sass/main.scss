@@ -1,0 +1,262 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+/*公共样式*/
+.evt-container{ overflow: hidden; background:#ffeef4; }
+.evt-content{ width: 1200px; margin: 0 auto;}
+
+.zoom{width: 100%; transition: all 0.4s; }
+.zoom.on{ transform: scale(0.97);}
+.scaleImg{ z-index: 1;
+  img.scale{ transition: all 0.4s;}
+}
+.scaleImg.on{
+  img.scale{transform: scale(1.05);}
+}
+h2,h3,h4,b,i,strong,samp{font-weight: normal;font-style: normal;}
+i{font-size: 12px;}
+.title{width: 250px; margin: 60px auto;}
+.title-3{width:100%; padding: 45px 0; border: #cdcccc 2px dashed; text-align: center; cursor: pointer;}
+.content{width: 1200px; margin: 0 auto;}
+.zn-title{ text-align: center!important; position: relative; padding-top: 70px; padding-bottom: 50px;
+  img{display: block; margin:0 auto!important; clear: both;}
+  .hd-titme{font-size:20px; line-height:50px; color: #000;}
+  .hd-txt{font-size:18px; line-height:28px; color: #000;}
+}
+
+
+
+
+.buy-btns{position: absolute; bottom: 126px; left: 40px; z-index: 2;
+  .buy-btn{ float: left; font-size: 16px; text-align: center; width: 150px; line-height: 44px; color: #000; background: #ffd7e4; border-radius: 44px; cursor: pointer; margin: 0 5px;}
+  .buy-btn.on{background: #ed7da2; }
+}
+
+
+.more{ margin:50px auto; width: 300px; background: #ffd7e4;text-align: center; line-height: 62px;  border-radius: 62px;
+  span{ font-size: 30px; color: #000; cursor: pointer; margin: 0 5px;}
+}
+.more.on{background: #ed7da2; }
+
+.border-ie8{border:#efefef 1px solid\0;}
+
+.sec-banner{ position: relative;
+  z-index: 1;  overflow: hidden; background:url("../images/sec-1.jpg") center;
+  .evt-content{height: 1306px;}
+  .banner-l{position: absolute;  top:0; right:-400px;}
+  .banner-car{position: absolute;  top:330px; left:-250px; z-index: 2;}
+  .banner-word{position: absolute; top:175px; left:50px;}
+  .qiang-quan{position: absolute; top: 584px; height: 650px; left: 50%; width: 1260px; margin-left: -630px; background: #fff; z-index: 1; text-align: center; box-shadow: 0 0 100px #f3d7e0; border-radius:5px;
+    .num-1{margin: 40px auto;}
+    .qBtn{position: absolute; width:145px; line-height:37px; background:linear-gradient(to right,#8570ca, #9985db,#8570ca); border-radius:37px; text-align: center; color: #fff; font-size: 20px; cursor: pointer; background: #8570ca \0;}
+    .qBtn.end{background: #ccc; color: #000;}
+    .lastTime1{position: absolute;  top: 502px; left: 330px; font-size: 18px; color: #000;}
+    .qiang-btn{ top: 540px; left: 325px;}
+
+    .lastTime2{position: absolute; top: 502px; left: 808px; font-size: 18px; color: #000;}
+    .qiang-btn2{ top: 540px; left: 804px; background:linear-gradient(to right, #ecb126, #fec961,#ecb126); background: #ecb126 \0;}
+  }
+
+}
+
+.sec-cakes{  position: relative; z-index: 2; padding-bottom: 100px; background:url("../images/sec-2.jpg") top;
+  .evt-content{}
+  div{position: relative;}
+  .cakes{ margin-top:-30px; position: relative;
+    ul{ margin-left: -28px;
+      li{ width: 386px; height: 430px; margin-left: 23px; float: left; position: relative; margin-top: 45px; background: #fff; box-shadow: 0 0 100px #f3d7e0; border-radius:5px;
+        img{margin-bottom: 20px; width: 100%;}
+        .m-title{ position: absolute; width: 100%; bottom: 130px; text-align: center; font-size: 18px; color: #000;}
+        s{color: #4f4f4f; font-size: 14px;}
+        .m-price{ position: absolute; bottom:75px; width: 100%; font-size: 16px; text-align: center; color: #000;
+          span{font-size:36px; color: #f9397c;}
+        }
+        .m-car{ position: absolute; bottom: 30px; left: 210px; font-size: 16px; text-align: center; width: 120px; line-height: 34px; color: #000; background: #ffc3d7; border-radius: 34px; cursor: pointer; }
+        .m-car.on{ background: #ed7da2;}
+
+        .m-btn{ position: absolute; bottom: 30px; left:50%; font-size: 16px; text-align: center; width: 120px; line-height: 34px; margin-left: -60px; color: #000; background: #ffc3d7; border-radius: 34px; cursor: pointer; }
+        .m-btn.on{background: #ed7da2;}
+
+
+        .lijian{position: absolute; right: 0; top: 259px;}
+        .jf{ position: absolute; bottom:20px; left: 230px; font-size: 14px; text-align: center; color: #f9397c;}
+        .zhekou{width: 70px; margin-bottom: 6px !important; vertical-align: bottom;}
+      }
+    }
+  }
+}
+.sec-cakes.jifen{background:url("../images/sec-3.jpg") top;}
+.sec-cakes.xiaoshi{background:#ffe4ed;
+   .cakes{margin-top: 50px;}
+  ul{ margin-left: -28px; background:url("../images/s-bg.png") center top no-repeat; padding-bottom: 50px;
+    li{ width: 240px; height: 330px; margin-left: 40px; margin-right: 20px; float: left; position: relative; margin-top: 45px; box-shadow:none; border-radius:0;}
+    .m-price{ position: absolute; bottom:75px; width: 100%; font-size: 16px; text-align: center; color: #000;
+      span{font-size:26px !important; color: #f9397c;}
+      strong{font-size:16px; color: #f9397c;}
+    }
+    .m-car{ bottom: 21px;  }
+    .m-btn{  bottom: 21px;  }
+
+  }
+
+
+}
+
+.sec-xp{position: relative; z-index: 2;
+  .evt-content{}
+  .xincake{ height: 450px; background: #fff;}
+  .xp{padding-top: 50px; position: relative;
+    .cake-xp{ width: 623px; float: right; top: 50px; right: 50px; z-index: 5;}
+    .buy-price{position: absolute; width: 320px; text-align: center; bottom:240px; left: 100px; font-size:20px; color: #000;
+      span{font-size: 35px;}
+    }
+    .buy-btns{position: absolute; left: 116px; bottom: 150px;}
+  }
+}
+
+
+
+.evt-footer{
+  position: relative; background:url("../images/sec-foot.jpg"); width: 100%;
+  .evt-content{color: #5d5d5d; text-align: center;}
+     .dis-1{position: absolute; top: 130px; left: -60px;}
+     .dis-2{position: absolute; top: 90px; right: -20px;}
+    .ewm{ margin: 10px auto;}
+    .evt-rules{position: relative; width:790px; margin: 0 auto; padding:50px 0 100px 55px; text-align: left;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+
+
+/*蛋糕选择弹窗*/
+
+.Dialogbg-Select{ background-color: #000; height: 100%; left: 0; opacity: 0.8; position: fixed; top: 0; width: 100%; z-index: 200; display: none; -moz-opacity: .8; filter: alpha(opacity=80);
+}
+
+.Dialog-Select{
+  background: #fff none repeat scroll 0 0; box-shadow: 0 0 0 #999; font-size:14px; width:520px; height:auto; margin-top: -210px; margin-left: -260px; left: 50%; padding: 0; position: fixed; top: 50%; z-index: 99999;border-radius:10px; display: none;
+}
+.s-closes{position: absolute; right: -30px; top: 8px; width: 17px; height: 17px; background: url("../images/close.png"); cursor:pointer;}
+.Select{ position: relative; color: #000; height: 100%;
+  .s-title{ height:96px; background: #f2f2f2; position: relative; border-top-left-radius:10px;  border-top-right-radius:10px;
+    h2{ font-size: 18px; line-height: 30px; padding-left: 40px; padding-top: 20px; }
+    b{font-size: 14px; color: #9a9a9a; font-weight: normal; padding-left: 40px;}
+  }
+  .s-bangshu{ padding-top: 30px;
+    ul{ margin-left: 40px;
+      li{ float: left; width:60px; height: 60px; background: #f2f2f2; border-radius: 50%; text-align: center; line-height: 60px; font-size: 16px; color: #4a4a4a; margin-right:30px; font-weight: bold; cursor: pointer; }
+      li.on{ background: #ffc3d7;  }
+    }
+  }
+  .d-tips{padding: 15px 40px; color: #4c4c4c; font-size: 12px;}
+  .s-num{border-top: #ededed 1px solid; padding-left: 40px;
+    b{display: inline-block; width:200px; margin:10px 0; line-height: 52px; float: left; font-size:16px; color: #737373; font-weight: normal;}
+    .nums { display: inline-block; margin:15px 40px 0;  float: right; height:52px;  position: relative;  width:150px;  }
+    .nums a { display: block; width:40px; height:40px;  position: absolute; top:2px;}
+    .nums .minus { background: url("../images/btn-1.png") center no-repeat; background-size: 100%; left: 0;}
+    .nums .plus { background: url("../images/btn-2.png") center no-repeat; background-size: 100%;  right: 0;}
+    .nums input { background:none;  border: none;  display: block;  font-size:26px;  height:40px;  left:35px;  line-height:40px;  padding: 0;  position: absolute;  text-align: center;  top: 0;  width:80px; color: #000;  }
+  }
+  .s-prices{border-top: #ededed 1px solid; font-size: 22px; padding:0 40px;
+    b{display: inline-block; width:200px; margin:0; line-height: 56px; float: left; font-size:16px; color: #737373; font-weight: normal;}
+    p{display: block;line-height: 56px; text-align: right;}
+    span{ font-size: 26px;}
+    i{font-style: normal; font-size: 16px;}
+    s{font-size: 18px; color: #aaa;}
+  }
+  .btns{ width: 100%; position: relative; bottom:0px; display: flex; height: 55px; line-height: 55px; flex-direction: row;  text-align: center; font-size: 18px; color: #000;
+    div{ flex: 1; cursor: pointer; width:100%;}
+    .go-car{background: #ffc3d7; border-bottom-left-radius:10px; border-bottom-right-radius:10px;  float: left; color: #000; }
+    .go-car.on{background: #ed7da2;}
+    .go-buy{background: #ffc3d7; border-bottom-right-radius:10px; border-bottom-left-radius:10px;  float: left; }
+    .go-buy.on{background: #ed7da2;}
+
+
+  }
+
+}
+
+
+/*活动规则彈窗*/
+.Dialogbg-rules{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%;  z-index: 200; display: none; -moz-opacity: .8; filter: alpha(opacity=80); }
+
+.Dialog-rules{ background: #fff none repeat scroll 0 0; box-shadow: 0 0 0 #999; font-size: 14px; width:700px;  height: 550px; left: 50%; margin: -275px 0 0 -350px; padding: 0; position: fixed; top: 50%;z-index: 99999; display: none; border-radius: 5px;
+   .closes{ width: 9px; height: 9px; position: absolute; top: 8px; right: 8px; cursor: pointer; z-index: 8; background: url("../images/close-1.png") no-repeat;}
+   .rules{ margin:40px 20px 40px 30px; padding: 0 10px; height: 466px;  color:#242424;
+  .txt{ width: 100%; height: 100%; }
+  h2{
+    font-size:18px; margin-bottom: 5px; line-height: 40px;
+  }
+  h3{
+    font-size:16px;line-height: 36px; font-weight: bold;
+  }
+  p{ padding-left: 20px; text-indent: -20px;
+    font-size:14px;
+    line-height:24px;
+    margin-top: 5px;
+  }
+}
+
+  .txt.long{ overflow-y: scroll;}
+
+}
+
+
+/*优惠券 彈窗*/
+.Dialogbg-tip{ background-color: #000;  height: 100%;  left: 0;  opacity: 0.8;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none; -moz-opacity:.8;filter:alpha(opacity=80); }
+
+.Dialog-tip{position: fixed;top: 50%; left: 50%;  box-shadow: 0 0 0 #999; font-size: 14px;  width:460px; margin: -270px  auto 0 -230px; padding: 0; z-index: 99999; display: none; border-radius: 15px; background: #fff;
+  .tip-wrap{
+    .tip-header{ text-align: center; padding: 10px 0; background: #fff; border-radius: 15px 15px 0 0;
+      .jp{width: 200px; height: 200px; border-radius: 50%; margin:50px auto 20px;}
+      h2{font-size:34px; line-height: 60px; color: #f44053;}
+      p{font-size: 13px; line-height: 30px; color: #000;
+        b{color: #828282;}
+        span{ font-size: 31px;color: #f44053;line-height: 50px; }
+      }
+    }
+    .tip-footer{ border-top: #d0d0d0 1px solid; text-align: center; margin:10px 20px; padding: 20px 0;
+      p{font-size: 15px; color: #828282; line-height: 24px;}
+    }
+    .go-btn{ position: absolute; bottom: -70px; width: 370px; left: 50%; margin-left: -185px;
+      span{ display: block; width: 156px; height: 50px; border-radius: 50px; background: #ffffff; text-align: center; line-height: 50px; float: left; font-size: 20px; color: #000; cursor: pointer;}
+      .go-wait{float: right;}
+    }
+  }
+
+  .tip-2{
+    .tip-header{
+      img{margin: 0 auto;}
+    }
+  }
+
+  .closesx{ width: 30px; height: 30px; position: absolute; top:5px; right:-50px; cursor: pointer; z-index: 8; background: url("../images/close.png") no-repeat;}
+
+}
+
+
+@media screen and (max-width:1400px){
+  .sec-banner{margin-top: -100px !important;}
+  .banner-car{  left:-50px !important; }
+
+}
+
+
+

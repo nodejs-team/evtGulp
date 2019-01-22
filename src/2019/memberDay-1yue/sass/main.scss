@@ -1,0 +1,162 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background:url("../images/bg.jpg") repeat; }
+
+.sec-banner{
+  background:url("../images/banner.png") center; z-index: 1; height: 550px; overflow: hidden;
+  .evt-content{ width: 1200px; margin: 0 auto; height: 550px; }
+  .banner-t{ position: absolute; top:120px; left: 50%; margin-left: -300px;}
+}
+
+
+
+.hy-title{width: 662px; margin: 0 auto 50px;position: relative;}
+.sec-1{
+  .evt-content{ width: 1200px;  padding:100px 0 80px;}
+  .quanyi{position: relative; margin: 0 auto 0 -20px; text-align: center;}
+  .hongbao{position: relative; margin:80px auto 20px; text-align: center;
+    .hb{position: absolute; bottom:0; width: 133px; height: 43px; color: #fff; font-size: 22px; text-align: center; letter-spacing: 3px; line-height: 43px; cursor: pointer;}
+    .hb1{left: 222px;}
+    .hb2{left: 536px;}
+    .hb3{left: 848px;}
+    .hb.on{color: #a19d9d;}
+  }
+}
+
+.sec-miaosha{  position: relative; z-index: 1; padding-top: 20px; padding-bottom: 50px;
+  .evt-content{
+    .ms-img{ width: 1035px; margin: 0 auto 90px auto;
+      .miaosha{position: absolute; bottom:-66px; left: 90px; width: 400px; height: 100px; color: #fa8625; text-align: center;
+        .last-num{font-size: 24px; line-height: 60px;}
+        .qiang-btn{margin: 0 auto;
+          span{display:block; width: 140px; line-height: 38px; text-align: center; padding: 0; background:#fa8625; color: #fff; border-radius: 38px; font-size: 20px; margin:0 auto; cursor: pointer; }
+          span.end{background: #a19d9d;}
+        }
+      }
+      .ms-right{ left: auto; right: 50px;}
+    }
+
+  }
+}
+
+
+.sec-3{  position: relative; z-index: 1; padding-top: 20px; padding-bottom: 50px;
+  .evt-content{
+    width: 1200px;
+    .row{position: relative; }
+    .price-title{margin-bottom:10px;}
+
+    .price{ top:90px; left: 628px;
+      ul.price_p li {background:#cb9773 !important;}
+      h2, h2 span,s,.price_num dl dt span,.huangou{color: #9d6d4e;}
+      ul.price_p li.cur, .buy_btn_box span{background: #9e6e4b !important;}
+      .reduce {  background:url("../images/reduce-3.png") repeat scroll; background-size: 100%;  }
+      .nopoint{  background: url("../images/add-3.png") repeat scroll; background-size: 100%;  }
+      .icon{background: url("../images/icon-3.png"); }
+      .icon.on{background: url("../images/icon-3-h.png");}
+    }
+
+    .row1{height: 540px;
+      .cake{position: absolute;top:20px; left:144px;}
+      .price{ top:90px; left: 628px;
+        ul.price_p li {background:#bd7662 !important;}
+        h2, h2 span,s,.price_num dl dt span,.huangou{color: #a75138;}
+        ul.price_p li.cur, .buy_btn_box span{background: #a75138 !important;}
+        .reduce {  background:url("../images/reduce-2.png") repeat scroll; background-size: 100%;  }
+        .nopoint{  background: url("../images/add-2.png") repeat scroll; background-size: 100%;  }
+        .icon{background: url("../images/icon-2.png"); }
+        .icon.on{background: url("../images/icon-2-h.png");}
+      }
+    }
+    .row2{height: 540px;
+      .cake{position: absolute; top: 80px; left: 523px;}
+      .price{ top:87px; left: 150px;
+        ul.price_p li {background:#cb8c73 !important;}
+        h2, h2 span,s,.price_num dl dt span,.huangou{color: #77493a;}
+        ul.price_p li.cur, .buy_btn_box span{background: #77493a !important;}
+        .reduce {  background:url("../images/reduce-1.png") repeat scroll; background-size: 100%;  }
+        .nopoint{  background: url("../images/add-1.png") repeat scroll; background-size: 100%;  }
+        .icon{background: url("../images/icon-1.png"); }
+        .icon.on{background: url("../images/icon-1-h.png");}
+      }
+    }
+    .row3{height: 450px;
+      .cake{position: absolute;top:20px; left: 100px;}
+      .price{ top:60px; left: 628px;}
+
+    }
+    .row4{height: 540px;
+      .cake{position: absolute;top: 60px; left: 510px;}
+      .price{ top:87px; left: 190px;}
+    }
+
+    .row5{height: 510px;
+      .cake{position: absolute;top:20px; left: 94px;}
+      .price{ top:60px; left: 628px;}
+
+    }
+    .row6{height: 540px;
+      .cake{position: absolute;top: 60px; left: 460px;}
+      .price{ top:87px; left: 190px;}
+    }
+
+    .more{ width: 398px !important;}
+    .price-select{position: absolute; top:535px; left:628px; width:400px; padding:0;
+      .price-title{margin-bottom: 30px;}
+      .price{padding-left: 40px; position: relative;
+        .select-li{position: absolute; left: 0; top:-3px;
+          li{width: 34px; height: 33px; background: url("../images/icon-select.png") 0 0 no-repeat; margin-bottom: 10px; cursor: pointer;}
+          li.on{ background: url("../images/icon-select.png") -50px 0 no-repeat;}
+        }
+      }
+      .go-btn{ width: 166px; height: 45px; background:#e5b1bb; margin-top: 30px; cursor: pointer;
+        span{display: block; line-height: 45px; color: #fff; font-size: 26px; text-align: center;}
+      }
+    }
+
+  }
+}
+
+.sec-4{position: relative; z-index: 2;
+  .evt-content{  width: 1200px;  padding:10px 0 50px;}
+  .more{width: 176px;position: relative; margin: 0 auto;}
+}
+
+.evt-footer{ z-index: 1;
+  position: relative;  background:url("../images/foot-bg.jpg") repeat; width: 100%;
+  .evt-content{width: 1200px;color: #371515;}
+    .evt-rules{width: 710px; margin: 0 auto; padding:100px 0 100px 55px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+.price .huangou{width:215px !important;}
+
+
+.floater{  position: fixed; width: 145px; height: 145px; top: 600px;  z-index: 11; left: 50%; margin-left: 520px; cursor: pointer;
+  .tips{ position: absolute; width: 50px; height: 50px; right:-5px; top: -5px; border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12; cursor: Default;
+    span{ font-size:18px; color: #fff; line-height: 50px;}
+  }
+}
+
+@media screen and (max-width:1700px) {
+
+}
+
+

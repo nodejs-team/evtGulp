@@ -1,0 +1,155 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+
+.evt-container{ overflow: hidden; background: url("../images/bg.jpg") repeat;
+  .evt-content{width: 1200px !important;}
+  .btns{ width: 178px; height: 40px; background:url("../images/btn-bg.png") no-repeat; text-align: center; border-radius: 1px; cursor: pointer; float: left; margin-top: 30px; margin-right: 10px;
+    span{ display: block; color: #fff; font-size: 20px; line-height: 40px;}
+  }
+}
+
+
+
+.sec-banner{ position: relative; z-index: 2; width:100%; height: 537px; background: url("../images/banner.jpg") center;}
+
+.sec-0{position: relative; z-index: 1;
+  .evt-content{
+    .s-title{width: 407px; padding:70px 0; margin: 0 auto; }
+    .cake{width: 1207px; margin: 0 auto;}
+    .s-title-2{width: 227px; padding:70px 0; margin: 0 auto;}
+  }
+}
+
+
+.sec-1{position: relative; z-index: 1; padding-top:10px;
+  .evt-content{
+    width: 1300px; height: 1038px; background: #fcf1f5;
+    .price{position: absolute; top: 618px; left: 184px;}
+    .cake{position: absolute; width: 450px; height: 418px; top: 70px; left: 120px; background: url("../images/swper-kuang.png"); }
+    .cake-1{position: absolute; top: 539px; left: 566px;}
+    .word{position: absolute; bottom: 50px; left: 890px;}
+    .title-1{position: absolute; top: 168px; left: 638px;}
+    .select{position: absolute; top: 750px; left: 465px;
+      ul{
+        li{ width: 19px; height: 19px; background: url("../images/gou-1.png"); margin-bottom: 30px; cursor: pointer; }
+        li.on{ background: url("../images/gou-2.png");}
+      }
+    }
+  }
+}
+.sec-2{position: relative; z-index: 1; padding-top:10px;
+  .evt-content{width: 1200px; height: 600px;
+    .dis{position: absolute; top: -530px; left: 0; margin-left: -360px;}
+    .price{position: absolute; top: 123px; left: 804px;}
+    .cake{position: absolute; top: 70px; left: 130px;}
+    .cake-1{position: absolute; top: 558px; left: 526px;}
+    .select{position: absolute; top: 340px; left: 1080px;
+      ul{
+        li{ width: 19px; height: 19px; background: url("../images/gou-1.png"); margin-bottom: 30px; cursor: pointer; }
+        li.on{ background: url("../images/gou-2.png");}
+      }
+    }
+  }
+}
+
+.goubtn{ padding: 20px 0;
+  span{display: inline-block; width: 149px; height:33px; margin: 0 10px 0 0; background: url("../images/go-buy.png"); }
+}
+
+
+.sec-3{  position: relative; z-index: 2; background: #fcf1f5;
+  .evt-content{
+    width: 1300px; height: 604px;
+    .price{position: absolute; top:130px; left: 90px;}
+    .cake{position: absolute; top:0; left: 560px;}
+    .select{position: absolute; top: 355px; left: 356px;
+      ul{
+        li{ width: 19px; height: 19px; background: url("../images/gou-1.png"); margin-bottom: 30px; cursor: pointer; }
+        li.on{ background: url("../images/gou-2.png");}
+      }
+    }
+  }
+}
+
+.sec-4{  position: relative; z-index: 1;
+  .evt-content {  position: relative; width: 1200px;
+    .more{ width: 159px; margin:70px auto;}
+  }
+}
+
+
+
+.swiper-container { position: relative;  width: 450px; height: 400px; margin-left: 17px; }
+.swiper-slide {
+  display: -webkit-flex;  display: flex;  -webkit-box-pack: center;  -ms-flex-pack: center;
+  -webkit-justify-content: center;  justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;
+  -webkit-align-items: center;  align-items: center;
+}
+.pagination {
+  position: absolute !important;
+  left: 0;
+  text-align: center;
+  bottom:20px;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 5px;
+  opacity:1;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #626262;
+  opacity:1;
+}
+
+
+
+
+.sec-footer{
+  position: relative; background: #ab1128;z-index: 2;
+  .evt-content {
+    width: 1200px; padding: 100px 0; color: #fff;
+    .hd-guize{ width:820px; margin: 0 auto;}
+
+    h2{
+      font-size:24px; font-weight: normal;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size:16px;
+      line-height: 1.8em;
+      padding-left: 1em;
+      text-indent: -1em;
+      margin-top: 5px;
+    }
+  }
+}
+
+
+@media screen and (max-width:1700px) {
+   .sec-3{
+     .evt-content{height: 440px;
+       .price{top: 50px;}
+       .select{top: 275px;}
+     }
+      .cake{width:720px;
+        img{width: 100%;}
+      }
+   }
+}
+
+
+

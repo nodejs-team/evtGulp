@@ -1,0 +1,316 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+.sec-banner {
+  background: url("../images/banner.png") center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 720px;
+}
+
+.sec-banner .lipin {
+  position: absolute;
+  right: -200px;
+  top: -5px;
+}
+
+.sec-1 {
+  background: #fdeae5;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 130px 0;
+}
+
+.sec-1 .img-1 {
+  margin: 0 auto;
+}
+
+.sec-2 {
+  background: url("../images/s-section-2-bg.png") no-repeat;
+}
+
+.sec-2 .evt-content {
+  width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.sec-2 .s-section-2 {
+  width: 1300px;
+  margin: -60px auto 0;
+}
+
+.sec-2 .buy-btn {
+  position: absolute;
+  top: 492px;
+  left: 377px;
+  cursor: pointer;
+}
+
+.sec-2 .cake-link {
+  position: absolute;
+  width: 440px;
+  height: 420px;
+  top: 192px;
+  left: 630px;
+  cursor: pointer;
+  background: #fff;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.sec-3 {
+  background: #ffeae5;
+}
+
+.sec-3 .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0 30px;
+}
+
+.sec-3 .section-3-title {
+  width: 515px;
+  margin: 0 auto;
+}
+
+.sec-3 .video {
+  width: 995px;
+  margin: 0 auto;
+}
+
+.sec-3 .video video {
+  width: 100%;
+}
+
+.sec-3 .video p {
+  text-align: center;
+  color: #700001;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.sec-3 #checkVideoResult {
+  display: none;
+}
+
+.sec-3 .videoImg {
+  width: 995px;
+  margin: 0 auto;
+  display: none;
+}
+
+.sec-4 {
+  background: url("../images/s-section-2-bg.png") no-repeat;
+}
+
+.sec-4 .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.sec-4 .piaodai {
+  width: 310px;
+  position: absolute;
+  left: -160px;
+  top: 350px;
+  z-index: 1;
+}
+
+.sec-4 .s-section-4 {
+  position: relative;
+  width: 996px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.sec-4 .recording {
+  position: absolute;
+  bottom: 110px;
+  left: 198px;
+  width: 100px;
+  height: 29px;
+  background: url("../images/recording.png");
+  z-index: 5;
+}
+
+.sec-4 .recording .rec-1 {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 21px;
+  height: 16px;
+  background: url("../images/record-icon.png");
+  background-size: 100%;
+}
+
+.sec-4 .recording .rec-2 {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 21px;
+  height: 16px;
+  display: none;
+  background: url("../images/record-icon.gif");
+  background-size: 100%;
+}
+
+.sec-4 .recording .recording-hd {
+  position: absolute;
+  right: -10px;
+}
+
+.sec-4 .recording .recording-hd em {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #e60012;
+  border-radius: 100%;
+  top: 8px;
+  -webkit-animation: fadeToggle 2s infinite ease-in-out;
+  animation: fadeToggle 2s infinite ease-in-out;
+}
+
+.sec-4 .recording .recording-hd b {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 33px;
+  color: #000;
+}
+
+.sec-5 {
+  background: #ffeae5;
+  z-index: 2;
+}
+
+.sec-5 .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 140px;
+}
+
+.sec-5 .s-section-5 {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.sec-5 .more-bg {
+  width: 927px;
+  height: 218px;
+  background: url("../images/more-bg.png");
+  position: absolute;
+  left: 50%;
+  bottom: -120px;
+  margin-left: -463.5px;
+  z-index: 1;
+}
+
+.sec-5 .more {
+  width: 169px;
+  margin: 150px auto 0;
+  cursor: pointer;
+}
+
+.evt-footer {
+  position: relative;
+  background: url("../images/foot-bg.png") repeat;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #fff;
+}
+
+.evt-footer .evt-rules {
+  width: 710px;
+  margin: 0 auto;
+  padding: 200px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*兼容小屏幕*/
+@media screen and (max-width: 1650px) {
+  .lipin {
+    right: -20px !important;
+  }
+}
+
+/*录音闪烁*/
+@-webkit-keyframes fadeToggle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeToggle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

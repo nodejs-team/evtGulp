@@ -5,98 +5,125 @@
   height: 0;
   visibility: hidden;
 }
-.evt-container{ overflow: hidden;}
-.sec-top{
-  background:url("../images/banner-bg.png") center; z-index: 1;
-  .evt-content{
-    width: 1200px; height: 581px;
-    .banner-cake{ top: 40px; left: 20px;}
-    .banner-title{ top: 100px; left: 695px;}
-  }
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background:url("../images/bg.jpg") top repeat-y; }
+
+.sec-banner{  z-index: 1; overflow: hidden;
+  .evt-content{ width: 1200px; margin: 0 auto; height:800px; }
+  .banner-logo{ position: absolute; top:0; left: 50%; margin-left: -65px;}
+  .banner-txt{ position: absolute; top:200px; left:20px; }
+  .banner-cake{ position: absolute; top:150px; left: 50%; margin-left: -170px;}
 }
 
 
 
-.sec-main{  position: relative; z-index: 1;background:#fffff7; padding-bottom: 50px;
-  .evt-content{
-    width: 1000px;
+.hy-title{width: 273px; margin: 0 auto 50px;position: relative;}
+
+.sec-0{
+  .evt-content{ width: 1200px; padding:20px 0 20px;}
+  .hongbao{position: relative; margin: 0 auto; text-align: center;}
+}
+
+.line-1{ width: 1342px; height:45px; background: url("../images/sec-bg-1.png") top no-repeat; margin: 0 auto;}
+.line-2{ width: 1342px; height:54px; background: url("../images/sec-bg-2.png") top no-repeat; margin: 0 auto;}
+
+.sec-1{ padding-top: 100px;
+  .evt-content{ width: 1342px; padding:0 0 20px; border-left: #8b462a 1px solid; border-right: #8b462a 1px solid;}
+  .quan{position: relative; margin:100px auto 100px; text-align: center; width: 1123px;
+    .hb{position: absolute; bottom:25px; width: 131px; height: 42px; color: #8b462a; font-size: 20px; text-align: center; letter-spacing: 1px; line-height: 42px; cursor: pointer;}
+    .hb1{left: 6px;}
+    .hb2{left: 380px;}
+    .hb3{left: 770px;}
+    .hb.on{color: #fff;}
+  }
+}
+
+
+.sec-3{  position: relative; z-index: 1;
+  .evt-content{ width: 1342px; border-left: #8b462a 1px solid; border-right: #8b462a 1px solid;
     .row{position: relative; }
-    .row0{height: 389px;
-      .m-logo{ top: 60px; width: 403px; left:50%; margin-left: -201.5px;}
-      .hd{ top: 165px; width: 608px; left:50%; margin-left: -304px;}
+    .price-title{margin-bottom:10px;}
+    .row1{height: 500px; margin-top: 100px;
+      .cake{position: absolute;top: 0; left: 180px; }
+      .price{ top:0; left: 720px;}
     }
-    .row1{height: 660px;
-      .cake{top: 0; left: 139px;}
-      .price-select{ top: 158px; left: 745px;}
-    }
-    .row2{height: 561px;
-      .cake{top: -80px; left: 467px;}
-      .price-select{ top: 244px; left: 156px;}
-    }
-    .row3{height: 678px;
-      .cake{top: 10px; left: -162px;}
-      .price-select{ top: 312px; left: 784px;}
-    }
-    .row4{
-        .more{ width: 297px; margin: 50px auto;}
-        .prolist{ width: 1010px; margin: 0 auto;
-            ul{ margin-left: 20px;
-            li{ width: 227px; margin-right: 20px; float: left;
-              .des{position: relative; padding:30px 20px 10px;
-                p{font-size: 18px;}
-                .cl{position: relative; margin: 10px auto; padding-left:13px; line-height: 30px;color:#b08d67;
-                  i{font-style: normal; position: absolute; top: -3px; left: 0;}
-                  span{ font-size: 30px; }
-                }
+    .row2{height: 540px;
+      .cake{position: absolute;top:50px; left: 500px;}
+      .price{ top:80px; left: 130px;}
 
-                .gobtn{ text-align: center; line-height:30px;  background:url("../images/gobtn.png") center no-repeat; border-radius: 5px;
-                  span{font-size: 16px; color: #fff;}
-                }
-              }
-            }
-          }
-        }
+    }
+    .row3{height: 540px;
+      .cake{position: absolute;top: 100px; left: 180px;}
+      .price{ top:120px; left: 720px;}
+    }
+    .row4{height: 540px;
+      .cake{position: absolute;top:100px; left: 540px;}
+      .price{ top:90px; left: 130px;}
     }
 
-
-
-    .price-select{position: absolute; top:535px; left:628px; width:400px; padding:0;
-      .price-title{margin-bottom: 30px;}
-      .price{padding-left: 40px; position: relative;
-        .select-li{position: absolute; left: 0; top:-3px;
-          li{width: 34px; height: 33px; background: url("../images/select.png") no-repeat; margin-bottom: 10px; cursor: pointer;}
-          li.on{ background: url("../images/select-on.png") no-repeat;}
-        }
-      }
-      .go-btn{ width: 141px;height: 41px; background: url("../images/go-btn.png"); margin-top: 30px; cursor: pointer; }
+    .row5{height: 650px;
+      .cake{position: absolute;top:80px; left: 180px; }
+       .price{ top:150px; left: 720px;}
     }
 
-    /*磅数选择*/
-    .select{position: absolute; right: 0; top: 5px; width: 64px;
-      .js_bshu{ display: block; width: 100%; height: 25px; z-index: 2; font-size: 16px !important; line-height: 25px;  cursor: pointer; text-indent: 10px;
-      background: url("../images/sele-li.png") left no-repeat;
-        em{font-style: normal;}
-      }
-      .js_bshu.on{ background: #d2d2d2;}
-      dl.js_select{  position: absolute;width:62.5px;  top: 25px;  left: 50%;  text-align: left;  margin-left: -50%;  font-size: 18px;  background: #fffff7; border: #d8d8d8 1px solid; border-top: none;  z-index: 10; display: none;
-        dd{ height: 22px; width:100%; text-indent: 10px;  line-height: 22px;  cursor: pointer;  color: #757575;  margin: 0; font-size: 16px;  background: #fffff7;  }
-        strong{  font-size: 14px;  }
-        dd.on{  color: #fff; background: #e4c27b; }
-      }
-    }
+    .more{ width: 398px !important;}
 
 
   }
 }
 
+.sec-4{position: relative; z-index: 2;
+  .evt-content{ width: 1342px; border-left: #8b462a 1px solid; border-right: #8b462a 1px solid; border-bottom: #8b462a 1px solid;}
 
+  .row6{height: 440px;
+    .cake{position: absolute;top:100px; left: 600px;}
+    .price{ top:110px; left: 180px;}
+  }
+}
 
-.evt-footer{
-  position: relative;  background:#6f594e; width: 100%;
-  .foot-img{position: absolute; top: 50px; right:300px;}
-  .evt-content{width: 1200px;}
-    .evt-rules{width: 960px; margin: 0 auto; padding:50px 0 60px 55px; color: #fff;
-      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
-      p{ font-size:20px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+.evt-footer{ z-index: 1; position: relative;
+  .evt-content{width: 1200px;color: #8b462a;}
+    .evt-rules{width: 1000px; margin: 0 auto; padding:100px 0 100px 55px; font-style:italic;
+      h2{ font-size: 48px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:24px; line-height: 1.5em;  padding-left: 1.5em;  text-indent: -1.5em;  }
     }
 }
+.price{width: 406px;}
+.price .reduce{background: url("../images/reduce-1.png");}
+.price .add{background: url("../images/add-1.png");}
+.price ul.price_p.short3{width: 162px;}
+.price ul.price_p {
+  li{ background: none !important; border: #9a5d47 2px solid; color: #8b462a !important;}
+  li.cur{ background: #8b462a !important; border: #8b462a 2px solid;}
+}
+.price h2{line-height: 55px; margin-left: -20px;}
+.price h2 i{ color: #d21870 !important; font-size: 20px; font-style:italic;}
+.price h2 span{color: #d21870; font-size: 60px; font-style:italic;}
+.price s{font-size: 24px; font-style:italic;}
+.price ul.buy_btn_box li span{background: none !important; border: #9a5d47 2px solid; color: #9a5d47 !important; }
+.price .huangou{width: 150px !important;}
+.icnone{background: url("../images/icon-1.png"); z-index: 1; }
+.icon{ background: url("../images/icon-1.png"); z-index: 2;  }
+.icon.on{background: url("../images/icon-1-h.png");}
+
+
+.floater{  position: fixed; width: 125px; height: 84px; top: 600px;  z-index: 11; left: 50%; margin-left: 520px; cursor: pointer;
+  .tips{ position: absolute; width: 100%; height: 20px; left: 0; top:0;  text-align: center; z-index: 12; cursor: Default;
+    span{ font-size:14px; color: #fff;}
+  }
+}
+
+@media screen and (max-width:1700px) {
+
+}
+
+

@@ -7,304 +7,383 @@
   visibility: hidden;
 }
 
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .evt-container {
+  overflow: hidden;
+  background: url("../images/bg.jpg") top repeat-y;
+}
+
+.sec-banner {
+  z-index: 1;
   overflow: hidden;
 }
 
-.sec-top {
-  background: url("../images/banner-bg.png") center;
-  z-index: 1;
-}
-
-.sec-top .evt-content {
+.sec-banner .evt-content {
   width: 1200px;
-  height: 581px;
+  margin: 0 auto;
+  height: 800px;
 }
 
-.sec-top .evt-content .banner-cake {
-  top: 40px;
+.sec-banner .banner-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -65px;
+}
+
+.sec-banner .banner-txt {
+  position: absolute;
+  top: 200px;
   left: 20px;
 }
 
-.sec-top .evt-content .banner-title {
-  top: 100px;
-  left: 695px;
+.sec-banner .banner-cake {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -170px;
 }
 
-.sec-main {
-  position: relative;
-  z-index: 1;
-  background: #fffff7;
-  padding-bottom: 50px;
-}
-
-.sec-main .evt-content {
-  width: 1000px;
-  /*磅数选择*/
-}
-
-.sec-main .evt-content .row {
+.hy-title {
+  width: 273px;
+  margin: 0 auto 50px;
   position: relative;
 }
 
-.sec-main .evt-content .row0 {
-  height: 389px;
+.sec-0 .evt-content {
+  width: 1200px;
+  padding: 20px 0 20px;
 }
 
-.sec-main .evt-content .row0 .m-logo {
-  top: 60px;
-  width: 403px;
-  left: 50%;
-  margin-left: -201.5px;
+.sec-0 .hongbao {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.sec-main .evt-content .row0 .hd {
-  top: 165px;
-  width: 608px;
-  left: 50%;
-  margin-left: -304px;
-}
-
-.sec-main .evt-content .row1 {
-  height: 660px;
-}
-
-.sec-main .evt-content .row1 .cake {
-  top: 0;
-  left: 139px;
-}
-
-.sec-main .evt-content .row1 .price-select {
-  top: 158px;
-  left: 745px;
-}
-
-.sec-main .evt-content .row2 {
-  height: 561px;
-}
-
-.sec-main .evt-content .row2 .cake {
-  top: -80px;
-  left: 467px;
-}
-
-.sec-main .evt-content .row2 .price-select {
-  top: 244px;
-  left: 156px;
-}
-
-.sec-main .evt-content .row3 {
-  height: 678px;
-}
-
-.sec-main .evt-content .row3 .cake {
-  top: 10px;
-  left: -162px;
-}
-
-.sec-main .evt-content .row3 .price-select {
-  top: 312px;
-  left: 784px;
-}
-
-.sec-main .evt-content .row4 .more {
-  width: 297px;
-  margin: 50px auto;
-}
-
-.sec-main .evt-content .row4 .prolist {
-  width: 1010px;
+.line-1 {
+  width: 1342px;
+  height: 45px;
+  background: url("../images/sec-bg-1.png") top no-repeat;
   margin: 0 auto;
 }
 
-.sec-main .evt-content .row4 .prolist ul {
-  margin-left: 20px;
+.line-2 {
+  width: 1342px;
+  height: 54px;
+  background: url("../images/sec-bg-2.png") top no-repeat;
+  margin: 0 auto;
 }
 
-.sec-main .evt-content .row4 .prolist ul li {
-  width: 227px;
-  margin-right: 20px;
-  float: left;
+.sec-1 {
+  padding-top: 100px;
 }
 
-.sec-main .evt-content .row4 .prolist ul li .des {
+.sec-1 .evt-content {
+  width: 1342px;
+  padding: 0 0 20px;
+  border-left: #8b462a 1px solid;
+  border-right: #8b462a 1px solid;
+}
+
+.sec-1 .quan {
   position: relative;
-  padding: 30px 20px 10px;
-}
-
-.sec-main .evt-content .row4 .prolist ul li .des p {
-  font-size: 18px;
-}
-
-.sec-main .evt-content .row4 .prolist ul li .des .cl {
-  position: relative;
-  margin: 10px auto;
-  padding-left: 13px;
-  line-height: 30px;
-  color: #b08d67;
-}
-
-.sec-main .evt-content .row4 .prolist ul li .des .cl i {
-  font-style: normal;
-  position: absolute;
-  top: -3px;
-  left: 0;
-}
-
-.sec-main .evt-content .row4 .prolist ul li .des .cl span {
-  font-size: 30px;
-}
-
-.sec-main .evt-content .row4 .prolist ul li .des .gobtn {
+  margin: 100px auto 100px;
   text-align: center;
-  line-height: 30px;
-  background: url("../images/gobtn.png") center no-repeat;
-  border-radius: 5px;
+  width: 1123px;
 }
 
-.sec-main .evt-content .row4 .prolist ul li .des .gobtn span {
-  font-size: 16px;
+.sec-1 .quan .hb {
+  position: absolute;
+  bottom: 25px;
+  width: 131px;
+  height: 42px;
+  color: #8b462a;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 42px;
+  cursor: pointer;
+}
+
+.sec-1 .quan .hb1 {
+  left: 6px;
+}
+
+.sec-1 .quan .hb2 {
+  left: 380px;
+}
+
+.sec-1 .quan .hb3 {
+  left: 770px;
+}
+
+.sec-1 .quan .hb.on {
   color: #fff;
 }
 
-.sec-main .evt-content .price-select {
-  position: absolute;
-  top: 535px;
-  left: 628px;
-  width: 400px;
-  padding: 0;
+.sec-3 {
+  position: relative;
+  z-index: 1;
 }
 
-.sec-main .evt-content .price-select .price-title {
-  margin-bottom: 30px;
+.sec-3 .evt-content {
+  width: 1342px;
+  border-left: #8b462a 1px solid;
+  border-right: #8b462a 1px solid;
 }
 
-.sec-main .evt-content .price-select .price {
-  padding-left: 40px;
+.sec-3 .evt-content .row {
   position: relative;
 }
 
-.sec-main .evt-content .price-select .price .select-li {
-  position: absolute;
-  left: 0;
-  top: -3px;
-}
-
-.sec-main .evt-content .price-select .price .select-li li {
-  width: 34px;
-  height: 33px;
-  background: url("../images/select.png") no-repeat;
+.sec-3 .evt-content .price-title {
   margin-bottom: 10px;
-  cursor: pointer;
 }
 
-.sec-main .evt-content .price-select .price .select-li li.on {
-  background: url("../images/select-on.png") no-repeat;
+.sec-3 .evt-content .row1 {
+  height: 500px;
+  margin-top: 100px;
 }
 
-.sec-main .evt-content .price-select .go-btn {
-  width: 141px;
-  height: 41px;
-  background: url("../images/go-btn.png");
-  margin-top: 30px;
-  cursor: pointer;
-}
-
-.sec-main .evt-content .select {
+.sec-3 .evt-content .row1 .cake {
   position: absolute;
-  right: 0;
-  top: 5px;
-  width: 64px;
+  top: 0;
+  left: 180px;
 }
 
-.sec-main .evt-content .select .js_bshu {
-  display: block;
-  width: 100%;
-  height: 25px;
+.sec-3 .evt-content .row1 .price {
+  top: 0;
+  left: 720px;
+}
+
+.sec-3 .evt-content .row2 {
+  height: 540px;
+}
+
+.sec-3 .evt-content .row2 .cake {
+  position: absolute;
+  top: 50px;
+  left: 500px;
+}
+
+.sec-3 .evt-content .row2 .price {
+  top: 80px;
+  left: 130px;
+}
+
+.sec-3 .evt-content .row3 {
+  height: 540px;
+}
+
+.sec-3 .evt-content .row3 .cake {
+  position: absolute;
+  top: 100px;
+  left: 180px;
+}
+
+.sec-3 .evt-content .row3 .price {
+  top: 120px;
+  left: 720px;
+}
+
+.sec-3 .evt-content .row4 {
+  height: 540px;
+}
+
+.sec-3 .evt-content .row4 .cake {
+  position: absolute;
+  top: 100px;
+  left: 540px;
+}
+
+.sec-3 .evt-content .row4 .price {
+  top: 90px;
+  left: 130px;
+}
+
+.sec-3 .evt-content .row5 {
+  height: 650px;
+}
+
+.sec-3 .evt-content .row5 .cake {
+  position: absolute;
+  top: 80px;
+  left: 180px;
+}
+
+.sec-3 .evt-content .row5 .price {
+  top: 150px;
+  left: 720px;
+}
+
+.sec-3 .evt-content .more {
+  width: 398px !important;
+}
+
+.sec-4 {
+  position: relative;
   z-index: 2;
-  font-size: 16px !important;
-  line-height: 25px;
-  cursor: pointer;
-  text-indent: 10px;
-  background: url("../images/sele-li.png") left no-repeat;
 }
 
-.sec-main .evt-content .select .js_bshu em {
-  font-style: normal;
+.sec-4 .evt-content {
+  width: 1342px;
+  border-left: #8b462a 1px solid;
+  border-right: #8b462a 1px solid;
+  border-bottom: #8b462a 1px solid;
 }
 
-.sec-main .evt-content .select .js_bshu.on {
-  background: #d2d2d2;
+.sec-4 .row6 {
+  height: 440px;
 }
 
-.sec-main .evt-content .select dl.js_select {
+.sec-4 .row6 .cake {
   position: absolute;
-  width: 62.5px;
-  top: 25px;
-  left: 50%;
-  text-align: left;
-  margin-left: -50%;
-  font-size: 18px;
-  background: #fffff7;
-  border: #d8d8d8 1px solid;
-  border-top: none;
-  z-index: 10;
-  display: none;
+  top: 100px;
+  left: 600px;
 }
 
-.sec-main .evt-content .select dl.js_select dd {
-  height: 22px;
-  width: 100%;
-  text-indent: 10px;
-  line-height: 22px;
-  cursor: pointer;
-  color: #757575;
-  margin: 0;
-  font-size: 16px;
-  background: #fffff7;
-}
-
-.sec-main .evt-content .select dl.js_select strong {
-  font-size: 14px;
-}
-
-.sec-main .evt-content .select dl.js_select dd.on {
-  color: #fff;
-  background: #e4c27b;
+.sec-4 .row6 .price {
+  top: 110px;
+  left: 180px;
 }
 
 .evt-footer {
+  z-index: 1;
   position: relative;
-  background: #6f594e;
-  width: 100%;
-}
-
-.evt-footer .foot-img {
-  position: absolute;
-  top: 50px;
-  right: 300px;
 }
 
 .evt-footer .evt-content {
   width: 1200px;
+  color: #8b462a;
 }
 
 .evt-footer .evt-rules {
-  width: 960px;
+  width: 1000px;
   margin: 0 auto;
-  padding: 50px 0 60px 55px;
-  color: #fff;
+  padding: 100px 0 100px 55px;
+  font-style: italic;
 }
 
 .evt-footer .evt-rules h2 {
-  font-size: 24px;
+  font-size: 48px;
   font-weight: normal;
   margin-bottom: 5px;
 }
 
 .evt-footer .evt-rules p {
-  font-size: 20px;
-  line-height: 1.8em;
+  font-size: 24px;
+  line-height: 1.5em;
   padding-left: 1.5em;
   text-indent: -1.5em;
+}
+
+.price {
+  width: 406px;
+}
+
+.price .reduce {
+  background: url("../images/reduce-1.png");
+}
+
+.price .add {
+  background: url("../images/add-1.png");
+}
+
+.price ul.price_p.short3 {
+  width: 162px;
+}
+
+.price ul.price_p li {
+  background: none !important;
+  border: #9a5d47 2px solid;
+  color: #8b462a !important;
+}
+
+.price ul.price_p li.cur {
+  background: #8b462a !important;
+  border: #8b462a 2px solid;
+}
+
+.price h2 {
+  line-height: 55px;
+  margin-left: -20px;
+}
+
+.price h2 i {
+  color: #d21870 !important;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.price h2 span {
+  color: #d21870;
+  font-size: 60px;
+  font-style: italic;
+}
+
+.price s {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.price ul.buy_btn_box li span {
+  background: none !important;
+  border: #9a5d47 2px solid;
+  color: #9a5d47 !important;
+}
+
+.price .huangou {
+  width: 150px !important;
+}
+
+.icnone {
+  background: url("../images/icon-1.png");
+  z-index: 1;
+}
+
+.icon {
+  background: url("../images/icon-1.png");
+  z-index: 2;
+}
+
+.icon.on {
+  background: url("../images/icon-1-h.png");
+}
+
+.floater {
+  position: fixed;
+  width: 125px;
+  height: 84px;
+  top: 600px;
+  z-index: 11;
+  left: 50%;
+  margin-left: 520px;
+  cursor: pointer;
+}
+
+.floater .tips {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 12;
+  cursor: Default;
+}
+
+.floater .tips span {
+  font-size: 14px;
+  color: #fff;
 }

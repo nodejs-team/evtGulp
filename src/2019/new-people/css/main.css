@@ -1,0 +1,488 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #eff0e6;
+}
+
+.sec-banner {
+  background: url("../images/banner.png") center;
+  z-index: 1;
+  height: 641px;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 560px;
+}
+
+.sec-banner .banner-t {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -358.5px;
+}
+
+.hy-title {
+  width: 468px;
+  margin: 0 auto;
+  padding: 100px 0;
+  position: relative;
+}
+
+.sec-1 .evt-content {
+  width: 1241px;
+}
+
+.sec-1 .hongbao {
+  position: relative;
+  width: 1241px;
+  height: 597px;
+  background: url("../images/hongbao.png");
+  margin: -120px auto 0;
+  text-align: center;
+}
+
+.sec-1 .hongbao .buy-btn {
+  position: absolute;
+  width: 180px;
+  height: 46px;
+  line-height: 46px;
+  background: #e6e7d9;
+  color: #898c6b;
+  font-size: 18px;
+  bottom: 90px;
+  left: 50%;
+  margin-left: -90px;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 50px;
+}
+
+.sec-3 .dis-1 {
+  position: absolute;
+  top: 500px;
+  right: 50px;
+  z-index: 1;
+}
+
+.sec-3 .dis-2 {
+  position: absolute;
+  top: 1132px;
+  left: 100px;
+  z-index: 1;
+}
+
+.sec-3 .dis-3 {
+  position: absolute;
+  top: 1800px;
+  right: 100px;
+  z-index: 1;
+}
+
+.sec-3 .dis-4 {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  z-index: 1;
+}
+
+.sec-3 .evt-content {
+  position: relative;
+  z-index: 2;
+  width: 1233px;
+  padding-bottom: 50px;
+  background: #ffffff;
+}
+
+.sec-3 .evt-content .row {
+  position: relative;
+}
+
+.sec-3 .evt-content .price-title {
+  margin-bottom: 10px;
+}
+
+.sec-3 .evt-content .price {
+  top: 30px;
+  left: 578px;
+}
+
+.sec-3 .evt-content .price h2 span {
+  font-size: 33px !important;
+}
+
+.sec-3 .evt-content .price h2, .sec-3 .evt-content .price h2 span, .sec-3 .evt-content .price s, .sec-3 .evt-content .price .price_num dl dt span, .sec-3 .evt-content .price .huangou {
+  color: #000;
+}
+
+.sec-3 .evt-content .price ul.price_p li.cur, .sec-3 .evt-content .price .buy_btn_box span {
+  background: #e6e7d9 !important;
+}
+
+.sec-3 .evt-content .price .reduce {
+  background: url("../images/reduce-2.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .price .nopoint {
+  background: url("../images/add-2.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .price .icon {
+  background: url("../images/icon-1.png");
+}
+
+.sec-3 .evt-content .price .icon.on {
+  background: url("../images/icon-1-h.png");
+}
+
+.sec-3 .evt-content .price ul.buy_btn_box {
+  width: 338px;
+  margin: 10px 0;
+}
+
+.sec-3 .evt-content .price ul.buy_btn_box li {
+  margin-right: 0 !important;
+}
+
+.sec-3 .evt-content .price ul.buy_btn_box li span {
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  background: #e6e7d9 !important;
+  color: #000;
+  border-radius: 0;
+}
+
+.sec-3 .evt-content .row1 {
+  height: 500px;
+}
+
+.sec-3 .evt-content .row1 .cake {
+  position: absolute;
+  top: 90px;
+  left: 570px;
+}
+
+.sec-3 .evt-content .row1 .price {
+  top: 150px;
+  left: 250px;
+}
+
+.sec-3 .evt-content .row2 {
+  height: 500px;
+}
+
+.sec-3 .evt-content .row2 .cake {
+  position: absolute;
+  top: 60px;
+  left: 144px;
+}
+
+.sec-3 .evt-content .row2 .price {
+  top: 200px;
+  left: 688px;
+}
+
+.sec-3 .evt-content .row3 {
+  height: 500px;
+}
+
+.sec-3 .evt-content .row3 .cake {
+  position: absolute;
+  top: 80px;
+  left: 570px;
+}
+
+.sec-3 .evt-content .row3 .price {
+  top: 150px;
+  left: 250px;
+}
+
+.sec-3 .evt-content .row4 {
+  height: 590px;
+}
+
+.sec-3 .evt-content .row4 .cake {
+  position: absolute;
+  top: 60px;
+  left: 144px;
+}
+
+.sec-3 .evt-content .row4 .price {
+  top: 200px;
+  left: 688px;
+}
+
+.sec-3 .evt-content .more {
+  width: 398px !important;
+}
+
+.sec-3 .evt-content .price-select {
+  position: absolute;
+  top: 535px;
+  left: 628px;
+  width: 400px;
+  padding: 0;
+}
+
+.sec-3 .evt-content .price-select .price-title {
+  margin-bottom: 30px;
+}
+
+.sec-3 .evt-content .price-select .price {
+  padding-left: 40px;
+  position: relative;
+}
+
+.sec-3 .evt-content .price-select .price .select-li {
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.sec-3 .evt-content .price-select .price .select-li li {
+  width: 34px;
+  height: 33px;
+  background: url("../images/icon-select.png") 0 0 no-repeat;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sec-3 .evt-content .price-select .price .select-li li.on {
+  background: url("../images/icon-select.png") -50px 0 no-repeat;
+}
+
+.sec-3 .evt-content .price-select .go-btn {
+  width: 166px;
+  height: 45px;
+  background: #e5b1bb;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.sec-3 .evt-content .price-select .go-btn span {
+  display: block;
+  line-height: 45px;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+}
+
+.sec-4 {
+  background: #fff;
+}
+
+.sec-4 .hy-title {
+  padding: 50px 0;
+}
+
+.sec-5 {
+  position: relative;
+  z-index: 2;
+  background: #fff url("../images/s-bg.png") top;
+}
+
+.sec-5 .evt-content {
+  width: 1232px;
+  padding: 38px 0 140px;
+}
+
+.sec-5 .quan {
+  width: 1232px;
+  height: 537px;
+  position: relative;
+  margin: 10px auto;
+  background: url("../images/quan.png") top;
+}
+
+.sec-5 .lingquan {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -400px;
+  width: 800px;
+  height: 140px;
+  text-align: center;
+}
+
+.sec-5 .lingquan .quan-1, .sec-5 .lingquan .quan-2 {
+  position: absolute;
+  bottom: 10px;
+  left: 18px;
+  width: 200px;
+  height: 120px;
+  color: #000;
+}
+
+.sec-5 .lingquan .quan-1 h2, .sec-5 .lingquan .quan-2 h2 {
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.sec-5 .lingquan .quan-1 .btn-quan span, .sec-5 .lingquan .quan-2 .btn-quan span {
+  line-height: 35px;
+  padding: 2px 30px;
+  font-size: 18px;
+  color: #6a6d46;
+  background: #e6e7d9;
+}
+
+.sec-5 .lingquan .quan-2 {
+  left: auto;
+  right: -50px;
+  width: 400px;
+}
+
+.sec-5 .lingquan .quan-2 .btn-quan span {
+  color: #81683d;
+  background: #e7d5b5;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: #fff;
+  width: 100%;
+}
+
+.evt-footer .dis-5 {
+  position: absolute;
+  top: -105px;
+  left: 740px;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #000;
+}
+
+.evt-footer .evt-rules {
+  width: 710px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.price {
+  width: 338px !important;
+}
+
+.price .huangou {
+  width: 205px !important;
+}
+
+.price .jiage {
+  width: 338px;
+}
+
+.price h2 {
+  float: left;
+  color: #000 !important;
+}
+
+.price s {
+  float: left;
+  line-height: 37px;
+  color: #000 !important;
+  margin-left: 10px;
+}
+
+.price ul.price_p li {
+  background: #ffffff !important;
+  border-radius: 0 !important;
+  border: #000 1px solid;
+  color: #000;
+}
+
+.price ul.price_p li.cur {
+  color: #000 !important;
+}
+
+.price .jisuan {
+  position: relative;
+  width: 338px !important;
+}
+
+.price .price_p {
+  width: 220px !important;
+  margin: 10px 0 !important;
+}
+
+.price .price_num {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+
+.price ul.buy_btn_box li span {
+  width: 155px !important;
+}
+
+.floater {
+  position: fixed;
+  width: 145px;
+  height: 145px;
+  top: 600px;
+  z-index: 11;
+  left: 50%;
+  margin-left: 520px;
+  cursor: pointer;
+}
+
+.floater .tips {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  background: url("../images/tips.png") center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  z-index: 12;
+  cursor: Default;
+}
+
+.floater .tips span {
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}

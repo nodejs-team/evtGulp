@@ -1,23 +1,53 @@
 {
 	"groups":[{
-			"keys":"price_png,select_png,select-on_png,title-1_png,title-2_png,title-3_png,banner-bg_png,banner-cake_png,banner-title_png,cake-1_png,cake-2_png,cake-3_png,foot-img_png,go-btn_png,hd_png,img-1_png,img-2_png,img-3_png,img-4_png,m-logo_png",
+			"keys":"reduce-1_png,sec-bg-1_png,sec-bg-2_png,t-1_png,t-2_png,t-3_png,t-4_png,t-5_png,t-6_png,title-1_png,title-2_png,title-3_png,xiaoduo_png,add-1_png,banner-cake_png,banner-logo_png,banner-txt_png,bg_jpg,cake-1_png,cake-2_png,cake-3_png,cake-4_png,cake-5_png,go-buy_png,hongbao_png,quan_png",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"price_png",
+			"name":"reduce-1_png",
 			"type":"image",
-			"url":"price.png"
+			"url":"reduce-1.png"
 		},
 		{
-			"name":"select_png",
+			"name":"sec-bg-1_png",
 			"type":"image",
-			"url":"select.png"
+			"url":"sec-bg-1.png"
 		},
 		{
-			"name":"select-on_png",
+			"name":"sec-bg-2_png",
 			"type":"image",
-			"url":"select-on.png"
+			"url":"sec-bg-2.png"
+		},
+		{
+			"name":"t-1_png",
+			"type":"image",
+			"url":"t-1.png"
+		},
+		{
+			"name":"t-2_png",
+			"type":"image",
+			"url":"t-2.png"
+		},
+		{
+			"name":"t-3_png",
+			"type":"image",
+			"url":"t-3.png"
+		},
+		{
+			"name":"t-4_png",
+			"type":"image",
+			"url":"t-4.png"
+		},
+		{
+			"name":"t-5_png",
+			"type":"image",
+			"url":"t-5.png"
+		},
+		{
+			"name":"t-6_png",
+			"type":"image",
+			"url":"t-6.png"
 		},
 		{
 			"name":"title-1_png",
@@ -35,9 +65,14 @@
 			"url":"title-3.png"
 		},
 		{
-			"name":"banner-bg_png",
+			"name":"xiaoduo_png",
 			"type":"image",
-			"url":"banner-bg.png"
+			"url":"xiaoduo.png"
+		},
+		{
+			"name":"add-1_png",
+			"type":"image",
+			"url":"add-1.png"
 		},
 		{
 			"name":"banner-cake_png",
@@ -45,9 +80,19 @@
 			"url":"banner-cake.png"
 		},
 		{
-			"name":"banner-title_png",
+			"name":"banner-logo_png",
 			"type":"image",
-			"url":"banner-title.png"
+			"url":"banner-logo.png"
+		},
+		{
+			"name":"banner-txt_png",
+			"type":"image",
+			"url":"banner-txt.png"
+		},
+		{
+			"name":"bg_jpg",
+			"type":"image",
+			"url":"bg.jpg"
 		},
 		{
 			"name":"cake-1_png",
@@ -65,44 +110,29 @@
 			"url":"cake-3.png"
 		},
 		{
-			"name":"foot-img_png",
+			"name":"cake-4_png",
 			"type":"image",
-			"url":"foot-img.png"
+			"url":"cake-4.png"
 		},
 		{
-			"name":"go-btn_png",
+			"name":"cake-5_png",
 			"type":"image",
-			"url":"go-btn.png"
+			"url":"cake-5.png"
 		},
 		{
-			"name":"hd_png",
+			"name":"go-buy_png",
 			"type":"image",
-			"url":"hd.png"
+			"url":"go-buy.png"
 		},
 		{
-			"name":"img-1_png",
+			"name":"hongbao_png",
 			"type":"image",
-			"url":"img-1.png"
+			"url":"hongbao.png"
 		},
 		{
-			"name":"img-2_png",
+			"name":"quan_png",
 			"type":"image",
-			"url":"img-2.png"
-		},
-		{
-			"name":"img-3_png",
-			"type":"image",
-			"url":"img-3.png"
-		},
-		{
-			"name":"img-4_png",
-			"type":"image",
-			"url":"img-4.png"
-		},
-		{
-			"name":"m-logo_png",
-			"type":"image",
-			"url":"m-logo.png"
+			"url":"quan.png"
 		}
 	]
 }
