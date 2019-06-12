@@ -1,0 +1,179 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background:url("../images/bg.jpg") repeat; text-align: center; }
+
+.sec-banner{
+  background:url("../images/banner.png") center; z-index: 1; height: 550px; overflow: hidden;
+  .evt-content{ width: 1200px; margin: 0 auto; height: 536px; }
+  .banner-t{ position: absolute; top:120px; left: 50%; margin-left: -306px;}
+  .banner-icon{ position: absolute; top:120px; left:780px; }
+}
+
+.hy-title{display: inline-block; margin: 0 auto 50px; position: relative;
+  .sub-title{ margin-top: -10px; font-size: 20px; text-align: center; color: #503600;}
+}
+.sec-1{  position: relative; padding-top: 100px;
+  .evt-content{ width: 1100px; }
+  .calendar{width: 535px; margin: 0 auto;}
+  .row{position: relative; text-align: left; }
+  .row1{height: 480px;
+    .cake{position: absolute;top:20px; left:455px;}
+    .price{ top:120px; left: 150px;
+      ul.buy_btn li span { background: #bb3b38;}
+    }
+  }
+  .row2{height: 520px;
+    .cake{position: absolute; top:0; left: 100px;}
+    .time{top: 141px;left: 50px;
+      b{ color: #b95556;}
+    }
+    .price{ top:150px; left: 640px;}
+  }
+  .row3{height: 520px;
+    .cake{position: absolute;top:20px; left:285px;}
+    .time{top: 133px;
+      b{ color: #d5ad0f;}
+    }
+    .price{ top:120px; left: 150px;
+      ul.buy_btn li span { background: #edcd3f;}
+    }
+  }
+  .row4{height: 520px;
+    .cake{position: absolute; top:0; left: 100px;}
+    .time{top: 141px;
+      b{ color: #d5ad0f;}
+    }
+    .price{ top:150px; left: 640px;
+      ul.buy_btn li span { background: #edcd3f;}
+    }
+  }
+}
+
+
+.sec-quan{
+  .evt-content{ width: 1200px;  padding:40px 0 60px;}
+  .hongbao{position: relative; margin:10px auto 20px; text-align: center;
+    .hb{position: absolute; bottom:0; width: 133px; height: 43px; color: #fff; font-size: 22px; text-align: center; letter-spacing: 3px; line-height: 43px; cursor: pointer;}
+    .hb1{left: 222px;}
+    .hb2{left: 535px;}
+    .hb3{left: 848px;}
+    .hb.on{color: #a19d9d;}
+  }
+}
+
+
+.sec-2{  position: relative; z-index: 1; padding-top: 20px; padding-bottom: 50px;
+  .evt-content{
+    width: 1100px;
+    .row{position: relative;text-align: left;  }
+    .price-title{margin-bottom:10px;}
+    .row1{height: 520px;
+      .cake{position: absolute;top:20px; left:515px;}
+      .price{ top:120px; left: 200px;
+        ul.buy_btn li span { background: #c65459;}
+      }
+    }
+    .row2{height: 520px;
+      .cake{position: absolute; top:50px; left: 100px;}
+      .price{ top:150px; left: 640px;
+        ul.buy_btn li span { background: #da778c;}
+      }
+    }
+
+    .row3{height: 480px;
+      .cake{position: absolute;top:50px; left:515px;}
+      .price{ top:120px; left: 200px;
+        ul.buy_btn li span { background: #e09091;}
+      }
+    }
+    .row4{height: 520px;
+      .cake{position: absolute; top:50px; left: 100px;}
+      .price{ top:150px; left: 640px;
+        ul.buy_btn li span { background: #e1aa34;}
+      }
+    }
+
+
+  }
+}
+
+
+.sec-3{position: relative; z-index: 2;
+  .evt-content{  width: 1080px;  padding:10px 0 50px;}
+  .select-li{left: 0; top:-3px;
+    li{width: 239px; margin:10px 15px; float: left; text-align: center;
+      .price-select{padding: 10px; font-size: 16px; color: #ff7702;
+        b{font-size: 28px; color: #fd7723; font-weight: normal;}
+        i{font-size: 14px; font-style: normal;}
+        s{color: #503700;}
+      }
+      img{margin:5px auto 0;}
+      .mun{width: 84px; margin: 0 auto 10px; display: none;
+        dd{float: left;}
+        dt{float: left; width:40px; text-align: center; line-height: 22px;
+          span{display: block; color: #594215;}
+        }
+        .nopoint{ width: 22px; height: 22px; background: url("../images/in-l.png") no-repeat; cursor: pointer;}
+        .nopoint.add{background: url("../images/in-r.png") no-repeat;}
+      }
+    }
+  }
+  .go-btn{ width: 110px; background: #e4d6bb; color: #4f3706;  border-radius: 45px; cursor: pointer; margin: 0 auto;
+    span{display: block; line-height: 35px; border-radius: 45px;font-size: 14px; text-align: center; letter-spacing: 4px;}
+  }
+}
+
+.sec-4{position: relative; z-index: 2;
+  .evt-content{  width: 1200px;  padding:10px 0 50px;}
+  .more{width: 176px;position: relative; margin: 0 auto; background: #e4c84f; border-radius: 50px; text-align: center;
+    span{ display: block; color: #fff; font-size: 20px; line-height:50px;}
+  }
+}
+
+.evt-footer{ z-index: 1; position: relative;  background:url("../images/foot-bg.jpg") repeat; width: 100%;
+  .evt-content{width: 1200px; color: #503700; text-align: left;}
+    .evt-rules{width: 710px; margin: 0 auto; padding:100px 0 100px 55px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+.price{position: absolute; width: 300px;
+  .price-title{}
+  .time{position: absolute; top: 139px; left: 55px;
+  .time{position: absolute; top: 139px; left: 55px;
+    b{font-weight: normal; color: #a70000;}
+  }
+  ul.buy_btn { overflow: hidden; display: inline-block; margin: 10px 0; }
+  ul.buy_btn li { float: left; height: 40px; margin-right: 5px; }
+  ul.buy_btn li.fr { float: right; }
+  ul.buy_btn li span { display: block; width: 130px; background: #de9092; border: none; color: #fff; cursor: pointer; height: 30px; line-height: 28px; font-size: 17px; text-align: center; border-radius: 15px; }
+}
+
+
+
+
+.floater{  position: fixed; width: 145px; height: 459px; top: 600px;  z-index: 11; left: 50%; margin-left: 520px; cursor: pointer;
+  .tips{ position: absolute; width: 50px; height: 50px; right:-5px; top: -5px; border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12; cursor: Default;
+    span{ font-size:18px; color: #fff; line-height: 50px;}
+  }
+  .fudai{margin-left: -15px; cursor: default;}
+}
+
+
+

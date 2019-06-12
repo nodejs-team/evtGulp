@@ -1,0 +1,77 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.evt-container .btns {
+  width: 207px;
+  height: 67px;
+  background: #f19ec2;
+  top: 982px;
+  left: 130px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.evt-container .btns span {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  line-height: 67px;
+}
+
+.sec-banner {
+  position: relative;
+}
+
+.sec-banner img {
+  width: 100%;
+  display: block;
+}
+
+.sec-footer {
+  background: #b17b52;
+}
+
+.sec-footer .evt-content {
+  width: 1000px;
+}
+
+.sec-footer .evt-content .more {
+  position: absolute;
+  right: 82px;
+  bottom: 56px;
+  width: 130px;
+  height: 130px;
+}
+
+.sec-footer .evt-content .hd-guize {
+  width: 610px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.sec-footer .evt-content h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-left: -80px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.sec-footer .evt-content p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.6em;
+  padding-left: 30px;
+  text-indent: -30px;
+  margin-top: 5px;
+}

@@ -2,10 +2,10 @@
  * Created by mcake on 2016/5/24.
  */
 (function ($) {
-
+  /*-----------banner适配小屏幕-------------*/
   /*
    *适配banner适配小屏幕
-   * 给banner里面的元素增加一个class:newPosition
+   * 给banner里面的元素增加一个class:small
    * */
   var maxWidth = $(window).width();
   function BannerRedraw(ele,opts) {
@@ -14,43 +14,45 @@
     this._init();
   }
   BannerRedraw.prototype = {
-    removenewPosition:function () {
+    removenewClass:function () {
+      this.$ele.removeClass("small");
       for(var i=0;i<this.$opts.length;i++){
-        $(this.$opts[i]).removeClass("newPosition");
+        $(this.$opts[i]).removeClass("small");
       }
     },
-    addnewPosition:function () {
+    addnewClass:function () {
+      this.$ele.addClass("small");
       for(var i=0;i<this.$opts.length;i++){
-        $(this.$opts[i]).addClass("newPosition");
+        $(this.$opts[i]).addClass("small");
       }
     },
     _init:function () {
       var self = this;
       if(maxWidth < 1700){
-        self.addnewPosition();
+        self.addnewClass();
       }else{
-        self.removenewPosition();
+        self.removenewClass();
       }
       /*缩放窗口*/
       $(window).resize(function() {
         maxWidth = $(window).width();
         if(maxWidth < 1700){
-          self.addnewPosition();
+          self.addnewClass();
         }else{
-          self.removenewPosition();
+          self.removenewClass();
         }
       });
 
     }
   };
-
-
-
+  window.BannerRedraw = BannerRedraw;
+  /*-----------banner适配小屏幕 end-------------*/
 
   var loadComplete = function () {
 
-    /*父亲节：banner适配小屏*/
-    /*new BannerRedraw(".slides-fatherDay", ['.dis-0','.dis-1','.dis-2','.dis-3','.banner-gif','.zhekou']);*/
+    /*banner适配小屏*/
+    /*new BannerRedraw(".happy-newyear", ['.banner-n']);*/
+    new BannerRedraw(".memberDay-3yue", ['.banner-t']);
 
 
     /*---------- 动画 ----------*/
@@ -367,9 +369,6 @@
       }
     });
   };
-
-
-
 
   function icon2(){
     var height = $("#evt_container").outerHeight();

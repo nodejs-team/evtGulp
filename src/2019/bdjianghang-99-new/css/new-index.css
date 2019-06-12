@@ -49,7 +49,7 @@
 .slideOuter li .fl {
     float: left;
     text-align: left; }
-.slideOuter li .fl.ftitle {
+.slideOuter li .fl.ftitle {text-align: left;
     width: 98px;
     height: 40px;
     overflow: hidden;
@@ -58,10 +58,6 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: left;
-    justify-content: left;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center; }
@@ -207,3 +203,18 @@
 .floater .tips{ position: absolute; width: 50px; height: 50px; right:-5px; top: -5px; border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12; cursor: Default;  }
 
 .floater .tips span{ font-size:18px; color: #fff; line-height: 50px;}
+
+.blur{-webkit-filter: blur(2px) grayscale(0);
+    -moz-filter: blur(2px) grayscale(0);
+    -o-filter: blur(2px) grayscale(0);
+    -ms-filter: blur(2px) grayscale(0);
+    filter: blur(2px) grayscale(0.1);  }
+/*优惠券 彈窗*/
+.Dialogbg-tip{ background-color: #000;  height: 100%;  left: 0;  opacity: 0.5;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: block; -moz-opacity:.5;filter:alpha(opacity=50); }
+
+.Dialog-tip{position: fixed; top: 50%; left: 50%;  box-shadow: 0 0 0 #999; font-size: 18px;  width:360px; margin: -150px  auto 0 -210px;  z-index: 99999; display: block; border-radius: 15px; background: #fff; text-align: center; padding: 30px;}
+.Dialog-tip h2{ line-height: 50px; margin:0 auto; display: block; font-size: 24px; color: #255b9b; }
+.Dialog-tip input{padding: 0 10px; display: block; background: #ebf0f4; line-height: 40px; margin:10px auto; border-radius: 5px; border: none; width: 200px; height: 40px; color: #2469ac;}
+.Dialog-tip .btn-ok{width: 75px; line-height:30px; background: #255b9b; color: #fff; border-radius: 5px; margin: 20px auto; cursor: pointer;}
+
+

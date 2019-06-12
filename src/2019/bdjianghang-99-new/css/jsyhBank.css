@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+body{ padding:0; margin:0;font-family:'Microsoft YaHei','微软雅黑','黑体','SimHei'; margin:0;padding:0;}
+ul,li{padding:0; margin:0; list-style:none;}
+img{border:none}
+input,textarea,div,span{font-family:'Microsoft YaHei','微软雅黑','黑体','SimHei';}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+/****************************************/
+.BD_Construction{min-width:1290px;background:url(/shop/theme/xth1/images/activity/cbc/bg.png) no-repeat center 0;min-height:612px}
+.BD_Blackbox{position:relative;height:612px}
+.BD_Black{width:100%;height:55px;background:#000;position:absolute;bottom:0;left:0;}
+.BD_Black p{color:#9b9b9b;width:820px;margin:0 auto;font-size:18px;font-family:Microsoft Himalaya;text-align:center;margin-top:12px}
+.BD_Halfoff{width:1200px;margin:auto;}
+.Half_off{margin:135px auto 98px auto;font-size:60px; }
+.Half_off,.Double_cease{font-weight:600;color:#6a3906; text-align:center}
+.Double_cease{margin:200px auto 236px auto;width:700px;font-size:57px; }
+.sold_out{background:url(/shop/theme/xth1/images/activity/cbc/sold_out.png) no-repeat center 0;height:289px;margin:153px auto 135px auto;}
+.Surplus{background:url(/shop/theme/xth1/images/activity/cbc/Surplus.png) no-repeat center 0;height:169px;margin-bottom:100px}
+.Digital_number{width:466px;height:169px;margin:auto;margin-left:492px;}
+.Digital_number ul{float:left}
+.Digital_number ul li{position:relative;float:left}
+.Digital_number ul li samp{width:128px;height:3px;background:url(/shop/theme/xth1/images/activity/cbc/line.png) no-repeat;position:absolute;top:78px;left:1px}
+.Digital_number ul li span{color:#7d0000;font-size:108px;font-weight:bold;font-family:'Impact';display:block;width:128px;text-align:center;line-height:152px;width:128px}
+
+/*滚动效果*/
+
+.Roll_pro{width:1200px;margin:0px auto ; position:relative;}
+.btnleft{position:absolute;top:138px;left:-45px;cursor:pointer;}
+.btnright{position:absolute;top:138px;right:-45px;cursor:pointer;}
+.Rollbox,.Rollbox1{width:1200px;height:468px;margin:auto;overflow:hidden;border-bottom:2px #6a3906 solid;}
+.Rollbox ul{}
+.Rollbox ul li,.Rollbox1 ul li{margin:0 10px;width:278px;height:450px;color:#6a3906;font-size:14px;float:left;cursor:pointer;}
+.Rollbox ul li .Discount_nam,.Rollbox1 ul li .Discount_nam{width:278px;display:block}
+.Rollbox ul li span,.Rollbox1 ul li span{float:left;}
+.Rollbox ul li samp,.Rollbox1 ul li samp{float:right; font-family:inherit}
+.Discount{width:278px;float:left;display:block}
+.Discount span{margin-top:8px;}
+.Discount font{color:#a40000;float:right;}
+.Discount font b{font-size:22px;font-weight:normal}
+.Rollbox ul li input{background:#6a3906;font-size:18px;}
+.Rollbox ul li input,.Rollbox1 ul li input{width:277px;height:35px;border:none;color:#fff;margin:20px auto; border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;-webkit-border-radius:3px;border:none; cursor:pointer}
+.Rollbox1 ul li input{background:#707070;font-size:14px;}
+
+.BD_Eventrules{width:1045px;margin:0 auto}
+.French{background:url(/shop/theme/xth1/images/activity/cbc/French.png) no-repeat center 0;width:476px;height:23px;margin:30px auto 0 auto}
+.BD_Event{margin-top:75px;color:#6a3906;font-size:12px;margin-bottom:50px;}
+.BD_Event ul li{line-height:18px;display:block}

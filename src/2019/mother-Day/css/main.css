@@ -1,0 +1,335 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+}
+
+.sec-banner {
+  position: relative;
+  background: url("../images/banner.png") center;
+  z-index: 2;
+  height: 580px;
+  overflow: hidden;
+}
+
+.s-title {
+  display: inline-block;
+  margin: 30px auto;
+}
+
+.hy-title {
+  width: 322px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+  position: relative;
+}
+
+.sec-1 {
+  z-index: 1;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.sec-1 .evt-content {
+  width: 1359px;
+}
+
+.sec-1 .dic-1 {
+  position: absolute;
+  top: 665px;
+  left: 0;
+}
+
+.sec-1 .dic-2 {
+  position: absolute;
+  top: 323px;
+  right: 0;
+}
+
+.sec-1 .word {
+  position: relative;
+  display: inline-block;
+  margin: 90px auto;
+}
+
+.sec-1 .mother-cake {
+  position: relative;
+  width: 1030px;
+  margin: 0 auto;
+  background: #fff7f7;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sec-1 .mother-cake .qkl {
+  position: absolute;
+  top: 150px;
+  right: 70px;
+}
+
+.sec-1 .mother-cake .cake {
+  float: left;
+  position: relative;
+  width: 640px;
+  height: 492px;
+}
+
+.sec-1 .mother-cake .cake img {
+  width: 100%;
+}
+
+.sec-1 .mother-cake .cake-price {
+  float: left;
+  padding: 100px 10px 50px 40px;
+  text-align: left;
+}
+
+.sec-1 .mother-cake .cake-price .price {
+  position: relative;
+}
+
+.sec-1 .mother-cake .cake-price .price .gou {
+  position: absolute;
+  top: 158px;
+  left: 170px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/gou.png") center no-repeat;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.sec-1 .mother-cake .cake-price .price .gou.on {
+  background: url("../images/gou-on.png") center no-repeat;
+}
+
+.sec-1 .mother-cake .cake-price .buy-btn {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.sec-1 .mother-cake .cake-price .buy-btn span {
+  float: left;
+  width: 145px;
+  display: block;
+  background: #f7e4e5;
+  margin-right: 20px;
+  color: #505050;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sec-1 .mother-cake .cake-price .peisong {
+  margin: 20px 0 0 0;
+  line-height: 20px;
+  color: #b39999;
+}
+
+.sec-2 {
+  position: relative;
+  background: #fef5f6;
+  padding: 30px 0 0 0;
+}
+
+.sec-2 .evt-content {
+  width: 1211px;
+  padding-bottom: 60px;
+}
+
+.sec-2 .zh-price {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sec-2 .zh-price .zsong {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ac5c4a;
+}
+
+.sec-2 .zh-price .buy-btn {
+  overflow: hidden;
+  margin: 15px auto;
+}
+
+.sec-2 .zh-price .buy-btn span {
+  width: 145px;
+  display: inline-block;
+  background: #fff;
+  margin-right: 20px;
+  color: #505050;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sec-2 .dis-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.sec-2 .dis-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.sec-4 {
+  position: relative;
+  padding-bottom: 10px;
+  z-index: 2;
+}
+
+.sec-4 .weixin {
+  width: 625px;
+  margin: 30px auto;
+}
+
+.sec-4 .dis-3 {
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+}
+
+.sec-4 .dic-3 {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: #fef5f6;
+  width: 100%;
+  text-align: left;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #000;
+}
+
+.evt-footer .evt-rules {
+  width: 710px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.floater {
+  position: fixed;
+  width: 145px;
+  height: 145px;
+  top: 600px;
+  z-index: 11;
+  left: 50%;
+  margin-left: 520px;
+  cursor: pointer;
+}
+
+.floater .tips {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  background: url("../images/tips.png") center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  z-index: 12;
+  cursor: Default;
+}
+
+.floater .tips span {
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.pagination {
+  position: absolute !important;
+  left: 0;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  background: #fff;
+  margin: 0 5px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.swiper-active-switch {
+  background: #626262;
+  opacity: 1;
+}

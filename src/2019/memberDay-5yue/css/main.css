@@ -1,0 +1,554 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.jpg") repeat;
+  text-align: center;
+}
+
+.sec-banner {
+  background: url("../images/banner.png") center;
+  z-index: 1;
+  height: 550px;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 536px;
+}
+
+.sec-banner .banner-t {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  margin-left: -306px;
+}
+
+.sec-banner .banner-icon {
+  position: absolute;
+  top: 120px;
+  left: 780px;
+}
+
+.hy-title {
+  display: inline-block;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.hy-title .sub-title {
+  margin-top: -10px;
+  font-size: 20px;
+  text-align: center;
+  color: #503600;
+}
+
+.sec-1 {
+  position: relative;
+  padding-top: 100px;
+}
+
+.sec-1 .evt-content {
+  width: 1100px;
+}
+
+.sec-1 .calendar {
+  width: 535px;
+  margin: 0 auto;
+}
+
+.sec-1 .row {
+  position: relative;
+  text-align: left;
+}
+
+.sec-1 .row1 {
+  height: 480px;
+}
+
+.sec-1 .row1 .cake {
+  position: absolute;
+  top: 20px;
+  left: 455px;
+}
+
+.sec-1 .row1 .price {
+  top: 120px;
+  left: 150px;
+}
+
+.sec-1 .row1 .price ul.buy_btn li span {
+  background: #bb3b38;
+}
+
+.sec-1 .row2 {
+  height: 520px;
+}
+
+.sec-1 .row2 .cake {
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.sec-1 .row2 .time {
+  top: 141px;
+  left: 50px;
+}
+
+.sec-1 .row2 .time b {
+  color: #b95556;
+}
+
+.sec-1 .row2 .price {
+  top: 150px;
+  left: 640px;
+}
+
+.sec-1 .row3 {
+  height: 520px;
+}
+
+.sec-1 .row3 .cake {
+  position: absolute;
+  top: 20px;
+  left: 285px;
+}
+
+.sec-1 .row3 .time {
+  top: 133px;
+}
+
+.sec-1 .row3 .time b {
+  color: #d5ad0f;
+}
+
+.sec-1 .row3 .price {
+  top: 120px;
+  left: 150px;
+}
+
+.sec-1 .row3 .price ul.buy_btn li span {
+  background: #edcd3f;
+}
+
+.sec-1 .row4 {
+  height: 520px;
+}
+
+.sec-1 .row4 .cake {
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.sec-1 .row4 .time {
+  top: 141px;
+}
+
+.sec-1 .row4 .time b {
+  color: #d5ad0f;
+}
+
+.sec-1 .row4 .price {
+  top: 150px;
+  left: 640px;
+}
+
+.sec-1 .row4 .price ul.buy_btn li span {
+  background: #edcd3f;
+}
+
+.sec-quan .evt-content {
+  width: 1200px;
+  padding: 40px 0 60px;
+}
+
+.sec-quan .hongbao {
+  position: relative;
+  margin: 10px auto 20px;
+  text-align: center;
+}
+
+.sec-quan .hongbao .hb {
+  position: absolute;
+  bottom: 0;
+  width: 133px;
+  height: 43px;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 43px;
+  cursor: pointer;
+}
+
+.sec-quan .hongbao .hb1 {
+  left: 222px;
+}
+
+.sec-quan .hongbao .hb2 {
+  left: 535px;
+}
+
+.sec-quan .hongbao .hb3 {
+  left: 848px;
+}
+
+.sec-quan .hongbao .hb.on {
+  color: #a19d9d;
+}
+
+.sec-2 {
+  position: relative;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.sec-2 .evt-content {
+  width: 1100px;
+}
+
+.sec-2 .evt-content .row {
+  position: relative;
+  text-align: left;
+}
+
+.sec-2 .evt-content .price-title {
+  margin-bottom: 10px;
+}
+
+.sec-2 .evt-content .row1 {
+  height: 520px;
+}
+
+.sec-2 .evt-content .row1 .cake {
+  position: absolute;
+  top: 20px;
+  left: 515px;
+}
+
+.sec-2 .evt-content .row1 .price {
+  top: 120px;
+  left: 200px;
+}
+
+.sec-2 .evt-content .row1 .price ul.buy_btn li span {
+  background: #c65459;
+}
+
+.sec-2 .evt-content .row2 {
+  height: 520px;
+}
+
+.sec-2 .evt-content .row2 .cake {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.sec-2 .evt-content .row2 .price {
+  top: 150px;
+  left: 640px;
+}
+
+.sec-2 .evt-content .row2 .price ul.buy_btn li span {
+  background: #da778c;
+}
+
+.sec-2 .evt-content .row3 {
+  height: 480px;
+}
+
+.sec-2 .evt-content .row3 .cake {
+  position: absolute;
+  top: 50px;
+  left: 515px;
+}
+
+.sec-2 .evt-content .row3 .price {
+  top: 120px;
+  left: 200px;
+}
+
+.sec-2 .evt-content .row3 .price ul.buy_btn li span {
+  background: #e09091;
+}
+
+.sec-2 .evt-content .row4 {
+  height: 520px;
+}
+
+.sec-2 .evt-content .row4 .cake {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.sec-2 .evt-content .row4 .price {
+  top: 150px;
+  left: 640px;
+}
+
+.sec-2 .evt-content .row4 .price ul.buy_btn li span {
+  background: #e1aa34;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-3 .evt-content {
+  width: 1080px;
+  padding: 10px 0 50px;
+}
+
+.sec-3 .select-li {
+  left: 0;
+  top: -3px;
+}
+
+.sec-3 .select-li li {
+  width: 239px;
+  margin: 10px 15px;
+  float: left;
+  text-align: center;
+}
+
+.sec-3 .select-li li .price-select {
+  padding: 10px;
+  font-size: 16px;
+  color: #ff7702;
+}
+
+.sec-3 .select-li li .price-select b {
+  font-size: 28px;
+  color: #fd7723;
+  font-weight: normal;
+}
+
+.sec-3 .select-li li .price-select i {
+  font-size: 14px;
+  font-style: normal;
+}
+
+.sec-3 .select-li li .price-select s {
+  color: #503700;
+}
+
+.sec-3 .select-li li img {
+  margin: 5px auto 0;
+}
+
+.sec-3 .select-li li .mun {
+  width: 84px;
+  margin: 0 auto 10px;
+  display: none;
+}
+
+.sec-3 .select-li li .mun dd {
+  float: left;
+}
+
+.sec-3 .select-li li .mun dt {
+  float: left;
+  width: 40px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.sec-3 .select-li li .mun dt span {
+  display: block;
+  color: #594215;
+}
+
+.sec-3 .select-li li .mun .nopoint {
+  width: 22px;
+  height: 22px;
+  background: url("../images/in-l.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-3 .select-li li .mun .nopoint.add {
+  background: url("../images/in-r.png") no-repeat;
+}
+
+.sec-3 .go-btn {
+  width: 110px;
+  background: #e4d6bb;
+  color: #4f3706;
+  border-radius: 45px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.sec-3 .go-btn span {
+  display: block;
+  line-height: 35px;
+  border-radius: 45px;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+.sec-4 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-4 .evt-content {
+  width: 1200px;
+  padding: 10px 0 50px;
+}
+
+.sec-4 .more {
+  width: 176px;
+  position: relative;
+  margin: 0 auto;
+  background: #e4c84f;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.sec-4 .more span {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/foot-bg.jpg") repeat;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #503700;
+  text-align: left;
+}
+
+.evt-footer .evt-rules {
+  width: 710px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.price {
+  position: absolute;
+  width: 300px;
+}
+
+.price .time {
+  position: absolute;
+  top: 139px;
+  left: 55px;
+}
+
+.price .time b {
+  font-weight: normal;
+  color: #a70000;
+}
+
+.price ul.buy_btn {
+  overflow: hidden;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.price ul.buy_btn li {
+  float: left;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.price ul.buy_btn li.fr {
+  float: right;
+}
+
+.price ul.buy_btn li span {
+  display: block;
+  width: 130px;
+  background: #de9092;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 30px;
+  line-height: 28px;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.floater {
+  position: fixed;
+  width: 145px;
+  height: 459px;
+  top: 600px;
+  z-index: 11;
+  left: 50%;
+  margin-left: 520px;
+  cursor: pointer;
+}
+
+.floater .tips {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  background: url("../images/tips.png") center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  z-index: 12;
+  cursor: Default;
+}
+
+.floater .tips span {
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.floater .fudai {
+  margin-left: -15px;
+  cursor: default;
+}

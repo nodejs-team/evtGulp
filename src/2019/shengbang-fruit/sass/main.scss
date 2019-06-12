@@ -1,0 +1,119 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+
+.evt-container{ overflow: hidden; background: url("../images/bg.jpg") repeat;
+  .evt-content{width: 1200px !important;}
+  .btns{ width: 178px; height: 40px; background:url("../images/btn-bg.png") no-repeat; text-align: center; border-radius: 1px; cursor: pointer; float: left; margin-top: 30px; margin-right: 10px;
+    span{ display: block; color: #fff; font-size: 20px; line-height: 40px;}
+  }
+}
+
+
+
+.sec-banner{ position: relative; z-index: 2; width:100%; height: 589px; background: url("../images/banner.png") center;}
+
+.s-title{display: inline-block; padding:70px 0; margin: 0 auto; }
+
+
+.sec-1{position: relative; z-index: 1; padding-top:10px;
+  .evt-content{width: 1200px; text-align: center;
+    .dis{position: absolute; }
+    .dis-1{ top:40px; left: -100px;}
+    .dis-2{ top:600px; right: -350px;}
+    .dis-3{ top:1310px; left: -280px;}
+
+    .item{position: relative; width: 1180px; height: 602px; background: url("../images/item-bg.png") no-repeat; text-align: left;
+      .cake{position: absolute; top: 70px; left: 540px;}
+      .price{position: absolute; top: 123px; left: 100px;}
+      .title{margin: 0 0 20px 0;}
+      .select{position: absolute; top: 115px; left: 360px;
+        ul{
+          li{ width: 36px; height: 35px; background: url("../images/gou-1-1.png"); margin-bottom: 52px; cursor: pointer; }
+          li.on{ background: url("../images/gou-1-2.png");}
+        }
+      }
+    }
+    .item-2{
+      .cake{top: 120px; left: 80px;}
+      .price{ top: 123px; left: 600px;
+        ul{
+          li{ background: url("../images/gou-2-1.png");}
+          li.on{ background: url("../images/gou-2-2.png");}
+        }
+      }
+      .goubtn{
+        span{background: url("../images/go-buy-2.png") no-repeat; }
+      }
+    }
+
+    .item-3{
+      .cake{}
+      .price{
+        ul{
+          li{ background: url("../images/gou-3-1.png"); }
+          li.on{ background: url("../images/gou-3-2.png");}
+        }
+      }
+      .goubtn{
+        span{background: url("../images/go-buy-3.png") no-repeat; }
+      }
+    }
+  }
+}
+
+.goubtn{ padding: 20px 0;
+  span{display: inline-block; width: 147px; height:31px; margin: 0 10px 0 0; background: url("../images/go-buy-1.png") no-repeat; }
+}
+
+
+.sec-3{  position: relative; z-index: 1;
+  .evt-content { position: relative; width: 1200px; text-align: center;
+    .more{width: 255px;  margin:70px auto;}
+    .code{ display: inline-block; margin:0 auto 70px;}
+  }
+}
+
+
+
+
+.sec-footer{
+  position: relative; background: #e8edd7;z-index: 2;
+  .evt-content { width: 1200px; padding: 100px 0; color: #000; text-align: center;
+    .hd-guize{ display: inline-block; margin: 0 auto; text-align: left;}
+
+    h2{
+      font-size:24px; font-weight: normal;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size:16px;
+      line-height: 1.8em;
+      padding-left: 1em;
+      text-indent: -1em;
+      margin-top: 5px;
+    }
+  }
+}
+
+
+@media screen and (max-width:1700px) {
+   .sec-3{
+     .evt-content{height: 440px;
+       .price{top: 50px;}
+       .select{top: 275px;}
+     }
+      .cake{width:720px;
+        img{width: 100%;}
+      }
+   }
+}
+
+
+

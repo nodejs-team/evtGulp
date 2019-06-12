@@ -31,7 +31,7 @@
 
   /*判断小屏幕
   *适配banner在第一屏显示完全
-  * 给banner里面的元素增加一个class:newPosition
+  * 给banner里面的元素增加一个class:small
   * */
   var maxWidth = $(window).width();
   function BannerRedraw(ele,opts) {
@@ -40,14 +40,14 @@
     this._init();
   }
   BannerRedraw.prototype = {
-    removenewPosition:function () {
+    removenewClass:function () {
       this.$ele.removeClass("small");
       for(var i=0;i<this.$opts.length;i++){
         $(this.$opts[i]).removeClass("small");
       }
     },
-    addnewPosition:function () {
-       this.$ele.addClass("small");
+    addnewClass:function () {
+      this.$ele.addClass("small");
       for(var i=0;i<this.$opts.length;i++){
         $(this.$opts[i]).addClass("small");
       }
@@ -55,17 +55,17 @@
     _init:function () {
       var self = this;
       if(maxWidth < 1700){
-        self.addnewPosition();
+        self.addnewClass();
       }else{
-        self.removenewPosition();
+        self.removenewClass();
       }
       /*缩放窗口*/
       $(window).resize(function() {
         maxWidth = $(window).width();
         if(maxWidth < 1700){
-          self.addnewPosition();
+          self.addnewClass();
         }else{
-          self.removenewPosition();
+          self.removenewClass();
         }
       });
 

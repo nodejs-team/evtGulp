@@ -1,0 +1,118 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background:url("../images/bg.jpg") repeat; text-align: center; }
+
+.sec-banner{
+  background:url("../images/banner.png") center; z-index: 1; height: 695px; overflow: hidden;
+}
+
+.hy-title{display: inline-block; margin: 0 auto 50px; position: relative; }
+.goubtn{ padding: 20px 0;
+  span{display: inline-block; width: 125px; height:30px; margin: 0 10px 0 0; background: url("../images/gobuy.png") no-repeat; }
+}
+
+.sec-0{  position: relative;
+  .evt-content{ width: 1200px;
+    .shengbang{display: inline-block; margin: 0 auto 50px;}
+    .shengbang-price{ position: relative; display: inline-block; margin:-80px auto 50px;
+      .gou{position: absolute; top:90px; left: 290px;width: 31px; height: 30px; background: url("../images/gou-1-1.png"); cursor: pointer;}
+      .gou.on{ background: url("../images/gou-1-2.png");}
+      .select{position: absolute; top:139px; left: 426px;
+        ul{
+          li{ width: 31px; height: 30px; background: url("../images/gou-1-1.png"); margin-bottom:22px; cursor: pointer; }
+          li.on{ background: url("../images/gou-1-2.png");}
+        }
+      }
+
+    }
+  }
+}
+
+.sec-1{  position: relative; padding: 83px 0; background: url("../images/s-bg.png") top;
+  .evt-content{ width: 1200px; }
+  .row{ width: 690px; height: 354px; margin: 0 auto 100px; position: relative; background: #fff; border-radius: 10px; overflow: hidden; }
+
+  .price{
+    h2, h2 span,s,.price_num dl dt span,.huangou{color: #4c5c84;}
+    .buy_btn_box span{background: #7998c1 !important;}
+  }
+  .row1{
+    .cake{position: absolute; top:0; right:0;}
+    .price{ top:50px; left:50px;}
+  }
+  .row2{
+    .cake{position: absolute; top:0; left:0;}
+    .price{ top:50px; left:400px;
+
+    }
+  }
+  .row3{
+    .cake{position: absolute; top:0; right:0;}
+    .price{ top:50px; left: 50px;
+
+    }
+  }
+}
+
+.sec-3{  position: relative; z-index: 2;
+  .evt-content{ width: 1200px; padding: 80px 0;
+    .code{display: inline-block; margin: 0 auto;}
+    .dis-1{position: absolute; left:20px; bottom: -10px; }
+    .dis-2{position: absolute; right:-20px; bottom: -4px;}
+  }
+}
+
+
+
+.evt-footer{ z-index: 1; text-align: left;
+  position: relative;  background:#d9e1eb url("../images/line.png") top no-repeat;
+  .evt-content{width: 1200px; color: #6a6a6a;}
+
+    .evt-rules{width: 900px; margin: 0 auto; padding:100px 0 100px 0px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+.price{text-align: left; position: absolute;
+  .price-title{position: relative; margin-bottom: 80px;}
+  h2{font-size: 18px; font-style: normal; font-weight: normal;
+    i{ font-style: normal;}
+    span{font-size: 26px;}
+  }
+  .xs{position: absolute; left: 168px; top: 126px;}
+  .huangou { position: relative; width: 210px; font-size: 14px; color: #9b4245; margin: 10px auto; cursor: pointer; padding-left: 21px; text-align: left; }
+  .huangou .icnone { position: absolute; left: 0; top: 50%; margin-top: -9px; width: 18px; height: 17px; z-index: 1; }
+  .huangou .icon { position: absolute; left: 0; top: 50%; margin-top: -9px; width: 18px; height: 17px; z-index: 2;  }
+  .price .huangou {moz-user-select: -moz-none;-moz-user-select: none;-o-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none; }
+  .icon,.icnone{background: url("../images/icon-1.png"); }
+  .icon.on{background: url("../images/icon-1-h.png");}
+  .buy_btn_box{
+    span{display: block; width: 125px; height: 30px; line-height: 30px; background: #7998c1; color: #fff; text-align: center;}
+
+  }
+}
+
+
+.floater{  position: fixed; width: 145px; height: 145px; top: 600px; z-index: 11; left: 50%; margin-left: 520px; cursor: pointer;
+  .tips{ position: absolute; width: 50px; height: 50px; right:-5px; top: -5px; border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12; cursor: Default;
+    span{ font-size:18px; color: #fff; line-height: 50px;}
+  }
+}
+
+
+

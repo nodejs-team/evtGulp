@@ -64,6 +64,16 @@ background: #a5002f;
   }
 
     /*活动*/
+
+  .happy-newyear{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+      img{width: 100%;}
+    }
+    .banner-n{width: 1037px; top:120px; left: 100px;}
+    .banner-n.small{width: 800px; top:150px; left: 190px;} /*适配较小屏幕*/
+  }
+
   .slides-foodPack{
     .gao-line{top: 0px; left: -68px;}
     .title{ top: 167px; left: 50px;}
@@ -80,14 +90,6 @@ background: #a5002f;
     .banner-t{ top:110px; left: 50%; margin-left: -316px !important;}
   }
 
-  .happy-newyear{
-    .swiper-content{width: 1200px;
-      div{position: absolute;}
-      img{width: 100%;}
-    }
-    .banner-n{width: 1037px; top:120px; left: 100px;}
-  }
-
   .qingren-Day{
     .swiper-content{width: 1200px;
       div{position: absolute;}
@@ -95,13 +97,46 @@ background: #a5002f;
     .lipin{ position: absolute; right: -200px; top: -5px;}
   }
 
-
   .new-people{
     .swiper-content{width: 1200px;
       div{position: absolute;}
       img{width: 100%;}
     }
     .banner-t{ top:225px; left: 50%; margin-left: -358.5px !important;}
+  }
+
+  .memberDay-3yue{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+      img{width: 100%;}
+    }
+    .banner-t{ top:177px; left: 50%; margin-left: -336.5px !important;}
+  }
+
+  .memberDay-5yue{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+      img{width: 100%;}
+    }
+    .banner-t{ top:120px; left: 50%; margin-left: -306px !important;}
+    .banner-icon{ position: absolute; top:120px; left:780px; }
+  }
+
+
+  .slide-520{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+      img{width: 100%;}
+    }
+    .dialogue-1{ position: absolute; top:80px; left: 50%; margin-left: -435.5px; animation: fadeToggle 2s ease-in infinite;}
+    .dialogue-2{ position: absolute; top:80px; left: 50%; margin-left: -435.5px; animation: fadeToggle 2.8s ease-in infinite;}
+    .banner-cake{ position: absolute; bottom:0; left: 50%; margin-left: -234px;}
+    @keyframes fadeToggle {
+      0%{opacity: 0}
+      30%{opacity: 1}
+      70%{opacity: 1}
+      100%{opacity: 0}
+    }
   }
 
 }

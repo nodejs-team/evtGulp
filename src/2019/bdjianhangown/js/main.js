@@ -35,7 +35,7 @@
 
     function NumInit() {
       for(var i=0;i<items.length;i++){
-        console.log(items[i].ponds);
+
         if(items[i].ponds.length>1){
           // console.log(items[i].ix);
           $input.val(items[i].ponds[1]).attr('data-postID', items[i].ids[1]);
@@ -85,13 +85,18 @@
     return function(ix){
       currentItem = items[ix];
       if(currentItem.ponds.length>1){
-        $input.val(currentItem.ponds[1]).attr('data-postID', currentItem.ids[1]);
-        $inputNumber.attr('data-postID', currentItem.ids[1]);
+
+        /*默认1磅*/
+        $input.val(currentItem.ponds[0]).attr('data-postID', currentItem.ids[0]);
+        currentItem.ix=0;
+        /*默认数量*/
+        $inputNumber.attr('data-postID', currentItem.ids[0]);
         $inputNumber.val(1);
         Number=1;
-        currentItem.ix=1;
+
       }else {
         $input.val(currentItem.ponds[currentItem.ix]).attr('data-postID', currentItem.ids[currentItem.ix]);
+        /*默认数量*/
         $inputNumber.attr('data-postID', currentItem.ids[currentItem.ix]);
         $inputNumber.val(1);
         Number=1;

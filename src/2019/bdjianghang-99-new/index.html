@@ -244,6 +244,7 @@
                 <div class="Digital_number">
                     <ul>
                         <li><samp></samp><span>5</span></li>
+                        <li><samp></samp><span>5</span></li>
                         <li style="margin-left:17px"><samp></samp><span>0</span></li>
                     </ul>
                 </div>
@@ -939,6 +940,16 @@
     </p>
 </div>
 
+
+<!--弹窗提示-->
+<div class="Dialogbg-tip" style="display: none;"></div>
+<div class="Dialog-tip" style="display: none;">
+    <h2>请输入杭州建行信用卡卡号</h2>
+    <input type="text" placeholder="请输入卡号前七位">
+    <div class="btn-ok">确定</div>
+</div>
+
+
 <!-- 公共javascript文件 -->
 
 <script type="text/javascript" src="http://betaweb.mcake.com/framework/jquery/jquery-migrate-1.1.1.js?v=1512555728"></script>
@@ -1101,6 +1112,11 @@ G.cust.noRecodeCount("recode_count");
     $(".floater").fadeOut(10);
     $("html,body").animate({scrollTop: 0},500,function () {
       floater();
+    });
+
+    $(".btn-ok").click(function () {
+      $(".evt-container").removeClass("blur");
+      $(".Dialogbg-tip,.Dialog-tip").fadeOut(200);
     });
 </script>
 

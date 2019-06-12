@@ -109,6 +109,34 @@
   height: 550px;
 }
 
+.banner-slides .happy-newyear {
+  /*适配较小屏幕*/
+}
+
+.banner-slides .happy-newyear .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .happy-newyear .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .happy-newyear .swiper-content img {
+  width: 100%;
+}
+
+.banner-slides .happy-newyear .banner-n {
+  width: 1037px;
+  top: 120px;
+  left: 100px;
+}
+
+.banner-slides .happy-newyear .banner-n.small {
+  width: 800px;
+  top: 150px;
+  left: 190px;
+}
+
 .banner-slides .slides-foodPack .gao-line {
   top: 0px;
   left: -68px;
@@ -152,24 +180,6 @@
   margin-left: -316px !important;
 }
 
-.banner-slides .happy-newyear .swiper-content {
-  width: 1200px;
-}
-
-.banner-slides .happy-newyear .swiper-content div {
-  position: absolute;
-}
-
-.banner-slides .happy-newyear .swiper-content img {
-  width: 100%;
-}
-
-.banner-slides .happy-newyear .banner-n {
-  width: 1037px;
-  top: 120px;
-  left: 100px;
-}
-
 .banner-slides .qingren-Day .swiper-content {
   width: 1200px;
 }
@@ -200,6 +210,98 @@
   top: 225px;
   left: 50%;
   margin-left: -358.5px !important;
+}
+
+.banner-slides .memberDay-3yue .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .memberDay-3yue .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .memberDay-3yue .swiper-content img {
+  width: 100%;
+}
+
+.banner-slides .memberDay-3yue .banner-t {
+  top: 177px;
+  left: 50%;
+  margin-left: -336.5px !important;
+}
+
+.banner-slides .memberDay-5yue .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .memberDay-5yue .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .memberDay-5yue .swiper-content img {
+  width: 100%;
+}
+
+.banner-slides .memberDay-5yue .banner-t {
+  top: 120px;
+  left: 50%;
+  margin-left: -306px !important;
+}
+
+.banner-slides .memberDay-5yue .banner-icon {
+  position: absolute;
+  top: 120px;
+  left: 780px;
+}
+
+.banner-slides .slide-520 .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slide-520 .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slide-520 .swiper-content img {
+  width: 100%;
+}
+
+.banner-slides .slide-520 .dialogue-1 {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -435.5px;
+  animation: fadeToggle 2s ease-in infinite;
+}
+
+.banner-slides .slide-520 .dialogue-2 {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -435.5px;
+  animation: fadeToggle 2.8s ease-in infinite;
+}
+
+.banner-slides .slide-520 .banner-cake {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -234px;
+}
+
+@keyframes fadeToggle {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*兼容小屏幕*/

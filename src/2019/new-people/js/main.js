@@ -8,18 +8,11 @@
   var loadComplete = function () {
 
     /*商品价格计算*/
-    new Price('.js_price1',{
-      add:'.add',
-      reduce:'.reduce'
-    },[0,60,0,0],1);
-    new Price('.js_price3',{
-      add:'.add',
-      reduce:'.reduce'
-    },[0,30,0,0],1);
+
     new Price('.js_price2',{
       add:'.add',
       reduce:'.reduce'
-    },[0,0,0,0],0.88);
+    },[0,0,0,0],0.78);
 
 
     /*购物清单*/

@@ -1,0 +1,737 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #fff;
+}
+
+.sec-banner {
+  background: url("../images/banner.png") center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 760px;
+}
+
+.sec-banner .banner-t {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  margin-left: -618.5px;
+}
+
+.hy-title {
+  width: 977px;
+  margin: 0 auto;
+  padding: 100px 0 60px;
+  position: relative;
+}
+
+.sec-0 {
+  background: #fef5f5;
+}
+
+.sec-0 .evt-content {
+  width: 1241px;
+}
+
+.sec-0 .txts {
+  position: relative;
+  width: 966px;
+  height: 361px;
+  background: url("../images/hongbao.png") center no-repeat;
+  margin: -210px auto 0;
+  text-align: center;
+}
+
+.sec-1 .evt-content {
+  width: 1241px;
+}
+
+.sec-1 .lipin {
+  width: 379px;
+  margin: 30px auto;
+}
+
+.sec-2 {
+  background: #fef5f5 url("../images/s-bg.png") bottom no-repeat;
+  padding-bottom: 80px;
+}
+
+.sec-2 .evt-content {
+  width: 1200px;
+}
+
+.sec-2 .choujiang {
+  width: 1100px;
+  padding: 0 50px;
+  margin: 0 auto 50px;
+}
+
+.sec-2 .choujiang ul li {
+  position: relative;
+  float: left;
+  width: 255px;
+  height: 255px;
+  margin-left: 6px;
+  border-radius: 50%;
+}
+
+.sec-2 .choujiang ul li .cover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 255px;
+  height: 255px;
+  background: url("../images/aixin.png") no-repeat;
+  opacity: 0.8;
+  transition: all 1s;
+}
+
+.sec-2 .choujiang ul li p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 50px;
+  color: #d3938e;
+}
+
+.sec-2 .choujiang ul li p.p2 {
+  color: #91a8bc;
+}
+
+.sec-2 .choujiang ul li:nth-of-type(2n) p {
+  color: #91a8bc;
+}
+
+.sec-2 .choujiang ul li.on {
+  border-radius: 50%;
+}
+
+.sec-2 .choujiang ul li.on .cover {
+  display: block;
+}
+
+.sec-2 .jiang-btn {
+  width: 200px;
+  margin: 100px auto;
+  cursor: pointer;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 50px;
+}
+
+.sec-3 .dis-1 {
+  position: absolute;
+  top: 500px;
+  right: -350px;
+  z-index: 1;
+}
+
+.sec-3 .dis-2 {
+  position: absolute;
+  top: 1132px;
+  left: -350px;
+  z-index: 1;
+}
+
+.sec-3 .dis-3 {
+  position: absolute;
+  top: 2200px;
+  right: -350px;
+  z-index: 1;
+}
+
+.sec-3 .dis-4 {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  z-index: 1;
+}
+
+.sec-3 .evt-content {
+  position: relative;
+  z-index: 2;
+  width: 1233px;
+  padding-bottom: 50px;
+  background: #ffffff;
+}
+
+.sec-3 .evt-content .row {
+  position: relative;
+}
+
+.sec-3 .evt-content .price-title {
+  margin-bottom: 10px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.sec-3 .evt-content .price {
+  top: 30px;
+  left: 578px;
+}
+
+.sec-3 .evt-content .price h2 span {
+  font-size: 33px !important;
+}
+
+.sec-3 .evt-content .price h2, .sec-3 .evt-content .price h2 span, .sec-3 .evt-content .price s, .sec-3 .evt-content .price .price_num dl dt span, .sec-3 .evt-content .price .huangou {
+  color: #000;
+}
+
+.sec-3 .evt-content .price ul.price_p li {
+  background: none !important;
+}
+
+.sec-3 .evt-content .price ul.price_p li.cur, .sec-3 .evt-content .price .buy_btn_box span {
+  background: #fff !important;
+}
+
+.sec-3 .evt-content .price .reduce {
+  background: url("../images/reduce-2.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .price .nopoint {
+  background: url("../images/add-2.png") repeat scroll;
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .price .icon {
+  left: auto;
+  right: 0;
+  background: url("../images/icon-1.png");
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .price .icon.on {
+  left: auto;
+  right: 0;
+  background: url("../images/icon-1-h.png");
+  background-size: 100%;
+}
+
+.sec-3 .evt-content .price ul.buy_btn_box {
+  width: 338px;
+  margin: 10px 0;
+}
+
+.sec-3 .evt-content .price ul.buy_btn_box li {
+  margin-right: 0 !important;
+  background: none;
+}
+
+.sec-3 .evt-content .price ul.buy_btn_box li span {
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  background: none;
+  color: #000;
+  border-radius: 0;
+}
+
+.sec-3 .evt-content .row1 {
+  height: 600px;
+}
+
+.sec-3 .evt-content .row1 .cake {
+  position: absolute;
+  top: 0;
+  left: 144px;
+  z-index: 2;
+}
+
+.sec-3 .evt-content .row1 .txt {
+  position: absolute;
+  top: 370px;
+  left: 670px;
+}
+
+.sec-3 .evt-content .row1 .price {
+  top: -36px;
+  left: 570px;
+  z-index: 1;
+}
+
+.sec-3 .evt-content .row2 {
+  height: 600px;
+}
+
+.sec-3 .evt-content .row2 .cake {
+  position: absolute;
+  top: 0;
+  left: 570px;
+  z-index: 2;
+}
+
+.sec-3 .evt-content .row2 .txt {
+  position: absolute;
+  top: 40px;
+  left: 180px;
+}
+
+.sec-3 .evt-content .row2 .price {
+  top: 130px;
+  left: 130px;
+  z-index: 1;
+  background: #e6ecf3;
+}
+
+.sec-3 .evt-content .row3 {
+  height: 600px;
+}
+
+.sec-3 .evt-content .row3 .cake {
+  position: absolute;
+  top: 0;
+  left: 144px;
+  z-index: 2;
+}
+
+.sec-3 .evt-content .row3 .txt {
+  position: absolute;
+  top: 370px;
+  left: 670px;
+}
+
+.sec-3 .evt-content .row3 .price {
+  top: -36px;
+  left: 570px;
+  z-index: 1;
+}
+
+.sec-3 .evt-content .row4 {
+  height: 600px;
+}
+
+.sec-3 .evt-content .row4 .cake {
+  position: absolute;
+  top: 0;
+  left: 570px;
+  z-index: 2;
+}
+
+.sec-3 .evt-content .row4 .txt {
+  position: absolute;
+  top: 40px;
+  left: 180px;
+}
+
+.sec-3 .evt-content .row4 .price {
+  top: 130px;
+  left: 130px;
+  z-index: 1;
+  background: #e6ecf3;
+}
+
+.sec-3 .evt-content .more {
+  width: 398px !important;
+}
+
+.sec-4 {
+  background: #fff;
+}
+
+.sec-4 .hy-title {
+  padding: 50px 0;
+}
+
+.sec-5 {
+  position: relative;
+  z-index: 2;
+  background: #faecec;
+}
+
+.sec-5 .evt-content {
+  width: 1330px;
+  padding: 10px 0 70px;
+}
+
+.sec-5 .hy-title {
+  padding: 50px 0;
+  width: 427px;
+}
+
+.sec-5 .pro-list ul {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.sec-5 .pro-list ul li {
+  position: relative;
+  float: left;
+  width: 276px;
+  margin-right: 15px;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.sec-5 .pro-list ul li img {
+  width: 100%;
+}
+
+.sec-5 .pro-list ul li p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.sec-5 .pro-list ul li .num {
+  width: 84px;
+  margin: 15px auto;
+}
+
+.sec-5 .pro-list ul li .num .m_left {
+  width: 20px;
+  height: 20px;
+  background: url("../images/reduce-1.png") no-repeat;
+  background-size: 100%;
+  float: left;
+  cursor: pointer;
+}
+
+.sec-5 .pro-list ul li .num dt {
+  width: 40px;
+  float: left;
+  line-height: 18px;
+  font-size: 16px;
+}
+
+.sec-5 .pro-list ul li .num .m_right {
+  width: 20px;
+  height: 20px;
+  background: url("../images/add-1.png") no-repeat;
+  background-size: 100%;
+  float: left;
+  cursor: pointer;
+}
+
+.sec-5 .pro-list ul li .buy-btn {
+  width: 280px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.sec-5 .pro-list ul li .buy-btn span {
+  display: block;
+  width: 130px;
+  color: #fff;
+  background: #ecd4d4;
+  line-height: 34px;
+  text-align: center;
+  float: left;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.sec-5 .pro-list ul li .nums {
+  position: absolute;
+  top: -10px;
+  left: -2px;
+  width: 21px;
+  height: 15px;
+}
+
+.sec-5 .pro-list ul li .nums.num1 {
+  background: url("../images/num.png") 0 0 no-repeat;
+}
+
+.sec-5 .pro-list ul li .nums.num2 {
+  background: url("../images/num.png") -39px 0 no-repeat;
+}
+
+.sec-5 .pro-list ul li .nums.num3 {
+  background: url("../images/num.png") -79px 0 no-repeat;
+}
+
+.sec-5 .pro-list ul li .nums.num4 {
+  background: url("../images/num.png") -120px 0 no-repeat;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: #f5faff;
+  width: 100%;
+}
+
+.evt-footer .dis-5 {
+  position: absolute;
+  top: -105px;
+  left: 740px;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #000;
+}
+
+.evt-footer .evt-rules {
+  width: 710px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.price {
+  width: 510px !important;
+  height: 370px;
+  background: #faecec;
+}
+
+.price .content {
+  margin: 80px 0 20px 70px;
+}
+
+.price .huangou {
+  float: left;
+  width: 180px !important;
+  padding-left: 10px !important;
+}
+
+.price .jiage {
+  width: 400px;
+}
+
+.price h2 {
+  float: left;
+  color: #000 !important;
+  line-height: 35px !important;
+}
+
+.price s {
+  float: left;
+  line-height: 37px;
+  color: #000 !important;
+  margin-left: 10px;
+}
+
+.price ul.price_p li {
+  background: #ffffff !important;
+  border-radius: 0 !important;
+  border: #000 1px solid;
+  color: #000;
+}
+
+.price ul.price_p li.cur {
+  color: #000 !important;
+}
+
+.price .jisuan {
+  position: relative;
+  width: 338px !important;
+}
+
+.price .price_p {
+  width: 220px !important;
+  margin: 10px 0 !important;
+}
+
+.price .price_num {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+
+.price .price_num dl dd {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.price ul.buy_btn_box {
+  margin-top: 20px !important;
+}
+
+.price ul.buy_btn_box li span {
+  width: 155px !important;
+}
+
+/*抽奖 彈窗*/
+.Dialogbg-tip {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.Dialog-tip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  width: 460px;
+  margin: -270px  auto 0 -230px;
+  padding: 0;
+  z-index: 99999;
+  display: none;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.Dialog-tip .tip-wrap .tip-header {
+  text-align: center;
+  padding: 10px 0;
+  background: #fff;
+  border-radius: 15px 15px 0 0;
+}
+
+.Dialog-tip .tip-wrap .tip-header .jp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 50px auto 20px;
+}
+
+.Dialog-tip .tip-wrap .tip-header h2 {
+  font-size: 34px;
+  line-height: 60px;
+  color: #f44053;
+}
+
+.Dialog-tip .tip-wrap .tip-header p {
+  font-size: 13px;
+  line-height: 30px;
+  color: #000;
+}
+
+.Dialog-tip .tip-wrap .tip-header p b {
+  color: #828282;
+}
+
+.Dialog-tip .tip-wrap .tip-header p span {
+  font-size: 31px;
+  color: #f44053;
+  line-height: 50px;
+}
+
+.Dialog-tip .tip-wrap .tip-footer {
+  border-top: #d0d0d0 1px solid;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 20px 0;
+}
+
+.Dialog-tip .tip-wrap .tip-footer p {
+  font-size: 15px;
+  color: #828282;
+  line-height: 24px;
+}
+
+.Dialog-tip .tip-wrap .go-btn {
+  position: absolute;
+  bottom: -70px;
+  width: 370px;
+  left: 50%;
+  margin-left: -185px;
+}
+
+.Dialog-tip .tip-wrap .go-btn span {
+  display: block;
+  width: 156px;
+  height: 50px;
+  border-radius: 50px;
+  background: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+.Dialog-tip .tip-wrap .go-btn .go-wait {
+  float: right;
+}
+
+.Dialog-tip .tip-2 .tip-header img {
+  margin: 0 auto;
+}
+
+.Dialog-tip .closesx {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: -50px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+.floater {
+  position: fixed;
+  width: 145px;
+  height: 145px;
+  top: 600px;
+  z-index: 11;
+  left: 50%;
+  margin-left: 520px;
+  cursor: pointer;
+}
+
+.floater .tips {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  background: url("../images/tips.png") center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  z-index: 12;
+  cursor: Default;
+}
+
+.floater .tips span {
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}

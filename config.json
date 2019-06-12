@@ -4,8 +4,8 @@
   "host": "localhost",
   "port": "8081"
  },
- "tinypngapi": "Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
- "beiyong":"scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
+ "tinypngapi": "scz0D_NUirlIzDuA1U6m4rwvS24z7s0o",
+ "beiyong":"Lv4IxKbb9SJ6M3OG-lyEA86akPCQBmqE",
  "ftp": {
   "host": "",
   "user": "",
@@ -13,7 +13,7 @@
   "remotePath": ""
  },
  "activeName":"2019/",
- "projectName": "mcake-banner",
+ "projectName": "618",
  "revPrefix": "https://act.mcake.com/fangli/2019/pc/",
- "revPrefix-edm": "http://edm.mcake.com/fangli/2018-pc/"
+ "revPrefix-edm": "http://edm.mcake.com/fangli/2019-pc/"
 }

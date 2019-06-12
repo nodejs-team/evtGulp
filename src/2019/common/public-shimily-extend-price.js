@@ -91,19 +91,31 @@
       ele.parents(".price").find('.old-price').html(self.totalOldprice.toFixed(2));
       ele.parents(".price").find('.now-price').html(self.totalPrice.toFixed(2));
     },
-    /*折扣：通过判断磅数决定减多少*/
+    /*折扣：通过判断磅数决定减多少   增加1.5磅，2.5磅，3.5磅立减*/
     disFun:function (bs,discount) {
       switch (bs){
         case 1:
           this.dis = discount[0];
           break;
+        case 1.5:
+          this.dis = discount[0];
+          break;
         case 2:
+          this.dis = discount[1];
+          break;
+        case 2.5:
           this.dis = discount[1];
           break;
         case 3:
           this.dis = discount[2];
           break;
+        case 3.5:
+          this.dis = discount[2];
+          break;
         case 5:
+          this.dis = discount[3];
+          break;
+        case 5.5:
           this.dis = discount[3];
           break;
       }

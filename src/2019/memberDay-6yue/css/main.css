@@ -1,0 +1,327 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.jpg") repeat;
+}
+
+.sec-banner {
+  background: url("../images/banner.png") center;
+  z-index: 1;
+  height: 549px;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 536px;
+}
+
+.sec-banner .banner-t {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  margin-left: -336.5px;
+}
+
+.hy-title {
+  width: 747px;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.sec-1 {
+  position: relative;
+  padding-top: 100px;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+}
+
+.sec-1 .row {
+  position: relative;
+}
+
+.sec-1 .row1 {
+  height: 390px;
+}
+
+.sec-1 .row1 .cake {
+  position: absolute;
+  top: 0;
+  left: 568px;
+}
+
+.sec-1 .row1 .price {
+  top: 87px;
+  left: 250px;
+}
+
+.sec-1 .row1 .price h2, .sec-1 .row1 .price h2 span, .sec-1 .row1 .price s, .sec-1 .row1 .price .price_num dl dt span, .sec-1 .row1 .price .huangou {
+  color: #a60d0e;
+}
+
+.sec-1 .row1 .price .buy_btn_box span {
+  background: #dc6162 !important;
+}
+
+.sec-1 .row1 .price .buy_btn_box li.on span {
+  background: #a60d0e !important;
+}
+
+.sec-1 .row2 {
+  height: 530px;
+}
+
+.sec-1 .row2 .cake {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+}
+
+.sec-1 .row2 .price {
+  top: 120px;
+  left: 668px;
+}
+
+.sec-1 .row2 .price h2, .sec-1 .row2 .price h2 span, .sec-1 .row2 .price s, .sec-1 .row2 .price .price_num dl dt span, .sec-1 .row2 .price .huangou {
+  color: #d27700;
+}
+
+.sec-1 .row2 .price .buy_btn_box span {
+  background: #cf9f61 !important;
+}
+
+.sec-1 .row2 .price .buy_btn_box li.on span {
+  background: #d27700 !important;
+}
+
+.sec-1 .row3 {
+  height: 520px;
+}
+
+.sec-1 .row3 .cake {
+  position: absolute;
+  top: 50px;
+  left: 518px;
+}
+
+.sec-1 .row3 .price {
+  top: 127px;
+  left: 270px;
+}
+
+.sec-1 .row3 .price h2, .sec-1 .row3 .price h2 span, .sec-1 .row3 .price s, .sec-1 .row3 .price .price_num dl dt span, .sec-1 .row3 .price .huangou {
+  color: #bd8910;
+}
+
+.sec-1 .row3 .price ul.price_p li.cur, .sec-1 .row3 .price .buy_btn_box span {
+  background: #cf9f61 !important;
+}
+
+.sec-1 .row3 .price .buy_btn_box li.on span {
+  background: #bd8910 !important;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-3 .evt-content {
+  width: 1080px;
+  padding: 10px 0 50px;
+}
+
+.sec-3 .select-li {
+  left: 0;
+  top: -3px;
+}
+
+.sec-3 .select-li li {
+  width: 239px;
+  margin: 10px 15px;
+  float: left;
+  text-align: center;
+}
+
+.sec-3 .select-li li .price-select {
+  padding: 10px;
+  font-size: 16px;
+  color: #4f3706;
+}
+
+.sec-3 .select-li li .price-select b {
+  font-size: 28px;
+  color: #fd7723;
+  font-weight: normal;
+}
+
+.sec-3 .select-li li .price-select i {
+  font-size: 14px;
+  font-style: normal;
+}
+
+.sec-3 .select-li li img {
+  margin: 5px auto 0;
+}
+
+.sec-3 .select-li li .mun {
+  width: 84px;
+  margin: 0 auto 10px;
+}
+
+.sec-3 .select-li li .mun dd {
+  float: left;
+}
+
+.sec-3 .select-li li .mun dt {
+  float: left;
+  width: 40px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.sec-3 .select-li li .mun dt span {
+  display: block;
+  color: #594215;
+}
+
+.sec-3 .select-li li .mun .nopoint {
+  width: 22px;
+  height: 22px;
+  background: url("../images/in-l.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-3 .select-li li .mun .nopoint.add {
+  background: url("../images/in-r.png") no-repeat;
+}
+
+.sec-3 .go-btn {
+  position: relative;
+  width: 250px;
+  border-radius: 45px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.sec-3 .go-btn span {
+  display: block;
+  float: left;
+  width: 110px;
+  line-height: 35px;
+  background: #e4d6bb;
+  color: #4f3706;
+  border-radius: 45px;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0 5px;
+}
+
+.sec-3 .go-btn span.on {
+  background: #d6b980;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/footer-bg.png") repeat;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #874821;
+}
+
+.evt-footer .evt-rules {
+  width: 1020px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.price {
+  text-align: left;
+}
+
+.price .price-title {
+  margin-bottom: 10px !important;
+}
+
+.price .price-title {
+  margin-bottom: 10px !important;
+}
+
+.price ul.buy_btn_box {
+  margin: 10px 0;
+  width: 300px;
+}
+
+.price ul.buy_btn_box li {
+  height: 30px;
+}
+
+.floater {
+  position: fixed;
+  width: 145px;
+  height: 145px;
+  top: 600px;
+  z-index: 11;
+  left: 50%;
+  margin-left: 520px;
+  cursor: pointer;
+}
+
+.floater .tips {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+  background: url("../images/tips.png") center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  z-index: 12;
+  cursor: Default;
+}
+
+.floater .tips span {
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}
