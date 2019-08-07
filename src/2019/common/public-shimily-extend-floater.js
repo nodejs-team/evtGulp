@@ -56,7 +56,9 @@
     };
 
    /*兼容小屏，重新设置floater的marginLeft值*/
-    var mLeft = 550 * (winWidth<1700? 1700 : winWidth) / 1920;
+
+   var mLeft = 550 * (winWidth<1700? 1700 : winWidth+500) / 1920;
+
     floater.css({
       marginLeft: mLeft
     });

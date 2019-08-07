@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+
+    <link rel="stylesheet" type="text/css" href="https://act.mcake.com/fangli/2018/pc/common/comm_header.css?v=1458723714">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+
+<div class="header">
+
+    <div class="header_top_box">
+        <div class="header_top">
+            <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+                <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+                    <div class="wallbox wall_top">
+                        <div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+                        <div class="logoer">
+                            <a href="http://ebsig.mcake.com">
+                               <!-- <img src="https://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">-->
+                            </a>
+                        </div>
+                        <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+                        <ul class="navbar">
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start-->
+                            <li class="record" style="display: none;">
+                                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+                            </li>
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end-->
+                            <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+                            <li class="m_cart">
+                                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="wallbox">
+                    <div class="header_right">
+                        <ul class="phone_delivery">
+                            <li class="phone"><span>4006-678-678</span><i></i></li>
+                            <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+                        </ul>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+                        </li>
+                        <li>
+                            <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/member_center.html" target="_blank">
+                                <samp>Mon M'CAKE</samp>
+                                <span>会员中心</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
+        <div class="evt-content">
+            <div class="banner-t" data-anim="slide-up" data-delay="0.2"><img src="images/banner-t.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="sec-question" data-anim="fade-in" data-delay="0.2">
+        <div class="evt-content">
+            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-1.png" alt=""></div>
+
+            <div class="pct">
+                <div class="cover"></div>
+               <!-- 因为canvas有跨域问题，此处要还成当前路径-->
+                <img id="tulip" src="images/cover.png" style="display: none;" />
+                <div class="guaka">
+                    <canvas />
+                </div>
+                <!--<div id="gua1" class="guaka">
+                    <img id="gua1_img" src="images/gua_image.png" style="position: absolute;" />
+                    <canvas id="front" style="position:absolute;no-repeat"></canvas>
+                </div>-->
+                <div class="pct-question">
+                    <div class="qt q1" data-answer="0" style="display: block;">
+                        <h2>1.您是从什么渠道知道MCAKE的？(单选)</h2>
+                        <div class="options toMuch clearfix">
+                            <span data-id="1"><div class="select"></div>A.朋友推荐</span>
+                            <span data-id="2"><div class="select"></div>B.官网/微信/微博</span>
+                            <span data-id="3"><div class="select"></div>C.媒体广告</span>
+                            <span data-id="4"><div class="select"></div>D.线下试吃 </span>
+                            <span data-id="5"><div class="select"></div>E.其他 </span>
+                            <span></span>
+                        </div>
+                        <div class="next">下一题</div>
+                    </div>
+                    <div class="qt q2" data-answer="0">
+                        <h2>2.您选择MCAKE的理由是什么？（单选）</h2>
+                        <div class="options  clearfix">
+                            <span data-id="1"><div class="select"></div>A.品牌</span>
+                            <span data-id="2"><div class="select"></div>B.口味</span>
+                            <span data-id="3"><div class="select"></div>C.价格</span>
+                            <span data-id="4"><div class="select"></div>D.服务</span>
+                        </div>
+                        <div class="next">下一题</div>
+                    </div>
+                    <div class="qt q3" data-answer="0">
+                        <h2>3.您喜欢什么形状的蛋糕？（单选）</h2>
+                        <div class="options toShort clearfix">
+                            <span data-id="1"><div class="select"></div>A.圆形</span>
+                            <span data-id="2"><div class="select"></div>B.方形</span>
+                            <span data-id="3"><div class="select"></div>C.其他</span>
+                        </div>
+                        <div class="next">下一题</div>
+                    </div>
+                    <div class="qt q4" data-answer="0">
+                        <h2>4.您更青睐什么口味？（单选）</h2>
+                        <div class="options clearfix">
+                            <span data-id="1"><div class="select"></div>A.拿破仑</span>
+                            <span data-id="2"><div class="select"></div>B.鲜奶</span>
+                            <span data-id="3"><div class="select"></div>C.水果</span>
+                            <span data-id="4"><div class="select"></div>D.其它</span>
+                        </div>
+                        <div class="next">下一题</div>
+                    </div>
+                    <div class="qt q5">
+                        <h2>5.请留下您的意见或建议：</h2>
+                        <div class="options">
+                            <textarea></textarea>
+                        </div>
+                        <div class="submit">提交答案</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec-1">
+        <div class="evt-content">
+            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-2.png" alt=""></div>
+            <div class="cakes products" data-anim="slide-up" data-delay="0.8">
+                <ul class="clearfix">
+                    <li data-sku="111" data-price="298">
+                        <img src="images/cake-1.png" class="zoom" alt="">
+                        <div class="m-title">蓝莓轻乳拿破仑</div>
+                        <div class="m-price">优惠价<span><i>￥</i>258.00</span>/2磅 <s>原价：￥298.00</s></div>
+                        <div class="m-btn"><span>立即购买</span></div>
+                        <div class="m-car"></div>
+                    </li>
+                    <li data-sku="112" data-price="298">
+                        <img src="images/cake-2.png" class="zoom" alt="">
+                        <div class="m-title">香溢新芝</div>
+                        <div class="m-price">优惠价<span><i>￥</i>258.00</span>/2磅 <s>原价：￥298.00</s></div>
+                        <div class="m-btn"><span>立即购买</span></div>
+                        <div class="m-car"></div>
+                    </li>
+                    <li data-sku="113" data-price="318">
+                        <img src="images/cake-3.png" class="zoom" alt="">
+                        <div class="m-title">榴莲雪塔</div>
+                        <div class="m-price">优惠价<span><i>￥</i>278.00</span>/2磅 <s>原价：￥318.00</s></div>
+                        <div class="m-btn"><span>立即购买</span></div>
+                        <div class="m-car"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sec-3">
+        <div class="evt-content">
+            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-3.png" alt=""></div>
+            <div class="select-li" data-anim="slide-up" data-delay="0.6">
+                <ul class="clearfix">
+                    <li data-sku="001" data-price="48"><img src="images/xs-1.png" alt=""><div class="m-car"></div></li>
+                    <li data-sku="002" data-price="48"><img src="images/xs-2.png" alt=""><div class="m-car"></div></li>
+                    <li class="noBd" data-sku="003" data-price="48"><img src="images/xs-3.png" alt=""><div class="m-car"></div></li>
+                </ul>
+                <div class="price">
+                    <p>蛋糕+小食 合计: ￥<span class="zuhe">298</span></p>
+                    <s>原价<span class="zuhe-old">346</span>元</s>
+                    <div class="buy-btn"><span>立即购买</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则</h2>
+                <p>1、活动时间：2019年7月2日-2019年7月30日（每周二上午10：00）</p>
+                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝、现金</p>
+                <p>4、活动内容：<br>
+                . 活动页面单独购买指定3款蛋糕（花漾·年华2磅、Mojito 柠•漾2磅、 摩登茶道2磅）中的任意一款，
+                可享受立减40元会员优惠价<br>
+                . 活动页面下单订购指定3款蛋糕（花漾·年华2磅、Mojito 柠•漾2磅、 摩登茶道2磅）中的任意一款
+                搭配指定3款小食（原味萝拉小朵100g、 知识小生100g、 草莓味半熟芝士）中的任意一款可享受
+                会员优惠价298元（原价346元）</p>
+                <p>5、单笔订单中立减商品不可与优惠券同享</p>
+                <p>6、本活动与会员等级制度、积分同享，但不与其他优惠同享</p>
+                <p>7、本活动最终解释权归MCAKE所有</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="Dialogbg-quan"></div>
+<div class="Dialog-quan">
+    <div class="closes"></div>
+    <div class="quan quan-1" style="display: block;">
+        <div class="card"><img src="images/card-1.png" alt=""></div>
+        <div class="go-use"><img src="images/go-use.png" alt=""></div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2018/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2018/pc/common/main.js"></script>
+
+<!--折扣价格抹零-->
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/guaguaka.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+  $(".submit").click(function () {
+    QuanDialog(2);/*12345*/
+  });
+</script>
+</body>
+</html>

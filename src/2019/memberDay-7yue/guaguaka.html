@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <script type="text/javascript" src="js/jquery-1.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://act.mcake.com/fangli/2018/pc/common/comm_header.css?v=1458723714">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container">
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
+        <div class="evt-content">
+            <canvas />
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2018/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2018/pc/common/main.js"></script>
+
+<!--折扣价格抹零-->
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+
+  (function(bodyStyle) {
+
+    bodyStyle.mozUserSelect = 'none';
+
+    bodyStyle.webkitUserSelect = 'none';
+
+
+
+    var img = new Image();
+
+    var canvas = document.querySelector('canvas');
+
+    canvas.style.backgroundColor='transparent';
+
+    canvas.style.position = 'absolute';
+
+
+
+    img.addEventListener('load', function(e) {
+
+      var ctx;
+
+      var w = img.width,
+
+        h = img.height;
+
+      var offsetX = canvas.offsetLeft,
+
+        offsetY = canvas.offsetTop;
+
+      var mousedown = false;
+
+
+      /**添加*/
+      window.addEventListener('scroll', function() {
+
+
+      });
+
+
+
+      function layer(ctx) {
+
+        ctx.fillStyle = 'gray';
+
+        ctx.fillRect(0, 0, w, h);
+
+      }
+
+
+
+      function eventDown(e){
+
+        e.preventDefault();
+
+        mousedown=true;
+
+      }
+
+
+
+      function eventUp(e){
+
+        e.preventDefault();
+
+        mousedown=false;
+
+      }
+
+
+
+      function eventMove(e){
+
+        e.preventDefault();
+
+
+
+        if(mousedown) {
+
+          if(e.changedTouches){
+
+            e=e.changedTouches[e.changedTouches.length-1];
+
+          }
+
+          var rect = canvas.getBoundingClientRect();
+
+          var x = (e.clientX + document.body.scrollLeft || e.pageX) - rect.left * (canvas.width / rect.width) || 0,
+
+            y = (e.clientY + document.body.scrollTop || e.pageY) - rect.top * (canvas.height / rect.height) || 0;
+
+          console.log(x,y);
+
+          with(ctx) {
+
+            beginPath()
+
+            arc(x, y, 5, 0, Math.PI * 2);
+
+            fill();  /*画*/
+
+          }
+
+        }
+
+      }
+
+
+
+      canvas.width=w;
+
+      canvas.height=h;
+
+      canvas.style.backgroundImage='url('+img.src+')';
+
+      ctx=canvas.getContext('2d');
+
+      ctx.fillStyle='transparent';
+
+      ctx.fillRect(0, 0, w, h);
+
+      layer(ctx);
+
+
+
+      ctx.globalCompositeOperation = 'destination-out';
+
+
+
+      canvas.addEventListener('touchstart', eventDown);
+
+      canvas.addEventListener('touchend', eventUp);
+
+      canvas.addEventListener('touchmove', eventMove);
+
+      canvas.addEventListener('mousedown', eventDown);
+
+      canvas.addEventListener('mouseup', eventUp);
+
+      canvas.addEventListener('mousemove', eventMove);
+
+    });
+
+    img.src = 'img/prize.jpg';
+
+  })(document.body.style);
+
+
+
+
+
+</script>
+</body>
+</html>

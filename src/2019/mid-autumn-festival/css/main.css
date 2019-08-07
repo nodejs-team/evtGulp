@@ -1,0 +1,672 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.jpg") repeat;
+  text-align: center;
+}
+
+.sec-banner {
+  overflow: hidden;
+  height: 658px;
+  background: url("../images/banner.jpg") center;
+}
+
+.sec-banner.by {
+  background: url("../images/plan2/banner.jpg") center;
+}
+
+.hy-title {
+  display: inline-block;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.more {
+  display: inline-block;
+  margin: 80px auto;
+  position: relative;
+}
+
+.goubtn {
+  padding: 20px 0;
+}
+
+.goubtn span {
+  display: inline-block;
+  width: 125px;
+  height: 30px;
+  margin: 0 10px 0 0;
+  background: url("../images/gobuy.png") no-repeat;
+}
+
+.dis {
+  position: absolute;
+}
+
+.sec-0 {
+  position: relative;
+  padding: 10px 0;
+}
+
+.sec-0 .evt-content {
+  width: 1280px;
+}
+
+.sec-0 .mid {
+  width: 295px;
+  margin: 0 auto;
+}
+
+.sec-0 .zhuanqu {
+  position: relative;
+  width: 1280px;
+  margin: 60px auto 107px;
+}
+
+.sec-0 .zhuanqu .card {
+  position: absolute;
+  top: 170px;
+  left: 54px;
+  width: 244px;
+  height: 240px;
+  cursor: pointer;
+}
+
+.sec-0 .zhuanqu .card-2 {
+  left: 324px;
+}
+
+.sec-0 .zhuanqu .card-word {
+  position: absolute;
+  top: 182px;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: url("../images/card-word-1.png") center no-repeat;
+}
+
+.sec-0 .zhuanqu .card-word-2 {
+  left: 0;
+  background: url("../images/card-word-2.png") center no-repeat;
+}
+
+.sec-0 .zhuanqu .card-word-1.on {
+  background: url("../images/card-word-1-on.png") center no-repeat;
+}
+
+.sec-0 .zhuanqu .card-word-2.on {
+  background: url("../images/card-word-1-on.png") center no-repeat;
+}
+
+.sec-0 .word {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.sec-0 .dis-1 {
+  top: 550px;
+  right: -350px;
+}
+
+.sec-1 {
+  position: relative;
+  margin-top: 107px;
+  padding: 0 0 70px;
+  height: 517px;
+  background: url("../images/row-bg.png") repeat-x;
+}
+
+.sec-1 .dis {
+  position: absolute;
+}
+
+.sec-1 .dis-3 {
+  top: -110px;
+  left: -170px;
+}
+
+.sec-1 .dis-2 {
+  top: -120px;
+  right: -380px;
+}
+
+.sec-1 .dis-4 {
+  top: -30px;
+  left: -350px;
+}
+
+.sec-1 .dis-5 {
+  top: 460px;
+  right: -135px;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+}
+
+.sec-1 .moon {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 980px;
+}
+
+.sec-1 .price {
+  position: absolute;
+  top: 320px;
+  left: 979px;
+}
+
+.sec-1 .content {
+  position: relative;
+  text-align: left;
+}
+
+.sec-1 .zn-price {
+  width: 300px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #e7401f;
+  font-family: "宋体" !important;
+}
+
+.sec-1 .zn-price i {
+  font-style: normal;
+  font-family: "Microsoft YaHei", "微软雅黑", "黑体", SimHei !important;
+}
+
+.sec-1 .zn-price span {
+  display: inline-block;
+  line-height: 33px;
+  font-size: 30px;
+  font-family: "宋体" !important;
+}
+
+.sec-1 .zn-price s {
+  margin-left: 10px;
+}
+
+.sec-1.sec-2 {
+  margin-top: 186px;
+}
+
+.sec-1.sec-2 .moon {
+  top: 0;
+  left: auto;
+  right: -50px;
+}
+
+.sec-1.sec-2 .price {
+  top: 290px;
+  left: 0;
+}
+
+.gobuy {
+  margin-top: 20px;
+}
+
+.gobuy span {
+  background: url("../images/buy-btn.png");
+  width: 122px;
+  height: 34px;
+  display: block;
+  cursor: pointer;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-3 .evt-content {
+  width: 1200px;
+  padding: 80px 0;
+}
+
+.sec-3 .evt-content .dis-6 {
+  top: 300px;
+  left: -350px;
+}
+
+.sec-3 .evt-content .dis-7 {
+  top: 400px;
+  right: -350px;
+}
+
+.sec-3 .evt-content .dis-8 {
+  top: 1130px;
+  right: -350px;
+}
+
+.sec-3 .evt-content .moon-1 {
+  display: inline-block;
+  margin: 40px auto;
+}
+
+.sec-3 .evt-content .moon-2 {
+  display: inline-block;
+  margin: 40px auto;
+}
+
+.evt-footer {
+  z-index: 1;
+  text-align: left;
+  position: relative;
+  background: url("../images/foot-bg.png") repeat-x;
+}
+
+.evt-footer .evt-content {
+  width: 1280px;
+  color: #401808;
+  padding: 208px 0 100px;
+}
+
+.evt-footer .evt-rules {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 50px 0;
+  border: #cabdab 1px solid;
+}
+
+.evt-footer .evt-rules .foot-left {
+  float: left;
+  width: 350px;
+  text-align: center;
+  height: 100%;
+}
+
+.evt-footer .evt-rules .foot-left img {
+  margin-top: 40px;
+}
+
+.evt-footer .evt-rules .content {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-left: 63px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 14px;
+  line-height: 2.2em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*备用方案*/
+.sec-card {
+  width: 100%;
+  background: url("../images/plan2/card.png") top;
+  margin-top: -10px;
+}
+
+.sec-card .evt-content {
+  position: relative;
+  height: 647px;
+}
+
+.sec-card .buy-btn {
+  position: absolute;
+  bottom: 55px;
+  left: 72px;
+  cursor: pointer;
+}
+
+.sec-card .buy-btn-2 {
+  left: 610px;
+}
+
+.sec-main {
+  position: relative;
+  padding-top: 115px;
+}
+
+.sec-main .dis-1 {
+  top: 900px;
+  left: -430px;
+}
+
+.sec-main .dis-2 {
+  top: 650px;
+  right: -280px;
+}
+
+.sec-main .dis-3 {
+  top: 1700px;
+  right: -470px;
+}
+
+.sec-main .cakes {
+  margin-top: 20px;
+  position: relative;
+}
+
+.sec-main .cakes dl {
+  width: 965px;
+}
+
+.sec-main .cakes dl dd {
+  width: 440px;
+  height: 455px;
+  position: relative;
+  float: left;
+  background: #fff;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.sec-main .cakes dl dd .zoom {
+  position: relative;
+  margin-top: 195px;
+  z-index: 1;
+}
+
+.sec-main .cakes dl dd .cake-title {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  z-index: 1;
+}
+
+.sec-main .cakes dl dd .m-btn, .sec-main .cakes dl dd .m-btn-2 {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  text-align: center;
+  width: 133px;
+  height: 79px;
+  background: url("../images/plan2/buy-btn.png") no-repeat;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.sec-main .cakes dl dd .m-btn-2 {
+  background: url("../images/plan2/buy-btn2.png") no-repeat;
+}
+
+/*蛋糕选择弹窗*/
+.Dialogbg-Select {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.Dialog-Select {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  width: 520px;
+  height: auto;
+  margin-top: -210px;
+  margin-left: -260px;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  border-radius: 10px;
+  display: none;
+}
+
+.s-closes {
+  position: absolute;
+  right: -30px;
+  top: 8px;
+  width: 17px;
+  height: 17px;
+  background: url("../images/close.png");
+  cursor: pointer;
+}
+
+.Select {
+  position: relative;
+  color: #000;
+  height: 100%;
+}
+
+.Select .s-title {
+  height: 96px;
+  background: #f2f2f2;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Select .s-title h2 {
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.Select .s-title b {
+  font-size: 14px;
+  color: #9a9a9a;
+  font-weight: normal;
+  padding-left: 40px;
+}
+
+.Select .s-bangshu {
+  padding-top: 30px;
+}
+
+.Select .s-bangshu ul {
+  margin-left: 40px;
+}
+
+.Select .s-bangshu ul li {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  text-align: center;
+  color: #4a4a4a;
+  margin-right: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.Select .s-bangshu ul li i {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.Select .s-bangshu ul li.on {
+  background: #f6e1dd;
+  color: #c43818;
+}
+
+.Select .d-tips {
+  padding: 15px 40px;
+  color: #4c4c4c;
+  font-size: 12px;
+}
+
+.Select .s-num {
+  border-top: #ededed 1px solid;
+  padding-left: 40px;
+}
+
+.Select .s-num b {
+  display: inline-block;
+  width: 200px;
+  margin: 10px 0;
+  line-height: 52px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-num .nums {
+  display: inline-block;
+  margin: 15px 40px 0;
+  float: right;
+  height: 52px;
+  position: relative;
+  width: 150px;
+}
+
+.Select .s-num .nums a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2px;
+}
+
+.Select .s-num .nums .minus {
+  background: url("../images/btn-1.png") center no-repeat;
+  background-size: 100%;
+  left: 0;
+}
+
+.Select .s-num .nums .plus {
+  background: url("../images/btn-2.png") center no-repeat;
+  background-size: 100%;
+  right: 0;
+}
+
+.Select .s-num .nums input {
+  background: none;
+  border: none;
+  display: block;
+  font-size: 26px;
+  line-height: 45px;
+  left: 35px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 80px;
+  color: #000;
+}
+
+.Select .s-prices {
+  border-top: #ededed 1px solid;
+  font-size: 22px;
+  padding: 0 40px;
+}
+
+.Select .s-prices b {
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+  line-height: 56px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-prices p {
+  display: block;
+  line-height: 56px;
+  text-align: right;
+}
+
+.Select .s-prices span {
+  font-size: 26px;
+}
+
+.Select .s-prices i {
+  font-style: normal;
+  font-size: 16px;
+}
+
+.Select .s-prices s {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.Select .btns {
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  height: 55px;
+  line-height: 55px;
+  flex-direction: row;
+  text-align: center;
+  font-size: 18px;
+  color: #c43818;
+}
+
+.Select .btns div {
+  flex: 1;
+  cursor: pointer;
+  width: 100%;
+}
+
+.Select .btns .go-car {
+  background: #f6e1dd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  float: left;
+  color: #fff;
+}
+
+.Select .btns .go-car.on {
+  background: #f6e1dd;
+}
+
+.Select .btns .go-buy {
+  background: #f6e1dd;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  float: left;
+}
+
+.Select .btns .go-buy.on {
+  background: #f6e1dd;
+}

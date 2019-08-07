@@ -1,0 +1,465 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.png") repeat;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+.sec-banner {
+  background: url("../images/banner.png") center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 547px;
+}
+
+.sec-banner .banner-t {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  margin-left: -336.5px;
+}
+
+.sec-question {
+  position: relative;
+  padding: 80px 0 0 0;
+}
+
+.sec-question .evt-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.sec-question .pct {
+  position: relative;
+  width: 669px;
+  height: 285px;
+  margin: 0 auto;
+}
+
+.sec-question .pct .guaka {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 649px;
+  height: 265px;
+  z-index: 50;
+}
+
+.sec-question .pct .cover {
+  position: absolute;
+  width: 649px;
+  height: 265px;
+  top: 0;
+  left: 4px;
+  background: url("../images/cover-ie8.png");
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+}
+
+.sec-question .pct .pct-question {
+  width: 669px;
+  height: 285px;
+  background: url("../images/pct-bg.png");
+  padding-top: 1px;
+}
+
+.sec-question .pct .pct-question .qt {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -240px;
+  text-align: center;
+  width: 480px;
+  color: #000;
+  display: none;
+  z-index: 1;
+}
+
+.sec-question .pct .pct-question .qt h2 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+
+.sec-question .pct .pct-question .qt .options {
+  margin: 0 auto;
+}
+
+.sec-question .pct .pct-question .qt span {
+  position: relative;
+  width: 140px;
+  text-align: left;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 20px;
+  line-height: 30px;
+  text-indent: 27px;
+}
+
+.sec-question .pct .pct-question .qt span .select {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background: url("../images/select.png");
+  cursor: pointer;
+}
+
+.sec-question .pct .pct-question .qt span .select.on {
+  background: url("../images/select-ed.png");
+}
+
+.sec-question .pct .pct-question .qt .next, .sec-question .pct .pct-question .qt .submit {
+  text-align: center;
+  width: 100px;
+  line-height: 24px;
+  color: #000;
+  background: #d3dbbd;
+  border-radius: 15px;
+  margin: 10px auto 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sec-question .pct .pct-question .qt.q1 {
+  top: 46px;
+}
+
+.sec-question .pct .pct-question .qt.q2 {
+  top: 55px;
+}
+
+.sec-question .pct .pct-question .qt.q5 {
+  top: 55px;
+}
+
+.sec-question .pct .pct-question .qt.q4 {
+  top: 55px;
+}
+
+.sec-question .pct .pct-question .options.toMuch {
+  top: 20px;
+  width: 441px;
+}
+
+.sec-question .pct .pct-question .options.toMuch span {
+  width: 170px !important;
+  float: left;
+}
+
+.sec-question .pct .pct-question .options.toShort span {
+  width: 85px !important;
+}
+
+.sec-question .pct .pct-question .options.short span {
+  width: 127px !important;
+}
+
+.sec-question .pct .pct-question textarea {
+  width: 300px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.hy-title {
+  width: 747px;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.sec-1 {
+  position: relative;
+  padding-top: 80px;
+}
+
+.sec-1 .evt-content {
+  width: 1280px;
+}
+
+.sec-1 .cakes {
+  margin-top: -30px;
+  position: relative;
+}
+
+.sec-1 .cakes ul {
+  margin-left: -20px;
+}
+
+.sec-1 .cakes ul li {
+  width: 405px;
+  height: 430px;
+  margin-left: 20px;
+  float: left;
+  position: relative;
+  margin-top: 45px;
+  border-radius: 5px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 0 20px #e9ecea;
+}
+
+.sec-1 .cakes ul li img {
+  width: 407px;
+  margin: 0 auto;
+}
+
+.sec-1 .cakes ul li .m-title {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+
+.sec-1 .cakes ul li s {
+  color: #4f4f4f;
+  font-size: 14px;
+}
+
+.sec-1 .cakes ul li .m-price {
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+}
+
+.sec-1 .cakes ul li .m-price span {
+  color: #889d36;
+  font-size: 30px;
+}
+
+.sec-1 .cakes ul li .m-price span i {
+  font-size: 14px;
+  font-style: normal;
+}
+
+.sec-1 .cakes ul li .m-car {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: 54px;
+  text-align: center;
+  width: 34px;
+  height: 34px;
+  background: url("../images/gou-1.png");
+  cursor: pointer;
+}
+
+.sec-1 .cakes ul li .m-car.on {
+  background: url("../images/gou-2.png");
+}
+
+.sec-1 .cakes ul li .m-btn {
+  text-align: center;
+  width: 120px;
+  line-height: 30px;
+  color: #000;
+  background: #d3dbbd;
+  border-radius: 15px;
+  margin: 10px 0 0 125px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 2;
+  padding: 80px 0;
+}
+
+.sec-3 .evt-content {
+  width: 1280px;
+  padding: 10px 0 50px;
+}
+
+.sec-3 .select-li {
+  left: 0;
+  top: -3px;
+  background: #ffffff;
+  padding: 50px 0;
+  box-shadow: 0 0 20px #e9ecea;
+}
+
+.sec-3 .select-li ul {
+  width: 1086px;
+  margin: 0 auto;
+}
+
+.sec-3 .select-li li {
+  width: 300px;
+  margin: 10px 30px;
+  float: left;
+  text-align: center;
+  border-right: #e8e8e8 1px dashed;
+}
+
+.sec-3 .select-li li img {
+  margin: 5px auto 0;
+}
+
+.sec-3 .select-li li.noBd {
+  border: none;
+}
+
+.sec-3 .select-li .price {
+  text-align: center;
+  margin-top: 40px;
+  line-height: 28px;
+}
+
+.sec-3 .select-li .price p {
+  font-size: 18px;
+  color: #6b7e24;
+}
+
+.sec-3 .select-li .price s {
+  font-size: 16px;
+  color: #000;
+}
+
+.sec-3 .select-li .m-car {
+  text-align: center;
+  width: 34px;
+  height: 34px;
+  background: url("../images/gou-1.png");
+  border-radius: 34px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.sec-3 .select-li .m-car.on {
+  background: url("../images/gou-2.png");
+}
+
+.sec-3 .select-li .buy-btn {
+  text-align: center;
+  width: 160px;
+  line-height: 30px;
+  color: #000;
+  background: #d3dbbd;
+  border-radius: 15px;
+  margin: 10px auto;
+  font-size: 16px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/footer-bg.png") repeat;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #4f3606;
+}
+
+.evt-footer .evt-rules {
+  width: 900px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70);
+}
+
+.Dialog-quan {
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  height: auto !important;
+  padding: 1px;
+  top: 50%;
+  left: 50%;
+  margin: -180px auto 0 -200px !important;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+}
+
+.Dialog-quan .closes {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -18px;
+  right: -40px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+.Dialog-quan .quan {
+  position: relative;
+  background: #fffdf1;
+  padding: 30px 20px 80px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Dialog-quan .quan .go-use {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -62.5px;
+  width: 125px;
+  cursor: pointer;
+}

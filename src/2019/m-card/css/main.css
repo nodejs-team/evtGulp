@@ -1,0 +1,145 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #ffffff;
+  text-align: center;
+}
+
+.sec-banner {
+  position: relative;
+}
+
+.sec-banner img {
+  width: 100%;
+}
+
+.sec-banner .b-t {
+  position: absolute;
+  width: 648px;
+  top: 158px;
+  left: 50%;
+  margin-left: -324px;
+  z-index: 1;
+}
+
+.sec-banner .b-time {
+  position: absolute;
+  width: 600px;
+  top: 285px;
+  left: 50%;
+  margin-left: -300px;
+  text-align: center;
+  color: #ffebcc;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.sec-banner .goubtn {
+  position: absolute;
+  width: 230px;
+  height: 64px;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -115px;
+  background: url("../images/btn.png") no-repeat;
+  z-index: 2;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hy-title {
+  display: inline-block;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.sec-1 {
+  position: relative;
+  padding: 80px 0;
+}
+
+.sec-1 .dis {
+  position: absolute;
+}
+
+.sec-1 .dis-1 {
+  top: 50px;
+  left: -350px;
+}
+
+.sec-1 .dis-2 {
+  top: -100px;
+  right: -350px;
+}
+
+.sec-1 .evt-content {
+  width: 1200px;
+}
+
+.sec-1 .qy {
+  margin: 0 auto;
+}
+
+.sec-2 {
+  position: relative;
+  padding: 80px 0;
+  background: url("../images/s-bg.jpg") center;
+}
+
+.sec-2 .evt-content {
+  width: 1200px;
+}
+
+.sec-2 .qy {
+  margin: 0 auto;
+}
+
+.evt-footer {
+  z-index: 1;
+  text-align: left;
+  position: relative;
+  background: #fff4e6;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #000;
+}
+
+.evt-footer .evt-rules {
+  width: 850px;
+  margin: 0 auto;
+  padding: 100px 0 100px 0px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
