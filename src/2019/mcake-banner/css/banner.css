@@ -304,6 +304,67 @@
   }
 }
 
+.banner-slides .slide-wsj .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slide-wsj .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slide-wsj .swiper-content img {
+  width: 100%;
+}
+
+.banner-slides .slide-wsj .b-title {
+  top: 60px;
+  left: 50%;
+  margin: 0 auto 0 -200px !important;
+}
+
+.banner-slides .slide-wsj .nangua {
+  top: 105px;
+  left: 50%;
+  margin: 0 auto 0 -225px;
+  width: 450px;
+  height: 434px;
+}
+
+.banner-slides .slide-wsj .zhizhu {
+  top: 0;
+  left: 50%;
+  margin: 0 auto 0 417.5px;
+}
+
+.banner-slides .slide-wsj .zhizhu {
+  animation: zhizhu 5s infinite alternate ease-out;
+}
+
+@keyframes zhizhu {
+  0% {
+    top: -20%;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.banner-slides .slide-christmas .swiper-content {
+  width: 1200px;
+}
+
+.banner-slides .slide-christmas .swiper-content div {
+  position: absolute;
+}
+
+.banner-slides .slide-christmas .baner-gif {
+  top: 87px;
+  left: 50%;
+  margin: 0 auto 0 154px !important;
+}
+
 /*兼容小屏幕*/
 @media screen and (max-width: 1650px) {
   .slides-bafei .cake {

@@ -3,22 +3,8 @@
  */
 (function($){
 
-  /*兼容小屏调整头图内文字的高度*/
-  function initBtitle(){
-    var btitle = $('.b-t'),
-      bTime = $('.b-time'),
-      winWidth = $(window).width();
-    btitle.css('top', 158 * (winWidth<1280? 1280 : winWidth) / 1920);
-    bTime.css('top', 258 * (winWidth<1280? 1280 : winWidth) / 1920);
-    /*topBtn.css('top',517 * (winWidth<1280? 1280 : winWidth) / 1920);*/
-  }
-
   var loadComplete = function () {
 
-    initBtitle();
-    window.onresize = function(){
-      initBtitle();
-    }
 
     $("html,body").animate({scrollTop: 0},500);
 

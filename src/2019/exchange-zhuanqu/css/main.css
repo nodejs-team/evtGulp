@@ -395,3 +395,121 @@ textarea {
   top: 100px;
   left: 718px;
 }
+
+.bangshu {
+  text-align: center;
+  color: #8b462a;
+  font-size: 22px;
+  line-height: 50px;
+}
+
+.bangshu b {
+  font-size: 18px;
+}
+
+.exchange2 .sec-banner {
+  background: url("../images/new1-banner.png") center;
+}
+
+.exchange2 .sec-3 .evt-content .row1 .cake {
+  position: absolute;
+  top: 0;
+  left: 214px;
+}
+
+.exchange2 .sec-3 .evt-content .row1 .price {
+  top: 90px;
+  left: 710px;
+}
+
+.exchange2 .sec-3 .evt-content .row2 .cake {
+  position: absolute;
+  top: 0;
+  left: 670px;
+}
+
+.exchange2 .sec-3 .evt-content .row2 .price {
+  top: 87px;
+  left: 260px;
+}
+
+.exchange2 .sec-3 .evt-content .row3 .cake {
+  position: absolute;
+  top: 0;
+  left: 248px;
+}
+
+.exchange2 .sec-3 .evt-content .row3 .price {
+  top: 100px;
+  left: 748px;
+}
+
+.exchange2 .sec-3 .evt-content .row4 .cake {
+  position: absolute;
+  top: 0;
+  left: 490px;
+}
+
+.exchange2 .sec-3 .evt-content .row4 .price {
+  top: 100px;
+  left: 220px;
+}
+
+.exchange2 .sec-3 .evt-content .row5 {
+  height: 500px;
+}
+
+.exchange2 .sec-3 .evt-content .row5 .cake {
+  position: absolute;
+  top: 0;
+  left: 178px;
+}
+
+.exchange2 .sec-3 .evt-content .row5 .price {
+  top: 100px;
+  left: 748px;
+}
+
+.exchange2 .sec-3 .evt-content .row6 .cake {
+  position: absolute;
+  top: 0;
+  left: 490px;
+}
+
+.exchange2 .sec-3 .evt-content .row6 .price {
+  top: 100px;
+  left: 230px;
+}
+
+.exchange2 .sec-3 .evt-content .row7 .cake {
+  position: absolute;
+  top: 0;
+  left: 178px;
+}
+
+.exchange2 .sec-3 .evt-content .row7 .price {
+  top: 100px;
+  left: 748px;
+}
+
+.exchange2 .sec-3 .evt-content .row8 .cake {
+  position: absolute;
+  top: 0;
+  left: 590px;
+}
+
+.exchange2 .sec-3 .evt-content .row8 .price {
+  top: 100px;
+  left: 230px;
+}
+
+.exchange2 .sec-3 .evt-content .row9 .cake {
+  position: absolute;
+  top: 0;
+  left: 248px;
+}
+
+.exchange2 .sec-3 .evt-content .row9 .price {
+  top: 100px;
+  left: 718px;
+}

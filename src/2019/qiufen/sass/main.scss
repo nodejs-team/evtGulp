@@ -1,0 +1,130 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background:#fffef4; }
+
+.sec-banner{
+  background:url("../images/banner.png") center; z-index: 1; height: 656px; overflow: hidden;
+  .evt-content{ width: 1200px; margin: 0 auto; height: 536px; }
+  .banner-t{ position: absolute; top:40px; left: 50%; margin-left: -295px;}
+}
+
+.hy-title{width: 231px; margin:50px auto; position: relative;}
+
+
+
+.sec-quan{ position: relative; z-index: 2;
+  .zp{ width: 459px; margin:-60px auto 0;}
+}
+
+.sec-main{  position: relative; z-index: 1; padding-top: 20px; padding-bottom: 50px;
+  .dis{position: absolute;}
+  .dis-1{top: -200px; left: -350px;}
+  .dis-2{top: 557px; left: -350px;}
+  .dis-3{top: 122px; right: -350px;}
+  .dis-4{top: 1260px; left: -200px;}
+  .dis-5{bottom:50px; right: -300px;}
+  .evt-content{
+    width: 1200px;
+    .row{position: relative;
+      .cake{position: absolute; z-index: 2;}
+    }
+    .price-title{margin-bottom:10px;}
+    .xiaoduo{position: absolute; top:185px; left: 290px; width: 81px; height: 72px; background: url("../images/xiaoduo.png"); z-index: 1; }
+    .row1{height: 480px;
+      .cake{ top: 20px; left: 570px; z-index: 2;}
+      .price{ top:87px; left: 266px;
+        ul.price_p li {background:#f0c46f !important;}
+        h2, h2 span,s,.price_num dl dt span,.huangou{color: #e0a941;}
+        ul.price_p li.cur, .buy_btn_box span{background: #e0a941 !important;}
+        .icon,.icnone{background: url("../images/icon-1.png"); }
+        .icon.on{background: url("../images/icon-1-h.png");}
+      }
+
+    }
+    .row2{height: 480px;
+      .cake{top:20px; left:125px;}
+      .price{ top:80px; left: 628px;
+        ul.price_p li {background:#ca9776 !important;}
+        h2, h2 span,s,.price_num dl dt span,.huangou{color: #9d6d4e;}
+        ul.price_p li.cur, .buy_btn_box span{background: #9d6d4e !important;}
+        .icon,.icnone{background: url("../images/icon-2.png"); }
+        .icon.on{background: url("../images/icon-2-h.png");}
+      }
+    }
+    .row3{height: 480px;
+      .cake{ top: 20px; left: 531px;}
+      .price{ top:87px; left: 246px;
+        ul.price_p li {background:#ca9776 !important;}
+        h2, h2 span,s,.price_num dl dt span,.huangou{color: #9d6d4e;}
+        ul.price_p li.cur, .buy_btn_box span{background: #9d6d4e !important;}
+        .icon,.icnone{background: url("../images/icon-2.png"); }
+        .icon.on{background: url("../images/icon-2-h.png");}
+      }
+    }
+    .row4{height: 480px;
+      .cake{top:20px; left:125px;}
+      .price{ top:80px; left: 628px;
+        ul.price_p li {background:#ca9776 !important;}
+        h2, h2 span,s,.price_num dl dt span,.huangou{color: #9d6d4e;}
+        ul.price_p li.cur, .buy_btn_box span{background: #9d6d4e !important;}
+        .icon,.icnone{background: url("../images/icon-2.png"); }
+        .icon.on{background: url("../images/icon-2-h.png");}
+      }
+    }
+
+
+  }
+}
+
+
+.more{width: 144px;position: relative; margin: 0 auto; background: #cd686d; border-radius: 50px; text-align: center;
+  span{ display: block; color: #fff; font-size: 20px; line-height:35px;}
+}
+
+
+.evt-footer{ z-index: 1;
+  position: relative;  background:#f8eed1;
+  .evt-content{width: 1200px; color: #401e01;}
+    .foot-1{position: absolute; top: 0; left: -350px;}
+    .foot-2{position: absolute; top: 0; right: -350px;}
+    .evt-rules{width: 1040px; margin: 0 auto; padding:100px 0 100px 55px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+
+/*价格*/
+.price{text-align: left;}
+.price b{font-weight: normal;}
+.price .price-title{margin-bottom: 10px !important;}
+.price .huangou{width:270px !important; font-size: 18px; margin: 10px 0;}
+.price .price_num{display: none;}
+.price .price-title,.price .price_p,.price .price_num,.price .buy_btn_box,.price h2,.price s{margin:13px 0 0 !important; text-align: left !important;}
+
+
+
+.floater{  position: fixed; width: 145px; height: 459px; top: 600px;  z-index: 11; left: 50%; margin-left: 520px; cursor: pointer;
+  .tips{ position: absolute; width: 50px; height: 50px; right:-5px; top: -5px; border-radius: 50%; background:url("../images/tips.png") center no-repeat; background-size: 100%; text-align: center; z-index: 12; cursor: Default;
+    span{ font-size:18px; color: #fff; line-height: 50px;}
+  }
+
+}
+
+
+

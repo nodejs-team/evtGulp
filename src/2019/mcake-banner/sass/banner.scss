@@ -139,6 +139,30 @@ background: #a5002f;
     }
   }
 
+  .slide-wsj{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+      img{width: 100%;}
+    }
+    .b-title{top:60px; left: 50%; margin:0 auto 0 -200px !important;}
+    .nangua{top:105px; left: 50%; margin:0 auto 0 -225px; width: 450px; height: 434px; }
+    .zhizhu{top:0; left: 50%; margin:0 auto 0 417.5px;}
+    .zhizhu{ animation:zhizhu 5s infinite alternate ease-out;}
+    @keyframes zhizhu{
+      0%{top:-20%; opacity: 1;}
+      100%{top:0; opacity: 1;}
+    }
+  }
+
+  .slide-christmas{
+    .swiper-content{width: 1200px;
+      div{position: absolute;}
+    }
+    .baner-gif{top:87px; left: 50%; margin:0 auto 0 154px !important;}
+
+  }
+
+
 }
 
 

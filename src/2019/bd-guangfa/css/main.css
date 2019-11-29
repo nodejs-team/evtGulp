@@ -40,6 +40,15 @@ span.num, .noselect {
   margin-left: -36%;
 }
 
+.sec-0 {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-0 .evt-content {
+  width: 1210px;
+}
+
 .hy-title {
   width: 322px;
   margin: 0 auto;
@@ -50,11 +59,11 @@ span.num, .noselect {
 .sec-1 {
   z-index: 1;
   position: relative;
-  padding-top: 115px;
+  padding-top: 60px;
 }
 
 .sec-1 .evt-content {
-  width: 1359px;
+  width: 1200px;
 }
 
 .dis {
@@ -63,22 +72,22 @@ span.num, .noselect {
 
 .dis-1 {
   top: 100px;
-  left: -280px;
+  left: -350px;
 }
 
 .dis-2 {
   top: 180px;
-  right: -280px;
+  right: -350px;
 }
 
 .dis-3 {
   bottom: 200px;
-  left: -280px;
+  left: -350px;
 }
 
 .dis-4 {
   bottom: 100px;
-  right: -280px;
+  right: -350px;
 }
 
 .evt-footer {

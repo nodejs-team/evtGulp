@@ -17,6 +17,22 @@ span.num,.noselect{
 }
 .evt-container{ overflow: hidden; background:#f7faff; }
 
+.evt-container.pingan{
+  .gobuy .buybtn, .gobuy .buycart, .more{ background:#e55f03; }
+}
+
+.evt-container.jiaohang{
+  .gobuy .buybtn, .gobuy .buycart, .more{ background:#7a5342; }
+  .slideOuter li .fl{color: #363636;}
+  .evt-footer{background: #e6e5e4;}
+  .dis-1{top:0px; left: -360px;}
+  .dis-2{top:180px; right: -350px;}
+  .dis-3{bottom:200px; left: -550px;}
+  .dis-4{bottom:100px; right: -480px;}
+  .slideOuter .pro-num .minus{right: 100px;}
+  .slideOuter .pro-num span.bang{width: 80px;}
+}
+
 .sec-banner{ position: relative; z-index: 2;
   img{width: 100%;}
   .b-title{width: 38%; position: absolute; top: 28%; left: 50%; margin-left: -36%;}
@@ -27,14 +43,14 @@ span.num,.noselect{
 
 .hy-title{width: 322px; margin: 0 auto; padding:40px 0 0 0;position: relative;}
 .sec-1{ z-index: 1; position: relative; padding-top:115px;
-  .evt-content{ width: 1359px; }
+  .evt-content{ width: 1200px; }
 }
 
 .dis{position: absolute;}
-.dis-1{top:100px; left: -280px;}
-.dis-2{top:180px; right: -200px;}
-.dis-3{bottom:200px; left: -200px;}
-.dis-4{bottom:100px; right: -280px;}
+.dis-1{top:100px; left: -360px;}
+.dis-2{top:180px; right: -280px;}
+.dis-3{bottom:200px; left: -400px;}
+.dis-4{bottom:100px; right: -350px;}
 
 
 .evt-footer{ z-index: 1; position: relative; width: 100%; background: #ced9e8;

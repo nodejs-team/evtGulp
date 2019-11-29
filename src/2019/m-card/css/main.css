@@ -26,10 +26,8 @@ span.num, .noselect {
 
 .sec-banner {
   position: relative;
-}
-
-.sec-banner img {
-  width: 100%;
+  height: 710px;
+  background: url("../images/banner.png") top no-repeat;
 }
 
 .sec-banner .b-t {
@@ -44,24 +42,24 @@ span.num, .noselect {
 .sec-banner .b-time {
   position: absolute;
   width: 600px;
-  top: 285px;
+  top: 260px;
   left: 50%;
   margin-left: -300px;
   text-align: center;
   color: #ffebcc;
   font-size: 24px;
   letter-spacing: 3px;
+  display: none;
 }
 
 .sec-banner .goubtn {
   position: absolute;
-  width: 230px;
+  width: 264px;
   height: 64px;
-  bottom: 15px;
+  bottom: -21px;
   left: 50%;
-  margin-left: -115px;
+  margin-left: -132px;
   background: url("../images/btn.png") no-repeat;
-  z-index: 2;
   cursor: pointer;
   z-index: 2;
 }
@@ -74,7 +72,7 @@ span.num, .noselect {
 
 .sec-1 {
   position: relative;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .sec-1 .dis {

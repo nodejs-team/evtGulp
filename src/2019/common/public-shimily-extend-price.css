@@ -42,4 +42,4 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
     .price ul.buy_btn_box.twoBtn { width: 280px; }
     .price ul.buy_btn_box li { float: left; height: 40px; margin-right: 5px; }
     .price ul.buy_btn_box li.fr { float: right; }
-    .price ul.buy_btn_box li span { display: block; width: 130px; background: #de9092; border: none; color: #fff; cursor: pointer; height: 30px; line-height: 28px; font-size: 17px; text-align: center; border-radius: 15px; }
+    .price ul.buy_btn_box li span { display: block; width: 130px; background: #de9092; border: none; color: #fff; cursor: pointer; height: 32px; line-height: 32px; font-size: 17px; text-align: center; border-radius: 15px; }

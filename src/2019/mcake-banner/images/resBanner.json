@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"bg_jpg,bu_png,c-zu_png,f-title_png,gao-line_png,ren_json,1_json,11_json,arrows_png,guitou_json,banner-t_png,banner_png",
+			"keys":"bg_jpg,bu_png,c-zu_png,f-title_png,gao-line_png,ren_json,1_json,11_json,arrows_png,guitou_json,nangua_json,banner-t_png,banner_png",
 			"name":"preload"
 		}],
 	"resources":[
@@ -55,6 +55,12 @@
 			"subkeys":"tou-1,tou-2,tou-3,tou-4,tou-5,tou-6",
 			"type":"sheet",
 			"url":"guitou.json"
+		},
+		{
+			"name":"nangua_json",
+			"subkeys":"tou-1,tou-2,tou-3,tou-4,tou-5,tou-6",
+			"type":"sheet",
+			"url":"nangua.json"
 		},
 		{
 			"name":"banner-t_png",

@@ -102,6 +102,16 @@
       }
     }
 
+    var wsj = {
+      nangua: function () {
+        $(".el_nangua").each(function(i, el){
+          var mc = new MovieClip('nangua_png', "nangua_json", el);
+          mc.gotoAndPlay(1, -1);
+          return mc;
+        });
+      }
+    }
+
     /*---------- 动画 end ----------*/
 
     if( !isSupportCss3 ){
@@ -125,10 +135,12 @@
     /*--调用浮动窗口 end--*/
 
     /*---调用动画---*/
-    wsj.tou();
-    coffee.girl();
-    foodPack.ren();
-    father.father();
+    //wsj.tou();
+    //coffee.girl();
+    //foodPack.ren();
+    //father.father();
+    wsj.nangua();
+
     /*---end---*/
 
     /*---母亲节弹幕---*/

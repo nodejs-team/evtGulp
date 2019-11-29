@@ -17,18 +17,17 @@ span.num,.noselect{
 }
 .evt-container{ overflow: hidden; background:#ffffff; text-align: center; }
 
-.sec-banner{position: relative;
-img{width: 100%;}
+.sec-banner{position: relative; height: 710px; background: url("../images/banner.png") top no-repeat;
   .b-t{position: absolute; width: 648px; top:158px; left: 50%; margin-left: -324px; z-index: 1;}
-  .b-time{position: absolute; width: 600px; top:285px; left: 50%; margin-left: -300px; text-align: center; color: #ffebcc; font-size: 24px; letter-spacing: 3px;}
-  .goubtn{position: absolute; width:230px; height: 64px; bottom:15px; left: 50%; margin-left: -115px; background: url("../images/btn.png") no-repeat; z-index: 2; cursor: pointer; z-index: 2;}
+  .b-time{position: absolute; width: 600px; top:260px; left: 50%; margin-left: -300px; text-align: center; color: #ffebcc; font-size: 24px; letter-spacing: 3px; display: none;}
+  .goubtn{position: absolute; width:264px; height: 64px; bottom:-21px; left: 50%; margin-left: -132px; background: url("../images/btn.png") no-repeat; cursor: pointer; z-index: 2;}
 }
 
 .hy-title{display: inline-block; margin: 0 auto 50px; position: relative; }
 
 
 
-.sec-1{  position: relative; padding: 80px 0;
+.sec-1{  position: relative; padding: 60px 0;
   .dis{position: absolute;}
   .dis-1{top: 50px; left: -350px;}
   .dis-2{top: -100px; right: -350px;}

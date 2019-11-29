@@ -23,18 +23,22 @@ span.num,.noselect{
 
 }
 
+.sec-0{ position: relative; z-index: 2;
+  .evt-content{ width: 1210px; }
+
+}
 
 
 .hy-title{width: 322px; margin: 0 auto; padding:40px 0 0 0;position: relative;}
-.sec-1{ z-index: 1; position: relative; padding-top:115px;
-  .evt-content{ width: 1359px; }
+.sec-1{ z-index: 1; position: relative; padding-top:60px;
+  .evt-content{ width: 1200px; }
 }
 
 .dis{position: absolute;}
-.dis-1{top:100px; left: -280px;}
-.dis-2{top:180px; right: -280px;}
-.dis-3{bottom:200px; left: -280px;}
-.dis-4{bottom:100px; right: -280px;}
+.dis-1{top:100px; left: -350px;}
+.dis-2{top:180px; right: -350px;}
+.dis-3{bottom:200px; left: -350px;}
+.dis-4{bottom:100px; right: -350px;}
 
 
 .evt-footer{ z-index: 1; position: relative; width: 100%; background: #fcecec;

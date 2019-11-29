@@ -68,6 +68,7 @@
 
       ele.parents(".price").find('.old-price').html(self.totalOldprice.toFixed(2));  /*原价保留两位小数*/
       ele.parents(".price").find('.now-price').html(Math.floor(self.totalPrice)+'.00'); /*现价向下取整*/
+      ele.parents(".price").find('.go-buy').attr("data-num",self.num);
     },
     /*磅数选择后计算价格*/
     counts:function (ele) {
@@ -90,6 +91,28 @@
 
       ele.parents(".price").find('.old-price').html(self.totalOldprice.toFixed(2));
       ele.parents(".price").find('.now-price').html(Math.floor(self.totalPrice)+'.00');
+
+      /*新版wap需要配置data*/
+      var that = $(this);
+      var eleCur = ele;
+
+      /*循环所有的attribute*/
+      eleCur.each(function() {
+
+        var thisele = $(this);
+        $.each(this.attributes, function() {
+          if(this.specified) {
+            var attrs = thisele.attr(this.name);
+            if(this.name =='class'){
+              return;
+            }else{
+              ele.parents(".price").find('.go-buy').attr(this.name,attrs);
+            }
+          }
+        });
+      });
+      ele.parents(".price").find('.go-buy').attr("data-num",self.num);
+
     },
     /*折扣：通过判断磅数决定减多少*/
     disFun:function (bs,discount) {
@@ -140,7 +163,28 @@
 
         $(this).find('.old-price').html(totalOldprice.toFixed(2));
         $(this).find('.now-price').html(Math.floor(totalPrice)+'.00');
+
+        /*新版wap需要配置data*/
+        var that = $(this);
+        var eleCur = $(this).find('.price_p li.cur');
+        /*循环所有的attribute*/
+        eleCur.each(function() {
+          var thisele = $(this);
+          $.each(this.attributes, function() {
+            if(this.specified) {
+              var attrs = thisele.attr(this.name);
+              if(this.name =='class'){
+                return;
+              }else{
+                that.find('.go-buy').attr(this.name,attrs);
+              }
+            }
+          });
+        });
+        $(this).find('.go-buy').attr("data-num",totalNum);
+
       });
+
 
     },
 
@@ -165,6 +209,8 @@
           }
         });
       });
+
+
 
       this.$add.hover(function () {
         $(this).addClass("on");
