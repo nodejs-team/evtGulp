@@ -1,0 +1,766 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.sec-banner {
+  overflow: hidden;
+  background: url("../images/banner.png") center;
+  height: 765px;
+}
+
+.hy-title {
+  margin: 0 auto;
+  padding: 50px 0;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  margin: 0 auto;
+}
+
+.dis {
+  position: absolute;
+  left: 50%;
+}
+
+.dis-1 {
+  top: 350px;
+  margin-left: -650px;
+}
+
+.dis-2 {
+  top: 853px;
+  margin-left: -109px;
+}
+
+.dis-3 {
+  top: 1680px;
+  margin-left: -590px;
+}
+
+.sec-chouqian {
+  position: relative;
+  z-index: 2;
+  background: url("../images/sec-chouqian.png") top no-repeat;
+}
+
+.sec-chouqian .evt-content {
+  width: 1200px;
+  padding: 55px 0 0;
+  margin: 0 auto;
+}
+
+.sec-chouqian .chouqian {
+  position: relative;
+  width: 723px;
+  height: 560px;
+  background: url("../images/qian-bg.png") no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+
+.sec-chouqian .chouqian .qian {
+  position: absolute;
+  top: 0;
+  left: 190px;
+  width: 337px;
+  height: 425px;
+  z-index: 2;
+}
+
+.sec-chouqian .chouqian .qian-1 {
+  background: url("../images/qian-1.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-chouqian .chouqian .qian-2 {
+  background: url("../images/qian-2.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-chouqian .chouqian .qian-3 {
+  background: url("../images/qian-3.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-chouqian .chouqian .qian-4 {
+  background: url("../images/qian-4.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-chouqian .chouqian .qian-5 {
+  background: url("../images/qian-5.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-chouqian .chouqian .qian-6 {
+  background: url("../images/qian-6.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-chouqian .chouqian .qian-7 {
+  background: url("../images/qian-7.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-chouqian .chouqian .qian-tong {
+  position: absolute;
+  top: 200px;
+  left: 221px;
+  width: 269px;
+  height: 350px;
+  background: url("../images/qian-tong.png") no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.sec-chouqian .chouqian .pint {
+  position: absolute;
+  top: 650px;
+  left: 221px;
+  width: 0;
+  height: 0;
+  z-index: 5;
+}
+
+.sec-chouqian .qian-btn {
+  width: 291px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.sec-chouqian .shou {
+  width: 36px;
+  margin: 0 auto;
+  padding-left: 230px;
+}
+
+.sec-cake {
+  padding: 50px 0 160px;
+  background: url("../images/sec-cake.png") top;
+}
+
+.sec-cake .cake-content {
+  position: relative;
+  width: 757px;
+  margin: 0 auto;
+}
+
+.sec-cake .cake {
+  position: relative;
+  width: 757px;
+  height: 491px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.sec-cake .cake-1 {
+  background: url("../images/cake-1.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-cake .cake-2 {
+  background: url("../images/cake-2.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-cake .cake-3 {
+  background: url("../images/cake-3.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-cake .cake-4 {
+  background: url("../images/cake-4.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-cake .cake-5 {
+  background: url("../images/cake-5.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-cake .cake-6 {
+  background: url("../images/cake-6.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-cake .cake-7 {
+  background: url("../images/cake-7.png") no-repeat;
+  background-size: 100%;
+}
+
+.sec-cake .cake-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 757px;
+  height: 491px;
+  background: url("../images/cake-cover.png") no-repeat;
+  background-size: 100%;
+  z-index: 2;
+}
+
+.sec-cake .buy-btn {
+  width: 189px;
+  margin: 50px auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+.evt-footer {
+  z-index: 1;
+  background: url("../images/evt-footer.png") bottom no-repeat;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #f9e3c3;
+}
+
+.evt-footer .foot-zp {
+  position: absolute;
+  top: 90px;
+  right: 300px;
+}
+
+.evt-footer .evt-rules {
+  width: 820px;
+  margin: 0 auto;
+  padding: 20px 0 150px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  opacity: 0.9;
+  -moz-opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.Dialog-quan {
+  width: 457px;
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  height: 709px !important;
+  padding: 1px;
+  top: 50%;
+  left: 50%;
+  margin: -354.5px auto 0 -228.5px !important;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+}
+
+.Dialog-quan .closes {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 23px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close2.png") no-repeat;
+}
+
+.Dialog-quan .quan {
+  position: relative;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Dialog-quan .quan img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Dialog-quan .quan .txt {
+  width: 400px;
+  position: absolute;
+  text-align: center;
+  top: 110px;
+  left: 50%;
+  margin-left: -200px;
+}
+
+.Dialog-quan .quan .txt h2 {
+  font-size: 24px;
+  color: #83481b;
+  line-height: 50px;
+}
+
+.Dialog-quan .quan .txt p {
+  font-size: 16px;
+  color: #83481b;
+}
+
+.Dialog-quan .quan .go-use {
+  display: block;
+  position: absolute;
+  bottom: 203px;
+  left: 50%;
+  margin-left: -47.5px;
+  width: 65px;
+  line-height: 20px;
+  cursor: pointer;
+  background: #5f0900;
+  color: #dcb584;
+  border-radius: 37px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.Dialog-quan.show {
+  animation: show 1s forwards;
+  display: block;
+}
+
+/*蛋糕选择弹窗*/
+.Dialogbg-Select {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.Dialog-Select {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  width: 520px;
+  height: auto;
+  margin-top: -210px;
+  margin-left: -260px;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  border-radius: 10px;
+  display: none;
+}
+
+.s-closes {
+  position: absolute;
+  right: -30px;
+  top: 8px;
+  width: 17px;
+  height: 17px;
+  background: url("../images/close.png");
+  cursor: pointer;
+}
+
+.Select {
+  position: relative;
+  color: #000;
+  height: 100%;
+}
+
+.Select .s-title {
+  height: 96px;
+  background: #f2f2f2;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Select .s-title h2 {
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.Select .s-title b {
+  font-size: 14px;
+  color: #9a9a9a;
+  font-weight: normal;
+  padding-left: 40px;
+}
+
+.Select .s-bangshu {
+  padding-top: 30px;
+}
+
+.Select .s-bangshu ul {
+  margin-left: 40px;
+}
+
+.Select .s-bangshu ul li {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  text-align: center;
+  color: #4a4a4a;
+  margin-right: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.Select .s-bangshu ul li i {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.Select .s-bangshu ul li.on {
+  background: #ac0000;
+  color: #fff;
+}
+
+.Select .s-bangshu ul li.ie8 {
+  padding-top: 15px;
+  height: 45px;
+}
+
+.Select .d-tips {
+  padding: 15px 40px;
+  color: #4c4c4c;
+  font-size: 12px;
+}
+
+.Select .s-num {
+  border-top: #ededed 1px solid;
+  padding-left: 40px;
+}
+
+.Select .s-num b {
+  display: inline-block;
+  width: 200px;
+  margin: 10px 0;
+  line-height: 52px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-num .nums {
+  display: inline-block;
+  margin: 15px 40px 0;
+  float: right;
+  height: 52px;
+  position: relative;
+  width: 150px;
+}
+
+.Select .s-num .nums a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2px;
+}
+
+.Select .s-num .nums .minus {
+  background: url("../images/btn-1.png") center no-repeat;
+  background-size: 100%;
+  left: 0;
+}
+
+.Select .s-num .nums .plus {
+  background: url("../images/btn-2.png") center no-repeat;
+  background-size: 100%;
+  right: 0;
+}
+
+.Select .s-num .nums input {
+  background: none;
+  border: none;
+  display: block;
+  font-size: 26px;
+  line-height: 45px;
+  left: 35px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 80px;
+  color: #000;
+}
+
+.Select .s-prices {
+  border-top: #ededed 1px solid;
+  font-size: 22px;
+  padding: 0 40px;
+}
+
+.Select .s-prices b {
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+  line-height: 56px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-prices p {
+  display: block;
+  line-height: 56px;
+  text-align: right;
+}
+
+.Select .s-prices span {
+  font-size: 26px;
+}
+
+.Select .s-prices i {
+  font-style: normal;
+  font-size: 16px;
+}
+
+.Select .s-prices s {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.Select .btns {
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  height: 55px;
+  line-height: 55px;
+  flex-direction: row;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.Select .btns div {
+  flex: 1;
+  cursor: pointer;
+  width: 100%;
+}
+
+.Select .btns .go-car {
+  background: #f2c278;
+  border-bottom-right-radius: 10px;
+  float: left;
+  color: #000;
+}
+
+.Select .btns .go-car.on {
+  background: #f2c278;
+}
+
+.Select .btns .go-car.ie8, .Select .btns .go-buy.ie8 {
+  width: 50%;
+}
+
+.Select .btns .go-buy {
+  background: #ac0000;
+  border-bottom-left-radius: 10px;
+  float: left;
+}
+
+.Select .btns .go-buy.on {
+  background: #ac0000;
+}
+
+.yaoyao1 {
+  animation: yaoyao 0.2s infinite alternate;
+}
+
+.yaoyao2 {
+  animation: yaoyao 0.25s infinite alternate;
+}
+
+.yaoyao3 {
+  animation: yaoyao 0.18s infinite alternate;
+}
+
+.yaoyao4 {
+  animation: yaoyao 0.25s infinite alternate;
+}
+
+.yaoyao5 {
+  animation: yaoyao 0.15s infinite alternate;
+}
+
+.yaoyao6 {
+  animation: yaoyao 0.21s infinite alternate;
+}
+
+.yaoyao7 {
+  animation: yaoyao 0.17s infinite alternate;
+}
+
+.yaodong {
+  animation: yaodong 0.25s infinite alternate;
+}
+
+.shoudong {
+  animation: shoudong 1.5s infinite alternate;
+}
+
+@keyframes yaoyao {
+  0% {
+    transform: rotate(-3deg);
+    transform-origin: 50% 100%;
+  }
+  100% {
+    transform: rotate(3deg);
+    transform-origin: 50% 100%;
+  }
+}
+
+@keyframes yaodong {
+  0% {
+    transform: rotate(-5deg);
+    transform-origin: 50% 100%;
+  }
+  100% {
+    transform: rotate(5deg);
+    transform-origin: 50% 100%;
+  }
+}
+
+@keyframes shoudong {
+  0% {
+    transform: translate3d(-10px, 0, 0);
+    transform-origin: 50% 100%;
+  }
+  100% {
+    transform: translate3d(10px, 0, 0);
+    transform-origin: 50% 100%;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1600px) {
+  .sec-chouqian .evt-content {
+    padding: 0;
+  }
+  .sec-chouqian .chouqian {
+    width: 590px;
+    height: 460px;
+  }
+  .sec-chouqian .chouqian .qian {
+    position: absolute;
+    top: 0;
+    left: 158px;
+    width: 290px;
+    height: 378px;
+  }
+  .sec-chouqian .chouqian .qian-tong {
+    position: absolute;
+    top: 178px;
+    left: 202px;
+    width: 200px;
+    height: 249px;
+  }
+  .sec-chouqian .chouqian .pint {
+    top: 430px;
+  }
+  .sec-chouqian .qian-btn {
+    margin: 5px auto;
+  }
+  .sec-chouqian .shou {
+    margin: -19px auto;
+    padding-left: 390px;
+  }
+  .sec-cake {
+    padding: 10px 0 80px;
+  }
+  .sec-cake .cake-content {
+    width: 600px;
+  }
+  .sec-cake .hy-title {
+    padding: 10px 0;
+  }
+  .sec-cake .buy-btn {
+    margin-top: 20px;
+    display: none;
+  }
+  .sec-cake .cake {
+    width: 600px;
+    height: 389px;
+  }
+  .sec-cake .cake-cover {
+    width: 600px;
+    height: 389px;
+  }
+  .Dialog-quan {
+    width: 380px;
+    height: 590px !important;
+    margin: -295px auto 0 -190px !important;
+  }
+  .Dialog-quan .quan .go-use {
+    bottom: 166px;
+    margin-left: -42.5px;
+    width: 60px;
+  }
+}

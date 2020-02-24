@@ -1,0 +1,125 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{  overflow: hidden; background:#fff; }
+
+.sec-banner{ overflow: hidden; background: url("../images/banner.png") center no-repeat; height: 647px;  }
+
+.hy-title{ margin:0 auto; padding: 50px 0; position: relative; text-align: center;
+  img{margin: 0 auto;}
+}
+
+.dis{position: absolute; left: 50%;}
+.dis-1{ top: 122px; margin-left:-960px;}
+
+
+.sec-tuijian{ position: relative; z-index: 2;
+  .evt-content{ width: 1195px; padding:0 0 80px;}
+  .cake{ position: relative; width: 1195px; margin: 0 auto;
+    .price{position: absolute; top: 250px; left: 740px;
+      h2, h2 span,s{color: #fff;}
+    }
+    .buy-btn{position: absolute; top: 320px; left: 740px; cursor: pointer; background: #8e0000; color: #fff; text-align: center; width: 150px; line-height: 40px; border-radius: 40px; letter-spacing: 2px;}
+  }
+
+}
+
+
+.sec-cake{  position: relative; z-index: 1; padding-top:40px; padding-bottom: 40px; background: #fff6ea;
+  .evt-content{width: 1141px;
+    .row{position: relative; }
+    .row{height: 550px;
+      .cake{position: absolute;top:0; left:125px;}
+      .price{ top:100px; left: 650px;
+        h2, h2 span,s,.price_num dl dt span{color: #c60500;}
+        s{color: #000;}
+        .buy_btn_box span{background: #c60500 !important; color: #fff;}
+        .nopoint.minus{background: url("../images/in-a-1.png") center no-repeat;}
+        .nopoint.plus{background: url("../images/in-a-2.png") center no-repeat;}
+        .bangshu{ border: #c60500 1px solid !important;
+          span{ color: #c60500 !important;}
+        }
+      }
+    }
+    .row1{margin-top: 30px;}
+    .row2{
+      .cake{position: absolute; top:0; left: 605px;}
+      .price{ top:100px; left: 160px; }
+    }
+    .row3{height: 500px;
+      .cake{position: absolute;top:0; left:125px;}
+      .price{ top:130px; left: 650px;}
+    }
+
+    .code{width: 723px; margin: 30px auto;}
+  }
+}
+
+
+.more{width: 144px;position: relative; margin: 0 auto; background: #cd686d; border-radius: 50px; text-align: center;
+  span{ display: block; color: #fff; font-size: 20px; line-height:35px;}
+}
+
+
+.evt-footer{ z-index: 1; position: relative;  background:#ffe9ca;
+  .evt-content{width: 1200px; color: #000;}
+  .foot-zp{position: absolute; top: 90px; right: 300px;}
+  .evt-rules{width: 820px; margin: 0 auto; padding:100px 0 100px 55px;
+    h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+    p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+  }
+}
+
+
+
+/*价格*/
+.price{text-align: left;}
+.price b{font-weight: normal;}
+.price s{margin-left: 5px;}
+.price .price-title{margin-bottom: 50px !important;}
+.price .huangou{width:270px !important; font-size: 18px;}
+.price .price_num{display: none;}
+.price em{font-style: normal;}
+.price .price_p,.price .price_num,.price .buy_btn_box,.price h2{margin:13px 0 0 !important; text-align: left !important;}
+.price ul.buy_btn_box{float: left!important; margin:15px 0 0 !important;}
+
+
+.bangshu{width: 161px; height: 30px; margin:15px 0 10px 10px; float: left; border: #c3555b 1px solid; border-radius: 17px;
+  dd{float: left;}
+  dt{float: left; width:100px; text-align: center; line-height: 30px;
+    span{display: block; color: #c3555b; font-size: 15px;}
+  }
+}
+
+.nopoint{ width: 20px; height: 20px; background: url("../images/in-a-1.png") center no-repeat; cursor: pointer;  /*background-clip:padding-box; padding: 7px;*/ border:5px solid transparent;
+}
+
+.nopoint.plus{background: url("../images/in-a-2.png") center no-repeat;}
+
+.floater{  position: fixed; width: 242px; height: 228px; top: 600px;  z-index: 3; left: 50%; margin-left: 610px; cursor: pointer;  }
+
+@media (max-width: 1600px) {  /*兼容小屏*/
+  .sec-tuijian{
+    .cake{width: 1020px !important;}
+    .cake img{width: 100%;}
+    .cake .price,.buy-btn{ left: 640px !important;}
+  }
+  .floater{ width: 220px;  }
+  .floater img{width: 100%;}
+}
+
+

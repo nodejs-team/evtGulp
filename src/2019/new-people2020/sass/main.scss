@@ -1,0 +1,107 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background:#fffeea; }
+
+.sec-banner{
+  background:url("../images/banner.jpg") center; z-index: 1; height: 653px; overflow: hidden;
+}
+
+.hy-title{ margin: 0 auto; position: relative; text-align: center;
+  img{display: block; margin: 0 auto;}
+}
+.sec-quan{ position: relative; z-index: 2; padding:0 0 50px;
+  .evt-content{ width: 1275px; padding: 60px 0 30px;}
+  .zp{ margin:60px auto; text-align: center;
+    img{display: block; margin: 0 auto;}
+  }
+  .quan{position: relative; width: 1275px;  height: 357px; margin:0 auto 20px; text-align: center; background: url("../images/quan.png");}
+  .quan-btn{ width: 180px; margin: 0 auto; background: #ffac16; color: #fff; line-height: 43px; border-radius:43px; text-align: center; font-size: 18px; cursor: pointer;}
+}
+
+
+.sec-cake{position: relative; z-index: 2; background:#fff5d3 url("../images/sec-cake-bg.png") center top no-repeat;
+  .evt-content{  width: 1280px;  padding:100px 0 80px;}
+  .select-li{left: 0;width: 900px; margin: 0 auto;
+    ul{margin-left: -40px;}
+    li{width: 427px; margin:40px 0 0 40px; float: left; text-align: center;
+      .price-select{padding: 20px; font-size: 16px; color: #000;
+        h2{text-align: center; color: #000; font-weight: normal; font-size: 26px; }
+        b{font-size: 28px; color: #ffac16; font-weight: normal;}
+        i{font-size: 14px; font-style: normal;}
+      }
+      img{margin:5px auto 0;}
+      .center{width: 330px; margin: 0 auto;}
+
+      .bangshu{width: 158px; height: 34px; margin: 0 auto 10px; float: left; background: #ffac16; border-radius: 17px;
+        dd{float: left;}
+        dt{float: left; width:88px; text-align: center; line-height: 34px; font-size: 14px;
+          span{display: block; color: #fff;}
+        }
+      }
+
+      .mun{width: 150px; height: 34px; margin: 0 auto 10px; float: left; border: #feb483 1px solid; border-radius: 17px;
+          dd{float: left;}
+          dt{float: left; width:80px; text-align: center; line-height: 34px;
+            span{display: block; color: #fff;}
+          }
+       }
+      .nopoint{ width: 20px; height: 20px; background: url("../images/in-1.png") center no-repeat; cursor: pointer;  /*background-clip:padding-box; padding: 7px;*/ border:7px solid transparent;
+      }
+      .nopoint.add{background: url("../images/in-2.png") center no-repeat;}
+      .nopoint.minus{background: url("../images/in-1.png") center no-repeat;}
+      .nopoint.plus{background: url("../images/in-2.png") center no-repeat;}
+
+    }
+  }
+  .buy_btn{ width: 150px; float: right; background: #ffac16; color: #fff;  border-radius: 17px; cursor: pointer;
+    span{display: block; line-height: 34px;font-size: 16px; text-align: center; letter-spacing: 2px;}
+  }
+}
+
+
+
+.sec-qy{ position: relative; z-index: 2; padding:50px 0; background:#fffeea url("../images/sec-qy.png") center top no-repeat;
+  .zp{ margin:0 auto; text-align: center;
+    img{display: block; margin: 0 auto;}
+  }
+  .register-btn{ margin:50px auto 0; text-align: center;
+    img{display: block; margin: 0 auto;}
+  }
+}
+
+.sec-qy.qy-4{background:#fff5d3 url("../images/sec-cake-bg.png") center top no-repeat;}
+
+.evt-footer{ z-index: 1;
+  position: relative;  background:#fef0bf; width: 100%;
+  .evt-content{width: 1200px; color: #000;}
+    .foot-zp{position: absolute; top: 90px; right: 300px;}
+    .evt-rules{width: 1040px; margin: 0 auto; padding:100px 0 100px 55px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+
+/*价格*/
+.price{text-align: left;}
+.price b{font-weight: normal;}
+.price .price-title{margin-bottom: 10px !important;}
+.price .huangou{width:270px !important; font-size: 18px;}
+.price .price_num{display: none;}
+.price .price-title,.price .price_p,.price .price_num,.price .buy_btn_box,.price h2,.price s{margin:13px 0 0 !important; text-align: left !important;}
+

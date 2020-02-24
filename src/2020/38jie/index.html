@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://act.mcake.com/fangli/2020/pc/common/public-shimily-extend-price.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
+    <link type="text/css" rel="stylesheet" href="css/hongbao.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
+        <div class="evt-content bt">
+            <div class="banner"><img src="images/banner.png" alt=""></div>
+        </div>
+        <div class="evt-content s-cake pro-list" id="zhekou">
+            <div class="swipe-cake">
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" ><img src="images/cake-img.png" alt=""></div>
+                        <div class="swiper-slide" ><img src="images/cake-img2.png" alt=""></div>
+                        <div class="swiper-slide" ><img src="images/cake-img3.png" alt=""></div>
+                    </div>
+                    <div class="pagination pagination1"></div>
+                </div>
+
+            </div>
+            <div class="swipe-cake-price clearfix row" data-special="special" data-pond="1磅,2磅" data-weight="681g,1.13kg" data-postid="1,2"
+                 data-price="198,298" data-sku="011,111" data-method="011,111"
+                 data-pid="011,111" data-ptype="011,111" data-channel="011,111">
+                <div class="cake-t"><img src="images/cake-t.png" alt=""></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title"><img src="images/cake-price-1.png" alt="" class="cake-pric-img"></div>
+                   <!-- <h2><i>￥</i><span class="old-price">298</span>/<em class="d-pond">2磅</em></h2>-->
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn">立即订购</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sec-cake">
+        <div class="evt-content pro-list clearfix">
+            <div class="dis dis-1"><img src="images/dis-1.png" alt=""></div>
+            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-2.png" alt=""></div>
+            <div class="row" data-pond="1磅,2.5磅,3磅,5磅" data-weight="681g,1.13kg,1.58kg,2.5kg" data-postid="1,2,3,5"
+                 data-price="198,298,428,728" data-sku="011,111,124,152" data-method="011,111,124,152"
+                 data-pid="011,111,124,152" data-ptype="011,111,124,152" data-channel="011,111,124,152">
+                <div class="cake" data-anim="slide-right" data-delay="0.4"><img src="images/cake-1.png"/></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title">黛西的旅行</div>
+                    <h2><i>￥</i><span class="old-price">298</span>/<em class="d-pond">2磅</em></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn">立即购买</span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-pond="1磅,2磅,3磅,5磅" data-weight="454g,908g,1.36kg,2.27kg" data-postid="01,1,2,3"
+                 data-price="198,298,428,728" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04"
+                 data-ptype="1,2,3,4" data-channel="11,21,31,41">
+                <div class="cake" data-anim="slide-left" data-delay="0.4"><img src="images/cake-2.png"/></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title">茉意芒芒</div>
+                    <h2><i>￥</i><span class="old-price">298</span>/<em class="d-pond">2磅</em></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn">立即购买</span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-pond="1磅,2磅,3磅,5磅" data-weight="454g,908g,1.36kg,2.27kg" data-postid="01,1,2,3"
+                 data-price="198,298,428,728" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04"
+                 data-ptype="1,2,3,4" data-channel="11,21,31,41">
+                <div class="cake" data-anim="slide-right" data-delay="0.4"><img src="images/cake-3.png"/></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title">蔓越莓红丝绒</div>
+                    <h2><i>￥</i><span class="old-price">298</span>/<em class="d-pond">2磅</em></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn">立即购买</span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-pond="1磅,2磅,3磅,5磅" data-weight="454g,908g,1.36kg,2.27kg" data-postid="01,1,2,3"
+                 data-price="198,298,428,728" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04"
+                 data-ptype="1,2,3,4" data-channel="11,21,31,41">
+                <div class="cake" data-anim="slide-left" data-delay="0.4"><img src="images/cake-4.png"/></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title">花漾·年华</div>
+                    <h2><i>￥</i><span class="old-price">298</span>/<em class="d-pond">2磅</em></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn">立即购买</span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则</h2>
+                <p>1、活动时间：2020年2月25日-2020年3月9日</p>
+                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝、现金,本活动仅限使用微信、支付宝或现金全额支付的用户参与</p>
+                <p>4、活动内容：<br>
+                    . 收集花瓣所获得的优惠券有效期至：2020年3月31日</p>
+                <p>5、本活动最终解释权归MCAKE所有</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--红包雨专区-->
+<div class="hob-inlet">
+    <!--<div class="hob-inlet-03"></div>-->
+    <div class="mod-close"></div>
+    <!--<div class="hob-inlet-02"></div>-->
+    <div class="fls-btn fls1"><img src="images/go-sj.png" alt=""/></div>
+    <div class="fls-btn fls2 go-use"><img src="images/go-buy.png" alt=""/></div>
+    <div class="hob-inlet-01"></div>
+</div>
+<div class="shade1"></div>
+<div class="hongbao-wrapper">
+    <div class="hob-cd"><img src="images/time-bg.png" alt=""/><span class="time">10s</span></div>
+    <div class="hob-close" style="display: none;"></div>
+    <div class="btn-l btn-red for-get-now"><img src="images/flower-t.png" alt=""/></div>
+    <div class="flowers flower-1"></div>
+    <div class="flowers flower-2"></div>
+    <div class="flowers flower-3"></div>
+    <div class="flower-cake"><img src="images/flower-cake.png" alt=""/></div>
+</div>
+<div class="shade" style="display: none;"></div>
+<div class="modal">
+    <div class="mod-close"></div>
+    <div class="mod-body quan-1" style="display: block;">
+        <div class="txt">
+            <div class="flower-num">0</div>
+            <img src="images/txt-1.png" alt=""/>
+            <div class="go-use"><img src="images/go-use.png" alt=""/></div>
+        </div>
+    </div>
+    <div class="mod-body quan-2">
+        <div class="txt">
+            <div class="flower-num">0</div>
+            <img src="images/txt-2.png" alt=""/>
+            <div class="go-use"><img src="images/go-use.png" alt=""/></div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+
+
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/slider-new.js"></script>
+
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/hongbao.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+
+
+    /*判断状态*/
+    var state = true;
+    if(state){
+        $(".hob-inlet,.shade1").fadeIn(200);
+    }else{
+        $(".hob-inlet,.shade1").fadeOut(200);
+    }
+
+
+    /*点击抢红包*/
+    $(".fls1").click(function () {
+        if(!isSupportCss3){
+            alert("请升级你的浏览器，参与抽奖活动！");
+        }else{
+            hobYU(Hbend);
+        }
+    });
+
+    function Hbend() {
+        console.log("探测");
+        $('.hongbao-wrapper').fadeOut(10);
+        $(".hob-inlet").fadeOut(10);
+        $(".modal,.shade").fadeIn(10);
+    }
+
+    $(document).on("click","i",function(){
+        $(this).addClass('gethb');
+        $(this).find("b").text("+1");
+        var len = $("i.gethb").length;
+        $(".flower-num").text(len);
+        if(len<=10){
+            $(".mod-body").fadeOut(0);
+            $(".flower-1").fadeIn(100);
+            $(".quan-1").fadeIn(0);
+        }else{
+            $(".mod-body").fadeOut(0);
+            $(".flower-2").fadeIn(100);
+            $(".quan-2").fadeIn(0);
+        }
+    });
+</script>
+</body>
+</html>
