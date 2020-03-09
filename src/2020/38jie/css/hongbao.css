@@ -206,10 +206,10 @@
 }
 
 .hongbao-wrapper i {
-	display: block; z-index: 5;
+	display: block; z-index: 20;
 	position: absolute; cursor: pointer;
-	width: 60px;
-	height: 80px;
+	width: 90px;
+	height: 100px;
 	top: -200px;
 	background: url(../images/flower-1.png) center no-repeat; background-size: 100%;
 	/*-webkit-transform: rotate(-15deg);
@@ -240,7 +240,7 @@
 	top: 70px; width: 170px;
 	left:50%; margin-left: -85px; text-align: center;z-index: 33;
 }
-.time{ position: absolute; top: 0; right: 0; }
+.time{ position: absolute; top: 0; right: 0; line-height:24px; }
 .btn-red {
 	position: absolute;
 	color: #fff;
@@ -260,8 +260,8 @@
 .flowers{
 	position: absolute;
 	color: #fff;
-	font-size: 30px; width: 58px; height: 39px;
-	bottom: 0; z-index: 2; background: url("../images/flower-1.png");
+	font-size: 30px; width: 60px; height: 60px;
+	bottom: 0; z-index: 2; background: url("../images/flower-1.png"); background-size: 100%;
 	left:50%; display: none;
 }
 
@@ -296,7 +296,7 @@
 .txt h2{font-size:30px; margin-bottom: 10px;}
 .txt h3{font-size:18px; margin-bottom: 10px;}
 	.txt p{font-size:18px; margin-bottom: 30px;}
-	.txt .flower-num{ position: absolute; top:-3px; left: 353px; font-size: 18px; width: 35px; }
+	.txt .flower-num{ position: absolute; top:-3px; left: 356px; font-size: 18px; width: 35px; line-height: 24px; }
 .txt .go-use{ width: 165px;  z-index: 15; cursor: pointer; margin:25px auto;}
 .mod-body{position: relative; display: none; }
 

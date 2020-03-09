@@ -1,0 +1,445 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.png") repeat;
+}
+
+.sec-banner {
+  max-width: 1920px;
+  max-height: 643px;
+  height: 100%;
+  background: url(../images/banner.png) center center/auto 100% no-repeat #d8ece8;
+  background: url(../images/banner.png) center no-repeat\9;
+  overflow: hidden;
+}
+
+.hy-title {
+  margin: 0 auto;
+  padding: 120px 0;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  margin: 0 auto;
+}
+
+.dis {
+  position: absolute;
+  left: 50%;
+}
+
+.dis-1 {
+  top: 350px;
+  margin-left: -650px;
+}
+
+.sec-1 {
+  position: relative;
+  margin: -80px auto 0;
+}
+
+.sec-1 .evt-content {
+  width: 1100px;
+}
+
+.sec-1 .calendar {
+  width: 58%;
+  position: relative;
+  max-width: 631px;
+  margin: 0 auto;
+}
+
+.sec-1 .calendar img {
+  width: 100%;
+}
+
+.sec-1 .huaban {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+
+.sec-tuijian {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-tuijian .evt-content {
+  width: 953px;
+  padding: 0;
+}
+
+.sec-tuijian .cake {
+  position: relative;
+  width: 953px;
+  margin: 0 auto;
+}
+
+.sec-tuijian .cake .price {
+  position: absolute;
+  top: 250px;
+  left: 560px;
+}
+
+.sec-tuijian .cake .price h2,
+.sec-tuijian .cake .price h2 span,
+.sec-tuijian .cake .price s {
+  color: #7a4040;
+}
+
+.sec-tuijian .cake .buy-btn {
+  position: absolute;
+  top: 320px;
+  left: 560px;
+  cursor: pointer;
+  background: #aa6f43;
+  color: #fff;
+  text-align: center;
+  width: 150px;
+  line-height: 40px;
+  border-radius: 40px;
+  letter-spacing: 2px;
+}
+
+.sec-cake {
+  position: relative;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+.sec-cake .evt-content {
+  width: 1141px;
+}
+
+.sec-cake .evt-content .row {
+  position: relative;
+}
+
+.sec-cake .evt-content .row {
+  height: 550px;
+}
+
+.sec-cake .evt-content .row .cake {
+  position: absolute;
+  top: 0;
+  left: 125px;
+}
+
+.sec-cake .evt-content .row .price {
+  top: 100px;
+  left: 650px;
+}
+
+.sec-cake .evt-content .row .price h2, .sec-cake .evt-content .row .price h2 span, .sec-cake .evt-content .row .price .price_num dl dt span, .sec-cake .evt-content .row .price .huangou {
+  color: #419789;
+}
+
+.sec-cake .evt-content .row .price s {
+  color: #000;
+}
+
+.sec-cake .evt-content .row .price .buy_btn_box span {
+  background: #409789 !important;
+  color: #fff;
+}
+
+.sec-cake .evt-content .row .price .nopoint.minus {
+  background: url("../images/in-a-1.png") center no-repeat;
+}
+
+.sec-cake .evt-content .row .price .nopoint.plus {
+  background: url("../images/in-a-2.png") center no-repeat;
+}
+
+.sec-cake .evt-content .row2 .cake {
+  position: absolute;
+  top: 0;
+  left: 605px;
+}
+
+.sec-cake .evt-content .row2 .price {
+  top: 100px;
+  left: 160px;
+}
+
+.sec-cake .evt-content .row3 .cake {
+  position: absolute;
+  top: 0;
+  left: 125px;
+}
+
+.sec-cake .evt-content .row3 .price {
+  top: 130px;
+  left: 650px;
+}
+
+.sec-cake .evt-content .code {
+  width: 564px;
+  margin: 30px auto;
+}
+
+.more {
+  width: 144px;
+  position: relative;
+  margin: 0 auto;
+  background: #cd686d;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.more span {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/foot-bg.png") repeat;
+  width: 100%;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #4d370e;
+}
+
+.evt-footer .foot-zp {
+  position: absolute;
+  top: 90px;
+  right: 300px;
+}
+
+.evt-footer .evt-rules {
+  width: 970px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*价格样式 通用*/
+.price {
+  position: absolute;
+  width: 392px;
+  text-align: left;
+}
+
+.price h2 {
+  margin: 13px 0 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #9b4245;
+  text-align: left;
+}
+
+.price h2 i {
+  font-size: 14px;
+  font-style: normal;
+  vertical-align: baseline;
+}
+
+.price h2 span {
+  font-size: 28px;
+  color: #9b4245;
+}
+
+.price s {
+  font-size: 16px;
+  color: #9b4245;
+  font-weight: normal;
+  line-height: 26px;
+  text-decoration: sh;
+  margin-left: 5px;
+}
+
+.price b {
+  font-weight: normal;
+}
+
+.price em {
+  font-style: normal;
+}
+
+.price .price-title {
+  margin-bottom: 50px !important;
+}
+
+/*换购*/
+.price .huangou {
+  position: relative;
+  width: 210px;
+  font-size: 18px;
+  color: #9b4245;
+  margin: 10px auto;
+  cursor: pointer;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.price .huangou .icnone {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 1;
+}
+
+.price .huangou .icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+}
+
+.price .huangou {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*订购，加入购物清单*/
+.price ul.buy_btn_box {
+  overflow: hidden;
+  width: 140px;
+  margin: 15px 0 0;
+  float: left;
+}
+
+.price ul.buy_btn_box.twoBtn {
+  width: 280px;
+}
+
+.price ul.buy_btn_box li {
+  float: left;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.price ul.buy_btn_box li.fr {
+  float: right;
+}
+
+.price ul.buy_btn_box li span {
+  display: block;
+  width: 130px;
+  background: #de9092;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.bangshu {
+  width: 161px;
+  height: 30px;
+  margin: 15px 0 10px 10px;
+  float: left;
+  border: #5a968a 1px solid;
+  border-radius: 17px;
+}
+
+.bangshu dd {
+  float: left;
+}
+
+.bangshu dt {
+  float: left;
+  width: 100px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.bangshu dt span {
+  display: block;
+  color: #5a968a;
+  font-size: 15px;
+}
+
+/*加减按钮*/
+.nopoint {
+  width: 20px;
+  height: 20px;
+  background: url("../images/in-a-1.png") center no-repeat;
+  cursor: pointer;
+  border: 5px solid transparent;
+}
+
+.nopoint.plus {
+  background: url("../images/in-a-2.png") center no-repeat;
+}
+
+@media (max-width: 1600px) {
+  .sec-banner {
+    height: 600px;
+  }
+  .sec-1 .calendar {
+    width: 47%;
+    margin: -100px auto 0;
+  }
+  .sec-1 .huaban {
+    left: 50px;
+  }
+  .sec-tuijian .hy-title {
+    padding: 50px 0;
+  }
+}

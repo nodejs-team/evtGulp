@@ -371,6 +371,10 @@ i {
   align-items: center;
 }
 
+.swiper-slide img {
+  width: 100%;
+}
+
 .pagination {
   position: absolute !important;
   left: 0;

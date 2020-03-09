@@ -27,7 +27,7 @@ span.num, .noselect {
   max-width: 1920px;
   max-height: 643px;
   height: 100%;
-  background: url(../images/banner.png) center center/auto 100% no-repeat #d6e4cf;
+  background: url(../images/banner.png) center center/auto 100% no-repeat #d8ece8;
   background: url(../images/banner.png) center no-repeat\9;
   overflow: hidden;
 }
@@ -64,12 +64,19 @@ span.num, .noselect {
 
 .sec-1 .calendar {
   width: 58%;
-  max-width: 638px;
+  position: relative;
+  max-width: 631px;
   margin: 0 auto;
 }
 
 .sec-1 .calendar img {
   width: 100%;
+}
+
+.sec-1 .huaban {
+  position: absolute;
+  top: 20px;
+  left: -10px;
 }
 
 .sec-tuijian {
@@ -118,7 +125,7 @@ span.num, .noselect {
   position: relative;
   z-index: 1;
   padding-top: 10px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 
 .sec-cake .evt-content {
@@ -227,7 +234,7 @@ span.num, .noselect {
 }
 
 .evt-footer .evt-rules {
-  width: 960px;
+  width: 970px;
   margin: 0 auto;
   padding: 100px 0 100px 55px;
 }
@@ -245,48 +252,145 @@ span.num, .noselect {
   text-indent: -1.5em;
 }
 
-/*价格*/
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*价格样式 通用*/
 .price {
+  position: absolute;
+  width: 392px;
   text-align: left;
+}
+
+.price h2 {
+  margin: 13px 0 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #9b4245;
+  text-align: left;
+}
+
+.price h2 i {
+  font-size: 14px;
+  font-style: normal;
+  vertical-align: baseline;
+}
+
+.price h2 span {
+  font-size: 28px;
+  color: #9b4245;
+}
+
+.price s {
+  font-size: 16px;
+  color: #9b4245;
+  font-weight: normal;
+  line-height: 26px;
+  text-decoration: sh;
+  margin-left: 5px;
 }
 
 .price b {
   font-weight: normal;
 }
 
-.price s {
-  margin-left: 5px;
+.price em {
+  font-style: normal;
 }
 
 .price .price-title {
   margin-bottom: 50px !important;
 }
 
+/*换购*/
 .price .huangou {
-  width: 270px !important;
+  position: relative;
+  width: 210px;
   font-size: 18px;
+  color: #9b4245;
+  margin: 10px auto;
+  cursor: pointer;
+  padding-left: 30px;
+  text-align: left;
 }
 
-.price .price_num {
-  display: none;
+.price .huangou .icnone {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 1;
 }
 
-.price em {
-  font-style: normal;
+.price .huangou .icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
 }
 
-.price .price_p, .price .price_num, .price .buy_btn_box, .price h2 {
-  margin: 13px 0 0 !important;
-  text-align: left !important;
+.price .huangou {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
+/*订购，加入购物清单*/
 .price ul.buy_btn_box {
-  float: left !important;
-  margin: 15px 0 0 !important;
+  overflow: hidden;
+  width: 140px;
+  margin: 15px 0 0;
+  float: left;
+}
+
+.price ul.buy_btn_box.twoBtn {
+  width: 280px;
+}
+
+.price ul.buy_btn_box li {
+  float: left;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.price ul.buy_btn_box li.fr {
+  float: right;
+}
+
+.price ul.buy_btn_box li span {
+  display: block;
+  width: 130px;
+  background: #de9092;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 15px;
 }
 
 .bangshu {
-  width: 150px;
+  width: 161px;
   height: 30px;
   margin: 15px 0 10px 10px;
   float: left;
@@ -300,7 +404,7 @@ span.num, .noselect {
 
 .bangshu dt {
   float: left;
-  width: 88px;
+  width: 100px;
   text-align: center;
   line-height: 30px;
 }
@@ -311,12 +415,12 @@ span.num, .noselect {
   font-size: 15px;
 }
 
+/*加减按钮*/
 .nopoint {
   width: 20px;
   height: 20px;
   background: url("../images/in-a-1.png") center no-repeat;
   cursor: pointer;
-  /*background-clip:padding-box; padding: 7px;*/
   border: 5px solid transparent;
 }
 
@@ -327,5 +431,15 @@ span.num, .noselect {
 @media (max-width: 1600px) {
   .sec-banner {
     height: 600px;
+  }
+  .sec-1 .calendar {
+    width: 47%;
+    margin: -100px auto 0;
+  }
+  .sec-1 .huaban {
+    left: 50px;
+  }
+  .sec-tuijian .hy-title {
+    padding: 50px 0;
   }
 }

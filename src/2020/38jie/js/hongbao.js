@@ -7,7 +7,7 @@ $(function() {
             speed = 500,/*下红包个数200*/
             isPc;
         var HONGBAO = setInterval(function() {
-            var _r = ['70%', '80%', '90%', '98%'];
+            var _r = ['88%', '90%', '98%', '100%'];
             var _w = ['49%','49.8%', '50%', '51%'];
             var _src = ['1','2', '3'];
             $(window).width() > 800 ? isPc = 0 : isPc = 1;
@@ -19,7 +19,7 @@ $(function() {
             var rand = (Math.floor(Math.random()*(max-min+1))+min)/2;
             var fw =  (parseInt(Math.random() * 20) - isPc) * 50;
 
-            console.log(_r[parseInt(Math.random() * 4)]);
+
             var HTML_i = $('<i style="background: url(https://act.mcake.com/fangli/2020/pc/38jie/images/flower-'+_src[parseInt(Math.random() * 3)]+'.png) center no-repeat;  background-size:' + _r[parseInt(Math.random() * 4)] + ';top:' + -100+'px; left:60%; margin-left:-' + rand + 'px"><b></b></i>');
 
             $('.hongbao-wrapper').append(HTML_i);
