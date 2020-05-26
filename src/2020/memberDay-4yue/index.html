@@ -5,10 +5,9 @@
     <title>make活动</title>
     <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
     <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
-
+    <!--<link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />-->
     <!-- build:css css/main.css -->
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
-    <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
     <link type="text/css" rel="stylesheet" href="css/base.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <!-- endbuild -->
@@ -106,37 +105,32 @@
 
     <div class="sec-banner" data-anim="fade-in" data-delay="0.2"></div>
 
-    <div class="sec-1">
+    <div class="sec-star">
         <div class="evt-content">
-            <div class="huaban"><img src="images/hb.png" alt=""></div>
-            <div class="calendar" data-anim="slide-up" data-delay="0.2"><img src="images/calendar-1.png" alt=""></div>
-        </div>
-    </div>
-
-    <div class="sec-tetui">
-        <div class="evt-content">
-            <div class="row row1" data-anim="slide-up" data-delay="0.2">
-                <div class="secItem cake">
-                    <div class="swiper-container swiper1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slide1" ><img src="images/cake-img-1.png"/></div>
-                            <div class="swiper-slide swiper-slide2" ><img src="images/cake-img-2.png"/></div>
-                        </div>
+            <div class="swipe-cake">
+                <div class="star"><img src="images/star.png" alt=""></div>
+                <div class="swiper-container swiper1" style="background: url('images/cake-img-1.jpg') center no-repeat; background-size: auto 100%;">
+                   <!-- <img src="images/cake-img-1.jpg" alt="">-->
+                    <!--<div class="swiper-wrapper">
+                        <div class="swiper-slide" ><img src="images/cake-img-1.png" alt=""></div>
+                        <div class="swiper-slide" ><img src="images/cake-img-2.png" alt=""></div>
+                        <div class="swiper-slide" ><img src="images/cake-img-3.png" alt=""></div>
                     </div>
+                    <div class="pagination pagination1"></div>-->
                 </div>
-                <div class="price js_price">
-                    <div class="sq"><img src="images/sq.png" alt=""></div>
-                    <h2><i>￥</i><span class="dis-old" data-price="218">218</span>/1磅（454g） <strong class="jia">+ ￥52.0 = ￥<b class="dis-price">270</b></strong></h2>
-                    <div class="huangou">
-                        <div class="icnone"></div>
-                        <div class="icon on"></div>
-                        <p class="hg" data-price="52">换购V.S.O.P生巧一份</p>
-                    </div>
+
+            </div>
+            <div class="swipe-cake-price clearfix row" data-special="special" data-pond="1磅,2磅" data-weight="681g,1.13kg" data-postid="1,2"
+                 data-price="198,298" data-sku="011,111" data-method="011,111"
+                 data-pid="011,111" data-ptype="011,111" data-channel="011,111">
+                <div class="cake-t"><img src="images/cake-title.png" alt=""></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <h2>活动价 <i>￥</i><span class="old-price">248</span>/<em class="d-pond">2磅</em></h2>
+                    <s>原价￥298</s>
                     <ul class="buy_btn_box clearfix">
-                        <li><span class="buy_btn" data-price="" data-repurchase="1">立即购买</span></li>
+                        <li class="fr"><span class="buy_btn">立即购买</span></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </div>
@@ -145,43 +139,46 @@
         <div class="evt-content">
             <div class="pct-survey">
                 <div class="qt q1" data-answer="0" style="display: block;">
-                    <h2>1.您是从什么渠道知道MCAKE的？(单选)</h2>
-                    <div class="options toMuch clearfix">
-                        <span data-id="1"><div class="select"></div>A.朋友推荐</span>
-                        <span data-id="2"><div class="select"></div>B.官网/微信/微博</span>
-                        <span data-id="3"><div class="select"></div>C.媒体广告</span>
-                        <span data-id="4"><div class="select"></div>D.线下试吃 </span>
-                        <span data-id="5"><div class="select"></div>E.其他 </span>
-                        <span></span>
+                    <div class="options clearfix">
+                        <span data-id="1">
+                            <div class="select seld-1"></div>
+                            <img src="images/seclect-txt-a.png" alt="">
+                            <img src="images/seclect-img-a.png" class="shake" alt="">
+                        </span>
+                        <span data-id="2">
+                            <div class="select seld-2"></div>
+                            <img src="images/seclect-txt-b.png" alt="">
+                            <img src="images/seclect-img-b.png" class="shake" alt="">
+                        </span>
+                        <span data-id="3">
+                            <div class="select seld-3"></div>
+                            <img src="images/seclect-txt-c.png" alt="">
+                            <img src="images/seclect-img-c.png" class="shake" alt="">
+                        </span>
+                        <span data-id="4">
+                            <div class="select seld-4"></div>
+                            <img src="images/seclect-txt-d.png" alt="">
+                            <img src="images/seclect-img-d.png" class="shake" alt="">
+                        </span>
+                        <span class="other" data-id="5">
+                            <input type="text" maxlength="4" class="other-in">
+                            <img src="images/seclect-txt-e.png" alt="">
+                        </span>
                     </div>
-                    <div class="submit">提交答案</div>
+                    <div class="submit"><img src="images/submit-btn.png" alt=""></div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="sec-tuijian">
-        <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-1.png" alt=""></div>
-        <div class="evt-content" data-anim="slide-up" data-delay="0.2">
-            <div class="cake"><img src="images/cake-tuijian.png" alt="">
-                <div class="price">
-                    <h2>活动价<i>￥</i><span class="dis-price">248.00</span>/2磅 <s>原价：￥<b class="old-price">298.00</b></s></h2>
-                </div>
-                <div class="buy-btn">立即购买</div>
-            </div>
-        </div>
-    </div>
-
 
     <div class="sec-cake">
-
         <div class="evt-content pro-list">
-            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-2.png" alt=""></div>
-            <div class="row row1" data-pond="1磅" data-weight="454g" data-postid="1" data-price="198" data-sku="011" data-method="011" data-pid="011" data-ptype="11" data-channel="11">
+            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-1.png" alt=""></div>
+            <div class="row row1" data-pond="1磅,2.5磅,3磅" data-weight="454g,1.13kg,1.36kg" data-postid="01,1,2" data-price="198,298,428" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31">
                 <div class="secItem cake" data-anim="slide-right" data-delay="0.4"><img src="images/cake-1.png"/></div>
                 <div class="price js_price" data-anim="slide-up" data-delay="0.6">
                     <div class="price-title"><img src="images/t-1.png"/></div>
-                    <h2>活动价<i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价：￥<b class="old-price">198</b></s></h2>
+                    <h2>活动价 <i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
                     <ul class="buy_btn_box clearfix">
                         <li class="fr"><span class="buy_btn">立即购买</span></li>
                     </ul>
@@ -199,7 +196,7 @@
                 <div class="secItem cake" data-anim="slide-left" data-delay="0.4"><img src="images/cake-2.png"/></div>
                 <div class="price js_price" data-anim="slide-up" data-delay="0.6">
                     <div class="price-title"><img src="images/t-2.png"/></div>
-                    <h2>活动价<i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价：￥<b class="old-price">298</b></s></h2>
+                    <h2>活动价 <i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价￥<b class="old-price">298</b></s></h2>
                     <ul class="buy_btn_box clearfix">
                         <li class="fr"><span class="buy_btn">立即购买</span></li>
                     </ul>
@@ -217,7 +214,7 @@
                 <div class="secItem cake" data-anim="slide-right" data-delay="0.4"><img src="images/cake-3.png"/></div>
                 <div class="price js_price" data-anim="slide-up" data-delay="0.6">
                     <div class="price-title"><img src="images/t-3.png"/></div>
-                    <h2>活动价<i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价：￥<b class="old-price">298</b></s></h2>
+                    <h2>活动价 <i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价￥<b class="old-price">298</b></s></h2>
                     <ul class="buy_btn_box clearfix">
                         <li class="fr"><span class="buy_btn">立即购买</span></li>
                     </ul>
@@ -231,7 +228,24 @@
                 </div>
 
             </div>
+            <div class="row row4" data-pond="1磅,2.5磅,3磅" data-weight="454g,1.13kg,1.36kg" data-postid="01,1,2" data-price="198,298,428" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31">
+                <div class="secItem cake" data-anim="slide-left" data-delay="0.4"><img src="images/cake-4.png"/></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title"><img src="images/t-4.png"/></div>
+                    <h2>活动价 <i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价￥<b class="old-price">298</b></s></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn">立即购买</span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
 
+            </div>
         </div>
     </div>
 
@@ -255,30 +269,42 @@
 </div>
 
 
-<div class="Dialogbg-quan"></div>
-<div class="Dialog-quan">
+<div class="Dialogbg-quan" style="display: none;"></div>
+<div class="Dialog-quan" style="display: none;">
     <div class="closes"></div>
     <div class="quan quan-1" style="display: block;">
         <div class="card"><img src="images/card-1.png" alt=""></div>
-        <div class="go-use"><img src="images/go-use.png" alt=""></div>
+        <div class="go-use"><img src="images/go-btn.png" alt=""></div>
     </div>
 
 </div>
 
-<script type="text/javascript" src="https://act.mcake.com/fangli/2019/pc/common/jquery.min.js"></script>
-<script src="https://act.mcake.com/fangli/2019/pc/common/main.js"></script>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
 
 
+<!--<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>-->
 <!-- build:js js/main.js -->
 <script type="text/javascript" src="js/slider-new.js"></script>
 <script type="text/javascript" src="js/animate-util.js"></script>
-<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+
 <script type="text/javascript" src="js/resData.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <!-- endbuild -->
 <script>
   $(".submit").click(function () {
-    QuanDialog(2);/*12345*/
+    var as = $(this).parent(".qt").attr("data-answer");
+    var len = $(".other-in").val().length;
+    if(as==1 || len !=0){
+      QuanDialog(1);/*12345*/
+      //$(this).parent(".qt").fadeOut(0).next().fadeIn(100);
+    }else{
+      if(as==2 && len ==0){
+        alert("请填写答案")
+      }else{
+        alert("请选择答案")
+      }
+    }
   });
 </script>
 </body>

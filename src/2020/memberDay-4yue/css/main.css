@@ -20,14 +20,14 @@ span.num, .noselect {
 
 .evt-container {
   overflow: hidden;
-  background: url("../images/bg.png") repeat;
+  background: url("../images/bg1.png?v=123") center bottom repeat;
 }
 
 .sec-banner {
   max-width: 1920px;
-  max-height: 643px;
+  max-height: 909px;
   height: 100%;
-  background: url(../images/banner.png) center center/auto 100% no-repeat #d8ece8;
+  background: url(../images/banner.png) center center/auto 100% no-repeat;
   background: url(../images/banner.png) center no-repeat\9;
   overflow: hidden;
 }
@@ -53,91 +53,102 @@ span.num, .noselect {
   margin-left: -650px;
 }
 
-.sec-tetui {
+.sec-star {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: -300px;
 }
 
-.sec-tetui .evt-content {
+.sec-star .evt-content {
   width: 1141px;
 }
 
-.sec-tetui .row .cake-cover {
-  position: absolute;
-  top: -40px;
-  left: -43px;
-  width: 825px;
-  height: 612px;
-  z-index: 2;
-  background: url("../images/cake-cover.png");
-}
-
-.sec-tetui .row .cake {
-  position: absolute;
-  top: 60px;
-  left: 114px;
-  width: 600px;
-  height: 420px;
-  z-index: 1;
-}
-
-.sec-tetui .row .price {
-  top: 107px;
-  left: 700px;
-  z-index: 3;
-}
-
-.sec-tetui .row .price h2, .sec-tetui .row .price h2 span, .sec-tetui .row .price s, .sec-tetui .row .price .price_num dl dt span {
-  color: #2e1f43;
-}
-
-.sec-tetui .row .price s {
-  color: #000;
-}
-
-.sec-tetui .row .price .buy_btn_box span {
-  background: none !important;
-  color: #483b5b;
-  border: #726782 1px solid;
-  border-radius: 0;
-}
-
-.sec-tetui .row .price .icon {
-  background: url("../images/icon-2.png");
-}
-
-.sec-tetui .row .price .icon.on {
-  background: url("../images/icon-2-h.png");
-}
-
-.sec-tetui .row .sq {
-  width: 275px;
+.sec-star .swipe-cake {
+  width: 1049px;
+  position: relative;
+  height: 527px;
   margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 20px 20px  30px #d3e3f8;
+  overflow: hidden;
 }
 
-.sec-tetui .row1 {
-  height: 586px;
+.sec-star .swipe-cake .star {
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  right: 50px;
+}
+
+.sec-star .swipe-cake-price {
+  position: relative;
+  width: 1049px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.sec-star .swipe-cake-price .cake-t {
+  width: 524px;
+  float: left;
+}
+
+.sec-star .swipe-cake-price .price {
+  position: absolute;
+  left: auto;
+  top: 50px;
+  right: 0;
+  width: 164px;
+  text-align: center;
+}
+
+.sec-star .swipe-cake-price .price .buy_btn_box {
+  position: absolute;
+  top: 66px;
+  left: 12px;
+}
+
+.sec-star .swipe-cake-price .price h2 {
+  color: #27538d;
+}
+
+.sec-star .swipe-cake-price .price h2 span {
+  color: #27538d;
+}
+
+.sec-star .swipe-cake-price .price s {
+  color: #27538d;
+}
+
+.sec-star .swipe-cake-price .price ul.buy_btn_box li {
+  margin-right: 0;
+}
+
+.sec-star .swipe-cake-price .price .buy_btn {
+  background: #ebb2b3;
+  color: #fff;
 }
 
 .sec-survey {
   position: relative;
 }
 
+.sec-survey .evt-content {
+  width: 1183px;
+}
+
 .sec-survey .pct-survey {
-  width: 669px;
-  height: 285px;
-  background: url("../images/pct-bg.png");
+  width: 1191px;
+  height: 423px;
+  background: url("../images/wenda.png");
   padding-top: 1px;
 }
 
 .sec-survey .pct-survey .qt {
   position: absolute;
-  top: 70px;
+  top: 178px;
   left: 50%;
-  margin-left: -240px;
+  margin-left: -485px;
   text-align: center;
-  width: 480px;
+  width: 970px;
   color: #000;
   display: none;
   z-index: 1;
@@ -156,148 +167,65 @@ span.num, .noselect {
 
 .sec-survey .pct-survey .qt span {
   position: relative;
-  width: 140px;
+  width: 170px;
   text-align: left;
   display: inline-block;
   font-size: 18px;
-  margin: 0 20px;
-  line-height: 30px;
-  text-indent: 27px;
+  cursor: pointer;
+}
+
+.sec-survey .pct-survey .qt span img {
+  margin: 0;
+  float: left;
 }
 
 .sec-survey .pct-survey .qt span .select {
   position: absolute;
-  top: 2px;
-  left: 0;
+  top: 17px;
+  right: 20px;
   text-align: center;
   width: 20px;
-  height: 20px;
-  background: url("../images/select.png");
+  height: 18px;
   cursor: pointer;
 }
 
-.sec-survey .pct-survey .qt span .select.on {
-  background: url("../images/select-ed.png");
+.sec-survey .pct-survey .qt span .seld-1.on {
+  background: url("../images/hook-1.png");
+}
+
+.sec-survey .pct-survey .qt span .seld-2.on {
+  background: url("../images/hook-2.png");
+}
+
+.sec-survey .pct-survey .qt span .seld-3.on {
+  background: url("../images/hook-3.png");
+}
+
+.sec-survey .pct-survey .qt span .seld-4.on {
+  background: url("../images/hook-4.png");
 }
 
 .sec-survey .pct-survey .qt .next, .sec-survey .pct-survey .qt .submit {
   text-align: center;
-  width: 100px;
-  line-height: 24px;
-  color: #000;
-  background: #d3dbbd;
-  border-radius: 15px;
-  margin: 10px auto 0;
-  font-size: 14px;
+  width: 156px;
+  margin: 30px auto 0;
   cursor: pointer;
 }
 
-.sec-survey .pct-survey .qt.q1 {
-  top: 46px;
+.sec-survey .pct-survey .a-shake {
+  animation: shake 3s infinite;
 }
 
-.sec-survey .pct-survey .qt.q2 {
-  top: 55px;
-}
-
-.sec-survey .pct-survey .qt.q5 {
-  top: 55px;
-}
-
-.sec-survey .pct-survey .qt.q4 {
-  top: 55px;
-}
-
-.sec-survey .pct-survey .options.toMuch {
-  top: 20px;
-  width: 441px;
-}
-
-.sec-survey .pct-survey .options.toMuch span {
-  width: 170px !important;
-  float: left;
-}
-
-.sec-survey .pct-survey .options.toShort span {
-  width: 85px !important;
-}
-
-.sec-survey .pct-survey .options.short span {
-  width: 127px !important;
-}
-
-.sec-survey .pct-survey textarea {
-  width: 300px;
-  height: 60px;
-  margin: 0 auto;
-}
-
-.sec-1 {
-  position: relative;
-  margin: -80px auto 0;
-}
-
-.sec-1 .evt-content {
-  width: 1100px;
-}
-
-.sec-1 .calendar {
-  width: 58%;
-  position: relative;
-  max-width: 631px;
-  margin: 0 auto;
-}
-
-.sec-1 .calendar img {
-  width: 100%;
-}
-
-.sec-1 .huaban {
+.sec-survey .pct-survey input {
   position: absolute;
-  top: 20px;
-  left: -10px;
-}
-
-.sec-tuijian {
-  position: relative;
-  z-index: 2;
-}
-
-.sec-tuijian .evt-content {
-  width: 953px;
-  padding: 0;
-}
-
-.sec-tuijian .cake {
-  position: relative;
-  width: 953px;
-  margin: 0 auto;
-}
-
-.sec-tuijian .cake .price {
-  position: absolute;
-  top: 250px;
-  left: 560px;
-}
-
-.sec-tuijian .cake .price h2,
-.sec-tuijian .cake .price h2 span,
-.sec-tuijian .cake .price s {
-  color: #7a4040;
-}
-
-.sec-tuijian .cake .buy-btn {
-  position: absolute;
-  top: 320px;
-  left: 560px;
-  cursor: pointer;
-  background: #aa6f43;
-  color: #fff;
-  text-align: center;
-  width: 150px;
-  line-height: 40px;
-  border-radius: 40px;
-  letter-spacing: 2px;
+  left: 80px;
+  top: 12px;
+  width: 70px;
+  height: 24px;
+  color: #c9b852;
+  font-size: 16px;
+  background: none;
+  border: none;
 }
 
 .sec-cake {
@@ -316,31 +244,18 @@ span.num, .noselect {
 }
 
 .sec-cake .evt-content .row {
-  height: 550px;
+  height: 520px;
 }
 
 .sec-cake .evt-content .row .cake {
   position: absolute;
   top: 0;
-  left: 125px;
+  left: 11px;
 }
 
 .sec-cake .evt-content .row .price {
-  top: 100px;
+  top: 140px;
   left: 650px;
-}
-
-.sec-cake .evt-content .row .price h2, .sec-cake .evt-content .row .price h2 span, .sec-cake .evt-content .row .price .price_num dl dt span, .sec-cake .evt-content .row .price .huangou {
-  color: #419789;
-}
-
-.sec-cake .evt-content .row .price s {
-  color: #000;
-}
-
-.sec-cake .evt-content .row .price .buy_btn_box span {
-  background: #409789 !important;
-  color: #fff;
 }
 
 .sec-cake .evt-content .row .price .nopoint.minus {
@@ -354,18 +269,18 @@ span.num, .noselect {
 .sec-cake .evt-content .row2 .cake {
   position: absolute;
   top: 0;
-  left: 605px;
+  left: 525px;
 }
 
 .sec-cake .evt-content .row2 .price {
-  top: 100px;
+  top: 140px;
   left: 160px;
 }
 
 .sec-cake .evt-content .row3 .cake {
   position: absolute;
-  top: 0;
-  left: 125px;
+  top: -50px;
+  left: -35px;
 }
 
 .sec-cake .evt-content .row3 .price {
@@ -373,9 +288,15 @@ span.num, .noselect {
   left: 650px;
 }
 
-.sec-cake .evt-content .code {
-  width: 564px;
-  margin: 30px auto;
+.sec-cake .evt-content .row4 .cake {
+  position: absolute;
+  top: 0;
+  left: 525px;
+}
+
+.sec-cake .evt-content .row4 .price {
+  top: 100px;
+  left: 160px;
 }
 
 .more {
@@ -397,25 +318,17 @@ span.num, .noselect {
 .evt-footer {
   z-index: 1;
   position: relative;
-  background: url("../images/foot-bg.png") repeat;
-  width: 100%;
 }
 
 .evt-footer .evt-content {
   width: 1200px;
-  color: #4d370e;
-}
-
-.evt-footer .foot-zp {
-  position: absolute;
-  top: 90px;
-  right: 300px;
+  color: #577295;
 }
 
 .evt-footer .evt-rules {
   width: 860px;
   margin: 0 auto;
-  padding: 100px 0 100px 55px;
+  padding: 100px 0 80px 20px;
 }
 
 .evt-footer .evt-rules h2 {
@@ -454,7 +367,7 @@ span.num, .noselect {
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
-  color: #9b4245;
+  color: #5a84b9;
   text-align: left;
 }
 
@@ -466,12 +379,12 @@ span.num, .noselect {
 
 .price h2 span {
   font-size: 28px;
-  color: #9b4245;
+  color: #5a84b9;
 }
 
 .price s {
   font-size: 16px;
-  color: #9b4245;
+  color: #000;
   font-weight: normal;
   line-height: 26px;
   text-decoration: sh;
@@ -557,7 +470,7 @@ span.num, .noselect {
 .price ul.buy_btn_box li span {
   display: block;
   width: 130px;
-  background: #de9092;
+  background: #aac7eb;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -573,7 +486,7 @@ span.num, .noselect {
   height: 30px;
   margin: 15px 0 10px 10px;
   float: left;
-  border: #5a968a 1px solid;
+  border: #5a84b9 1px solid;
   border-radius: 17px;
 }
 
@@ -590,7 +503,7 @@ span.num, .noselect {
 
 .bangshu dt span {
   display: block;
-  color: #5a968a;
+  color: #5a84b9;
   font-size: 15px;
 }
 
@@ -639,17 +552,15 @@ span.num, .noselect {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: -18px;
-  right: -40px;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
   z-index: 8;
-  background: url("../images/close.png") no-repeat;
+  background: url("../images/close2.png") no-repeat;
 }
 
 .Dialog-quan .quan {
   position: relative;
-  background: #fffdf1;
-  padding: 30px 20px 80px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -657,10 +568,10 @@ span.num, .noselect {
 .Dialog-quan .quan .go-use {
   display: block;
   position: absolute;
-  bottom: 40px;
+  bottom: 90px;
   left: 50%;
-  margin-left: -62.5px;
-  width: 125px;
+  margin-left: -78px;
+  width: 156px;
   cursor: pointer;
 }
 
@@ -674,7 +585,7 @@ span.num, .noselect {
   text-align: center;
   position: relative;
   font-size: 18px;
-  background: #fff;
+  background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -693,7 +604,7 @@ span.num, .noselect {
   position: absolute !important;
   left: 0;
   text-align: center;
-  bottom: 20px;
+  bottom: 50px;
   width: 100%;
 }
 
@@ -715,16 +626,57 @@ span.num, .noselect {
 
 @media (max-width: 1600px) {
   .sec-banner {
-    height: 600px;
+    height: 500px;
   }
-  .sec-1 .calendar {
-    width: 47%;
-    margin: -100px auto 0;
+  .sec-star {
+    margin-top: -220px;
   }
-  .sec-1 .huaban {
-    left: 50px;
+  .sec-star .swipe-cake-price .cake-t {
+    width: 437px;
   }
-  .sec-tuijian .hy-title {
+  .sec-star .swipe-cake-price .cake-t img {
+    width: 100%;
+  }
+  .sec-star .swipe-cake-price {
+    width: 717px;
     padding: 50px 0;
+  }
+  .sec-star .swipe-cake-price .price {
+    top: 44px;
+  }
+  .sec-star .swipe-cake {
+    width: 717px;
+    height: 360px;
+    margin: 0 auto;
+  }
+  .sec-star .swipe-cake .star {
+    right: 27px;
+  }
+  .hy-title {
+    padding: 50px 0;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(8px) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-6px) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(4px) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

@@ -1,0 +1,57 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.evt-container .btns {
+  width: 207px;
+  height: 67px;
+  background: #f19ec2;
+  top: 982px;
+  left: 130px;
+  text-align: center;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.evt-container .btns span {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  line-height: 67px;
+}
+
+.sec-banner {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.sec-banner img {
+  width: 100%;
+  display: block;
+}
+
+.sec-main {
+  margin-top: -70px;
+}
+
+.sec-main .evt-content {
+  width: 1089px;
+  margin: 0 auto;
+}
+
+.sec-main .dis {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -960px;
+  width: 1920px;
+}

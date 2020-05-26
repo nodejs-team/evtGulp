@@ -1,0 +1,56 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+.evt-container{ overflow: hidden;
+  .evt-content{ position: relative; width: 1200px; text-align: center;}
+  .btns{position: absolute; width: 150px; background:#ffaf7d; top:550px; left:139px; text-align: center; cursor: pointer; border-radius: 44px;
+    span{ display: block; color: #fff; font-size: 16px; line-height: 41px;}
+  }
+}
+
+.sec-banner{ position: relative; background: #fffcee; max-width: 1920px; margin: 0 auto;
+  img{width: 100%; display: block;}
+}
+
+.sec-1,.sec-3,.sec-5,.sec-7{ position: relative; padding: 60px 0; background: #fffcee;}
+
+.sec-1.bj{
+  .btns{top:589px; left:758px;}
+}
+
+.sec-3{
+  .btns{top:380px; left:728px;}
+}
+
+.sec-3.bj{
+  .btns{top:658px; left:120px;}
+}
+
+.sec-5{
+  .btns{top:597px; left:118px;}
+}
+
+.sec-7{
+  .btns{top:390px; left:770px;}
+}
+
+.sec-2{ position: relative; padding: 60px 0; background: #daece4 url("../images/bg_tip_1.png") center top no-repeat; }
+.sec-4{ position: relative; padding: 60px 0; background: #ffe4cd url("../images/bg_tip_2.png") center top no-repeat; }
+.sec-6{ position: relative; padding: 60px 0; background: #daece4 url("../images/bg_tip_3.png") center top no-repeat; }
+.sec-8{ position: relative; padding: 60px 0; background: #ffe4cd url("../images/bg_tip_4.png") center top no-repeat; }
+
+
+
+.evt-footer{ z-index: 1; position: relative; background: #fffcee;
+  .evt-content{width: 1200px; color: #8b4a12;}
+  .evt-rules{width: 738px; margin: 0 auto; padding:100px 0 80px 20px; text-align: left;
+    h2{ font-size: 18px; font-weight: normal; margin-bottom: 5px;  }
+    p{ font-size:16px; line-height: 30px; padding-left: 1.5em;  text-indent: -1.5em;  }
+  }
+}

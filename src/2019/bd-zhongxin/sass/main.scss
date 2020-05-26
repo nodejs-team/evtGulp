@@ -19,27 +19,23 @@
 }
 
 
-.sec-footer{ background: #b17b52;
+.sec-footer{ background: #b17b52; color: #fff;
   .evt-content {
     width: 1000px;
     .more{ position: absolute; right: 82px; bottom: 56px; width: 130px; height: 130px;}
-    .hd-guize{ width: 610px; margin: 0 auto; padding: 50px 0;}
+    .hd-guize{ width: 700px; margin: 0 auto; padding: 100px 0;}
 
     h2{
       font-size:28px; font-weight: normal; margin-left: -80px;
-      margin-bottom: 15px; color: #fff;
+      margin-bottom: 15px;
     }
     p{
-      font-size:20px; color: #fff;
-      line-height: 1.6em;
+      font-size:19px;
+      line-height: 1.8em;
       padding-left: 30px;
       text-indent: -30px;
       margin-top: 5px;
+      b{font-weight: normal; font-size: 20px; color: #000;}
     }
   }
 }
-
-
-
-
-

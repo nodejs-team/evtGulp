@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--公共头部-->
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner"></div>
+    <div class="s-title-1"></div>
+    <div class="sec sec-1">
+        <div class="evt-content">
+            <ul class="product clearfix">
+                <li>
+                    <img src="images/part1_cake_1.png" alt="">
+                    <div class="price">
+                        <p><img src="images/part1_title_1.png" alt=""></p>
+                        <div class="cart"></div>
+                        <div class="btns"><span>立即购买</span></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/part1_cake_2.png" alt="">
+                    <div class="price">
+                        <p><img src="images/part1_title_2.png" alt=""></p>
+                        <div class="cart"></div>
+                        <div class="btns"><span>立即购买</span></div>
+                    </div>
+                </li>
+                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸：2-3人食 18cm*4cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
+                    <img src="images/part1_cake_3.png" alt="">
+                    <div class="price">
+                        <p><img src="images/part1_title_3.png" alt=""></p>
+                        <div class="cart"></div>
+                        <div class="btns"><span>立即购买</span></div>
+                    </div>
+                </li>
+                <li data-pond="1磅,2磅,3磅,5磅" data-weight="100g,1.25kg,1.58kg,2.88kg" data-price="198,298,428,728" data-time="提示：需提前1小时预订,提示：需提前5小时预订,提示：需提前2小时预订,提示：需提前4小时预订" data-postid="01,02,03,04" data-tips="尺寸：2-3人食 18cm*4cm,尺寸：4-7人食 18cm*4cm,尺寸：8-12人食 22cm*4.5cm,尺寸：12-20人食 25cm*5.5cm" data-sku="01,02,03,04" data-method="01,02,03,04" data-pid="01,02,03,04" data-ptype="1,2,3,4" data-channel="11,21,31,41">
+                    <img src="images/part1_cake_4.png" alt="">
+                    <div class="price">
+                        <p><img src="images/part1_title_4.png" alt=""></p>
+                        <div class="cart"></div>
+                        <div class="btns"><span>立即购买</span></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="zengpin"><img src="images/zeng_1.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="sec sec-2">
+        <div class="Notstarted">
+            <p id="floater">活动未开始<br>敬请期待</p>
+            <div class="Notstarted-box"></div>
+        </div>
+        <div class="s-title-2"></div>
+        <div class="evt-content">
+            <ul class="clearfix">
+                <li>
+                    <img src="images/part2_cake_1.png" alt="">
+                    <div class="price">
+                        <p><img src="images/part2_title_1.png" alt=""></p>
+                        <div class="cart"></div>
+                        <div class="btns"><span>立即购买</span></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/part2_cake_2.png" alt="">
+                    <div class="price">
+                        <p><img src="images/part2_title_2.png" alt=""></p>
+                        <div class="cart"></div>
+                        <div class="btns"><span>立即购买</span></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/part2_cake_3.png" alt="">
+                    <div class="price">
+                        <p><img src="images/part2_title_3.png" alt=""></p>
+                        <div class="cart"></div>
+                        <div class="btns"><span>立即购买</span></div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/part2_cake_4.png" alt="">
+                    <div class="price">
+                        <p><img src="images/part2_title_4.png" alt=""></p>
+                        <div class="cart"></div>
+                        <div class="btns"><span>立即购买</span></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="zengpin"><img src="images/zeng_2.png" alt=""></div>
+        </div>
+    </div>
+
+
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则:</h2>
+                <p>1、活动时间：2020年6月3日-2020年6月19日,最晚配送时间：6月30日</p>
+                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝、现金，本活动仅限使用微信、支付宝、现金全额支付的用户参与</p>
+                <p>4、活动内容：<br>
+                第一趴，预热礼遇：<br>
+                活动时间：6月3日-6月14日<br>
+                <span>·活动期间全场单笔消费每满100减10元，满减门槛上限60元</span><br>
+                <span>·活动期间单笔订单消费金额满198元赠朗德林浓缩洗衣液便携装1袋（20g）</span><br>
+                <span>·活动期间单笔订单消费金额满298元赠朗德林除味喷雾便携装1支（价值34元）</span><br>
+                <span>·活动期间单笔订单消费金额满398元赠朗德林除味喷雾1瓶（300ml，价值58元）</span><br>
+                第二趴，甜蜜爆发:<br>
+                活动时间：6月14日-6月19日<br>
+                    <span>·活动期间在活动页购买指定4款蛋糕2磅规格：Mojito 柠·漾、茉意芒芒、荔荔安、安逸兔，可享受立减50元活动优惠</span><br>
+                <span>·活动期间单笔订单消费金额满328元赠美思庄园桃红莫斯卡托起泡酒750ml1瓶（价值218元）</span><br>
+                <span>·活动期间单笔订单消费金额满458元赠III VIVINIKO时尚包1个（价值780元）</span><br>
+                活动礼品数量有限，先到先得</p>
+                <p>5、本活动满赠和满减同享，但不与其他优惠同享</p>
+                <p>6、本活动最终解释权归MCAKE所有</p>
+
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+<!--蛋糕选择弹窗-->
+<div class="Dialogbg-Select" ontouchmove="return false;"></div>
+<div class="Dialog-Select" ontouchmove="return false;">
+    <div class="s-closes"></div>
+    <div class="Select" ontouchmove="return false;">
+        <div class="s-title">
+            <h2>选择您要订购的磅数：</h2>
+            <b>Sélectionnez la commande le nombre de livres：</b>
+        </div>
+        <div class="s-bangshu clearfix">
+            <ul class="clearfix"></ul>
+            <div class="d-tips">
+                <div class="time">提示：需提前5小时预订</div>
+                <div class="tips">尺寸： 4-7人食 18cm*4cm（不含玫瑰花瓣）</div>
+            </div>
+        </div>
+        <div class="s-num clearfix">
+            <b>数量：</b>
+            <div class="nums">
+                <a href="javascript:;" class="minus"></a>
+                <input class="num" value="1" readonly="" type="text" data-num="">
+                <a href="javascript:;" class="plus"></a>
+            </div>
+        </div>
+        <div class="s-prices">
+            <b>价格：</b>
+            <input type="hidden" class="postid" data-postid="">
+            <!--<p>￥<span class="s-price">00</span></p>-->
+            <p><i>￥</i> <span class="s-new-price">00</span> <s class="old-p">￥<samp class="s-price">00</samp></s></p>
+        </div>
+        <div class="btns">
+            <div class="go-buy">立即购买</div>
+            <div class="go-car">加入购物车</div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/public-shimily-price-Dialog-new.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

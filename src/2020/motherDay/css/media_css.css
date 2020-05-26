@@ -1,0 +1,11 @@
+@media (max-width: 1600px) {
+  .sec-banner{height: 500px; }
+  .sec-star{margin-top: -220px;}
+  .sec-star .swipe-cake-price .cake-t{ width: 260px;}
+  .sec-star .swipe-cake-price .cake-t img{width: 100%;}
+  .sec-star .swipe-cake-price {  width: 717px; padding:50px 0;}
+  .sec-star .swipe-cake-price .price{top: 44px;}
+  .sec-star .swipe-cake{width: 717px; height:340px; margin: 0 auto;}
+  .sec-star .swipe-cake .star{ right: 27px;}
+  .hy-title{ padding:50px 0; }
+}

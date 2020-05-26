@@ -1,0 +1,346 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.evt-container .evt-content {
+  position: relative;
+  width: 1130px;
+  text-align: center;
+}
+
+.evt-container .btns {
+  position: relative;
+  float: left;
+  width: 136px;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 44px;
+}
+
+.evt-container .btns span {
+  display: block;
+  color: #93543c;
+  font-size: 16px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.evt-container .btns2 {
+  position: relative;
+  float: left;
+  width: 136px;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 44px;
+}
+
+.evt-container .btns2 span {
+  display: block;
+  color: #93543c;
+  font-size: 16px;
+  height: 45px;
+  line-height: 45px;
+}
+
+.sec-banner {
+  position: relative;
+  background: url("../images/banner.png") center top no-repeat;
+  max-width: 1920px;
+  height: 761px;
+  margin: 0 auto;
+}
+
+.sec-banner .banner_title {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.sec-banner img {
+  width: 100%;
+  display: block;
+}
+
+.sec_title {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sec_title img {
+  margin: 0 auto;
+}
+
+.sec-1.sec_bj {
+  position: relative;
+  padding: 60px 0 70px;
+  background: url("../images/sec_bg_1_bj.png") center top no-repeat;
+}
+
+.sec-1 {
+  position: relative;
+  padding: 60px 0 60px;
+  background: url("../images/sec_bg_1.png") center top no-repeat;
+}
+
+.sec-1 .row {
+  margin: 86px auto;
+}
+
+.sec-1 .row .bread {
+  position: relative;
+  z-index: 1;
+}
+
+.sec-1 .row .star {
+  position: absolute;
+  top: 36px;
+  right: 83px;
+  width: 102px;
+  height: 117px;
+  background: url("../images/star.png");
+  z-index: 5;
+}
+
+.sec-1 .row .star.bj {
+  background: url("../images/star_bj.png");
+}
+
+.sec-1 .row_1 .bread {
+  float: left;
+  width: 631px;
+  height: 439px;
+}
+
+.sec-1 .row_1 .bread_t {
+  float: right;
+}
+
+.sec-1 .row_2 .bread {
+  float: right;
+  width: 631px;
+  height: 439px;
+}
+
+.sec-1 .row_2 .bread_t {
+  float: left;
+}
+
+.sec-2.sec_bj {
+  margin-top: -226px;
+  position: relative;
+  padding: 224px 0 1px 0;
+  background: url("../images/sec_bg_2_bj.png") center top no-repeat;
+}
+
+.sec-2 {
+  position: relative;
+  padding: 10px 0 2px;
+  background: url("../images/sec_bg_2.png") center top no-repeat;
+}
+
+.sec-2 .btns2 {
+  margin: 30px auto 110px;
+  float: none;
+  background: #918dca;
+}
+
+.sec-2 .btns2 span {
+  color: #fff;
+}
+
+.sec-3 {
+  position: relative;
+  padding: 150px 0;
+  background: url("../images/sec_bg_3.png") center top no-repeat;
+}
+
+.sec-3 .evt-content {
+  width: 1100px;
+}
+
+.sec-3 .btn-buy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 354px;
+  height: 66px;
+  cursor: pointer;
+  background: #000;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.sec-3 .btn-buy a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sec-3 .buy2 {
+  left: 384px;
+}
+
+.sec-3 .buy3 {
+  left: 766px;
+}
+
+.price {
+  width: 328px;
+  margin: 0 auto;
+  padding: 45px 0 0 0;
+}
+
+.price h2 {
+  color: #ff8a00;
+  float: left;
+  line-height: 40px;
+  margin-top: -7px;
+}
+
+.price h2 i {
+  font-size: 10px;
+  font-style: normal;
+}
+
+.price h2 b {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.price .bangshu {
+  width: 122px;
+  height: 30px;
+  margin: 0 10px;
+  float: left;
+}
+
+.price .bangshu dd {
+  float: left;
+}
+
+.price .bangshu dt {
+  float: left;
+  width: 55px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.price .bangshu dt span {
+  display: block;
+  color: #c65459;
+  font-size: 15px;
+}
+
+.price .nopoint {
+  width: 21px;
+  height: 21px;
+  background: url("../images/in-a-1.png") center no-repeat;
+  cursor: pointer;
+  border: 5px solid transparent;
+}
+
+.price .nopoint.plus {
+  background: url("../images/in-a-2.png") center no-repeat;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/foot_bg.png") repeat;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #5e6c69;
+}
+
+.evt-footer .evt-rules {
+  width: 738px;
+  margin: 0 auto;
+  padding: 100px 0 80px 20px;
+  text-align: left;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.swiper-slide {
+  position: relative;
+  background: none !important;
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.pagination {
+  position: absolute !important;
+  left: 0;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #fff;
+  margin: 0 5px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.swiper-active-switch {
+  background: #8782e0;
+  opacity: 1;
+}
+
+@media (max-width: 1600px) {
+  .sec-banner {
+    height: 605px;
+    position: relative;
+    background: url("../images/banner.png") center bottom no-repeat;
+  }
+  .sec-banner .banner_title {
+    width: 860px;
+  }
+}

@@ -15,13 +15,13 @@ span.num,.noselect{
   -ms-user-select:none;
   user-select:none;
 }
-.evt-container{ overflow: hidden; background: url("../images/bg.png") repeat; }
+.evt-container{ overflow: hidden; background: url("../images/bg1.png?v=123") center bottom repeat;}
 
 .sec-banner{
   max-width:1920px;
-  max-height:643px;
+  max-height:909px;
   height:100%;
-  background:url(../images/banner.png) center center/auto 100% no-repeat #d8ece8;
+  background:url(../images/banner.png) center center/auto 100% no-repeat;
   background:url(../images/banner.png) center no-repeat\9;
   overflow:hidden
 
@@ -34,128 +34,73 @@ span.num,.noselect{
 .dis{position: absolute; left: 50%;}
 .dis-1{ top: 350px; margin-left:-650px;}
 
-.sec-tetui{ position: relative; padding-top:40px; padding-bottom: 40px;
+.sec-star{ position: relative; margin-top: -300px;
   .evt-content{width: 1141px;}
-  .row{
-    .cake-cover{ position: absolute; top:-40px; left:-43px;  width: 825px; height: 612px; z-index: 2; background: url("../images/cake-cover.png");}
-    .cake{position: absolute; top:60px; left:114px; width: 600px; height: 420px; z-index: 1; }
-    .price{ top:107px; left: 700px; z-index: 3;
-      h2, h2 span,s,.price_num dl dt span{color: #2e1f43;}
-      s{color: #000;}
-      .buy_btn_box span{background: none !important; color: #483b5b; border: #726782 1px solid; border-radius: 0;}
-      .icon{background: url("../images/icon-2.png"); }
-      .icon.on{background: url("../images/icon-2-h.png");}
-    }
-    .sq{width: 275px; margin: 0 auto;}
+  .swipe-cake{width: 1049px; position: relative;  height: 527px; margin: 0 auto; border-radius: 5px;  box-shadow:20px 20px  30px #d3e3f8; overflow: hidden;
+    .star{position: absolute; z-index:2; top: 25px; right: 50px;}
   }
-  .row1{height: 586px;}
+  .swipe-cake-price{ position: relative; width: 1049px; margin: 0 auto; padding:50px 0;
+    .cake-t{ width: 524px; float: left;}
+    .price{position: absolute; left:auto; top: 50px; right: 0; width: 164px; text-align: center;
+      .buy_btn_box{position: absolute; top:66px; left: 12px;}
+      h2{color: #27538d;
+        span{color: #27538d;}
+      }
+      s{color: #27538d;}
+      ul.buy_btn_box li{margin-right: 0;}
+      .buy_btn{background: #ebb2b3; color: #fff;}
+    }
+  }
 }
 
 
-.sec-survey{
-  position: relative;
-  .pct-survey{ width: 669px; height: 285px; background: url("../images/pct-bg.png"); padding-top: 1px;
-    .qt{position: absolute; top:70px; left: 50%; margin-left: -240px; text-align: center; width: 480px; color: #000;  display: none; z-index: 1;
+.sec-survey{  position: relative;
+  .evt-content{width: 1183px; }
+  .pct-survey{width: 1191px; height: 423px; background: url("../images/wenda.png"); padding-top: 1px;
+    .qt{position: absolute; top:178px; left: 50%; margin-left: -485px; text-align: center; width: 970px; color: #000;  display: none; z-index: 1;
       h2{font-weight: normal;font-size: 18px; line-height:34px; margin-bottom:10px; }
       .options{margin: 0 auto;}
-      span{position: relative; width: 140px; text-align: left; display:inline-block;font-size: 18px; margin: 0 20px; line-height: 30px; text-indent: 27px;
-        .select{position: absolute; top: 2px; left:0; text-align: center; width: 20px; height: 20px; background:url("../images/select.png");cursor: pointer;}
-        .select.on{background:url("../images/select-ed.png");}
+      span{position: relative; width: 170px; text-align: left; display:inline-block;font-size: 18px; cursor: pointer;
+        img{margin: 0; float: left;}
+        .select{position: absolute; top: 17px; right:20px; text-align: center; width: 20px; height: 18px; cursor: pointer;}
+        .seld-1.on{background:url("../images/hook-1.png");}
+        .seld-2.on{background:url("../images/hook-2.png");}
+        .seld-3.on{background:url("../images/hook-3.png");}
+        .seld-4.on{background:url("../images/hook-4.png");}
       }
-      .next,.submit{ text-align: center; width: 100px; line-height: 24px; color: #000; background: #d3dbbd; border-radius: 15px; margin:10px auto 0; font-size: 14px; cursor: pointer;}
+
+      .next,.submit{ text-align: center; width: 156px;  margin:30px auto 0;  cursor: pointer;}
     }
-    .qt.q1{ top: 46px;}
-    .qt.q2{ top: 55px;}
-    .qt.q5{ top: 55px;}
-    .qt.q4{ top: 55px;}
-    .options.toMuch{ top:20px; width: 441px;
-      span{ width: 170px !important; float: left;}
-    }
-    .options.toShort{
-      span{ width: 85px !important;}
-    }
-    .options.short{
-      span{ width: 127px !important;}
-    }
-    textarea{width: 300px; height: 60px; margin: 0 auto;}
+    .a-shake{animation: shake 3s infinite;}
+
+    input{position: absolute; left: 80px; top:12px; width: 70px; height:24px; color: #c9b852; font-size: 16px; background: none; border:none;}
   }
 }
 
-.sec-1{ position:relative;  margin:-80px auto 0;
-    .evt-content {  width:1100px;  }
-  .calendar {
-    width:58%; position: relative;
-    max-width:631px;
-    margin:0 auto
-  }
-  .calendar img {
-    width:100%
-  }
-  .huaban{position: absolute; top: 20px; left: -10px;}
-
-}
-
-
-.sec-tuijian {  position:relative;  z-index:2;
-  .evt-content {
-    width:953px;
-    padding:0;
-  }
-  .cake {
-    position:relative;
-    width:953px;
-    margin:0 auto
-  }
-  .cake .price {
-    position:absolute;
-    top:250px;
-    left:560px
-  }
-  .cake .price h2,
-  .cake .price h2 span,
-  .cake .price s {
-    color:#7a4040
-  }
-  .cake .buy-btn {
-    position:absolute;
-    top:320px;
-    left:560px;
-    cursor:pointer;
-    background:#aa6f43;
-    color:#fff;
-    text-align:center;
-    width:150px;
-    line-height:40px;
-    border-radius:40px;
-    letter-spacing:2px
-  }
-}
 
 
 .sec-cake{  position: relative; z-index: 1; padding-top:10px; padding-bottom:0;
   .evt-content{width: 1141px;
     .row{position: relative; }
-    .row{height: 550px;
-      .cake{position: absolute;top:0; left:125px;}
-      .price{ top:100px; left: 650px;
-        h2, h2 span,.price_num dl dt span,.huangou{color: #419789;}
-        s{color: #000;}
-        .buy_btn_box span{background: #409789 !important; color: #fff;}
+    .row{height: 520px;
+      .cake{position: absolute;top:0; left:11px;}
+      .price{ top:140px; left: 650px;
         .nopoint.minus{background: url("../images/in-a-1.png") center no-repeat;}
         .nopoint.plus{background: url("../images/in-a-2.png") center no-repeat;}
-
       }
     }
     .row2{
-      .cake{position: absolute; top:0; left: 605px;}
-      .price{ top:100px; left: 160px; }
+      .cake{position: absolute; top:0; left: 525px;}
+      .price{ top:140px; left: 160px; }
     }
     .row3{
-      .cake{position: absolute;top:0; left:125px;}
+      .cake{position: absolute;top:-50px; left:-35px;}
       .price{ top:130px; left: 650px;}
     }
-
-  .code{width: 564px; margin: 30px auto;}
+    .row4{
+      .cake{position: absolute; top:0; left: 525px;}
+      .price{ top:100px; left: 160px; }
+    }
   }
 }
 
@@ -165,11 +110,9 @@ span.num,.noselect{
 }
 
 
-.evt-footer{ z-index: 1;
-  position: relative;  background:url("../images/foot-bg.png") repeat; width: 100%;
-  .evt-content{width: 1200px; color: #4d370e;}
-    .foot-zp{position: absolute; top: 90px; right: 300px;}
-    .evt-rules{width: 860px; margin: 0 auto; padding:100px 0 100px 55px;
+.evt-footer{ z-index: 1; position: relative;
+  .evt-content{width: 1200px; color: #577295;}
+    .evt-rules{width: 860px; margin: 0 auto; padding:100px 0 80px 20px;
       h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
       p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
     }
@@ -182,10 +125,10 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 /*价格样式 通用*/
 
 .price { position: absolute; width: 392px;text-align: left;  }
-.price h2 {margin:13px 0 0; font-size: 18px; font-weight: normal; line-height: 30px; color: #9b4245;text-align: left;  }
+.price h2 {margin:13px 0 0; font-size: 18px; font-weight: normal; line-height: 30px; color: #5a84b9;text-align: left;  }
 .price h2 i { font-size: 14px; font-style: normal; vertical-align: baseline;  }
-.price h2 span {  font-size: 28px;  color: #9b4245;  }
-.price s {font-size: 16px;  color: #9b4245;  font-weight: normal;  line-height: 26px;  text-decoration: sh;margin-left: 5px; }
+.price h2 span {  font-size: 28px;  color: #5a84b9;  }
+.price s {font-size: 16px;  color: #000;  font-weight: normal;  line-height: 26px;  text-decoration: sh;margin-left: 5px; }
 .price b{font-weight: normal;}
 .price em{font-style: normal;}
 .price .price-title{margin-bottom: 50px !important;}
@@ -202,13 +145,13 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 .price ul.buy_btn_box.twoBtn { width: 280px; }
 .price ul.buy_btn_box li { float: left; height: 40px; margin-right: 5px; }
 .price ul.buy_btn_box li.fr { float: right; }
-.price ul.buy_btn_box li span { display: block; width: 130px; background: #de9092; border: none; color: #fff; cursor: pointer; height: 32px; line-height: 32px; font-size: 17px; text-align: center; border-radius: 15px; }
+.price ul.buy_btn_box li span { display: block; width: 130px; background: #aac7eb; border: none; color: #fff; cursor: pointer; height: 32px; line-height: 32px; font-size: 17px; text-align: center; border-radius: 15px; }
 
 
-.bangshu{width: 161px; height: 30px; margin:15px 0 10px 10px; float: left; border: #5a968a 1px solid; border-radius: 17px;
+.bangshu{width: 161px; height: 30px; margin:15px 0 10px 10px; float: left; border: #5a84b9 1px solid; border-radius: 17px;
   dd{float: left;}
   dt{float: left; width:100px; text-align: center; line-height: 30px;
-    span{display: block; color: #5a968a; font-size: 15px;}
+    span{display: block; color: #5a84b9; font-size: 15px;}
   }
 }
 
@@ -221,9 +164,9 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 .Dialogbg-quan{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none;-moz-opacity:.7;filter:alpha(opacity=70); }
 
 .Dialog-quan{  box-shadow: 0 0 0 #999;  font-size: 14px; height:auto !important; padding: 1px; top: 50%; left: 50%;  margin: -180px auto 0 -200px !important;  position: fixed; z-index: 99999; display: none;
-  .closes{ width: 30px; height: 30px; position: absolute; top:-18px; right: -40px; cursor: pointer; z-index: 8; background: url("../images/close.png") no-repeat;}
-  .quan{position: relative; background: #fffdf1; padding: 30px 20px 80px; border-radius: 10px; overflow: hidden;
-    .go-use {display: block; position: absolute; bottom: 40px; left: 50%; margin-left: -62.5px; width:125px;  cursor: pointer;
+  .closes{ width: 30px; height: 30px; position: absolute; top:20px; right: 20px; cursor: pointer; z-index: 8; background: url("../images/close2.png") no-repeat;}
+  .quan{position: relative;  border-radius: 10px; overflow: hidden;
+    .go-use {display: block; position: absolute; bottom: 90px; left: 50%; margin-left: -78px; width:156px;  cursor: pointer;
     }
   }
 }
@@ -231,7 +174,7 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 
 .swiper-container { position: relative;  width: 100%;  height: 100%;  }
 .swiper-slide {
-  text-align: center; position: relative;  font-size: 18px;  background: #fff;  display: -webkit-box;  display: -ms-flexbox;
+  text-align: center; position: relative;  font-size: 18px;  background: none;  display: -webkit-box;  display: -ms-flexbox;
   display: -webkit-flex;  display: flex;  -webkit-box-pack: center;  -ms-flex-pack: center;
   -webkit-justify-content: center;  justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;
   -webkit-align-items: center;  align-items: center;
@@ -240,7 +183,7 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
   position: absolute !important;
   left: 0;
   text-align: center;
-  bottom:20px;
+  bottom:50px;
   width: 100%;
 }
 .swiper-pagination-switch {
@@ -261,14 +204,25 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 
 
 @media (max-width: 1600px) {
-  .sec-banner{height: 600px;}
-  .sec-1{
-    .calendar{width:47%; margin:-100px auto 0;}
-    .huaban{left: 50px;}
+  .sec-banner{height: 500px; }
+  .sec-star{margin-top: -220px;}
+  .sec-star .swipe-cake-price .cake-t{ width: 437px;
+    img{width: 100%;}
   }
-  .sec-tuijian{
-    .hy-title{ padding:50px 0; }
+  .sec-star .swipe-cake-price {  width: 717px; padding:50px 0;}
+  .sec-star .swipe-cake-price .price{top: 44px;}
+  .sec-star .swipe-cake{width: 717px; height:360px; margin: 0 auto;
+    .star{ right: 27px;}
   }
+  .hy-title{ padding:50px 0; }
 }
 
-
+@keyframes shake{
+  0%{transform:translateX(0);}
+  15%{transform:translateX(-10px) rotate(-5deg);}
+  30%{transform:translateX(8px) rotate(3deg);}
+  45%{transform:translateX(-6px) rotate(-3deg);}
+  60%{transform:translateX(4px) rotate(2deg);}
+  75%{transform:translateX(-2px) rotate(-1deg);}
+  100%{transform:translateX(0);}
+}

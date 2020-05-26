@@ -1,13 +1,73 @@
 {
 	"groups":[{
-			"keys":"more_png,t-1_png,t-2_png,t-3_png,bg_png,cake-1_png,cake-2_png,cake-3_png,cake-tuijian_png,calendar-1_png,calendar-2_png,calendar-3_png,calendar-4_png,calendar-5_png,close_png,close2_png,foot-bg_png,hy-title-1_png,hy-title-2_png,in-a-1_png,in-a-2_png",
+			"keys":"in-a-2_png,seclect-img-a_png,seclect-img-b_png,seclect-img-c_png,seclect-img-d_png,seclect-txt-a_png,seclect-txt-b_png,seclect-txt-c_png,seclect-txt-d_png,seclect-txt-e_png,select_png,select-ed_png,submit-btn_png,t-1_png,t-2_png,t-3_png,t-4_png,wenda_png,banner_png,bg_png,bg1_png,cake-1_png,cake-2_png,cake-3_png,cake-4_png,cake-img-1_png,cake-img-2_png,cake-img-3_png,cake-title_png,card-1_png,card-2_png,close_png,close2_png,go-btn_png,hook-1_png,hook-2_png,hook-3_png,hook-4_png,hook-5_png,hy-title-1_png,in-a-1_png",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"more_png",
+			"name":"in-a-2_png",
 			"type":"image",
-			"url":"more.png"
+			"url":"in-a-2.png"
+		},
+		{
+			"name":"seclect-img-a_png",
+			"type":"image",
+			"url":"seclect-img-a.png"
+		},
+		{
+			"name":"seclect-img-b_png",
+			"type":"image",
+			"url":"seclect-img-b.png"
+		},
+		{
+			"name":"seclect-img-c_png",
+			"type":"image",
+			"url":"seclect-img-c.png"
+		},
+		{
+			"name":"seclect-img-d_png",
+			"type":"image",
+			"url":"seclect-img-d.png"
+		},
+		{
+			"name":"seclect-txt-a_png",
+			"type":"image",
+			"url":"seclect-txt-a.png"
+		},
+		{
+			"name":"seclect-txt-b_png",
+			"type":"image",
+			"url":"seclect-txt-b.png"
+		},
+		{
+			"name":"seclect-txt-c_png",
+			"type":"image",
+			"url":"seclect-txt-c.png"
+		},
+		{
+			"name":"seclect-txt-d_png",
+			"type":"image",
+			"url":"seclect-txt-d.png"
+		},
+		{
+			"name":"seclect-txt-e_png",
+			"type":"image",
+			"url":"seclect-txt-e.png"
+		},
+		{
+			"name":"select_png",
+			"type":"image",
+			"url":"select.png"
+		},
+		{
+			"name":"select-ed_png",
+			"type":"image",
+			"url":"select-ed.png"
+		},
+		{
+			"name":"submit-btn_png",
+			"type":"image",
+			"url":"submit-btn.png"
 		},
 		{
 			"name":"t-1_png",
@@ -25,9 +85,29 @@
 			"url":"t-3.png"
 		},
 		{
+			"name":"t-4_png",
+			"type":"image",
+			"url":"t-4.png"
+		},
+		{
+			"name":"wenda_png",
+			"type":"image",
+			"url":"wenda.png"
+		},
+		{
+			"name":"banner_png",
+			"type":"image",
+			"url":"banner.png"
+		},
+		{
 			"name":"bg_png",
 			"type":"image",
 			"url":"bg.png"
+		},
+		{
+			"name":"bg1_png",
+			"type":"image",
+			"url":"bg1.png"
 		},
 		{
 			"name":"cake-1_png",
@@ -45,34 +125,39 @@
 			"url":"cake-3.png"
 		},
 		{
-			"name":"cake-tuijian_png",
+			"name":"cake-4_png",
 			"type":"image",
-			"url":"cake-tuijian.png"
+			"url":"cake-4.png"
 		},
 		{
-			"name":"calendar-1_png",
+			"name":"cake-img-1_png",
 			"type":"image",
-			"url":"calendar-1.png"
+			"url":"cake-img-1.png"
 		},
 		{
-			"name":"calendar-2_png",
+			"name":"cake-img-2_png",
 			"type":"image",
-			"url":"calendar-2.png"
+			"url":"cake-img-2.png"
 		},
 		{
-			"name":"calendar-3_png",
+			"name":"cake-img-3_png",
 			"type":"image",
-			"url":"calendar-3.png"
+			"url":"cake-img-3.png"
 		},
 		{
-			"name":"calendar-4_png",
+			"name":"cake-title_png",
 			"type":"image",
-			"url":"calendar-4.png"
+			"url":"cake-title.png"
 		},
 		{
-			"name":"calendar-5_png",
+			"name":"card-1_png",
 			"type":"image",
-			"url":"calendar-5.png"
+			"url":"card-1.png"
+		},
+		{
+			"name":"card-2_png",
+			"type":"image",
+			"url":"card-2.png"
 		},
 		{
 			"name":"close_png",
@@ -85,9 +170,34 @@
 			"url":"close2.png"
 		},
 		{
-			"name":"foot-bg_png",
+			"name":"go-btn_png",
 			"type":"image",
-			"url":"foot-bg.png"
+			"url":"go-btn.png"
+		},
+		{
+			"name":"hook-1_png",
+			"type":"image",
+			"url":"hook-1.png"
+		},
+		{
+			"name":"hook-2_png",
+			"type":"image",
+			"url":"hook-2.png"
+		},
+		{
+			"name":"hook-3_png",
+			"type":"image",
+			"url":"hook-3.png"
+		},
+		{
+			"name":"hook-4_png",
+			"type":"image",
+			"url":"hook-4.png"
+		},
+		{
+			"name":"hook-5_png",
+			"type":"image",
+			"url":"hook-5.png"
 		},
 		{
 			"name":"hy-title-1_png",
@@ -95,19 +205,9 @@
 			"url":"hy-title-1.png"
 		},
 		{
-			"name":"hy-title-2_png",
-			"type":"image",
-			"url":"hy-title-2.png"
-		},
-		{
 			"name":"in-a-1_png",
 			"type":"image",
 			"url":"in-a-1.png"
-		},
-		{
-			"name":"in-a-2_png",
-			"type":"image",
-			"url":"in-a-2.png"
 		}
 	]
 }

@@ -1,0 +1,284 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  /*background: url("../images/bg.jpg?v=123") center bottom no-repeat; background-size: 100% 100%;*/
+}
+
+.sec-banner {
+  background: url("../images/bg_1.jpg?v=123") center no-repeat;
+}
+
+.sec-banner .evt-content {
+  height: 1180px;
+}
+
+.sec-banner .banner_cake {
+  position: absolute;
+  width: 879px;
+  top: 50px;
+  left: 50%;
+  margin-left: -390px;
+  z-index: 2;
+}
+
+.sec-banner .xinzhi {
+  position: absolute;
+  width: 754px;
+  top: 450px;
+  left: 50%;
+  margin-left: -407px;
+  z-index: 1;
+}
+
+.sec-banner .qkl {
+  position: absolute;
+  right: -90px;
+  bottom: 38px;
+}
+
+.hy-title {
+  margin: 0 auto;
+  padding: 120px 0;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  margin: 0 auto;
+}
+
+.dis {
+  position: absolute;
+  left: 50%;
+}
+
+.dis-1 {
+  top: 350px;
+  margin-left: -650px;
+}
+
+.sec-cake {
+  position: relative;
+  height: 849px;
+  padding-top: 100px;
+  background: url("../images/bg_2.jpg?v=123") center no-repeat;
+}
+
+.sec-cake .evt-content {
+  width: 1141px;
+}
+
+.sec-cake .cake_1 {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.sec-cake .cake_1 .price {
+  right: 166px;
+  bottom: -30px;
+}
+
+.sec-gift {
+  position: relative;
+  height: 820px;
+  padding-top: 100px;
+  background: url("../images/bg_3.jpg?v=123") center no-repeat;
+}
+
+.sec-gift .evt-content {
+  width: 1183px;
+}
+
+.sec-gift .gift {
+  width: 544px;
+  margin: 0 auto;
+}
+
+.more {
+  width: 144px;
+  position: relative;
+  margin: 0 auto;
+  background: #cd686d;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.more span {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/bg_4.jpg?v=123") center no-repeat;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #543952;
+}
+
+.evt-footer .evt-rules {
+  width: 889px;
+  margin: 0 auto;
+  padding: 0 0 50px 0;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.price {
+  position: absolute;
+  width: 280px;
+  right: -20px;
+  bottom: 200px;
+}
+
+.price .huangou {
+  position: relative;
+  color: #bfa3bd;
+  font-size: 16px;
+  padding-left: 26px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.price .huangou .hook {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 0;
+  top: 50%;
+  margin-top: -10.5px;
+  background: url("../images/hook.jpg") no-repeat;
+}
+
+.price .huangou .hook.on {
+  background: url("../images/hook_on.jpg") no-repeat;
+}
+
+.price .buy_btn {
+  cursor: pointer;
+}
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70);
+  display: none;
+}
+
+.Dialog-quan {
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  height: auto !important;
+  padding: 1px;
+  top: 50%;
+  left: 50%;
+  margin: -360px auto 0 -350px;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+}
+
+.Dialog-quan img {
+  width: 100%;
+}
+
+.Dialog-quan .closes {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -20px;
+  right: -5px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+.Dialog-quan .quan {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Dialog-quan .quan .go-use {
+  display: block;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  margin-left: -72.5px;
+  width: 145px;
+  cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+  .sec-cake .cake_1 {
+    width: 840px;
+    margin-top: 50px;
+  }
+  .sec-cake .cake_1_img {
+    width: 100%;
+  }
+  .Dialog-quan {
+    width: 500px;
+    margin: -289px auto 0 -250px !important;
+  }
+  .Dialog-quan img {
+    width: 100%;
+  }
+  .Dialog-quan .quan .go-use {
+    bottom: 117px;
+  }
+}

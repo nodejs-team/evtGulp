@@ -1,9 +1,7 @@
-/**
+/*
  * Created by mcake on 2016/5/24.
  */
 (function($){
-
-
 
   var loadComplete = function () {
     $("html,body").animate({scrollTop: 0},500);
@@ -14,10 +12,11 @@
      * */
     var bannerHeight;
     function bannerFun() {
-      bannerHeight = $(window).height()-120-250;   /*屏幕高度-头部浮动高度-底部预留高度*/
-      if(bannerHeight <= 440){
-        bannerHeight= 440;  /*小屏幕下能看到日历*/
+      bannerHeight = $(window).height();   /*屏幕高度-头部浮动高度-底部预留高度*/
+      if(bannerHeight <= 580){
+        bannerHeight= 580;  /*小屏幕下能看到日历*/
       }
+      /*console.log(bannerHeight);*/
       return bannerHeight;
     }
     $(".sec-banner").css('height',bannerFun());
@@ -27,55 +26,46 @@
       $(".sec-banner").css('height',bannerHeight);
     });
 
-    /*日期判断，更换日历*/
-    var vDate = new Date();
-    var myDate = vDate.getFullYear() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getDate(); /*解决安卓浏览器时间显示问题*/
-    var myDay = vDate.getDate();
-    switch (myDay){
-      case 3:
-        $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/pc/memberDay-3yue/images/calendar-1.png");
-        break;
-      case 10:
-        $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/pc/memberDay-3yue/images/calendar-2.png");
-        break;
-      case 17:
-        $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/pc/memberDay-3yue/images/calendar-3.png");
-        break;
-      case 24:
-        $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/pc/memberDay-3yue/images/calendar-4.png");
-        break;
-      case 31:
-        $(".calendar img").attr("src","https://act.mcake.com/fangli/2020/pc/memberDay-3yue/images/calendar-5.png");
-        break;
+    /*兼容ie8,respondjs对线上环境不起效*/
+    var bannerWidth =0;
+    if(!isSupportCss3){
+      bannerWidth = $(window).width();
+      if(bannerWidth<=1600){
+        $(".swipe-cake-price,.swipe-cake").css('width','717px');
+        $(".swipe-cake").css('height','360px');
+        $(".sec-star").css('margin-top','-200px');
+      }
     }
 
-    var swiper1 = new Swiper('.swiper1', {
+
+
+    /*var swiper1 = new Swiper('.swiper1', {
       grabCursor: true,
       loop:true,
       autoplay : 3000,
-      autoplayDisableOnInteraction : true
-    });
+      autoplayDisableOnInteraction : true,
+      pagination: '.pagination1'
+    });*/
 
     /*调查*/
     $(".qt").each(function () {
-      $(this).find(".select").click(function () {
+      $(this).find(".options span").click(function () {
         $(this).parents(".qt").attr("data-answer",1);
-        var id = $(this).parent("span").attr("data-id");
-        $(this).addClass("on");
-        $(this).parent("span").siblings().find(".select").removeClass("on");
-        $(this).parents(".qt").attr("data-id",id);
+        $(this).find(".select").addClass("on");
+        $(this).siblings().find(".select").removeClass("on");
       });
 
-
-      $(".next").click(function () {
-        var as = $(this).parent(".qt").attr("data-answer");
-        if(as==1){
-          $(this).parent(".qt").fadeOut(0).next().fadeIn(100);
-        }
-
+      $(".other").click(function () {
+        $(this).parents(".qt").attr("data-answer",2);
+        $(".other-in").focus();
       });
+    });
 
 
+    $(".pct-survey span").hover(function () {
+      $(this).find(".shake").addClass("a-shake");
+    },function () {
+      $(this).find(".shake").removeClass("a-shake");
     });
 
 
