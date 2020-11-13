@@ -391,10 +391,16 @@ gulp.task('watch', function(){
 //默认任务
 gulp.task('default', ['compile-sass', 'watch', 'webserver']);
 
+
 //项目完成提交任务
+/*
 gulp.task('build', function(done) {
-    runSequence('clean','useref', 'tinypng', done);
+    runSequence('clean','useref', 'tinypng', done);   //摒弃了gulp.run()
 });
+*/
+
+gulp.task('build', ['clean' , 'useref', 'tinypng']);
+
 
 function getIP(){
     var ip = 'localhost';

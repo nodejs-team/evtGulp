@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
     <!-- build:css css/main.css -->
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
     <link type="text/css" rel="stylesheet" href="css/base.css" />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
     <!-- endbuild -->
@@ -145,7 +146,7 @@
     </div>
 
     <div class="sec sec-2">
-        <div class="Notstarted">
+        <div class="Notstarted" style="display: none;">
             <p id="floater">活动未开始<br>敬请期待</p>
             <div class="Notstarted-box"></div>
         </div>
@@ -185,7 +186,27 @@
                     </div>
                 </li>
             </ul>
-            <div class="zengpin"><img src="images/zeng_2.png" alt=""></div>
+            <div class="zengpin">
+                <div class="zp-jiu">
+                    <div class="swiper-container swiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ><img src="images/zp-jiu-1.png" alt=""></div>
+                            <div class="swiper-slide" ><img src="images/zp-jiu-2.png" alt=""></div>
+                        </div>
+                        <!--<div class="pagination pagination1"></div>-->
+                    </div>
+                </div>
+                <div class="zp-bao">
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ><img src="images/zp-bao-1.png" alt=""></div>
+                            <div class="swiper-slide" ><img src="images/zp-bao-2.png" alt=""></div>
+                        </div>
+                        <!--<div class="pagination pagination2"></div>-->
+                    </div>
+                </div>
+                <img src="images/zeng_2.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -262,8 +283,10 @@
 <script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
 <script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
 <script src="https://act.mcake.com/fangli/2020/pc/common/public-shimily-price-Dialog-new.js"></script>
+
 <!-- build:js js/main.js -->
 <script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
 <script type="text/javascript" src="js/resData.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <!-- endbuild -->

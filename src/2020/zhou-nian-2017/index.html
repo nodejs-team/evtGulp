@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="http://ebsig.mcake.com/shop/theme/xth1/css/comm_header.css?v=1458723714">
+<div class="header">
+
+    <div class="header_top_box">
+        <div class="header_top">
+            <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+                <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+                    <div class="wallbox wall_top">
+                        <div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+                        <div class="logoer">
+                            <a href="http://ebsig.mcake.com">
+                                <img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+                            </a>
+                        </div>
+                        <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+                        <ul class="navbar">
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start----->
+                            <li class="record" style="display: none;">
+                                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+                            </li>
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end----->
+                            <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+                            <li class="m_cart">
+                                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="wallbox">
+                    <div class="header_right">
+                        <ul class="phone_delivery">
+                            <li class="phone"><span>4006-678-678</span><i></i></li>
+                            <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+                        </ul>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+                        </li>
+                        <li>
+                            <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/member_center.html" target="_blank">
+                                <samp>Mon M'CAKE</samp>
+                                <span>会员中心</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container">
+
+    <div class="floater">
+        <ul>
+            <li style="display: none;">秒杀专区</li>
+            <li class="on">六重好礼</li>
+            <li>热销主推</li>
+        </ul>
+       <!-- <div class="go-buy">
+            <div class="tips noselect" unselectable="on" style="display: none;"><span>1</span></div>
+        </div>-->
+    </div>
+
+    <div class="sec-banner">
+        <div class="secItem banner-bg"></div>
+        <div class="evt-content">
+            <!-- data-anim="slide-up" data-delay="0.2"-->
+            <div class="top-1"><img src="images/top-1.png" height="128" width="123"/></div>
+            <div class="top-cake-1"><img src="images/top-cake-1.png" height="471" width="539"/></div>
+            <div class="top-cake-2"><img src="images/top-cake-2.png" height="258" width="395"/></div>
+            <div class="top-cake-3"><img src="images/top-cake-3.png" height="180" width="547"/></div>
+            <div class="top-cake-4"><img src="images/top-cake-4.png"/></div>
+            <div class="top-title"><img src="images/top-title.png" height="645" width="640"/></div>
+        </div>
+
+    </div>
+
+    <!--秒杀专区-->
+    <div class="sec-ms" id="miaosha">
+        <div class="evt-content">
+            <div class="ms-title sec-hotspot">
+                <b>秒杀专区</b>
+                <p>10月25日-11月1日</p>
+                <div class="lastTime clearfix">
+                    <p>距离秒杀开始还有：</p>
+                    <div class="time">
+                        <ul class="clearfix">
+                            <li class="dayout">
+                                <b class="day">00</b>
+                                <span>天</span>
+                            </li>
+                            <li class="mao dayout"><b></b></li>
+                            <li>
+                                <b class="hours">00</b>
+                                <span>小时</span>
+                            </li>
+                            <li class="mao"><b>:</b></li>
+                            <li>
+                                <b class="minites">00</b>
+                                <span>分</span>
+                            </li>
+                            <li class="mao"><b>:</b></li>
+                            <li>
+                                <b class="seconds">00</b>
+                                <span>秒</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ms-zhuanqu">
+                <div class="miaosha">
+                    <ul class="clearfix">
+                        <a href="#"><li data-state="2" style="background: url(images/ms-big-img-6.jpg) center no-repeat;">
+                            <div class="icon"></div>
+                            <!--售罄-->
+                            <div class="ms-sq"></div>
+                            <!--秒杀开始-->
+                            <div class="ms-start">
+                                <div class="ms-cover"></div>
+                                <div class="ms-i">
+                                    <span class="txt">立即秒杀</span>
+                                </div>
+                            </div>
+                            <div class="ms-tit"><p>摩登茶道</p><span>Le Thé</span></div>
+                            <div class="ms-price"><p>抢购价：<i>￥</i>66.00</p></div>
+                            <div class="ms-oldprice"><p>原价：<s>￥198.00</s></p></div>
+                        </li></a>
+
+                        <a href="#"> <li data-state="1" style="background: url(images/ms-big-img-13.jpg) center no-repeat;">
+                            <div class="icon"></div>
+                            <!--售罄-->
+                            <div class="ms-sq"></div>
+                            <!--秒杀开始-->
+                            <div class="ms-start">
+                                <div class="ms-cover"></div>
+                                <div class="ms-i">
+                                    <span>立即秒杀</span>
+                                </div>
+                            </div>
+                            <div class="ms-tit white"><p>芝士小生</p><span>Biscuit aux cheeses</span></div>
+                            <div class="ms-price white"><p>抢购价：<i>￥</i>19.60</p></div>
+                            <div class="ms-oldprice white"><p>原价：<s>￥198.00</s></p></div>
+                        </li></a>
+
+                    </ul>
+                </div>
+                <div class="miaosha-wait">
+                    <a class="arrow arrow-left"></a>
+                    <a class="arrow arrow-right"></a>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-state="0" >
+                                <div class="center" style="background: url(images/ms-small-img-1.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>秒杀结束</span>
+                                        <b>尼诺</b>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide" data-state="0">
+                                <div class="center" style="background: url(images/ms-small-img-2.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>秒杀结束</span>
+                                        <b>布兰奇卡曼</b>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-3.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>秒杀结束</span>
+                                        <b>香溢新芝</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="0">
+                                <div class="center" style="background: url(images/ms-small-img-4.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>秒杀结束</span>
+                                        <b>法香奶油可丽</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-5.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>秒杀结束</span>
+                                        <b>巧克力黑兰</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-6.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>秒杀结束</span>
+                                        <b>摩登茶道</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-7.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>即将秒杀</span>
+                                        <b>朗姆醇栗</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-8.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>即将秒杀</span>
+                                        <b>半熟芝士</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-9.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>即将秒杀</span>
+                                        <b>云顶小花（原味）</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-10.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>即将秒杀</span>
+                                        <b>云顶小花（抹茶味）</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-11.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>即将秒杀</span>
+                                        <b>云顶小花（巧克力味）</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-12.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>即将秒杀</span>
+                                        <b>V.S.O.P生巧</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-state="2">
+                                <div class="center" style="background: url(images/ms-small-img-13.jpg) center no-repeat;">
+                                    <div class="cover"></div>
+                                    <div class="text">
+                                        <span>即将秒杀</span>
+                                        <b>芝士小生</b>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sec-ad"><div class="evt-content"><img src="images/ad1.jpg" alt=""></div></div>
+    <!--六重好礼送不停-->
+    <div id="sec-haoli">
+        <div class="evt-content sec-hotspot">
+            <div class="haoli-title"><b>六重好礼送不停</b></div>
+            <div class="haoli-box clearfix">
+                <ul class="clearfix">
+                    <li style="background: url(images/haoli-pic-1.jpg);" data-background="bgColor">
+                        <div class="icon"><img src="images/icon-1.png"></div>
+                        <div class="txtHtml">
+                            <div class="txt">
+                                <h2>一重惊喜·66元优惠甜蜜来袭</h2>
+                                <p>时间：2017.10.10—2017.11.10</p>
+                                <p>地点：上海、苏州、杭州、北京</p>
+                                <p>形式：配送前3天以上下单并支付全场任意产品单笔订单金额满100元，赠66元优惠券；</p>
+                                <p>活动规则：</p>
+                                <p>1.优惠券在产品配送当日发放至用户账户，仅限下次订单使用；</p>
+                                <p>2.66元优惠券自发放当日起3个月内有效，单笔订单金额满400可用；</p>
+                                <p>3.同类型优惠券每位用户仅限领取一张；</p>
+                                <p>4.支持支付方式：支付宝、微信、现金；</p>
+                                <p>5.优惠券仅限购买M'CAKE官网产品，不可抵做他用，不找零；</p>
+                                <p>6.本活动与会员等级制度、积分、买赠、立减同享，不与其他优惠活动同享。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background: url(images/haoli-pic-2.jpg);" data-background="bgColor">
+                        <div class="icon"><img src="images/icon-2.png"></div>
+                        <div class="txtHtml">
+                            <div class="txt">
+                                <h2>二重惊喜·限时立减6到飞起</h2>
+                                <p>时间：2017.10.17—2017.11.9</p>
+                                <p>地点：上海、苏州、杭州、北京</p>
+                                <p>形式：全场产品满300元立减16元，满400元立减46元，满600元减66元；</p>
+                                <p>活动规则：</p>
+                                <p>1.单笔订单支付达到指定金额可享立减优惠；</p>
+                                <p>2.支持支付方式：支付宝、微信、现金；</p>
+                                <p>3.本活动与会员等级制度、积分、买赠同享，不与其他优惠活动同享。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" style="background: url(images/haoli-pic-3.jpg);" data-background="bgColor">
+                        <div class="icon"><img src="images/icon-3.png"></div>
+                        <div class="txtHtml">
+                            <div class="txt">
+                                <h2>三重惊喜·FOLLIFOLLIE手表甜蜜赠送 </h2>
+                                <p>时间：2017.10.9-2017.11.9</p>
+                                <p>地点：上海、苏州、杭州</p>
+                                <p>形式：会员等级LV4-LV5用户活动期间购买全场任意产品满1666元即赠价值3795元FOLLIFOLLIE手表一块；</p>
+                                <p>活动规则：</p>
+                                <p>1.活动仅针对会员等级LV4-LV5用户；</p>
+                                <p>2.支持支付方式：支付宝、微信、现金；</p>
+                                <p>3.活动期间内累积支付满1666元即赠送；</p>
+                                <p>4.赠品仅一份，先到先得送完即止；</p>
+                                <p>5.支持支付方式：支付宝、微信、现金；</p>
+                                <p>6.赠品由follifolli提供；</p>
+                                <p>7.本活动与会员等级制度、积分、立减、买赠、优惠券同享，不与其他优惠活动同享。</p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background: url(images/haoli-pic-4.jpg);" data-background="bgColor">
+                        <div class="icon"><img src="images/icon-4.png"></div>
+                        <div class="txtHtml">
+                            <div class="txt">
+                                <h2>四重惊喜·新品上市一折秒杀</h2>
+                                <p>时间：2017.10.25—2017.11.1，每天中午12：06</p>
+                                <p>地点：上海、苏州、杭州、北京</p>
+                                <p>形式：限时一折秒杀指定产品；</p>
+                                <p>活动规则：</p>
+                                <p>1.支持支付方式：支付宝、微信、现金；</p>
+                                <p>2.活动产品不支持退换；</p>
+                                <p>3.仅针对活动指定产品；</p>
+                                <p>4.本活动与会员等级制度、积分、买赠同享，不与立减、优惠券及其他活动同享。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background: url(images/haoli-pic-5.jpg);" data-background="bgColor">
+                        <div class="icon"><img src="images/icon-5.png"></div>
+                        <div class="txtHtml">
+                            <div class="txt long">
+                                <h2>五重惊喜·你买我送好礼不停（Folli Follie）</h2>
+                                <p>时间：2017.10.10—2017.11.10</p>
+                                <p>地点：上海、苏州、杭州</p>
+                                <p>形式：活动期间购买小食类产品单笔订单满106元赠Folli Follie定制款化妆包，满156元赠Folli Follie定制款化妆包+时尚毛球挂件；满196元赠Folli Follie定制款化妆包+时尚毛球挂件+定制款U盘。</p>
+                                <p>活动规则：</p>
+                                <p>1.支持支付方式：支付宝、微信、现金；</p>
+                                <p>2.赠品不可兑换现金，不可抵做他用；</p>
+                                <p>3.仅针对活动指定产品；</p>
+                                <p>4.数量有限，送完即止；</p>
+                                <p>5.本活动与会员等级制度、积分、立减、优惠券同享，不与其他优惠活动同享。</p>
+                                <p>&nbsp;</p>
+                                <h2>五重惊喜·你买我送好礼不停（倩碧）</h2>
+                                <p>时间：2017.10.10—2017.11.10</p>
+                                <p>地点：上海、苏州、杭州</p>
+                                <p>形式：活动期间购买全场蛋糕产品单笔订单满366元赠倩碧化妆品套装或倩碧水磁场爆珠保湿凝露；</p>
+                                <p>活动规则：</p>
+                                <p>1.支持支付方式：支付宝、微信、现金；</p>
+                                <p>2.赠品不可兑换现金，不可抵做他用；</p>
+                                <p>3.仅针对活动指定产品；</p>
+                                <p>4.数量有限，送完即止；</p>
+                                <p>5.本活动与会员等级制度、积分、立减、优惠券同享，不与其他优惠活动同享。</p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background: url(images/haoli-pic-6.jpg);" data-background="bgColor">
+                        <div class="icon"><img src="images/icon-6.png"></div>
+                        <div class="txtHtml">
+                            <div class="txt long">
+                                <h2>六重惊喜·下单抽奖100%中奖</h2>
+                                <p>汉堡王（芒果汉堡5折券）</p>
+                                <p>1元抵用券（小食）</p>
+                                <p>3元抵用券（小食）</p>
+                                <p>5元抵用券（蛋糕）</p>
+                                <p>10元抵用券（蛋糕）</p>
+                                <p>&nbsp;</p>
+
+                                <p>时间：2017.10.10—2017.11.10</p>
+                                <p>地点：上海、苏州、杭州</p>
+                                <p>形式：下单并支付完成后进入抽奖页面；</p>
+                                <p>活动规则：</p>
+                                <p>1.支持支付方式：支付宝、微信；</p>
+                                <p>2.赠品不可兑换现金，不可抵做他用；</p>
+                                <p>3.1元抵用券仅限小食类产品，3元抵用券仅限小食类产品，5元抵用券仅限蛋糕类产品，10元抵用券仅限蛋糕类产品（有效期从发放起60天内有效）；</p>
+                                <p>4.汉堡王优惠券由合作伙伴提供，数量有限，送完即止；</p>
+                                <p>5.本活动与会员等级制度、积分、立减同享，不与其他优惠活动同享；</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--热销主推-->
+    <div class="sec-hot sec-hotspot" id="hot">
+        <div class="evt-content">
+            <div class="hot-title"><b>热销主推</b></div>
+            <div class="products">
+                <ul class="clearfix">
+                    <li class="pro-li">
+                        <div class="pro-liimg">
+                            <img src="images/img-1.jpg" width="286" height="283">
+                            <div class="cart-icon"></div>
+                        </div>
+
+                        <div class="pro-content">
+                            <div class="p1 clearfix"><span class="fl">蓝莓轻乳拿破仑</span>
+                                <div class="fr "> <span class="js_bshu" data-num="2">2磅</span>
+                                    <img src="images/dot.png" alt="" class="dot">
+                                    <ul id="js_select" class="js_select">
+                                        <li data-bsn="1" data-price="198">1磅</li>
+                                        <li data-bsn="2" data-price="298" class="on">2磅</li>
+                                        <li data-bsn="3" data-price="428">3磅</li>
+                                        <li data-bsn="5" data-price="728">5磅</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p2 clearfix">
+                                <span class="fl">Napoléon aux myrtilles</span>
+                                <span class="line">_</span>
+                                <div class="pro-num">
+                                    <a href="javascript:;" class="minus"></a>
+                                    <input class="num" data-postid="0" value="1" readonly="" type="text">
+                                    <a href="javascript:;" class="plus"></a>
+                                </div>
+                            </div>
+                            <div class="p3 clearfix">
+                                <span class="fl"><b>￥</b><span class="price" data-price="298">298</span> <b>.00</b></span>
+                                <div class="btns"><span>立即订购</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pro-li">
+                        <div class="pro-liimg">
+                            <img src="images/img-2.jpg" width="286" height="283">
+                            <div class="cart-icon"></div>
+                        </div>
+
+                        <div class="pro-content">
+                            <div class="p1 clearfix"><span class="fl">蔓越莓红丝绒</span>
+                                <div class="fr "> <span class="js_bshu" data-num="2">2磅</span>
+                                    <img src="images/dot.png" alt="" class="dot">
+                                    <ul id="js_select" class="js_select">
+                                        <li data-bsn="1" data-price="198">1磅</li>
+                                        <li data-bsn="2" data-price="298" class="on">2磅</li>
+                                        <li data-bsn="3" data-price="428">3磅</li>
+                                        <li data-bsn="5" data-price="728">5磅</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p2 clearfix">
+                                <span class="fl">Velour rouge</span>
+                                <span class="line">_</span>
+                                <div class="pro-num">
+                                    <a href="javascript:;" class="minus"></a>
+                                    <input class="num" data-postid="0" value="1" readonly="" type="text">
+                                    <a href="javascript:;" class="plus"></a>
+                                </div>
+                            </div>
+                            <div class="p3 clearfix">
+                                <span class="fl"><b>￥</b><span class="price" data-price="298">298</span> <b>.00</b></span>
+                                <div class="btns"><span>立即订购</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pro-li">
+                        <div class="pro-liimg">
+                            <img src="images/img-3.jpg" width="286" height="283">
+                            <div class="cart-icon"></div>
+                        </div>
+
+                        <div class="pro-content">
+                            <div class="p1 clearfix"><span class="fl">魔鬼巧克力 </span>
+                                <div class="fr "> <span class="js_bshu" data-num="2">2磅</span>
+                                    <img src="images/dot.png" alt="" class="dot">
+                                    <ul id="js_select" class="js_select">
+                                        <li data-bsn="1" data-price="198">1磅</li>
+                                        <li data-bsn="2" data-price="298" class="on">2磅</li>
+                                        <li data-bsn="3" data-price="428">3磅</li>
+                                        <li data-bsn="5" data-price="728">5磅</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p2 clearfix">
+                                <span class="fl">Diable chocolat</span>
+                                <span class="line">_</span>
+                                <div class="pro-num">
+                                    <a href="javascript:;" class="minus"></a>
+                                    <input class="num" data-postid="0" value="1" readonly="" type="text">
+                                    <a href="javascript:;" class="plus"></a>
+                                </div>
+                            </div>
+                            <div class="p3 clearfix">
+                                <span class="fl"><b>￥</b><span class="price" data-price="298">298</span> <b>.00</b></span>
+                                <div class="btns"><span>立即订购</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pro-li">
+                        <div class="pro-liimg">
+                            <img src="images/img-4.jpg" width="286" height="283">
+                            <div class="cart-icon"></div>
+                        </div>
+
+                        <div class="pro-content">
+                            <div class="p1 clearfix"><span class="fl">约瑟芬玫瑰</span>
+                                <div class="fr "> <span class="js_bshu" data-num="2">2磅</span>
+                                    <img src="images/dot.png" alt="" class="dot">
+                                    <ul id="js_select" class="js_select">
+                                        <li data-bsn="1" data-price="198">1磅</li>
+                                        <li data-bsn="2" data-price="298" class="on">2磅</li>
+                                        <li data-bsn="3" data-price="428">3磅</li>
+                                        <li data-bsn="5" data-price="728">5磅</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p2 clearfix">
+                                <span class="fl">Joséphine</span>
+                                <span class="line">_</span>
+                                <div class="pro-num">
+                                    <a href="javascript:;" class="minus"></a>
+                                    <input class="num" data-postid="0" value="1" readonly="" type="text">
+                                    <a href="javascript:;" class="plus"></a>
+                                </div>
+                            </div>
+                            <div class="p3 clearfix">
+                                <span class="fl"><b>￥</b><span class="price" data-price="298">298</span> <b>.00</b></span>
+                                <div class="btns"><span>立即订购</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pro-li">
+                        <div class="pro-liimg">
+                            <img src="images/img-5.jpg" width="286" height="283">
+                            <div class="cart-icon"></div>
+                        </div>
+
+                        <div class="pro-content">
+                            <div class="p1 clearfix"><span class="fl">榛果摩卡布拉吉</span>
+                                <div class="fr "> <span class="js_bshu" data-num="2">2磅</span>
+                                    <img src="images/dot.png" alt="" class="dot">
+                                    <ul id="js_select" class="js_select">
+                                        <li data-bsn="1" data-price="198">1磅</li>
+                                        <li data-bsn="2" data-price="298" class="on">2磅</li>
+                                        <li data-bsn="3" data-price="428">3磅</li>
+                                        <li data-bsn="5" data-price="728">5磅</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p2 clearfix">
+                                <span class="fl">Moka praline noisette</span>
+                                <span class="line">_</span>
+                                <div class="pro-num">
+                                    <a href="javascript:;" class="minus"></a>
+                                    <input class="num" data-postid="0" value="1" readonly="" type="text">
+                                    <a href="javascript:;" class="plus"></a>
+                                </div>
+                            </div>
+                            <div class="p3 clearfix">
+                                <span class="fl"><b>￥</b><span class="price" data-price="298">298</span> <b>.00</b></span>
+                                <div class="btns"><span>立即订购</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pro-li">
+                        <div class="pro-liimg">
+                            <img src="images/img-6.jpg" width="286" height="283">
+                            <div class="cart-icon"></div>
+                        </div>
+
+                        <div class="pro-content sigle">
+                            <div class="p1 clearfix"><span class="fl">半熟芝士</span>
+                                <div class="fr he"> <span class="js_bshu sigle" data-num="2">1盒</span>
+                                </div>
+                            </div>
+                            <div class="p2 clearfix">
+                                <span class="fl">Cheese cake</span>
+                                <span class="line">_</span>
+                                <div class="pro-num">
+                                    <a href="javascript:;" class="minus"></a>
+                                    <input class="num" data-postid="0" value="1" readonly="" type="text">
+                                    <a href="javascript:;" class="plus"></a>
+                                </div>
+                            </div>
+                            <div class="p3 clearfix">
+                                <span class="fl"><b>￥</b><span class="price" data-price="298">298</span> <b>.00</b></span>
+                                <div class="btns"><span>立即订购</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pro-li">
+                        <div class="pro-liimg">
+                            <img src="images/img-7.jpg" width="286" height="283">
+                            <div class="cart-icon"></div>
+                        </div>
+
+                        <div class="pro-content">
+                            <div class="p1 clearfix"><span class="fl">尼塔小红莓 </span>
+                                <div class="fr "> <span class="js_bshu" data-num="2">2磅</span>
+                                    <img src="images/dot.png" alt="" class="dot">
+                                    <ul id="js_select" class="js_select">
+                                        <li data-bsn="1" data-price="198">1磅</li>
+                                        <li data-bsn="2" data-price="298" class="on">2磅</li>
+                                        <li data-bsn="3" data-price="428">3磅</li>
+                                        <li data-bsn="5" data-price="728">5磅</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p2 clearfix">
+                                <span class="fl">Cookies aux craneberry</span>
+                                <span class="line">_</span>
+                                <div class="pro-num">
+                                    <a href="javascript:;" class="minus"></a>
+                                    <input class="num" data-postid="0" value="1" readonly="" type="text">
+                                    <a href="javascript:;" class="plus"></a>
+                                </div>
+                            </div>
+                            <div class="p3 clearfix">
+                                <span class="fl"><b>￥</b><span class="price" data-price="298">298</span> <b>.00</b></span>
+                                <div class="btns"><span>立即订购</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pro-li">
+                        <div class="pro-liimg">
+                            <img src="images/img-8.jpg" width="286" height="283">
+                            <div class="cart-icon"></div>
+                        </div>
+
+                        <div class="pro-content">
+                            <div class="p1 clearfix"><span class="fl">生巧组合</span>
+                                <div class="fr "> <span class="js_bshu" data-num="2">2磅</span>
+                                    <img src="images/dot.png" alt="" class="dot">
+                                    <ul id="js_select" class="js_select">
+                                        <li data-bsn="1" data-price="198">1磅</li>
+                                        <li data-bsn="2" data-price="298" class="on">2磅</li>
+                                        <li data-bsn="3" data-price="428">3磅</li>
+                                        <li data-bsn="5" data-price="728">5磅</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p2 clearfix">
+                                <span class="fl">Chocolats mixtes</span>
+                                <span class="line">_</span>
+                                <div class="pro-num">
+                                    <a href="javascript:;" class="minus"></a>
+                                    <input class="num" data-postid="0" value="1" readonly="" type="text">
+                                    <a href="javascript:;" class="plus"></a>
+                                </div>
+                            </div>
+                            <div class="p3 clearfix">
+                                <span class="fl"><b>￥</b><span class="price" data-price="298">298</span> <b>.00</b></span>
+                                <div class="btns"><span>立即订购</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="more"><span>查看更多产品</span></div>
+        </div>
+    </div>
+
+    <div class="Dialogbg-rules"></div>
+    <div class="Dialog-rules">
+        <div class="closes"></div>
+        <div class="rules"></div>
+    </div>
+
+</div>
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script src="http://edm.mcake.com/shuxy/2016/MovieClip/main.js"></script>
+
+<script>
+    /*data-state:  1立即秒杀   2即将秒杀  0秒杀结束*/
+    __END_DATE__ = '2017/10/19 14:47:00';
+    function onEnd() {
+      $(".miaosha li").each(function () {
+        $(this).find(".ms-start").hide(0);
+        $(this).find(".txt").text("立即秒杀");
+        $(this).find(".ms-cover").css({
+          opacity:0.5
+        });
+        $(this).hover(function () {
+          $(this).find(".ms-start").fadeIn(500);
+        },function () {
+          $(this).find(".ms-start").fadeOut(200);
+        });
+      });
+
+    }
+
+</script>
+<!-- build:js js/main-new.js -->
+<script src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+
+
+</body>
+</html>

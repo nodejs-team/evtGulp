@@ -1,0 +1,138 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #42a9ee;
+  text-align: center;
+}
+
+.sec-banner {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.sec-banner img {
+  width: 100%;
+}
+
+.sec-banner .m-card {
+  position: absolute;
+  width: 1178px;
+  top: 910px;
+  left: 50%;
+  margin-left: -589px;
+  z-index: 10;
+}
+
+.sec-banner .m-card .goubtn {
+  position: absolute;
+  width: 169px;
+  height: 188px;
+  top: 350px;
+  left: 50%;
+  margin-left: -89.5px;
+  background: url("../images/buy-btn.png") no-repeat;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hy-title {
+  display: inline-block;
+  margin: 0 auto 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.sec-1 {
+  position: relative;
+  height: 850px;
+  padding-top: 200px;
+  background: url("../images/s1-bg.png") top no-repeat;
+  margin-top: -270px;
+  z-index: 1;
+}
+
+.sec-2 {
+  position: relative;
+  padding-top: 70px;
+  height: 2178px;
+  background: url("../images/s2-bg.png") top no-repeat;
+}
+
+.sec-2 .evt-content {
+  width: 1200px;
+}
+
+.sec-2 .m-quan {
+  margin: 0 auto;
+}
+
+.evt-footer {
+  z-index: 1;
+  text-align: left;
+  height: 667px;
+  background: url("../images/s3-bg.png") top no-repeat;
+  position: relative;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #fff;
+}
+
+.evt-footer .evt-rules {
+  width: 850px;
+  margin: 0 auto;
+  padding: 100px 0 100px 0px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+@media (max-width: 1600px) {
+  .sec-banner .m-card {
+    top: 717px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .sec-banner .m-card {
+    top: 647px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .sec-banner .m-card {
+    top: 600px;
+  }
+}

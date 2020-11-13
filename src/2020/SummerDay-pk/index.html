@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--公共头部-->
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner"></div>
+
+    <div class="sec sec-main">
+        <div class="vote-box">
+            <div id="box_bg">
+                <div id="container">
+                    <div id="green" class="line"></div>
+                    <div id="red" class="line"></div>
+                    <div id="white" class="line"></div>
+                    <div id="vs"></div>
+                </div>
+            </div>
+            <div class="vote-btn">
+                <div id="aa2" class="scope"><span id="aa" data-vote="40"></span></div>
+                <div id="bb2" class="scope scope2"><span id="bb" data-vote="50"></span></div>
+               <!-- <div id="all2" class="scope">总共<span id="all"></span>票</div>-->
+
+                <div id="vote1" class="vote"></div>
+                <div id="vote2" class="vote vote-right"></div>
+                <div class="hand shoudong"><img src="images/hand.png" alt=""></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="evt-content">
+
+                <div class="s-title-1"></div>
+                <div class="row row1">
+                    <div class="btns"><span>立即购买</span></div>
+                    <div class="cake"><img src="images/row1-cake.png" alt=""></div>
+                </div>
+                <div class="row row2">
+                    <div class="btns"><span>立即购买</span></div>
+                    <div class="cake"><img src="images/row2-cake.png" alt=""></div>
+                </div>
+                <div class="s-title-2"></div>
+                <div class="row row3">
+                    <div class="btns"><span>立即购买</span></div>
+                    <div class="cake"><img src="images/row3-cake.png" alt=""></div>
+                </div>
+                <div class="row row4">
+                    <div class="btns"><span>立即购买</span></div>
+                    <div class="cake"><img src="images/row4-cake.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则:</h2>
+                <p>1、活动时间：2020年6月18日-2020年7月20日，活动最晚配送时间：7月31日</p>
+                <p>2、活动城市：上海、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝、现金；仅限微信、支付宝、现金全额支付的用户参与</p>
+                <p>4、活动内容：<br>
+                ·投票选出你支持的战队，获胜战队可享受蛋糕立减50元特权。失败战队可享受蛋糕立减30元特权。<br>
+                ·在活动页购买小花蛋糕赠送ORBIS奥蜜思透妍防晒隔离乳(清爽型、滋润型随机赠送)1支；购买卢克和咚咚冰淇淋蛋糕赠送ORBIS奥蜜思隔离乳体验装(宣传折页)2份；<br>
+                购买帽子蛋糕赠送ORBIS奥蜜思芯悠精华水(旅行装) 1支；购买浓巧迷情巧克力蛋糕2磅赠送ORBIS奥蜜思芯悠体验装(宣传折页) 1份；<br>
+                    所有礼品数量有限，先到先得</p>
+                <p>5、本活动与积分、红包同享，但不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡以及优惠券同享</p>
+                <p>6、本活动最终解释权归MCAKE所有</p>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+    var vote = {
+      a:$("#aa").data("vote"),
+      b:$("#bb").data("vote"),
+      newLeft:0, //20为vs 的一半
+      newWidth:0,
+      gamePk:function () {
+        var self = this;
+        /*$("#vs").fadeIn("slow",function(){
+          $("#all").html(self.a+self.b);
+          $("#aa").html(self.a);
+          $("#bb").html(self.b);
+          console.log(self.a,self.b);
+          self.newLeft=self.a/(self.a+self.b)*1010-20 + "px";//20为vs 的一半
+          self.newWidth=self.a/(self.a+self.b)*1010 + "px";
+          $("#vs").stop().animate({left:self.newLeft}, 500);
+          $("#red").stop().animate({width:self.newWidth}, 500);
+        });*/
+        $("#all").html(self.a+self.b);
+        $("#aa").html(self.a);
+        $("#bb").html(self.b);
+        self.newLeft=self.a/(self.a+self.b)*1008-20 + "px";//20为vs 的一半
+        self.newWidth=self.a/(self.a+self.b)*1008 + "px";
+        $("#vs").stop().animate({left:self.newLeft}, 500);
+        $("#red").stop().animate({width:self.newWidth}, 500);
+      },
+      obverse:function () {
+        this.a++;
+        this.gamePk();
+      },
+      reverse:function () {
+        this.b++;
+        this.gamePk();
+      },
+      init:function () {
+        var self = this;
+        $("#white").animate({ width: 0,left:"250px"}, 10 ,function(){
+          self.gamePk();
+        });
+        $("#vote1").click(function () {
+          self.obverse();
+        });
+        $("#vote2").click(function () {
+          self.reverse();
+        });
+      }
+    }
+
+    vote.init();
+
+
+</script>
+</body>
+</html>

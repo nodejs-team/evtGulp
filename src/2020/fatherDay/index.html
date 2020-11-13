@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--公共头部-->
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner"><img src="images/banner.png" alt=""></div>
+
+    <div class="sec-main">
+        <div class="evt-content">
+            <div class="row row-1">
+                <div class="row-cover"><img src="images/row1-cover.png" alt=""></div>
+                <div class="swiper-box">
+                    <div class="swiper-container swiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ><img src="images/row1-1.png" alt=""></div>
+                            <div class="swiper-slide" ><img src="images/row1-2.png" alt=""></div>
+                        </div>
+                        <!--<div class="pagination pagination1"></div>-->
+                    </div>
+                </div>
+                <div class="cake"><img src="images/cake-1.png" alt=""></div>
+                <div class="price" data-price="258">
+                    <div class="title"><img src="images/title-1.png" alt=""></div>
+                    <div class="huangou">
+                        <div class="icnone"></div>
+                        <div class="icon on"></div>
+                        <p class="hg" data-price="9.9">9.9元换购父亲节巧克力牌</p>
+                    </div>
+                    <div class="btns">
+                        <a href="#"><span class="buy_btn" data-price="" data-repurchase="1">立即购买</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row-2">
+                <div class="row-cover"><img src="images/row2-cover.png" alt=""></div>
+                <div class="swiper-box">
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ><img src="images/row2-1.png" alt=""></div>
+                            <div class="swiper-slide" ><img src="images/row2-2.png" alt=""></div>
+                        </div>
+                        <!--<div class="pagination pagination1"></div>-->
+                    </div>
+                </div>
+                <div class="cake"><img src="images/cake-2.png" alt=""></div>
+                <div class="price" data-price="278">
+                    <div class="title"><img src="images/title-2.png" alt=""></div>
+                    <div class="huangou">
+                        <div class="icnone"></div>
+                        <div class="icon on"></div>
+                        <p class="hg" data-price="9.9">9.9元换购父亲节巧克力牌</p>
+                    </div>
+                    <div class="btns">
+                        <a href="#"><span class="buy_btn" data-price="" data-repurchase="1">立即购买</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row-3">
+                <div class="row-cover"><img src="images/row3-cover.png" alt=""></div>
+                <div class="swiper-box">
+                    <div class="swiper-container swiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ><img src="images/row3-1.png" alt=""></div>
+                            <div class="swiper-slide" ><img src="images/row3-2.png" alt=""></div>
+                        </div>
+                        <!--<div class="pagination pagination1"></div>-->
+                    </div>
+                </div>
+                <div class="cake"><img src="images/cake-3.png" alt=""></div>
+                <div class="price" data-price="258">
+                    <div class="title"><img src="images/title-3.png" alt=""></div>
+                    <div class="huangou">
+                        <div class="icnone"></div>
+                        <div class="icon on"></div>
+                        <p class="hg" data-price="9.9">9.9元换购父亲节巧克力牌</p>
+                    </div>
+                    <div class="btns">
+                        <a href="#"><span class="buy_btn" data-price="" data-repurchase="1">立即购买</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="zp"><img src="images/zp.png" alt=""></div>
+        </div>
+    </div>
+
+
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则:</h2>
+                <p>1、活动时间：2020年6月10日-2020年6月26日，活动最晚配送时间：6月30日</p>
+                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝、现金；仅限微信、支付宝、现金全额支付的用户参与</p>
+                <p>4、活动内容：<br>
+                    ·在活动页面购买男友力蛋糕2磅、蓝莓轻乳拿破仑2磅、朗姆醇栗2磅立减40元；<br>
+                    并在活动页购买男友力蛋糕2磅赠送柏瑞特光妍面部底霜正装30ml一支，活动页购买蓝莓轻乳拿破仑2磅、<br>
+                    朗姆醇栗2磅赠送柏瑞特光妍面部底霜小样7.5ml一支；所有礼品数量有限，先到先得</p>
+                <p>5、本活动与积分、红包同享，但不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡以及优惠券同享</p>
+                <p>6、本活动最终解释权归MCAKE所有</p>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

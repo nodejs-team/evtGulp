@@ -31,6 +31,12 @@
    *db:是否享第二件半价
    */
   function SelectShow(ele,arr,d,isShow,n,db) {
+
+    if(typeof ($(ele).data("pond")) == "undefined"){
+       return;
+    }
+
+
     var ponds = [];
     var weight = [];
     var prices = [];

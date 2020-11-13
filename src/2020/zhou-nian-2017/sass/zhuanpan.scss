@@ -1,0 +1,56 @@
+
+/*大转盘*/
+.zhuanpan-cover{
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200; display: none;
+}
+.zhuanpan{
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  height: 421px;
+  left: 50%;
+  margin-left: -321.5px;
+  margin-top: -210.5px;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  width: 625px;
+  z-index: 99999; border-radius: 5px; display: none;
+}
+.closes{ width: 9px; height: 9px; position: absolute; top: 8px; right: 16px; cursor: pointer; z-index: 8;}
+.zhuanpanBg{ width: 100%; height: 100%; position: relative; background: url("../images/zpbg.png") center no-repeat; }
+.zhuanpan .zhuanpan-center{position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;
+  .title{ font-size: 18px; text-align: center; color: #000; line-height: 68px;}
+  .zp{position: relative; width: 332px; height: 320px; margin: 0 auto;
+    .zp-acrow{position: absolute; top: 0; left: 50%; width: 14px; margin-left: -7px; z-index: 2;}
+    .zp-pan{position: absolute; top: 0; left: 50%; width: 307px; height: 307px; margin-left: -153.5px; z-index: 1;}
+    .zp-btn{position: absolute; top: 50%; left: 50%; width: 142px; margin-left: -71px; margin-top:-71px; z-index: 2; cursor: pointer; }
+  }
+}
+
+.zhuanpan .zhuanpan-award{
+  position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; display: none;
+  .award{position: absolute; width: 293px; height: 201px; top: 50%; left: 50%; margin-left: -146.5px; margin-top: -100.5px; display: none;
+    .txt{position: absolute; width: 172px; top: 0; right: 13px; text-align: right; color: #fff; font-size: 18px;
+      span{font-size: 120px; font-weight: bold; line-height: 144px;  font-family: "Microsoft YaHei", Tahoma, Arial; }
+    }
+
+    .word{position: absolute; width: 100%; bottom: 0; left: 50%; margin-left: -50%; text-align: center; color: #000; font-size: 18px; font-weight: bold;
+    }
+
+  }
+
+  .award.award-1{ width:100%; height: 100%; top: 0; left: 0; margin-top: 0; margin-left:0; text-align: center;
+    .mima{position: absolute; width: 320px; height: 35px; top:220px; left: 50%; margin-left: -160px; font-size: 16px; color: #000; line-height: 35px; }
+    .tips{position: absolute; width: 90%; bottom: 67px; left: 50%; margin-left:-45%; font-size: 14px; color: #9a9a9a; }
+    .tips.valid{bottom: 13px;}
+    .tips.disc{bottom: 219px; font-size: 20px; color: #000;}
+  }
+}

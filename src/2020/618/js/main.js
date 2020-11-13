@@ -7,6 +7,27 @@
 
   var loadComplete = function () {
 
+    var swiper1 = new Swiper('.swiper1', {
+    /*  pagination: '.pagination1',*/
+      paginationClickable: true,
+      grabCursor: true,
+      loop:true,
+      speed:800,
+      autoplay : 3000,
+      autoplayDisableOnInteraction : true
+    });
+
+    var swiper2 = new Swiper('.swiper2', {
+      /*pagination: '.pagination2',*/
+      grabCursor: true,
+      paginationClickable: true,
+      loop:true,
+      speed:800,
+      autoplay : 3000,
+      autoplayDisableOnInteraction : true
+    });
+
+
     /*蛋糕折扣*/
     $(".product li").each(function () {
       var self = this;

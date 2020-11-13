@@ -1,0 +1,132 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background: url("../images/bg.png")  repeat;}
+
+.sec-banner{ margin: 0 auto; height: 754px; background: url("../images/banner.png") center; overflow:hidden;  }
+
+.hy-title{ margin:0 auto; width: 336px; padding:80px 0; position: relative; text-align: center;
+  img{margin: 0 auto; width: 100%;}
+}
+
+
+.sec-1{ position: relative; z-index: 1;   height: 1116px; background: url("../images/s-1.png") center top no-repeat; overflow:hidden;
+  .evt-content{width: 1290px; padding-top: 50px; margin: 0 auto;
+    .qx-cake{ position: relative; width: 1290px; height: 500px; margin-top: 40px;
+      .cake{ position: absolute; top: 0; left: 240px;}
+      .s-title{ position: absolute; top: 50px; left: 760px;}
+      .buy-btn{ position: absolute; top: 230px; left: 760px; cursor: pointer;}
+    }
+  }
+}
+
+.sec-2{ position: relative; height: 1335px; background: url("../images/s-2.png") center no-repeat; overflow:hidden;
+  .evt-content{width: 1200px; padding-top: 50px;
+    .blind{width: 1108px; margin: 0 auto 80px;
+      ul{
+        li{margin:0 24px; float: left; position: relative;
+        }
+      }
+      /*ul{
+        li.flip{float: left;position:relative; width: 225px; height: 260px; margin: 0 10px; transition:0.6s; transform-style:preserve-3d; cursor: pointer;
+          .front,.back{position:absolute; top: 0;left: 0; backface-visibility:hidden;transform-style:preserve-3d; cursor: pointer;}
+
+          .front{z-index:1; transition:1s;}
+          .back{z-index:2; transform:rotateY(-180deg); -ms-transform:rotateY(-180deg); transition:1s;}
+          .back.hide{display: none; transform:rotateY(0deg) !important; -ms-transform:rotateY(0deg) !important;} !* IE9*!
+          .back.show{display: block; transform:rotateY(0deg) !important; -ms-transform:rotateY(0deg) !important;} !* IE9*!
+        }
+        .flip.hover{
+          .front{z-index:1; transform:rotateY(180deg); -ms-transform:rotateY(180deg);}
+          .back{z-index:2 !important; transform:rotateY(0deg); -ms-transform:rotateY(0deg);}
+        }
+      }*/
+
+
+    }
+
+    .cake{width:1200px; margin:120px auto 80px;
+      ul{ margin-left: -2px;
+        li{margin-left:6px; float: left; position: relative;
+          .btn-prize{width: 177px; height: 39px; margin:32px auto 0; background: url("../images/btn-prize.png"); cursor: pointer; z-index: 2;  }
+        }
+      }
+    }
+  }
+}
+
+
+.sec-wx{ position: relative; height: 913px; z-index: 1; background: url("../images/s-3.png") center top no-repeat;
+  .wx{width: 693px; margin: 0 auto; padding-top: 150px;}
+}
+
+
+.more{width: 144px;position: relative; margin: 0 auto; background: #cd686d; border-radius: 50px; text-align: center;
+  span{ display: block; color: #fff; font-size: 20px; line-height:35px;}
+}
+
+
+.evt-footer{ z-index: 1; position: relative; height: 735px; background: url("../images/s-foot.png") repeat;
+  .evt-content{width: 1200px; color: #000;}
+    .evt-rules{width: 720px; margin: 0 auto; padding:100px 0 80px 20px;
+      h2{ font-size: 20px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 2.2em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;  }
+
+
+
+/*彈窗*/
+.Dialogbg-quan{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none;-moz-opacity:.7;filter:alpha(opacity=70); }
+
+.Dialog-quan{  box-shadow: 0 0 0 #999;  font-size: 14px; height:auto !important; padding: 1px; top: 50%; left: 50%;  margin: -256px auto 0 -375px !important;  position: fixed; z-index: 99999; display: none;
+  .closes{ width: 30px; height: 30px; position: absolute; top:20px; right:30px; cursor: pointer; z-index: 8; background: url("../images/close2.png") no-repeat;}
+  .quan{position: relative;  border-radius: 10px; overflow: hidden;  width: 751px; height: 513px; background: url("../images/quan-0.png");
+    .card{ text-align: center;
+      h2{font-size: 24px; line-height: 50px; }
+      p{font-size: 18px; line-height: 30px;}
+    }
+    .go-use {display: block; position: absolute; bottom: 122px; left: 50%; margin-left: -78px; width:156px;  cursor: pointer;
+      background:#ffb3be; color: #000; line-height: 40px; text-align: center; font-size: 18px;
+    }
+  }
+  .quan-1{ background: url("../images/quan-1.png");}
+  .quan-2{ background: url("../images/quan-2.png");}
+}
+
+
+
+@media (max-width: 1600px) {
+
+  .sec-wx{height: 530px;
+    .wx{ padding-top: 20px;}
+  }
+  .sec-2{
+    .cake{
+      li{width: 370px !important; margin-left: 29px !important;
+        img{width: 100%;}
+      }
+    }
+  }
+
+}
+
+

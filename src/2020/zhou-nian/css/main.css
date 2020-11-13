@@ -1,0 +1,1009 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*公共样式*/
+.evt-container {
+  overflow: hidden;
+  background: #ffa959;
+}
+
+.evt-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.evt-content img {
+  display: block;
+}
+
+.zoom {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.zoom.on {
+  transform: scale(0.97);
+}
+
+.scaleImg {
+  z-index: 1;
+}
+
+.scaleImg img.scale {
+  transition: all 0.4s;
+}
+
+.scaleImg.on img.scale {
+  transform: scale(1.05);
+}
+
+h2, h3, h4, b, i, strong, samp {
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  font-size: 12px;
+}
+
+.title {
+  width: 250px;
+  margin: 60px auto;
+}
+
+.title-3 {
+  width: 100%;
+  padding: 45px 0;
+  border: #cdcccc 2px dashed;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.zn-title {
+  text-align: center !important;
+  position: relative;
+  padding: 55px 0;
+}
+
+.zn-title img {
+  display: block;
+  margin: 0 auto !important;
+  clear: both;
+}
+
+.guize-btn {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+  margin-top: -15px;
+  width: 88px;
+  line-height: 30px;
+  background: #ffffff;
+  border-radius: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  border: #bfbfbf 1px solid;
+}
+
+.guize-btn .txtHtml, .guize-btn .txt {
+  display: none;
+}
+
+.star {
+  position: absolute !important;
+  z-index: 3;
+}
+
+.star-1 {
+  top: 200px;
+  left: 30px;
+  width: 107px;
+  height: 573px;
+  background: url("../images/star-1.png") no-repeat;
+}
+
+.star-2 {
+  top: 200px;
+  right: 30px;
+  width: 107px;
+  height: 573px;
+  background: url("../images/star-2.png") no-repeat;
+}
+
+.buy-btns {
+  position: absolute;
+  bottom: 126px;
+  left: 40px;
+  z-index: 2;
+}
+
+.buy-btns .buy-btn {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  width: 150px;
+  line-height: 44px;
+  color: #000;
+  background: #ffc559;
+  border-radius: 44px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.buy-btns .buy-btn.on {
+  background: #b9b8b7;
+  color: #fff;
+}
+
+.sec-banner {
+  position: relative;
+  height: 812px;
+  z-index: 1;
+  overflow: hidden;
+  background: url("../images/banner.png") top center no-repeat;
+}
+
+.floater {
+  position: fixed;
+  width: 92px;
+  height: 194px;
+  top: 200px;
+  right: 10px;
+  z-index: 8;
+}
+
+/*主体部分*/
+.sec-main {
+  background: url("../images/bg.png");
+  padding-bottom: 100px;
+}
+
+.main {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1;
+  /*满赠*/
+  /*折扣专场*/
+  /*奖品*/
+  /*榜单排名*/
+}
+
+.main .tab-bar {
+  position: relative;
+  width: 1280px;
+  height: 100px;
+  background: #fc542f;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.main .tab-bar span {
+  display: block;
+  width: 426.5px;
+  height: 100px;
+  float: left;
+}
+
+.main .tab-bar span:nth-of-type(1) {
+  background: url("../images/tab-bar-1.png");
+}
+
+.main .tab-bar span:nth-of-type(2) {
+  background: url("../images/tab-bar-2.png");
+}
+
+.main .tab-bar span:nth-of-type(3) {
+  background: url("../images/tab-bar-3.png");
+}
+
+.main .tab-bar span:nth-of-type(1).cur {
+  background: url("../images/tab-bar-1-h.png");
+}
+
+.main .tab-bar span:nth-of-type(2).cur {
+  background: url("../images/tab-bar-2-h.png");
+}
+
+.main .tab-bar span:nth-of-type(3).cur {
+  background: url("../images/tab-bar-3-h.png");
+}
+
+.main .sub-bar {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.main .sub-bar .sec-title {
+  position: relative;
+  padding: 60px 0 30px;
+  text-align: center;
+  margin-top: -3px;
+  z-index: 1;
+  display: none;
+}
+
+.main .sub-bar .sec-title ul {
+  margin: 0 auto;
+}
+
+.main .sub-bar .sec-title ul li {
+  margin: 0 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.main .tab-box {
+  margin: 0 auto;
+}
+
+.main .tab-box .part {
+  display: none;
+  text-align: center;
+}
+
+.main .tab-box .wx-code {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.main .tab-box .wx-code img {
+  width: 100%;
+}
+
+.main .xinpin {
+  margin: 0 auto;
+  width: 940px;
+  position: relative;
+}
+
+.main .xinpin .buy-btns {
+  position: absolute;
+  left: 620px;
+  bottom: 110px;
+}
+
+.main .xinpin.mcake-2 {
+  margin-top: 20px !important;
+}
+
+.main .man-zeng, .main .ymk, .main .shengbang-wrap, .main .shengbang-quan {
+  position: relative;
+  width: 940px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main .man-zeng .shengbang, .main .ymk .shengbang, .main .shengbang-wrap .shengbang, .main .shengbang-quan .shengbang {
+  position: relative;
+}
+
+.main .man-zeng .btn-gobuy, .main .ymk .btn-gobuy, .main .shengbang-wrap .btn-gobuy, .main .shengbang-quan .btn-gobuy {
+  width: 151px;
+  position: absolute;
+  right: 63px;
+  top: 228px;
+  cursor: pointer;
+}
+
+.main .man-zeng .star-1, .main .ymk .star-1, .main .shengbang-wrap .star-1, .main .shengbang-quan .star-1 {
+  left: -136px;
+}
+
+.main .man-zeng .star-2, .main .ymk .star-2, .main .shengbang-wrap .star-2, .main .shengbang-quan .star-2 {
+  right: -136px;
+}
+
+.main .man-zeng .zn-title, .main .ymk .zn-title, .main .shengbang-wrap .zn-title, .main .shengbang-quan .zn-title {
+  margin-bottom: 50px;
+}
+
+.main .shengbang-quan .icon {
+  position: absolute;
+  right: 294px;
+  top: 252px;
+  width: 83px;
+  height: 82px;
+  background: url("../images/icon-50.png") no-repeat;
+}
+
+.main .shengbang-quan .btn-gobuy {
+  width: 151px;
+  position: absolute;
+  left: 50%;
+  top: 525px;
+  margin-left: -75px;
+  cursor: pointer;
+}
+
+.main .shengbang-quan .progress-wrap {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 666px;
+  margin-left: -333px;
+}
+
+.main .shengbang-quan .progress-wrap .shengbang-txt {
+  width: 666px;
+  margin: 8px auto;
+  color: #0db8ca;
+}
+
+.main .shengbang-quan .progress-wrap .shengbang-txt span {
+  float: left;
+  display: block;
+  width: 156px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.main .shengbang-quan .progress-wrap .shengbang-txt span:nth-of-type(1) {
+  width: 113px;
+  padding-left: 20px;
+}
+
+.main .shengbang-quan .progress-wrap .progress {
+  position: relative;
+  background: #fea44e;
+  border-radius: 20px;
+  height: 20px;
+}
+
+.main .shengbang-quan .progress-wrap .progress span {
+  position: relative;
+  background: #59e9f1;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  text-align: right;
+  border-radius: 20px;
+}
+
+.main .shengbang-quan .progress-wrap .progress i {
+  position: absolute;
+  top: -2px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("../images/point.png") no-repeat;
+  margin-left: -22px;
+}
+
+.main .sec-cakes {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 1px;
+  margin: 0 auto;
+}
+
+.main .sec-cakes div {
+  position: relative;
+}
+
+.main .sec-cakes div.guize-btn {
+  position: absolute !important;
+}
+
+.main .sec-cakes .cake {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.main .sec-cakes .cake ul {
+  margin-left: -10px;
+}
+
+.main .sec-cakes .cake ul li {
+  width: 467px;
+  height: 414px;
+  margin-left: 5px;
+  float: left;
+  position: relative;
+  background: #fff8e1;
+  margin-bottom: 10px;
+}
+
+.main .sec-cakes .cake ul li img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.main .sec-cakes .cake ul li .m-title {
+  position: absolute;
+  top: 41px;
+  left: 70px;
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+  font-weight: bold;
+}
+
+.main .sec-cakes .cake ul li .m-subtitle {
+  position: absolute;
+  top: 65px;
+  left: 70px;
+  font-size: 11px;
+  text-align: left;
+  color: #8a8a8a;
+}
+
+.main .sec-cakes .cake ul li .m-car {
+  position: absolute;
+  bottom: 29px;
+  right: 54px;
+  width: 32px;
+  height: 32px;
+  background: url("../images/car.png") no-repeat;
+  cursor: pointer;
+}
+
+.main .sec-cakes .cake ul li .m-car.on {
+  background: url("../images/car-on.png") no-repeat;
+}
+
+.main .sec-cakes .cake ul li .m-last {
+  position: absolute;
+  top: 32px;
+  right: 37px;
+  font-size: 12px;
+  text-align: left;
+  color: #fff;
+  background: #ff363d;
+  line-height: 18px;
+  border-radius: 18px;
+  padding: 0 10px;
+}
+
+.main .sec-cakes .cake ul li .m-btn {
+  position: absolute;
+  bottom: 34px;
+  right: 30px;
+  font-size: 16px;
+  text-align: center;
+  width: 100px;
+  line-height: 30px;
+  color: #000;
+  background: #ffe328;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.main .sec-cakes .cake ul li .m-btn.on {
+  background: #edd322;
+}
+
+.main .sec-cakes .cake ul li .m-old-price {
+  position: absolute;
+  bottom: 37px;
+  left: 195px;
+  font-size: 14px;
+  text-align: left;
+  color: #707070;
+}
+
+.main .sec-cakes .cake ul li .m-price {
+  position: absolute;
+  bottom: 37px;
+  left: 70px;
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+}
+
+.main .sec-cakes .cake ul li .m-price span {
+  font-size: 16px;
+}
+
+.main .win-prize {
+  position: relative;
+  width: 940px;
+  height: 490px;
+  margin: 0 auto;
+}
+
+.main .win-prize .swiper-slide1 {
+  background: #d9f7f9 url("../images/zp-1.png") right no-repeat;
+}
+
+.main .win-prize .swiper-slide2 {
+  background: #d9f7f9 url("../images/zp-2.png") right no-repeat;
+}
+
+.main .win-prize .swiper-slide3 {
+  background: #d9f7f9 url("../images/zp-3.png") right no-repeat;
+}
+
+.main .win-prize .swiper-slide4 {
+  background: #d9f7f9 url("../images/zp-4.png") right no-repeat;
+}
+
+.main .win-prize .swiper-slide5 {
+  background: #d9f7f9 url("../images/zp-5.png") right no-repeat;
+}
+
+.main .win-prize .prize-nub {
+  position: absolute;
+  width: 425px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.main .win-prize .prize-nub ul {
+  padding: 20px 20px 0 97px;
+}
+
+.main .win-prize .prize-nub ul li {
+  padding: 17px 10px;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: #b5b5b5 1px solid;
+}
+
+.main .win-prize .prize-nub ul li b {
+  color: #623185;
+  font-size: 18px;
+}
+
+.main .win-prize .prize-nub ul li p {
+  font-size: 14px;
+  color: #8d8d8d;
+}
+
+.main .win-prize .prize-nub ul li.nobd {
+  border: none;
+}
+
+.main .win-prize .prize-nub ul li.on p {
+  color: #000;
+}
+
+.main .win-prize .buy-prize {
+  position: relative;
+  width: 940px;
+  /*.prize-nub{ position: absolute; width: 400px; top: 0; left: 0; z-index: 5;
+        ul{ padding: 20px 20px 0 97px;
+          li{ padding: 22px 10px; text-align: left; cursor: pointer; border-bottom: #b5b5b5 1px solid;
+            b{ color: #623185; font-size: 18px;}
+            p{ font-size: 14px; color: #8d8d8d;}
+          }
+          li.nobd{border: none;}
+          li.on{
+            p{color: #000;}
+          }
+
+        }
+      }*/
+}
+
+.main .win-prize .buy-prize .prizeImg {
+  position: relative;
+  overflow: hidden;
+  text-align: right;
+  padding: 50px;
+  display: none;
+}
+
+.main .win-prize .buy-prize .prize-1 {
+  background: #fff9ec;
+}
+
+.main .win-prize .buy-prize .prize-2 {
+  background: #ffeeed;
+}
+
+.main .win-prize .buy-prize .prize-3 {
+  background: #fff9ec;
+}
+
+.main .win-prize .buy-prize .prize-4 {
+  background: #ffeeed;
+}
+
+.main .paiming {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  background: #daf8fa;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main .paiming .bangList .title-txt {
+  position: relative;
+  margin: 0 100px;
+  padding: 20px 0 0 0;
+  line-height: 30px;
+  font-size: 24px;
+  text-align: left;
+  color: #000;
+}
+
+.main .paiming .bangList .bang-list {
+  margin: 0 100px;
+}
+
+.main .paiming .bangList .bang-list ul {
+  padding-bottom: 20px;
+}
+
+.main .paiming .bangList .bang-list ul li {
+  width: 324px;
+  line-height: 40px;
+  padding: 10px 15px;
+  border-bottom: #b5b5b5 1px solid;
+  float: left;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.main .paiming .bangList .bang-list ul li b {
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+  float: left;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.main .paiming .bangList .bang-list ul li .userImg {
+  float: left;
+  width: 57px;
+  height: 57px;
+  background: #e1e1e1;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.main .paiming .bangList .bang-list ul li span {
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+  float: left;
+}
+
+.main .paiming .bangList .bang-list ul li span.tel-phone {
+  color: #000;
+  font-size: 16px;
+  float: left;
+  width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main .paiming .bangList .bang-list ul li span.price {
+  float: right;
+}
+
+.main .paiming .bangList .bang-list ul li span.price i {
+  font-weight: bold;
+}
+
+.main .paiming .bangList .bang-list ul li.odd {
+  margin-right: 0;
+}
+
+.main .paiming .bangList .buy-btns {
+  bottom: 60px;
+}
+
+.main .paiming .bangList .buy-btn {
+  width: 180px;
+}
+
+.main .paiming .min-height {
+  height: 146px;
+}
+
+.main .paiming .more {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 38px;
+  height: 18px;
+  margin-left: -19px;
+  background: url("../images/more.png");
+  cursor: pointer;
+}
+
+.main .paiming .more.on {
+  background: url("../images/more-2.png");
+}
+
+.main .paiming {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  background: #bfecf1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main .paiming .bangList .title-txt {
+  position: relative;
+  margin: 0 100px;
+  padding: 20px 0 0 0;
+  line-height: 30px;
+  font-size: 24px;
+  text-align: left;
+  color: #000;
+}
+
+.main .paiming .bangList .bang-list {
+  margin: 0 100px;
+}
+
+.main .paiming .bangList .bang-list ul {
+  padding-bottom: 20px;
+}
+
+.main .paiming .bangList .bang-list ul li {
+  width: 324px;
+  line-height: 40px;
+  padding: 10px 15px;
+  border-bottom: #b5b5b5 1px solid;
+  float: left;
+  margin-right: 30px;
+}
+
+.main .paiming .bangList .bang-list ul li b {
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+  float: left;
+  margin-right: 20px;
+}
+
+.main .paiming .bangList .bang-list ul li .userImg {
+  float: left;
+  width: 57px;
+  height: 57px;
+  background: #e1e1e1;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.main .paiming .bangList .bang-list ul li span {
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+  float: left;
+}
+
+.main .paiming .bangList .bang-list ul li span.tel-phone {
+  color: #000;
+  font-size: 16px;
+  float: left;
+  width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main .paiming .bangList .bang-list ul li span.price {
+  float: right;
+}
+
+.main .paiming .bangList .bang-list ul li.odd {
+  margin-right: 0;
+}
+
+.main .paiming .bangList .buy-btns {
+  bottom: 60px;
+}
+
+.main .paiming .bangList .buy-btn {
+  width: 180px;
+}
+
+.main .paiming .min-height {
+  height: 148px;
+}
+
+.main .paiming .more {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 38px;
+  height: 18px;
+  margin-left: -19px;
+  background: url("../images/more.png");
+  cursor: pointer;
+}
+
+.main .word {
+  width: 655px;
+  margin: 25px auto;
+}
+
+.main .quan {
+  text-align: center;
+  margin: 0 auto;
+  width: 963px;
+  overflow: hidden;
+}
+
+.main .quan .buy {
+  position: absolute;
+  top: 260px;
+  left: 427px;
+  cursor: pointer;
+}
+
+.main .xinpin {
+  margin: 0 auto;
+  position: relative;
+}
+
+.main .item {
+  position: relative;
+  width: 940px;
+  background: #fff8e1;
+  margin: 0 auto;
+  height: 380px;
+  text-align: left;
+}
+
+.main .item .cake {
+  position: absolute;
+  top: 50px;
+  left: 190px;
+}
+
+.main .item .price {
+  position: absolute;
+  top: 136px;
+  left: 535px;
+}
+
+.main .item .title {
+  margin: 0 0 20px 0;
+}
+
+.main .item .buy-btns {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.main .item-2 .cake {
+  top: 90px;
+  left: 450px;
+}
+
+.main .item-2 .price {
+  top: 135px;
+  left: 206px;
+}
+
+.main .item-3 {
+  height: 450px;
+}
+
+.main .item-3 .cake {
+  top: 10px;
+  left: 60px;
+}
+
+.main .item-3 .price {
+  top: 136px;
+  left: 535px;
+}
+
+.evt-footer {
+  position: relative;
+  margin-top: 100px;
+}
+
+.evt-footer .evt-content {
+  color: #7f7f7f;
+}
+
+.evt-footer .evt-rules {
+  position: relative;
+  width: 939px;
+  margin: 0 auto;
+  padding: 0 0 200px 0;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules div {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 16px;
+  line-height: 2em;
+}
+
+.evt-footer .evt-rules p span {
+  display: block;
+  padding-left: 0.5em;
+  text-indent: -0.5em;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.pagination {
+  position: absolute !important;
+  left: 0;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  background: #fff;
+  margin: 0 5px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.swiper-active-switch {
+  background: #626262;
+  opacity: 1;
+}

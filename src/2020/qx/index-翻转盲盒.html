@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--公共头部-->
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+<!--公共头部 end-->
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2"></div>
+
+
+    <div class="sec-1">
+        <div class="evt-content">
+            <div class="tip-1"><img src="images/tip-1.png" alt=""></div>
+             <div class="qx-cake">
+                 <div class="cake"><img src="images/cake.png" alt=""></div>
+                 <div class="s-title"><img src="images/s-t.png" alt=""></div>
+                 <div class="buy-btn"><img src="images/btn-lq.png" alt=""></div>
+             </div>
+        </div>
+    </div>
+
+    <div class="sec-2" id="cakeLink">
+        <div class="evt-content">
+            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-1.png" alt=""></div>
+            <div class="blind">
+                <ul class="clearfix">
+                    <li class="flip">
+                        <div class="front">
+                            <img src="images/blind-4.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="images/blind-1.png" alt="">
+                        </div>
+                    </li>
+                    <li class="flip">
+                        <div class="front">
+                            <img src="images/blind-4.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="images/blind-2.png" alt="">
+                        </div>
+                    </li>
+                    <li class="flip">
+                        <div class="front">
+                            <img src="images/blind-4.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="images/blind-3.png" alt="">
+                        </div>
+                    </li>
+
+                    <li class="flip">
+                        <div class="front">
+                            <img src="images/blind-4.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="images/blind-4.png" alt="">
+                        </div>
+                    </li>
+
+                </ul>
+
+
+                <!--<ul class="clearfix">
+                    <li><img src="images/blind-1.png" alt=""></li>
+                    <li><img src="images/blind-2.png" alt=""></li>
+                    <li><img src="images/blind-3.png" alt=""></li>
+                </ul>-->
+            </div>
+
+            <div class="cake">
+                <ul class="clearfix">
+                    <li><img src="images/cake-1.png" alt=""> <a href="#cakeLink"><div class="btn-prize"></div></a></li>
+                    <li><img src="images/cake-2.png" alt=""> <a href="#cakeLink"><div class="btn-prize"></div></a></li>
+                    <li><img src="images/cake-3.png" alt=""> <a href="#cakeLink"><div class="btn-prize"></div></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec-wx">
+        <div class="wx"><img src="images/wx.png" alt=""></div>
+    </div>
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则:</h2>
+
+                <p>1、活动时间：2020年7月23日-2020年8月28日，活动最晚配送时间：8月31日</p>
+                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝、现金；仅限微信、支付宝、现金全额支付的用户参与</p>
+                <p>4、活动内容：<br>
+                ·在活动页勾选蛋糕可抽取盲盒一次，购买蛋糕后盲盒礼品和蛋糕一起配送；抽取盲盒才可收到礼品，不抽则视为放弃礼品<br>
+                ·在活动页购买爱之风物诗、约瑟芬玫瑰立减20元</p>
+                <p>5、本活动与积分、红包同享，但不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡以及优惠券同享</p>
+                <p>6、本活动最终解释权归MCAKE所有</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="Dialogbg-quan" style="display: none;"></div>
+<div class="Dialog-quan" style="display: none;">
+    <div class="closes"></div>
+    <div class="quan quan-0" style="display: block;">
+        <div class="go-use"><span>购买蛋糕</span></div>
+    </div>
+    <div class="quan quan-1" style="display: none;">
+        <div class="go-use"><span>购买蛋糕</span></div>
+    </div>
+    <div class="quan quan-2" style="display: none;">
+        <div class="go-use"><span>购买蛋糕</span></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+<!-- build:js js/main.js -->
+
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+
+    /*翻转*/
+    var prize = 0;
+    $(".btn-prize").click(function () {
+      //$(this).find(".jiang").addClass("jiang-"+5);
+      $(".blind li").eq(prize).addClass("hover");
+      setTimeout(function () {
+        QuanDialog(prize);
+      },1000)
+    });
+
+    /*ie8,ie9不支持翻转*/
+    if(!isSupportCss3){
+      $(".back").addClass("hide");
+      $(".flip").click(function () {
+        $(this).find(".jiang").addClass("jiang-"+5);
+        $(this).addClass("hover");
+        $(this).find(".back").removeClass("hide");
+      });
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -353,6 +353,84 @@ span.num, .noselect {
   color: #77564d;
 }
 
+.sec-cake .evt-content .row5 .cake {
+  position: absolute;
+  top: 0;
+  left: 525px;
+}
+
+.sec-cake .evt-content .row5 .price {
+  top: 140px;
+  left: 160px;
+}
+
+.sec-cake .evt-content .row5 .price ul.price_p li {
+  background: #a70001 !important;
+}
+
+.sec-cake .evt-content .row5 .price h2, .sec-cake .evt-content .row5 .price h2 span, .sec-cake .evt-content .row5 .price s, .sec-cake .evt-content .row5 .price .price_num dl dt span, .sec-cake .evt-content .row5 .price .huangou {
+  color: #a70001;
+}
+
+.sec-cake .evt-content .row5 .price ul.price_p li.cur, .sec-cake .evt-content .row5 .price .buy_btn_box span {
+  background: #c65459 !important;
+}
+
+.sec-cake .evt-content .row5 .price .minus {
+  background: url("../images/in-c-1.png") center no-repeat;
+}
+
+.sec-cake .evt-content .row5 .price .plus {
+  background: url("../images/in-c-2.png") center no-repeat;
+}
+
+.sec-cake .evt-content .row5 .price .bangshu {
+  border: #a70001 1px solid;
+}
+
+.sec-cake .evt-content .row5 .price .bangshu dt span {
+  color: #a70001;
+}
+
+.sec-cake .evt-content .row6 .cake {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.sec-cake .evt-content .row6 .price {
+  top: 150px;
+  left: 650px;
+}
+
+.sec-cake .evt-content .row6 .price ul.price_p li {
+  background: #3f517d !important;
+}
+
+.sec-cake .evt-content .row6 .price h2, .sec-cake .evt-content .row6 .price h2 span, .sec-cake .evt-content .row6 .price s, .sec-cake .evt-content .row6 .price .price_num dl dt span, .sec-cake .evt-content .row6 .price .huangou {
+  color: #3f517d;
+}
+
+.sec-cake .evt-content .row6 .price ul.price_p li.cur, .sec-cake .evt-content .row6 .price .buy_btn_box span {
+  background: #647db8 !important;
+}
+
+.sec-cake .evt-content .row6 .price .minus {
+  background: url("../images/in-e-1.png") center no-repeat;
+}
+
+.sec-cake .evt-content .row6 .price .plus {
+  background: url("../images/in-e-2.png") center no-repeat;
+}
+
+.sec-cake .evt-content .row6 .price .bangshu {
+  border: #647db8 1px solid;
+}
+
+.sec-cake .evt-content .row6 .price .bangshu dt span {
+  color: #647db8;
+}
+
 .more {
   width: 144px;
   position: relative;

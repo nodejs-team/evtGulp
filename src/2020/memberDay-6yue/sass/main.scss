@@ -122,6 +122,38 @@ span.num,.noselect{
       }
     }
 
+    .row5{
+      .cake{position: absolute; top:0; left: 525px;}
+      .price{ top:140px; left: 160px;
+        ul.price_p li {background:#a70001 !important;}
+        h2, h2 span,s,.price_num dl dt span,.huangou{color: #a70001;}
+        ul.price_p li.cur, .buy_btn_box span{background: #c65459 !important;}
+        .minus { background:url("../images/in-c-1.png") center no-repeat;}
+        .plus{ background: url("../images/in-c-2.png") center no-repeat;}
+        .bangshu{ border: #a70001 1px solid;
+          dt{
+            span{ color: #a70001;}
+          }
+        }
+      }
+    }
+
+    .row6{
+      .cake{position: absolute; top:0; left:10px;}
+      .price{ top:150px; left: 650px;
+        ul.price_p li {background:#3f517d !important;}
+        h2, h2 span,s,.price_num dl dt span,.huangou{color: #3f517d;}
+        ul.price_p li.cur, .buy_btn_box span{background: #647db8 !important;}
+        .minus { background:url("../images/in-e-1.png") center no-repeat;}
+        .plus{ background: url("../images/in-e-2.png") center no-repeat;}
+        .bangshu{ border: #647db8 1px solid;
+          dt{
+            span{ color: #647db8;}
+          }
+        }
+      }
+    }
+
   }
 }
 

@@ -1,0 +1,206 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>jquery.rotate旋转插件</title>
+
+
+
+<script type="text/javascript" src="http://www.jq22.com/demo/xuanzhuan/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://www.jq22.com/demo/xuanzhuan/js/jquery.rotate.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+
+$('#img1').rotate({angle:45});
+
+
+
+$("#img2").rotate({ 
+
+   bind: 
+
+     { 
+
+        mouseover : function() { 
+
+            $(this).rotate({animateTo:180});
+
+        },
+
+        mouseout : function() { 
+
+            $(this).rotate({animateTo:0});
+
+        }
+
+     } 
+
+   
+
+});
+
+
+
+
+
+var angle = 0;
+
+setInterval(function(){
+
+      angle+=3;
+
+     $("#img3").rotate(angle);
+
+},50);
+
+
+
+
+
+var rotation = function (){
+
+   $("#img4").rotate({
+
+      angle:0, 
+
+      animateTo:360, 
+
+      callback: rotation
+
+   });
+
+}
+
+rotation();
+
+
+
+
+
+
+
+var rotation2 = function (){
+
+   $("#img5").rotate({
+
+      angle:0, 
+
+      animateTo:360, 
+
+      callback: rotation2,
+
+      easing: function (x,t,b,c,d){        // t: current time, b: begInnIng value, c: change In value, d: duration
+
+          return c*(t/d)+b;
+
+      }
+
+   });
+
+}
+
+rotation2();
+
+
+
+
+
+$("#img6").rotate({ 
+
+   bind: 
+
+     { 
+
+        click: function(){
+
+            $(this).rotate({ angle:0,animateTo:180,easing: $.easing.easeInOutExpo })
+
+        }
+
+     } 
+
+   
+
+});
+
+
+
+
+
+var value2 = 0
+
+$("#img7").rotate({ 
+
+   bind: 
+
+     { 
+
+        click: function(){
+
+            value2 +=90;
+
+            $(this).rotate({ animateTo:value2})
+
+        }
+
+     } 
+
+   
+
+});
+
+
+
+});
+
+</script>
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<img id="img1" src="http://www.jq22.com/demo/xuanzhuan/images/chrome.png" width="256" height="256"/>
+
+<img id="img2" src="http://www.jq22.com/demo/xuanzhuan/images/chrome.png" width="256" height="256" />
+
+<img id="img3" src="http://www.jq22.com/demo/xuanzhuan/images/chrome.png" width="256" height="256"/>
+
+<img id="img4" src="http://www.jq22.com/demo/xuanzhuan/images/chrome.png" width="256" height="256"/>
+
+<img id="img5" src="http://www.jq22.com/demo/xuanzhuan/images/chrome.png" width="256" height="256"/>
+
+<img id="img6" src="http://www.jq22.com/demo/xuanzhuan/images/chrome.png" width="256" height="256"/>
+
+<img id="img7" src="http://www.jq22.com/demo/xuanzhuan/images/chrome.png" width="256" height="256"/>
+
+</body>
+
+
+
+<!--可删除-->
+
+	<script src="http://www.jq22.com/demo/xuanzhuan/js/jq.js>"></script>
+
+<!--ecd 可删除-->
+
+
+
+</html>
+
+
+

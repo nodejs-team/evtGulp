@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--公共头部-->
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+<!--公共头部 end-->
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2"><img src="images/banner.png" alt=""></div>
+
+    <div class="sec-star">
+        <div class="evt-content">
+            <div class="swipe-cake">
+               <!-- <div class="star"><img src="images/star.png" alt=""></div>-->
+                <!--<img src="images/recommend_cake.png" alt="">-->
+            </div>
+            <div class="swipe-cake-price clearfix row" data-special="special" data-pond="1磅,2磅" data-weight="681g,1.13kg" data-postid="1,2" data-price="198,298" data-sku="011,111" data-method="011,111" data-pid="011,111" data-ptype="011,111" data-channel="011,111">
+                <div class="cake-t" data-anim="slide-up" data-delay="0.4"><img src="images/recommend_title.png" alt=""></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.4">
+                    <div class="icon icon_50"></div>
+                    <h2>活动价<i>￥</i><span class="old-price">248</span>/<em class="d-pond">2磅</em></h2>
+                    <s>原价￥298</s>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn go_buy"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec-cake">
+        <div class="evt-content pro-list">
+            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-1.png" alt=""></div>
+
+            <div class="row row1" data-pond="2.5磅" data-weight="1.13kg" data-postid="01" data-price="298" data-sku="01" data-method="01" data-pid="01" data-ptype="1" data-channel="11">
+                <div class="secItem cake" data-anim="slide-right" data-delay="0.4"><img src="images/cake-1.png"/></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+
+                    <div class="price-title"><img src="images/t-1.png"/>
+                        <div class="jf jf_20"></div>
+                    </div>
+                    <h2>
+                        <div class="icon"></div>
+                        <i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn"></span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row2" data-pond="1.5磅,2.5磅,3磅" data-weight="454g,1.13kg,1.36kg" data-postid="01,1,2" data-price="298,398,428" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31">
+                <div class="secItem cake" data-anim="slide-left" data-delay="0.4"><img src="images/cake-2.png"/></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title"><img src="images/t-2.png"/>
+                        <div class="jf jf_20"></div>
+                    </div>
+                    <h2> <div class="icon"></div>
+                        <i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价￥<b class="old-price">298</b></s></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn"></span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row3" data-pond="1磅,2磅,3磅" data-weight="454g,908g,1.36kg" data-postid="01,1,2" data-price="198,298,428" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31">
+                <div class="secItem cake" data-anim="slide-right" data-delay="0.4"><img src="images/cake-3.png"/></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title"><img src="images/t-3.png"/>
+                        <div class="jf jf_20"></div>
+                    </div>
+                    <h2> <div class="icon"></div>
+                        <i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价￥<b class="old-price">298</b></s></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn"></span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row4" data-pond="1磅,2.5磅,3磅" data-weight="454g,1.13kg,1.36kg" data-postid="01,1,2" data-price="198,318,428" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31">
+                <div class="secItem cake" data-anim="slide-left" data-delay="0.4"><img src="images/cake-4.png"/></div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title"><img src="images/t-4.png"/>
+                        <div class="jf jf_20"></div>
+                    </div>
+                    <h2> <div class="icon"></div>
+                        <i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价￥<b class="old-price">298</b></s></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn"></span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则:</h2>
+                <p>1、活动时间：2020年10月6日-2020年10月31日（每周二上午10：00）</p>
+                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝、现金，本活动仅限使用微信、支付宝或现金全额支付的用户参与</p>
+                <p>4、活动内容： <br>
+                活动页面购买鲜莓印雪（2磅）立减50元，并赠送400积分;<br>
+                活动页面购买尼诺、爱丽丝花境、黛西的旅行、沙布蕾芭菲;<br>
+                满198元立减20元，满298元立减40元，满428元立减60元 （仅1/2/3磅参加）;<br>
+                同时购买蛋糕满100赠送200积分，满200赠送400积分，满300赠送600积分，满400赠送800积分</p>
+                <p>5、积分赠送上限为800积分</p>
+                <p>6、积分将在订单完成后5个工作日内进行发放（如：订单在10月7日完成，积分会在10月14日前发放完毕）</p>
+                <p>7、本活动与会员等级制度同享，但不与其他优惠同享</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/slider-new.js"></script>
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+  $(".go_buy").click(function () {
+    QuanDialog(1);
+  });
+
+  $(".btn-lq").click(function () {
+    QuanDialog(2);
+  });
+</script>
+</body>
+</html>

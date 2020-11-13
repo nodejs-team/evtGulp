@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <!-- build:css css/zhuanpan.css -->
+    <link type="text/css" rel="stylesheet" href="css/zhuanpan.css" />
+    <!-- endbuild -->
+</head>
+<body>
+<button class="choujiang">大转盘</button>
+
+<div class="zhuanpan-cover"></div>
+<div class="zhuanpan">
+    <div class="zhuanpanBg">
+        <div class="closes"><img src="images/close.png" alt=""></div>
+        <div class="zhuanpan-center">
+            <div class="title">MCAKE6周年献礼大转盘</div>
+            <div class="zp">
+                <div class="zp-pan" id="pan"><img src="images/zp-pan.png" alt=""></div>
+                <div class="zp-acrow"><img src="images/zp-acrow.png" alt=""></div>
+                <div class="zp-btn" id="zp-start"><img src="images/zp-btn.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="zhuanpan-award">
+            <div class="award award-1">
+                <div class="mima">0000-0000-0000</div>
+                <div class="tips disc">原切香芒鸡排堡5折优惠券码：</div>
+                <div class="tips">券码将以短信形式发送到您的手机。<br>请在上海、苏州汉堡王门店消费时出示，可以半价价格购买原切香芒鸡排堡。</div>
+                <div class="tips valid">有效期至：2017年10月30日</div>
+
+                <img src="images/zp-award-1.png" alt="">
+            </div>
+            <div class="award award-2">
+                <div class="txt"><span>1</span>元</div>
+                <div class="word">【<span>1</span>元<b>小食券</b>】已发放到您的账户</div>
+                <img src="images/zp-award-2.png" alt="">
+            </div>
+            <div class="award award-3"><img src="images/zp-award-3.png" alt=""></div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="http://www.mcake.com/shop/theme/xth1/js/index/jquery.min.js?v=1411888163"></script>
+<script>
+    var award = 5; /*【0】 ，【1 2】 ，【3】 ，【4 5】 */
+    var angle = 60;
+</script>
+<!-- build:js js/zhuanpan.js -->
+<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+<script type="text/javascript" src="js/zhuanpan.js"></script>
+<!-- endbuild -->
+<script>
+    /*转盘出现*/
+    $(".choujiang").click(function () {
+      zhuanpan();
+    });
+    /*抽奖*/
+    $("#zp-start").click(function () {
+         rotation(award,angle);
+    });
+
+
+
+    /*获奖*/
+    //jiangpin(award);
+</script>
+</body>
+</html>

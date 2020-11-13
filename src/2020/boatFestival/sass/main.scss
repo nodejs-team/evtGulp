@@ -1,0 +1,146 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background:#d69cf3; }
+
+.sec-banner{background:url("../images/banner.jpg") center; z-index: 1; height: 1082px; overflow: hidden;
+  .evt-content{ width: 1200px; margin: 0 auto; height: 560px; }
+  .banner-t{ position: absolute; top:110px; left: 50%; margin-left: -358.5px;}
+
+}
+
+.btns{position: absolute; width: 120px; background:#ffea01; text-align: center; cursor: pointer; border-radius: 44px; z-index: 2;
+  span{ display: block; color: #9553f5; font-size: 16px; line-height: 32px;}
+}
+
+.hy-title{width: 468px; margin: 0 auto; padding:50px 0;position: relative; text-align: center;
+  img{margin: 0 auto;}
+}
+
+
+
+.sec-1{background:url("../images/zhuanpan-bg.jpg") center; height: 902px;
+  .evt-content{ width: 1241px; }
+  .hongbao{position: relative; width: 1241px; height: 597px; background: url("../images/hongbao.png"); margin:-120px auto 0; text-align: center;
+    .buy-btn{position: absolute;width: 180px; height: 46px; line-height: 46px; background: #e6e7d9; color: #898c6b; font-size: 18px;  bottom: 90px; left: 50%; margin-left: -90px;}
+  }
+
+}
+
+
+.sec-3{ position: relative; background: url("../images/main-bg.jpg") center top no-repeat; height: 2862px; overflow: hidden;
+  .row{position: relative;}
+  .row1{ margin-top: 170px;
+    .ren{position: absolute; top:48px; left: -30px;}
+    .btns{top:557px; left:736px;}
+  }
+  .row2{
+    .ren{position: absolute; top:208px; left: 740px;}
+    .btns{top:637px; left:56px;}
+  }
+  .row3{
+    .ren{position: absolute; top:168px; left: -30px;}
+    .btns{top:647px; left:736px;}
+  }
+}
+
+.sec-5{position: relative; z-index: 2; background: url("../images/zuhe-bg.jpg") center top no-repeat; height: 1303px;
+  .evt-content{  width: 1200px;}
+  .quan{position: relative; width: 895px; margin:0 auto;
+    .ren{position: absolute; top:110px; left: 760px;}
+  }
+  .zuhe{position: relative; width: 1040px;  margin:100px auto 0;
+
+    ul{
+      li{float: left;
+        .btns{position: relative; top: 0; margin:10px auto 0;}
+      }
+    }
+  }
+}
+
+.evt-footer{ z-index: 1; position: relative;  background: url("../images/foot-bg.jpg") top no-repeat; width: 100%;
+  .dis-5{position: absolute; top:-105px; left: 740px;}
+  .evt-content{width: 1200px; color: #fff;}
+    .evt-rules{width: 930px; margin: 0 auto; padding:57px 0 100px 55px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+
+
+/*蛋糕选择弹窗*/
+
+.Dialogbg-Select{ background-color: #000; height: 100%; left: 0; opacity: 0.8; position: fixed; top: 0; width: 100%; z-index: 200; display: none; -moz-opacity: .8; filter: alpha(opacity=80);
+}
+
+.Dialog-Select{
+  background: #fff none repeat scroll 0 0; box-shadow: 0 0 0 #999; font-size:14px; width:520px; height:auto; margin-top: -210px; margin-left: -260px; left: 50%; padding: 0; position: fixed; top: 50%; z-index: 99999;border-radius:10px; display: none;
+}
+.s-closes{position: absolute; right: -30px; top: 8px; width: 17px; height: 17px; background: url("../images/close.png"); cursor:pointer;}
+.Select{ position: relative; color: #000; height: 100%;
+  .s-title{ height:96px; background: #f2f2f2; position: relative; border-top-left-radius:10px;  border-top-right-radius:10px;
+    h2{ font-size: 18px; line-height: 30px; padding-left: 40px; padding-top: 20px; }
+    b{font-size: 14px; color: #9a9a9a; font-weight: normal; padding-left: 40px;}
+  }
+  .s-bangshu{ padding-top: 30px;
+    ul{ margin-left: 40px;
+      li{ float: left; width:60px; height:60px; background: #f2f2f2; border-radius: 50%; text-align: center;  color: #4a4a4a; margin-right:30px; font-weight: bold; cursor: pointer; line-height:15px; font-size: 16px; display: flex; align-items: center; justify-content: space-around; flex-direction: column;
+        i{font-size: 12px; font-style: normal;}
+      }
+      li.on{ background: #ffc559; color: #000;  }
+      li.ie8{ padding-top: 15px;height:45px;
+      }
+    }
+  }
+  .d-tips{padding: 15px 40px; color: #4c4c4c; font-size: 12px;}
+  .s-num{border-top: #ededed 1px solid; padding-left: 40px;
+    b{display: inline-block; width:200px; margin:10px 0; line-height: 52px; float: left; font-size:16px; color: #737373; font-weight: normal;}
+    .nums { display: inline-block; margin:15px 40px 0;  float: right; height:52px;  position: relative;  width:150px;  }
+    .nums a { display: block; width:40px; height:40px;  position: absolute; top:2px;}
+    .nums .minus { background: url("../images/btn-1.png") center no-repeat; background-size: 100%; left: 0;}
+    .nums .plus { background: url("../images/btn-2.png") center no-repeat; background-size: 100%;  right: 0;}
+    .nums input { background:none;  border: none;  display: block;  font-size:26px;  line-height:45px;  left:35px;   padding: 0;  position: absolute;  text-align: center;  top: 0;  width:80px; color: #000;  }
+  }
+  .s-prices{border-top: #ededed 1px solid; font-size: 22px; padding:0 40px;
+    b{display: inline-block; width:200px; margin:0; line-height: 56px; float: left; font-size:16px; color: #737373; font-weight: normal;}
+    p{display: block;line-height: 56px; text-align: right;}
+    span{ font-size: 26px;}
+    i{font-style: normal; font-size: 16px;}
+    s{font-size: 18px; color: #aaa;}
+  }
+  .btns{ width: 100%; position: relative; bottom:0px; display: flex; height: 55px; line-height: 55px; flex-direction: row;  text-align: center; font-size: 18px; color: #000;
+    div{ flex: 1; cursor: pointer; width:100%;}
+    .go-car{background: #ffc559; border-bottom-right-radius:10px;  float: left; color: #000; }
+    .go-car.on{background: #ffc559;}
+    .go-car.ie8,.go-buy.ie8{width: 50%;}
+    .go-buy{background: #ffea00; border-bottom-left-radius:10px;  float: left; }
+    .go-buy.on{background: #9554f5;}
+
+
+  }
+
+}
+
+
+
+@media screen and (max-width:1600px) {
+
+}
+
+

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+
+</head>
+<body>
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+   <!-- <div class="floater">
+        <img src="images/float.png" alt="">
+    </div>-->
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
+      <!--  <div class="b-title"><img src="images/b-title.png" alt=""></div>-->
+    </div>
+
+    <!--主体部分-->
+    <div class="sec-main">
+        <div class="main">
+
+            <!--tab切换 日期切换-->
+            <div class="tab-bar">
+                <span></span>
+                <span class="cur"></span>
+                <span></span>
+            </div>
+            <!--子导航切换-->
+            <div class="sub-bar">
+                <div class="sec-title">
+                    <ul class="clearfix">
+                        <li class="scaleImg hllink"><img src="images/part-a-1.png" class="scale" alt=""></li>
+                        <li class="scaleImg quanlink"><img src="images/part-a-2.png" class="scale" alt=""></li>
+                        <li class="scaleImg cakelink"><img src="images/part-a-3.png" class="scale" alt=""></li>
+                        <li class="scaleImg wxlink"><img src="images/part-a-4.png" class="scale" alt=""></li>
+                    </ul>
+                </div>
+                <div class="sec-title" style="display: block;">
+                    <ul class="clearfix">
+                        <li class="scaleImg hllink"><img src="images/part-b-1.png" class="scale" alt=""></li>
+                        <li class="scaleImg zuhelink"><img src="images/part-b-2.png" class="scale" alt=""></li>
+                        <li class="scaleImg shengbanglink"><img src="images/part-b-3.png" class="scale" alt=""></li>
+                        <li class="scaleImg wxCodelink"><img src="images/part-b-4.png" class="scale" alt=""></li>
+                    </ul>
+                </div>
+                <div class="sec-title">
+                    <ul class="clearfix">
+                        <li class="scaleImg hllink"><img src="images/part-c-1.png" class="scale" alt=""></li>
+                        <li class="scaleImg cake99link"><img src="images/part-c-2.png" class="scale" alt=""></li>
+                        <li class="scaleImg cake86link"><img src="images/part-c-3.png" class="scale" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <!--公共部分:头号赢家-->
+            <div class="zn-title" id="hl" data-anim="slide-up" data-delay="0.2" style="padding-top:10px;"><img src="images/zn-title-1.png" alt=""></div>
+            <div class="win-prize">
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide1" ></div>
+                        <div class="swiper-slide swiper-slide2" ></div>
+                        <div class="swiper-slide swiper-slide3" ></div>
+                        <div class="swiper-slide swiper-slide4" ></div>
+                        <div class="swiper-slide swiper-slide5" ></div>
+                    </div>
+                </div>
+
+                <div class="prize-nub">
+                    <ul class="clearfix">
+                        <li class="on"><b><img src="images/top-1.png" alt=""></b><p>恺丽之家沙发，价值2998元</p></li>
+                        <li><b><img src="images/top-2.png" alt=""></b><p>富士instax SQUARE SQ6（含相纸1盒），价值937元</p> </li>
+                        <li><b><img src="images/top-3.png" alt=""></b><p>富士instax mini25，价值699元</p></li>
+                        <li><b><img src="images/top-4.png" alt=""></b><p>贝佳斯（矿物营养洁肤膏1支+焕彩修复紧致 <br>
+                            面膜1罐）价值600元</p></li>
+                        <li><b><img src="images/top-5.png" alt=""></b><p>水芒芒（复合乳酸菌芒果汁饮料一箱12瓶装）<br>
+                            +1张升磅券（1磅升2磅）价值200元</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paiming">
+                <div class="bangList">
+                    <div class="title-txt">榜单排名</div>
+                    <div class="bang-list">
+                        <div id="box" class="min-height" style=" position:relative; overflow:hidden;">
+                            <ul class="clearfix" id="ul1">
+                                <li class="clearfix"><b>1</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>96838.00</span></li>
+                                <li class="odd clearfix"><b>2</b><span class="tel-phone">13482289821</span><span class="price"><i>￥</i>92.00</span></li>
+                                <li class="clearfix"><b>3</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="odd clearfix"><b>4</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2232.00</span></li>
+                                <li class="clearfix"><b>5</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="odd clearfix"><b>6</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="clearfix"><b>7</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="odd clearfix"><b>8</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="odd clearfix"><b>9</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="more"></div>
+            </div>
+            <div class="word"><img src="images/word-1.png" alt=""></div>
+
+            <!--主内容切换-->
+            <div class="tab-box">
+                <div class="part part-1">
+
+                    <!--9周年特权卡-->
+                    <div class="zn-title" id="quan" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-2.png" alt=""></div>
+                    <div class="quan" data-anim="slide-up" data-delay="0.8">
+                        <div class="buy"><img src="images/buy-btn.png" alt=""></div>
+                        <img src="images/card-1.png" alt="">
+                    </div>
+
+                    <div class="zn-title" id="cake" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-3.png" alt=""></div>
+                    <!--折扣专场-->
+                    <div class="sec-cakes" data-anim="slide-up" data-delay="0.2">
+                        <div class="star star-1"></div>
+                        <div class="star star-2"></div>
+                        <div class="cake product-li">
+                            <ul class="clearfix">
+                                <li>
+                                    <img src="images/img-1.png" class="zoom" alt="">
+                                    <div class="m-title">尼诺（908g）</div>
+                                    <div class="m-subtitle">Nino</div>
+                                    <div class="m-price">满减价￥<span>259.00</span></div>
+                                     <s class="m-old-price">原价￥<span>298</span></s>
+                                    <div class="m-car"></div>
+                                    <!--<div class="m-last">剩余：99</div>-->
+                                </li>
+                                <li>
+                                    <img src="images/img-2.png" class="zoom" alt="">
+                                    <div class="m-title">安逸兔（681g）</div>
+                                    <div class="m-subtitle">lapin détendu</div>
+                                    <div class="m-price">满减价￥<span>179.00</span></div>
+                                     <s class="m-old-price">原价￥<span>218</span></s>
+                                    <div class="m-car"></div>
+                                </li>
+                                <li>
+                                    <img src="images/img-3.png" class="zoom" alt="">
+                                    <div class="m-title">Finn的蘑菇星球（681g）</div>
+                                    <div class="m-subtitle">La planète champignon de Finn</div>
+                                    <div class="m-price">满减价￥<span>259.00</span></div>
+                                     <s class="m-old-price">原价￥<span>298.00</span></s>
+                                    <div class="m-car"></div>
+                                </li>
+                                <li>
+                                    <img src="images/img-4.png" class="zoom" alt="">
+                                    <div class="m-title">沙布雷芭菲（908g）</div>
+                                    <div class="m-subtitle">Sablé parfait</div>
+                                    <div class="m-price">满减价￥<span>259.00</span></div>
+                                    <s class="m-old-price">原价￥<span>298.00</span></s>
+                                    <div class="m-car"></div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--满赠-->
+                    <div class="zn-title" id="manzeng" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-4.png" alt=""></div>
+                    <div class="man-zeng" data-anim="slide-up" data-delay="0.2"><img src="images/man-zeng.png" alt=""></div>
+
+
+                    <div class="zn-title" id="wx" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-5.png" alt=""></div>
+                    <div class="wx-code" data-anim="slide-up" data-delay="0.8"><img src="images/wx-code.png" alt=""></div>
+
+
+                </div>
+                <div class="part part-2" style="display: block;">
+                    <div class="zn-title" id="zuhe" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-6.png" alt=""></div>
+                    <div class="shengbang-wrap" data-anim="slide-up" data-delay="0.2">
+                        <div class="star star-1"></div>
+                        <div class="star star-2"></div>
+                        <div class="shengbang">
+                            <div class="btn-gobuy"><img src="images/btn-gobuy.png" alt=""></div>
+                            <img src="images/shengbang-1.png" alt="">
+                        </div>
+                        <div class="shengbang">
+                            <div class="btn-gobuy"><img src="images/btn-gobuy.png" alt=""></div>
+                            <img src="images/shengbang-2.png" alt="">
+                        </div>
+                        <div class="shengbang">
+                            <div class="btn-gobuy"><img src="images/btn-gobuy.png" alt=""></div>
+                            <img src="images/shengbang-3.png" alt="">
+                        </div>
+                    </div>
+
+
+
+                    <!--满赠-->
+                    <div class="zn-title" id="zeng" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-7.png" alt=""></div>
+                    <div class="man-zeng" data-anim="slide-up" data-delay="0.2"><img src="images/man-zeng-2.png" alt=""></div>
+
+                    <div class="zn-title" id="shengbang" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-8.png" alt=""></div>
+                    <div class="shengbang-quan" data-anim="slide-up" data-delay="0.2">
+                        <div class="progress-wrap">
+                            <div class="shengbang-txt clearfix">
+                                <span>秒杀时间</span>
+                                <span>10月22日12:00</span>
+                                <span>10月26日12:00</span>
+                                <span>10月29日12:00</span>
+                            </div>
+                            <div class="progress">
+                                <span></span>
+                                <i></i>
+                            </div>
+                            <div class="shengbang-txt"><img src="images/shengbang-txt-2.png" alt=""></div>
+                        </div>
+
+                        <div class="icon"></div>
+                        <div class="btn-gobuy"><img src="images/btn-gobuy.png" alt=""></div>
+                        <img src="images/shengbang-quan.png" alt="">
+                    </div>
+                    <div class="zn-title" id="wxCode" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-5.png" alt=""></div>
+                    <div class="wx-code" data-anim="slide-up" data-delay="0.8"><img src="images/wx-code.png" alt=""></div>
+
+                </div>
+                <div class="part part-3">
+                    <div class="zn-title" id="cake99" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-9.png" alt=""></div>
+                    <div class="xinpin mcake-1" data-anim="slide-up" data-delay="0.2">
+                        <div class="buy-btns">
+                            <div class="buy-btn on">即将开始</div>
+                        </div>
+                        <img src="images/mcake-1.png" alt="">
+                    </div>
+
+                    <div class="xinpin mcake-2" data-anim="slide-up" data-delay="0.2">
+                        <div class="buy-btns">
+                            <!--<div class="show" id="show"></div>-->
+                            <div class="buy-btn on">即将开始</div>
+                        </div>
+                        <img src="images/mcake-2.png" alt="">
+                    </div>
+
+                    <div class="zn-title" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-10.png" alt=""></div>
+                    <div class="man-zeng" data-anim="slide-up" data-delay="0.2">
+                        <img src="images/man-zeng-3.png" alt="">
+                    </div>
+                    <div class="zn-title"  id="cake86" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-11.png" alt=""></div>
+                    <div class="shengbang">
+
+                        <div class="item">
+                            <div class="star star-1"></div>
+                            <div class="star star-2"></div>
+                            <div class="cake" data-anim="slide-right" data-delay="0.4"><img src="images/cake-1.png"/></div>
+                            <div class="price" data-anim="slide-left" data-delay="0.4">
+                                <div class="title"><img src="images/title-1.png"/></div>
+                                <div class="buy-btns">
+                                    <div class="buy-btn">立即购买</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item item-2">
+                            <div class="cake" data-anim="slide-left" data-delay="0.4"><img src="images/cake-2.png"/></div>
+                            <div class="price" data-anim="slide-right" data-delay="0.4">
+                                <div class="title"><img src="images/title-2.png"/></div>
+                                <div class="buy-btns">
+                                    <div class="buy-btn">立即购买</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item item-3">
+                            <div class="cake" data-anim="slide-right" data-delay="0.4"><img src="images/cake-3.png"/></div>
+                            <div class="price" data-anim="slide-left" data-delay="0.4">
+                                <div class="title"><img src="images/title-3.png"/></div>
+                                <div class="buy-btns">
+                                    <div class="buy-btn">立即购买</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zn-title" id="zhekou" data-anim="slide-up" data-delay="0.2"><img src="images/zn-title-12.png" alt=""></div>
+                    <div class="man-zeng" data-anim="slide-up" data-delay="0.2">
+                        <img src="images/man-zeng-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="evt-footer clearfix">
+                <div class="evt-content clearfix">
+                    <div class="evt-rules">
+                        <h2>活动规则：</h2>
+                        <p>1、活动时间：2020年10月10日-2020年11月10日</p>
+                        <p>2、活动城市：上海、北京、苏州、杭州</p>
+                        <p>3、支付方式：微信、支付宝、现金</p>
+                        <p>4、本活动仅限微信、支付宝、现金全额用户参与</p>
+                        <p>5、活动内容：</p>
+                        <p>1) 10.10-11.10</p>
+                        <p>头号赢家：活动期间内，凡在活动页下单，订单金额排名前9位的用户可获得礼品，榜单实时更新。</p>
+                        <p>TOP1：恺丽之家沙发，价值2998元；</p>
+                        <p>TOP2-3：富士instax SQ6，价值858元；</p>
+                        <p>TOP4-5：富士instax mini25，价值699元（实物以实际为准，图片仅参考）；</p>
+                        <p>TOP6-7：贝佳斯（矿物营养洁肤膏1支+焕彩修复紧致面膜1罐）价值600元</p>
+                        <p>TOP8-9：水芒芒（复合乳酸菌芒果汁饮料一箱12瓶装）+1张升磅券（1磅升2磅）价值200元</p>
+                        <p>自11月10日23点59分活动结束日起，排名前9名的用户7个工作日内在微信公众号MCAKE蛋糕上，提供排名截图+姓名+手机号+收货地址，逾期则视为放弃领奖。</p>
+                        <p>2) 10.10-10.29</p>
+                        <p>微信话题互动：</p>
+                        <p>微博话题互动：</p>
+                        <p>3) 10.10-10.19</p>
+                        <p>周年卡：使用时间为自购买日起180天内有效，特权卡中的优惠券每次仅限使用一张，且与其它优惠不同享；</p>
+                        <p>指定蛋糕满减：活动期间购买尼诺（908g）、安逸兔（1.5磅）、Finn的蘑菇星球（1.5磅）、沙布蕾芭菲（2磅）立减39元，赠送皓乐齿净澈气息口香喷剂1瓶，数量有限，先到先得</p>
+                        <p>4）10.20-10.29</p>
+                        <p>组合购：活动期间购买指定蛋糕小食组合，下单即送摩隆洗护旅行装1份，数量有限，先到先得</p>
+                        <p>升磅券：活动期间每位用户限购一次，单笔订单只可使用一张升磅券，且不能与平台其它优惠同时使用，升磅券有效期至11月10日</p>
+                        <p>5）10.30-11.10</p>
+                        <p>活动期间，摩登茶道（1磅）和香溢新芝（1磅）指定时间，限时限量99元抢，下单即送摩隆洗护便携装1份，数量有限，先到先得
+                        活动期间，购买花样年华（2磅）、君度可可（2磅）、蓝莓轻乳拿破仑（2磅）专享86折，下单即送贝佳斯活力亮采美肤泥浆膜
+                        便携装1份，数量有效，先到先得</p>
+                        <p>6、全场活动不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡以及优惠券同享</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2019/pc/common/jquery.min.js"></script>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2019/pc/common/main.js"></script>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2019/pc/common/public-shimily.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/respond.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>
