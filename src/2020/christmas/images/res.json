@@ -1,64 +1,43 @@
 {
 	"groups":[{
-			"keys":"price-2_png,sd-cake-bg_png,sec-0_jpg,sec-2_jpg,window_json,huan-img-2_jpg,huan-img-3_jpg,huan-img-4_jpg,baner_gif,banner_png,bg_jpg,buy-btn_png,buy-btn2_png,cake_png,card-1_png,card-1-on_png,card-2_png,card-2-on_png,card-3_png,card-3-on_png,card-on_png,close_png,dis-1_png,dis-2_png,dis-3_png,foot-bg_png,hd-title-1_png,hd-title-2_png,hd-title-3_png,huan-img-1_png,jiang-1_png,jiang-2_png,jiang-3_png,jiang-4_png,jiang-5_png,more_png,music-btn_png,music-btn-on_png,price-1_png",
+			"keys":"hd-title-3_png,sec-1_png,sec-2_png,sec-3_png,sec-foot_png,snow_png,banner_png,buy-btn_png,buy-btn2_png,cake_png,cake-1_png,cake-2_png,cake-i-1_png,cake-i-2_png,cake-i-3_png",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"price-2_png",
+			"name":"hd-title-3_png",
 			"type":"image",
-			"url":"price-2.png"
+			"url":"hd-title-3.png"
 		},
 		{
-			"name":"sd-cake-bg_png",
+			"name":"sec-1_png",
 			"type":"image",
-			"url":"sd-cake-bg.png"
+			"url":"sec-1.png"
 		},
 		{
-			"name":"sec-0_jpg",
+			"name":"sec-2_png",
 			"type":"image",
-			"url":"sec-0.jpg"
+			"url":"sec-2.png"
 		},
 		{
-			"name":"sec-2_jpg",
+			"name":"sec-3_png",
 			"type":"image",
-			"url":"sec-2.jpg"
+			"url":"sec-3.png"
 		},
 		{
-			"name":"window_json",
-			"subkeys":"w-1,w-2,w-3,w-4,w-5",
-			"type":"sheet",
-			"url":"window.json"
+			"name":"sec-foot_png",
+			"type":"image",
+			"url":"sec-foot.png"
 		},
 		{
-			"name":"huan-img-2_jpg",
+			"name":"snow_png",
 			"type":"image",
-			"url":"huan-img-2.jpg"
-		},
-		{
-			"name":"huan-img-3_jpg",
-			"type":"image",
-			"url":"huan-img-3.jpg"
-		},
-		{
-			"name":"huan-img-4_jpg",
-			"type":"image",
-			"url":"huan-img-4.jpg"
-		},
-		{
-			"name":"baner_gif",
-			"type":"image",
-			"url":"baner.gif"
+			"url":"snow.png"
 		},
 		{
 			"name":"banner_png",
 			"type":"image",
 			"url":"banner.png"
-		},
-		{
-			"name":"bg_jpg",
-			"type":"image",
-			"url":"bg.jpg"
 		},
 		{
 			"name":"buy-btn_png",
@@ -76,129 +55,29 @@
 			"url":"cake.png"
 		},
 		{
-			"name":"card-1_png",
+			"name":"cake-1_png",
 			"type":"image",
-			"url":"card-1.png"
+			"url":"cake-1.png"
 		},
 		{
-			"name":"card-1-on_png",
+			"name":"cake-2_png",
 			"type":"image",
-			"url":"card-1-on.png"
+			"url":"cake-2.png"
 		},
 		{
-			"name":"card-2_png",
+			"name":"cake-i-1_png",
 			"type":"image",
-			"url":"card-2.png"
+			"url":"cake-i-1.png"
 		},
 		{
-			"name":"card-2-on_png",
+			"name":"cake-i-2_png",
 			"type":"image",
-			"url":"card-2-on.png"
+			"url":"cake-i-2.png"
 		},
 		{
-			"name":"card-3_png",
+			"name":"cake-i-3_png",
 			"type":"image",
-			"url":"card-3.png"
-		},
-		{
-			"name":"card-3-on_png",
-			"type":"image",
-			"url":"card-3-on.png"
-		},
-		{
-			"name":"card-on_png",
-			"type":"image",
-			"url":"card-on.png"
-		},
-		{
-			"name":"close_png",
-			"type":"image",
-			"url":"close.png"
-		},
-		{
-			"name":"dis-1_png",
-			"type":"image",
-			"url":"dis-1.png"
-		},
-		{
-			"name":"dis-2_png",
-			"type":"image",
-			"url":"dis-2.png"
-		},
-		{
-			"name":"dis-3_png",
-			"type":"image",
-			"url":"dis-3.png"
-		},
-		{
-			"name":"foot-bg_png",
-			"type":"image",
-			"url":"foot-bg.png"
-		},
-		{
-			"name":"hd-title-1_png",
-			"type":"image",
-			"url":"hd-title-1.png"
-		},
-		{
-			"name":"hd-title-2_png",
-			"type":"image",
-			"url":"hd-title-2.png"
-		},
-		{
-			"name":"hd-title-3_png",
-			"type":"image",
-			"url":"hd-title-3.png"
-		},
-		{
-			"name":"huan-img-1_png",
-			"type":"image",
-			"url":"huan-img-1.png"
-		},
-		{
-			"name":"jiang-1_png",
-			"type":"image",
-			"url":"jiang-1.png"
-		},
-		{
-			"name":"jiang-2_png",
-			"type":"image",
-			"url":"jiang-2.png"
-		},
-		{
-			"name":"jiang-3_png",
-			"type":"image",
-			"url":"jiang-3.png"
-		},
-		{
-			"name":"jiang-4_png",
-			"type":"image",
-			"url":"jiang-4.png"
-		},
-		{
-			"name":"jiang-5_png",
-			"type":"image",
-			"url":"jiang-5.png"
-		},
-		{
-			"name":"more_png",
-			"type":"image",
-			"url":"more.png"
-		},
-		{
-			"name":"music-btn_png",
-			"type":"image",
-			"url":"music-btn.png"
-		},
-		{
-			"name":"music-btn-on_png",
-			"type":"image",
-			"url":"music-btn-on.png"
-		},
-		{
-			"name":"price-1_png",
-			"type":"image",
-			"url":"price-1.png"
+			"url":"cake-i-3.png"
 		}
 	]
 }
