@@ -1,0 +1,114 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background:#630b09; }
+.home-header{z-index: 10;}
+$w1080:1080px;
+
+.sec-banner{ background:#4b0c07 url("../images/banner.png") center bottom no-repeat; z-index: 1; height: 924px; overflow: hidden;
+  .evt-content{  width:1200px;  padding:0;}
+  .banner-con{position: absolute; left:50%; margin-left: -1019px;}
+  .word{position: absolute; bottom:10px; left:50%; margin-left: -234px;}
+}
+
+.hy-title{ margin: 0 auto; position: relative; text-align: center;
+  img{display: block; margin: 0 auto;}
+}
+.evt-content{ height: 100%; }
+
+.buy_btn{
+  span{display: block; padding: 0 40px; line-height: 40px; font-size: 18px; background: #910e06; color: #fff; cursor: pointer;}
+}
+
+.sec-1{ height: 989px; background:url("../images/sec-1.png") center no-repeat;
+  .evt-content{  width:$w1080;  padding:0;
+    div{position: absolute;}
+  }
+  .title{ top:150px; left:50%; margin-left: -275.5px;}
+  .chuanqing{ top:321px; left:-210px;  z-index: 3; display: none; cursor: pointer;}
+  .cake{ top:320px; left: 100px; z-index: 1; cursor: pointer; }
+  .price{ top:380px; left: 600px; }
+  .buy_btn{ top:650px; left: 605px;}
+  .txt{ bottom: 170px;  left:50%; margin-left: -285px;}
+}
+
+.sec-2{ height: 852px; background:url("../images/sec-2.png") center no-repeat;
+  .evt-content{  width:$w1080;  padding:0;
+    div{position: absolute;}
+  }
+  .title{ top:150px; left:50%; margin-left: -275.5px;}
+  .cake{ top:320px; left: 570px; }
+  .price{ top:350px; left: 180px; }
+  .buy_btn{ top:640px; left: 185px;}
+}
+
+.sec-3{ height: 880px; background:url("../images/sec-3.png") center no-repeat;
+  .evt-content{  width:$w1080;  padding:0;
+    div{position: absolute;}
+  }
+  .title{ top:180px; left:50%; margin-left: -275.5px;}
+  .cake{ top:350px; left: 140px; }
+  .price{ top:350px; left: 600px; }
+  .buy_btn{ top:620px; left: 605px;}
+}
+
+.sec-4{ height: 1019px; background:url("../images/sec-4.png") center no-repeat;
+  .evt-content{  width:$w1080;  padding:0;
+    div{position: absolute;}
+  }
+  .title{ top:220px; left:50%; margin-left: -275.5px;}
+  .cake{ top:480px; left: 570px; }
+  .price{ top:450px; left: 180px; }
+  .buy_btn{ top:720px; left: 185px;}
+  .txt{ bottom: 170px;  left:50%; margin-left: -325px;}
+}
+
+.sec-5{ height: 810px; background:url("../images/sec-5.png") center no-repeat;
+  .evt-content{  width: 1280px;
+    .card{ width: 673px; margin: 0 auto;}
+  }
+}
+
+.huangou { position:absolute; bottom: 0; left: 8px; width: 250px; font-size: 16px; font-weight: bold; color: #9f2c27; cursor: pointer; padding-left: 29px; text-align: left; }
+.huangou .icnone { position: absolute; left: 0; top: 50%; margin-top: -11px; width: 21px; height: 21px; z-index: 1; }
+.huangou .icon { position: absolute; left: 0; top: 50%; margin-top: -11px; width: 21px; height: 21px; z-index: 2;  }
+.price .huangou {moz-user-select: -moz-none;-moz-user-select: none;-o-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none; }
+.icon,.icnone{background: url("../images/icon-1.png"); }
+.icon.on{background: url("../images/icon-1-h.png");}
+
+.evt-footer{ position: relative; z-index: 1; background:url("../images/sec-foot.png") top;
+  .evt-content{width: 1200px; color: #fdf4e3;}
+    .foot-zp{position: absolute; top: 90px; right: 300px;}
+    .evt-rules{width: 950px; margin: 0 auto; padding:100px 0 100px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 2em;  padding-left: 1.5em;  text-indent: -1.5em; }
+    }
+}
+
+
+.floater{position: fixed; right: -10px; top: 450px; z-index: 3;}
+
+@media (max-width: 1600px) {
+  .sec-banner{height: 590px;}
+  .sec-banner img{width: 100%;}
+  .sec-banner .banner-con{width:1200px; margin-left: -620px;}
+  .sec-banner .word{width:470px; margin-left: -235px; bottom: -11px;}
+  .sec-1 .chuanqing{ left:-2px;}
+  .floater{position: fixed; top: 300px; width: 130px;
+    img{width: 100%;}
+  }
+}

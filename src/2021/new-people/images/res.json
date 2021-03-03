@@ -1,0 +1,28 @@
+{
+	"groups":[{
+			"keys":"translate-bg_png,banner_png,lingquan_png,quan_png",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"translate-bg_png",
+			"type":"image",
+			"url":"translate-bg.png"
+		},
+		{
+			"name":"banner_png",
+			"type":"image",
+			"url":"banner.png"
+		},
+		{
+			"name":"lingquan_png",
+			"type":"image",
+			"url":"lingquan.png"
+		},
+		{
+			"name":"quan_png",
+			"type":"image",
+			"url":"quan.png"
+		}
+	]
+}

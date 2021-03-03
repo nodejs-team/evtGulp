@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+    <div class="sec-banner">
+        <div class="banner-txt"><img src="images/banner-txt.png" alt=""></div>
+    </div>
+    <div class="sec-card">
+        <div class="evt-content">
+            <div class="card">
+                <div class="btn-lq"></div>
+                <img src="images/card-1.png" alt="">
+            </div>
+            <div class="card">
+                <img src="images/card-2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="sec-quan">
+        <div class="evt-content">
+            <div class="quan">
+                <img src="images/quan-1.png" alt="">
+                <img src="images/quan-2.png" alt="">
+                <img src="images/quan-3.png" alt="">
+                <img src="images/quan-4.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <div class="sec-footer ">
+        <div class="evt-content clearfix">
+            <div class="kt-btn">
+                <img src="images/txt.png" alt="">
+                <div class="kt"><img src="images/kt-btn.png" alt=""></div>
+            </div>
+            <div class="hd-guize">
+                <h2>活动规则：</h2>
+                <p>1、活动时间：2020年1月27日-2020年2月21日</p>
+                <p>2、有效期：自开通日起-2021年12月31日，一个账号不可重复开通；</p>
+                <p>3、活动城市：上海、北京、苏州、杭州；</p>
+                <p>4、支付方式：微信、支付宝；</p>
+                <p>5、具体权益内容：<br>
+                <p class="p">· 特权一包含1张免费升磅券，立减100元（仅限1磅升2磅和1.5磅升2.5磅蛋糕，单一规格产品不享受优惠），优惠券有效期：即日起-3月31日；</p>
+                <p class="p">· 特权二包1张298减50元，购买蛋糕产品满298元使用；1张缤纷欢乐礼包券，蛋糕订单满198元使用；优惠券有效期：4月1日-6月30日；</p>
+                <p class="p">· 特权三包含含1张小食券，购买小食产品满100元使用；1张198减30元券，每张优惠券单笔订单仅可使用1张；优惠券有效期：7月1日-9月30日</p>
+                <p class="p">· 特权四包1张298减50元，购买蛋糕产品满298元使用；1张1/4牛奶生巧券，购买小食产品满100元使用优惠券有效期：10月1日-12月31日</p>
+                <p class="p">· 特权四包含一年时间积分6倍特权，订单完成可获得消费积分，按照每笔订单实际支付金额（优惠券、积分、现金卡、专项卡、红包抵扣部分</p>
+                <p class="p">不计入在内）赠送积分，每消费100元赠送150积分，按照此比例依次类推；</p>
+                <p>6、新春卡不与其他优惠同享；</p>
+                <p>5、本活动不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡以及优惠券、红包、积分同享</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2018/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2018/pc/common/main.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

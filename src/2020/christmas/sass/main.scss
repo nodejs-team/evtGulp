@@ -15,48 +15,53 @@ span.num,.noselect{
   -ms-user-select:none;
   user-select:none;
 }
-.evt-container{ overflow: hidden; }
+.evt-container{ overflow: hidden; background:url("../images/bg.png") repeat; }
 
 .sec-banner{
   background:url("../images/banner.png") center no-repeat; z-index: 1; height: 906px; overflow: hidden;
   .evt-content{ width: 1200px; margin: 0 auto; height: 500px; }
-
+  .logos{position: absolute; left: 50%; top: 20px; margin-left: 325px;}
 }
 
-.hy-title{width: 515px; margin:50px auto 50px; position: relative; text-align: center;
+.hy-title{width: 515px; margin:86px auto 208px; position: relative; text-align: center;
   img{margin: 0 auto;}
 }
 
+.buy-btn{ position: absolute; width: 211px; height: 57px; background: url("../images/buy-btn.png") no-repeat; margin:20px auto; cursor: pointer;}
 
-.sec-1{ height: 949px; background: url("../images/sec-1.png") center top no-repeat;
+.sec-1{ height: 949px; background: url("../images/sec-1.png") center top no-repeat; overflow: hidden;
   .evt-content{ width: 1165px;  margin: 0 auto;}
   .cake{margin: 50px auto;}
-  .buy-btn{ width: 136px; height: 42px; background: url("../images/buy-btn.png") no-repeat; margin:20px auto;}
-
+  .buy-btn{ top: 565px; left: 214px;}
 
 }
 
 
-.sec-2{height: 1083px; background: url("../images/sec-2.png") center top no-repeat;
+.sec-2{height: 1083px; background: url("../images/sec-2.png") center top no-repeat; overflow: hidden;
   .evt-content{position: relative; width: 1165px; }
-  .cake{padding: 100px 0;}
-  .buy-btn{ width: 177px; height: 48px; background: url("../images/buy-btn2.png") no-repeat; margin:20px auto;}
-
+  .cake{padding: 75px 0;}
+  .buy-btn{ top: 681px; left: 674px;}
 }
 
-.sec-3{height: 2441px; background: url("../images/sec-3.png") center top no-repeat;
-  .evt-content{position: relative; width: 1507px;  }
-
-  .buy-btn{ width: 177px; height: 48px; background: url("../images/buy-btn2.png") no-repeat; margin:20px auto;}
-
+.sec-3{height: 2519px; padding-top: 1px; background: url("../images/sec-3.png") center top no-repeat;
+  .evt-content{position: relative; width: 1300px;  }
+  .cake{position: relative;}
+  .cake1{ margin-bottom: 65px;}
+  .cake2{position: relative;
+    .buy-btn{ top: 245px; left: 345px;}
+  }
+  .cake3{position: relative;
+    .buy-btn{ top: 282px; left: 714px;}
+  }
+  .buy-btn{ top: 277px; left: 714px;}
 }
 
 
 .evt-footer{ z-index: 1;
-  position: relative;  background:url("../images/sec-foot.png") center top repeat; width: 100%; margin-top: -80px;
-  .evt-content{width: 1200px; color: #fff;}
-    .code{ width: 529px; margin:20px auto 0;}
-    .evt-rules{width: 900px; margin: 0 auto; padding:30px 0 120px 55px;
+  position: relative; height: 618px;  background:url("../images/sec-foot.png") center top repeat; width: 100%; margin-top: -80px;
+  .evt-content{width: 1200px; color: #edbdac;}
+    .code{ width: 529px; margin:180px auto 0;}
+    .evt-rules{width: 960px; margin: 0 auto; padding:170px 0 80px 55px;
       h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
       p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
     }

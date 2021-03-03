@@ -1,0 +1,44 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+.evt-container{ overflow: hidden;
+  .btns{ width: 207px; height: 67px; background:#f19ec2; top:982px; left:130px; text-align: center; border-radius: 1px; cursor: pointer;
+    span{ display: block; color: #fff; font-size: 22px; line-height: 67px;}
+  }
+}
+
+
+.sec-banner{ position: relative;
+  img{width: 100%; display: block;}
+}
+
+.sec-main{ padding: 50px 0;
+  .btn-lq{ position: absolute; top:0; right: 20px; width: 217px; height: 228px; cursor: pointer; background: #000; opacity: 0;}
+}
+
+.sec-footer{ background: #b17b52; color: #fff;
+  .evt-content {
+    width: 1000px;
+    .more{ position: absolute; right: 82px; bottom: 56px; width: 130px; height: 130px;}
+    .hd-guize{ width: 700px; margin: 0 auto; padding: 100px 0;}
+
+    h2{
+      font-size:28px; font-weight: normal; margin-left: -80px;
+      margin-bottom: 15px;
+    }
+    p{
+      font-size:19px;
+      line-height: 1.8em;
+      padding-left: 30px;
+      text-indent: -30px;
+      margin-top: 5px;
+      b{font-weight: normal; font-size: 20px; color: #000;}
+    }
+  }
+}

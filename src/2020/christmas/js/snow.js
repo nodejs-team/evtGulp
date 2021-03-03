@@ -46,7 +46,7 @@
       var self = this;
       var left = getRandom(0, clientSize.clientW - this.opts.snowWidth);
       var destLeft = getRandom(-300, 300);
-      var scale = getRandom(0.6, 1);
+      var scale = getRandom(0.5, 1);
 
       this.el.style["left"] = left + "px";
       this.el.style["-ms-transform"] = "scale("+ scale +")";

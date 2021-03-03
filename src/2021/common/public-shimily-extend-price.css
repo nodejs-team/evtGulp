@@ -1,0 +1,45 @@
+
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;  }
+
+/*价格样式 通用*/
+.price { position: absolute; width: 392px; text-align: center;  }
+  .price h2 { font-size: 18px; font-weight: normal; line-height: 30px; color: #9b4245;  }
+  .price h2 i { font-size: 14px; font-style: normal; vertical-align: baseline;  }
+  .price h2 span {  font-size: 28px;  color: #9b4245;  }
+  .price s {font-size: 16px;  color: #9b4245;  font-weight: normal;  line-height: 26px;  text-decoration: sh; }
+  /*立减图标*/
+  .price .icons { position: absolute; top: -28px; left: 50px; display: block; }
+  /*磅数*/
+  .price ul.price_p { margin: 10px auto; color: #9b4245; width: 200px; }
+  /*只有1个磅数*/
+  .price ul.price_p.short1 { width: 50px; }
+  /*只有2个磅数*/
+  .price ul.price_p.short2 { width: 100px;}
+  /*只有3个磅数*/
+  .price ul.price_p.short3 { width: 150px;  }
+  /*只有4个磅数*/
+  .price ul.price_p.short4 { width: 200px; }
+    .price ul.price_p li { cursor: pointer; width: 45px; float: left; height: 45px; line-height: 45px; text-align: center; background-color: #f7c2bc; margin-right: 5px; border-radius: 50%; color: #fff; }
+  
+    .price ul.price_p li.cur { background: #de9092 !important; color: #fff !important;  }
+    .price ul.price_p li.hover { background: #e9e9e9; color: #000; }
+  /*换购*/
+    .price .huangou { position: relative; width: 210px; font-size: 18px; color: #9b4245; margin: 10px auto; cursor: pointer; padding-left: 30px; text-align: left; }
+    .price .huangou .icnone { position: absolute; left: 0; top: 50%; margin-top: -11px; width: 22px; height: 22px; z-index: 1; }
+    .price .huangou .icon { position: absolute; left: 0; top: 50%; margin-top: -11px; width: 22px; height: 22px; z-index: 2;  }
+    .price .huangou {moz-user-select: -moz-none;-moz-user-select: none;-o-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none; }
+  /*数量加减*/
+    .price .price_num { width: 124px; margin: 15px auto; }
+    .price .price_num dl { float: left; }
+    .price .price_num dl dd { height: 28px; width: 28px; cursor: pointer; }
+    .price .price_num dl dd.reduce { float: left; }
+    .price .price_num dl dd.add {float: right; }
+    .price .price_num dl dt { float: left; height: 26px; margin: 0 5px; }
+    .price .price_num dl dt span { display: block; width: 55px; background: transparent none repeat scroll 0 0; border: medium none; color: #9b4245; line-height: 26px; font-size: 18px; text-align: center; }
+  /*订购，加入购物清单*/
+    .price ul.buy_btn_box { overflow: hidden; width: 140px; margin: 10px auto; }
+    .price ul.buy_btn_box.twoBtn { width: 280px; }
+    .price ul.buy_btn_box li { float: left; height: 40px; margin-right: 5px; }
+    .price ul.buy_btn_box li.fr { float: right; }
+    .price ul.buy_btn_box li span { display: block; width: 130px; background: #de9092; border: none; color: #fff; cursor: pointer; height: 32px; line-height: 32px; font-size: 17px; text-align: center; border-radius: 15px; }

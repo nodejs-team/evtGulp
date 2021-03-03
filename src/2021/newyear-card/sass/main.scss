@@ -1,0 +1,59 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+.evt-container{ overflow: hidden;
+  .btns{ width: 207px; height: 67px; background:#f19ec2; top:982px; left:130px; text-align: center; border-radius: 1px; cursor: pointer;
+    span{ display: block; color: #fff; font-size: 22px; line-height: 67px;}
+  }
+}
+
+
+.sec-banner{ position: relative; height: 603px; background: url("../images/banner.png") center;
+   .banner-txt{position: absolute; top: 220px; left: 50%; margin-left: -453.5px;}
+}
+.sec-card{ height: 1057px; background: url("../images/card.png") center;
+  .evt-content{width: 1258px; margin: 0 auto;}
+  .card{width: 1258px; margin: 0 auto;}
+  .btn-lq{ position: absolute; top:210px; left: 200px; width: 263px; height: 50px; cursor: pointer; background:url("../images/buy-btn.png") center;}
+}
+
+
+.sec-quan{ height: 2470px; background: url("../images/sec-quan.png") center; overflow: hidden;
+  .evt-content{width: 1258px; margin: 0 auto;}
+  .quan{width: 1258px; margin:10px auto 0;}
+}
+
+
+
+.sec-footer{ background: url("../images/sec-foot.png") repeat; color: #fbc694;
+  .kt-btn{ width: 632px; margin: 0 auto; text-align: center;}
+  .kt{cursor: pointer;width: 360px; margin:30px auto 0;}
+  .evt-content {
+    width: 1280px;
+    .more{ position: absolute; right: 82px; bottom: 56px; width: 130px; height: 130px;}
+    .hd-guize{ width: 1177px; margin: 0 auto; padding: 100px 0;}
+
+    h2{
+      font-size:28px; font-weight: normal;
+      margin-bottom: 15px;
+    }
+    p{
+      font-size:18px;
+      line-height: 1.8em;
+      padding-left: 30px;
+      text-indent: -30px;
+      margin-top: 5px;
+      b{font-weight: normal; font-size: 20px; color: #000;}
+      &.p{padding-left: 14px; text-indent:-13px;}
+    }
+  }
+}
+
+
+

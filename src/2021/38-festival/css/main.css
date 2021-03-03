@@ -1,0 +1,433 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.sec-banner {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url("../images/banner.png") bottom center no-repeat;
+  height: 572px;
+}
+
+.sec-banner .banner-t {
+  width: 755px;
+  margin: 0 auto 40px;
+}
+
+.sec-banner .hy-title {
+  margin-bottom: 0;
+}
+
+.hy-title {
+  margin: 0 auto;
+  width: 492px;
+  padding: 40px 0 80px;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  margin: 0 auto;
+}
+
+.sec-1 {
+  position: relative;
+  z-index: 2;
+  height: 874px;
+  background: url("../images/se-1.png") top center no-repeat;
+  overflow: hidden;
+}
+
+.sec-1 .evt-content {
+  width: 1077px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.sec-1 .prize {
+  margin: 0 auto;
+  width: 737px;
+  padding: 79px 45px;
+  background: url("../images/award-bg.png") center top no-repeat;
+}
+
+.sec-1 .prize ul {
+  margin: 0 auto;
+  width: 703px;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.sec-1 .prize ul li {
+  position: relative;
+  width: 194px;
+  height: 194px;
+  background: url("../images/award-li.png") center top no-repeat;
+  margin: 0 20px 25px;
+}
+
+.sec-1 .prize ul li .award {
+  width: 194px;
+  height: 194px;
+}
+
+.sec-1 .prize ul li:nth-of-type(1) .award {
+  background: url("../images/award-1.png") center top no-repeat;
+}
+
+.sec-1 .prize ul li:nth-of-type(2) .award {
+  background: url("../images/award-2.png") center top no-repeat;
+}
+
+.sec-1 .prize ul li:nth-of-type(3) .award {
+  background: url("../images/award-3.png") center top no-repeat;
+}
+
+.sec-1 .prize ul li:nth-of-type(4) .award {
+  background: url("../images/award-4.png") center top no-repeat;
+}
+
+.sec-1 .prize ul li:nth-of-type(5) {
+  background: none !important;
+}
+
+.sec-1 .prize ul li:nth-of-type(5) .award {
+  background: url("../images/award-btn.png") center top no-repeat;
+  cursor: pointer;
+}
+
+.sec-1 .prize ul li:nth-of-type(6) .award {
+  background: url("../images/award-5.png") center top no-repeat;
+}
+
+.sec-1 .prize ul li:nth-of-type(7) .award {
+  background: url("../images/award-6.png") center top no-repeat;
+}
+
+.sec-1 .prize ul li:nth-of-type(8) .award {
+  background: url("../images/award-7.png") center top no-repeat;
+}
+
+.sec-1 .prize ul li:nth-of-type(9) .award {
+  background: url("../images/award-8.png") center top no-repeat;
+}
+
+.sec-1 .prize ul li.on {
+  background: url("../images/award-li-on.png") center top no-repeat;
+}
+
+.sec-cake {
+  position: relative;
+  z-index: 1;
+  height: 2369px;
+  background: url("../images/se-2.png") center top no-repeat;
+}
+
+.sec-cake .evt-content {
+  width: 1028px;
+}
+
+.sec-cake .evt-content .row {
+  position: relative;
+  width: 840px;
+  height: 505px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sec-cake .evt-content .row .cake {
+  position: relative;
+  margin-top: 35px;
+  float: right;
+}
+
+.sec-cake .evt-content .row .cake-price {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sec-cake .evt-content .row .go-buy {
+  position: absolute;
+  bottom: 63px;
+  left: 70px;
+  width: 109px;
+  height: 26px;
+  background: url("../images/go-buy.png");
+  cursor: pointer;
+}
+
+.sec-cake .evt-content .row.row-2 .cake, .sec-cake .evt-content .row.row-4 .cake {
+  float: left;
+  clear: right;
+}
+
+.sec-cake .evt-content .row.row-2 .cake-price, .sec-cake .evt-content .row.row-4 .cake-price {
+  left: auto;
+  right: 0;
+}
+
+.sec-cake .evt-content .row-3 {
+  height: 560px;
+}
+
+.sec-snack {
+  position: relative;
+  z-index: 2;
+  height: 748px;
+  background: url("../images/se-3.png") center no-repeat;
+}
+
+.sec-snack .evt-content {
+  width: 1377px;
+}
+
+.sec-snack .select-li li {
+  margin: 10px 15px;
+  float: left;
+  text-align: center;
+  background: #fff;
+  padding: 17px 17px 27px 17px;
+}
+
+.sec-snack .select-li li .price-select {
+  padding: 10px;
+  font-size: 16px;
+  color: #6c5b7d;
+  margin-top: 15px;
+}
+
+.sec-snack .select-li li .price-select b {
+  font-size: 28px;
+  color: #fd7723;
+  font-weight: normal;
+}
+
+.sec-snack .select-li li .price-select i {
+  font-size: 14px;
+  font-style: normal;
+}
+
+.sec-snack .select-li li img {
+  margin: 0 auto;
+}
+
+.sec-snack .select-li li .mun {
+  width: 84px;
+  margin: 12px auto;
+}
+
+.sec-snack .select-li li .mun dd {
+  float: left;
+}
+
+.sec-snack .select-li li .mun dt {
+  float: left;
+  width: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.sec-snack .select-li li .mun dt span {
+  display: block;
+  color: #594215;
+}
+
+.sec-snack .select-li li .mun .nopoint {
+  width: 20px;
+  height: 20px;
+  background: url("../images/jian.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-snack .select-li li .mun .nopoint.add {
+  background: url("../images/jia.png") no-repeat;
+}
+
+.sec-snack .go-btn {
+  width: 109px;
+  height: 26px;
+  background: url("../images/go-buy.png");
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.more {
+  width: 172px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/se-4.png") center top no-repeat;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #614a5c;
+}
+
+.evt-footer .evt-rules {
+  width: 960px;
+  margin: 0 auto;
+  padding: 80px 0 140px 80px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.evt-footer .evt-rules .p {
+  padding-left: 30px;
+}
+
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70);
+}
+
+.Dialog-quan {
+  width: 448px;
+  height: 323px !important;
+  background: none;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  margin: -161.5px auto 0 -224px !important;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+}
+
+.Dialog-quan .closes {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -18px;
+  right: -40px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+.Dialog-quan .quan {
+  position: relative;
+  width: 448px;
+  height: 323px;
+  background: url("../images/quan-1.png");
+  display: none;
+}
+
+.Dialog-quan .quan .go-use {
+  display: block;
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  margin-left: -119px;
+  width: 229px;
+  height: 56px;
+  cursor: pointer;
+  background: #000;
+  opacity: 0;
+}
+
+.Dialog-quan .quan.quan-1 {
+  background: url("../images/quan-1.png");
+}
+
+.Dialog-quan .quan.quan-2 {
+  background: url("../images/quan-2.png");
+}
+
+.Dialog-quan .quan.quan-3 {
+  background: url("../images/quan-3.png");
+}
+
+.Dialog-quan .quan.quan-4 {
+  background: url("../images/quan-4.png");
+}
+
+.Dialog-quan .quan.quan-5 {
+  background: url("../images/quan-5.png");
+}
+
+.Dialog-quan .quan.quan-6 {
+  background: url("../images/quan-6.png");
+}
+
+.Dialog-quan .quan.quan-7 {
+  background: url("../images/quan-7.png");
+}
+
+.Dialog-quan .quan.quan-8 {
+  background: url("../images/quan-8.png");
+}
+
+@media (max-width: 1600px) {
+  .sec-snack .evt-content {
+    width: 1264px;
+  }
+  .sec-snack .select-li li {
+    margin: 10px 5px;
+    float: left;
+    text-align: center;
+    background: #fff;
+    padding: 13px  13px 20px;
+  }
+}

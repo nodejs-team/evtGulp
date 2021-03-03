@@ -20,6 +20,7 @@ span.num, .noselect {
 
 .evt-container {
   overflow: hidden;
+  background: url("../images/bg.png") repeat;
 }
 
 .sec-banner {
@@ -35,9 +36,16 @@ span.num, .noselect {
   height: 500px;
 }
 
+.sec-banner .logos {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  margin-left: 325px;
+}
+
 .hy-title {
   width: 515px;
-  margin: 50px auto 50px;
+  margin: 86px auto 208px;
   position: relative;
   text-align: center;
 }
@@ -46,9 +54,19 @@ span.num, .noselect {
   margin: 0 auto;
 }
 
+.buy-btn {
+  position: absolute;
+  width: 211px;
+  height: 57px;
+  background: url("../images/buy-btn.png") no-repeat;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
 .sec-1 {
   height: 949px;
   background: url("../images/sec-1.png") center top no-repeat;
+  overflow: hidden;
 }
 
 .sec-1 .evt-content {
@@ -61,15 +79,14 @@ span.num, .noselect {
 }
 
 .sec-1 .buy-btn {
-  width: 136px;
-  height: 42px;
-  background: url("../images/buy-btn.png") no-repeat;
-  margin: 20px auto;
+  top: 565px;
+  left: 214px;
 }
 
 .sec-2 {
   height: 1083px;
   background: url("../images/sec-2.png") center top no-repeat;
+  overflow: hidden;
 }
 
 .sec-2 .evt-content {
@@ -78,36 +95,60 @@ span.num, .noselect {
 }
 
 .sec-2 .cake {
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 .sec-2 .buy-btn {
-  width: 177px;
-  height: 48px;
-  background: url("../images/buy-btn2.png") no-repeat;
-  margin: 20px auto;
+  top: 681px;
+  left: 674px;
 }
 
 .sec-3 {
-  height: 2441px;
+  height: 2519px;
+  padding-top: 1px;
   background: url("../images/sec-3.png") center top no-repeat;
 }
 
 .sec-3 .evt-content {
   position: relative;
-  width: 1507px;
+  width: 1300px;
+}
+
+.sec-3 .cake {
+  position: relative;
+}
+
+.sec-3 .cake1 {
+  margin-bottom: 65px;
+}
+
+.sec-3 .cake2 {
+  position: relative;
+}
+
+.sec-3 .cake2 .buy-btn {
+  top: 245px;
+  left: 345px;
+}
+
+.sec-3 .cake3 {
+  position: relative;
+}
+
+.sec-3 .cake3 .buy-btn {
+  top: 282px;
+  left: 714px;
 }
 
 .sec-3 .buy-btn {
-  width: 177px;
-  height: 48px;
-  background: url("../images/buy-btn2.png") no-repeat;
-  margin: 20px auto;
+  top: 277px;
+  left: 714px;
 }
 
 .evt-footer {
   z-index: 1;
   position: relative;
+  height: 618px;
   background: url("../images/sec-foot.png") center top repeat;
   width: 100%;
   margin-top: -80px;
@@ -115,18 +156,18 @@ span.num, .noselect {
 
 .evt-footer .evt-content {
   width: 1200px;
-  color: #fff;
+  color: #edbdac;
 }
 
 .evt-footer .code {
   width: 529px;
-  margin: 20px auto 0;
+  margin: 180px auto 0;
 }
 
 .evt-footer .evt-rules {
-  width: 900px;
+  width: 960px;
   margin: 0 auto;
-  padding: 30px 0 120px 55px;
+  padding: 170px 0 80px 55px;
 }
 
 .evt-footer .evt-rules h2 {

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2"> </div>
+
+    <div class="sec-lingquan">
+        <div class="nav-bar" data-anim="fade-in" data-delay="0.2"><img src="images/nav-bar.png" alt=""></div>
+        <div class="evt-content">
+            <div class="lingquan" data-anim="slide-up" data-delay="0.4"><img src="images/lingquan.png" alt=""></div>
+            <div class="yq-btn" data-anim="slide-up" data-delay="0.4"><img src="images/yq-btn.png" alt=""></div>
+            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/record-t.png" alt=""></div>
+            <div class="record" data-anim="slide-up" data-delay="0.4">
+                <div class="record-form-t"><img src="images/record-form-t.png" alt=""></div>
+                <div class="form">
+                    <ul>
+                        <li><b class="tel">13485565425</b><span>已注册</span></li>
+                        <li><b class="tel">13485565425</b><span>已注册</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则</h2>
+                <p>1、活动时间：2021年1月1日-2021年12月31日</p>
+                <p>2、活动城市：上海、苏州、杭州 、北京</p>
+                <p>3、活动内容：<br>
+                该活动仅限老用户参与，邀请2位好友注册会员，即可获得一张满298减60的优惠券，有效期至领取日起180天内有效；好友注册且首单订单完成后，老用户即可获得一张蛋糕升磅券（仅限1磅升2磅的），有效期至领取日起180天内有效</p>
+                <p>4、优惠券和升磅券使用时单笔订单仅可使用一张，且不与其他优惠同享</p>
+                <p>5、本活动与会员等级制度、积分同享，但不与其他优惠同享</p>
+                <p>6、本活动最终解释权归MCAKE所有</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="Dialogbg-quan" style="display: none;"></div>
+<div class="Dialog-quan" style="display: none;">
+    <div class="closes"></div>
+    <div class="quan quan-1" style="display: block;">
+        <div class="card"><img src="images/translate-bg.png" alt=""></div>
+        <div class="txt">
+            <p id="text">https://mall.mcake.com/goods/detail/id/R5011</p>
+        </div>
+        <div class="go-use" data-clipboard-target="#text">立即复制</div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+
+<!--折扣价格抹零-->
+<!-- build:js js/main.js -->
+
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/clipboard1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- endbuild -->
+<script>
+  $(".yq-btn").click(function () {
+    QuanDialog(1);
+  });
+
+
+  var clipboard = new ClipboardJS('.go-use');
+
+  clipboard.on('success', function(e) {
+    console.log($(e.trigger).text("已复制"));
+    e.clearSelection();
+  });
+
+  clipboard.on('error', function(e) {
+    console.error('Trigger:', e.trigger);
+  });
+</script>
+</body>
+</html>

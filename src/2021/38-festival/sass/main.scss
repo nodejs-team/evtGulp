@@ -1,0 +1,137 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; }
+
+.sec-banner{max-width:1920px; margin: 0 auto; overflow:hidden; background: url("../images/banner.png") bottom center no-repeat; height: 572px;
+  .banner-t{width: 755px; margin:0 auto 40px;}
+  .hy-title{margin-bottom: 0;}
+}
+
+.hy-title{ margin:0 auto; width: 492px; padding:40px 0 80px; position: relative; text-align: center;
+  img{margin: 0 auto;}
+}
+
+
+.sec-1{ position: relative; z-index: 2; height: 874px; background: url("../images/se-1.png") top center no-repeat; overflow: hidden;
+  .evt-content{width: 1077px; text-align: center; padding-top: 10px;}
+  .prize{margin:0 auto; width: 737px; padding: 79px 45px;background:url("../images/award-bg.png") center top no-repeat;
+    ul{ margin: 0 auto; width: 703px; display: flex; flex-wrap: wrap; float: left;
+      li{position: relative; width: 194px; height: 194px; background:url("../images/award-li.png") center top no-repeat; margin: 0 20px 25px;
+        .award{width: 194px; height: 194px;}
+        &:nth-of-type(1) .award{ background:url("../images/award-1.png") center top no-repeat;}
+        &:nth-of-type(2) .award{ background:url("../images/award-2.png") center top no-repeat;}
+        &:nth-of-type(3) .award{ background:url("../images/award-3.png") center top no-repeat;}
+        &:nth-of-type(4) .award{ background:url("../images/award-4.png") center top no-repeat;}
+        &:nth-of-type(5){background: none !important;}
+        &:nth-of-type(5) .award{ background:url("../images/award-btn.png") center top no-repeat; cursor: pointer;}
+        &:nth-of-type(6) .award{ background:url("../images/award-5.png") center top no-repeat;}
+        &:nth-of-type(7) .award{ background:url("../images/award-6.png") center top no-repeat;}
+        &:nth-of-type(8) .award{ background:url("../images/award-7.png") center top no-repeat;}
+        &:nth-of-type(9) .award{ background:url("../images/award-8.png") center top no-repeat;}
+        &.on{ background: url("../images/award-li-on.png") center top no-repeat;}
+      }
+    }
+  }
+}
+
+.sec-cake{ position: relative; z-index: 1; height: 2369px; background: url("../images/se-2.png") center top no-repeat;
+  .evt-content{width: 1028px;
+    .row{position: relative; width:840px; height: 505px; margin: 0 auto; overflow: hidden;
+      .cake{position: relative; margin-top: 35px; float: right;}
+      .cake-price{position: absolute; top: 0; left: 0;}
+      .go-buy{position: absolute; bottom: 63px; left: 70px; width: 109px; height: 26px; background: url("../images/go-buy.png"); cursor: pointer;}
+      &.row-2,&.row-4{
+        .cake{float: left; clear: right;}
+        .cake-price{ left: auto; right: 0;}
+      }
+    }
+    .row-3{ height: 560px;}
+  }
+}
+
+
+.sec-snack{position: relative; z-index: 2; height: 748px; background: url("../images/se-3.png") center no-repeat;
+  .evt-content{  width: 1377px;}
+  .select-li{
+    li{ margin:10px 15px; float: left; text-align: center; background: #fff; padding: 17px 17px 27px 17px ;
+      .price-select{padding: 10px; font-size: 16px; color: #6c5b7d; margin-top: 15px;
+        b{font-size: 28px; color: #fd7723; font-weight: normal;}
+        i{font-size: 14px; font-style: normal;}
+      }
+      img{margin:0 auto;}
+      .mun{width: 84px; margin:12px auto;
+        dd{float: left;}
+        dt{float: left; width:40px; text-align: center; line-height: 20px;
+          span{display: block; color: #594215;}
+        }
+        .nopoint{ width: 20px; height: 20px; background: url("../images/jian.png") no-repeat; cursor: pointer;}
+        .nopoint.add{background: url("../images/jia.png") no-repeat;}
+      }
+    }
+  }
+  .go-btn{ width: 109px; height: 26px; background:url("../images/go-buy.png");  cursor: pointer; margin: 0 auto;}
+}
+
+.more{width: 172px;position: relative; margin: 0 auto; text-align: center; cursor: pointer;}
+
+
+.evt-footer{ z-index: 1; position: relative; background: url("../images/se-4.png") center top no-repeat;
+  .evt-content{width: 1200px; color: #614a5c;}
+    .evt-rules{width: 960px; margin: 0 auto; padding:80px 0 140px 80px;
+      h2{ font-size: 18px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+      .p{padding-left: 30px;}
+    }
+}
+
+
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;  }
+
+
+
+/*彈窗*/
+.Dialogbg-quan{  background-color: #000;  height: 100%;  left: 0;  opacity: 0.7;  position: fixed;  top: 0;  width: 100%; z-index: 200; display: none;-moz-opacity:.7;filter:alpha(opacity=70); }
+
+.Dialog-quan{ width: 448px; height:323px !important; background:none; padding: 0; top: 50%; left: 50%;  margin: -161.5px auto 0 -224px !important;  position: fixed; z-index: 99999; display: none;
+  .closes{ width: 30px; height: 30px; position: absolute; top:-18px; right: -40px; cursor: pointer; z-index: 8; background: url("../images/close.png") no-repeat;}
+  .quan{position: relative;width: 448px; height:323px; background:url("../images/quan-1.png"); display: none;
+    .go-use {display: block; position: absolute; bottom: 64px; left: 50%; margin-left: -119px; width:229px; height: 56px;  cursor: pointer; background: #000; opacity: 0;
+    }
+    &.quan-1{background:url("../images/quan-1.png"); }
+    &.quan-2{background:url("../images/quan-2.png"); }
+    &.quan-3{background:url("../images/quan-3.png"); }
+    &.quan-4{background:url("../images/quan-4.png"); }
+    &.quan-5{background:url("../images/quan-5.png"); }
+    &.quan-6{background:url("../images/quan-6.png"); }
+    &.quan-7{background:url("../images/quan-7.png"); }
+    &.quan-8{background:url("../images/quan-8.png"); }
+  }
+}
+
+
+
+@media (max-width: 1600px) {
+  .sec-snack .evt-content{  width: 1264px;}
+  .sec-snack .select-li{
+    li{ margin:10px 5px; float: left; text-align: center; background: #fff; padding: 13px  13px 20px;
+    }
+  }
+}
+
+

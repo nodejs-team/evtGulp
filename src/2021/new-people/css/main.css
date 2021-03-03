@@ -1,0 +1,220 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #fadeac;
+}
+
+.sec-banner {
+  background: #fadeac url("../images/banner.png") center no-repeat;
+  z-index: 1;
+  height: 654px;
+  overflow: hidden;
+}
+
+.hy-title {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sec-lingquan {
+  position: relative;
+  z-index: 2;
+  background: #ffeac1;
+  text-align: center;
+}
+
+.sec-lingquan .nav-bar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sec-lingquan .nav-bar img {
+  width: 100%;
+}
+
+.sec-lingquan .evt-content {
+  width: 1280px;
+  padding: 60px 0 100px;
+}
+
+.sec-lingquan .lingquan {
+  width: 1129px;
+  margin: 0 auto 76px;
+}
+
+.sec-lingquan .yq-btn {
+  width: 267px;
+  margin: 0 auto 90px;
+  cursor: pointer;
+}
+
+.sec-lingquan .record {
+  width: 1129px;
+  margin: 70px auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sec-lingquan .record .form {
+  background: url("../images/form-bg.png") repeat-y;
+}
+
+.sec-lingquan .record .form ul li {
+  line-height: 80px;
+  display: flex;
+  color: #6d4700;
+  font-size: 20px;
+}
+
+.sec-lingquan .record .form ul li b {
+  flex: 1;
+  font-weight: normal;
+}
+
+.sec-lingquan .record .form ul li span {
+  flex: 1;
+}
+
+.evt-footer {
+  position: relative;
+  z-index: 1;
+  background: #ffe4af;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #7b550a;
+}
+
+.evt-footer .foot-zp {
+  position: absolute;
+  top: 90px;
+  right: 300px;
+}
+
+.evt-footer .evt-rules {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 100px 0 100px 55px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 2em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70);
+}
+
+.Dialog-quan {
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  height: auto !important;
+  padding: 1px;
+  top: 50%;
+  left: 50%;
+  margin: -284px auto 0 -389.5px !important;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+}
+
+.Dialog-quan .closes {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -2px;
+  right: -11px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+.Dialog-quan .quan {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Dialog-quan .quan .txt {
+  position: absolute;
+  top: 310px;
+  left: 50%;
+  width: 680px;
+  margin-left: -340px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.Dialog-quan .quan textarea {
+  opacity: 0;
+}
+
+.Dialog-quan .quan .go-use {
+  display: block;
+  position: absolute;
+  bottom: 125px;
+  left: 50%;
+  margin-left: -116.5px;
+  width: 233px;
+  cursor: pointer;
+  line-height: 54px;
+  border-radius: 40px;
+  background: #fff;
+  text-align: center;
+  font-size: 24px;
+  color: #411200;
+  box-shadow: 0 0 20px rgba(110, 72, 0, 0.3);
+}
+
+@media (max-width: 1600px) {
+  .sec-banner {
+    height: 550px;
+  }
+}
