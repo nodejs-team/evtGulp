@@ -1,0 +1,122 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background: #fff; }
+
+.sec-banner{ overflow: hidden; background: url("../images/banner.jpg") center no-repeat; height: 695px;  }
+
+.hy-title{ margin:0 auto; padding:80px 0; position: relative; text-align: center;
+  img{margin: 0 auto;}
+}
+
+.dis{position: absolute; left:0;}
+.dis-1{ top: 130px;left:auto; right: 0; margin-right:-400px;}
+.dis-2{ top: 650px;  margin-left:-400px;}
+.dis-3{ bottom: 200px; margin-left:-370px;}
+.dis-4{ bottom: 50px; left:auto; right: 0; margin-right:-400px;}
+
+.sec-1{ height: 1018px; background: url("../images/main-bg-1.png");
+  .evt-content{width: 972px;
+    .mcake{position: relative;
+      .buy-btn{position: absolute; bottom:90px; left: 623px; cursor: pointer;
+        span{ background: #f5b5b5; padding:0 30px; line-height:38px; border-radius: 38px; color:#fff; cursor: pointer; font-size: 16px; display: block;}
+      }
+
+    }
+  }
+}
+.main-ggk{ padding:0; margin-top: -230px; height: 950px; background: url("../images/main-bg-2.png") 0 220px no-repeat;
+  .bridgeContainer{ position: relative;margin:10px auto;background: #ffe8dd;
+    text-align: center; width: 979px; height: 484px;
+    font-family: Avenir, sans-serif;
+  }
+
+
+  .bridge { position: absolute; top: 0; left: 0; z-index: 2;
+    display: block;
+    margin: 0 auto;
+    background-size: cover;
+    width: 979px; height: 484px;
+    /*cursor: crosshair;
+    cursor: url(../images/circular-cursor.png) 53 53, crosshair;*/
+  }
+
+  .bridge-cover{position: absolute; top: 0; left: 0; width: 979px; height: 484px;z-index:4; background: url("../images/cover-ie8.png"); display: none;  }
+  .youhuiquan{background:url("../images/quan-50.png"); width: 100%; height: 100%; font-size: 23px; text-align: center; line-height: 60px; color: #cc2924; letter-spacing: 2px; z-index: 1;}
+  .quan-50{background:url("../images/quan-50.png");}
+  .quan-48{background:url("../images/quan-48.png");}
+  .quan-52{background:url("../images/quan-52.png");}
+
+  .shou{position: absolute; bottom: 120px; right:290px; width: 58px; height: 89px; background: url("../images/shou.png"); z-index: 2;}
+}
+
+
+.sec-2{  position: relative; z-index: 1; padding-top:10px; padding-bottom: 30px; background:#fff1f1 url("../images/main-bg-3.png") top no-repeat;
+
+  .evt-content{width: 1200px;
+    .row{position: relative; }
+    .row{height: 550px;
+      .cake{position: absolute;top:0; left:65px;}
+      .price{ position: absolute; top:60px; left: 710px;
+        h2{margin-top: 40px; color: #d23c3b; font-size: 24px;}
+        .buy_btn_box{  padding-top: 20px;
+          li{float: left; margin-right: 28px;
+            .buy_btn,.go_btn{background: #f5b5b5; padding:0 30px; line-height:38px; border-radius: 50px; color:#fff; cursor: pointer; font-size: 16px; display: block;}
+          }
+        }
+      }
+    }
+    .row1{ margin-top: 200px;}
+    .row2{
+      .cake{position: absolute; top:40px; left: 375px;}
+      .price{ top:80px; left: 120px; }
+    }
+    .row3{
+      .cake{position: absolute;top:-50px; left:-25px;}
+      .price{ top:60px; left: 710px;}
+    }
+
+  .code{width: 564px; margin: 30px auto;}
+  }
+}
+.shoudong{animation: shoudong 1.5s infinite alternate;}
+@keyframes shoudong {
+  0%{transform:translate3d(-10px,0,0);transform-origin:50% 100%; }
+  100%{transform:translate3d(10px,0,0);transform-origin:50% 100%; }
+}
+
+
+
+.evt-footer{ z-index: 1;
+  position: relative;  background:#efdccc;
+  .evt-content{width: 1200px; color: #292929;}
+    .foot-zp{position: absolute; top: 90px; right: 300px;}
+    .evt-rules{width:900px; margin: 0 auto; padding:100px 0 100px 55px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+
+
+
+
+@media (max-width: 1600px) { /*兼容小屏*/
+  /*.sec-banner{height: 600px;}*/
+}
+
+
