@@ -1,0 +1,302 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+}
+
+.sec-banner {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ffe5e0;
+}
+
+.sec-banner img {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.hy-title {
+  margin: 0 auto;
+  width: 778px;
+  padding: 60px 0;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  margin: 0 auto;
+}
+
+.buy_btns, .buy-btn {
+  width: 145px;
+  height: 35px;
+  background: url("../images/buy-btn.png");
+  bottom: 108px;
+  left: 482px;
+  cursor: pointer;
+}
+
+.buy-btn {
+  position: absolute;
+}
+
+.buy_btns {
+  position: relative;
+}
+
+.sec-1 {
+  position: relative;
+  z-index: 1;
+  height: 958px;
+  background: url("../images/sec-1.png") center no-repeat;
+  overflow: hidden;
+}
+
+.sec-1 .evt-content {
+  width: 1280px;
+}
+
+.sec-1 .message {
+  height: 430px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sec-1 .message .message-content {
+  position: relative;
+  height: 230px;
+}
+
+.sec-1 .message .messageInput {
+  width: 796px;
+  height: 77px;
+  margin: 0 auto;
+  background: url("../images/message-bg.png");
+  line-height: 77px;
+  text-align: center;
+  font-size: 23px;
+  color: #e6b7af;
+}
+
+.sec-1 .message .messageInput::-webkit-input-placeholder {
+  color: #e6b7af;
+}
+
+.sec-1 .message .message-btn {
+  margin: 30px auto;
+  width: 145px;
+  cursor: pointer;
+}
+
+.sec-1 .cake {
+  position: relative;
+  width: 713px;
+  margin: 0 auto;
+}
+
+.sec-2 {
+  position: relative;
+  z-index: 1;
+  height: 1021px;
+  background: url("../images/sec-2.png") center no-repeat;
+  overflow: hidden;
+}
+
+.sec-2 .snack-group ul li {
+  position: relative;
+  float: left;
+  text-align: center;
+  height: 650px;
+}
+
+.sec-2 .snack-group ul li .buy-btn {
+  bottom: 0;
+  left: 50%;
+  margin-left: -72.5px;
+}
+
+.sec-2 .snack-group ul li:nth-of-type(2) {
+  margin-left: 60px;
+}
+
+.sec-cake {
+  position: relative;
+  z-index: 1;
+  height: 1626px;
+  background: url("../images/sec-3.png") center no-repeat;
+  overflow: hidden;
+}
+
+.sec-cake .evt-content {
+  width: 1141px;
+}
+
+.sec-cake .evt-content .row {
+  position: relative;
+  width: 796px;
+  margin: 0 auto;
+}
+
+.sec-cake .evt-content .row1 .buy-btn {
+  bottom: 112px;
+  left: 66px;
+}
+
+.sec-cake .evt-content .row2 .buy-btn {
+  bottom: 96px;
+  left: 404px;
+}
+
+.sec-cake .evt-content .row3 .buy-btn {
+  bottom: 70px;
+  left: 9px;
+}
+
+.more {
+  width: 144px;
+  position: relative;
+  margin: 0 auto;
+  background: #cd686d;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.more span {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.sec-4 {
+  position: relative;
+  height: 549px;
+  background: url("../images/sec-4.png") center top no-repeat;
+  overflow: hidden;
+}
+
+.sec-4 .zp {
+  width: 536px;
+  margin: 109px auto 0;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/sec-foot.png") center top no-repeat;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #70716f;
+}
+
+.evt-footer .evt-rules {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0 80px 20px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 2.2em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.barrage.barrage1 {
+  right: -200px;
+}
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70);
+}
+
+.Dialog-quan {
+  width: 637px;
+  height: 469px !important;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  margin: -234.5px auto 0 -318.5px !important;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+}
+
+.Dialog-quan .closes {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -18px;
+  right: -40px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+.Dialog-quan .quan {
+  position: relative;
+  width: 637px;
+  height: 469px;
+  background: url("../images/card-1.png");
+  display: none;
+}
+
+.Dialog-quan .quan .go-use {
+  display: block;
+  position: absolute;
+  bottom: 44px;
+  left: 50%;
+  margin-left: -72.5px;
+  width: 145px;
+  height: 35px;
+  cursor: pointer;
+  background: url("../images/buy-btn2.png");
+  opacity: 1;
+}
+
+.Dialog-quan .quan.quan-2 {
+  background: url("../images/card-2.png");
+}
+
+.Dialog-quan .quan.quan-3 {
+  background: url("../images/card-3.png");
+}
