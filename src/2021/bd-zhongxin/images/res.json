@@ -1,0 +1,28 @@
+{
+	"groups":[{
+			"keys":"guize-bj-1_png,bg_png,foot-dis_png,banner-bj-1_png",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"guize-bj-1_png",
+			"type":"image",
+			"url":"guize-bj-1.png"
+		},
+		{
+			"name":"bg_png",
+			"type":"image",
+			"url":"bg.png"
+		},
+		{
+			"name":"foot-dis_png",
+			"type":"image",
+			"url":"foot-dis.png"
+		},
+		{
+			"name":"banner-bj-1_png",
+			"type":"image",
+			"url":"banner-bj-1.png"
+		}
+	]
+}

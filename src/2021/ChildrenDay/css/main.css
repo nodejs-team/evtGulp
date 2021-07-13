@@ -1,0 +1,936 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #c7eaff;
+}
+
+.buy-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -78.5px;
+  cursor: pointer;
+}
+
+.buy-btn2 {
+  position: absolute;
+  top: 195px;
+  left: 154px;
+  width: 139px;
+  height: 40px;
+  background: url("../images/buy-btn2.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-banner {
+  position: relative;
+  height: 1977px;
+  margin: 0 auto;
+  z-index: 2;
+  overflow: hidden;
+  background: url("../images/sec-1.png") bottom center no-repeat;
+}
+
+.sec-banner .banner-logo {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+}
+
+.sec-banner .evt-content {
+  width: 1242px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sec-banner .evt-content .banner-txt {
+  width: 703px;
+  margin: 130px auto 0;
+}
+
+.sec-banner .evt-content .banner-cake {
+  position: relative;
+  width: 661px;
+  margin: 130px auto 0;
+}
+
+.sec-banner .evt-content .banner-zp {
+  width: 661px;
+  margin: 0 auto;
+}
+
+.hy-title {
+  margin: 0 auto;
+  width: 507px;
+  padding: 80px 0;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  width: 59px;
+  height: 74px;
+  left: 200px;
+  top: 0;
+}
+
+.sec-cake {
+  position: relative;
+  height: 2063px;
+  z-index: 1;
+  background: url("../images/sec-2.png") bottom center no-repeat;
+}
+
+.sec-cake .evt-content {
+  width: 822px;
+}
+
+.sec-cake .evt-content .row {
+  position: relative;
+  width: 822px;
+}
+
+.sec-cake .evt-content .row1 .price {
+  top: 120px;
+  left: 150px;
+}
+
+.sec-cake .evt-content .row2 .buy-btn2 {
+  top: 241px;
+  left: 479px;
+}
+
+.sec-cake .evt-content .row3 .buy-btn2 {
+  top: 195px;
+  left: 58px;
+}
+
+.sec-cake .evt-content .row4 .buy-btn2 {
+  top: 200px;
+  left: 499px;
+}
+
+.sec-cake .evt-content .zp {
+  width: 422px;
+  margin: 90px auto 0;
+}
+
+.more {
+  width: 172px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  height: 960px;
+  background: url("../images/sec-3.png") bottom center no-repeat;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #636562;
+}
+
+.evt-footer .evt-rules {
+  width: 1030px;
+  margin: 0 auto;
+  padding: 150px 0 140px 20px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 2.2em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.evt-footer .evt-rules .p {
+  padding-left: 30px;
+}
+
+/*蛋糕选择弹窗*/
+.Dialogbg-Select {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.Dialog-Select {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  width: 520px;
+  height: auto;
+  margin-top: -210px;
+  margin-left: -260px;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  border-radius: 10px;
+  display: none;
+}
+
+.s-closes {
+  position: absolute;
+  right: -30px;
+  top: 8px;
+  width: 17px;
+  height: 17px;
+  background: url("../images/close.png");
+  cursor: pointer;
+}
+
+.Select {
+  position: relative;
+  color: #000;
+  height: 100%;
+}
+
+.Select .s-title {
+  height: 96px;
+  background: #f2f2f2;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Select .s-title h2 {
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.Select .s-title b {
+  font-size: 14px;
+  color: #9a9a9a;
+  font-weight: normal;
+  padding-left: 40px;
+}
+
+.Select .s-bangshu {
+  padding-top: 30px;
+}
+
+.Select .s-bangshu ul {
+  margin-left: 40px;
+}
+
+.Select .s-bangshu ul li {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  text-align: center;
+  color: #4a4a4a;
+  margin-right: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.Select .s-bangshu ul li i {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.Select .s-bangshu ul li.on {
+  background: #ffc559;
+  color: #000;
+}
+
+.Select .s-bangshu ul li.ie8 {
+  padding-top: 15px;
+  height: 45px;
+}
+
+.Select .d-tips {
+  padding: 15px 40px;
+  color: #4c4c4c;
+  font-size: 12px;
+}
+
+.Select .s-num {
+  border-top: #ededed 1px solid;
+  padding-left: 40px;
+}
+
+.Select .s-num b {
+  display: inline-block;
+  width: 200px;
+  margin: 10px 0;
+  line-height: 52px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-num .nums {
+  display: inline-block;
+  margin: 15px 40px 0;
+  float: right;
+  height: 52px;
+  position: relative;
+  width: 150px;
+}
+
+.Select .s-num .nums a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2px;
+}
+
+.Select .s-num .nums .minus {
+  background: url("../images/btn-1.png") center no-repeat;
+  background-size: 100%;
+  left: 0;
+}
+
+.Select .s-num .nums .plus {
+  background: url("../images/btn-2.png") center no-repeat;
+  background-size: 100%;
+  right: 0;
+}
+
+.Select .s-num .nums input {
+  background: none;
+  border: none;
+  display: block;
+  font-size: 26px;
+  line-height: 45px;
+  left: 35px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 80px;
+  color: #000;
+}
+
+.Select .s-prices {
+  border-top: #ededed 1px solid;
+  font-size: 22px;
+  padding: 0 40px;
+}
+
+.Select .s-prices b {
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+  line-height: 56px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-prices p {
+  display: block;
+  line-height: 56px;
+  text-align: right;
+}
+
+.Select .s-prices span {
+  font-size: 26px;
+}
+
+.Select .s-prices i {
+  font-style: normal;
+  font-size: 16px;
+}
+
+.Select .s-prices s {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.Select .btns {
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  height: 55px;
+  line-height: 55px;
+  flex-direction: row;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+
+.Select .btns div {
+  flex: 1;
+  cursor: pointer;
+  width: 100%;
+}
+
+.Select .btns .go-car {
+  background: #ffc559;
+  border-bottom-right-radius: 10px;
+  float: left;
+  color: #000;
+}
+
+.Select .btns .go-car.on {
+  background: #ffc559;
+}
+
+.Select .btns .go-car.ie8, .Select .btns .go-buy.ie8 {
+  width: 50%;
+}
+
+.Select .btns .go-buy {
+  background: #ffe328;
+  border-bottom-left-radius: 10px;
+  float: left;
+}
+
+.Select .btns .go-buy.on {
+  background: #ffe328;
+}
+
+/*吹泡泡*/
+.Dialogbg-bubble {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70);
+}
+
+.Dialog-bubble {
+  width: 800px;
+  height: 894px !important;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  margin: -447px auto 0 -400px !important;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+}
+
+.Dialog-bubble .closes {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -5px;
+  right: -40px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+.Dialog-bubble .bubble {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../images/game-bg1.png") center no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.Dialog-bubble .bubble .game-btn {
+  display: block;
+  position: absolute;
+  bottom: 220px;
+  left: 50%;
+  margin-left: -74px;
+  width: 139px;
+  cursor: pointer;
+}
+
+.Dialog-bubble .bubble.bubble-2 {
+  background: url("../images/game-bg2.png");
+  background-size: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-2 .uimg {
+  width: 584px;
+  margin: 280px auto 0;
+}
+
+.Dialog-bubble .bubble.bubble-2 .uimg ul li {
+  position: relative;
+  float: left;
+  margin: 0 20px 20px;
+}
+
+.Dialog-bubble .bubble.bubble-2 .uimg ul li:nth-of-type(1) {
+  margin-left: 132px;
+}
+
+.Dialog-bubble .bubble.bubble-2 .uimg ul li.first {
+  margin-left: 132px;
+}
+
+.Dialog-bubble .bubble.bubble-2 .uimg ul li:nth-of-type(2) {
+  margin-right: 80px;
+}
+
+.Dialog-bubble .bubble.bubble-2 .uimg ul li img {
+  width: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-2 .uimg ul li .select {
+  position: absolute;
+  bottom: 2px;
+  left: 30px;
+  width: 27px;
+  height: 27px;
+  background: url("../images/select.png") no-repeat;
+  cursor: pointer;
+  background-size: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-2 .uimg ul li .select.on {
+  background: url("../images/selected.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-2 .game-btn {
+  bottom: 100px;
+}
+
+.Dialog-bubble .bubble.bubble-3 {
+  background: url("../images/game-bg3.png");
+  background-size: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  width: 753px;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li img {
+  width: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li:nth-of-type(1) {
+  animation: floatani1 7s ease-in-out infinite;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li:nth-of-type(2) {
+  width: 158px;
+  top: -40px;
+  left: 60px;
+  animation: floatani2 4.4s ease-in-out infinite;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li.bubble-2 {
+  width: 158px !important;
+  top: -40px;
+  left: 60px;
+  animation: floatani2 4.4s ease-in-out infinite;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li:nth-of-type(3) {
+  top: 160px;
+  animation: floatani3 8s ease-in-out infinite;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li:nth-of-type(4) {
+  top: 3px;
+  animation: floatani4 6s ease-in-out infinite;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li:nth-of-type(5) {
+  top: 160px;
+  animation: floatani5 7s ease-in-out infinite;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li.bubbleBig {
+  width: 390px;
+  height: 310px;
+  top: 350px;
+  left: 212px;
+  z-index: 5;
+  background: url("../images/bubble-big.png") no-repeat;
+  background-size: 100%;
+  animation: floatani1 10s ease-in-out infinite;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles ul li.bubbleBig.p {
+  background: url("../images/bubble-big-p.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles .bubble-time {
+  position: absolute;
+  bottom: 350px;
+  left: 113px;
+  font-size: 18px;
+  opacity: 0.5;
+  color: #ff0000;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles .stick {
+  position: absolute;
+  bottom: -10px;
+  left: 320px;
+  animation: floatani6 6s ease-in-out infinite;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles .uimg-big {
+  position: absolute;
+  bottom: -5px;
+  left: 100px;
+  width: 220px;
+  height: 225px;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles .uimg-big.uimg-big-1 {
+  background: url("../images/uimg-big-1.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles .uimg-big.uimg-big-2 {
+  background: url("../images/uimg-big-2.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles .uimg-big.uimg-big-3 {
+  background: url("../images/uimg-big-3.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles .uimg-big.uimg-big-4 {
+  background: url("../images/uimg-big-4.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-bubble .bubble.bubble-3 .bubbles .uimg-big.uimg-big-5 {
+  background: url("../images/uimg-big-5.png") no-repeat;
+  background-size: 100%;
+}
+
+/*抽奖弹窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .7;
+  filter: alpha(opacity=70);
+}
+
+.Dialog-quan {
+  width: 580px;
+  height: 399px !important;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  margin: -199.5px auto 0 -290px !important;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+}
+
+.Dialog-quan .closes {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -5px;
+  right: -40px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+.Dialog-quan .quan {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../images/quan-1.png") center no-repeat;
+  background-size: 100%;
+  display: none;
+  overflow: hidden;
+}
+
+.Dialog-quan .quan .go-use {
+  display: block;
+  position: absolute;
+  bottom: 86px;
+  left: 50%;
+  margin-left: -70px;
+  cursor: pointer;
+  width: 139px;
+  height: 40px;
+  background: url("../images/go-use.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-quan .quan.quan-2 {
+  background: url("../images/quan-2.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-quan .quan.quan-3 {
+  background: url("../images/quan-3.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-quan .quan.quan-4 {
+  background: url("../images/quan-4.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-quan .quan.quan-5 {
+  background: url("../images/quan-5.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-quan .quan.quan-6 {
+  background: url("../images/quan-6.png") no-repeat;
+  background-size: 100%;
+}
+
+.Dialog-quan .quan.quan-7 {
+  background: url("../images/quan-7.png") no-repeat;
+  background-size: 100%;
+}
+
+@keyframes floatani1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(10px, 30px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes floatani2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes floatani3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  33% {
+    transform: translate(20px, 10px);
+  }
+  66% {
+    transform: translate(10px, 15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes floatani4 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-20px, -4px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes floatani5 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(5px, -15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes floatani6 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(2px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media (max-width: 1400px) {
+  .sec-banner .banner-logo {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  }
+  .Dialog-bubble {
+    width: 560px;
+    height: 626px !important;
+    margin: -313px auto 0 -280px !important;
+    position: fixed;
+    z-index: 99999;
+  }
+  .Dialog-bubble .bubble {
+    position: relative;
+    width: 560px;
+    height: 626px;
+    background: url("../images/game-bg1.png") center no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+  }
+  .Dialog-bubble .bubble .game-btn {
+    bottom: 145px;
+  }
+  .Dialog-bubble .bubble.bubble-2 .game-btn {
+    bottom: 50px;
+  }
+  .Dialog-bubble .bubble.bubble-2 .uimg {
+    width: 477px;
+    margin: 200px auto 0;
+  }
+  .Dialog-bubble .bubble.bubble-2 .uimg ul li {
+    width: 112px;
+    margin: 0 23px 20px;
+  }
+  .Dialog-bubble .bubble.bubble-2 .uimg ul li:nth-of-type(1) {
+    margin-left: 109px;
+  }
+  .Dialog-bubble .bubble.bubble-2 .uimg ul li .select {
+    width: 18px;
+    height: 18px;
+    left: 24px;
+  }
+  .Dialog-bubble .bubble.bubble-3 {
+    background: url("../images/game-bg3.png");
+    background-size: 100%;
+  }
+  .Dialog-bubble .bubble.bubble-3 .bubbles {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .Dialog-bubble .bubble.bubble-3 .bubbles img {
+    width: 100%;
+  }
+  .Dialog-bubble .bubble.bubble-3 .bubbles ul li {
+    width: 500px;
+  }
+  .Dialog-bubble .bubble.bubble-3 .bubbles ul li:nth-of-type(2) {
+    width: 100px;
+  }
+  .Dialog-bubble .bubble.bubble-3 .bubbles ul li.bubbleBig {
+    width: 250px;
+    height: 250px;
+    top: 250px;
+    left: 162px;
+  }
+  .Dialog-bubble .bubble.bubble-3 .bubbles .bubble-time {
+    bottom: 200px;
+    left: 113px;
+  }
+  .Dialog-bubble .bubble.bubble-3 .bubbles .stick {
+    width: 120px;
+    bottom: -10px;
+    left: 220px;
+  }
+  .Dialog-bubble .bubble.bubble-3 .bubbles .uimg-big {
+    bottom: -5px;
+    left: 80px;
+    width: 150px;
+    height: 150px;
+  }
+  .Dialog-quan {
+    width: 490px;
+    height: 337px !important;
+    margin: -168.5px auto 0 -245px !important;
+  }
+  .Dialog-quan .quan .go-use {
+    bottom: 72px;
+    width: 100px;
+    height: 29px;
+    margin-left: -50px;
+  }
+}

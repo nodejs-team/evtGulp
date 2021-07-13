@@ -20,7 +20,7 @@ span.num, .noselect {
 
 .evt-container {
   overflow: hidden;
-  background: #ffdbae;
+  background: #c7eaff;
 }
 
 .sec-banner {
@@ -28,14 +28,73 @@ span.num, .noselect {
   margin: 0 auto;
   z-index: 2;
   overflow: hidden;
-  background: url("../images/banner.png") bottom center no-repeat;
-  height: 625px;
+  background: url("../images/banner-bg.png") bottom center no-repeat;
+  height: 1645px;
+}
+
+.sec-banner .evt-content {
+  width: 1242px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sec-banner .title-txt {
+  margin-top: 100px;
+}
+
+.sec-banner .machine {
+  position: relative;
+  width: 1242px;
+  height: 691px;
+  margin: 240px auto 0;
+  background: url("../images/machine-bg.png");
+  border: transparent 1px solid;
+}
+
+.sec-banner .machine .machine-head {
+  position: relative;
+  margin: -290px auto 0;
+  z-index: 2;
+}
+
+.sec-banner .machine .clow {
+  position: absolute;
+  width: 129px;
+  top: -175px;
+  left: 50%;
+  margin-left: -70px;
+  transition: all 1s;
+  z-index: 1;
+}
+
+.sec-banner .machine .machine-btn-left, .sec-banner .machine .machine-btn-right, .sec-banner .machine .machine-btn-start {
+  position: absolute;
+  bottom: 227px;
+  left: 50%;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.sec-banner .machine .machine-btn-left {
+  margin-left: -189px;
+}
+
+.sec-banner .machine .machine-btn-right {
+  margin-left: -101px;
+}
+
+.sec-banner .machine .catch1 {
+  top: -10px;
+}
+
+.sec-banner .machine .catch2 {
+  top: -100px;
 }
 
 .hy-title {
   margin: 0 auto;
-  width: 947px;
-  padding: 50px 0;
+  width: 507px;
+  padding: 80px 0;
   position: relative;
   text-align: center;
 }
@@ -45,162 +104,97 @@ span.num, .noselect {
   width: 100%;
 }
 
-.sec-0.game {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  background: url("../images/sec-1.png") top center no-repeat;
-  overflow: hidden;
-}
-
-.sec-0.game .evt-content {
-  height: 660px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.sec-0.game .clow {
-  width: 129px;
-  margin: -80px auto 0;
-  transition: all 1s;
-}
-
-.sec-0.game .start {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  margin-left: -126px;
-  cursor: pointer;
-}
-
-.sec-0.game .catch {
-  margin-top: 0;
-}
-
 .icon {
   position: absolute;
-  width: 94px;
-  height: 114px;
-  right: 20px;
+  width: 59px;
+  height: 74px;
+  left: 200px;
   top: 0;
 }
 
-.icon_30 {
-  background: url("../images/icon_30.png");
+.icon_10 {
+  background: url("../images/icon_10.png");
 }
 
-.icon_50 {
-  background: url("../images/icon_50.png");
+.icon_20 {
+  background: url("../images/icon_20.png");
 }
 
-.sec-1 {
-  position: relative;
-  z-index: 2;
-  height: 1388px;
-  background: url("../images/sec-1.png") top center no-repeat;
-  overflow: hidden;
+.sec-award .evt-content {
+  width: 1288px;
 }
 
-.sec-1 .evt-content {
-  width: 1077px;
-  text-align: center;
-}
-
-.sec-1 .prize {
-  margin: 0 auto;
-}
-
-.sec-1 .prize ul {
-  background: #ffebd2;
-  padding: 76px 50px 0;
-  border-radius: 10px;
-}
-
-.sec-1 .prize ul li {
-  position: relative;
-  float: left;
-  width: 274px;
-  height: 428px;
-  background: url("../images/bag.png") center top no-repeat;
-  margin: 0 25px 50px;
-}
-
-.sec-1 .prize ul li .bagTxt {
-  position: absolute;
-  top: 250px;
-  left: 50%;
-  margin-left: -25px;
-}
-
-.sec-1 .prize ul li .select {
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  margin-left: -17px;
-  width: 34px;
-  height: 34px;
-  background: url("../images/select.png") no-repeat;
-  cursor: pointer;
-}
-
-.sec-1 .prize ul li .select.on {
-  background: url("../images/select-ed.png") no-repeat;
-}
-
-.sec-1 .prize ul li:nth-of-type(1) {
-  background: url("../images/bag-bg-1.png") center top no-repeat;
-}
-
-.sec-1 .prize ul li:nth-of-type(2) {
-  background: url("../images/bag-bg-2.png") center top no-repeat;
-}
-
-.sec-1 .prize ul li:nth-of-type(3) {
-  background: url("../images/bag-bg-3.png") center top no-repeat;
-}
-
-.sec-1 .prize ul li:nth-of-type(4) {
-  background: url("../images/bag-bg-4.png") center top no-repeat;
-}
-
-.sec-1 .prize ul li:nth-of-type(5) {
-  background: url("../images/bag-bg-5.png") center top no-repeat;
-}
-
-.sec-1 .prize ul li:nth-of-type(6) {
-  background: url("../images/bag-bg-6.png") center top no-repeat;
-}
-
-.sec-1 .confirm {
-  width: 230px;
-  cursor: pointer;
-}
-
-.sec-1 .confirm, .sec-1 .confirm-txt {
-  margin: 30px auto;
+.sec-award .evt-content .machine-award {
+  margin-top: -250px;
 }
 
 .sec-cake {
   position: relative;
   z-index: 1;
-  height: 1798px;
-  background: url("../images/sec-2.png") center no-repeat;
 }
 
 .sec-cake .evt-content {
-  width: 1028px;
+  width: 1198px;
+  background: #fff9f3;
+  box-shadow: 0px 10px 15px #b7dbf3;
+  border-radius: 22px;
+  margin-top: 87px;
 }
 
 .sec-cake .evt-content .row {
   position: relative;
-  width: 489px;
-  float: left;
-  margin: 0 12px 50px;
-  overflow: hidden;
+}
+
+.sec-cake .evt-content .row {
+  height: 530px;
+  margin-top: 20px;
 }
 
 .sec-cake .evt-content .row .cake {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 11px;
+}
+
+.sec-cake .evt-content .row1 .cake {
+  position: absolute;
+  top: 0;
+  left: 590px;
+}
+
+.sec-cake .evt-content .row1 .price {
+  top: 120px;
+  left: 150px;
+}
+
+.sec-cake .evt-content .row2 .icon {
+  left: 270px;
+}
+
+.sec-cake .evt-content .row2 .cake {
+  position: absolute;
+  top: 0;
+  left: 130px;
+}
+
+.sec-cake .evt-content .row2 .price {
+  top: 120px;
+  left: 630px;
+}
+
+.sec-cake .evt-content .row3 .cake {
+  position: absolute;
+  top: 0;
+  left: 590px;
+}
+
+.sec-cake .evt-content .row3 .price {
+  top: 120px;
+  left: 150px;
+}
+
+.sec-cake .evt-content .row3 .icon {
+  left: 150px;
 }
 
 .more {
@@ -214,18 +208,17 @@ span.num, .noselect {
 .evt-footer {
   z-index: 1;
   position: relative;
-  background: url("../images/sec-foot.png") repeat;
 }
 
 .evt-footer .evt-content {
   width: 1200px;
-  color: #7b5628;
+  color: #5992b0;
 }
 
 .evt-footer .evt-rules {
   width: 1030px;
   margin: 0 auto;
-  padding: 100px 0 140px 20px;
+  padding: 150px 0 140px 20px;
 }
 
 .evt-footer .evt-rules h2 {
@@ -236,7 +229,7 @@ span.num, .noselect {
 
 .evt-footer .evt-rules p {
   font-size: 18px;
-  line-height: 1.8em;
+  line-height: 2.2em;
   padding-left: 1.5em;
   text-indent: -1.5em;
 }
@@ -258,33 +251,35 @@ span.num, .noselect {
 
 /*价格样式 通用*/
 .price {
-  position: relative;
-  width: 489px;
+  position: absolute;
+  width: 392px;
   text-align: left;
 }
 
 .price h2 {
   position: relative;
-  margin: 0;
+  margin: 13px 0 0;
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
-  color: #d64244;
-  text-align: center;
+  color: #ff965f;
+  text-align: left;
 }
 
 .price h2 i {
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   vertical-align: baseline;
 }
 
 .price h2 span {
   font-size: 28px;
+  color: #ff965f;
 }
 
 .price s {
   font-size: 16px;
+  color: #000;
   font-weight: normal;
   line-height: 26px;
   text-decoration: sh;
@@ -300,10 +295,7 @@ span.num, .noselect {
 }
 
 .price .price-title {
-  font-size: 30px;
-  color: #d64244;
-  margin: 20px auto 20px !important;
-  text-align: center;
+  margin-bottom: 70px !important;
 }
 
 /*换购*/
@@ -351,8 +343,8 @@ span.num, .noselect {
 /*订购，加入购物清单*/
 .price ul.buy_btn_box {
   overflow: hidden;
-  width: 175px;
-  margin: 5px auto;
+  width: 169px;
+  margin: 15px 0 0;
   float: left;
 }
 
@@ -362,38 +354,35 @@ span.num, .noselect {
 
 .price ul.buy_btn_box li {
   float: left;
-  height: 72px;
+  height: 62px;
   margin-right: 5px;
 }
 
 .price ul.buy_btn_box li.fr {
-  float: right;
+  float: left;
 }
 
 .price ul.buy_btn_box li span {
   display: block;
-  width: 175px;
-  background: url("../images/btn-bg.png");
+  width: 150px;
+  background: #ff965f;
   border: none;
   color: #fff;
   cursor: pointer;
-  height: 72px;
-  line-height: 72px;
+  height: 40px;
+  line-height: 40px;
   font-size: 16px;
   text-align: center;
-}
-
-.buy-btns {
-  width: 363px;
-  margin: 0 auto;
+  border-radius: 40px;
 }
 
 .bangshu {
-  width: 175px;
-  height: 72px;
-  margin: 5px 0 5px 10px;
+  width: 173px;
+  height: 40px;
+  margin: 15px 0 10px 10px;
   float: left;
-  background: url("../images/btn-bg.png");
+  border: #ff965f 1px solid;
+  border-radius: 40px;
 }
 
 .bangshu dd {
@@ -402,26 +391,22 @@ span.num, .noselect {
 
 .bangshu dt {
   float: left;
-  width: 91px;
+  width: 90px;
   text-align: center;
-  line-height: 72px;
+  line-height: 40px;
 }
 
 .bangshu dt span {
   display: block;
-  color: #fff;
-  font-size: 16px;
-}
-
-.buy-btns.one {
-  width: 165px;
+  color: #ff965f;
+  font-size: 14px;
 }
 
 /*加减按钮*/
 .nopoint {
   width: 20px;
-  height: 62px;
-  margin: 0 0 0 10px;
+  height: 20px;
+  margin: 4px 0 0 10px;
   background: url("../images/in-a-1.png") center no-repeat;
   cursor: pointer;
   border: 5px solid transparent;
@@ -429,7 +414,7 @@ span.num, .noselect {
 
 .nopoint.plus {
   background: url("../images/in-a-2.png") center no-repeat;
-  margin: 0 5px 0 0;
+  margin: 4px 5px 0 0;
 }
 
 /*彈窗*/
@@ -437,7 +422,7 @@ span.num, .noselect {
   background-color: #000;
   height: 100%;
   left: 0;
-  opacity: 0.7;
+  opacity: 0.8;
   position: fixed;
   top: 0;
   width: 100%;
@@ -448,13 +433,12 @@ span.num, .noselect {
 }
 
 .Dialog-quan {
-  width: 872px;
-  height: 556px !important;
-  background: url("../images/quan-bg.png");
+  width: 544px;
+  height: 366px !important;
   padding: 0;
   top: 50%;
   left: 50%;
-  margin: -278px auto 0 -436px !important;
+  margin: -183px auto 0 -272px !important;
   position: fixed;
   z-index: 99999;
   display: none;
@@ -473,8 +457,8 @@ span.num, .noselect {
 
 .Dialog-quan .quan {
   position: relative;
-  width: 872px;
-  height: 556px;
+  width: 544px;
+  height: 366px;
   background: url("../images/quan-1.png");
   display: none;
 }
@@ -512,17 +496,62 @@ span.num, .noselect {
   background: url("../images/quan-6.png");
 }
 
-.shake {
-  animation: shake 3s alternate infinite;
+.Dialog-quan .quan.quan-7 {
+  background: url("../images/quan-7.png");
 }
 
-@keyframes shake {
-  0% {
-    transform: rotate(-10deg);
-    transform-origin: 50% 0%;
+@media (max-width: 1400px) {
+  .sec-banner img {
+    width: 100%;
   }
-  100% {
-    transform: rotate(10deg);
-    transform-origin: 50% 0%;
+  .sec-banner .title-txt {
+    width: 900px;
+    margin: 150px auto 0;
+  }
+  .sec-banner .machine {
+    position: relative;
+    width: 1000px;
+    height: 691px;
+    margin-top: 240px;
+    background: url("../images/machine-bg.png") no-repeat;
+    background-size: 100%;
+  }
+  .sec-banner .machine .machine-head {
+    position: relative;
+    width: 638px;
+    margin: -237px auto 0;
+    z-index: 3;
+  }
+  .sec-banner .machine .clow {
+    width: 80px;
+    top: -145px;
+    left: 50%;
+    margin-left: -43px;
+    z-index: 1;
+  }
+  .sec-banner .machine .machine-btn-left, .sec-banner .machine .machine-btn-right, .sec-banner .machine .machine-btn-start {
+    bottom: 307px;
+    margin-left: -13px;
+  }
+  .sec-banner .machine .machine-btn-left {
+    margin-left: -189px;
+  }
+  .sec-banner .machine .machine-btn-right {
+    margin-left: -101px;
+  }
+  .sec-banner .machine .catch1 {
+    top: -30px;
+  }
+  .sec-banner .machine .catch2 {
+    top: -100px;
+  }
+  .sec-award img {
+    width: 100%;
+  }
+  .sec-award .evt-content {
+    width: 1288px;
+  }
+  .sec-award .evt-content .machine-award {
+    margin: -323px auto 0;
   }
 }

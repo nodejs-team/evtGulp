@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/bubble.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--公共头部-->
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+<!--公共头部 end-->
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
+        <div class="evt-content  clearfix">
+            <div class="title-txt"><img src="images/title-txt.png" alt=""></div>
+            <div class="machine">
+                <div class="machine-head"><img src="images/machine-head.png" alt=""></div>
+                <div class="clow"><img src="images/machine-claw.png" alt=""></div>
+                <div class="machine-btn-left"><img src="images/machine-btn-left.png" alt=""></div>
+                <div class="machine-btn-start"><img src="images/machine-btn-start.png" alt=""></div>
+                <div class="machine-btn-right"><img src="images/machine-btn-right.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec-bubbles">
+        <div class="evt-content  clearfix">
+            <div class="bubbles-award">
+                <div class="bubbles-start"><img src="images/machine-btn-start.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sec-award">
+        <div class="evt-content  clearfix">
+            <div class="machine-award"><img src="images/machine-award.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="sec-cake" id="cake">
+
+        <div class="evt-content pro-list clearfix">
+            <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-1.png" alt=""></div>
+            <div class="row row1" data-pond="1.5磅,2.5磅" data-weight="454g,1.13kg,1.36kg" data-postid="01,1,2" data-price="298,398" data-sku="01,02" data-method="01,02" data-pid="01,02" data-ptype="1,2" data-channel="11,21">
+                <div class="secItem cake" data-anim="slide-left" data-delay="0.4">
+                    <img src="images/cake-1.png"/>
+                </div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title">  <div class="icon"></div><img src="images/cake-t-1.png"/></div>
+                    <h2>满减价 <i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn">立即购买</span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row2" data-pond="1.5磅,2.5磅" data-weight="454g,1.13kg,1.36kg" data-postid="01,1" data-price="298,398,428" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31">
+                <div class="secItem cake" data-anim="slide-right" data-delay="0.4">
+                    <img src="images/cake-2.png"/>
+                </div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title"><div class="icon"></div><img src="images/cake-t-2.png"/></div>
+                    <h2>满减价 <i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价￥<b class="old-price">298</b></s></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn">立即购买</span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row3" data-pond="1磅,2磅" data-weight="454g,908g" data-postid="01,1" data-price="198,298" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31">
+                <div class="secItem cake" data-anim="slide-left" data-delay="0.4">
+                    <img src="images/cake-3.png"/>
+                </div>
+                <div class="price js_price" data-anim="slide-up" data-delay="0.6">
+                    <div class="price-title"><div class="icon"></div><img src="images/cake-t-3.png"/></div>
+                    <h2>满减价 <i>￥</i><span class="dis-price">298</span><em class="d-pond"></em> <s>原价￥<b class="old-price">298</b></s></h2>
+                    <ul class="buy_btn_box clearfix">
+                        <li class="fr"><span class="buy_btn">立即购买</span></li>
+                    </ul>
+                    <div class="bangshu">
+                        <dl class="clearfix">
+                            <dd class="nopoint minus"></dd>
+                            <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                            <dd class="nopoint plus"></dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则:</h2>
+                <p>1、活动时间：2021年5月4日-2021年5月31日（每周二上午10：00）</p>
+                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝，本活动仅限使用微信、支付宝全额支付的用户参与</p>
+                <p>4、活动内容：活动页面购买鲜莓印雪、蓝莓轻乳拿破仑、卡法香缇，满198元立减10元，满298元立减20元（仅1/2磅参加）</p>
+                <p>5、每位用户ID仅限领取福利一次，所享福利不与其它优惠同享，有效期为：自领取之日起至5月31日有效</p>
+                <p>6、相机为实物奖品，将单独包邮寄出，工作人员将在活动结束后5个工作日内与中奖者联系，联系方式为中奖的手机号码，请保持电话畅通</p>
+                <p>7、本活动与会员等级制度、积分同享，但不与其他优惠同享</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bubbles-cover"></div>
+<div class="bubbles-wrap">
+    <div class="demo">
+        <div class="demo__content">
+
+            <svg class="svg svg--defs">
+
+                <!-- Bubble transparency -->
+                <radialGradient id="grad--bw" fx="25%" fy="25%">
+                    <stop offset="0%" stop-color="black"></stop>
+                    <stop offset="30%" stop-color="black" stop-opacity=".2"></stop>
+                    <stop offset="97%" stop-color="white" stop-opacity=".4"></stop>
+                    <stop offset="100%" stop-color="black"></stop>
+                </radialGradient>
+
+                <mask id="mask" maskContentUnits="objectBoundingBox">
+                    <rect fill="url(#grad--bw)" width="1" height="1"></rect>
+                </mask>
+
+                <!-- Light spot -->
+                <radialGradient id="grad--spot" fx="50%" fy="20%">
+                    <stop offset="10%" stop-color="white" stop-opacity=".7"></stop>
+                    <stop offset="70%" stop-color="white" stop-opacity="0"></stop>
+                </radialGradient>
+
+                <!-- Top & bottom light -->
+                <radialGradient id="grad--bw-light" _fx="25%" fy="10%">
+                    <stop offset="60%" stop-color="black" stop-opacity="0"></stop>
+                    <stop offset="90%" stop-color="white" stop-opacity=".25"></stop>
+                    <stop offset="100%" stop-color="black"></stop>
+                </radialGradient>
+
+                <mask id="mask--light-top" maskContentUnits="objectBoundingBox">
+                    <rect fill="url(#grad--bw-light)" width="1" height="1" transform="rotate(180, .5, .5)"></rect>
+                </mask>
+
+                <mask id="mask--light-bottom" maskContentUnits="objectBoundingBox">
+                    <rect fill="url(#grad--bw-light)" width="1" height="1"></rect>
+                </mask>
+
+                <!-- Colors of bubble -->
+                <linearGradient id="grad" x1="0" y1="100%" x2="100%" y2="0">
+                    <stop offset="0%" stop-color="dodgerblue" class="stop-1"></stop>
+                    <stop offset="50%" stop-color="fuchsia" class="stop-2"></stop>
+                    <stop offset="100%" stop-color="yellow" class="stop-3"></stop>
+                </linearGradient>
+
+                <mask id="mask--collapse" maskContentUnits="objectBoundingBox">
+                    <circle r=".5" cx=".5" cy=".5" class="collapse-circle"></circle>
+                </mask>
+
+                <symbol id="splash">
+                    <g class="splash__group" fill="none" stroke="white" stroke-opacity=".8">
+                        <circle r="49%" cx="50%" cy="50%" stroke-width="3%" stroke-dasharray="1% 10%" class="splash__circle _hidden"></circle>
+                        <circle r="44%" cx="50%" cy="50%" stroke-width="2%" stroke-dasharray="1% 5%" class="splash__circle _hidden"></circle>
+                        <circle r="39%" cx="50%" cy="50%" stroke-width="1%" stroke-dasharray="1% 8%" class="splash__circle _hidden"></circle>
+                        <circle r="33%" cx="50%" cy="50%" stroke-width="3%" stroke-dasharray="1% 6%" class="splash__circle _hidden"></circle>
+                        <circle r="26%" cx="50%" cy="50%" stroke-width="1%" stroke-dasharray="1% 7%" class="splash__circle _hidden"></circle>
+                        <circle r="18%" cx="50%" cy="50%" stroke-width="1%" stroke-dasharray="1% 8%" class="splash__circle _hidden"></circle>
+                    </g>
+                </symbol>
+            </svg>
+
+
+        </div>
+
+        <header class="demo__title demo-title"></header>
+        <svg class="svg bubble" viewBox="0 0 200 200" >
+            <g class="bubble__group">
+                <ellipse rx="20%" ry="10%" cx="150" cy="150" fill="url(#grad--spot)" transform="rotate(-225, 150, 150)" class="shape _hidden"></ellipse>
+                <circle r="50%" cx="50%" cy="50%" fill="aqua" mask="url(#mask--light-bottom)" class="shape _hidden"></circle>
+                <circle r="50%" cx="50%" cy="50%" fill="yellow" mask="url(#mask--light-top)" class="shape _hidden"></circle>
+                <ellipse rx="55" ry="25" cx="55" cy="55" fill="url(#grad--spot)" transform="rotate(-45, 55, 55)" class="shape _hidden"></ellipse>
+                <circle r="50%" cx="50%" cy="50%" fill="url(#grad)" mask="url(#mask)" class="shape _hidden"></circle>
+            </g>
+
+            <use xlink:href="#splash" class="bubble__splash"></use>
+
+
+        </svg>
+    </div>
+
+    <div class="bubbles bubbles-1"></div>
+    <div class="bubbles-start"><img src="images/machine-btn-start.png" alt=""></div>
+</div>
+
+<div class="Dialogbg-quan"></div>
+<div class="Dialog-quan">
+    <div class="closes"></div>
+    <div class="quan quan-1" style="display: block;">
+        <!--<div class="go-use"></div>-->
+    </div>
+    <div class="quan quan-2"></div>
+    <div class="quan quan-3"></div>
+    <div class="quan quan-4"></div>
+    <div class="quan quan-5"></div>
+    <div class="quan quan-6"></div>
+    <div class="quan quan-7"></div>
+
+</div>
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/slider-new.js"></script>
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/TweenMax.js"></script>
+<script type="text/javascript" src="js/bubble.js"></script>
+<!-- endbuild -->
+<script>
+
+  $(".machine-btn-start").click(function () {
+    $(".clow").addClass(game.catchs);
+    setTimeout(function () {
+      $(".clow").removeClass(game.catchs);
+    },1500);
+    setTimeout(function () {
+      QuanDialog(1);/*12345*/
+    },800);
+  });
+
+  var bubbles={
+    num:0,
+    bubblesW:parseFloat($(".bubbles-1").width()),
+    bubblesH:parseFloat($(".bubbles-1").height()),
+    event:function () {
+
+    },
+    init:function () {
+      var self=this;
+      $(".bubbles-start").click(function () {
+        self.num+=20;
+        console.log( self.num)
+        //width:self.bubblesW+ self.num+"px",height:self.bubblesH+ self.num+"px"
+        //width:"+=50px",height:"+=50px",top:"-=25px",left:"-=25px"
+        $(".bubbles-1").stop().animate({width:"+="+self.num+"px",height:"+="+self.num+"px",top:"-="+self.num/2+"px",left:"-="+self.num/2+"px"},500,function () {
+          if(self.num>=80){
+
+            $(".bubbles-cover,.bubbles-wrap").delay(1000).fadeOut(500);
+           /* $(this).addClass('bubbles-p');*/
+            QuanDialog(1);
+          }
+          /*$(".bubbles-1").css({'width':'300px','height':'300px','transform':'rotate(180deg)'});*/
+        })
+      });
+    }
+  }
+  bubbles.init();
+
+
+
+</script>
+</body>
+</html>

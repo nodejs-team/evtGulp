@@ -1,0 +1,75 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; }
+
+.sec-banner{max-width:1920px; margin: 0 auto; overflow:hidden;
+  span,img{width: 100%; display: block !important; overflow:hidden; }
+}
+
+.hy-title{ margin:0 auto; width: 778px; padding:60px 0; position: relative; text-align: center;
+  img{margin: 0 auto;}
+}
+
+.buy_btns,.buy-btn{ width: 145px; height: 35px;  bottom:108px; left: 482px; cursor: pointer;}
+.buy-btn{position: absolute;}
+.buy_btns{ position: relative;}
+
+.sec-1{ position: relative; z-index: 1;  overflow: hidden;
+  span,img{width: 100%; display: block !important; overflow:hidden; }
+}
+
+.sec-2{ position: relative; z-index: 1;  overflow: hidden;
+  span,img{width: 100%; display: block !important; overflow:hidden; }
+    .evt-content{width:1280px;}
+    .cake{position: relative; width: 1136px; margin: 0 auto;}
+    .message{position: absolute; top: 568px; left:50%; width: 100%; margin-left: -50%; height: 218px; text-align: center;
+      .message-content{ position:relative; height: 230px;}
+      /*.messageInput{width: 796px; height: 77px; margin:0 auto; background: url("../images/message-bg.png"); line-height: 77px; text-align: center; font-size: 23px; color: #e6b7af;}
+      .messageInput::-webkit-input-placeholder {
+        color: #e6b7af;
+      }
+      .message-btn{margin: 30px auto; width: 145px; cursor: pointer;}*/
+    }
+
+}
+
+
+
+
+.more{width: 144px;position: relative; margin: 0 auto; background: #cd686d; border-radius: 50px; text-align: center;
+  span{ display: block; color: #fff; font-size: 20px; line-height:35px;}
+}
+
+.sec-4{position: relative; height: 549px; background: url("../images/sec-4.png") center top no-repeat; overflow: hidden;
+    .zp{ width: 536px; margin:109px auto 0;}
+}
+
+.evt-footer{ z-index: 1; position: relative; background: url("../images/sec-foot.png") center top no-repeat;
+  .evt-content{width: 1200px; color: #7b5845;}
+    .evt-rules{width: 1000px; margin: 0 auto; padding:100px 0 80px 20px;
+      h2{ font-size: 18px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 2.2em;  padding-left: 1.5em;  text-indent: -1.5em;  }
+    }
+}
+
+.barrage.barrage1{right:-200px;}
+
+
+
+
+

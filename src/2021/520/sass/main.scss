@@ -1,0 +1,108 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/*数量加减时，禁止双击选中*/
+span.num,.noselect{
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.evt-container{ overflow: hidden; background:#630b09;}
+.home-header{z-index: 10;}
+$w1080:1080px;
+
+.sec-banner{ position: relative;  background:#4b0c07 url("../images/banner.png") center bottom no-repeat; z-index: 1; height: 823px;
+  .evt-content{  width:1200px;  padding:0;}
+  .pplogo{position:absolute; top:20px; right: 100px;}
+  .cake{position:absolute; bottom:-200px;left: 50%; margin-left: -405px;}
+  .rose{position:absolute; bottom:-140px; left:-5px;}
+
+}
+
+.hy-title{ margin:80px auto; position: relative; text-align: center;
+  img{display: block; margin: 0 auto;}
+}
+.evt-content{ height: 100%; }
+.buy_btn1{position: absolute; width: 177px; height: 39px; bottom: 65px; left: 50%; margin-left: -83px; background: url("../images/buy-btn1.png") no-repeat; cursor: pointer;}
+.buy_btn{position: absolute; width: 143px; height: 35px; background: url("../images/buy-btn2.png") no-repeat; cursor: pointer;}
+.buy-btn3{ width: 177px; height: 39px; background: url("../images/buy-btn3.png") no-repeat; margin:30px auto; cursor: pointer;}
+
+.sec-1{ height: 1087px; background:url("../images/sec-1.png") center no-repeat; overflow: hidden;
+  .evt-content{ width:$w1080;  padding:0; text-align: center; }
+  .txt{margin: 0 auto; position: relative;
+     &:first-child{margin-top: 135px;}
+    .recording{position: absolute; top:115px; right:317px; width:54px; height:50px; z-index: 5; cursor: pointer;
+      .rec-1{position: absolute; top:0; left:0; width:54px; height:50px; background: url("../images/music.png") no-repeat; background-size: 100%;}
+      .rec-2{position: absolute; top:0; left:0; width:54px; height:50px; display: none; background: url("../images/music.gif") no-repeat; background-size: 100%;}
+      .recording-hd{position: absolute; right:-10px;
+        em{ position: absolute; display: block; width:10px; height:10px; background: #e60012; border-radius: 100%; top:8px; -webkit-animation:fadeToggle 2s infinite ease-in-out; animation:fadeToggle 2s infinite ease-in-out; }
+        b{ display: block; width: 100%; height: 100%; margin: 0; line-height:33px; color: #000; }
+      }
+    }
+  }
+}
+
+.sec-2{ height: 1200px; background:url("../images/sec-2.png") bottom no-repeat; overflow: hidden;
+  .evt-content{  width:1200px;  padding:0; }
+  ul{ width:1200px; margin-top: 100px;
+    li{ position: relative; width: 350px; float: left; margin: 0 23px;
+      .huangou{ bottom:77px; left:50%; margin-left: -135.5px;}
+       &:last-child{
+         .huangou{ bottom:77px; left:50%; margin-left: -120px;}
+       }
+    }
+  }
+  .lipin-1{margin: 50px auto 0;}
+}
+
+.sec-3{ height: 2543px; background:url("../images/sec-3.png") center no-repeat; overflow: hidden;
+  .evt-content{  width:$w1080;  padding:0; text-align: center;}
+  .row{position: relative; width: 919px; margin: 0 auto;}
+  .row1{
+    .buy_btn{ top:380px; left: 514px;}
+  }
+  .row2{
+    .buy_btn{ top:442px; left: 64px;}
+  }
+  .row3{
+    .buy_btn{ top:468px; left: 514px;}
+  }
+  .lipin-2{ width: 502px; margin: 93px auto 0;}
+}
+
+
+.huangou { position:absolute; bottom: 0; left: 8px; font-size: 16px; font-weight: bold; color: #9f2c27; cursor: pointer; padding-left: 29px; text-align: left; }
+.huangou .icnone { position: absolute; left: 0; top: 50%; margin-top: -11px; width: 27px; height: 27px; z-index: 1; }
+.huangou .icon { position: absolute; left: 0; top: 50%; margin-top: -11px; width: 27px; height: 27px; z-index: 2;  }
+.price .huangou {moz-user-select: -moz-none;-moz-user-select: none;-o-user-select: none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none; }
+.icon,.icnone{background: url("../images/gou.png"); }
+.icon.on{background: url("../images/gou-on.png");}
+
+.evt-footer{ position: relative; z-index: 1; background:url("../images/sec-4.png") top repeat-x;
+  .evt-content{width: 1200px; color: #f7e7ea;}
+    .evt-rules{width: 1080px; margin: 0 auto; padding:160px 0 160px;
+      h2{ font-size: 24px;  font-weight: normal;  margin-bottom: 5px;  }
+      p{ font-size:18px; line-height: 2.5em;  padding-left: 1.5em;  text-indent: -1.5em; }
+    }
+}
+
+
+.floater{position: fixed; right: -10px; top: 450px; z-index: 3; display: none;}
+
+@media (max-width: 1600px) {
+  .sec-banner{height: 660px;}
+  .sec-banner img{width: 100%;}
+  .sec-banner .pplogo{right: 20px;}
+  .sec-banner .cake{width:760px; margin-left: -380px;}
+  .floater{position: fixed; top: 300px; width: 130px;
+    img{width: 100%;}
+  }
+}

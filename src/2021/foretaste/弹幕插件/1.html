@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画测试</title>
+</head>
+<body>
+	<style type="text/css">
+		.box{position: absolute; top: 20px; right: 0; width: 100px; height: 100px; background: red;}
+	</style>
+
+  <div class="box"></div>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script>
+		$(".box").animate({right:"1700px"},10000,function(){
+
+			//$(id).remove();
+		});	
+
+	</script>
+</body>
+</html>

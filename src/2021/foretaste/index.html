@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/barrager.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--公共头部-->
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+<!--公共头部 end-->
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
+        <img src="images/hydd-banner.png" alt="">
+    </div>
+    <div class="sec-1" data-anim="fade-in" data-delay="0.2"><img src="images/hydd-img.png" alt=""></div>
+
+    <div class="sec-2" style="height: 1298px; background: url('images/hydd-sec.png') no-repeat;">
+        <div class="evt-content">
+            <div class="cake"><img src="images/hydd-dd.png" alt=""></div>
+            <div class="cake"><img src="images/hydd-code.png" alt=""></div>
+        </div>
+
+        <div class="message">
+            <div class="message-content">
+                <div class="barrage barrage1">
+                    <div class="barrage_box cl">
+                        <div class="z p">
+                            <a>祝母亲节快乐!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- <input id="cake" class="messageInput" name="info" type="text" maxlength="30" placeholder="留下您内心的寄语">
+            <div class="message-btn" onclick="run()"><img src="images/message-btn.png" alt=""></div>-->
+        </div>
+
+    </div>
+
+
+    <div class="evt-footer clearfix" style="background: url('images/hydd-footer.png') no-repeat;">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则:</h2>
+                <p>1、活动时间：2021年6月7日-2021年6月21日</p>
+                <p>2、参与方式：微信扫一扫上方二维码，关注【MCAKE蛋糕】，回复关键词" 好好吃面包"，进入活动页，输入试吃宣言，  即可申请试吃</p>
+                <p>3、奖励说明：申请成功的用户，试吃产品将以优惠券的形式，在申领成功后3个工作日内发放到您账户中，单笔订单满50元即可免邮，反之则需支付10元配送费</p>
+                <p>4、使用有效期：2021年6月15日-2021年9月15日，逾期作废</p>
+                <p>5、本活动不与其它优惠同享</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+<script type="text/javascript" src="js/jquery.barrager.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+
+<script>
+    /*初始化弹幕*/
+    var text=[
+      "妈妈永远健康、年轻漂亮！",
+      "祝万能的妈妈，母亲节快乐！",
+      "母亲节快乐！",
+      "虽然您很唠叨，但我知道您是爱我的",
+      "感谢母亲赋予我生命，感谢生命中有您！母亲节快乐！",
+      "不当家，不知柴米贵;不养儿，不知报母恩",
+      "老妈老妈，貌美如花，人见人夸，愿你快乐，幸福不差",
+      "看你长大不容易，看你越长越大更不容易"
+    ];
+
+  var  window_height=$('.message-content').height()-50;
+  var bottom=70;
+  var item={
+    //img:'img/heisenberg.png', //图片
+    info:'母亲节快乐！', //文字
+    close:false, //显示关闭按钮
+    speed:24, //延迟,单位秒,默认6
+    bottom:window_height, //距离底部高度,单位px,默认随机
+    color:'#d69990', //颜色,默认白色
+    old_ie_color:'#d69990', //ie低版兼容色,不能与网页背景相同,默认黑色
+  }
+  /*第一次执行*/
+    $('.message-content').barrager(item);
+
+    var n = 0;
+    var mathBottom=0;
+    //console.log(text.length)
+      var time1= setInterval(function () {
+       // mathBottom=Math.floor(Math.random()*((window_height-80)-10+1)+10);
+        //防止弹幕叠加
+        if(n%2==0){
+          mathBottom=window_height-120;  //偶数
+        }else{
+          mathBottom=window_height;//奇数
+        }
+        if(n<text.length){
+          bottom=mathBottom;
+          item[n]={
+            info:text[n],
+            close:false, //显示关闭按钮
+            speed:25, //延迟,单位秒,默认6
+            bottom:bottom, //距离底部高度,单位px,默认随机
+            color:'#d69990', //颜色,默认白色
+            old_ie_color:'#d69990', //ie低版兼容色,不能与网页背景相同,默认黑色
+          }
+
+          $('.message-content').barrager(item[n]);
+          n++;
+        }else {
+          n=0;
+           // clearInterval(time1)
+        }
+
+        //弹幕数量多时页面会变慢，删除一部分
+        if ($(".barrage").length > 20) {
+          for (var s = 0; s < 5; s++) {
+            $(".barrage").eq(s).remove();
+          }
+        }
+
+      },3000);
+
+
+    /*发弹幕*/
+   /* function  run(){
+        var  speed=26;
+        mathBottom=Math.floor(Math.random()*(window_height-130+1)+130);
+        mathBottom=window_height-60;
+        bottom=mathBottom;
+        var  info=$('input[name=info]').val();
+         (info == '' ) ?  info='请填写弹幕文字' : info=info;
+
+        if(info == ''){
+            return;
+        }else {
+
+        var  item={
+            // 'img':'img/heisenberg.png',
+            'info':info,
+            'close':false,
+            'speed':speed,
+            'bottom':bottom,
+            'color':'#d69990',
+            'old_ie_color':'#d69990'
+        };
+        $('.message-content').barrager(item);
+      }
+
+      /!*抽奖弹窗*!/
+      QuanDialog(2);
+    }*/
+
+
+</script>
+
+</body>
+</html>

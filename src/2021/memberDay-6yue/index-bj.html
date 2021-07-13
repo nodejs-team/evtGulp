@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main-bj.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+<!--公共头部-->
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="back-old">
+            <a href="#"><img src="https://mall.mcake.com//static/img/back-old.png" /></a>
+        </div>
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+<!--公共头部 end-->
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+
+    <div class="sec-banner bj" data-anim="fade-in" data-delay="0.2"></div>
+
+    <div class="sec-1" data-anim="fade-in" data-delay="0.2">
+        <div class="evt-content  clearfix">
+            <div class="hy-title" data-anim="slide-up" data-delay="0.2"><img src="images/hy-title-1.png" alt=""></div>
+            <div class="jiang-wrap" data-anim="slide-up" data-delay="0.2">
+                <div class="jiang jiang-1 clearfix">
+                    <ul class="clearfix choujiang">
+                        <li class="award-1 on"><div class="award"></div></li>
+                        <li class="award-2"><div class="award"></div></li>
+                        <li class="award-4"><div class="award"></div></li>
+                        <li class="award-3"><div class="award"></div></li>
+                    </ul>
+                    <div class="confirm confirm-1"></div>
+                </div>
+                <div class="jiang jiang-2 bj clearfix">
+                    <ul class="clearfix choujiang">
+                        <li class="award-5 on"><div class="award"></div></li>
+                        <li class="award-6"><div class="award"></div></li>
+                        <li class="award-8"><div class="award"></div></li>
+                        <li class="award-7"><div class="award"></div></li>
+                    </ul>
+                    <div class="confirm confirm-2"></div>
+                </div>
+            </div>
+            <div class="tip-1" data-anim="slide-up" data-delay="0.2"><img src="images/tip-1.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="sec-cake" id="cake">
+        <div class="hy-title" data-anim="slide-up" data-delay="0.4"><img src="images/hy-title-2.png" alt=""></div>
+        <div class="evt-content pro-list clearfix">
+            <div class="row row1"data-pond="1磅,2磅" data-weight="454g,908g" data-postid="01,1" data-price="218,318" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31" data-anim="slide-up" data-delay="0.4">
+                <div class="cake"><img src="images/cake-5-bj.png"/>
+                     <div class="icon"></div>
+                </div>
+                <div class="price js_price">
+                    <h2>满减价：<i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
+                    <div class="buy-btns clearfix">
+                        <ul class="buy_btn_box clearfix">
+                            <li class="fr"><span class="buy_btn">立即购买</span></li>
+                        </ul>
+                        <div class="bangshu">
+                            <dl class="clearfix">
+                                <dd class="nopoint minus"></dd>
+                                <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                                <dd class="nopoint plus"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row1" data-pond="1磅,2磅" data-weight="454g,908g" data-postid="01,1" data-price="218,318" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31" data-anim="slide-up" data-delay="0.4">
+                <div class="cake"><img src="images/cake-2.png"/>
+                     <div class="icon"></div>
+                </div>
+                <div class="price js_price">
+                    <h2>
+                        满减价：<i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
+                    <div class="buy-btns clearfix">
+                        <ul class="buy_btn_box clearfix">
+                            <li class="fr"><span class="buy_btn">立即购买</span></li>
+                        </ul>
+                        <div class="bangshu">
+                            <dl class="clearfix">
+                                <dd class="nopoint minus"></dd>
+                                <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                                <dd class="nopoint plus"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row1" data-pond="1磅,2磅" data-weight="454g,908g" data-postid="01,1" data-price="218,318" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31" data-anim="slide-up" data-delay="0.4">
+                <div class="cake"><img src="images/cake-3.png"/>
+                    <div class="icon"></div>
+                </div>
+                <div class="price js_price">
+                    <h2>满减价：<i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
+                    <div class="buy-btns clearfix">
+                        <ul class="buy_btn_box clearfix">
+                            <li class="fr"><span class="buy_btn">立即购买</span></li>
+                        </ul>
+                        <div class="bangshu">
+                            <dl class="clearfix">
+                                <dd class="nopoint minus"></dd>
+                                <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                                <dd class="nopoint plus"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row1" data-pond="1磅,2磅" data-weight="454g,908g" data-postid="01,1" data-price="218,318" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31" data-anim="slide-up" data-delay="0.4">
+                <div class="cake"><img src="images/cake-4.png"/>
+                    <div class="icon"></div>
+                </div>
+                <div class="price js_price">
+                    <h2>满减价：<i>￥</i><span class="dis-price">178</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198</b></s></h2>
+                    <div class="buy-btns clearfix">
+                        <ul class="buy_btn_box clearfix">
+                            <li class="fr"><span class="buy_btn">立即购买</span></li>
+                        </ul>
+                        <div class="bangshu">
+                            <dl class="clearfix">
+                                <dd class="nopoint minus"></dd>
+                                <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                                <dd class="nopoint plus"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则:</h2>
+                <p>1、活动时间：2021年6月1日-2021年6月30日（每周二上午10：00）</p>
+                <p>2、活动城市：北京</p>
+                <p>3、支付方式：微信、支付宝，本活动仅限使用微信、支付宝全额支付的用户参与</p></p>
+                <p>4、活动内容：<br>
+                活动页面购买巧克力黑兰、Mojito柠·漾、香溢新芝、爱丽丝花境，满198元立减15元，满298元立减30元（仅1/2磅参加）</p>
+                <p>5、每位用户参与积分抽奖，每种形式限玩一次，所领福利不与平台其它优惠同享，有效期：自领取之日起至6月30日有效</p>
+                <p> 6、本活动与会员等级制度、积分同享，但不与其他优惠同享</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Dialogbg-quan"></div>
+<div class="Dialog-quan">
+    <div class="closes"></div>
+    <div class="quan quan-1" style="display: block;"></div>
+    <div class="quan quan-2"></div>
+    <div class="quan quan-3"></div>
+    <div class="quan quan-4"></div>
+    <div class="quan quan-5"></div>
+    <div class="quan quan-6 bj"></div>
+    <div class="quan quan-7"></div>
+    <div class="quan quan-8"></div>
+</div>
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2020/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2020/pc/common/main.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/slider-new.js"></script>
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script>
+
+function jiang(ele,num,random,min,max) {
+  var timer = setInterval(function () {
+    if(num>=max){
+      num=min;
+    }
+    ele.parents(".jiang").find(".choujiang li.award-"+num+"").addClass("on").siblings().removeClass("on");
+    num++;
+  },150);
+  setTimeout(function () {
+    num=random;
+    clearInterval(timer);
+      /*获得奖品*/
+    QuanDialog(num);
+    console.log(num)
+    ele.parents(".jiang").find(".choujiang li.award-"+num+"").addClass("on").siblings().removeClass("on");
+  },3000);
+}
+
+  $(".jiang").each(function () {
+    $(this).find(".confirm-1").click(function () {
+      var random= 2; /*1-4*/
+      var num = 0;
+      jiang($(this),num,random,0,5);
+    });
+    $(this).find(".confirm-2").click(function () {
+      var random= 6; /*5-8*/
+      var num = 5;
+      jiang($(this),num,random,5,9);
+    });
+  })
+</script>
+</body>
+</html>

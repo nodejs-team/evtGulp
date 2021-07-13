@@ -1,0 +1,378 @@
+.hongbao{position: fixed; top: 0; width: 100%; height: 100%;z-index: 10;}
+.nov-float {
+	position: fixed;
+	top: 180px;
+	left: calc(50% - 740px);
+	z-index: 88
+}
+
+.hob-inlet {
+	position: fixed;
+	width: 756px;
+	height:597px;
+	/*top:50%;left: 50%; margin-top: -180px; margin-left: 216px;*/
+	top: 50%;
+	left:50%; margin-left: -378px; margin-top: -298.5px;
+	z-index: 15;
+    display: none;
+}
+
+.hob-inlet-03 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: contain;
+	background-image: url(../images/hob-inlet-03-v2.png);
+	z-index: 1
+}
+
+.hob-inlet-02 {
+	position: absolute;
+	width: 738px;
+	height:388px;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: contain;
+	background-image: url(../images/tcc.png);
+	z-index: 2
+}
+
+.hob-inlet-01 {
+	position: absolute;
+	width: 756px;
+	height:597px;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: contain;
+	background-image: url(../images/tcc.png);
+	z-index: 3
+}
+
+.fls-btn{position: absolute; bottom: 73px;  width: 206px;  z-index: 15; cursor: pointer; }
+.fls1{left:50%; margin-left: -100px;}
+.fls2{left:50%; margin-left: 100px;}
+
+.hob-inlet:not(.disable) .hob-inlet-02 {
+	animation: hob_shake 1s infinite
+}
+
+.hob-inlet:not(.disable):hover .hob-inlet-02 {
+	animation: hob 1s 1
+}
+
+.for-get-now {
+	z-index: 33;
+	animation: hob_btn 2.5s infinite
+}
+
+
+
+
+@keyframes hob_shake {
+	15%,45% {
+		-webkit-transform: rotate(3deg);
+		transform: rotate(3deg);
+		transform-origin: 50% 100%
+	}
+
+	30% {
+		-webkit-transform: rotate(-3deg);
+		transform: rotate(-3deg);
+		transform-origin: 50% 100%
+	}
+
+	60%,100% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		transform-origin: 50% 100%
+	}
+}
+
+@keyframes hob {
+	10%,30%,50% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px)
+	}
+
+	20%,40% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px)
+	}
+
+	60%,100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+}
+
+@keyframes hob_btn {
+	10%,30%,50%,70%,90% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+
+	20%,40%,60%,80% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9)
+	}
+}
+
+.hob-mb {
+	display: none
+}
+
+@media(max-width:1400px) {
+	.nov-float {
+		left: 0;
+		transform: scale(.7)
+	}
+}
+
+@media(max-width:1199px) {
+	.nov-float {
+		display: none
+	}
+}
+
+@media(max-width:768px) {
+	.mb-nav {
+		position: fixed;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		font-size: 0;
+		text-align: center;
+		z-index: 66;
+		background-image: linear-gradient(0deg,#FFE6C8 0%,#FEFCF9 100%);
+		box-shadow: 6px 2px 9px 0 rgba(110,33,12,.34)
+	}
+
+	.mb-nav a {
+		display: inline-block;
+		width: 33.333333%;
+		padding: 5px 0;
+		color: #f66f6a;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 20px
+	}
+
+	.mb-nav a.active {
+		color: #fff;
+		background-image: linear-gradient(-13deg,#6A00FF 0%,#ED0F55 100%)
+	}
+
+	.hob-mb {
+		display: block;
+		position: fixed;
+		width: 58px;
+		height: 67px;
+		right: 0;
+		top: 30%;
+		z-index: 8
+	}
+
+	.hob-mb .hob-inlet {
+		display: block;
+		width: 58px;
+		height: 67px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url(../images/hob-inlet-02-v2.png)
+	}
+
+	.hob-mb.disable {
+		display: none
+	}
+}
+
+.hongbao-wrapper {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width:100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	z-index: 200
+}
+
+.hongbao-wrapper i {
+	display: block; z-index:8;
+	position: absolute; cursor: pointer;
+	width: 74px;
+	height: 156px;
+	top: -200px;
+	background: url(../images/iceCream-1.png) center no-repeat; background-size: 100%;
+	/*-webkit-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	transform: rotate(-15deg);*/
+	-webkit-transition: 1s transform;
+	-moz-transition: 1s transform;
+	-ms-transition: 1s transform;
+	-o-transition: 1s transform;
+	transition: 1s transform
+}
+.hongbao-wrapper i b{ position: absolute; top: -5px; right: -5px; color: #ffdf83; font-size: 20px; opacity: 0; }
+
+.hongbao-wrapper i.gethb b{ transition: all 0.2s; top: -20px; right: -20px; opacity:0.9;}
+
+.hongbao-wrapper i.rotate {
+	-webkit-transform: rotate(7200deg);
+	-ms-transform: rotate(7200deg);
+	-o-transform: rotate(7200deg);
+	transform: rotate(7200deg)
+}
+
+.hob-cd {
+	position: absolute;
+	color: #fff;
+	font-size: 18px;
+	top: 70px; width: 170px;
+	left:50%; margin-left: -85px; text-align: center;z-index: 33;
+}
+.time{ position: absolute; top: 0; right: 0; line-height:24px; }
+.btn-red {
+	position: absolute;
+	color: #fff;
+	font-size:20px;
+	top: 30px; width: 838px;
+	left:50%; margin-left: -419px; text-align: center; z-index: 10;
+}
+
+.flower-cake {
+	position: absolute;
+	color: #fff;
+	font-size: 30px;
+	bottom: 0; z-index: 1;
+	left:50%; margin-left:-307px; margin-bottom: -100px;
+}
+
+.flowers{
+	position: absolute;
+	color: #fff;
+	font-size: 30px; width: 60px; height: 60px;
+	bottom: 0; z-index: 2; background: url("../images/pumpkin-1.png"); background-size: 100%;
+	left:50%; display: none;
+}
+
+.flower-1{margin-left:30px; margin-bottom:170px;}
+.flower-2{margin-left:60px; margin-bottom:130px;}
+.flower-3{margin-left:0px; margin-bottom:40px;}
+
+
+.btn-s { color: #fff; line-height: 30px; text-align: center; width: 130px; margin: 10px auto; }
+
+
+
+.hob-close,.mod-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 0;
+	right: 0;
+	cursor: pointer;z-index: 30; background: url("../images/close.png") center no-repeat;
+}
+.mod-close{ top:10px; right:61px;}
+.hob-inlet .mod-close{ top:10px; right:61px;}
+
+
+.mod-close::before,.mod-close::after{background-color: #ffe8d9;}
+
+.shade{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.8; z-index: 14;}
+.shade1{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.8; z-index: 14; display: none;}
+.modal{position: fixed; top: 50%; left: 50%;  width: 756px; height: 597px; margin-left: -378px; margin-top: -298.5px; z-index: 15; display: none;}
+.mod-body{width: 756px; height: 597px; display: none;}
+.quan-1{ background: url("../images/quan-1.png") no-repeat; background-size: 100%;}
+.quan-2{ background: url("../images/quan-2.png") no-repeat; background-size: 100%;}
+.quan-3{ background: url("../images/quan-3.png") no-repeat; background-size: 100%;}
+.quan-4{ background: url("../images/quan-4.png") no-repeat; background-size: 100%;}
+.txt{position: absolute; width: 100%; height:100%; top: 0; left:0; color: #b80709; text-align: center;}
+.txt h2{font-size:30px; margin-bottom: 10px;}
+.txt h3{font-size:18px; margin-bottom: 10px;}
+.txt p{font-size:18px; margin-bottom: 30px;}
+.txt .flower-num{ position: absolute; top:-3px; left: 356px; font-size: 18px; width: 35px; line-height: 24px; }
+.txt .go-use{position: absolute; bottom: 80px; left: 50%; width: 206px;  z-index: 15; cursor: pointer; margin-left: -103px;}
+.mod-body{position: relative; display: none; }
+
+
+[mod-relation=hobCoupon] {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}[mod-relation=hobCoupon] p {
+	margin-bottom: 20px
+}
+
+.mod-footer { position: relative; height: 78px;
+	background: #feefd7
+}
+
+.hobCoupon-img {
+	margin: 0 auto
+}
+
+@media (max-width: 1600px) {
+	.hob-inlet {width: 620px; height:490px;margin-left: -310px; margin-top: -245px;}
+	.hob-inlet-01 {width: 620px; height:490px;}
+	.fls-btn{ bottom: 43px; width: 168px; margin-left: -84px; }
+	.fls-btn img,.btn-red img,.txt .go-use img{width: 100%;}
+	.btn-red {width: 500px;margin-left: -250px;}
+	.modal{width: 620px;height: 490px; margin-left: -310px; margin-top: -245px;}
+	.mod-body{width: 620px; height: 490px; display: none;}
+	.txt .go-use{ bottom: 70px; width: 168px; margin-left: -84px;}
+}
+
+@media(max-width:768px) {
+[	mod-relation=hobCoupon] h5 {
+		font-size: 20px
+	}
+
+	.hobCoupon-img {
+		max-width: 100%
+	}
+
+	.hob-cd {
+		top: 80px;
+		left: 30px
+	}
+
+	.hob-close {
+		top: 20px;
+		right: 20px
+	}
+}
+
+@media(max-width:720px) {
+}
+
+@media(max-width:480px) {
+}
+
+@media(max-width:414px) {
+}
+
+@media(max-width:375px) {
+}
+
+@media(max-width:360px) {
+[	mod-relation=hobCoupon] h5 {
+		font-size: 18px
+	}
+}
+
+@media(max-width:320px) {
+[	mod-relation=hobCoupon] h5 {
+		font-size: 16px
+	}
+}
