@@ -9,27 +9,6 @@
     $("html,body").animate({scrollTop: 0},500);
 
 
-    if(!isSupportCss3){
-      $(".swipe-cake").html('<img src="https://act.mcake.com/fangli/2021/pc/summer/images/img-1.png" width="100%" alt="">');
-    }else{
-      var swiper1 = new Swiper('.swiper1', {
-        pagination: '.pagination1',
-        paginationClickable: true,
-        grabCursor: true,
-        loop:true,
-        speed:800,
-        autoplay : 5000,
-        autoplayDisableOnInteraction : true
-      });
-      $(".swipe-cake").hover(function () {
-        swiper1.stopAutoplay();
-      },function () {
-        swiper1.startAutoplay();
-      });
-
-    }
-
-
   };
 
   var loadResource = function(){

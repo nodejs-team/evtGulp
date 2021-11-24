@@ -4,12 +4,12 @@ $(function() {
     function hobYU(callBack) {
         $('.hongbao-wrapper').fadeIn();
         var h_con = 0,
-            speed = 500,/*下红包个数200*/
+            speed = 700,/*下红包个数200,值越大越少*/
             isPc;
         var HONGBAO = setInterval(function() {
             var _r = ['88%', '90%', '98%', '100%'];
             var _w = ['49%','49.8%', '50%', '51%'];
-            var _src = ['1','2', '3'];
+            var _src = ['1','2', '3', '4'];
             $(window).width() > 800 ? isPc = 0 : isPc = 1;
 
            /* var HTML_i = $('<i style="background-size:' + _r[parseInt(Math.random() * 4)] + ';top:' + -200+'px; left:' + (parseInt(Math.random() * 20) - isPc) * 20 + '%"><b>+1</b></i>');*/
@@ -44,9 +44,9 @@ $(function() {
             /*倒计时*/
            // $('.time').html(10 - parseInt(h_con / 20) + 's');   /*100除以20等于5分钟*/
 
-          $('.time').html(10 - parseInt(h_con / 2) + 's');  /*1000（1分钟）/speed(200)=5*/
+          $('.time').html(10 - parseInt(h_con / 2) + 's');  /*1000（1分钟）/speed(700)=1.4*/
 
-            if (h_con === 20) {  /* 20*5 = 1000*/
+            if (h_con === 14) {  /* 10*1.4 = 14*/
                 clearTimeout(HONGBAO);
                 var _x = $('.hob-inlet').offset().left - $(window).scrollLeft() + 60,
                     _y = $('.hob-inlet').offset().top - $(window).scrollTop() + 50;

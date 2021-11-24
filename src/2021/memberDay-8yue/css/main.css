@@ -1,0 +1,416 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #ade8ff;
+}
+
+.sec-banner {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url("../images/banner.png") bottom center no-repeat;
+  height: 767px;
+}
+
+.sec-banner.bj {
+  background: url("../images/bj/banner.png") bottom center no-repeat;
+}
+
+.hy-title {
+  margin: 0 auto;
+  width: 1014px;
+  padding: 70px 0 40px;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  width: 83px;
+  height: 88px;
+  right: 20px;
+  top: 0;
+}
+
+.icon_15 {
+  background: url("../images/icon-15.png") no-repeat;
+}
+
+.icon_30 {
+  background: url("../images/icon-30.png") no-repeat;
+}
+
+.buy-btn {
+  width: 166px;
+  height: 41px;
+  background: url("../images/go-btn.png") no-repeat;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.buy_btn {
+  width: 146px;
+  height: 36px;
+  background: url("../images/go-buy.png") no-repeat;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.sec-1 {
+  position: relative;
+  z-index: 2;
+  height: 1423px;
+  background: url("../images/sec-1.png") top center no-repeat;
+  overflow: hidden;
+}
+
+.sec-1.bj {
+  height: 844px;
+  background: url("../images/bj/sec-1.png") top center no-repeat;
+}
+
+.sec-1 .evt-content {
+  text-align: center;
+}
+
+.sec-1 .doudou {
+  position: relative;
+  width: 802px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.sec-1 .doudou .buy-btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -83px;
+}
+
+.sec-1 .break {
+  padding-top: 120px;
+}
+
+.sec-1 .break .break-content {
+  position: absolute;
+  width: 974px;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -487px;
+}
+
+.sec-1 .break .break-content .item {
+  float: left;
+  width: 352px;
+}
+
+.sec-1 .break .break-content .item.item-1 {
+  width: 353px;
+}
+
+.sec-1 .break .break-content .item.item-2 {
+  width: 274px;
+}
+
+.sec-1 .break .break-content .item.item-3 {
+  width: 340px;
+}
+
+.sec-1 .snack {
+  padding-top: 120px;
+}
+
+.sec-1 .snack .select-wrap {
+  position: absolute;
+  width: 800px;
+  height: 25px;
+  bottom: 143px;
+  left: 50%;
+  margin-left: -400px;
+}
+
+.sec-1 .snack .select-wrap i {
+  position: absolute;
+  left: 12px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("../images/bj/select.png") no-repeat;
+  cursor: pointer;
+}
+
+.sec-1 .snack .select-wrap i.cur {
+  background: url("../images/bj/select-on.png") no-repeat;
+}
+
+.sec-1 .snack .select-wrap .select-2 {
+  left: 500px;
+}
+
+.sec-1 .snack .buy-btn {
+  position: absolute;
+  width: 142px;
+  height: 36px;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -83px;
+  background: url("../images/bj/go-btn.png") no-repeat;
+}
+
+.sec-cake {
+  position: relative;
+  z-index: 1;
+  height: 1576px;
+  background: url("../images/sec-2.png") center repeat-y;
+}
+
+.sec-cake.bj {
+  height: 1619px;
+  background: url("../images/bj/sec-2.png") top center no-repeat;
+}
+
+.sec-cake .evt-content {
+  width: 1052px;
+}
+
+.sec-cake .evt-content .row {
+  position: relative;
+  width: 523px;
+  float: left;
+  margin: 0 auto 40px;
+  overflow: hidden;
+}
+
+.sec-cake .evt-content .row .price {
+  position: absolute;
+  left: 0;
+  bottom: 89px;
+}
+
+.sec-cake .evt-content .more {
+  width: 101px;
+  margin: 0 auto;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  height: 575px;
+  background: url("../images/sec-3.png") top center repeat-y;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #000;
+}
+
+.evt-footer .evt-rules {
+  width: 866px;
+  margin: 0 auto;
+  padding: 100px 0 140px 20px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.evt-footer .evt-rules .p {
+  padding-left: 30px;
+}
+
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*价格样式 通用*/
+.price {
+  position: relative;
+  width: 523px;
+  text-align: left;
+}
+
+.price h2 {
+  position: relative;
+  margin: 16px auto;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #010101;
+  text-align: center;
+}
+
+.price h2 i {
+  font-size: 14px;
+  font-style: normal;
+  vertical-align: baseline;
+}
+
+.price h2 span {
+  font-size: 28px;
+}
+
+.price s {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  text-decoration: sh;
+  margin-left: 5px;
+  color: #919191;
+}
+
+.price b {
+  font-weight: normal;
+}
+
+.price em {
+  font-style: normal;
+}
+
+.price .price-title {
+  font-size: 30px;
+  color: #d64244;
+  margin: 20px auto 20px !important;
+  text-align: center;
+}
+
+/*换购*/
+.price .huangou {
+  position: relative;
+  width: 210px;
+  font-size: 18px;
+  color: #5c4c0d;
+  margin: 10px auto;
+  cursor: pointer;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.price .huangou .icnone {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 1;
+}
+
+.price .huangou .icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+}
+
+.price .huangou {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*订购，加入购物清单*/
+.price ul.buy_btn_box {
+  overflow: hidden;
+  width: 175px;
+  margin: 5px auto;
+  float: left;
+}
+
+.buy_btn {
+  float: left;
+}
+
+.buy-btns {
+  width: 305px;
+  margin: 0 auto;
+}
+
+.buy-btns.one {
+  width: 148px;
+}
+
+.bangshu {
+  position: relative;
+  width: 148px;
+  height: 36px;
+  margin: 0 0 5px 10px;
+  float: left;
+  background: url("../images/bang.png");
+  /*加减按钮*/
+}
+
+.bangshu dt {
+  float: left;
+  width: 148px;
+  text-align: center;
+  line-height: 34px;
+}
+
+.bangshu dt span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+}
+
+.bangshu .nopoint {
+  position: absolute;
+  top: -4px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: url("../images/nopoint.png") no-repeat;
+  background-size: 100%;
+}
+
+.bangshu .nopoint.plus {
+  left: auto;
+  right: -10px;
+}

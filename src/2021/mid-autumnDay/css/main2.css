@@ -1,0 +1,463 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #ffc98c;
+  text-align: center;
+}
+
+.sec-banner {
+  position: relative;
+  max-width: 1920px;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.sec-banner img {
+  width: 100%;
+  display: block;
+}
+
+.sec-banner .cake {
+  position: absolute;
+  width: 1111px;
+  bottom: -210px;
+  left: 50%;
+  margin-left: -425px;
+}
+
+.hy-title {
+  display: inline-block;
+  margin: 0 auto 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.sec-1 {
+  position: relative;
+  height: 1259px;
+  background: url("../images/by/sec-1.png") top no-repeat;
+  z-index: 1;
+}
+
+.sec-1 .evt-content {
+  width: 1376px;
+}
+
+.sec-1 .txt {
+  position: relative;
+  width: 216px;
+  padding-top: 180px;
+  margin: 0 auto;
+}
+
+.sec-1 .card {
+  position: relative;
+  margin-top: 50px;
+}
+
+.sec-1 .card img {
+  width: 100%;
+  display: block;
+}
+
+.sec-1 .btn-dh {
+  width: 387px;
+  height: 102px;
+  background: url("../images/by/btn-dh.png");
+  margin: 60px auto 0;
+}
+
+.sec-2 {
+  position: relative;
+  height: 2828px;
+  background: url("../images/by/sec-2.png") top no-repeat;
+  z-index: 1;
+}
+
+.sec-2 .evt-content {
+  width: 1100px;
+}
+
+.sec-2 ul {
+  margin-left: -72px;
+}
+
+.sec-2 ul li {
+  float: left;
+  width: 462px;
+  margin-left: 106px;
+  margin-bottom: 60px;
+}
+
+.sec-2 ul li img {
+  width: 100%;
+}
+
+.sec-2 ul li .goubtn {
+  width: 158px;
+  height: 46px;
+  background: url("../images/by/gobuy.png");
+  cursor: pointer;
+  margin: 10px auto 0;
+}
+
+.sec-2 .more {
+  width: 127px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.evt-footer {
+  z-index: 1;
+  text-align: left;
+  height: 1027px;
+  background: url("../images/by/sec-3.png") top no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.evt-footer .evt-content {
+  width: 1229px;
+  color: #d0bdac;
+  padding-top: 117px;
+}
+
+/*蛋糕选择弹窗*/
+.Dialogbg-Select {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  display: none;
+  -moz-opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.Dialog-Select {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 0 #999;
+  font-size: 14px;
+  width: 520px;
+  height: auto;
+  margin-top: -210px;
+  margin-left: -260px;
+  left: 50%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  z-index: 99999;
+  border-radius: 10px;
+  display: none;
+}
+
+.s-closes {
+  position: absolute;
+  right: -30px;
+  top: 8px;
+  width: 17px;
+  height: 17px;
+  background: url("../images/close.png");
+  cursor: pointer;
+}
+
+.Select {
+  position: relative;
+  color: #000;
+  height: 100%;
+  text-align: left;
+}
+
+.Select .s-title {
+  height: 96px;
+  background: #f2f2f2;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Select .s-title h2 {
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.Select .s-title b {
+  font-size: 14px;
+  color: #9a9a9a;
+  font-weight: normal;
+  padding-left: 40px;
+}
+
+.Select .s-bangshu {
+  padding-top: 30px;
+}
+
+.Select .s-bangshu ul {
+  margin-left: 40px;
+}
+
+.Select .s-bangshu ul li {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  text-align: center;
+  color: #4a4a4a;
+  margin-right: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.Select .s-bangshu ul li i {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.Select .s-bangshu ul li.on {
+  background: #c2dbc2;
+  color: #00270a;
+}
+
+.Select .s-bangshu ul li.ie8 {
+  padding-top: 15px;
+  height: 45px;
+}
+
+.Select .d-tips {
+  padding: 15px 40px;
+  color: #4c4c4c;
+  font-size: 12px;
+}
+
+.Select .s-num {
+  border-top: #ededed 1px solid;
+  padding-left: 40px;
+}
+
+.Select .s-num b {
+  display: inline-block;
+  width: 200px;
+  margin: 10px 0;
+  line-height: 52px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-num .nums {
+  display: inline-block;
+  margin: 15px 40px 0;
+  float: right;
+  height: 52px;
+  position: relative;
+  width: 150px;
+}
+
+.Select .s-num .nums a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2px;
+}
+
+.Select .s-num .nums .minus {
+  background: url("../images/btn-1.png") center no-repeat;
+  background-size: 100%;
+  left: 0;
+}
+
+.Select .s-num .nums .plus {
+  background: url("../images/btn-2.png") center no-repeat;
+  background-size: 100%;
+  right: 0;
+}
+
+.Select .s-num .nums input {
+  background: none;
+  border: none;
+  display: block;
+  font-size: 26px;
+  line-height: 45px;
+  left: 35px;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 80px;
+  color: #000;
+}
+
+.Select .s-prices {
+  border-top: #ededed 1px solid;
+  font-size: 22px;
+  padding: 0 40px;
+}
+
+.Select .s-prices b {
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+  line-height: 56px;
+  float: left;
+  font-size: 16px;
+  color: #737373;
+  font-weight: normal;
+}
+
+.Select .s-prices p {
+  display: block;
+  line-height: 56px;
+  text-align: right;
+}
+
+.Select .s-prices span {
+  font-size: 26px;
+}
+
+.Select .s-prices i {
+  font-style: normal;
+  font-size: 16px;
+}
+
+.Select .s-prices s {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.Select .btns {
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  height: 55px;
+  line-height: 55px;
+  flex-direction: row;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+
+.Select .btns div {
+  flex: 1;
+  cursor: pointer;
+  width: 100%;
+}
+
+.Select .btns .go-car {
+  background: #c2dbc2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  float: left;
+  color: #00270a;
+  width: 100%;
+}
+
+.Select .btns .go-car.on {
+  background: #c2dbc2;
+}
+
+.Select .btns .go-car.ie8, .Select .btns .go-buy.ie8 {
+  width: 100%;
+}
+
+.Select .btns .go-buy {
+  background: #c2dbc2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  float: left;
+  color: #00270a;
+  width: 100%;
+}
+
+.Select .btns .go-buy.on {
+  background: #c2dbc2;
+}
+
+@media (max-width: 1400px) {
+  .sec-banner .cake {
+    width: 800px;
+    bottom: -151px;
+    margin-left: -295px;
+  }
+  .sec-1 {
+    position: relative;
+    height: 1259px;
+    background: url("../images/by/sec-1.png") top no-repeat;
+    z-index: 1;
+  }
+  .sec-1 .evt-content {
+    width: 1100px;
+  }
+  .sec-1 .card {
+    position: relative;
+    margin: 100px auto 50px;
+    width: 1100px;
+  }
+  .sec-1 .card img {
+    width: 100%;
+    display: block;
+  }
+  .sec-1 .btn-dh {
+    width: 387px;
+    height: 102px;
+    background: url("../images/by/btn-dh.png");
+    margin: 10px auto 0;
+  }
+  .sec-2 {
+    position: relative;
+    height: 2410px;
+    background: url("../images/by/sec-2.png") top no-repeat;
+    z-index: 1;
+  }
+  .sec-2 .evt-content {
+    width: 904px;
+    overflow: hidden;
+  }
+  .sec-2 ul {
+    margin-left: -72px;
+  }
+  .sec-2 ul li {
+    float: left;
+    width: 362px;
+    margin-left: 106px;
+    margin-bottom: 80px;
+  }
+  .sec-2 .more {
+    width: 127px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}

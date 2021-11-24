@@ -1,0 +1,193 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  text-align: center;
+}
+
+.sec-banner {
+  overflow: hidden;
+  height: 829px;
+  background: url("../images/banner.png") center no-repeat;
+}
+
+.hy-title {
+  display: inline-block;
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.more {
+  display: inline-block;
+  margin: 80px auto;
+  position: relative;
+}
+
+.goubtn {
+  padding: 20px 0;
+}
+
+.goubtn span {
+  display: inline-block;
+  width: 125px;
+  height: 30px;
+  margin: 0 10px 0 0;
+  background: url("../images/gobuy.png") no-repeat;
+}
+
+.gobuy, .gobuy-end {
+  margin-top: 30px;
+}
+
+.gobuy span, .gobuy-end span {
+  background: url("../images/gobuy.png") no-repeat;
+  width: 158px;
+  height: 46px;
+  display: block;
+  cursor: pointer;
+}
+
+.gobuy-end span {
+  background: url("../images/gobuy-end.png") no-repeat;
+}
+
+.sec-1 {
+  position: relative;
+  height: 2223px;
+  background: url("../images/sec-1.png") center no-repeat;
+}
+
+.sec-1 .evt-content {
+  width: 1334px;
+}
+
+.sec-1 .txt {
+  width: 421px;
+  margin: 0 auto;
+}
+
+.sec-1 .mid {
+  width: 1334px;
+  margin: 50px auto 0;
+}
+
+.sec-1 .mid .go-dh, .sec-1 .mid .go-tel {
+  position: absolute;
+  width: 158px;
+  height: 46px;
+  background: #000;
+  opacity: 0.4;
+  cursor: pointer;
+  bottom: 203px;
+  left: 50%;
+  margin-left: 195px;
+}
+
+.sec-1 .mid .go-tel {
+  margin-left: -400px;
+}
+
+.sec-1 .moon {
+  position: relative;
+  width: 1214px;
+  margin: 0 auto;
+}
+
+.sec-1 .moon.moon-2 .price {
+  top: 391px;
+  left: 131px;
+}
+
+.sec-1 .moon .price {
+  position: absolute;
+  top: 328px;
+  left: 774px;
+}
+
+.sec-2 {
+  position: relative;
+  height: 1266px;
+  background: url("../images/sec-2.png") center no-repeat;
+  overflow: hidden;
+}
+
+.sec-2 .evt-content {
+  width: 1368px;
+}
+
+.sec-2 .moon {
+  width: 1142px;
+  margin: 50px auto 135px;
+}
+
+.sec-2 .quan {
+  width: 1368px;
+  margin: 0 auto;
+}
+
+.sec-3 {
+  height: 1392px;
+  background: url("../images/sec-3.png") center bottom no-repeat;
+}
+
+.sec-3 .evt-content {
+  width: 1229px;
+}
+
+.sec-3 .guize {
+  width: 1229px;
+}
+
+@media (max-width: 1400px) {
+  .sec-1 .evt-content {
+    width: 1280px;
+  }
+  .sec-1 .mid {
+    width: 1280px;
+  }
+  .sec-1 .mid img {
+    width: 100%;
+  }
+  .sec-1 .mid .go-dh {
+    bottom: 194px;
+    margin-left: 184px;
+  }
+  .sec-2 .evt-content {
+    width: 1280px;
+  }
+  .sec-2 img {
+    width: 100%;
+  }
+  .sec-2 .moon {
+    width: 1142px;
+  }
+  .sec-2 .quan {
+    width: 1280px;
+  }
+}

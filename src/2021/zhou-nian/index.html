@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="https://mall.mcake.com//static/css/reset.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/idangerous.swiper.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+
+</head>
+<body>
+<div class="home-header clear">
+    <div class="header-left">
+        <div class="logo">
+            <a href="#"><img src="https://mall.mcake.com//static/img/logo.png" alt="MCAKE"/></a>
+        </div>
+        <div class="location">
+            <a class="location-a">
+                <img class="location-b" src="https://mall.mcake.com//static/img/icon05.png" alt="定位"/>
+                <span class="now-city"> 上海市</span>
+            </a>
+        </div>
+        <div class="products">
+            <img class="head-icon" src="https://mall.mcake.com//static/img/icon01.png"/>
+            <span class="head-span">所有产品</span>
+            <i class="i-line"></i>
+        </div>
+        <div class="home">
+            <a href="#">
+                <img class="head-icon head0" src="https://mall.mcake.com//static/img/home.png"/>
+                <span class="head-span">首页</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="cakes">
+            <a href="#">
+                <img class="head-icon head01" src="https://mall.mcake.com//static/img/1.png"/>
+                <span class="head-span">蛋糕</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="smalls">
+            <a href="#">
+                <img class="head-icon1 head02" src="https://mall.mcake.com//static/img/2.png"/>
+                <span class="head-span">小食</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="acts">
+            <a href="#">
+                <img class="head-icon head03" src="https://mall.mcake.com//static/img/3.png"/>
+                <span class="head-span">最新活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="bds">
+            <a href="#">
+                <img class="head-icon1 head04" src="https://mall.mcake.com//static/img/4.png"/>
+                <span class="head-span">银行活动</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+        <div class="members">
+            <a onclick="javascript:(mcake.user.isLogin?window.location.href='/user/info':mcake.msg.confirm('请登录后操作',function() {layer.closeAll();$('.login').click();}));">
+                <img class="head-icon head05" src="https://mall.mcake.com//static/img/5.png"/>
+                <span class="head-span">会员中心</span>
+                <i class="i-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header-right">
+
+        <div class="login">
+            <img src="https://mall.mcake.com//static/img/login.png" alt="登陆"/>
+            <span class="head-span">我的</span>
+        </div>
+        <div class="mycar">
+            <img class="bag1" src="https://mall.mcake.com//static/img/bag1.png" alt="购物车"/>
+            <i class="mycar-num"></i>
+            <span class="head-span">购物车</span>
+        </div>
+        <div class="activity">
+            <img class="icon02" src="https://mall.mcake.com//static/img/icon02.png" alt="活动"/>
+            <span class="head-span">更多</span>
+            <!-- <img class="icon03" src="/static/img/icon03.png" alt="Navigation"/> -->
+        </div>
+    </div>
+    <!-- 挡板 -->
+    <div class="blank"></div>
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container" style="padding-top: 120px;">
+   <!-- <div class="floater">
+        <img src="images/float.png" alt="">
+    </div>-->
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2">
+        <div class="banner-txt"><img src="images/banner-txt.png" alt="" style="display: none;"></div>
+        <div class="banner-txt"><img src="images/bannerb-txt.png" alt="" style="display: none;"></div>
+        <!--北京-->
+        <div class="banner-txt"><img src="images/bannerb-txt-2.png" alt="" style="display: none;"></div>
+        <div class="banner-txt"><img src="images/bannerc-txt.png" alt=""></div>
+    </div>
+
+    <!--主体部分-->
+    <div class="sec-main">
+        <div class="main">
+
+            <!--tab切换 日期切换-->
+            <div class="tab-bar">
+                <span></span>
+                <span></span>
+                <span class="cur"></span>
+            </div>
+            <!--祝福视频-->
+            <div class="sec-video floatCss">
+                <div class="evt-content">
+                    <div id="videox">
+                        <video controls="controls" preload="auto" loop="loop" autoplay="autoplay"  poster="https://act.mcake.com/fangli/2021/pc/zhou-nian/images/zhou-nian.jpg" id="video"  -webkit-playsinline="true" src="https://video.mcake.com/2021/10year/10year.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!--子导航切换-->
+            <div class="sub-bar">
+                <div class="sec-title">
+                    <ul class="clearfix">
+                        <li class="wxlink"><img src="images/part-a-1.png" class="scale" alt=""></li>
+                        <li class="cakelink"><img src="images/part-a-2.png" class="scale" alt=""></li>
+                        <li class="hllink"><img src="images/part-a-3.png" class="scale" alt=""></li>
+                    </ul>
+                </div>
+                <div class="sec-title">
+                    <ul class="clearfix">
+                        <li class="wxlink"><img src="images/part-b-1.png" class="scale" alt=""></li>
+                        <li class="cake2link"><img src="images/part-b-2.png" class="scale" alt=""></li>
+                        <li class="hllink"><img src="images/part-b-3.png" class="scale" alt=""></li>
+                        <li class="specialCardlink"><img src="images/part-b-4.png" class="scale" alt=""></li>
+                        <li class="breadlink"><img src="images/part-b-5.png" class="scale" alt=""></li>
+                        <!--北京-->
+                        <li class="snacklink" style="display: none;"><img src="images/part-b-6.png" class="scale" alt=""></li>
+                    </ul>
+                </div>
+                <div class="sec-title" style="display: block;">
+                    <ul class="clearfix">
+                        <li class="wxlink"><img src="images/part-c-1.png" class="scale" alt=""></li>
+                       <!-- <li class="cake3link"><img src="images/part-c-2.png" class="scale" alt=""></li>-->
+                        <li class="hllink"><img src="images/part-c-3.png" class="scale" alt=""></li>
+                        <li class="shengbanglink"><img src="images/part-c-4.png" class="scale" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <!--公共部分:微信微博-->
+            <div class="zn-title" id="wx" data-anim="slide-up" data-delay="0.2"><img src="images/part1-title-1.png" alt=""></div>
+            <div class="wx" data-anim="slide-up" data-delay="0.8">
+                <div class="wx-code"><img src="images/wx-code.png" alt=""></div>
+                <div class="jl-pm"><img src="images/jl-pm.png" alt="">
+                    <div class="jp">
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                    </div>
+                    <div class="libao">
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                       <!-- <div class="close"></div>-->
+                    </div>
+                </div>
+            </div>
+
+            <!--主内容切换-->
+            <div class="tab-box">
+                <div class="part part-1">
+                    <!--折扣专场-->
+                    <div class="zn-title" id="cake" data-anim="slide-up" data-delay="0.2"><img src="images/part1-title-2.png" alt=""></div>
+
+                    <div class="sec-cakes" data-anim="slide-up" data-delay="0.2">
+                        <div class="cake product-li">
+                            <ul class="clearfix">
+                                <li>
+                                    <img src="images/img-1.png" class="zoom" alt="">
+                                    <div class="m-title">朗姆醇栗（2磅/908g）</div>
+                                    <div class="m-subtitle">Mont Blanc</div>
+                                    <div class="m-price">专属价￥<span>258.00</span></div>
+                                     <s class="m-old-price">原价￥<span>318.00</span></s>
+                                    <div class="m-car"></div>
+                                    <!--<div class="m-last">剩余：99</div>-->
+                                </li>
+                                <li>
+                                    <img src="images/img-2.png" class="zoom" alt="">
+                                    <div class="m-title">黑森林拿破仑（2磅/908g）</div>
+                                    <div class="m-subtitle">La Forêt noir</div>
+                                    <div class="m-price">专属价￥<span>238.00</span></div>
+                                     <s class="m-old-price">原价￥<span>298.00</span></s>
+                                    <div class="m-car"></div>
+                                </li>
+                                <li>
+                                    <img src="images/img-3.png" class="zoom" alt="">
+                                    <div class="m-title">香溢新芝（2磅/908g）</div>
+                                    <div class="m-subtitle">Fromage Velouté</div>
+                                    <div class="m-price">专属价￥<span>248.00</span></div>
+                                     <s class="m-old-price">原价￥<span>298.00</span></s>
+                                    <div class="m-car"></div>
+                                </li>
+                                <li>
+                                    <img src="images/img-4.png" class="zoom" alt="">
+                                    <div class="m-title">蔓越莓红丝绒（2磅/908g）</div>
+                                    <div class="m-subtitle">Velour rouge</div>
+                                    <div class="m-price">专属价￥<span>248.00</span></div>
+                                    <s class="m-old-price">原价￥<span>298.00</span></s>
+                                    <div class="m-car"></div>
+                                </li>
+                                <li>
+                                    <img src="images/img-5.png" class="zoom" alt="">
+                                    <div class="m-title">花漾·年华（2磅/908g）</div>
+                                    <div class="m-subtitle">Floraison</div>
+                                    <div class="m-price">专属价￥<span>248.00</span></div>
+                                    <s class="m-old-price">原价￥<span>298.00</span></s>
+                                    <div class="m-car"></div>
+                                </li>
+                                <li>
+                                    <img src="images/img-6.png" class="zoom" alt="">
+                                    <div class="m-title">黛西的旅行（2.5磅/1.13kg）</div>
+                                    <div class="m-subtitle">Voyage de Daisy</div>
+                                    <div class="m-price">专属价￥<span>268.00</span></div>
+                                    <s class="m-old-price">原价￥<span>318.00</span></s>
+                                    <div class="m-car"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--满赠-->
+                    <div class="zn-title" id="manzeng" data-anim="slide-up" data-delay="0.2"><img src="images/part1-title-3.png" alt=""></div>
+                    <div class="man-zeng" data-anim="slide-up" data-delay="0.2"><img src="images/man-zeng.png" alt=""></div>
+
+
+                </div>
+                <div class="part part-2 pro-list">
+                    <!--特权卡-->
+                    <div class="zn-title" id="specialCard" data-anim="slide-up" data-delay="0.2"><img src="images/partb-title-2.png" alt=""></div>
+                    <div class="special-card" data-anim="slide-up" data-delay="0.8">
+                        <div class="go-buy"><img src="images/go-buy-1.png" alt=""></div>
+                        <img src="images/card-1.png" alt="">
+                    </div>
+                    <div class="special-card" data-anim="slide-up" data-delay="0.8">
+                        <div class="go-buy"><img src="images/go-buy-2.png" alt=""></div>
+                        <img src="images/card-2.png" alt="">
+                    </div>
+
+                    <!--新品蛋糕-->
+                    <div class="zn-title" id="cake2" data-anim="slide-up" data-delay="0.2"><img src="images/partb-title-3.png" alt=""></div>
+                    <div class="new-cake row"  data-pond="1磅,2磅,3磅,5磅" data-weight="454g,908g,454g,1.502kg" data-postid="01,1" data-price="218,318,428,728" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31" data-anim="slide-up" data-delay="0.4">
+                        <div class="icon"></div>
+                        <div class="price js_price">
+                            <h2>优惠价<i>￥</i><span class="dis-price">178.00</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198.00</b></s></h2>
+                            <div class="buy-btns clearfix">
+                                <div class="buy_btn"></div>
+                                <div class="bangshu">
+                                    <dl class="clearfix">
+                                        <dd class="nopoint minus"></dd>
+                                        <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                                        <dd class="nopoint plus"></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/new-cake.png" alt="">
+                    </div>
+
+                    <!--满赠-->
+                    <div class="zengpin">
+                        <div class="zn-title" id="zeng" data-anim="slide-up" data-delay="0.2">
+                            <img src="images/partb-title-4.png" alt="">
+                            <div class="taggle-wrap">
+                                <div class="taggle taggle-down"></div>
+                            </div>
+                        </div>
+                        <div class="man-zeng" style="display: none;"><img src="images/man-zeng-2.png" alt="">
+                            <div class="taggle taggle-up"></div>
+                        </div>
+                    </div>
+
+                    <!--上海面包-->
+                    <div class="zn-title" id="bread" data-anim="slide-up" data-delay="0.2"><img src="images/partb-title-5.png" alt=""></div>
+                    <div class="sec-cakes" data-anim="slide-up" data-delay="0.2">
+                        <div class="cake product">
+                            <ul class="clearfix">
+                                <li>
+                                    <img src="images/bread-1.png" class="zoom" alt="">
+                                    <div class="m-title">mini红茶奶酥（135g）</div>
+                                    <div class="m-subtitle">mini soufflé au thé noir</div>
+                                    <div class="m-price">抢购价￥<span>9.90</span></div>
+                                    <s class="m-old-price">原价￥<span>13.90</span></s>
+                                    <div class="m-car"></div>
+                                    <!--<div class="m-last">剩余：99</div>-->
+                                    <div class="disCover">
+                                        <div class="cover"></div>
+                                        <div class="last-time">
+                                            <p>抢购时间</p>
+                                            <p>10月23日 12：00</p>
+                                            <p>敬请期待</p>
+                                        </div>
+                                        <div class="sell-out" style="display: none;">
+                                            <p>已售罄</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/bread-2.png" class="zoom" alt="">
+                                    <div class="m-title">精选高纤奶酪（200g）</div>
+                                    <div class="m-subtitle">Fromage riche en fibres</div>
+                                    <div class="m-price">抢购价￥<span>9.90</span></div>
+                                    <s class="m-old-price">原价￥<span>18.80</span></s>
+                                    <div class="m-car"></div>
+                                    <div class="disCover">
+                                        <div class="cover"></div>
+                                        <div class="last-time">
+                                            <p>抢购时间</p>
+                                            <p>10月26日 12：00</p>
+                                            <p>敬请期待</p>
+                                        </div>
+                                        <div class="sell-out" style="display: none;">
+                                            <p>已售罄</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/bread-3.png" class="zoom" alt="">
+                                    <div class="m-title">精选月半蕉（230g）</div>
+                                    <div class="m-subtitle">Banane demi-lune</div>
+                                    <div class="m-price">抢购价￥<span>9.90</span></div>
+                                    <s class="m-old-price">原价￥<span>19.90</span></s>
+                                    <div class="m-car"></div>
+                                    <div class="disCover">
+                                        <div class="cover"></div>
+                                        <div class="last-time">
+                                            <p>抢购时间</p>
+                                            <p>10月29日 12：00</p>
+                                            <p>敬请期待</p>
+                                        </div>
+                                        <div class="sell-out" style="display: none;">
+                                            <p>已售罄</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/bread-4.png" class="zoom" alt="">
+                                    <div class="m-title">精选芒芒哒（200g）</div>
+                                    <div class="m-subtitle">Pain à la mangue</div>
+                                    <div class="m-price">抢购价￥<span>9.90</span></div>
+                                    <s class="m-old-price">原价￥<span>19.90</span></s>
+                                    <div class="m-car"></div>
+                                    <div class="disCover">
+                                        <div class="cover"></div>
+                                        <div class="last-time">
+                                            <p>抢购时间</p>
+                                            <p>11月3日 12：00</p>
+                                            <p>敬请期待</p>
+                                        </div>
+                                        <div class="sell-out" style="display: none;">
+                                            <p>已售罄</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!--北京小食-->
+                    <div class="zn-title" id="snack" data-anim="slide-up" data-delay="0.2"><img src="images/partb-title-6.png" alt=""></div>
+                    <div class="sec-cakes" data-anim="slide-up" data-delay="0.2">
+                        <div class="cake product">
+                            <ul class="clearfix">
+                                <li>
+                                    <img src="images/snack-1.png" class="zoom" alt="">
+                                    <div class="m-title">萝拉小朵原味（100g）</div>
+                                    <div class="m-subtitle">fleurette(original)</div>
+                                    <div class="m-price">抢购价￥<span>19.90</span></div>
+                                    <s class="m-old-price">原价￥<span>48.00</span></s>
+                                    <div class="m-car"></div>
+                                    <div class="disCover">
+                                        <div class="cover"></div>
+                                        <div class="last-time">
+                                            <p>抢购时间</p>
+                                            <p>10月23日 12：00</p>
+                                            <p>敬请期待</p>
+                                        </div>
+                                        <div class="sell-out" style="display: none;">
+                                            <p>已售罄</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/snack-2.png" class="zoom" alt="">
+                                    <div class="m-title">半熟芝士原味（175g）</div>
+                                    <div class="m-subtitle">fromage semi-fermenté original</div>
+                                    <div class="m-price">抢购价￥<span>19.90</span></div>
+                                    <s class="m-old-price">原价￥<span>48.00</span></s>
+                                    <div class="m-car"></div>
+                                    <div class="disCover">
+                                        <div class="cover"></div>
+                                        <div class="last-time">
+                                            <p>抢购时间</p>
+                                            <p>10月26日 12：00</p>
+                                            <p>敬请期待</p>
+                                        </div>
+                                        <div class="sell-out" style="display: none;">
+                                            <p>已售罄</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/snack-3.png" class="zoom" alt="">
+                                    <div class="m-title">1/4牛奶生巧（120g）</div>
+                                    <div class="m-subtitle">1/4 chocolat au lait</div>
+                                    <div class="m-price">抢购价￥<span>19.90</span></div>
+                                    <s class="m-old-price">原价￥<span>59.00</span></s>
+                                    <div class="m-car"></div>
+                                    <div class="disCover">
+                                        <div class="cover"></div>
+                                        <div class="last-time">
+                                            <p>抢购时间</p>
+                                            <p>10月29日 12：00</p>
+                                            <p>敬请期待</p>
+                                        </div>
+                                        <div class="sell-out" style="display: none;">
+                                            <p>已售罄</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/snack-4.png" class="zoom" alt="">
+                                    <div class="m-title">芝士小生（100g）</div>
+                                    <div class="m-subtitle">Dimsum intelligent</div>
+                                    <div class="m-price">抢购价￥<span>19.90</span></div>
+                                    <s class="m-old-price">原价￥<span>48.00</span></s>
+                                    <div class="m-car"></div>
+                                    <div class="disCover">
+                                        <div class="cover"></div>
+                                        <div class="last-time">
+                                            <p>抢购时间</p>
+                                            <p>11月3日 12：00</p>
+                                            <p>敬请期待</p>
+                                        </div>
+                                        <div class="sell-out" style="display: none;">
+                                            <p>已售罄</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--满赠-->
+                    <div class="zengpin">
+                        <div class="zn-title" id="zeng" data-anim="slide-up" data-delay="0.2">
+                            <img src="images/partb-title-4.png" alt="">
+                            <div class="taggle-wrap taggle-wrap2">
+                                <div class="taggle taggle-down"></div>
+                            </div>
+                        </div>
+                        <div class="man-zeng" style="display: none;"><img src="images/man-zeng-3.png" alt="">
+                            <div class="taggle taggle-up"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="part part-3 pro-list"  style="display: block;">
+                    <!--新品蛋糕-->
+                    <div class="zn-title" id="cake3" data-anim="slide-up" data-delay="0.2"><img src="images/partc-title-1.png" alt=""></div>
+                    <div class="new-cake row"  data-pond="1磅,2磅,3磅,5磅" data-weight="454g,908g,454g,1.502kg" data-postid="01,1" data-price="218,318,428,728" data-sku="01,02,03" data-method="01,02,03" data-pid="01,02,03" data-ptype="1,2,3" data-channel="11,21,31" data-anim="slide-up" data-delay="0.4">
+                        <div class="icon"></div>
+                        <div class="price js_price">
+                            <h2>优惠价<i>￥</i><span class="dis-price">178.00</span><em class="d-pond"></em> <s>原价￥<b class="old-price">198.00</b></s></h2>
+                            <div class="buy-btns clearfix">
+                                <div class="buy_btn"></div>
+                                <div class="bangshu">
+                                    <dl class="clearfix">
+                                        <dd class="nopoint minus"></dd>
+                                        <dt><span class="bang" data-postid="0">2磅(908g)</span></dt>
+                                        <dd class="nopoint plus"></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/new-cake-3.png" alt="">
+                    </div>
+
+                    <!--满赠-->
+                    <div class="zn-title" id="zeng" data-anim="slide-up" data-delay="0.2"><img src="images/partc-title-2.png" alt=""></div>
+                    <div class="man-zeng" data-anim="slide-up" data-delay="0.2"><img src="images/man-zeng-4.png" alt=""></div>
+
+                    <!--升磅-->
+                    <div class="zn-title" id="shengbang" data-anim="slide-up" data-delay="0.2"><img src="images/partc-title-3.png" alt=""></div>
+                    <div class="sec-cakes" data-anim="slide-up" data-delay="0.2">
+                        <div class="cake product-li">
+                            <ul class="clearfix">
+                                <li>
+                                    <img src="images/cake-sb-1.png" class="zoom" alt="">
+                                    <div class="m-title">蓝莓轻乳拿破仑（2磅/908g）</div>
+                                    <div class="m-subtitle">Napoléon aux myrtilles</div>
+                                    <div class="price-sb" style="display: none;">
+                                        <div class="c-m-price">升磅价￥<span>198.00</span></div>
+                                        <s class="c-old-price">原价￥<span>298.00</span></s>
+                                        <div class="m-btn"></div>
+                                    </div>
+                                    <div class="price-yh">
+                                        <div class="c-m-price">优惠价￥<span>258.00</span></div>
+                                        <s class="c-old-price">原价￥<span>298.00</span></s>
+                                        <div class="m-sb"></div>
+                                        <div class="m-yh"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/cake-sb-2.png" class="zoom" alt="">
+                                    <div class="m-title">卡法香缇（2磅/908g）</div>
+                                    <div class="m-subtitle">Genoise café</div>
+                                    <div class="price-sb">
+                                        <div class="c-m-price">升磅价￥<span>198.00</span></div>
+                                        <s class="c-old-price">原价￥<span>298.00</span></s>
+                                        <div class="m-btn"></div>
+                                    </div>
+                                    <div class="price-yh" style="display: none;">
+                                        <div class="c-m-price">优惠价￥<span>258.00</span></div>
+                                        <s class="c-old-price">原价￥<span>298.00</span></s>
+                                        <div class="m-sb"></div>
+                                        <div class="m-yh"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/cake-sb-3.png" class="zoom" alt="">
+                                    <div class="m-title">摩登茶道（2磅/908g）</div>
+                                    <div class="m-subtitle">Le Thé</div>
+                                    <div class="price-sb">
+                                        <div class="c-m-price">升磅价￥<span>198.00</span></div>
+                                        <s class="c-old-price">原价￥<span>298.00</span></s>
+                                        <div class="m-btn"></div>
+                                    </div>
+                                    <div class="price-yh" style="display: none;">
+                                        <div class="c-m-price">优惠价￥<span>258.00</span></div>
+                                        <s class="c-old-price">原价￥<span>298.00</span></s>
+                                        <div class="m-sb"></div>
+                                        <div class="m-yh"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/cake-sb-4.png" class="zoom" alt="">
+                                    <div class="m-title">榴莲雪塔（2磅/908g）</div>
+                                    <div class="m-subtitle">Tarte au durian</div>
+                                    <div class="price-sb">
+                                        <div class="c-m-price">升磅价￥<span>218.00</span></div>
+                                        <s class="c-old-price">原价￥<span>318.00</span></s>
+                                        <div class="m-btn"></div>
+                                    </div>
+                                    <div class="price-yh" style="display: none;">
+                                        <div class="c-m-price">优惠价￥<span>278.00</span></div>
+                                        <s class="c-old-price">原价￥<span>318.00</span></s>
+                                        <div class="m-sb"></div>
+                                        <div class="m-yh"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/cake-sb-5.png" class="zoom" alt="">
+                                    <div class="m-title">安逸兔（2.5磅/1.14kg）</div>
+                                    <div class="m-subtitle">lapin détendu</div>
+                                    <div class="price-sb">
+                                        <div class="c-m-price">升磅价￥<span>218.00</span></div>
+                                        <s class="c-old-price">原价￥<span>318.00</span></s>
+                                        <div class="m-btn"></div>
+                                    </div>
+                                    <div class="price-yh" style="display: none;">
+                                        <div class="c-m-price">优惠价￥<span>278.00</span></div>
+                                        <s class="c-old-price">原价￥<span>318.00</span></s>
+                                        <div class="m-sb"></div>
+                                        <div class="m-yh"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/cake-sb-6.png" class="zoom" alt="">
+                                    <div class="m-title">爱丽丝花境（2.5磅/1.14kg）</div>
+                                    <div class="m-subtitle">Jardin d'Alice</div>
+                                    <div class="price-sb">
+                                        <div class="c-m-price">升磅价￥<span>298.00</span></div>
+                                        <s class="c-old-price">原价￥<span>398.00</span></s>
+                                        <div class="m-btn"></div>
+                                    </div>
+                                    <div class="price-yh" style="display: none;">
+                                        <div class="c-m-price">优惠价￥<span>358.00</span></div>
+                                        <s class="c-old-price">原价￥<span>398.00</span></s>
+                                        <div class="m-sb"></div>
+                                        <div class="m-yh"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--满赠-->
+                    <div class="zn-title" id="zeng" data-anim="slide-up" data-delay="0.2"><img src="images/partc-title-4.png" alt=""></div>
+                    <div class="man-zeng" data-anim="slide-up" data-delay="0.2"><img src="images/man-zeng-5.png" alt=""></div>
+
+                </div>
+            </div>
+
+            <!--公共部分:0元领千元大奖-->
+            <div class="zn-title" id="hl" data-anim="slide-up" data-delay="0.2" >
+                <img src="images/part1-title-4.png" alt="">
+            </div>
+            <div class="win-prize">
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide1" ></div>
+                        <div class="swiper-slide swiper-slide2" ></div>
+                        <div class="swiper-slide swiper-slide3" ></div>
+                        <div class="swiper-slide swiper-slide4" ></div>
+                    </div>
+                </div>
+
+                <div class="prize-nub">
+                    <ul class="clearfix">
+                        <li class="on"><b><img src="images/top-1.png" alt=""></b><p>VictoriaHyde手表1块+500元电子现金卡1份（价值1199元）</p></li>
+                        <li><b><img src="images/top-2.png" alt=""></b><p>VictoriaHyde手表1块+200元电子现金卡1份（价值899元）</p> </li>
+                        <li><b><img src="images/top-3.png" alt=""></b><p>宠爱之名（玻尿酸蓝铜胜肽保湿修护面膜1盒和抗皱神经酰胺角鲨烷精华液1支）+100元电子现金卡1份（价值730元）</p></li>
+                        <li><b><img src="images/top-4.png" alt=""></b><p>米客大米汽酒系列（5种口味各1瓶）+1磅蛋糕通兑券1张（价
+                            值280元）</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paiming">
+                <div class="bangList">
+                    <div class="title-txt">榜单排名</div>
+                    <div class="bang-list">
+                        <div id="box" class="min-height" style=" position:relative; overflow:hidden;">
+                            <ul class="clearfix" id="ul1">
+                                <li class="clearfix"><b>1</b><span class="tel-phone">13482289820</span><span class="price"><i>￥</i>96838.00</span></li>
+                                <li class="odd clearfix"><b>2</b><span class="tel-phone">13482289821</span><span class="price"><i>￥</i>92.00</span></li>
+                                <li class="clearfix"><b>3</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="odd clearfix"><b>4</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2232.00</span></li>
+                                <li class="clearfix"><b>5</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+                                <li class="odd clearfix"><b>6</b><span class="tel-phone">13484289820</span><span class="price"><i>￥</i>2.00</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="word"><img src="images/word-1.png" alt=""></div>
+            <div class="evt-footer clearfix">
+                <div class="evt-content clearfix">
+                    <div class="evt-rules">
+                        <h2>活动规则：</h2>
+                        <p>1、活动时间：2021年10月15日-2021年11月17日</p>
+                        <p>2、活动城市：上海、苏州、杭州、北京</p>
+                        <p>3、支付方式：微信、支付宝</p>
+                        <p>4、本活动仅限微信、支付宝全额支付用户参与</p>
+                        <p>5、活动内容：</p>
+                        <div class="role">
+                            <p>1) 10.15-11.17<br>
+                            头号赢家：活动期间内，凡在活动页下单，订单金额排名前6位的用户可获得礼品，榜单实时更新。<br>
+                            TOP1:VictoriaHyde手表1块和500元电子现金卡1份，价值1199元<br>
+                            TOP2:VictoriaHyde手表1块和200元电子现金卡1份，价值899元<br>
+                            TOP3-4:宠爱之名（玻尿酸蓝铜胜肽保湿修护面膜1盒和抗皱神经酰胺角鲨烷精华液1支）和100元电子现金卡1份，价值730元<br>
+                            TOP5-6:米客大米汽酒系列（5种口味各1瓶）+1磅蛋糕通兑券1张，价值280元<br>
+                            自11月18日起，在活动周期内，消费金额排名前6的用户<span>7个工作日内</span>内在微信公众号【MCAKE蛋糕】上提供<span>排名截图+姓名+手机号+收货地址</span>，逾期则视为放弃领奖。</p>
+                            <p>2) 10.15-10.22<br>
+                            指定蛋糕满减：活动期间购买朗姆醇栗（2磅/908g）、黑森林拿破仑（2磅/908g）立减60元、香溢新芝（2磅/908g）、蔓越莓红丝绒（2磅/908g）、花漾·年华（2磅/908kg）、黛西的旅行（2.5磅/1.13kg）立减50元，赠送黛丝恩植萃清新优雅香型沐浴露体验装1份，数量有限，先到先得</p>
+                            <p>3) 10.15-11.17<br>
+                            微信话题互动：关注【MCAKE蛋糕】微信公众号，参与话题互动，即有机会赢得最高2234元的锦鲤大奖<br>
+                            微博话题互动：关注【MCAKE蛋糕】官方微博，参与话题互动，即有机会赢得最高2234元的锦鲤大奖</p>
+                            <p>4) 10.23-11.3<br>
+                            周年卡：使用时间为自购买日起360天内有效，特权卡中的优惠券每次仅限使用一张，逾期作废，概不退款，且与其它优惠不同享，每种特权卡每位用户ID仅限购买一次<br>
+                            指定蛋糕满减：活动期间购买歌剧院蛋糕，满218元立减20元，满318元立减40元，满428元立减60元，满728元立减150元，下单即送宠爱之名抗皱神经酰胺角鲨烷精华液1支，数量有限，先到先得<br>
+                            上苏杭地区：指定时间内购买mini红茶奶酥、精选高纤奶酪、精选月半蕉、精选芒芒哒立享9.9元，下单即随机赠送朗德林车载香薰 经典花香1份或者浓缩洗衣液 经典花香1份，数量有限，先到先得<br>
+                            北京地区：指定时间内购买萝拉小朵原味（100g）、半熟芝士原味（175g）、1/4牛奶生巧（120g）、芝士小生（100g）立享9.9元</p>
+                            <p>5) 11.4-11.17<br>
+                            指定蛋糕满减：活动期间购买低糖代卡蛋糕，满218元立减20元，满318元立减40元，满428元立减60元，满728元立减150元，下单即送宠爱之名抗皱神经酰胺角鲨烷精华液1支，数量有限，先到先得<br>
+                            指定蛋糕升磅：活动期间购买蓝莓轻乳拿破仑、卡法香缇、摩登茶道、榴莲雪塔即可享1磅升2磅，未抢到升磅机会的用户，可享满298元立减40元的优惠购买福利，下单即送米客大米汽酒系列1罐（口味随机），数量有限，先到先得</p>
+                        </div>
+                        <p>6、全场活动不与现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡以及优惠券同享</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2019/pc/common/jquery.min.js"></script>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2019/pc/common/main.js"></script>
+<script type="text/javascript" src="https://act.mcake.com/fangli/2019/pc/common/public-shimily.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/respond.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript" src="js/slider-new.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

@@ -27,15 +27,15 @@ i{font-size: 12px;}
 
 }
 
-.sec-iceCream{ background: url("../images/sec-1.png") top center no-repeat; height: 756px; overflow: hidden;
+.sec-iceCream{ background:url("../images/sec-1.png") top center no-repeat; height: 1469px; overflow: hidden;
   .evt-content{ width: 1219px;
-    .swipe-cake{width: 1219px; height: 424px; margin:70px auto 0;
+    .swipe-cake{width: 1199px; height: 424px; margin:70px auto 0;
       .s-price{width: 367px; margin: 26px auto;}
     }
   }
 }
 
-.hy-title{ margin:0 auto; width: 747px; padding:40px 0; position: relative; text-align: center;
+.hy-title{ margin:0 auto; width: 747px; padding:150px 0 80px; position: relative; text-align: center;
   img{margin: 0 auto; width: 100%;}
 }
 
@@ -43,7 +43,7 @@ i{font-size: 12px;}
 .icon_15{background: url("../images/icon_15.png");}
 .icon_30{background: url("../images/icon_30.png");}
 
-.sec-cake{ position: relative; z-index: 1;background: url("../images/sec-2.png") top center no-repeat; height: 2702px; overflow: hidden;
+.sec-cake{ position: relative; z-index: 1;background: url("../images/sec-2.png") top center no-repeat; height: 2834px; overflow: hidden;
   .evt-content{width: 1309px;
     .row{position: relative; }
     .row1{ height: 636px; background: url("../images/shanghai/cake-1.png") center no-repeat;
@@ -84,11 +84,11 @@ i{font-size: 12px;}
   }
 }
 
-.sec-zp{position: relative; z-index: 1;background: url("../images/sec-3.png") top center no-repeat; height: 980px; overflow: hidden;
-  .zp{width: 1115px; margin:330px auto 0;}
+.sec-zp{position: relative; z-index: 1;background: url("../images/sec-3.png") top center no-repeat; height: 1065px; overflow: hidden;
+  .zp{width: 1115px; margin:400px auto 0;}
 }
 
-.evt-footer{position: relative; z-index: 1;background: url("../images/sec-4.png") top center no-repeat; height: 707px; overflow: hidden;
+.evt-footer{position: relative; z-index: 1;background: url("../images/sec-4.png") top center no-repeat; height: 700px; overflow: hidden;
   .evt-content{width: 1200px; color: #000;}
     .foot-zp{position: absolute; top: 90px; right: 300px;}
     .evt-rules{width: 770px; margin: 0 auto; padding:130px 0 100px 55px;
@@ -141,35 +141,6 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 
 
 
-.swiper-container { position: relative;  width: 100%;  height: 100%; }
-.swiper-slide {
-  text-align: center; position: relative;  font-size: 18px;  background: #fff;  display: -webkit-box;  display: -ms-flexbox;
-  display: -webkit-flex;  display: flex;  -webkit-box-pack: center;  -ms-flex-pack: center;
-  -webkit-justify-content: center;  justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;
-  -webkit-align-items: center;  align-items: center;
-}
-.swiper-slide img{width: 100%;}
-.pagination {
-  position: absolute !important;
-  left: 0;
-  text-align: center;
-  bottom:20px;
-  width: 100%;
-}
-.swiper-pagination-switch {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  border-radius: 14px;
-  background: #008dcc;
-  margin: 0 5px;
-  opacity:0.5;
-  cursor: pointer;
-}
-.swiper-active-switch {
-  background: #fff;
-  opacity:1;
-}
 
 
 
@@ -181,6 +152,18 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
     }
 
   }
+
+  .sec-iceCream{ height: 1230px; overflow: hidden;
+    .evt-content{ width: 1219px;
+      .swipe-cake{width: 1199px; height: 424px; margin:70px auto 0;
+        .img-big{width: 950px; margin: 0 auto;
+          img{width: 100%;}
+        }
+        .s-price{width: 367px; margin: 26px auto;}
+      }
+    }
+  }
+
 
   .hy-title {  padding: 50px 0 50px; }
 }

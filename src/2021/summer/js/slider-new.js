@@ -330,7 +330,7 @@
 
       }else{
         /*设置默认显示2磅*/
-        currentItem.ix=0;/*默认显示1磅*/
+        currentItem.ix=1;/*默认显示1磅*/
         totalPrice = currentItem.ids[currentItem.ix]; /*总价格*/
         oldPrice = totalPrice-0; /*原价*/
         bs = currentItem.ponds[currentItem.ix].replace(/[^\d|.]/g, '')-0;
