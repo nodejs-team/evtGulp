@@ -28,7 +28,7 @@ span.num, .noselect {
   margin: 0 auto;
   overflow: hidden;
   background: url("../images/banner.png") bottom center no-repeat;
-  height: 767px;
+  height: 1034px;
 }
 
 .hy-title {
@@ -46,14 +46,14 @@ span.num, .noselect {
 
 .icon {
   position: absolute;
-  width: 83px;
-  height: 88px;
-  right: 20px;
-  top: 0;
+  width: 51px;
+  height: 50px;
+  left: 116px;
+  top: 89px;
 }
 
-.icon_20 {
-  background: url("../images/icon-20.png") no-repeat;
+.icon_30 {
+  background: url("../images/icon-30.png") no-repeat;
 }
 
 .icon_40 {
@@ -61,16 +61,16 @@ span.num, .noselect {
 }
 
 .buy-btn {
-  width: 166px;
-  height: 41px;
-  background: url("../images/go-btn.png") no-repeat;
+  width: 138px;
+  height: 35px;
+  background: url("../images/go-buy.png") no-repeat;
   margin: 0 auto;
   cursor: pointer;
 }
 
 .buy_btn {
-  width: 146px;
-  height: 36px;
+  width: 138px;
+  height: 35px;
   background: url("../images/go-buy.png") no-repeat;
   margin: 0 auto;
   cursor: pointer;
@@ -79,60 +79,82 @@ span.num, .noselect {
 .sec-1 {
   position: relative;
   z-index: 2;
-  height: 1216px;
-  background: url("../images/sec-1.png") top center no-repeat;
+  height: 888px;
+  background: url("../images/sec-bg-1.png") top center no-repeat;
   overflow: hidden;
 }
 
 .sec-1 .evt-content {
   text-align: center;
+  width: 1280px;
+  height: 888px;
 }
 
-.sec-1 .quan {
-  position: relative;
-  width: 922px;
-  padding-top: 100px;
-  margin: 0 auto;
-}
-
-.sec-1 .quan .buy-btn {
+.sec-1 .evt-content .icons {
   position: absolute;
-  bottom: 30px;
+  width: 87px;
+  top: 300px;
+  left: 0;
+}
+
+.sec-1 .evt-content .cake {
+  position: absolute;
+  width: 745px;
+  top: 280px;
+  left: 0;
+}
+
+.sec-1 .evt-content .cake-price {
+  position: absolute;
+  width: 469px;
+  top: 310px;
+  left: 750px;
+}
+
+.sec-1 .evt-content .buy-btn {
+  position: absolute;
+  bottom: 164px;
   left: 50%;
-  margin-left: -83px;
-}
-
-.sec-1 .quan.quan-2 {
-  padding-top: 0;
-}
-
-.sec-1 .quan.quan-2 .buy-btn {
-  bottom: 15px;
+  margin-left: 282px;
 }
 
 .sec-cake {
   position: relative;
   z-index: 1;
-  height: 1582px;
-  background: url("../images/sec-2.png") center repeat-y;
+  height: 1856px;
+  background: url("../images/sec-bg-2.png") center repeat-y;
 }
 
 .sec-cake .evt-content {
-  width: 1052px;
+  width: 1093px;
+  padding-top: 510px;
 }
 
 .sec-cake .evt-content .row {
   position: relative;
-  width: 452px;
+  width: 474px;
   float: left;
-  margin: 0 36px 50px;
+  margin: 0 0 60px 71px;
   overflow: hidden;
 }
 
 .sec-cake .evt-content .row .price {
-  position: absolute;
-  left: 0;
-  bottom: 39px;
+  position: relative;
+}
+
+.sec-cake .evt-content .row.row2 .icon {
+  left: 19px;
+  top: 116px;
+}
+
+.sec-cake .evt-content .row.row3 .icon {
+  left: 19px;
+  top: 116px;
+}
+
+.sec-cake .evt-content .row.row4 .icon {
+  left: 113px;
+  top: 89px;
 }
 
 .sec-cake .evt-content .more {
@@ -143,8 +165,8 @@ span.num, .noselect {
 .evt-footer {
   z-index: 1;
   position: relative;
-  height: 622px;
-  background: url("../images/sec-3.png") top center repeat-y;
+  height: 501px;
+  background: url("../images/sec-foot.png") top center repeat-y;
 }
 
 .evt-footer .evt-content {
@@ -153,9 +175,9 @@ span.num, .noselect {
 }
 
 .evt-footer .evt-rules {
-  width: 866px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 100px 0 140px 20px;
+  padding: 90px 0 50px 20px;
 }
 
 .evt-footer .evt-rules h2 {
@@ -172,7 +194,8 @@ span.num, .noselect {
 }
 
 .evt-footer .evt-rules .p {
-  padding-left: 30px;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
 }
 
 /*快速点击数量加减时，或者禁止双击选中*/
@@ -189,13 +212,13 @@ span.num, .noselect {
 /*价格样式 通用*/
 .price {
   position: relative;
-  width: 452px;
+  width: 357px;
   text-align: left;
 }
 
 .price h2 {
   position: relative;
-  margin: 16px auto;
+  margin: 2px auto 16px;
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
@@ -302,9 +325,9 @@ span.num, .noselect {
 
 .bangshu {
   position: relative;
-  width: 148px;
-  height: 36px;
-  margin: 0 0 5px 10px;
+  width: 138px;
+  height: 35px;
+  margin: 0 0 0 10px;
   float: left;
   background: url("../images/bang.png");
   /*加减按钮*/
@@ -312,9 +335,9 @@ span.num, .noselect {
 
 .bangshu dt {
   float: left;
-  width: 148px;
+  width: 138px;
   text-align: center;
-  line-height: 34px;
+  line-height: 35px;
 }
 
 .bangshu dt span {
@@ -325,7 +348,7 @@ span.num, .noselect {
 
 .bangshu .nopoint {
   position: absolute;
-  top: -4px;
+  top: -3px;
   left: -10px;
   width: 40px;
   height: 40px;
@@ -337,4 +360,77 @@ span.num, .noselect {
 .bangshu .nopoint.plus {
   left: auto;
   right: -10px;
+}
+
+/*彈窗*/
+.Dialogbg-quan {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  opacity: 0.6;
+  -moz-opacity: .6;
+  filter: alpha(opacity=60);
+}
+
+.Dialog-quan {
+  width: 917px;
+  height: 642px !important;
+  background: url("../images/quan.png") center no-repeat;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  margin: -321px auto 0 -456px !important;
+  position: fixed;
+  z-index: 99999;
+}
+
+.Dialog-quan .closes {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 32px;
+  right: 108px;
+  cursor: pointer;
+  z-index: 8;
+  background: url("../images/close.png") no-repeat;
+}
+
+.Dialog-quan .go-use {
+  display: block;
+  position: absolute;
+  bottom: 141px;
+  left: 50%;
+  margin-left: -57px;
+  width: 122px;
+  height: 114px;
+  cursor: pointer;
+  background: #000;
+  opacity: 0;
+}
+
+@media (max-width: 1400px) {
+  .sec-banner {
+    background-size: 100%;
+    height: 607px;
+  }
+  .Dialog-quan {
+    width: 800px;
+    height: 861px !important;
+    background-size: 100%;
+    margin: -430.5px auto 0 -400px !important;
+  }
+  .Dialog-quan .closes {
+    top: 162px;
+    right: 78px;
+  }
+  .Dialog-quan .go-use {
+    bottom: 274px;
+    margin-left: -49px;
+    width: 107px;
+    height: 101px;
+  }
 }

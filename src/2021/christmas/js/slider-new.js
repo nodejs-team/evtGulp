@@ -6,7 +6,7 @@
 (function () {
 
   var discount = 0;   //满198减99
-  var disArr = [20,40,0,0];   //满198减99
+  var disArr = [30,40,0,0];   //满198减99
   var zhekou = 1;   //折扣
 
   function initNum() {

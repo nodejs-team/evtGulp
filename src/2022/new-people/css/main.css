@@ -1,0 +1,435 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: url("../images/bg.png") repeat;
+}
+
+.hy-title {
+  margin: 0 auto;
+  width: 947px;
+  padding: 93px 0;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hy-tabar {
+  margin: 0 auto 50px;
+  padding-top: 30px;
+  min-width: 1280px;
+  height: 67px;
+  background: url("../images/tabar.png") bottom center no-repeat;
+  position: relative;
+  text-align: center;
+}
+
+.hy-tabar .tabs {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hy-tabar .tabs ul li {
+  width: 399px;
+  float: left;
+  height: 63px;
+  margin-top: 2px;
+  background: url("../images/tab-1.png");
+  cursor: pointer;
+}
+
+.hy-tabar .tabs ul li:nth-child(2) {
+  background: url("../images/tab-2.png");
+}
+
+.hy-tabar .tabs ul li:nth-child(3) {
+  width: 401px;
+  background: url("../images/tab-3.png");
+}
+
+.hy-tabar .tabs ul li.cur {
+  background: url("../images/tab-1-h.png");
+}
+
+.hy-tabar .tabs ul li:nth-child(2).cur {
+  background: url("../images/tab-2-h.png");
+}
+
+.hy-tabar .tabs ul li:nth-child(3).cur {
+  background: url("../images/tab-3-h.png");
+}
+
+.sec-banner {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url("../images/banner.png") bottom center no-repeat;
+  height: 641px;
+}
+
+.sec-quan {
+  max-width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 525px;
+  background: url("../images/quan-1.png") top center no-repeat;
+}
+
+.sec-quan .evt-content {
+  width: 1000px;
+  height: 457px;
+}
+
+.sec-quan .get-packet {
+  position: absolute;
+  width: 238px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -119px;
+  cursor: pointer;
+  animation: bouncein 1s ease-in alternate infinite;
+}
+
+.sec-quan img {
+  width: 100%;
+  display: block;
+}
+
+.sec-cake {
+  position: relative;
+  z-index: 1;
+  height: 2103px;
+  background: url("../images/sec-2.png") center no-repeat;
+}
+
+.sec-cake .evt-content {
+  width: 1140px;
+  padding-top: 210px;
+}
+
+.sec-cake .evt-content .row {
+  position: relative;
+  width: 542px;
+  float: left;
+  margin: 0 12px 50px;
+  overflow: hidden;
+}
+
+.sec-cake .evt-content .row .cake {
+  position: relative;
+}
+
+.sec-2 {
+  position: relative;
+  z-index: 1;
+  height: 464px;
+  padding: 100px 0 0 0;
+  overflow: hidden;
+  background: url("../images/quan-3.png") center no-repeat;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 2;
+  height: 461px;
+  padding: 100px 0 0 0;
+  overflow: hidden;
+  background: url("../images/quan-4.png") center no-repeat;
+}
+
+.more {
+  width: 144px;
+  position: relative;
+  margin: 0 auto;
+  background: #cd686d;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.more span {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  background: url("../images/sec-foot.png") top center no-repeat;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #1b1b1b;
+}
+
+.evt-footer .evt-rules {
+  width: 1030px;
+  margin: 0 auto;
+  padding: 170px 0 100px 20px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.evt-footer .evt-rules .p {
+  padding-left: 30px;
+}
+
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*价格样式 通用*/
+.price {
+  position: relative;
+  width: 542px;
+  text-align: left;
+}
+
+.price h2 {
+  position: relative;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #393c3f;
+  text-align: center;
+}
+
+.price h2 i {
+  font-size: 14px;
+  font-style: normal;
+  vertical-align: baseline;
+}
+
+.price h2 span {
+  font-size: 28px;
+  color: #000;
+}
+
+.price s {
+  font-size: 16px;
+  color: #393c3f;
+  font-weight: normal;
+  line-height: 26px;
+  text-decoration: sh;
+  margin-left: 5px;
+}
+
+.price b {
+  font-weight: normal;
+}
+
+.price em {
+  font-style: normal;
+}
+
+.price .price-title {
+  font-size: 24px;
+  color: #493b66;
+  margin: 40px auto 20px !important;
+  text-align: center;
+}
+
+/*换购*/
+.price .huangou {
+  position: relative;
+  width: 210px;
+  font-size: 18px;
+  color: #5c4c0d;
+  margin: 10px auto;
+  cursor: pointer;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.price .huangou .icnone {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 1;
+}
+
+.price .huangou .icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+}
+
+.price .huangou {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*订购，加入购物清单*/
+.price ul.buy_btn_box {
+  overflow: hidden;
+  width: 138px;
+  margin: 5px auto;
+  float: left;
+}
+
+.price ul.buy_btn_box.twoBtn {
+  width: 280px;
+}
+
+.price ul.buy_btn_box li {
+  float: left;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.price ul.buy_btn_box li.fr {
+  float: right;
+}
+
+.price ul.buy_btn_box li span {
+  display: block;
+  width: 138px;
+  background: url("../images/go-buy.png");
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.buy-btns {
+  width: 303px;
+  margin: 0 auto;
+}
+
+.bangshu {
+  width: 154px;
+  height: 35px;
+  margin: 5px 0 5px 10px;
+  float: left;
+  background: url("../images/bang.png");
+}
+
+.bangshu dd {
+  float: left;
+  width: 22px !important;
+  height: 25px !important;
+  margin: 0 !important;
+}
+
+.bangshu dt {
+  float: left;
+  width: 89px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.bangshu dt span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+}
+
+.buy-btns.one {
+  width: 165px;
+}
+
+/*加减按钮*/
+.nopoint {
+  width: 20px;
+  height: 20px;
+  margin: 20px 0 0 6px;
+  background: url("../images/in-a-1.png") center no-repeat;
+  cursor: pointer;
+  border: 5px solid transparent;
+}
+
+.nopoint.plus {
+  background: url("../images/in-a-2.png") center no-repeat;
+  margin: 20px 5px 0 0;
+}
+
+@keyframes bouncein {
+  50% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1600px) {
+  .sec-banner {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("../images/banner.png") center no-repeat;
+    height: 493px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .sec-banner {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("../images/banner.png") center no-repeat;
+    height: 488px;
+  }
+}

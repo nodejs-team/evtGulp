@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>make活动</title>
+    <link rel="stylesheet" type="text/css" href="https://act.mcake.com/fangli/2019/pc/common/comm_header.css?v=1458723714">
+    <link rel="stylesheet" type="text/css" href="https://act.mcake.com/fangli/2019/pc/common/public-shimily-extend-price.css">
+    <!-- build:css css/main.css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+
+    <!-- endbuild -->
+    <style>
+        body {
+            margin: 0;
+        }
+        figcaption{
+            font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+        }
+        #bridge {
+            display: block;
+            margin: 0 auto;
+            background-image: url("../images/scratch-2.jpg");
+            background-image: -webkit-image-set(url("../images/scratch-2.jpg") 1x, url("../images/scratch-2x.jpg") 2x);
+            background-size: cover;
+            width: 100%;
+            max-width: 750px;
+            height: auto;
+            cursor: crosshair;
+            cursor: url(../images/circular-cursor.png) 53 53, crosshair;
+        }
+
+        #bridgeContainer {
+            text-align: center;
+            font-family: Avenir, sans-serif;
+        }
+
+        #bridgeContainer figcaption {
+            margin-top: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="header">
+
+    <div class="header_top_box">
+        <div class="header_top">
+            <div style="width:100%; height:100px; background:#FFF; position:absolute; z-index:9;webkit-box-shadow: 3px 3px 3px #e1e1e1;-moz-box-shadow: 3px 3px 3px #e1e1e1;box-shadow: 3px 3px 3px #e1e1e1
+">
+                <div style="width:100%; height:30px; border-bottom:1px solid #eaeaea">
+                    <div class="wallbox wall_top">
+                        <div id="scrollobj" style="position:absolute; left:50%;margin-left:-300px;top:0; width:560px; line-height:30px;white-space:nowrap;overflow:hidden; color:#F00"></div>
+                        <div class="logoer">
+                            <a href="http://ebsig.mcake.com">
+                                <img src="http://ebsig.mcake.com/shop/theme/xth1//images/comm/logo.png">
+                            </a>
+                        </div>
+                        <ul class="navbar" id="welcome"><li><a href="/shop/login.html" class="Gold">LOG IN 登录</a></li><li><a href="/shop/register.html" class="Gold">SIGN UP 注册</a></li></ul>
+                        <ul class="navbar">
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---start-->
+                            <li class="record" style="display: none;">
+                                <a href="/shop/member_order.html?stat=6" class="Gold" target="_blank"><i></i> <span id="recode_count" style="margin-left: 5px;">0</span>个</a>
+                            </li>
+                            <!--网站录音功能 add by zan.yu 2015-12-11 ---end-->
+                            <li class="m_mail" style="display: none;"><a href="/shop/member_message.html" class="Gold" target="_blank"><i></i> <span id="msg_count">0</span>封</a></li>
+                            <li class="m_cart">
+                                <a href="/shop/cart.html" class="Gold" target="_blank"><i></i> <span id="cart_amount">2</span>件</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="wallbox">
+                    <div class="header_right">
+                        <ul class="phone_delivery">
+                            <li class="phone"><span>4006-678-678</span><i></i></li>
+                            <li class="delivery"><span><a href="/shop/article-48.html#city_110" target="_blank">配送范围内实行环外费全免</a></span><i></i></li>
+                        </ul>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="http://ebsig.mcake.com/shop/110/index.html#mainer" class="ebsig_all_goods" target="_blank"><samp>Nos Produits</samp><span>全部产品</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/napoleon_cake.html" target="_blank"><samp>Napoléon</samp><span>拿破仑系列</span></a>
+                        </li>
+                        <li>
+                            <a href="/r.php?i=activity" target="_blank"><samp>Nouveauté</samp><span>最新活动</span></a>
+                        </li>
+                        <li>
+                            <a href="/shop/member_center.html" target="_blank">
+                                <samp>Mon M'CAKE</samp>
+                                <span>会员中心</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="evt_loading">
+    <span id="evt_spin">loading: 0%</span>
+</div>
+
+<div id="evt_container" class="evt-container">
+
+    <div class="sec-banner" data-anim="fade-in" data-delay="0.2"></div>
+    <div class="sec-2">
+        <div class="evt-content pro-list">
+            <figure id="bridgeContainer" style="margin-top: 50px;">
+                <canvas id="bridge" width="750" height="465"></canvas>
+                <figcaption>呱呱中大奖！（使用鼠标或移动手机中手指滑动来刮奖）</figcaption>
+            </figure>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="evt-footer clearfix">
+        <div class="evt-content clearfix">
+            <div class="evt-rules">
+                <h2>活动规则</h2>
+                <p>1、活动时间：2019年12月26日-2020年1月22日</p>
+                <p>2、活动城市：上海、北京、苏州、杭州</p>
+                <p>3、支付方式：微信、支付宝、现金；仅限微信、支付宝、现金全额支付的用户参与</p>
+                <p>4、活动内容：<br>
+                    ·在活动页面根据刮出价格不同 ，可享受不同价格1磅升2磅，仅限购买拿破仑莓恋、白色恋人、鲜莓印雪<br>
+                    ·活动页面蛋糕仅限1磅升2磅，其他磅数不予参与，不与其他优惠同享</p>
+                <p>5、本活动与积分同享，但不与优惠券、红包以及现金卡、储值卡、专享卡、礼品卡、小食卡、月饼卡等代金卡同享</p>
+                <p>6、本活动最终解释权归MCAKE所有</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://act.mcake.com/fangli/2019/pc/common/jquery.min.js"></script>
+<script src="https://act.mcake.com/fangli/2019/pc/common/main.js"></script>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src="js/animate-util.js"></script>
+<script type="text/javascript" src="js/resData.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- endbuild -->
+<script type="text/javascript">
+  var bridge = document.getElementById("bridge"),
+    bridgeCanvas = bridge.getContext('2d'),
+    brushRadius = (bridge.width / 100) * 5,
+    img = new Image();
+
+  if (brushRadius < 50) { brushRadius = 50 }
+
+  img.onload = function(){
+    bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
+  }
+  img.loc = 'images/';
+  img.filename = 'scratch-1.jpg';
+  if (window.devicePixelRatio >= 2) {
+    var nameParts = img.filename.split('.');
+    img.src = img.loc + nameParts[0]+"-2x"+"."+nameParts[1];
+  } else {
+    img.src = img.loc + img.filename;
+  }
+
+  function detectLeftButton(event) {
+    if ('buttons' in event) {
+      return event.buttons === 1;
+    } else if ('which' in event) {
+      return event.which === 1;
+    } else {
+      return event.button === 1;
+    }
+  }
+
+  function getBrushPos(xRef, yRef) {
+    var bridgeRect = bridge.getBoundingClientRect();
+    return {
+      x: Math.floor((xRef-bridgeRect.left)/(bridgeRect.right-bridgeRect.left)*bridge.width),
+      y: Math.floor((yRef-bridgeRect.top)/(bridgeRect.bottom-bridgeRect.top)*bridge.height)
+    };
+  }
+
+  function drawDot(mouseX,mouseY){
+    bridgeCanvas.beginPath();
+    bridgeCanvas.arc(mouseX, mouseY, brushRadius, 0, 2*Math.PI, true);
+    bridgeCanvas.fillStyle = '#000';
+    bridgeCanvas.globalCompositeOperation = "destination-out";
+    bridgeCanvas.fill();
+      /*执行函数*/
+    percent = getPercent();
+    console.log(percent);
+    callback(function () {
+      $("#bridge").fadeOut(100);
+    });
+  }
+
+  var percent=null;
+  var percented = 10; /*画的比例*/
+  /*补充函数*/
+  function getPercent() {
+    var percent;
+    var counter = 0;  /*number of pixels clear*/
+    var imageData = bridgeCanvas.getImageData(0, 0, bridge.width, bridge.height);
+
+    var imageDataLength = imageData.data.length;
+
+    for(var i = 0; i < imageDataLength; i += 4) {
+      if (imageData.data[i] === 0 && imageData.data[i+1] === 0 && imageData.data[i+2] === 0 && imageData.data[i+3] === 0) {
+        counter++;
+      }
+    }
+
+    if (counter >= 1) {
+      percent = (counter / (bridge.width * bridge.height)) * 100;
+
+    } else {
+      percent = 0;
+    }
+
+    return percent;
+  }
+
+
+  function callback(callback) {
+    if (callback != null && percent >= percented) {
+      callback();
+    }
+  };
+
+
+  bridge.addEventListener("mousemove", function(e) {
+    var brushPos = getBrushPos(e.clientX, e.clientY);
+    var leftBut = detectLeftButton(e);
+    if (leftBut == 1) {
+      drawDot(brushPos.x, brushPos.y);
+    }
+  }, false);
+
+  bridge.addEventListener("touchmove", function(e) {
+    e.preventDefault();
+    var touch = e.targetTouches[0];
+    if (touch) {
+      var brushPos = getBrushPos(touch.pageX, touch.pageY);
+      drawDot(brushPos.x, brushPos.y);
+    }
+  }, false);
+</script>
+</body>
+</html>

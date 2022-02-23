@@ -1,28 +1,43 @@
 {
 	"groups":[{
-			"keys":"more_png,sec-1_png,sec-2_png,sec-3_png,bang_png,banner_png,break_png,cake-1_png,cake-2_png,cake-3_png,cake-4_png,doudou_png,go-btn_png,go-buy_png,hy-title_png,icon-15_png,icon-30_png",
+			"keys":"icon-30_png,icon-40_png,nopoint_png,quan_png,sec-bg-1_png,sec-bg-2_png,sec-foot_png,bang_png,banner_png,cake_png,cake-1_png,cake-2_png,cake-3_png,cake-4_png,get-quan_png,go-btn_png,go-buy_png",
 			"name":"preload"
 		}],
 	"resources":[
 		{
-			"name":"more_png",
+			"name":"icon-30_png",
 			"type":"image",
-			"url":"more.png"
+			"url":"icon-30.png"
 		},
 		{
-			"name":"sec-1_png",
+			"name":"icon-40_png",
 			"type":"image",
-			"url":"sec-1.png"
+			"url":"icon-40.png"
 		},
 		{
-			"name":"sec-2_png",
+			"name":"nopoint_png",
 			"type":"image",
-			"url":"sec-2.png"
+			"url":"nopoint.png"
 		},
 		{
-			"name":"sec-3_png",
+			"name":"quan_png",
 			"type":"image",
-			"url":"sec-3.png"
+			"url":"quan.png"
+		},
+		{
+			"name":"sec-bg-1_png",
+			"type":"image",
+			"url":"sec-bg-1.png"
+		},
+		{
+			"name":"sec-bg-2_png",
+			"type":"image",
+			"url":"sec-bg-2.png"
+		},
+		{
+			"name":"sec-foot_png",
+			"type":"image",
+			"url":"sec-foot.png"
 		},
 		{
 			"name":"bang_png",
@@ -35,9 +50,9 @@
 			"url":"banner.png"
 		},
 		{
-			"name":"break_png",
+			"name":"cake_png",
 			"type":"image",
-			"url":"break.png"
+			"url":"cake.png"
 		},
 		{
 			"name":"cake-1_png",
@@ -60,9 +75,9 @@
 			"url":"cake-4.png"
 		},
 		{
-			"name":"doudou_png",
+			"name":"get-quan_png",
 			"type":"image",
-			"url":"doudou.png"
+			"url":"get-quan.png"
 		},
 		{
 			"name":"go-btn_png",
@@ -73,21 +88,6 @@
 			"name":"go-buy_png",
 			"type":"image",
 			"url":"go-buy.png"
-		},
-		{
-			"name":"hy-title_png",
-			"type":"image",
-			"url":"hy-title.png"
-		},
-		{
-			"name":"icon-15_png",
-			"type":"image",
-			"url":"icon-15.png"
-		},
-		{
-			"name":"icon-30_png",
-			"type":"image",
-			"url":"icon-30.png"
 		}
 	]
 }

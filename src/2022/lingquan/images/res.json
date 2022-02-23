@@ -1,0 +1,14 @@
+{
+	"groups":[{
+			"keys":"banner_png",
+			"name":"preload"
+		}],
+	"resources":[
+		{
+			"name":"banner_png",
+			"type":"image",
+			"url":"banner.png"
+		}
+		
+	]
+}

@@ -17,45 +17,51 @@ span.num,.noselect{
 }
 .evt-container{ overflow: hidden; background: #faf7f2;}
 
-.sec-banner{max-width:1920px; margin: 0 auto; overflow:hidden; background: url("../images/banner.png") bottom center no-repeat; height: 767px;
-
-}
+.sec-banner{max-width:1920px; margin: 0 auto; overflow:hidden; background: url("../images/banner.png") bottom center no-repeat; height: 1034px;}
 
 .hy-title{ margin:0 auto; width: 515px; padding:70px 0 70px; position: relative; text-align: center;
   img{margin: 0 auto; width: 100%;}
 }
 
-.icon{position: absolute; width: 83px; height:88px; right:20px; top:0;  }
-.icon_20{background: url("../images/icon-20.png") no-repeat;}
+.icon{position: absolute; width:51px; height:50px; left:116px; top:89px; }
+.icon_30{background: url("../images/icon-30.png") no-repeat;}
 .icon_40{background: url("../images/icon-40.png") no-repeat;}
-.buy-btn{ width: 166px; height: 41px; background: url("../images/go-btn.png") no-repeat; margin: 0 auto; cursor: pointer;}
-.buy_btn{ width: 146px; height: 36px; background: url("../images/go-buy.png") no-repeat; margin: 0 auto; cursor: pointer;}
-.sec-1{ position: relative; z-index: 2; height: 1216px; background: url("../images/sec-1.png") top center no-repeat; overflow: hidden;
-  .evt-content{text-align: center;}
-  .quan{ position: relative; width: 922px; padding-top:100px; margin:0 auto;
-    .buy-btn{position: absolute; bottom: 30px; left: 50%; margin-left: -83px;}
-    &.quan-2{ padding-top:0 ;
-      .buy-btn{ bottom: 15px;}
-    }
-  }
+.buy-btn{ width: 138px; height: 35px; background: url("../images/go-buy.png") no-repeat; margin: 0 auto; cursor: pointer;}
+.buy_btn{ width: 138px; height: 35px; background: url("../images/go-buy.png") no-repeat; margin: 0 auto; cursor: pointer;}
 
+.sec-1{ position: relative; z-index: 2; height: 888px; background: url("../images/sec-bg-1.png") top center no-repeat; overflow: hidden;
+  .evt-content{text-align: center; width: 1280px; height: 888px;
+    .icons{position: absolute; width: 87px; top: 300px; left: 0;}
+    .cake{position: absolute; width: 745px; top: 280px; left: 0;}
+    .cake-price{position: absolute; width: 469px; top: 310px; left:750px;}
+    .buy-btn{position: absolute; bottom:164px; left: 50%; margin-left:282px;}
+  }
 }
 
-.sec-cake{ position: relative; z-index: 1; height: 1582px;  background: url("../images/sec-2.png") center repeat-y;
-  .evt-content{width: 1052px;
-    .row{position: relative; width: 452px; float: left; margin:0 36px 50px; overflow: hidden;
-      .price{position: absolute; left: 0; bottom: 39px;}
+.sec-cake{ position: relative; z-index: 1; height: 1856px;  background: url("../images/sec-bg-2.png") center repeat-y;
+  .evt-content{width: 1093px; padding-top: 510px;
+    .row{position: relative; width: 474px; float: left; margin:0 0 60px 71px; overflow: hidden;
+      .price{position: relative;}
+      &.row2{
+        .icon{left:19px; top:116px; }
+      }
+      &.row3{
+        .icon{left:19px; top:116px; }
+      }
+      &.row4{
+        .icon{left:113px; top:89px;}
+      }
     }
     .more{width: 101px; margin:0 auto;}
   }
 }
 
-.evt-footer{ z-index: 1; position: relative; height: 622px;  background: url("../images/sec-3.png") top center repeat-y;
+.evt-footer{ z-index: 1; position: relative; height: 501px;  background: url("../images/sec-foot.png") top center repeat-y;
   .evt-content{width: 1200px; color: #000;}
-    .evt-rules{width: 866px; margin: 0 auto; padding:100px 0 140px 20px;
+    .evt-rules{width: 1200px; margin: 0 auto; padding:90px 0 50px 20px;
       h2{ font-size: 20px;  font-weight: normal;  margin-bottom: 5px;  }
       p{ font-size:18px; line-height: 1.8em;  padding-left: 1.5em;  text-indent: -1.5em;  }
-      .p{padding-left: 30px;}
+      .p{padding-left:1.5em; text-indent: -1.5em;}
     }
 }
 
@@ -65,8 +71,8 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 
 /*价格样式 通用*/
 
-.price {position: relative; width: 452px;text-align: left;  }
-.price h2 {position: relative; margin:16px auto; font-size: 18px; font-weight: normal; line-height: 30px; color: #010101;text-align: center;  }
+.price {position: relative; width: 357px;text-align: left;  }
+.price h2 {position: relative; margin:2px auto 16px; font-size: 18px; font-weight: normal; line-height: 30px; color: #010101;text-align: center;  }
 .price h2 i { font-size: 14px; font-style: normal; vertical-align: baseline;  }
 .price h2 span {  font-size: 28px; }
 .price s {font-size: 16px;  font-weight: normal;  line-height: 26px;  text-decoration: sh; margin-left: 5px; color: #919191; }
@@ -87,17 +93,24 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 
 .buy-btns{width: 305px; margin: 0 auto;}
 .buy-btns.one{width: 148px;}
-.bangshu{position: relative; width: 148px; height: 36px; margin:0 0 5px 10px; float: left; background:url("../images/bang.png");
-  dt{float: left; width:148px; text-align: center; line-height: 34px;
+.bangshu{position: relative; width: 138px; height: 35px; margin:0 0 0 10px; float: left; background:url("../images/bang.png");
+  dt{float: left; width:138px; text-align: center; line-height: 35px;
     span{display: block; color: #fff; font-size: 14px;}
   }
   /*加减按钮*/
-  .nopoint{position: absolute; top: -4px; left: -10px; width: 40px; height: 40px; cursor: pointer; background: url("../images/nopoint.png") no-repeat; background-size: 100%;}
+  .nopoint{position: absolute; top: -3px; left: -10px; width: 40px; height: 40px; cursor: pointer; background: url("../images/nopoint.png") no-repeat; background-size: 100%;}
   .nopoint.plus{left: auto; right: -10px;}
 
 }
 
 
+/*彈窗*/
+.Dialogbg-quan{  background-color: #000;  height: 100%;  left: 0;  position: fixed;  top: 0;  width: 100%; z-index: 200;   opacity: 0.6; -moz-opacity:.6;filter:alpha(opacity=60); }
+
+.Dialog-quan{ width: 917px; height:642px !important; background:url("../images/quan.png") center no-repeat; padding: 0; top: 50%; left: 50%;  margin: -321px auto 0 -456px !important;  position: fixed; z-index: 99999;
+  .closes{ width: 30px; height: 30px; position: absolute; top:32px; right: 108px; cursor: pointer; z-index: 8; background: url("../images/close.png") no-repeat;}
+  .go-use {display: block; position: absolute; bottom: 141px; left: 50%; margin-left: -57px; width:122px; height: 114px;  cursor: pointer; background: #000; opacity:0;}
+}
 
 
 @media (max-width: 1800px) {
@@ -109,5 +122,8 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 }
 
 @media (max-width: 1400px) {
-
+  .sec-banner{ background-size: 100%; height: 607px;}
+  .Dialog-quan{ width: 800px; height:861px !important; background-size: 100%;margin: -430.5px auto 0 -400px !important;  }
+  .Dialog-quan .closes{ top:162px; right: 78px;}
+  .Dialog-quan .go-use{ bottom: 274px; margin-left: -49px; width:107px; height:101px;  }
 }

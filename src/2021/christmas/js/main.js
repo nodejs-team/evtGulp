@@ -5,7 +5,19 @@
 
   var loadComplete = function () {
     $("html,body").animate({scrollTop: 0},500);
-
+    /*日期判断*/
+    var vDate = new Date();
+    if((vDate.getMonth() + 1)<10){
+      myDate = vDate.getFullYear() + '-' +'0'+ (vDate.getMonth() + 1) + '-' + vDate.getDate(); /*解决安卓浏览器时间显示问题*/
+    }else{
+      myDate = vDate.getFullYear() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getDate(); /*解决安卓浏览器时间显示问题*/
+    }
+    var myMonth = vDate.getMonth()+1;
+    var myDay = vDate.getDate();
+    if(myMonth>=12 && myDay>=8){
+      $(".zaoniao").fadeOut(0);
+      $(".shengdan").fadeIn(0);
+    }
 
 
   };

@@ -1,0 +1,48 @@
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+html,body{ background: #f4eddf;}
+
+.evt-container{ overflow: hidden; background: #f4eddf;
+  .btns{ width: 207px; height: 67px; background:#f19ec2; top:982px; left:130px; text-align: center; border-radius: 1px; cursor: pointer;
+    span{ display: block; color: #fff; font-size: 22px; line-height: 67px;}
+  }
+}
+
+
+.sec-main{position: relative; width: 100%; padding:1px 0;
+  .content{ margin:42% auto 0; width: 694px;}
+  .btn-lq{  width: 154px; height: 39px; margin: 30px auto; line-height: 39px; text-align: center; border-radius: 39px; cursor: pointer; background:url("../images/get-btn.png");}
+  .guize{ width: 700px; margin: 0 auto; padding:60px 0;
+    p{
+      font-size:19px;
+      line-height: 1.8em;
+      padding-left: 30px;
+      text-indent: -30px;
+      margin-top: 5px;
+      b{font-weight: normal; font-size: 20px; color: #8c8470;}
+    }
+  }
+
+}
+.sec-main.main2{ background: url("../images/bg2.png") top center no-repeat; background-size: 100%; min-height:800px;}
+.sec-main.main3{ background:#ffefd6 url("../images/bg3.png") top center no-repeat; background-size: 100%; min-height:800px;
+  .quan{ margin-top: -12%;}
+  .btn-lq{  width: 154px; height: 39px; margin: 45px auto; cursor: pointer; background:url("../images/btn-3.png");}
+  .guize{ width: 700px; margin: 0 auto; padding:0 0 30px;
+    p{
+      color: #afa58f;
+      font-size:18px;
+      line-height: 1.8em;
+      padding-left: 30px;
+      text-indent: -30px;
+      margin-top: 5px;
+      b{font-weight: normal; font-size: 20px; color: #8c8470;}
+    }
+  }
+}
+

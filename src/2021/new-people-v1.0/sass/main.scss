@@ -20,7 +20,7 @@ span.num,.noselect{
 .sec-banner{max-width:1920px; margin: 0 auto; overflow:hidden; background: url("../images/banner-bg.png") bottom center no-repeat; height: 1210px;
   .banner-t{width: 1100px; margin: 200px auto 0;}
   .red-packet{width: 906px; margin:20px auto 0;}
-  .get-packet{ position: absolute; width: 134px; bottom: 160px; left: 50%; margin-left: -67px; cursor: pointer; }
+  .get-packet{ position: absolute; width: 169px; bottom: 140px; left: 50%; margin-left: -73px; cursor: pointer; animation: bouncein 1s ease-in alternate infinite; }
   img{width: 100%; display: block;}
 }
 
@@ -28,18 +28,7 @@ span.num,.noselect{
   img{margin: 0 auto; width: 100%;}
 }
 
-/*
-.icon{position: absolute; width: 63px; height: 49px;left: -74px; top:-8px;  }
-.icon_20{background: url("../images/icon_20.png");}
-.icon_40{background: url("../images/icon_40.png");}
-.icon_60{background: url("../images/icon_60.png");}
-.icon_80{background: url("../images/icon_80.png");}
-.icon_50{background: url("../images/icon_50.png");}
-.jf{position: absolute; width: 92px; height: 25px;left:65px; top:-1px; }
-.jf_20{background: url("../images/jf-200.png");}
-.jf_40{background: url("../images/jf-400.png");}
-.jf_60{background: url("../images/jf-600.png");}
-.jf_80{background: url("../images/jf-800.png");}*/
+
 
 .iconzhe{position: absolute; width: 137px; height: 137px;right:0; top:0; z-index: 2;}
 .iconzhe_49{ background: url("../images/icon_49.5.png"); }
@@ -118,7 +107,11 @@ span.num,.noselect{moz-user-select: -moz-none;-moz-user-select: none;-o-user-sel
 .nopoint.plus{background: url("../images/in-a-2.png") center no-repeat; margin: 20px 5px 0 0;}
 
 
-
+@keyframes bouncein{
+  50%{transform:scale(1);}
+  70%{transform:scale(0.9);}
+  100%{transform:scale(1);}
+}
 
 
 @media (max-width: 1800px) {

@@ -1,0 +1,360 @@
+@charset "UTF-8";
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*数量加减时，禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.evt-container {
+  overflow: hidden;
+  background: #faf7f2;
+}
+
+.sec-banner {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url("../images/banner.png") bottom center no-repeat;
+  height: 947px;
+}
+
+.hy-title {
+  margin: 0 auto;
+  width: 515px;
+  padding: 70px 0 70px;
+  position: relative;
+  text-align: center;
+}
+
+.hy-title img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  width: 117px;
+  height: 69px;
+  left: 20px;
+  top: 20px;
+}
+
+.icon_20 {
+  background: url("../images/icon-20.png") no-repeat;
+}
+
+.icon_40 {
+  background: url("../images/icon-40.png") no-repeat;
+}
+
+.icon_30 {
+  background: url("../images/icon-30.png") no-repeat;
+}
+
+.icon_50 {
+  background: url("../images/icon-50.png") no-repeat;
+}
+
+.buy_btn {
+  width: 138px;
+  height: 35px;
+  line-height: 34px;
+  background: url("../images/go-buy.png") no-repeat;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.sec-1 {
+  position: relative;
+  z-index: 2;
+  height: 1332px;
+  background: url("../images/sec-1.png") top center no-repeat;
+  overflow: hidden;
+}
+
+.sec-1 .evt-content {
+  text-align: center;
+}
+
+.sec-1 .cake {
+  position: relative;
+  width: 1051px;
+  margin: 0 auto;
+}
+
+.sec-1 .cake .icon {
+  left: 77px;
+  top: 0;
+}
+
+.sec-1 .cake .price {
+  position: absolute;
+  top: 246px;
+  right: 0;
+}
+
+.sec-1 .gift {
+  position: relative;
+  width: 1051px;
+  margin: 0 auto;
+}
+
+.sec-1 .text {
+  margin: 30px auto;
+}
+
+.sec-cake {
+  position: relative;
+  z-index: 1;
+  height: 2319px;
+  background: url("../images/sec-2.png") center repeat-y;
+}
+
+.sec-cake .evt-content {
+  width: 1130px;
+  padding-top: 50px;
+}
+
+.sec-cake .evt-content .row {
+  position: relative;
+  width: 563px;
+  float: left;
+  margin: 0 auto 90px;
+  overflow: hidden;
+}
+
+.sec-cake .evt-content .gift {
+  width: 1015px;
+  margin: 0 auto;
+}
+
+.sec-3 {
+  position: relative;
+  z-index: 1;
+  height: 668px;
+  background: url("../images/sec-3.png") center repeat-y;
+}
+
+.sec-3 .evt-content {
+  width: 1130px;
+  padding-top: 50px;
+}
+
+.sec-3 .evt-content .gift {
+  margin-top: 80px;
+}
+
+.evt-footer {
+  z-index: 1;
+  position: relative;
+  height: 540px;
+  background: url("../images/sec-foot.png") top center repeat-y;
+}
+
+.evt-footer .evt-content {
+  width: 1200px;
+  color: #000;
+}
+
+.evt-footer .evt-rules {
+  width: 866px;
+  margin: 0 auto;
+  padding: 100px 0 50px 20px;
+}
+
+.evt-footer .evt-rules h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.evt-footer .evt-rules p {
+  font-size: 18px;
+  line-height: 1.8em;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.evt-footer .evt-rules .p {
+  padding-left: 30px;
+}
+
+/*快速点击数量加减时，或者禁止双击选中*/
+span.num, .noselect {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*价格样式 通用*/
+.price {
+  position: relative;
+  width: 452px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.price h2 {
+  position: relative;
+  margin: 16px auto;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #010101;
+  text-align: center;
+}
+
+.price h2 i {
+  font-size: 14px;
+  font-style: normal;
+  vertical-align: baseline;
+}
+
+.price h2 span {
+  font-size: 28px;
+}
+
+.price s {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  text-decoration: sh;
+  margin-left: 5px;
+  color: #919191;
+}
+
+.price b {
+  font-weight: normal;
+}
+
+.price em {
+  font-style: normal;
+}
+
+.price .price-title {
+  font-size: 30px;
+  color: #d64244;
+  margin: 20px auto 20px !important;
+  text-align: center;
+}
+
+/*换购*/
+.price .huangou {
+  position: relative;
+  width: 210px;
+  font-size: 18px;
+  color: #5c4c0d;
+  margin: 10px auto;
+  cursor: pointer;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.price .huangou .icnone {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 1;
+}
+
+.price .huangou .icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+}
+
+.price .huangou {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*订购，加入购物清单*/
+.price ul.buy_btn_box {
+  overflow: hidden;
+  width: 175px;
+  margin: 5px auto;
+  float: left;
+}
+
+.buy_btn {
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+
+.buy-btns {
+  width: 305px;
+  margin: 0 auto;
+}
+
+.buy-btns.one {
+  width: 148px;
+}
+
+.bangshu {
+  position: relative;
+  width: 138px;
+  height: 35px;
+  margin: 0 0 5px 10px;
+  float: left;
+  background: url("../images/bang.png");
+  /*加减按钮*/
+}
+
+.bangshu dt {
+  float: left;
+  width: 138px;
+  text-align: center;
+  line-height: 34px;
+}
+
+.bangshu dt span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+}
+
+.bangshu .nopoint {
+  position: absolute;
+  top: -4px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: url("../images/nopoint.png") no-repeat;
+  background-size: 100%;
+}
+
+.bangshu .nopoint.plus {
+  left: auto;
+  right: -10px;
+}
